@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /404
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dalvanc.com/sitemap.xml
+Host: https://dalvanc.com

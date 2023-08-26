@@ -1,0 +1,35 @@
+/* tailwind.css */
+
+/* Imports */
+@import './_code-snippet.css';
+@import './_fonts';
+@import './_form-field';
+@import './_global';
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Utility classes */
+@layer utilities {
+  .bg-accent {
+    @apply bg-blue-600 dark:bg-orange-500;
+  }
+
+  .color-transition {
+    @apply transition-colors duration-300;
+  }
+
+  .debug {
+    @apply outline-dashed outline-1 outline-red-500; /* Debug ruleset */
+  }
+
+  .text-accent {
+    @apply text-blue-600 dark:text-orange-500;
+  }
+
+  .title-font {
+    @apply font-mark-pro font-black tracking-tighter;
+  }
+}

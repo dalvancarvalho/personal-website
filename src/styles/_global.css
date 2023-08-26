@@ -1,0 +1,29 @@
+/* _global.css */
+
+*:focus-visible {
+  @apply outline outline-2 outline-offset-2 outline-blue-600 dark:outline-orange-500 rounded-[0.1em];
+}
+
+*::selection {
+  @apply text-white dark:text-black bg-blue-500 dark:bg-orange-400;
+}
+
+::-webkit-scrollbar {
+  @apply w-3 h-3;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-50 dark:bg-dark-1;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply border-solid border-2 border-slate-50 dark:border-dark-1 bg-[#6c6c6c80] dark:bg-[#61606080] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#2564ebb3] dark:bg-[#f974169f];
+}
+
+html {
+  scrollbar-width: thin;
+}

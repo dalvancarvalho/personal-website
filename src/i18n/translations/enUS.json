@@ -1,0 +1,202 @@
+{
+  "translation": {
+    "meta": {
+      "title": {
+        "home": "Dalvan Carvalho · Front-End Developer",
+        "brGeo": "BR Geo — Dalvan Carvalho · Front-End Developer",
+        "personalPage": "Personal page — Dalvan Carvalho · Front-End Developer",
+        "splitIt": "Split it! — Dalvan Carvalho · Front-End Developer",
+        "notFound": "404: Page not found"
+      }
+    },
+
+    "header": {
+      "logo": {
+        "about": "about",
+        "projects": "projects",
+        "personalPage": "personal page",
+        "notFound": "page not found"
+      },
+      "skip": "Skip to content",
+      "nav": {
+        "ariaLabel": "Main menu",
+        "heading": "Navigation",
+        "/": {
+          "home": "Home",
+          "about": "About",
+          "projects": "Projects",
+          "contact": "Contact"
+        },
+        "/br-geo": {
+          "home": "Home",
+          "intro": "Intro",
+          "details": "Details"
+        },
+        "/split-it": {
+          "home": "Home",
+          "intro": "Intro",
+          "details": "Details"
+        },
+        "/personal-page": {
+          "home": "Home",
+          "intro": "Intro",
+          "details": "Details"
+        }
+      },
+      "language": {
+        "ariaLabel": "Mudar idioma para Português (Brasil) - PT-BR",
+        "heading": "Language",
+        "hover": "Mudar idioma de exibição <br /> para Português (Brasil)"
+      },
+      "theme": {
+        "ariaLabel": "Change theme",
+        "heading": "Theme",
+        "dark": "Dark",
+        "light": "Light",
+        "hoverDark": "Change to light theme",
+        "hoverLight": "Change to dark theme"
+      }
+    },
+
+    "title": {
+      "breadcrumbs": {
+        "home": "Home",
+        "featured": "Featured project"
+      },
+      "github": "GitHub repository",
+      "demo": "Live demo"
+    },
+
+    "pages": {
+      "home": {
+        "hero": {
+          "heading": "<small>Combining </small>Front-End <br /><thin>and </thin>Creativity",
+          "paragraph": "Hello! My name is <highlight>Dalvan Carvalho</highlight>, I'm a front-end developer focused on creating unique user experiences.",
+          "primaryButton": "Get in touch",
+          "secondaryButton": "See projects",
+          "bgAltText": "Rectangles of several dimensions that compose the background of the main section of the page"
+        },
+        "about": {
+          "heading": "But... who am I?",
+          "watermark": "About",
+          "subHeadingI": "Self-taught developer",
+          "paragraphI": "I entered the world of front-end development about a year ago after transitioning from the field of civil engineering, in which I'm a graduate. I found in the technology field the opportunity to <highlight>reinvent</highlight> myself while continuing to do what I love most: creating things that reflect the standards I always strive to maintain, such as <highlight>attention to details</highlight>, <highlight>quality</highlight>, and <highlight>organization</highlight>.",
+          "subHeadingII": "Passionate about learning",
+          "paragraphII": "I love <highlight>researching and understanding how things work</highlight>. The countless possibilities of solving problems or implementing ideas through lines of code make it impossible for a day in front of the computer to go by without learning something new. If this process is accompanied by a good playlist, everything gets even better!",
+          "subHeadingIII": "Weekend warrior",
+          "paragraphIII": "When I'm not immersed inside VS Code, I usually engage in sports, hang out with friends, or simply spend some quality time by myself. I have also been investing the free time in my newest hobby: <highlight>board games</highlight>!",
+          "subHeadingIV": "Recently, I've been working with the following technologies:",
+          "paragraphIV": "Even coming from a different background, I had extensive contact with <highlight>relational database (PostgreSQL)</highlight> in my most recent professional experience. Additionally, I keep myself updated on all the benefits that <highlight>artificial intelligence</highlight> can offer.",
+          "meAltText": "Picture of Dalvan Carvalho",
+          "hoverTextTitle": "yep, it's a Super Mario reference 🍄",
+          "stackAltText": "Image composed by logos from technologies Dalvan works with",
+          "button": "See resume"
+        },
+        "projects": {
+          "heading": "Handcrafted work",
+          "watermark": "Projects",
+          "paragraph": "After some time learning the fundamentals of front-end development and venturing into tutorials for creating music players, ISS trackers, and three or four different types of to-do lists, I list below some personal projects that <highlight>truly made me learn JavaScript</highlight> and explore its potential in building web applications.",
+          "brGeo": {
+            "altText": "Screen of BR Geo, displaying a dashboard with a Rio de Janeiro map and populational statistics in a chart on its side",
+            "name": "BR Geo",
+            "description": "View information from several geographic and social topics through charts and interactive maps. With the powerful IBGE API, get updated data at county, state, and country levels!"
+          },
+          "personalPage": {
+            "altText": "Home screen from Dalvan Carvalho's personal page",
+            "name": "Personal page",
+            "description": "That's right! This personal page deserves a place on the list for including several interesting features used in its development, such as libraries for routing, internationalization, e-mail sending, and animations."
+          },
+          "splitIt": {
+            "altText": "Several expenses spreadsheets placed side by side and slightly rotated",
+            "name": "Split it!",
+            "description": "Based on a spreadsheet for expenses control during a trip with friends, Split it! allows for a fair division of expenses among all group members in a simple and intuitive way!"
+          },
+          "primaryButton": "See details",
+          "inProgress": "In progress"
+        },
+        "contact": {
+          "heading": "Let's talk!",
+          "watermark": "Contact",
+          "paragraphI": "<highlight>I'm very glad that you've taken the time to check out my personal page!</highlight> I hope you enjoyed browsing through my works and learning a bit more about what I do.",
+          "paragraphII": "Currently, <highlight>I am available to join a creative team of designers and developers</highlight>. If you think we can work together, please send a message to the e-mail below or through the form in this section, and I promise to get back to you as soon as possible!",
+          "email": "contact@dalvanc.com",
+          "subject": "Message from dalvanc.com!",
+          "location": "RS, Brazil",
+          "formTitle": "Leave your message:",
+          "label": {
+            "name": "Name",
+            "email": "E-mail",
+            "message": "Message"
+          },
+          "button": {
+            "default": "Submit",
+            "submitting": "Submitting..."
+          },
+          "message": {
+            "error": "There was a problem sending your message. <br>Try again later.",
+            "incomplete": "Fill out all the fields of the form!",
+            "success": "Message sent successfully!"
+          },
+          "nav": {
+            "ariaLabel": "Social networks"
+          }
+        }
+      },
+      "brGeo": {
+        "intro": {
+          "heading": "A brief introduction",
+          "watermark": "Intro"
+        },
+        "details": {
+          "heading": "Details",
+          "watermark": "Details"
+        }
+      },
+      "personalPage": {
+        "intro": {
+          "heading": "A brief introduction",
+          "watermark": "Intro"
+        },
+        "details": {
+          "heading": "Details",
+          "watermark": "Details"
+        }
+      },
+      "splitIt": {
+        "intro": {
+          "heading": "A brief introduction",
+          "watermark": "Intro"
+        },
+        "details": {
+          "heading": "Details",
+          "watermark": "Details"
+        }
+      },
+      "notFound": {
+        "heading": "Got lost? ",
+        "paragraph": "It seems that the page you're looking for is temporarily unavailable, was removed or doesn't exist.",
+        "button": "Back to home page"
+      }
+    },
+
+    "footer": {
+      "deploy": "Deployed with ",
+      "developer": "Designed and built by "
+    },
+
+    "misc": {
+      "comingSoon": "Soon, this page will have a detailed description of the project, along with a link to its GitHub repository, live demo, images and snippets of interesting parts of the code, like the example below:",
+      "codeSnippet": {
+        "title": "Snippet example",
+        "copied": "Copied!",
+        "copyTooltip": "Copy to Clipboard",
+        "infoTooltip": "For a better readability, rotate<br />your device to landscape mode"
+      },
+      "lorem": {
+        "forty": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit excepturi distinctio officia! In architecto voluptates dolores inventore quam repellat aliquid, eveniet sapiente ea nostrum optio harum, ratione dolor, ipsa provident! Accusamus, dicta quam! Explicabo maiores ut eveniet quo vero voluptatibus!",
+        "sixty": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga, beatae ratione dignissimos ipsum vero minus excepturi perspiciatis impedit. Minima voluptatibus ipsa est laudantium eaque error cum. Laborum nobis assumenda in sapiente. Rerum quae quo aliquam deserunt tenetur voluptate enim necessitatibus sed a eius sint voluptas dolorum consequatur provident et ipsam suscipit est nam magnam numquam repellat, quod neque molestiae.",
+        "eighty": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dignissimos earum minus velit praesentium consectetur voluptate deserunt pariatur ipsum est ea enim sit animi laboriosam placeat, dolor quam, quidem ut suscipit eos magni provident recusandae, modi soluta. Quasi asperiores, omnis nam deleniti accusantium aperiam dignissimos ipsam, perspiciatis assumenda molestiae facere doloremque ut autem? Tempora exercitationem accusamus fuga sit impedit deserunt officiis libero fugit quod sequi in, eum ad similique reprehenderit aperiam! Deleniti possimus, laboriosam repellendus voluptate error autem voluptatem ipsam."
+      }
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "translation": {
+    "meta": {
+      "title": {
+        "home": "Dalvan Carvalho · Desenvolvedor Front-End",
+        "brGeo": "BR Geo — Dalvan Carvalho · Desenvolvedor Front-End",
+        "personalPage": "Página pessoal — Dalvan Carvalho · Desenvolvedor Front-End",
+        "splitIt": "Split it! — Dalvan Carvalho · Desenvolvedor Front-End",
+        "notFound": "404: Página não encontrada"
+      }
+    },
+
+    "header": {
+      "logo": {
+        "about": "sobre",
+        "projects": "projetos",
+        "personalPage": "página pessoal",
+        "notFound": "página não encontrada"
+      },
+      "skip": "Pular para conteúdo",
+      "nav": {
+        "ariaLabel": "Menu principal",
+        "heading": "Navegação",
+        "/": {
+          "home": "Início",
+          "about": "Sobre",
+          "projects": "Projetos",
+          "contact": "Contato"
+        },
+        "/br-geo": {
+          "home": "Início",
+          "intro": "Intro",
+          "details": "Detalhes"
+        },
+        "/split-it": {
+          "home": "Início",
+          "intro": "Intro",
+          "details": "Detalhes"
+        },
+        "/personal-page": {
+          "home": "Início",
+          "intro": "Intro",
+          "details": "Detalhes"
+        }
+      },
+      "language": {
+        "ariaLabel": "Change language to English - EN-US",
+        "heading": "Idioma",
+        "hover": "Change display language <br /> to English (US)"
+      },
+      "theme": {
+        "ariaLabel": "Mudar tema",
+        "heading": "Tema",
+        "dark": "Escuro",
+        "light": "Claro",
+        "hoverDark": "Mudar para tema claro",
+        "hoverLight": "Mudar para tema escuro"
+      }
+    },
+
+    "title": {
+      "breadcrumbs": {
+        "home": "Início",
+        "featured": "Projeto em destaque"
+      },
+      "github": "Repositório do GitHub",
+      "demo": "Demonstração"
+    },
+
+    "pages": {
+      "home": {
+        "hero": {
+          "heading": "<small>Unindo </small>Front-End <br /><thin>e </thin>Criatividade",
+          "paragraph": "Olá! Meu nome é <highlight>Dalvan Carvalho</highlight>, sou um desenvolvedor front-end focado na criação de experiências de usuário únicas.",
+          "primaryButton": "Entrar em contato",
+          "secondaryButton": "Ver projetos",
+          "bgAltText": "Retângulos de dimensões diversas que compõem o background da seção principal da página"
+        },
+        "about": {
+          "heading": "Mas... quem sou eu?",
+          "watermark": "Sobre",
+          "subHeadingI": "Desenvolvedor autodidata",
+          "paragraphI": "Entrei no mundo do desenvolvimento front-end há cerca de um ano, após ter migrado do campo da engenharia civil, no qual sou graduado. Encontrei na área da tecnologia a possibilidade de me <highlight>reinventar</highlight> enquanto continuo fazendo o que mais amo: criar coisas que reflitam os padrões que sempre me esforço em manter, como a <highlight>atenção aos detalhes</highlight>, <highlight>qualidade</highlight> e <highlight>organização</highlight>.",
+          "subHeadingII": "Apaixonado por aprender",
+          "paragraphII": "Adoro <highlight>pesquisar e entender como as coisas funcionam</highlight>. As inúmeras possibilidades de resolver problemas ou implementar ideias por meio de linhas de código tornam impossível passar um dia em frente ao computador sem aprender algo novo. Se esse processo for acompanhado por uma boa playlist, tudo fica ainda melhor!",
+          "subHeadingIII": "Atleta de final de semana",
+          "paragraphIII": "Quando não estou imerso no VS Code, costumo praticar esportes, sair com os amigos ou apenas passar um tempo de qualidade sozinho. Também tenho investido o tempo livre no meu mais novo hobby: <highlight>jogos de tabuleiro</highlight>!",
+          "subHeadingIV": "Recentemente, tenho trabalhado com as seguintes tecnologias:",
+          "paragraphIV": "Mesmo vindo de um background diferente, tive amplo contato com <highlight>banco de dados relacional (PostgreSQL)</highlight> em minha experiência profissional mais recente. Além disso, busco estar por dentro de todos os benefícios que a <highlight>inteligência artificial</highlight> pode oferecer.",
+          "meAltText": "Foto de Dalvan Carvalho",
+          "hoverTextTitle": "sim, é uma referência à Super Mario 🍄",
+          "stackAltText": "Imagem composta por logotipos das tecnologias que Dalvan trabalha",
+          "button": "Ver currículo"
+        },
+        "projects": {
+          "heading": "Trabalho feito à mão",
+          "watermark": "Projetos",
+          "paragraph": "Após algum tempo aprendendo os fundamentos do desenvolvimento front-end e me aventurando em tutoriais de criação de players de música, rastreadores da ISS e três ou quatro tipos diferentes de to-do lists, listo abaixo alguns projetos autorais que <highlight>realmente me fizeram aprender JavaScript</highlight> e explorar o seu potencial na criação de aplicações web.",
+          "brGeo": {
+            "altText": "Tela do BR Geo, exibindo um painel com o mapa do Rio de Janeiro e estatísticas populacionais em um gráfico ao lado",
+            "name": "BR Geo",
+            "description": "Visualize informações acerca de diversos temas geográficos e sociais através de gráficos e mapas interativos. Com a poderosa API do IBGE, obtenha dados atualizados a nível municipal, estadual e federal!"
+          },
+          "personalPage": {
+            "altText": "Tela inicial da página pessoal de Dalvan Carvalho",
+            "name": "Página pessoal",
+            "description": "Isso mesmo! Esta página pessoal merece lugar na lista por incluir diversas funcionalidades interessantes utilizadas em seu desenvolvimento, como bibliotecas para gerenciamento de rotas, internacionalização, envio de e-mails e animações."
+          },
+          "splitIt": {
+            "altText": "Diversas planilhas de gastos dispostas lado a lado e levemente rotacionadas",
+            "name": "Split it!",
+            "description": "Baseado em uma planilha para controle de despesas de uma viagem entre amigos, Split it! permite realizar a divisão justa dos valores para todos os integrantes do grupo de maneira simples e intuitiva!"
+          },
+          "primaryButton": "Ver detalhes",
+          "inProgress": "Em andamento"
+        },
+        "contact": {
+          "heading": "Vamos conversar!",
+          "watermark": "Contato",
+          "paragraphI": "<highlight>Fico muito contente que você tenha dedicado um tempo para conferir minha página pessoal!</highlight> Espero que tenha gostado de navegar pelos meus trabalhos e de saber um pouco mais sobre o que eu faço.",
+          "paragraphII": "No momento, <highlight>estou disponível para me unir a um time criativo de designers e desenvolvedores</highlight>. Se você acha que podemos trabalhar juntos, envie uma mensagem para o e-mail abaixo ou através do formulário nesta seção que prometo retornar o mais breve possível!",
+          "email": "contato@dalvanc.com",
+          "subject": "Mensagem de dalvanc.com!",
+          "location": "RS, Brasil",
+          "formTitle": "Deixe sua mensagem:",
+          "label": {
+            "name": "Nome",
+            "email": "E-mail",
+            "message": "Mensagem"
+          },
+          "button": {
+            "default": "Enviar",
+            "submitting": "Enviando..."
+          },
+          "message": {
+            "error": "Houve um problema no envio de sua mensagem. <br>Tente novamente mais tarde.",
+            "incomplete": "Preencha todos os campos do formulário!",
+            "success": "Mensagem enviada com sucesso!"
+          },
+          "nav": {
+            "ariaLabel": "Redes sociais"
+          }
+        }
+      },
+      "brGeo": {
+        "intro": {
+          "heading": "Uma breve introdução",
+          "watermark": "Intro"
+        },
+        "details": {
+          "heading": "Detalhes",
+          "watermark": "Detalhes"
+        }
+      },
+      "personalPage": {
+        "intro": {
+          "heading": "Uma breve introdução",
+          "watermark": "Intro"
+        },
+        "details": {
+          "heading": "Detalhes",
+          "watermark": "Detalhes"
+        }
+      },
+      "splitIt": {
+        "intro": {
+          "heading": "Uma breve introdução",
+          "watermark": "Intro"
+        },
+        "details": {
+          "heading": "Detalhes",
+          "watermark": "Detalhes"
+        }
+      },
+      "notFound": {
+        "heading": "Se perdeu? ",
+        "paragraph": "Parece que a página que você procura está temporariamente indisponível, foi removida ou não existe.",
+        "button": "Voltar à página inicial"
+      }
+    },
+
+    "footer": {
+      "deploy": "Implementado com ",
+      "developer": "Desenvolvido por "
+    },
+
+    "misc": {
+      "comingSoon": "Em breve, esta página contará com a descrição detalhada do projeto com link para seu repositório no GitHub, demonstração, imagens e snippets de partes interessantes do código, como o exemplo abaixo:",
+      "codeSnippet": {
+        "title": "Exemplo de snippet",
+        "copied": "Copiado!",
+        "copyTooltip": "Copiar para Área <br /> de Transferência",
+        "infoTooltip": "Para uma melhor leitura do código,<br />rotacione seu dispositivo para o<br />modo paisagem"
+      },
+      "lorem": {
+        "forty": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit excepturi distinctio officia! In architecto voluptates dolores inventore quam repellat aliquid, eveniet sapiente ea nostrum optio harum, ratione dolor, ipsa provident! Accusamus, dicta quam! Explicabo maiores ut eveniet quo vero voluptatibus!",
+        "sixty": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga, beatae ratione dignissimos ipsum vero minus excepturi perspiciatis impedit. Minima voluptatibus ipsa est laudantium eaque error cum. Laborum nobis assumenda in sapiente. Rerum quae quo aliquam deserunt tenetur voluptate enim necessitatibus sed a eius sint voluptas dolorum consequatur provident et ipsam suscipit est nam magnam numquam repellat, quod neque molestiae.",
+        "eighty": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dignissimos earum minus velit praesentium consectetur voluptate deserunt pariatur ipsum est ea enim sit animi laboriosam placeat, dolor quam, quidem ut suscipit eos magni provident recusandae, modi soluta. Quasi asperiores, omnis nam deleniti accusantium aperiam dignissimos ipsam, perspiciatis assumenda molestiae facere doloremque ut autem? Tempora exercitationem accusamus fuga sit impedit deserunt officiis libero fugit quod sequi in, eum ad similique reprehenderit aperiam! Deleniti possimus, laboriosam repellendus voluptate error autem voluptatem ipsam."
+      }
+    }
+  }
+}
