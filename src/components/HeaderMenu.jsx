@@ -51,7 +51,7 @@ function HeaderMenu({ pathname, t, y }) {
   }, [isMenuOpen])
 
   return (
-    <div className="grid place-content-center ">
+    <div className="grid place-content-center">
       <Button
         className={`${y === 0 || isMenuOpen ? 'scale-[1.4]' : null}
         !transition duration-300`}
