@@ -12,12 +12,16 @@ import Main from './components/Main'
 gsap.registerPlugin(ScrollTrigger, TextPlugin) // GSAP animation plugins
 
 function App() {
+  // Main application
+
+  const DARK = '#1a1a1a' // dark grey
+  const LIGHT = '#f8fafc' // light slate
   const { theme } = useTheme()
 
   return (
     <>
       <Helmet>
-        <meta name="theme-color" content={theme === 'light' ? '#f8fafc' : '#1a1a1a'} />
+        <meta name="theme-color" content={theme === 'light' ? LIGHT : DARK} />
       </Helmet>
       <Header />
       <Main>
