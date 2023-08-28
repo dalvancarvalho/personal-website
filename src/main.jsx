@@ -15,7 +15,7 @@ import './styles/tailwind.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-inject() // Vercel Web Analytics
+// inject() Vercel Web Analytics <- will be readded soon
 
 root.render(
   <React.StrictMode>

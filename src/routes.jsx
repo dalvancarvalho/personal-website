@@ -3,7 +3,7 @@
 import { lazy, Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Loading from './components/Loading'
-import Home from './pages/Home'
+import Home from './pages/Home' // temporary
 
 // Main page
 // const Home = lazy(() => import('./pages/Home')) <- will be lazyloaded again soon

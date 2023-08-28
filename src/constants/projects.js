@@ -43,7 +43,7 @@ const projects = [
     altText: 'pages.home.projects.personalPage.altText',
     demoUrl: null,
     description: 'pages.home.projects.personalPage.description',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dalvancarvalho/personal-page',
     isFinished: true,
     name: 'pages.home.projects.personalPage.name',
     routeName: 'personal-page',
