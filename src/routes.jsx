@@ -3,9 +3,10 @@
 import { lazy, Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Loading from './components/Loading'
+import Home from './pages/Home'
 
 // Main page
-const Home = lazy(() => import('./pages/Home'))
+// const Home = lazy(() => import('./pages/Home')) <- will be lazyloaded again soon
 
 // Projects
 const BRGeo = lazy(() => import('./pages/BRGeo'))
@@ -24,9 +25,9 @@ function AppRoutes() {
       <Route
         path="/"
         element={
-          <Suspense>
-            <Home />
-          </Suspense>
+          // <Suspense>
+          <Home />
+          // </Suspense>
         }
       />
       <Route
