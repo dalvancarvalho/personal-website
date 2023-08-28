@@ -1,7 +1,7 @@
 /* _global.css */
 
 *:focus-visible {
-  @apply outline outline-2 outline-offset-2 outline-blue-600 dark:outline-orange-500 rounded-[0.1em];
+  @apply outline outline-[3px] outline-offset-[3px] outline-blue-600 dark:outline-orange-500 rounded-[0.1em];
 }
 
 *::selection {
