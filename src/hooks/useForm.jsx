@@ -11,13 +11,6 @@ function useForm() {
   const serviceID = import.meta.env.VITE_SERVICE_ID
   const templateID = import.meta.env.VITE_TEMPLATE_ID
 
-  useEffect(() => {
-    console.log(import.meta.env)
-    console.log(publicKey)
-    console.log(serviceID)
-    console.log(templateID)
-  }, [])
-
   const [inputs, setInputs] = useState({
     name: '',
     email: '',
