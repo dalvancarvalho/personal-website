@@ -12,6 +12,7 @@ function useForm() {
   const templateID = import.meta.env.VITE_TEMPLATE_ID
 
   useEffect(() => {
+    console.log(import.meta.env)
     console.log(publicKey)
     console.log(serviceID)
     console.log(templateID)
