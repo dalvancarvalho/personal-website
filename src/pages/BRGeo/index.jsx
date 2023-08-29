@@ -6,12 +6,12 @@ import Footer from '../../components/Footer'
 import MainSection from '../../components/MainSection'
 import PageTitle from '../../components/PageTitle'
 import SEO from '../../components/SEO'
-import projects from '../../constants/projects'
+import { brGeoData } from '../../constants/projects'
 
 function BRGeo() {
   // BR Geo
 
-  const { demoUrl, githubUrl, name } = projects[0]
+  const { demoUrl, githubUrl, name } = brGeoData
   const { t } = useTranslation()
 
   return (

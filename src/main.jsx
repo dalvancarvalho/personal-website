@@ -4,7 +4,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
-import { inject } from '@vercel/analytics'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { LanguageProvider } from './contexts/LanguageContext'
 import { MenuProvider } from './contexts/MenuContext'
@@ -14,8 +13,6 @@ import './i18n/index'
 import './styles/tailwind.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-
-// inject() Vercel Web Analytics <- will be readded soon
 
 root.render(
   <React.StrictMode>

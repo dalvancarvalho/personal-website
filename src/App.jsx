@@ -1,5 +1,6 @@
 /* App.jsx */
 
+import { Analytics } from '@vercel/analytics/react'
 import { gsap } from 'gsap'
 import { Helmet } from 'react-helmet-async'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -14,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin) // GSAP animation plugins
 function App() {
   // Main application
 
-  const DARK = '#1a1a1a' // dark grey
+  const DARK = '#1a1a1a' // dark gray
   const LIGHT = '#f8fafc' // light slate
   const { theme } = useTheme()
 
@@ -26,6 +27,7 @@ function App() {
       <Header />
       <Main>
         <AppRoutes />
+        <Analytics />
       </Main>
     </>
   )

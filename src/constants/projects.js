@@ -1,8 +1,8 @@
 /* projects.js */
 
-import brGeo from '../assets/webp/br-geo.webp'
-import personalPage from '../assets/webp/personal-page.webp'
-import splitIt from '../assets/webp/split-it.webp'
+import brGeoImg from '../assets/webp/br-geo.webp'
+import personalPageImg from '../assets/webp/personal-page.webp'
+import splitItImg from '../assets/webp/split-it.webp'
 
 const projects = [
   // List of attributes of each project displayed in the 'Projects' section
@@ -37,7 +37,7 @@ const projects = [
         url: 'https://www.chartjs.org/',
       },
     ],
-    thumbnail: brGeo,
+    thumbnail: brGeoImg,
   },
   {
     altText: 'pages.home.projects.personalPage.altText',
@@ -77,7 +77,7 @@ const projects = [
         url: 'https://greensock.com/gsap/',
       },
     ],
-    thumbnail: personalPage,
+    thumbnail: personalPageImg,
   },
   {
     altText: 'pages.home.projects.splitIt.altText',
@@ -105,8 +105,12 @@ const projects = [
         url: 'https://www.framer.com/motion/',
       },
     ],
-    thumbnail: splitIt,
+    thumbnail: splitItImg,
   },
 ]
 
-export default projects
+const brGeoData = projects[0]
+const personalPageData = projects[1]
+const splitItData = projects[2]
+
+export { projects as default, brGeoData, personalPageData, splitItData }

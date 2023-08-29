@@ -6,12 +6,12 @@ import Footer from '../../components/Footer'
 import MainSection from '../../components/MainSection'
 import PageTitle from '../../components/PageTitle'
 import SEO from '../../components/SEO'
-import projects from '../../constants/projects'
+import { splitItData } from '../../constants/projects'
 
 function SplitIt() {
   // Split it!
 
-  const { demoUrl, githubUrl, name } = projects[2]
+  const { demoUrl, githubUrl, name } = splitItData
   const { t } = useTranslation()
 
   return (

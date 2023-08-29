@@ -6,12 +6,12 @@ import Footer from '../../components/Footer'
 import MainSection from '../../components/MainSection'
 import PageTitle from '../../components/PageTitle'
 import SEO from '../../components/SEO'
-import projects from '../../constants/projects'
+import { personalPageData } from '../../constants/projects'
 
 function PersonalPage() {
   // Personal page
 
-  const { demoUrl, githubUrl, name } = projects[1]
+  const { demoUrl, githubUrl, name } = personalPageData
   const { t } = useTranslation()
 
   return (
