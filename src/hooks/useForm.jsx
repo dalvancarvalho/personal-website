@@ -6,11 +6,6 @@ import emailjs from '@emailjs/browser'
 function useForm() {
   // Handles the functionality of the contact form
 
-  // Environment variables
-  const publicKey = import.meta.env.VITE_PUBLIC_KEY
-  const serviceID = import.meta.env.VITE_SERVICE_ID
-  const templateID = import.meta.env.VITE_TEMPLATE_ID
-
   const [inputs, setInputs] = useState({
     name: '',
     email: '',
@@ -46,6 +41,11 @@ function useForm() {
 
   async function sendEmail() {
     // Sends an e-mail with the submitted data
+
+    // Environment variables
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY
+    const serviceID = import.meta.env.VITE_SERVICE_ID
+    const templateID = import.meta.env.VITE_TEMPLATE_ID
 
     let response
 
