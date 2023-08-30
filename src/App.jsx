@@ -1,5 +1,6 @@
 /* App.jsx */
 
+import { lazy, Suspense } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import { gsap } from 'gsap'
 import { Helmet } from 'react-helmet-async'
@@ -8,6 +9,7 @@ import { TextPlugin } from 'gsap/TextPlugin'
 import AppRoutes from './routes'
 import useTheme from './contexts/ThemeContext'
 import Header from './components/Header'
+import Loading from './components/Loading'
 import Main from './components/Main'
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin) // GSAP animation plugins
@@ -24,11 +26,13 @@ function App() {
       <Helmet>
         <meta name="theme-color" content={theme === 'light' ? LIGHT : DARK} />
       </Helmet>
-      <Header />
-      <Main>
-        <AppRoutes />
-        <Analytics />
-      </Main>
+      <Suspense fallback={<Loading />}>
+        <Header />
+        <Main>
+          <AppRoutes />
+          <Analytics />
+        </Main>
+      </Suspense>
     </>
   )
 }

@@ -3,7 +3,6 @@
 import { lazy, Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Loading from './components/Loading'
-// import Home from './pages/Home'
 
 // Main page
 const Home = lazy(() => import('./pages/Home'))
@@ -22,7 +21,14 @@ function AppRoutes() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route
+        path="/"
+        element={
+          // <Suspense fallback={<Loading />}>
+          <Home />
+          // </Suspense>
+        }
+      />
       <Route
         path="/br-geo"
         element={
