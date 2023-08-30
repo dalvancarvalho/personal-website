@@ -6,12 +6,12 @@ module.exports = {
     extend: {
       colors: {
         dark: {
-          1: '#1a1a1a',
+          1: '#1a1a1a', // darkest
           2: '#202020',
           3: '#232323',
           4: '#252525',
           5: '#282828',
-          6: '#323232',
+          6: '#323232', // lightest
         },
         slate: {
           150: '#eaeff4',
