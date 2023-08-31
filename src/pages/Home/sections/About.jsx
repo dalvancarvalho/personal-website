@@ -192,7 +192,7 @@ function About({ screenProps, t }) {
                 >
                   <a
                     className="flex items-center gap-2 hover:translate-x-1
-                    transition-transform duration-150"
+                    focus-visible:translate-x-1 transition-transform duration-150"
                     href={url}
                     rel="noopener noreferrer"
                     target="_blank"
