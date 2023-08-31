@@ -4,7 +4,7 @@ import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
 function FancyDivider() {
-  // SVG horizontal divider
+  // SVG horizontal divider with built-in animation
 
   const dividerRef = useRef(null)
 

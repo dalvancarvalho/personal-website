@@ -1,6 +1,8 @@
 /* QuotationMark.jsx */
 
 function QuotationMark() {
+  // SVG quotation mark
+
   return (
     <svg
       className="about-quotation absolute -top-4 -left-6 -z-50 h-28 md:h-32

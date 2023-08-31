@@ -43,7 +43,6 @@ function TextArea({ inputs, label, inputName, setInputs }) {
         outline-none dark:outline-none text-base md:text-lg 2xl:text-xl pt-[0.25em] pb-[0.5em]
         block bg-transparent resize-none transition-[border-color] duration-300 px-[0.5em]"
         id={inputName}
-        inputs={inputs}
         onBlur={checkField}
         onChange={() => setInputs({ ...inputs, [inputName]: fieldRef.current.value })}
         onFocus={() => containerRef.current.classList.add('highlighted')}

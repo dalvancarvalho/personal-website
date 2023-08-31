@@ -11,7 +11,7 @@ import Highlight from '../../../components/Highlight'
 import Paragraph from '../../../components/Paragraph'
 import Section from '../../../components/Section'
 import SectionTitle from '../../../components/SectionTitle'
-import FancyDivider from '../../../components/FancyDivider'
+import FancyDivider from '../../../assets/jsx/FancyDivider'
 
 function Contact({ screenProps, t }) {
   // Contact section

@@ -6,16 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { gsap } from 'gsap'
 import { Trans } from 'react-i18next'
 import useLanguage from '../../../contexts/LanguageContext'
-import Arrow from '../../../components/Arrow'
 import Container from '../../../components/Container'
 import CTAButton from '../../../components/CTAButton'
-import FancyDivider from '../../../components/FancyDivider'
 import Highlight from '../../../components/Highlight'
 import Paragraph from '../../../components/Paragraph'
-import QuotationMark from '../../../components/QuotationMark'
 import Section from '../../../components/Section'
 import SectionTitle from '../../../components/SectionTitle'
 import technologies from '../../../constants/technologies'
+import Arrow from '../../../assets/jsx/Arrow'
+import FancyDivider from '../../../assets/jsx/FancyDivider'
+import QuotationMark from '../../../assets/jsx/QuotationMark'
 import stackDark from '../../../assets/svg/stack-dark.svg'
 import stackLight from '../../../assets/svg/stack-light.svg'
 import meBw from '../../../assets/webp/me-bw-bg.webp'
@@ -214,6 +214,7 @@ function About({ screenProps, t }) {
             <a
               className="max-w-max"
               href={language.value === 'ptBR' ? '/resume-pt-br.pdf' : 'resume-en-us.pdf'}
+              rel="noopener noreferrer"
               tabIndex="-1"
               target="_blank"
             >
@@ -277,7 +278,7 @@ function HoverText({ t }) {
         group-hover:scale-100 group-hover:opacity-100 duration-150"
         title={t('pages.home.about.hoverTextTitle')}
       >
-        it's-a me,
+        it&apos;s-a me,
         <br />
         dalvan!
       </p>

@@ -56,23 +56,23 @@ function Form({ t }) {
         {t('pages.home.contact.formTitle')}
       </h3>
       <Input
-        label={t('pages.home.contact.label.name')}
-        inputs={inputs}
         inputName="name"
+        inputs={inputs}
+        label={t('pages.home.contact.label.name')}
         setInputs={setInputs}
         type="text"
       />
       <Input
-        label={t('pages.home.contact.label.email')}
-        inputs={inputs}
         inputName="email"
+        inputs={inputs}
+        label={t('pages.home.contact.label.email')}
         setInputs={setInputs}
         type="email"
       />
       <TextArea
-        label={t('pages.home.contact.label.message')}
-        inputs={inputs}
         inputName="message"
+        inputs={inputs}
+        label={t('pages.home.contact.label.message')}
         setInputs={setInputs}
       />
       <CTAButton

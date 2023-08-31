@@ -44,7 +44,6 @@ function Input({ inputs, label, inputName, setInputs, type }) {
         bg-transparent invalid:text-rose-600 dark:invalid:text-rose-400
         transition-[border-color] px-[0.5em] duration-300"
         id={inputName}
-        inputs={inputs}
         onBlur={checkField}
         onChange={() => setInputs({ ...inputs, [inputName]: fieldRef.current.value })}
         onFocus={() => containerRef.current.classList.add('highlighted')}

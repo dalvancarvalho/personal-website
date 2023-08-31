@@ -1,6 +1,6 @@
 /* App.jsx */
 
-import { lazy, Suspense } from 'react'
+import { Suspense } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import { gsap } from 'gsap'
 import { Helmet } from 'react-helmet-async'
@@ -38,3 +38,5 @@ function App() {
 }
 
 export default App
+
+// TESTAR LAZYLOAD
