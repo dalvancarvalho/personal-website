@@ -24,18 +24,18 @@ const socialNetworks = [
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/',
   },
-  {
-    color: 'hover:text-[#0f1419] focus-visible:text-[#0f1419]',
-    icon: faXTwitter,
-    name: 'X',
-    url: 'https://x.com/dalvanc_',
-  },
-  {
-    color: 'hover:text-[#f2016d] focus-visible:text-[#f2016d]',
-    icon: faInstagram,
-    name: 'Instagram',
-    url: 'https://instagram.com/dalvanc_',
-  },
+  // {
+  //   color: 'hover:text-[#0f1419] focus-visible:text-[#0f1419]',
+  //   icon: faXTwitter,
+  //   name: 'X',
+  //   url: 'https://x.com/dalvanc_',
+  // },
+  // {
+  //   color: 'hover:text-[#f2016d] focus-visible:text-[#f2016d]',
+  //   icon: faInstagram,
+  //   name: 'Instagram',
+  //   url: 'https://instagram.com/dalvanc_',
+  // },
   {
     color: 'hover:text-[#d0232b] focus-visible:text-[#d0232b]',
     icon: faLastfm,
