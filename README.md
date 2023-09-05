@@ -1,23 +1,21 @@
 <h1 align="center">Dalvan Carvalho's personal page</h1>
 
-<div style="margin-top: 24px; margin-bottom: 24px; display: flex; flex-direction: column; align-items: center; gap: 20px">
-  <div style="display: flex; gap: 12px">
-    <img 
-      src="https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page"
-      alt="vercel deployment status"
-    />
-    <img 
-      src="https://img.shields.io/badge/license-MIT-blue"
-      alt="license type"
-    />
-    <img 
-      src="https://img.shields.io/badge/languages-2-yellow"
-      alt="languages supported"
-    />
-  </div>
+<div align="center">
+  <img 
+    src="https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page"
+    alt="vercel deployment status"
+  />
+  <img 
+    src="https://img.shields.io/badge/license-MIT-blue"
+    alt="license type"
+  />
+  <img 
+    src="https://img.shields.io/badge/languages-2-yellow"
+    alt="languages supported"
+  />
 </div>
 
-<p style="margin-bottom: 24px; text-align: center">
+<p align="center">
   Welcome to the repository of my personal page, built with
   <a href="https://vitejs.dev/" rel="noopener noreferrer" target="_blank">
     <strong>Vite</strong>
@@ -52,7 +50,6 @@
 
 ```
 npm install
-
 ```
 
 3. Run the development server:
@@ -77,7 +74,7 @@ npx vite preview
 
 ## ⬩ References
 
-### Fonts
+### ⬩ Fonts
 
 | Element      | Font Family |
 | ------------ | :---------: |
@@ -86,7 +83,7 @@ npx vite preview
 | Code snippet |  Fira Code  |
 | Special      |  Rock Salt  |
 
-### Colors
+### ⬩ Colors
 
 | Role                   | Tailwind name  |                              Hex Code                              |
 | ---------------------- | :------------: | :----------------------------------------------------------------: |
