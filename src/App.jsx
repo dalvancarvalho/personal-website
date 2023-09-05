@@ -1,7 +1,6 @@
 /* App.jsx */
 
 import { Suspense } from 'react'
-import { Analytics } from '@vercel/analytics/react'
 import { gsap } from 'gsap'
 import { Helmet } from 'react-helmet-async'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -30,7 +29,6 @@ function App() {
         <Header />
         <Main>
           <AppRoutes />
-          <Analytics />
         </Main>
       </Suspense>
     </>
@@ -38,5 +36,3 @@ function App() {
 }
 
 export default App
-
-// TESTAR LAZYLOAD
