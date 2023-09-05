@@ -135,6 +135,7 @@
           "message": {
             "error": "There was a problem sending your message. <br>Try again later.",
             "incomplete": "Fill out all the fields of the form!",
+            "short": "The message should have at least <br>50 characters!",
             "success": "Message sent successfully!"
           },
           "nav": {

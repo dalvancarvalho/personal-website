@@ -135,6 +135,7 @@
           "message": {
             "error": "Houve um problema no envio de sua mensagem. <br>Tente novamente mais tarde.",
             "incomplete": "Preencha todos os campos do formulário!",
+            "short": "A mensagem deve ter pelo menos <br>50 caracteres!",
             "success": "Mensagem enviada com sucesso!"
           },
           "nav": {

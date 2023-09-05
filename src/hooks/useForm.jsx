@@ -26,17 +26,27 @@ function useForm() {
     }, 5000)
 
     return () => clearTimeout(timer)
-  }, [message.active])
+  }, [message])
 
   function handleSubmit(event) {
     // Handles the data of the form when the submit button is pressed
 
     event.preventDefault()
 
-    const formFields = Object.values(inputs)
-    const isFormComplete = formFields.every((field) => field !== '')
+    const inputFields = Object.values(inputs)
+    const message = inputFields[2]
+    const isFormComplete = inputFields.every((input) => input !== '')
+    const isMessageShort = message.length < 50
 
-    isFormComplete ? sendEmail() : setMessage({ active: true, status: 'incomplete' })
+    if (isFormComplete && !isMessageShort) {
+      sendEmail()
+    } else if (isFormComplete && isMessageShort) {
+      // ⚠️ Displays a message saying that the 'message' field should have at least 50 characters
+      setMessage({ active: true, status: 'short' })
+    } else {
+      // ⚠️ Displays a message saying that all the fields should be filled
+      setMessage({ active: true, status: 'incomplete' })
+    }
   }
 
   async function sendEmail() {
@@ -58,10 +68,13 @@ function useForm() {
       console.error(err)
     } finally {
       if (!response || response.status !== 200) {
-        setMessage({ active: true, status: 'error' }) // Displays an error message
+        // ❌ Displays an error message
+        setMessage({ active: true, status: 'error' })
       } else {
-        setMessage({ active: true, status: 'success' }) // Displays a success message
-        setInputs({ name: '', email: '', message: '' }) // Resets all the inputs
+        // ✔️ Displays a success message
+        setMessage({ active: true, status: 'success' })
+        // Resets all the inputs
+        setInputs({ name: '', email: '', message: '' })
       }
 
       setIsSubmitting(false)
