@@ -17,8 +17,6 @@
   />
 </div>
 
-&nbsp;
-
 <p align="center">
   Welcome to the repository of my personal page, built with
   <a href="https://vitejs.dev/"><strong>Vite</strong></a>
@@ -32,17 +30,17 @@
 
 &nbsp;
 
-![banner](https://raw.githubusercontent.com/dalvancarvalho/personal-page/main/public/images/og-banner.png 'banner')
+![banner](/public/images/og-banner.png 'banner')
 
-## ⬩ Some quick reminders:
+## ▶️ Some quick reminders:
 
-- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [**GitHub profile**](https://github.com/dalvancarvalho){:target="\_blank"} and all coding-related content in English to reach a wider audience. If you have difficulty reading in English or simply prefer Portuguese, you can find the Portuguese version of this ReadMe [**here**](/public/resume-pt-br.pdf){:target="\_blank"}.
-- You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to my URL ([**dalvanc.com**](https://dalvanc.com/){:target="\_blank"}).
+- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [**GitHub profile**](https://github.com/dalvancarvalho) and all coding-related content in English to reach a wider audience. If you have difficulty reading in English or simply prefer Portuguese, you can find the Portuguese version of this ReadMe [**here**](/public/resume-pt-br.pdf).
+- You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to my URL ([**dalvanc.com**](https://dalvanc.com/)).
 - This page is continually evolving, so stay tuned for future updates!
 
-## ⬩ Installation
+## ▶️ Installation
 
-1. Be sure to have **Node.js** installed in your system. In case you don't, download it [**here**](https://nodejs.org/en){:target="\_blank"}. Go for the **LTS** version if you are not sure or never installed it before.
+1. Be sure to have **Node.js** installed in your system. In case you don't, download it [**here**](https://nodejs.org/en). Go for the **LTS** version if you are not sure or never installed it before.
 
 2. Install all dependencies of the project:
 
@@ -56,7 +54,7 @@ npm install
 npx vite
 ```
 
-## ⬩ Building and running for production
+## ▶️ Building and running for production
 
 1. Generate a production build:
 
@@ -70,7 +68,7 @@ npx vite build
 npx vite preview
 ```
 
-## ⬩ References
+## ▶️ References
 
 ### ⬩ Fonts
 
