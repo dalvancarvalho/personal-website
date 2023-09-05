@@ -1,5 +1,7 @@
 <h1 align="center">Dalvan Carvalho's personal page</h1>
 
+&nbsp;
+
 <div align="center">
   <img 
     src="https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page"
@@ -15,36 +17,32 @@
   />
 </div>
 
+&nbsp;
+
 <p align="center">
   Welcome to the repository of my personal page, built with
-  <a href="https://vitejs.dev/" rel="noopener noreferrer" target="_blank">
-    <strong>Vite</strong>
-  </a>
+  <a href="https://vitejs.dev/"><strong>Vite</strong></a>
   and
-  <a href="https://react.dev/" rel="noopener noreferrer" target="_blank">
-    <strong>React,</strong>
-  </a>
+  <a href="https://react.dev/"><strong>React</strong>,</a>
   and deployed with
-  <a href="https://vercel.com/" rel="noopener noreferrer" target="_blank">
-    <strong>Vercel!</strong>
-  </a>
+  <a href="https://vercel.com/"><strong>Vercel</strong>!</a>
   You can access the website <strong>right now</strong>, just go to
-  <a href="https://dalvanc.com/" rel="noopener noreferrer" target="_blank">
-    <strong>dalvanc.com</strong>.
-  </a>
+  <a href="https://dalvanc.com/"><strong>dalvanc.com</strong>.</a>
 </p>
+
+&nbsp;
 
 ![banner](https://raw.githubusercontent.com/dalvancarvalho/personal-page/main/public/images/og-banner.png 'banner')
 
 ## ⬩ Some quick reminders:
 
-- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [**GitHub profile**](https://github.com/dalvancarvalho) and all coding-related content in English to reach a wider audience. If you have difficulty reading in English or simply prefer Portuguese, you can find the Portuguese version of this ReadMe **here**.
-- You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to my URL ([**dalvanc.com**](https://dalvanc.com/)).
+- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [**GitHub profile**](https://github.com/dalvancarvalho){:target="\_blank"} and all coding-related content in English to reach a wider audience. If you have difficulty reading in English or simply prefer Portuguese, you can find the Portuguese version of this ReadMe [**here**](/public/resume-pt-br.pdf){:target="\_blank"}.
+- You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to my URL ([**dalvanc.com**](https://dalvanc.com/){:target="\_blank"}).
 - This page is continually evolving, so stay tuned for future updates!
 
 ## ⬩ Installation
 
-1. Be sure to have **Node.js** installed in your system. In case you don't, download it [**here**](https://nodejs.org/en). Go for the **LTS** version if you are not sure or never installed it before.
+1. Be sure to have **Node.js** installed in your system. In case you don't, download it [**here**](https://nodejs.org/en){:target="\_blank"}. Go for the **LTS** version if you are not sure or never installed it before.
 
 2. Install all dependencies of the project:
 
@@ -85,11 +83,11 @@ npx vite preview
 
 ### ⬩ Colors
 
-| Role                   | Tailwind name  |                              Hex Code                              |
-| ---------------------- | :------------: | :----------------------------------------------------------------: |
-| Accent                 |    blue-600    | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
-| Accent (dark mode)     |   orange-500   | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
-| Background             | _custom color_ | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
-| Background (dark mode) | _custom color_ | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
-| Text                   |   slate-600    | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
-| Text (dark mode)       |    gray-400    | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
+| Role                   | Tailwind's name |                              Hex Code                              |
+| ---------------------- | :-------------: | :----------------------------------------------------------------: |
+| Accent                 |    blue-600     | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
+| Accent (dark mode)     |   orange-500    | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
+| Background             | _custom color_  | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
+| Background (dark mode) | _custom color_  | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
+| Text                   |    slate-600    | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
+| Text (dark mode)       |    gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
