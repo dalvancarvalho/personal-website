@@ -1,9 +1,15 @@
-<div align="center">
-  <h1 align="center">
-    Dalvan Carvalho's personal page
-  </h1>
+<h1 align="center">
+  Dalvan Carvalho's personal page
+</h1>
 
-![Vercel](https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page)
+<img 
+  align="center"
+  src="https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page"
+  alt="vercel deployment status"
+/>
 
-  <img alt="Logo" src="https://raw.githubusercontent.com/dalvancarvalho/personal-page/main/public/images/og-banner.png" width="100" />
-</div>
+<img
+  width="auto"
+  src="https://raw.githubusercontent.com/dalvancarvalho/personal-page/main/public/images/og-banner.png"
+  alt="Logo"
+/>
