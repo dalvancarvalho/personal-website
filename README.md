@@ -12,7 +12,7 @@
   />
   &nbsp;
   <img 
-    src="https://img.shields.io/badge/languages-2-yellow"
+    src="https://img.shields.io/badge/supported_languages-2-yellow"
     alt="languages supported"
   />
 </div>
@@ -41,33 +41,44 @@
 - [Some quick notes](#some-quick-notes)
 - [About](#about)
 - [Appearance](#appearance)
-  - [Desktop](#desktop)
+  - [Desktop](#-desktop)
   - [Mobile](#-mobile)
-- [Resources](#--resources)
-- [Installation](#-installation)
+- [Resources](#resources)
+- [Installation](#installation)
 - [Building and running for production](#building-and-running-for-production)
-- [References](#references)
-  - [Fonts](#fonts)
-  - [Colors](#colors)
-  - [Icons](#icons)
+- [Layout references](#layout-references)
+  - [Fonts](#-fonts)
+  - [Colors](#-colors)
+  - [Icons](#-icons)
+- [License](#license)
 
 ## Some quick notes
 
 - Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [GitHub profile](https://github.com/dalvancarvalho) and all coding-related content in English to reach a wider audience. If you have difficulty reading in English or simply prefer Portuguese, you can find the Portuguese version of this ReadMe [here](./README-pt.md).
-- You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to my page URL: [https://dalvanc.com/](https://dalvanc.com/).
+- You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to this URL: [https://dalvanc.com/](https://dalvanc.com/).
 - The page is continually evolving, so stay tuned for future updates!
 
 ## About
 
-## ▶️ Appearence
+## Appearence
+
+This project counts with a light and a dark version. You can see the preview of both in the screenshots below:
 
 ### ⬩ Desktop
 
+#### Light:
+
+#### Dark:
+
 ### ⬩ Mobile
 
-## ▶️ Resources
+#### Light:
 
-## ▶️ Installation
+#### Dark:
+
+## Resources
+
+## Installation
 
 1. Be sure to have **Node.js** installed in your system. In case you don't, download it [here](https://nodejs.org/en). Go for the **LTS** version if you are not sure or never installed it before.
 
@@ -97,16 +108,16 @@
    npx vite preview
    ```
 
-## References
+## Layout references
 
 ### ⬩ Fonts
 
-| Text element | Font Family |
-| ------------ | :---------: |
-| Title        |  Mark Pro   |
-| Paragraph    |  Urbanist   |
-| Code snippet |  Fira Code  |
-| Special      |  Rock Salt  |
+| Text element |                       Font family                        |    Type    |
+| ------------ | :------------------------------------------------------: | :--------: |
+| Title        |         [Mark Pro](https://8font.com/mark-pro/)          | sans-serif |
+| Paragraph    |  [Urbanist](https://fonts.google.com/specimen/Urbanist)  | sans-serif |
+| Code snippet | [Fira Code](https://fonts.google.com/specimen/Fira+Code) | monospace  |
+| Special      | [Rock Salt](https://fonts.google.com/specimen/Rock+Salt) |  cursive   |
 
 ### ⬩ Colors
 
@@ -120,3 +131,9 @@
 | Text (dark mode)       |    gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
 
 ### ⬩ Icons
+
+All icons used are from [Font Awesome](https://fontawesome.com/).
+
+## License
+
+This project has a **MIT license**. You can read it [here](./LICENSE).

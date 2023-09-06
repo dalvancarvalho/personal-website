@@ -9,9 +9,9 @@ const projects = [
 
   {
     altText: 'pages.home.projects.brGeo.altText',
-    demoUrl: '/',
+    demoUrl: null,
     description: 'pages.home.projects.brGeo.description',
-    githubUrl: '',
+    githubUrl: null,
     isFinished: true,
     name: 'pages.home.projects.brGeo.name',
     routeName: 'br-geo',
@@ -81,9 +81,9 @@ const projects = [
   },
   {
     altText: 'pages.home.projects.splitIt.altText',
-    demoUrl: '/',
+    demoUrl: null,
     description: 'pages.home.projects.splitIt.description',
-    githubUrl: '',
+    githubUrl: null,
     isFinished: false,
     name: 'pages.home.projects.splitIt.name',
     routeName: 'split-it',

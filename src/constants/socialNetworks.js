@@ -2,11 +2,9 @@
 
 import {
   faGithub,
-  // faInstagram,
   faLastfm,
   faLinkedin,
   faSpotify,
-  // faXTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
 const socialNetworks = [
