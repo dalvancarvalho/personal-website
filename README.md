@@ -60,35 +60,65 @@
 
 ## About
 
+This project was created to serve as my personal page/portfolio and document my journey in the world of Front-End development. It was my first time using **React**, providing a great opportunity to learn about the advantages it offers over vanilla JavaScript. All resources used in its development are listed in the corresponding section.
+
 ## Appearence
 
-This project counts with a light and a dark version. You can see the preview of both in the screenshots below:
+The page counts with a light and a dark version. You can see the previews of both in the screenshots below:
 
 ### ⬩ Desktop
 
 #### Light:
 
+<div align="center">
+  <img style="width: 700px" src="./src/assets/png/desktop-light.png" alt="desktop view in light mode" />
+</div>
+
 #### Dark:
+
+<div align="center">
+  <img style="width: 700px" src="./src/assets/png/desktop-dark.png" alt="desktop view in dark mode" />
+</div>
 
 ### ⬩ Mobile
 
-#### Light:
+#### Light (left) and Dark (right):
 
-#### Dark:
+<div align="center">
+  <img style="width: 300px; margin-right: 48px" src="./src/assets/png/mobile-light.png" alt="mobile view in light mode" />
+  <img style="width: 300px" src="./src/assets/png/mobile-dark.png" alt="mobile view in dark mode" />
+</div>
 
 ## Resources
 
+Here is a list of all the resources used in the development of the page:
+
+| Resource                                                                      | Usage                                                 |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [EmailJS](https://www.emailjs.com/)                                           | E-mail sending, directly from the contact form        |
+| [Font Awesome](https://fontawesome.com/)                                      | Icons and brand logos                                 |
+| [GSAP](https://greensock.com/gsap/)                                           | Animations across the page                            |
+| [i18next](https://react.i18next.com/)                                         | Internationalization feature                          |
+| [Prism](https://prismjs.com/)                                                 | Syntax highlighting for code snippets                 |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Metadata manipulation                                 |
+| [React Router](https://reactrouter.com/en/main/)                              | Routing management                                    |
+| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Anchor tags management across the page                |
+| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Parallax effect in the hero section and project cards |
+
 ## Installation
 
-1. Be sure to have **Node.js** installed in your system. In case you don't, download it [here](https://nodejs.org/en). Go for the **LTS** version if you are not sure or never installed it before.
+1. Make sure you have **Node.js** installed on your system. If you don't have it installed, you can download it [here](https://nodejs.org/en). Go for the **LTS** version if you are not sure or never installed it before.
 
-2. Install all dependencies of the project:
+2. Once you have forked the repository, navigate to its folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)). <br>
+   **Remember:** to fork a repository or perform any other Git-related tasks, you must have **Git** installed on your system as well. If you don't have it installed, you can download it [here](https://git-scm.com/).
+
+3. Install all dependencies of the project:
 
    ```
    npm install
    ```
 
-3. Run the development server:
+4. Run the development server:
 
    ```
    npx vite
@@ -136,4 +166,4 @@ All icons used are from [Font Awesome](https://fontawesome.com/).
 
 ## License
 
-This project has a **MIT license**. You can read it [here](./LICENSE).
+This project is licensed under the **MIT license**. You can read the full license terms by clicking [here](./LICENSE).

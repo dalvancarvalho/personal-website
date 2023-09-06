@@ -1,1 +1,169 @@
-# In progress...
+<h1 align="center">Dalvan Carvalho's personal page</h1>
+
+<div align="center">
+  <img 
+    src="https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page"
+    alt="vercel deployment status"
+  />
+  &nbsp;
+  <img 
+    src="https://img.shields.io/badge/license-MIT-blue"
+    alt="license type"
+  />
+  &nbsp;
+  <img 
+    src="https://img.shields.io/badge/supported_languages-2-yellow"
+    alt="languages supported"
+  />
+</div>
+
+<br>
+
+<p align="center">
+  Welcome to the repository of my personal page, built with
+  <a href="https://vitejs.dev/">Vite</a> and
+  <a href="https://react.dev/">React</a>, and deployed with
+  <a href="https://vercel.com/">Vercel</a>!
+  <br>
+  The page is available in <strong>Brazilian Portuguese</strong> and <strong>English (US)</strong>.
+</p>
+
+<br>
+
+<div align="center">
+  <img style="width: 700px" src="./public/images/og-banner.png" alt="banner" />
+</div>
+
+<br>
+
+# Table of contents
+
+- [Some quick notes](#some-quick-notes)
+- [About](#about)
+- [Appearance](#appearance)
+  - [Desktop](#-desktop)
+  - [Mobile](#-mobile)
+- [Resources](#resources)
+- [Installation](#installation)
+- [Building and running for production](#building-and-running-for-production)
+- [Layout references](#layout-references)
+  - [Fonts](#-fonts)
+  - [Colors](#-colors)
+  - [Icons](#-icons)
+- [License](#license)
+
+## Some quick notes
+
+- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [GitHub profile](https://github.com/dalvancarvalho) and all coding-related content in English to reach a wider audience. If you have difficulty reading in English or simply prefer Portuguese, you can find the Portuguese version of this ReadMe [here](./README-pt.md).
+- You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to this URL: [https://dalvanc.com/](https://dalvanc.com/).
+- The page is continually evolving, so stay tuned for future updates!
+
+## About
+
+This project was created to serve as my personal page/portfolio and document my journey in the world of Front-End development. It was my first time using **React**, providing a great opportunity to learn about the advantages it offers over vanilla JavaScript. All resources used in its development are listed in the corresponding section.
+
+## Appearence
+
+The page counts with a light and a dark version. You can see the previews of both in the screenshots below:
+
+### ⬩ Desktop
+
+#### Light:
+
+<div align="center">
+  <img style="width: 700px" src="./src/assets/png/desktop-light.png" alt="desktop view in light mode" />
+</div>
+
+#### Dark:
+
+<div align="center">
+  <img style="width: 700px" src="./src/assets/png/desktop-dark.png" alt="desktop view in dark mode" />
+</div>
+
+### ⬩ Mobile
+
+#### Light (left) and Dark (right):
+
+<div align="center">
+  <img style="width: 300px; margin-right: 48px" src="./src/assets/png/mobile-light.png" alt="mobile view in light mode" />
+  <img style="width: 300px" src="./src/assets/png/mobile-dark.png" alt="mobile view in dark mode" />
+</div>
+
+## Resources
+
+Here is a list of all the resources used in the development of the page:
+
+| Resource                                                                      | Usage                                                 |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [EmailJS](https://www.emailjs.com/)                                           | E-mail sending, directly from the contact form        |
+| [Font Awesome](https://fontawesome.com/)                                      | Icons and brand logos                                 |
+| [GSAP](https://greensock.com/gsap/)                                           | Animations across the page                            |
+| [i18next](https://react.i18next.com/)                                         | Internationalization feature                          |
+| [Prism](https://prismjs.com/)                                                 | Syntax highlighting for code snippets                 |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Metadata manipulation                                 |
+| [React Router](https://reactrouter.com/en/main/)                              | Routing management                                    |
+| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Anchor tags management across the page                |
+| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Parallax effect in the hero section and project cards |
+
+## Installation
+
+1. Make sure you have **Node.js** installed on your system. If you don't have it installed, you can download it [here](https://nodejs.org/en). Go for the **LTS** version if you are not sure or never installed it before.
+
+2. Once you have forked the repository, navigate to its folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)). <br>
+   **Remember:** to fork a repository or perform any other Git-related tasks, you must have **Git** installed on your system as well. If you don't have it installed, you can download it [here](https://git-scm.com/).
+
+3. Install all dependencies of the project:
+
+   ```
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```
+   npx vite
+   ```
+
+## Building and running for production
+
+1. Generate a production build:
+
+   ```
+   npx vite build
+   ```
+
+2. Preview the production build (as it will appear when deployed):
+
+   ```
+   npx vite preview
+   ```
+
+## Layout references
+
+### ⬩ Fonts
+
+| Text element |                       Font family                        |    Type    |
+| ------------ | :------------------------------------------------------: | :--------: |
+| Title        |         [Mark Pro](https://8font.com/mark-pro/)          | sans-serif |
+| Paragraph    |  [Urbanist](https://fonts.google.com/specimen/Urbanist)  | sans-serif |
+| Code snippet | [Fira Code](https://fonts.google.com/specimen/Fira+Code) | monospace  |
+| Special      | [Rock Salt](https://fonts.google.com/specimen/Rock+Salt) |  cursive   |
+
+### ⬩ Colors
+
+| Role                   | Tailwind's name |                              Hex code                              |
+| ---------------------- | :-------------: | :----------------------------------------------------------------: |
+| Accent                 |    blue-600     | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
+| Accent (dark mode)     |   orange-500    | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
+| Background             | _custom color_  | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
+| Background (dark mode) | _custom color_  | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
+| Text                   |    slate-600    | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
+| Text (dark mode)       |    gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
+
+### ⬩ Icons
+
+All icons used are from [Font Awesome](https://fontawesome.com/).
+
+## License
+
+This project is licensed under the **MIT license**. You can read the full license terms by clicking [here](./LICENSE).
