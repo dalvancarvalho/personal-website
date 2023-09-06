@@ -1,14 +1,16 @@
 <h1 align="center">Dalvan Carvalho's personal page</h1>
 
-<div style="display: flex; justify-content: center; gap: 12px">
+<div align="center">
   <img 
     src="https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page"
     alt="vercel deployment status"
   />
+  &nbsp;
   <img 
     src="https://img.shields.io/badge/license-MIT-blue"
     alt="license type"
   />
+  &nbsp;
   <img 
     src="https://img.shields.io/badge/languages-2-yellow"
     alt="languages supported"
@@ -29,11 +31,7 @@
 <br>
 
 <div align="center">
-  <img
-    style="width: 650px"
-    src="./public/images/og-banner.png"
-    alt="banner"
-  />
+  <img style="width: 700px" src="./public/images/og-banner.png" alt="banner" />
 </div>
 
 <br>
@@ -45,8 +43,8 @@
 - [Appearance](#appearance)
   - [Desktop](#desktop)
   - [Mobile](#-mobile)
-- [Resources](#-resources)
-- [Installation](#installation)
+- [Resources](#--resources)
+- [Installation](#-installation)
 - [Building and running for production](#building-and-running-for-production)
 - [References](#references)
   - [Fonts](#fonts)
@@ -55,21 +53,21 @@
 
 ## Some quick notes
 
-- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [GitHub profile](https://github.com/dalvancarvalho) and all coding-related content in English to reach a wider audience. If you have difficulty reading in English or simply prefer Portuguese, you can find the Portuguese version of this ReadMe [here](/public/resume-pt-br.pdf).
+- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [GitHub profile](https://github.com/dalvancarvalho) and all coding-related content in English to reach a wider audience. If you have difficulty reading in English or simply prefer Portuguese, you can find the Portuguese version of this ReadMe [here](./README-pt.md).
 - You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to my page URL: [https://dalvanc.com/](https://dalvanc.com/).
 - The page is continually evolving, so stay tuned for future updates!
 
 ## About
 
-## Appearence
+## ▶️ Appearence
 
-### Desktop
+### ⬩ Desktop
 
 ### ⬩ Mobile
 
 ## ▶️ Resources
 
-## Installation
+## ▶️ Installation
 
 1. Be sure to have **Node.js** installed in your system. In case you don't, download it [here](https://nodejs.org/en). Go for the **LTS** version if you are not sure or never installed it before.
 
@@ -101,7 +99,7 @@
 
 ## References
 
-### Fonts
+### ⬩ Fonts
 
 | Text element | Font Family |
 | ------------ | :---------: |
@@ -110,7 +108,7 @@
 | Code snippet |  Fira Code  |
 | Special      |  Rock Salt  |
 
-### Colors
+### ⬩ Colors
 
 | Role                   | Tailwind's name |                              Hex code                              |
 | ---------------------- | :-------------: | :----------------------------------------------------------------: |
@@ -121,4 +119,4 @@
 | Text                   |    slate-600    | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
 | Text (dark mode)       |    gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
 
-### Icons
+### ⬩ Icons
