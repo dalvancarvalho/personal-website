@@ -54,7 +54,6 @@
 
 ## Some quick notes
 
-- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [GitHub profile](https://github.com/dalvancarvalho) and all coding-related content in English to reach a wider audience. If you have difficulty reading in English or simply prefer Portuguese, you can find the Portuguese version of this ReadMe [here](./README-pt.md).
 - You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to this URL: [https://dalvanc.com/](https://dalvanc.com/).
 - The page is continually evolving, so stay tuned for future updates!
 
@@ -62,7 +61,7 @@
 
 This project was created to serve as my personal page/portfolio and document my journey in the world of Front-End development. It was my first time using **React**, providing a great opportunity to learn about the advantages it offers over vanilla JavaScript. All resources used in its development are listed in the corresponding section.
 
-## Appearence
+## Appearance
 
 The page counts with a light and a dark version. You can see the previews of both in the screenshots below:
 
@@ -85,7 +84,10 @@ The page counts with a light and a dark version. You can see the previews of bot
 #### Light (left) and Dark (right):
 
 <div align="center">
-  <img style="width: 300px; margin-right: 48px" src="./src/assets/png/mobile-light.png" alt="mobile view in light mode" />
+  <img style="width: 300px" src="./src/assets/png/mobile-light.png" alt="mobile view in light mode" />
+  &nbsp;
+  &nbsp;
+  &nbsp;
   <img style="width: 300px" src="./src/assets/png/mobile-dark.png" alt="mobile view in dark mode" />
 </div>
 
@@ -138,7 +140,7 @@ Here is a list of all the resources used in the development of the page:
    npx vite preview
    ```
 
-## Layout references
+## Styling references
 
 ### ⬩ Fonts
 
