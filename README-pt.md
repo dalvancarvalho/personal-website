@@ -1,31 +1,32 @@
-<h1 align="center">Dalvan Carvalho's personal page</h1>
+<h1 align="center">Página pessoal de Dalvan Carvalho</h1>
 
 <div align="center">
   <img 
     src="https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page"
-    alt="vercel deployment status"
+    alt="status do deploy na vercel"
   />
   &nbsp;
   <img 
-    src="https://img.shields.io/badge/license-MIT-blue"
-    alt="license type"
+    src="https://img.shields.io/badge/licença-MIT-blue"
+    alt="tipo da licença"
   />
   &nbsp;
   <img 
-    src="https://img.shields.io/badge/supported_languages-2-yellow"
-    alt="languages supported"
+    src="https://img.shields.io/badge/idiomas_suportados-2-yellow"
+    alt="idiomas suportados"
   />
 </div>
 
 <br>
 
 <p align="center">
-  Welcome to the repository of my personal page, built with
-  <a href="https://vitejs.dev/">Vite</a> and
-  <a href="https://react.dev/">React</a>, and deployed with
+  Bem-vindo ao repositório da minha página pessoal, construída com
+  <a href="https://vitejs.dev/">Vite</a> e
+  <a href="https://react.dev/">React</a>, e implementada com
   <a href="https://vercel.com/">Vercel</a>!
   <br>
-  The page is available in <strong>Brazilian Portuguese</strong> and <strong>English (US)</strong>.
+  A página está disponível em <strong>Português (Brasil)</strong> e <strong>Inglês (Estados Unidos)</strong>.
+
 </p>
 
 <br>
@@ -36,136 +37,160 @@
 
 <br>
 
-# Table of contents
+## Índice
 
-- [Some quick notes](#some-quick-notes)
-- [About](#about)
-- [Appearance](#appearance)
+- [Algumas notas rápidas](#algumas-notas-rápidas)
+- [Sobre](#sobre)
+- [Aparência](#aparência)
   - [Desktop](#-desktop)
-  - [Mobile](#-mobile)
-- [Resources](#resources)
-- [Installation](#installation)
-- [Building and running for production](#building-and-running-for-production)
-- [Layout references](#layout-references)
-  - [Fonts](#-fonts)
-  - [Colors](#-colors)
-  - [Icons](#-icons)
-- [License](#license)
+  - [Dispositivos móveis](#-dispositivos-móveis)
+- [Recursos](#recursos)
+- [Instalação](#instalação)
+- [Criando a build e rodando em produção](#fazendo-a-build-e-rodando-em-produção)
+- [Referências de estilo](#referências-de-estilo)
+  - [Fontes](#-fontes)
+  - [Cores](#-cores)
+  - [Ícones](#-ícones)
+- [Licença](#licença)
 
-## Some quick notes
+## Algumas notas rápidas
 
-- You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to this URL: [https://dalvanc.com/](https://dalvanc.com/).
-- The page is continually evolving, so stay tuned for future updates!
+- Você é livre para dar _fork_ neste repositório se desejar, mas por favor não esqueça de me dar os devidos créditos se o seu plano for usá-lo para outra finalidade que não seja estudo. Se possível, crie um link apontando para esta URL: [https://dalvanc.com/](https://dalvanc.com/).
 
-## About
+- A página está em constante evolução, então fique ligado para atualizações futuras!
 
-This project was created to serve as my personal page/portfolio and document my journey in the world of Front-End development. It was my first time using **React**, providing a great opportunity to learn about the advantages it offers over vanilla JavaScript. All resources used in its development are listed in the corresponding section.
+## Sobre
 
-## Appearance
+Este projeto foi criado para servir como minha página pessoal/portfólio e documentar minha jornada no mundo do desenvolvimento Front-End. Foi a minha primeira vez utilizando **React**, proporcionando uma ótima oportunidade para aprender sobre as vantagens que ele oferece frente ao JavaScript tradicional. Todos os recursos utilizados em seu desenvolvimento estão listados na seção [Recursos](#recursos).
 
-The page counts with a light and a dark version. You can see the previews of both in the screenshots below:
+## Aparência
+
+A página conta com uma versão clara e uma escura. Você pode pré-visualizar ambas nas capturas de tela abaixo:
 
 ### ⬩ Desktop
 
-#### Light:
+**Versão clara:**
 
 <div align="center">
-  <img style="width: 700px" src="./src/assets/png/desktop-light.png" alt="desktop view in light mode" />
+  <img
+    style="width: 700px"
+    src="./src/assets/png/desktop-light.png" 
+    alt="visão de um desktop na versão clara"
+  />
 </div>
 
-#### Dark:
+**Versão escura:**
 
 <div align="center">
-  <img style="width: 700px" src="./src/assets/png/desktop-dark.png" alt="desktop view in dark mode" />
+  <img
+    style="width: 700px"
+    src="./src/assets/png/desktop-dark.png"
+    alt="visão de um desktop na versão escura"
+  />
 </div>
 
-### ⬩ Mobile
+### ⬩ Dispositivos móveis
 
-#### Light (left) and Dark (right):
+**Versão clara:**
 
 <div align="center">
-  <img style="width: 300px" src="./src/assets/png/mobile-light.png" alt="mobile view in light mode" />
-  &nbsp;
-  &nbsp;
-  &nbsp;
-  <img style="width: 300px" src="./src/assets/png/mobile-dark.png" alt="mobile view in dark mode" />
+  <img
+    style="width: 300px"
+    src="./src/assets/png/mobile-light.png"
+    alt="visão de um dispositivo móvel na versão clara"
+  />
 </div>
 
-## Resources
+<br>
 
-Here is a list of all the resources used in the development of the page:
+**Versão escura:**
 
-| Resource                                                                      | Usage                                                 |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------- |
-| [EmailJS](https://www.emailjs.com/)                                           | E-mail sending, directly from the contact form        |
-| [Font Awesome](https://fontawesome.com/)                                      | Icons and brand logos                                 |
-| [GSAP](https://greensock.com/gsap/)                                           | Animations across the page                            |
-| [i18next](https://react.i18next.com/)                                         | Internationalization feature                          |
-| [Prism](https://prismjs.com/)                                                 | Syntax highlighting for code snippets                 |
-| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Metadata manipulation                                 |
-| [React Router](https://reactrouter.com/en/main/)                              | Routing management                                    |
-| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Anchor tags management across the page                |
-| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Parallax effect in the hero section and project cards |
+<div align="center">
+  <img
+    style="width: 300px"
+    src="./src/assets/png/mobile-dark.png"
+    alt="visão de um dispositivo móvel na versão escura"
+  />
+</div>
 
-## Installation
+## Recursos
 
-1. Make sure you have **Node.js** installed on your system. If you don't have it installed, you can download it [here](https://nodejs.org/en). Go for the **LTS** version if you are not sure or never installed it before.
+Na tabela abaixo, encontram-se todos os recursos utilizados no desenvolvimento da página:
 
-2. Once you have forked the repository, navigate to its folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)). <br>
-   **Remember:** to fork a repository or perform any other Git-related tasks, you must have **Git** installed on your system as well. If you don't have it installed, you can download it [here](https://git-scm.com/).
+| Recurso                                                                       | Utilização                                             |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------ |
+| [EmailJS](https://www.emailjs.com/)                                           | Envio de e-mails, diretamente do formulário de contato |
+| [Font Awesome](https://fontawesome.com/)                                      | Ícones e logomarcas                                    |
+| [GSAP](https://greensock.com/gsap/)                                           | Animações ao longo da página                           |
+| [i18next](https://react.i18next.com/)                                         | Internacionalização da página                          |
+| [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                  |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Manipulação de metadados                               |
+| [React Router](https://reactrouter.com/en/main/)                              | Gerenciamento de rotas                                 |
+| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Gerenciamento de links internos ao longo da página     |
+| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Efeito paralaxe na seção principal e projetos          |
 
-3. Install all dependencies of the project:
+## Instalação
+
+> 📌 **Antes de começar:** Certifique-se de que você tenha o **Node.js** e o **Git** instalados em seu sistema. Você precisará deles para instalar as dependências do projeto e realizar todas as tarefas relacionadas ao Git, como dar um _commit_ e _push_ em suas alterações para o seu próprio repositório no [GitHub](https://github.com/).
+>
+> [**Baixe o Node.js**](https://nodejs.org/pt-br/download) - _Escolha a versão **LTS** se você não tem certeza ou nunca instalou o **Node.js** antes_ <br> [**Baixe o Git**](https://git-scm.com/downloads)
+
+1. Após dar _fork_ neste repositório, navegue até sua pasta e abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (eu recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
+
+2. Instale todas as dependências do projeto:
 
    ```
    npm install
    ```
 
-4. Run the development server:
+3. Execute o servidor de desenvolvimento:
 
    ```
    npx vite
    ```
 
-## Building and running for production
+## Compilando e rodando em produção
 
-1. Generate a production build:
+1. Gere uma compilação de produção:
 
    ```
    npx vite build
    ```
 
-2. Preview the production build (as it will appear when deployed):
+2. Pré-visualize a compilação de produção (como aparecerá quando for implementada):
 
    ```
    npx vite preview
    ```
 
-## Styling references
+## Referências de estilo
 
-### ⬩ Fonts
+### ⬩ Fontes
 
-| Text element |                       Font family                        |    Type    |
-| ------------ | :------------------------------------------------------: | :--------: |
-| Title        |         [Mark Pro](https://8font.com/mark-pro/)          | sans-serif |
-| Paragraph    |  [Urbanist](https://fonts.google.com/specimen/Urbanist)  | sans-serif |
-| Code snippet | [Fira Code](https://fonts.google.com/specimen/Fira+Code) | monospace  |
-| Special      | [Rock Salt](https://fonts.google.com/specimen/Rock+Salt) |  cursive   |
+| Elemento de texto |                     Família da fonte                     |     Tipo     |
+| ----------------- | :------------------------------------------------------: | :----------: |
+| Título            |         [Mark Pro](https://8font.com/mark-pro/)          |  sans-serif  |
+| Parágrafo         |  [Urbanist](https://fonts.google.com/specimen/Urbanist)  |  sans-serif  |
+| Bloco de código   | [Fira Code](https://fonts.google.com/specimen/Fira+Code) | monoespaçada |
+| Especial          | [Rock Salt](https://fonts.google.com/specimen/Rock+Salt) |   cursiva    |
 
-### ⬩ Colors
+### ⬩ Cores
 
-| Role                   | Tailwind's name |                              Hex code                              |
-| ---------------------- | :-------------: | :----------------------------------------------------------------: |
-| Accent                 |    blue-600     | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
-| Accent (dark mode)     |   orange-500    | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
-| Background             | _custom color_  | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
-| Background (dark mode) | _custom color_  | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
-| Text                   |    slate-600    | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
-| Text (dark mode)       |    gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
+| Papel                     | Nome no Tailwind |                         Código hexadecimal                         |
+| ------------------------- | :--------------: | :----------------------------------------------------------------: |
+| Principal                 |     blue-600     | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
+| Principal (versão escura) |    orange-500    | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
+| Fundo                     |  _custom color_  | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
+| Fundo (versão escura)     |  _custom color_  | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
+| Texto                     |    slate-600     | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
+| Texto (versão escura)     |     gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
 
-### ⬩ Icons
+### ⬩ Ícones
 
-All icons used are from [Font Awesome](https://fontawesome.com/).
+Todos os ícones utilizados são do [Font Awesome](https://fontawesome.com/).
 
-## License
+## Licença
 
-This project is licensed under the **MIT license**. You can read the full license terms by clicking [here](./LICENSE).
+Este projeto está licenciado sob a **licença MIT**. Você pode ler os termos completos da licença clicando [aqui](./LICENSE).
+
+&copy; 2023 **Dalvan Carvalho**
