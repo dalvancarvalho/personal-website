@@ -69,49 +69,21 @@ The page counts with a light and a dark version. You can preview both in the scr
 
 ### ⬩ Desktop
 
-**Light version:**
-
 <div align="center">
   <img
     style="width: 700px"
-    src="./src/assets/png/desktop-light.png"
-    alt="desktop view in light mode"
-  />
-</div>
-
-<br>
-
-**Dark version:**
-
-<div align="center">
-  <img
-    style="width: 700px"
-    src="./src/assets/png/desktop-dark.png"
-    alt="desktop view in dark mode"
+    src="./src/assets/png/desktop.png"
+    alt="desktop view in light/dark mode"
   />
 </div>
 
 ### ⬩ Mobile
 
-**Light version:**
-
 <div align="center">
   <img
     style="width: 300px"
-    src="./src/assets/png/mobile-light.png"
-    alt="mobile view in light mode"
-  />
-</div>
-
-<br>
-
-**Dark version:**
-
-<div align="center">
-  <img
-    style="width: 300px"
-    src="./src/assets/png/mobile-dark.png"
-    alt="mobile view in light mode"
+    src="./src/assets/png/mobile.png"
+    alt="mobile view in light/dark mode"
   />
 </div>
 

@@ -46,7 +46,7 @@
   - [Dispositivos móveis](#-dispositivos-móveis)
 - [Recursos](#recursos)
 - [Instalação](#instalação)
-- [Criando a build e rodando em produção](#fazendo-a-build-e-rodando-em-produção)
+- [Compilando e rodando em produção](#compilando-e-rodando-em-produção)
 - [Referências de estilo](#referências-de-estilo)
   - [Fontes](#-fontes)
   - [Cores](#-cores)
@@ -69,47 +69,21 @@ A página conta com uma versão clara e uma escura. Você pode pré-visualizar a
 
 ### ⬩ Desktop
 
-**Versão clara:**
-
 <div align="center">
   <img
     style="width: 700px"
-    src="./src/assets/png/desktop-light.png" 
-    alt="visão de um desktop na versão clara"
-  />
-</div>
-
-**Versão escura:**
-
-<div align="center">
-  <img
-    style="width: 700px"
-    src="./src/assets/png/desktop-dark.png"
-    alt="visão de um desktop na versão escura"
+    src="./src/assets/png/desktop.png"
+    alt="visão de um desktop na cor clara/escura"
   />
 </div>
 
 ### ⬩ Dispositivos móveis
 
-**Versão clara:**
-
 <div align="center">
   <img
     style="width: 300px"
-    src="./src/assets/png/mobile-light.png"
-    alt="visão de um dispositivo móvel na versão clara"
-  />
-</div>
-
-<br>
-
-**Versão escura:**
-
-<div align="center">
-  <img
-    style="width: 300px"
-    src="./src/assets/png/mobile-dark.png"
-    alt="visão de um dispositivo móvel na versão escura"
+    src="./src/assets/png/mobile.png"
+    alt="visão de um dispositivo móvel na cor clara/escura"
   />
 </div>
 
