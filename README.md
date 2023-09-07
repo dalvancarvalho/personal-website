@@ -53,7 +53,7 @@
 
 ## Some quick notes
 
-- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [GitHub profile](https://github.com/dalvancarvalho) and all coding-related content in English in order to reach a wider audience. If you are brazilian (or from another country that speaks Portuguese) and have difficulty reading in English, you can find the Portuguese version of this ReadMe [here](./README-pt.md).
+- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [GitHub profile](https://github.com/dalvancarvalho), and all coding-related content in English to reach a wider audience. If you are Brazilian (or from another country that speaks Portuguese) and have difficulty reading in English, you can find the Portuguese version of this ReadMe [here](./README-pt.md).
 - You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to this URL: [https://dalvanc.com/](https://dalvanc.com/).
 - The page is continually evolving, so stay tuned for future updates!
 
@@ -67,7 +67,7 @@ The page counts with a light and a dark version. You can see the previews of bot
 
 ### ⬩ Desktop
 
-#### Light mode:
+**Light mode:**
 
 <div align="center">
   <img
@@ -77,7 +77,9 @@ The page counts with a light and a dark version. You can see the previews of bot
   />
 </div>
 
-#### Dark mode:
+<br>
+
+**Dark mode:**
 
 <div align="center">
   <img
@@ -89,7 +91,7 @@ The page counts with a light and a dark version. You can see the previews of bot
 
 ### ⬩ Mobile
 
-#### Light mode:
+**Light mode:**
 
 <div align="center">
   <img
@@ -99,7 +101,9 @@ The page counts with a light and a dark version. You can see the previews of bot
   />
 </div>
 
-#### Dark mode:
+<br>
+
+**Dark mode:**
 
 <div align="center">
   <img
@@ -129,7 +133,7 @@ Here is a list of all the resources used in the development of the page:
 
 > 💡 **Before you start:** Make sure you have both **Node.js** and **Git** installed on your system. You will need them to install the project's dependencies and perform all Git-related tasks, such as committing and pushing your changes to your own repository on [GitHub](https://github.com/).
 >
-> [**Download Node.js**](https://nodejs.org/en/download) - _Go for the **LTS** version if you are not sure or never installed it before_ <br> > [**Download Git**](https://git-scm.com/downloads)
+> [**Download Node.js**](https://nodejs.org/en/download) - _Go for the **LTS** version if you are not sure or never installed it before_ <br> [**Download Git**](https://git-scm.com/downloads)
 
 1. After fork this repository, navigate to its folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)).
 
