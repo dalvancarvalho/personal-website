@@ -1,7 +1,13 @@
 {
   "name": "personal-page",
-  "private": true,
-  "version": "0.0.0",
+  "description": "Dalvan Carvalho's personal page",
+  "version": "1.0.0",
+  "author": "Dalvan Carvalho",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dalvancarvalho/personal-page"
+  },
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

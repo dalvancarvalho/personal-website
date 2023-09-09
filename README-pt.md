@@ -24,7 +24,6 @@
   <a href="https://vitejs.dev/">Vite</a> e
   <a href="https://react.dev/">React</a>, e implementada com
   <a href="https://vercel.com/">Vercel</a>!
-  <br>
   A página está disponível em <strong>Português (Brasil)</strong> e <strong>Inglês (Estados Unidos)</strong>.
 
 </p>
@@ -32,7 +31,11 @@
 <br>
 
 <div align="center">
-  <img style="width: 700px" src="./public/images/og-banner.png" alt="banner" />
+  <img
+    style="width: 700px"
+    src="./public/images/og-banner.png"
+    alt="banner"
+  />
 </div>
 
 <br>

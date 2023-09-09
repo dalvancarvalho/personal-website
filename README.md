@@ -30,7 +30,11 @@
 <br>
 
 <div align="center">
-  <img style="width: 700px" src="./public/images/og-banner.png" alt="banner" />
+  <img
+    style="width: 700px"
+    src="./public/images/og-banner.png"
+    alt="banner"
+  />
 </div>
 
 <br>
