@@ -1,31 +1,10 @@
-<h1 align="center">Dalvan Carvalho's personal page</h1>
+# Dalvan Carvalho's personal page
 
-<div align="center">
-  <img 
-    src="https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page"
-    alt="vercel deployment status"
-  />
-  &nbsp;
-  <img 
-    src="https://img.shields.io/badge/license-MIT-blue"
-    alt="license type"
-  />
-  &nbsp;
-  <img 
-    src="https://img.shields.io/badge/supported_languages-2-yellow"
-    alt="languages supported"
-  />
-</div>
+![vercel deployment status](https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page)
+![license type](https://img.shields.io/badge/license-MIT-blue)
+![languages supported](https://img.shields.io/badge/supported_languages-2-yellow)
 
-<br>
-
-<p align="center">
-  Welcome to the repository of my personal page, built with
-  <a href="https://vitejs.dev/">Vite</a> and
-  <a href="https://react.dev/">React</a>, and deployed with
-  <a href="https://vercel.com/">Vercel</a>!
-  The page is available in <strong>Brazilian Portuguese</strong> and <strong>English (US)</strong>.
-</p>
+Welcome to the repository of my personal page, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The page is available in **Brazilian Portuguese** and **English (US)**.
 
 <br>
 
@@ -44,15 +23,15 @@
 - [Some quick notes](#some-quick-notes)
 - [About](#about)
 - [Appearance](#appearance)
-  - [Desktop](#-desktop)
-  - [Mobile](#-mobile)
+  - [Desktop](#desktop)
+  - [Mobile](#mobile)
 - [Resources](#resources)
 - [Installation](#installation)
 - [Building and running for production](#building-and-running-for-production)
 - [Style references](#style-references)
-  - [Fonts](#-fonts)
-  - [Colors](#-colors)
-  - [Icons](#-icons)
+  - [Fonts](#fonts)
+  - [Colors](#colors)
+  - [Icons](#icons)
 - [License](#license)
 
 ## Some quick notes
@@ -71,7 +50,7 @@ This project was created to serve as my personal page/portfolio and document my 
 
 The page counts with a light and a dark version. You can preview both in the screenshots below:
 
-### ⬩ Desktop
+### Desktop
 
 <div align="center">
   <img
@@ -81,7 +60,7 @@ The page counts with a light and a dark version. You can preview both in the scr
   />
 </div>
 
-### ⬩ Mobile
+### Mobile
 
 <div align="center">
   <img
@@ -143,7 +122,7 @@ In the table below, all the resources used in the development of the page are li
 
 ## Style references
 
-### ⬩ Fonts
+### Fonts
 
 | Text element |                       Font family                        |    Type    |
 | ------------ | :------------------------------------------------------: | :--------: |
@@ -152,7 +131,7 @@ In the table below, all the resources used in the development of the page are li
 | Code snippet | [Fira Code](https://fonts.google.com/specimen/Fira+Code) | monospace  |
 | Special      | [Rock Salt](https://fonts.google.com/specimen/Rock+Salt) |  cursive   |
 
-### ⬩ Colors
+### Colors
 
 | Role                      | Name in Tailwind |                              Hex code                              |
 | ------------------------- | :--------------: | :----------------------------------------------------------------: |
@@ -163,7 +142,7 @@ In the table below, all the resources used in the development of the page are li
 | Text                      |    slate-600     | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
 | Text (dark version)       |     gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
 
-### ⬩ Icons
+### Icons
 
 All icons used are from [Font Awesome](https://fontawesome.com/).
 

@@ -1,32 +1,10 @@
-<h1 align="center">Página pessoal de Dalvan Carvalho</h1>
+# Página pessoal de Dalvan Carvalho
 
-<div align="center">
-  <img 
-    src="https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page"
-    alt="status do deploy na vercel"
-  />
-  &nbsp;
-  <img 
-    src="https://img.shields.io/badge/licença-MIT-blue"
-    alt="tipo da licença"
-  />
-  &nbsp;
-  <img 
-    src="https://img.shields.io/badge/idiomas_suportados-2-yellow"
-    alt="idiomas suportados"
-  />
-</div>
+![status do deploy na vercel](https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page)
+![tipo da licença](https://img.shields.io/badge/licença-MIT-blue)
+![idiomas suportados](https://img.shields.io/badge/idiomas_suportados-2-yellow)
 
-<br>
-
-<p align="center">
-  Bem-vindo ao repositório da minha página pessoal, construída com
-  <a href="https://vitejs.dev/">Vite</a> e
-  <a href="https://react.dev/">React</a>, e implementada com
-  <a href="https://vercel.com/">Vercel</a>!
-  A página está disponível em <strong>Português (Brasil)</strong> e <strong>Inglês (Estados Unidos)</strong>.
-
-</p>
+Bem-vindo ao repositório da minha página pessoal, construída com [Vite](https://vitejs.dev/) e [React](https://react.dev/), e implementada com [Vercel](https://vercel.com/)! A página está disponível em **Português (Brasil)** e **Inglês (Estados Unidos)**.
 
 <br>
 
@@ -45,15 +23,15 @@
 - [Algumas notas rápidas](#algumas-notas-rápidas)
 - [Sobre](#sobre)
 - [Aparência](#aparência)
-  - [Desktop](#-desktop)
-  - [Dispositivos móveis](#-dispositivos-móveis)
+  - [Desktop](#desktop)
+  - [Dispositivos móveis](#dispositivos-móveis)
 - [Recursos](#recursos)
 - [Instalação](#instalação)
 - [Compilando e rodando em produção](#compilando-e-rodando-em-produção)
 - [Referências de estilo](#referências-de-estilo)
-  - [Fontes](#-fontes)
-  - [Cores](#-cores)
-  - [Ícones](#-ícones)
+  - [Fontes](#fontes)
+  - [Cores](#cores)
+  - [Ícones](#ícones)
 - [Licença](#licença)
 
 ## Algumas notas rápidas
@@ -70,7 +48,7 @@ Este projeto foi criado para servir como minha página pessoal/portfólio e docu
 
 A página conta com uma versão clara e uma escura. Você pode pré-visualizar ambas nas capturas de tela abaixo:
 
-### ⬩ Desktop
+### Desktop
 
 <div align="center">
   <img
@@ -80,7 +58,7 @@ A página conta com uma versão clara e uma escura. Você pode pré-visualizar a
   />
 </div>
 
-### ⬩ Dispositivos móveis
+### Dispositivos móveis
 
 <div align="center">
   <img
@@ -142,7 +120,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados no desenvolvimento d
 
 ## Referências de estilo
 
-### ⬩ Fontes
+### Fontes
 
 | Elemento de texto |                     Família da fonte                     |     Tipo     |
 | ----------------- | :------------------------------------------------------: | :----------: |
@@ -151,7 +129,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados no desenvolvimento d
 | Bloco de código   | [Fira Code](https://fonts.google.com/specimen/Fira+Code) | monoespaçada |
 | Especial          | [Rock Salt](https://fonts.google.com/specimen/Rock+Salt) |   cursiva    |
 
-### ⬩ Cores
+### Cores
 
 | Papel                     | Nome no Tailwind |                         Código hexadecimal                         |
 | ------------------------- | :--------------: | :----------------------------------------------------------------: |
@@ -162,7 +140,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados no desenvolvimento d
 | Texto                     |    slate-600     | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
 | Texto (versão escura)     |     gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
 
-### ⬩ Ícones
+### Ícones
 
 Todos os ícones utilizados são do [Font Awesome](https://fontawesome.com/).
 

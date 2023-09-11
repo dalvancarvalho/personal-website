@@ -3,6 +3,7 @@
   "description": "Dalvan Carvalho's personal page",
   "version": "1.0.0",
   "author": "Dalvan Carvalho",
+  "homepage": "https://dalvanc.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/dalvancarvalho/personal-page"
@@ -21,12 +22,12 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "gsap": "^3.11.4",
-    "i18next": "^22.0.6",
+    "i18next": "^23.5.1",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^1.3.0",
-    "react-i18next": "^12.0.0",
+    "react-i18next": "^13.2.2",
     "react-router-dom": "^6.4.3",
     "react-scroll": "^1.8.9",
     "react-scroll-parallax": "^3.3.2"
@@ -34,12 +35,12 @@
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
-    "@vitejs/plugin-react": "^2.2.0",
-    "autoprefixer": "^10.4.13",
+    "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.15",
     "eslint": "^8.48.0",
     "eslint-plugin-react": "^7.33.2",
-    "postcss": "^8.4.19",
-    "tailwindcss": "^3.2.4",
-    "vite": "^3.2.3"
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.9"
   }
 }
