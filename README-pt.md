@@ -27,7 +27,7 @@ Bem-vindo ao repositório da minha página pessoal, construída com [Vite](https
   - [Dispositivos móveis](#dispositivos-móveis)
 - [Recursos](#recursos)
 - [Instalação](#instalação)
-- [Compilando e rodando em produção](#compilando-e-rodando-em-produção)
+- [Gerando a build e rodando em produção](#gerando-a-build-e-rodando-em-produção)
 - [Referências de estilo](#referências-de-estilo)
   - [Fontes](#fontes)
   - [Cores](#cores)
@@ -70,7 +70,7 @@ A página conta com uma versão clara e uma escura. Você pode pré-visualizar a
 
 ## Recursos
 
-Na tabela abaixo, encontram-se todos os recursos utilizados no desenvolvimento da página:
+Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
 | Recurso                                                                       | Utilização                                             |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------ |
@@ -81,8 +81,10 @@ Na tabela abaixo, encontram-se todos os recursos utilizados no desenvolvimento d
 | [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                  |
 | [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Manipulação de metadados                               |
 | [React Router](https://reactrouter.com/en/main/)                              | Gerenciamento de rotas                                 |
-| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Gerenciamento de links internos ao longo da página     |
+| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Animação de rolagem vertical                           |
 | [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Efeito paralaxe na seção principal e projetos          |
+
+[Vite](https://vitejs.dev/), [React](https://react.dev/) e [Tailwind CSS](https://tailwindcss.com/) também foram utilizados durante o desenvolvimento.
 
 ## Instalação
 
@@ -92,27 +94,35 @@ Na tabela abaixo, encontram-se todos os recursos utilizados no desenvolvimento d
 
 1. Após dar _fork_ neste repositório, navegue até sua pasta e abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (eu recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
 
-2. Instale todas as dependências do projeto:
+2. Instale o Yarn:
+
+   > 💡 **Yarn** é uma alternativa ao **Node Package Manager (NPM)**.
+
+   ```
+   npm install --global yarn
+   ```
+
+3. Instale todas as dependências do projeto:
 
    ```
    npm install
    ```
 
-3. Execute o servidor de desenvolvimento:
+4. Execute o servidor de desenvolvimento:
 
    ```
    npx vite
    ```
 
-## Compilando e rodando em produção
+## Gerando a build e rodando em produção
 
-1. Gere uma compilação de produção:
+1. Gere uma _build_ de produção:
 
    ```
    npx vite build
    ```
 
-2. Pré-visualize a compilação de produção (como aparecerá quando for implementada):
+2. Pré-visualize a _build_ de produção (como aparecerá quando for implementada):
 
    ```
    npx vite preview
