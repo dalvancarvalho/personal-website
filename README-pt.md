@@ -53,8 +53,8 @@ A página conta com uma versão clara e uma escura. Você pode pré-visualizar a
 <div align="center">
   <img
     style="width: 700px"
-    src="./src/assets/png/desktop.png"
-    alt="visão de um desktop na cor clara/escura"
+    src="./src/assets/gif/desktop.gif"
+    alt="visão de um desktop na versão clara/escura"
   />
 </div>
 
@@ -63,8 +63,8 @@ A página conta com uma versão clara e uma escura. Você pode pré-visualizar a
 <div align="center">
   <img
     style="width: 300px"
-    src="./src/assets/png/mobile.png"
-    alt="visão de um dispositivo móvel na cor clara/escura"
+    src="./src/assets/gif/mobile.gif"
+    alt="visão de um dispositivo móvel na versão clara/escura"
   />
 </div>
 
@@ -94,7 +94,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
 1. Após dar _fork_ neste repositório, navegue até sua pasta e abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (eu recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
 
-2. Instale o Yarn:
+2. Instale o Yarn (caso ainda não tenha instalado):
 
    > 💡 **Yarn** é uma alternativa ao **Node Package Manager (NPM)**.
 

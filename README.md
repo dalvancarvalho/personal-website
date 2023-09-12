@@ -55,8 +55,8 @@ The page counts with a light and a dark version. You can preview both in the scr
 <div align="center">
   <img
     style="width: 700px"
-    src="./src/assets/png/desktop.png"
-    alt="desktop view in light/dark mode"
+    src="./src/assets/gif/desktop.gif"
+    alt="desktop view in light/dark version"
   />
 </div>
 
@@ -65,8 +65,8 @@ The page counts with a light and a dark version. You can preview both in the scr
 <div align="center">
   <img
     style="width: 300px"
-    src="./src/assets/png/mobile.png"
-    alt="mobile view in light/dark mode"
+    src="./src/assets/gif/mobile.gif"
+    alt="mobile view in light/dark version"
   />
 </div>
 
@@ -96,7 +96,7 @@ In the table below, all the resources used by the page are listed:
 
 1. After fork this repository, navigate to its folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)).
 
-2. Install Yarn:
+2. Install Yarn (in case you still haven't installed it):
 
    > 💡 **Yarn** is an alternative to the **Node Package Manager (NPM)**.
 
