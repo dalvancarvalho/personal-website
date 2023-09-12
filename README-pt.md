@@ -46,7 +46,7 @@ Este projeto foi criado para servir como minha página pessoal/portfólio e docu
 
 ## Aparência
 
-A página conta com uma versão clara e uma escura. Você pode pré-visualizar ambas nas capturas de tela abaixo:
+A página conta com uma versão clara e uma escura. Você pode pré-visualizar ambas nos gifs abaixo:
 
 ### Desktop
 
@@ -96,7 +96,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
 2. Instale o Yarn (caso ainda não tenha instalado):
 
-   > 💡 **Yarn** é uma alternativa ao **Node Package Manager (NPM)**.
+   > 💡 **Yarn** é uma alternativa ao **Node Package Manager (NPM)**
 
    ```
    npm install --global yarn
@@ -156,6 +156,8 @@ Todos os ícones utilizados são do [Font Awesome](https://fontawesome.com/).
 
 ## Licença
 
-Este projeto está licenciado sob a **licença MIT**. Você pode ler os termos completos da licença clicando [aqui](./LICENSE).
+Este projeto está licenciado sob a **licença MIT**. Você pode ler os termos completos da licença clicando no link abaixo:
+
+**[Licença MIT - Dalvan Carvalho](./LICENSE)**
 
 &copy; 2023 **Dalvan Carvalho**

@@ -36,7 +36,9 @@ Welcome to the repository of my personal page, built with [Vite](https://vitejs.
 
 ## Some quick notes
 
-- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this ReadMe, my [GitHub profile](https://github.com/dalvancarvalho), and all coding-related content in English to reach a wider audience. If you are Brazilian (or from another country that speaks Portuguese) and have difficulty reading in English, you can find the Portuguese version of this ReadMe [here](./README-pt.md).
+- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this README, my [GitHub profile](https://github.com/dalvancarvalho), and all coding-related content in English to reach a wider audience. If you are Brazilian (or from another country that speaks Portuguese) and have difficulty reading in English, you can access the Portuguese version of this README in the link below:
+
+  **[README - Português (Brasil)](./README-pt.md)**
 
 - You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to this URL: [https://dalvanc.com/](https://dalvanc.com/).
 
@@ -48,7 +50,7 @@ This project was created to serve as my personal page/portfolio and document my 
 
 ## Appearance
 
-The page counts with a light and a dark version. You can preview both in the screenshots below:
+The page counts with a light and a dark version. You can preview both in the gifs below:
 
 ### Desktop
 
@@ -98,7 +100,7 @@ In the table below, all the resources used by the page are listed:
 
 2. Install Yarn (in case you still haven't installed it):
 
-   > 💡 **Yarn** is an alternative to the **Node Package Manager (NPM)**.
+   > 💡 **Yarn** is an alternative to the **Node Package Manager (NPM)**
 
    ```
    npm install --global yarn
@@ -158,6 +160,8 @@ All icons used are from [Font Awesome](https://fontawesome.com/).
 
 ## License
 
-This project is licensed under the **MIT license**. You can read the full license terms by clicking [here](./LICENSE).
+This project is licensed under the **MIT license**. You can read the full license terms by clicking in the link below:
+
+**[MIT License - Dalvan Carvalho](./LICENSE)**
 
 &copy; 2023 **Dalvan Carvalho**
