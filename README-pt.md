@@ -105,7 +105,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 3. Instale todas as dependências do projeto:
 
    ```
-   npm install
+   yarn
    ```
 
 4. Execute o servidor de desenvolvimento:
