@@ -38,12 +38,12 @@ function KeyTag({ children }) {
   // Indicates a key that is part of a keyboard shortcut
 
   return (
-    <span
+    <kbd
       className="px-[0.5em] py-[0.25em] rounded-[0.25em] bg-slate-150 dark:bg-dark-6
-      transition-[background-color] duration-300"
+      font-urbanist transition-[background-color] duration-300"
     >
       {children}
-    </span>
+    </kbd>
   )
 }
 

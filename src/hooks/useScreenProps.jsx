@@ -22,7 +22,6 @@ function useScreenProps() {
 
   useEffect(() => {
     handleResize()
-
     window.addEventListener('resize', handleResize)
 
     // Event listener cleanup

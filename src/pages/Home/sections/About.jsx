@@ -14,7 +14,7 @@ import Section from '../../../components/Section'
 import SectionTitle from '../../../components/SectionTitle'
 import technologies from '../../../constants/technologies'
 import Arrow from '../../../assets/jsx/Arrow'
-import FancyDivider from '../../../assets/jsx/FancyDivider'
+import Divider from '../../../assets/jsx/Divider'
 import QuotationMark from '../../../assets/jsx/QuotationMark'
 import stackDark from '../../../assets/svg/stack-dark.svg'
 import stackLight from '../../../assets/svg/stack-light.svg'
@@ -170,7 +170,7 @@ function About({ screenProps, t }) {
             />
           </div>
         </Grid>
-        <FancyDivider />
+        <Divider />
         <Grid>
           <div
             className="z-10 col-start-1 col-end-8 flex flex-col gap-4 row-span-full

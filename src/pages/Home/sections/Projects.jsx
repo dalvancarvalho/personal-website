@@ -38,7 +38,7 @@ function Projects({ screenProps, t }) {
 
   return (
     <Section
-      className="relative isolate after:absolute after:inset-0 after:-z-10
+      className="relative isolate z-10 after:absolute after:inset-0 after:-z-10
       after:-skew-y-[4deg] md:after:-skew-y-2 after:bg-slate-150 after:dark:bg-dark-2
       overflow-x-clip after:transition-colors after:duration-300"
       id="projects"

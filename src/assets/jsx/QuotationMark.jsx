@@ -6,7 +6,7 @@ function QuotationMark() {
   return (
     <svg
       className="about-quotation absolute -top-4 -left-6 -z-50 h-28 md:h-32
-      2xl:h-36 fill-slate-150 dark:fill-dark-2 color-transition"
+      2xl:h-36 fill-slate-150 dark:fill-dark-3 color-transition"
       preserveAspectRatio="none"
       viewBox="0 0 26 21"
       xmlns="http://www.w3.org/2000/svg"

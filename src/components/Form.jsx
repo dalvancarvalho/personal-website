@@ -45,7 +45,7 @@ function Form({ t }) {
   return (
     <form
       className="relative lg:row-start-1 lg:row-end-4 lg:col-start-8 lg:col-end-13 w-full
-      max-w-md flex flex-col items-center gap-6 self-center"
+      max-w-md flex flex-col items-center gap-6 self-center "
       onSubmit={handleSubmit}
       ref={formRef}
     >

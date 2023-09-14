@@ -2,8 +2,8 @@
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { Link as RouterLink } from 'react-router-dom'
 import { Parallax } from 'react-scroll-parallax'
+import { useNavigate } from 'react-router-dom'
 import useStackAnimation from '../animations/StackAnimation'
 import CTAButton from './CTAButton'
 import Paragraph from './Paragraph'
@@ -12,9 +12,10 @@ export default function Card({ index, project, t }) {
   // Displays a project and its main features in a modern looking card
 
   const { altText, description, isFinished, name, routeName, stack, thumbnail } = project
-  const isEven = index % 2 === 0 ? true : false
   const { cardRef, stackRef } = useStackAnimation()
   const textRef = useRef(null)
+  const navigate = useNavigate()
+  const isEven = index % 2 === 0 ? true : false
 
   useLayoutEffect(() => {
     // Card animation
@@ -94,7 +95,7 @@ export default function Card({ index, project, t }) {
         </div>
       </div>
       <div
-        className={`m-auto row-span-full flex items-center gap-4 ${
+        className={`m-auto row-span-full flex ${
           isEven
             ? 'col-start-1 col-end-8 lg:col-end-7'
             : 'col-start-6 lg:col-start-7 col-end-13'
@@ -102,21 +103,21 @@ export default function Card({ index, project, t }) {
         ref={textRef}
       >
         <Parallax
-          className={`${isEven ? 'items-start' : 'items-end'} flex flex-col gap-4
-          2xl:gap-6`}
+          className={`${isEven ? 'items-start' : 'items-end'}
+          flex flex-col gap-4 2xl:gap-6`}
           speed={15}
         >
           {!isFinished && (
             <span
-              className="text-base 2xl:text-lg font-bold leading-[0] 2xl:leading-[0]
-              font-mark-pro tracking-tight uppercase"
+              className="text-base 2xl:text-lg font-bold leading-[0]
+              2xl:leading-[0] font-mark-pro tracking-tight uppercase"
             >
               {t('pages.home.projects.inProgress')}
             </span>
           )}
           <h3
-            className="title-font text-[2.25rem] 2xl:text-[2.75rem] leading-9
-            dark:drop-shadow-md"
+            className="title-font text-[2.25rem] 2xl:text-[2.75rem]
+            leading-9 dark:drop-shadow-md"
           >
             {t(name)}
           </h3>
@@ -128,13 +129,9 @@ export default function Card({ index, project, t }) {
           >
             {t(description)}
           </Paragraph>
-          <div className="flex gap-4 2xl:gap-6">
-            <RouterLink tabIndex="-1" to={routeName}>
-              <CTAButton className="shadow-xl">
-                {t('pages.home.projects.primaryButton')}
-              </CTAButton>
-            </RouterLink>
-          </div>
+          <CTAButton className="shadow-xl" onClick={() => navigate(routeName)}>
+            {t('pages.home.projects.primaryButton')}
+          </CTAButton>
         </Parallax>
       </div>
     </div>

@@ -88,11 +88,11 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
 ## Instalação
 
-> 📌 **Antes de começar:** Certifique-se de que você tenha o **Node.js** e o **Git** instalados em seu sistema. Você precisará deles para instalar as dependências do projeto e realizar todas as tarefas relacionadas ao Git, como dar um _commit_ e _push_ em suas alterações para o seu próprio repositório no [GitHub](https://github.com/).
+> 📌 **Antes de começar:** Certifique-se de que você tenha o **Node.js** e o **Git** instalados em seu sistema. Você precisará deles para instalar as dependências do projeto e realizar todas as tarefas relacionadas ao Git, como dar um _commit_ e _push_ em suas alterações para o seu próprio repositório no **GitHub**.
 >
 > [**Baixe o Node.js**](https://nodejs.org/pt-br/download) - _Escolha a versão **LTS** se você não tem certeza ou nunca instalou o **Node.js** antes_ <br> [**Baixe o Git**](https://git-scm.com/downloads)
 
-1. Após dar _fork_ neste repositório, navegue até sua pasta e abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (eu recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
+1. Após dar _fork_ neste repositório, navegue até sua pasta e abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
 
 2. Instale o Yarn (caso ainda não tenha instalado):
 
@@ -105,7 +105,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 3. Instale todas as dependências do projeto:
 
    ```
-   npm install
+   yarn
    ```
 
 4. Execute o servidor de desenvolvimento:
@@ -158,6 +158,6 @@ Todos os ícones utilizados são do [Font Awesome](https://fontawesome.com/).
 
 Este projeto está licenciado sob a **licença MIT**. Você pode ler os termos completos da licença clicando no link abaixo:
 
-**[Licença MIT - Dalvan Carvalho](./LICENSE)**
+**[📄 Licença MIT - Dalvan Carvalho](./LICENSE)**
 
 &copy; 2023 **Dalvan Carvalho**

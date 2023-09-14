@@ -38,7 +38,7 @@ Welcome to the repository of my personal page, built with [Vite](https://vitejs.
 
 - Even though I'm based in Brazil and speak Portuguese, I prefer to keep this README, my [GitHub profile](https://github.com/dalvancarvalho), and all coding-related content in English to reach a wider audience. If you are Brazilian (or from another country that speaks Portuguese) and have difficulty reading in English, you can access the Portuguese version of this README in the link below:
 
-  **[README - Português (Brasil)](./README-pt.md)**
+  **[📄 README - Português (Brasil)](./README-pt.md)**
 
 - You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to this URL: [https://dalvanc.com/](https://dalvanc.com/).
 
@@ -92,7 +92,7 @@ In the table below, all the resources used by the page are listed:
 
 ## Installation
 
-> 📌 **Before you start:** Make sure you have both **Node.js** and **Git** installed on your system. You will need them to install the project's dependencies and perform all Git-related tasks, such as committing and pushing your changes to your own repository on [GitHub](https://github.com/).
+> 📌 **Before you start:** Make sure you have both **Node.js** and **Git** installed on your system. You will need them to install the project's dependencies and perform all Git-related tasks, such as committing and pushing your changes to your own repository on **GitHub**.
 >
 > [**Download Node.js**](https://nodejs.org/en/download) - _Go for the **LTS** version if you are not sure or never installed **Node.js** before_ <br> [**Download Git**](https://git-scm.com/downloads)
 
@@ -162,6 +162,6 @@ All icons used are from [Font Awesome](https://fontawesome.com/).
 
 This project is licensed under the **MIT license**. You can read the full license terms by clicking in the link below:
 
-**[MIT License - Dalvan Carvalho](./LICENSE)**
+**[📄 MIT License - Dalvan Carvalho](./LICENSE)**
 
 &copy; 2023 **Dalvan Carvalho**

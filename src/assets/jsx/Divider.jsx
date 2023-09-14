@@ -1,9 +1,9 @@
-/* FancyDivider.jsx */
+/* Divider.jsx */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function FancyDivider() {
+function Divider() {
   // SVG horizontal divider with built-in animation
 
   const dividerRef = useRef(null)
@@ -30,7 +30,7 @@ function FancyDivider() {
   return (
     <svg
       className="my-20 lg:my-36 m-auto h-4 lg:h-6 grid place-items-center
-      fill-slate-250 dark:fill-dark-4 color-transition"
+      fill-slate-250 dark:fill-dark-5 color-transition"
       preserveAspectRatio="none"
       ref={dividerRef}
       viewBox="0 0 132 15"
@@ -41,4 +41,4 @@ function FancyDivider() {
   )
 }
 
-export default FancyDivider
+export default Divider

@@ -31,7 +31,7 @@ function Footer() {
 
   return (
     <footer
-      className="z-50 pt-4 pb-8 lg:pb-16 text-slate-600 dark:text-gray-400
+      className="pt-4 pb-8 lg:pb-16 text-slate-600 dark:text-gray-400
       flex flex-col items-center justify-between gap-6 text-sm color-transition"
       ref={footerRef}
     >

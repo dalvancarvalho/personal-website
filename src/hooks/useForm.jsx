@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import useConfetti from '../contexts/ConfettiContext'
 
 function useForm() {
   // Handles the functionality of the contact form
@@ -17,6 +18,7 @@ function useForm() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const formRef = useRef(null)
+  const { setConfetti } = useConfetti()
 
   useEffect(() => {
     // Fades out the message after 5 seconds
@@ -26,7 +28,7 @@ function useForm() {
     }, 5000)
 
     return () => clearTimeout(timer)
-  }, [message])
+  }, [message.active])
 
   function handleSubmit(event) {
     // Handles the data of the form when the submit button is pressed
@@ -73,6 +75,8 @@ function useForm() {
       } else {
         // ✔️ Displays a success message
         setMessage({ active: true, status: 'success' })
+        // 🎊 Confetti!
+        setConfetti(true)
         // Resets all the inputs
         setInputs({ name: '', email: '', message: '' })
       }

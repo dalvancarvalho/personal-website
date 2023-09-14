@@ -4,7 +4,7 @@ import { useLayoutEffect, useRef, useState } from 'react'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { gsap } from 'gsap'
-import { Link as RouterLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import useStackAnimation from '../animations/StackAnimation'
 import CTAButton from './CTAButton'
 import Paragraph from './Paragraph'
@@ -16,6 +16,7 @@ function CardMobile({ index, project, t }) {
   const { cardRef, stackRef } = useStackAnimation()
   const [showImage, setShowImage] = useState(false)
   const buttonRef = useRef()
+  const navigate = useNavigate()
   const isEven = index % 2 === 0 ? true : false
 
   useLayoutEffect(() => {
@@ -102,13 +103,9 @@ function CardMobile({ index, project, t }) {
           >
             {t(description)}
           </Paragraph>
-          <div className="flex gap-4">
-            <RouterLink tabIndex="-1" to={routeName}>
-              <CTAButton className="shadow-xl">
-                {t('pages.home.projects.primaryButton')}
-              </CTAButton>
-            </RouterLink>
-          </div>
+          <CTAButton className="shadow-xl" onClick={() => navigate(routeName)}>
+            {t('pages.home.projects.primaryButton')}
+          </CTAButton>
         </div>
         <FontAwesomeIcon
           className={`px-2 py-2 text-xl text-dark-5 dark:text-slate-50 bg-slate-50

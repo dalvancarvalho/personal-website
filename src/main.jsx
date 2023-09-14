@@ -6,10 +6,11 @@ import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { LanguageProvider } from './contexts/LanguageContext'
+import { ConfettiProvider } from './contexts/ConfettiContext'
 import { MenuProvider } from './contexts/MenuContext'
 import { ThemeProvider } from './contexts/ThemeContext'
 import App from './App'
-import './i18n/index'
+import './i18n'
 import './styles/tailwind.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -22,7 +23,9 @@ root.render(
           <LanguageProvider>
             <ThemeProvider>
               <MenuProvider>
-                <App />
+                <ConfettiProvider>
+                  <App />
+                </ConfettiProvider>
               </MenuProvider>
             </ThemeProvider>
           </LanguageProvider>

@@ -3,7 +3,7 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faArrowUp, faChevronRight, faCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link as RouterLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Container from './Container'
 import Paragraph from './Paragraph'
 
@@ -93,19 +93,21 @@ function PageTitle({ demoUrl, githubUrl, id, name, t }) {
 
 // Local components
 function Breadcrumbs({ t }) {
+  const navigate = useNavigate()
+
   return (
     <div
       className="max-w-max ml-px flex items-center font-medium font-mark-pro text-base
       md:text-lg tracking-tighter"
     >
-      <RouterLink
+      <button
         className="text-slate-500 dark:text-gray-400 hover:text-slate-900
         dark:hover:text-gray-200 focus-visible:text-slate-900
-        dark:focus-visible:text-gray-200 color-transition"
-        to="/"
+        dark:focus-visible:text-gray-200 tracking-tighter color-transition"
+        onClick={() => navigate('/')}
       >
         {t('title.breadcrumbs.home')}
-      </RouterLink>
+      </button>
       <FontAwesomeIcon
         className="mx-3 text-slate-500 dark:text-gray-400 text-[0.6rem] md:text-xs
         color-transition"

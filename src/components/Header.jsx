@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import useMenu from '../contexts/MenuContext'
-import useCoordinates from '../hooks/useCoordinates'
+import useDocCoordinates from '../hooks/useDocCoordinates'
 import useScreenProps from '../hooks/useScreenProps'
 import Container from './Container'
 import HeaderMenu from './HeaderMenu'
@@ -14,17 +14,15 @@ import Logo from './Logo'
 import Navbar from './Navbar'
 import SkipToContent from './SkipToContent'
 import ThemeSwitch from './ThemeSwitch'
-import VDivider from './VDivider'
 
 function Header() {
   // Page header
 
-  const documentElement = document.documentElement
   const { pathname } = useLocation()
   const { isMenuOpen } = useMenu()
   const { screenSize } = useScreenProps()
   const { t } = useTranslation()
-  const { y } = useCoordinates(documentElement)
+  const { y } = useDocCoordinates()
 
   useLayoutEffect(() => {
     // Header animation
@@ -59,15 +57,17 @@ function Header() {
         {pathname !== '/404' && <Logo y={y} />}
         <div className="header-elements">
           {screenSize.md ? (
-            // on medium/large screens, renders the items directly in the header
+            // 💻 on medium/large screens, renders the items directly in the header
             <div className="flex items-center gap-6 2xl:gap-8">
               <Navbar t={t} />
-              {pathname !== '/404' && <VDivider />}
+              {pathname !== '/404' && (
+                <span className="h-[2em] w-px bg-slate-200 dark:bg-dark-5 color-transition" />
+              )}
               <LanguageSwitch t={t} />
               <ThemeSwitch t={t} />
             </div>
           ) : (
-            // on small screens, renders a menu
+            // 📱 on small screens, renders a menu
             <HeaderMenu pathname={pathname} t={t} y={y} />
           )}
         </div>

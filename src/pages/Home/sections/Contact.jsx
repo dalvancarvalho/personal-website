@@ -5,18 +5,21 @@ import { faArrowUp, faEnvelope, faLocationDot } from '@fortawesome/free-solid-sv
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { gsap } from 'gsap'
 import { Trans } from 'react-i18next'
+import useConfetti from '../../../contexts/ConfettiContext'
+import Confetti from '../../../components/Confetti'
 import Container from '../../../components/Container'
 import Form from '../../../components/Form'
 import Highlight from '../../../components/Highlight'
 import Paragraph from '../../../components/Paragraph'
 import Section from '../../../components/Section'
 import SectionTitle from '../../../components/SectionTitle'
-import FancyDivider from '../../../assets/jsx/FancyDivider'
+import Divider from '../../../assets/jsx/Divider'
 
 function Contact({ screenProps, t }) {
   // Contact section
 
   const { screenSize } = screenProps
+  const { confetti } = useConfetti()
   const textRef = useRef(null)
 
   useLayoutEffect(() => {
@@ -48,7 +51,7 @@ function Contact({ screenProps, t }) {
   }, [])
 
   return (
-    <Section id="contact">
+    <Section className="relative" id="contact">
       <Container
         className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col
         justify-center items-center"
@@ -89,10 +92,11 @@ function Contact({ screenProps, t }) {
               </Paragraph>
             </div>
           </div>
-          {!screenSize.lg && <FancyDivider />}
+          {!screenSize.lg && <Divider />}
           <Form t={t} />
         </div>
       </Container>
+      {confetti && <Confetti />}
     </Section>
   )
 }

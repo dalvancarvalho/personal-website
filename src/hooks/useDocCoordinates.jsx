@@ -1,10 +1,11 @@
-/* useCoordinates.jsx */
+/* useDocCoordinates.jsx */
 
 import { useEffect, useState } from 'react'
 
-function useCoordinates(element) {
-  // Returns the coordinates of a given element
+function useDocCoordinates() {
+  // Returns the coordinates (x and y) of the document element
 
+  const documentElement = document.documentElement
   const [coordinates, setCoordinates] = useState({
     x: 0,
     y: 0,
@@ -12,7 +13,6 @@ function useCoordinates(element) {
 
   useEffect(() => {
     handleScroll()
-
     window.addEventListener('scroll', handleScroll)
 
     // Event listener cleanup
@@ -23,12 +23,12 @@ function useCoordinates(element) {
     // Sets the element's coordinates to state
 
     setCoordinates({
-      x: element.scrollLeft,
-      y: element.scrollTop,
+      x: documentElement.scrollLeft,
+      y: documentElement.scrollTop,
     })
   }
 
   return coordinates
 }
 
-export default useCoordinates
+export default useDocCoordinates
