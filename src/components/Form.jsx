@@ -1,4 +1,4 @@
-/* ContactForm.jsx */
+/* Form.jsx */
 
 import { useLayoutEffect } from 'react'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
@@ -24,11 +24,11 @@ function Form({ t }) {
       formItems.forEach((item) => {
         gsap.fromTo(
           item,
-          { opacity: 0, y: 32 },
+          { opacity: 0, x: 32 },
           {
             opacity: 1,
-            y: 0,
-            duration: 1.25,
+            x: 0,
+            duration: 1,
             ease: 'power3.out',
             scrollTrigger: {
               trigger: item,

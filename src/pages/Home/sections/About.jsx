@@ -123,7 +123,7 @@ function About({ screenProps, t }) {
   return (
     <Section id="about">
       <Container
-        className="px-6 md:px-8 xl:px-24 2xl:px-32 flex flex-col justify-center
+        className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col justify-center
         items-center"
       >
         <SectionTitle watermark={t('pages.home.about.watermark')}>
