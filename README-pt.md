@@ -79,6 +79,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 | [GSAP](https://greensock.com/gsap/)                                           | Animações ao longo da página                           |
 | [i18next](https://react.i18next.com/)                                         | Internacionalização da página                          |
 | [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                  |
+| [React Confetti](https://www.npmjs.com/package/react-confetti)                | Animação de confetes após o envio do formulário        |
 | [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Manipulação de metadados                               |
 | [React Router](https://reactrouter.com/en/main/)                              | Gerenciamento de rotas                                 |
 | [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Animação de rolagem vertical                           |
@@ -94,7 +95,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
 1. Após dar _fork_ neste repositório, navegue até sua pasta e abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
 
-2. Instale o Yarn (caso ainda não tenha instalado):
+2. Instale o Yarn (caso você ainda não tenha instalado no seu sistema):
 
    > 💡 **Yarn** é uma alternativa ao **Node Package Manager (NPM)**
 
