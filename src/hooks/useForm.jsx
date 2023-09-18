@@ -17,8 +17,8 @@ function useForm() {
     status: 'incomplete',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const formRef = useRef(null)
   const { setConfetti } = useConfetti()
+  const formRef = useRef(null)
 
   useEffect(() => {
     // Fades out the message after 5 seconds
@@ -75,12 +75,11 @@ function useForm() {
       } else {
         // ✔️ Displays a success message
         setMessage({ active: true, status: 'success' })
-        // 🎊 Confetti!
+        // 🎊 Confetti! (because why not?)
         setConfetti(true)
         // Resets all the inputs
         setInputs({ name: '', email: '', message: '' })
       }
-
       setIsSubmitting(false)
     }
   }

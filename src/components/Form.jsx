@@ -76,7 +76,11 @@ function Form({ t }) {
         setInputs={setInputs}
       />
       <CTAButton
-        className={`form-element w-full ${isSubmitting ? 'pointer-events-none' : null}`}
+        className={`${
+          isSubmitting
+            ? 'pointer-events-none !bg-gray-400 !dark:bg-gray-500 !text-white'
+            : null
+        } form-element w-full`}
         type="submit"
       >
         {isSubmitting ? (

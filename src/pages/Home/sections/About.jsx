@@ -177,6 +177,7 @@ function About({ screenProps, t }) {
             2xl:gap-6 group"
             ref={stackRef}
           >
+            <p>{import.meta.env.VITE_FRASE_SECRETA}</p>
             <h3
               className="md:text-lg 2xl:text-xl font-bold text-slate-800
               dark:text-gray-200 color-transition"
