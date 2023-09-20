@@ -21,17 +21,18 @@ function Header() {
   const { pathname } = useLocation()
   const { isMenuOpen } = useMenu()
   const { screenSize } = useScreenProps()
-  const { t } = useTranslation()
   const { y } = useDocCoordinates()
+  const { t } = useTranslation()
 
   useLayoutEffect(() => {
     // Header animation
 
     gsap.fromTo(
       '.header-elements',
-      { opacity: 0 },
+      { opacity: 0, pointerEvents: 'none' },
       {
         opacity: 1,
+        pointerEvents: 'all',
         duration: 0.75,
         delay: 3,
         ease: 'power3.in',

@@ -6,7 +6,7 @@ import useConfetti from '../contexts/ConfettiContext'
 import useScreenProps from '../hooks/useScreenProps'
 
 function Confetti() {
-  // Confetti animation on form submission
+  // Confetti animation after form submission
 
   const { setConfetti } = useConfetti()
   const { isPortraitMode, screenDimensions, screenSize } = useScreenProps()
