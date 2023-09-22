@@ -25,6 +25,14 @@
     @apply outline-dashed outline-1 outline-red-500; /* Debug ruleset */
   }
 
+  .external-access-arrow {
+    @apply text-slate-600 dark:text-gray-400 peer-hover:translate-x-1
+    peer-hover:text-slate-800 dark:peer-hover:text-gray-200
+    peer-focus-visible:text-slate-800 dark:peer-focus-visible:text-gray-200
+    peer-hover:-translate-y-1 peer-focus-visible:translate-x-1
+    peer-focus-visible:-translate-y-1 rotate-45 transition-all;
+  }
+
   .text-accent {
     @apply text-blue-600 dark:text-orange-500;
   }

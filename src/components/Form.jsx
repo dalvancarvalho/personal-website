@@ -7,8 +7,8 @@ import { gsap } from 'gsap'
 import useForm from '../hooks/useForm'
 import ButtonSpinner from './ButtonSpinner'
 import CTAButton from './CTAButton'
+import FormMessage from './FormMessage'
 import Input from './Input'
-import SubmissionMessage from './SubmissionMessage'
 import TextArea from './TextArea'
 
 function Form({ t }) {
@@ -45,7 +45,7 @@ function Form({ t }) {
   return (
     <form
       className="relative lg:row-start-1 lg:row-end-4 lg:col-start-8 lg:col-end-13 w-full
-      max-w-md flex flex-col items-center gap-6 self-center "
+      max-w-md self-center flex flex-col items-center gap-6"
       onSubmit={handleSubmit}
       ref={formRef}
     >
@@ -84,6 +84,7 @@ function Form({ t }) {
         type="submit"
       >
         {isSubmitting ? (
+          // Shows a loading spinner if the message is being submitted
           <>
             {t('pages.home.contact.button.submitting')}
             <ButtonSpinner />
@@ -100,7 +101,7 @@ function Form({ t }) {
           </>
         )}
       </CTAButton>
-      <SubmissionMessage message={message} />
+      <FormMessage message={message} />
     </form>
   )
 }

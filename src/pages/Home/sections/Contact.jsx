@@ -27,7 +27,6 @@ function Contact({ screenProps, t }) {
 
     const ctx = gsap.context((self) => {
       const items = self.selector('.contact-item')
-
       items.forEach((item) => {
         gsap.fromTo(
           item,
@@ -121,14 +120,7 @@ function MailTo({ t }) {
       >
         {t('pages.home.contact.email')}
       </a>
-      <FontAwesomeIcon
-        className="text-slate-600 dark:text-gray-400 peer-hover:translate-x-1
-        peer-hover:text-slate-800 dark:peer-hover:text-gray-200
-        peer-focus-visible:text-slate-800 dark:peer-focus-visible:text-gray-200
-        peer-hover:-translate-y-1 peer-focus-visible:translate-x-1
-        peer-focus-visible:-translate-y-1 rotate-45 transition-all"
-        icon={faArrowUp}
-      />
+      <FontAwesomeIcon className="external-access-arrow" icon={faArrowUp} />
     </Paragraph>
   )
 }

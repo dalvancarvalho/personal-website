@@ -1,7 +1,9 @@
 /* _form-field.css */
 
 .form-field::before {
-  @apply absolute left-0 bottom-0 m-auto content-[''] h-0.5 w-full block bg-blue-600 dark:bg-orange-500 bg-auto bg-bottom scale-0 origin-center duration-300;
+  @apply absolute left-0 bottom-0 m-auto content-[''] h-0.5 w-full block
+  bg-blue-600 dark:bg-orange-500 bg-auto bg-bottom scale-0 origin-center
+  duration-300;
 }
 
 .form-field:focus-visible::before {

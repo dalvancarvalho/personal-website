@@ -51,7 +51,7 @@ function PageTitle({ demoUrl, githubUrl, id, name, t }) {
             >
               {t('title.github')}
             </a>
-            <ArrowUp />
+            <FontAwesomeIcon className="external-access-arrow" icon={faArrowUp} />
           </Paragraph>
           {demoUrl && (
             <Paragraph
@@ -73,16 +73,16 @@ function PageTitle({ demoUrl, githubUrl, id, name, t }) {
               </span>
               <a
                 className="peer ml-2 mr-3 flex items-center gap-2 text-slate-600
-              dark:text-gray-400 hover:text-slate-800 hover:dark:text-gray-200
-              focus-visible:text-slate-800 focus-visible:dark:text-gray-200
-              color-transition"
+                dark:text-gray-400 hover:text-slate-800 hover:dark:text-gray-200
+                focus-visible:text-slate-800 focus-visible:dark:text-gray-200
+                color-transition"
                 href={demoUrl}
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 {t('title.demo')}
               </a>
-              <ArrowUp />
+              <FontAwesomeIcon className="external-access-arrow" icon={faArrowUp} />
             </Paragraph>
           )}
         </div>
@@ -117,19 +117,6 @@ function Breadcrumbs({ t }) {
         {t('title.breadcrumbs.featured')}
       </p>
     </div>
-  )
-}
-
-function ArrowUp() {
-  return (
-    <FontAwesomeIcon
-      className="text-slate-600 dark:text-gray-400 peer-hover:translate-x-1
-      peer-hover:text-slate-800 dark:peer-hover:text-gray-200
-      peer-focus-visible:text-slate-800 dark:peer-focus-visible:text-gray-200
-      peer-hover:-translate-y-1 peer-focus-visible:translate-x-1
-      peer-focus-visible:-translate-y-1 rotate-45 transition-all"
-      icon={faArrowUp}
-    />
   )
 }
 

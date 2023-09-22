@@ -36,7 +36,7 @@ Welcome to the repository of my personal page, built with [Vite](https://vitejs.
 
 ## Some quick notes
 
-- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this README, my [GitHub profile](https://github.com/dalvancarvalho), and all coding-related content in English to reach a wider audience. If you are Brazilian (or from another country that speaks Portuguese) and have difficulty reading in English, you can access the Portuguese version of this README in the link below:
+- Even though I'm based in Brazil and speak Portuguese, I prefer to keep this README, my [GitHub profile](https://github.com/dalvancarvalho), and all coding-related content in English to reach a wider audience. If you are Brazilian (or from another Portuguese-speaking country) and have difficulty reading in English, you can access the Portuguese version of this README on the link below:
 
   **[📄 README - Português (Brasil)](./README-pt.md)**
 
@@ -161,7 +161,7 @@ All icons used are from [Font Awesome](https://fontawesome.com/).
 
 ## License
 
-This project is licensed under the **MIT license**. You can read the full license terms by clicking in the link below:
+This project is licensed under the **MIT license**. You can read the full license by clicking on the link below:
 
 **[📄 MIT License - Dalvan Carvalho](./LICENSE)**
 

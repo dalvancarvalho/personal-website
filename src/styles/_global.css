@@ -1,7 +1,8 @@
 /* _global.css */
 
 *:focus-visible {
-  @apply outline outline-[3px] outline-offset-[3px] outline-blue-600 dark:outline-orange-500 rounded-[0.1em];
+  @apply outline outline-[3px] outline-offset-[3px] outline-blue-600
+  dark:outline-orange-500 rounded-[0.1em];
 }
 
 *::selection {
@@ -17,7 +18,8 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  @apply border-solid border-2 border-slate-50 dark:border-dark-1 bg-[#6c6c6c80] dark:bg-[#61606080] rounded-full;
+  @apply border-solid border-2 border-slate-50 dark:border-dark-1
+  bg-[#6c6c6c80] dark:bg-[#61606080] rounded-full;
 }
 
 *::-webkit-scrollbar-thumb:hover {

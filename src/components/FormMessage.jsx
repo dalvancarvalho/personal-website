@@ -1,8 +1,8 @@
-/* SubmissionMessage.jsx */
+/* FormMessage.jsx */
 
 import { Trans } from 'react-i18next'
 
-function SubmissionMessage({ message: { active, status } }) {
+function FormMessage({ message: { active, status } }) {
   // Feedback message displayed when user clicks the 'submit' button of the form
 
   let textColor
@@ -44,4 +44,4 @@ function SubmissionMessage({ message: { active, status } }) {
   )
 }
 
-export default SubmissionMessage
+export default FormMessage
