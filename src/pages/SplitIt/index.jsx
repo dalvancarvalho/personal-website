@@ -1,11 +1,11 @@
-/* index.jsx */
+/* SplitIt/index.jsx */
 
 import { useTranslation } from 'react-i18next'
-import Introduction from './sections/Introduction'
-import Footer from '../../components/Footer'
-import MainSection from '../../components/MainSection'
-import PageTitle from '../../components/PageTitle'
-import SEO from '../../components/SEO'
+import Introduction from './Introduction'
+import Footer from '../../layout/Footer'
+import MainSection from '../../layout/Section/MainSection'
+import Meta from '../../components/Meta'
+import PageTitle from '../../components/Text/PageTitle'
 import { splitItData } from '../../constants/projects'
 
 function SplitIt() {
@@ -16,7 +16,7 @@ function SplitIt() {
 
   return (
     <>
-      <SEO
+      <Meta
         description="Split it! allows for a fair division of expenses among all group members in a simple and intuitive way!"
         title={t('meta.title.splitIt')}
         url="https://dalvanc.com/split-it"
@@ -26,7 +26,7 @@ function SplitIt() {
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>
-      <Footer />
+      <Footer t={t} />
     </>
   )
 }

@@ -1,11 +1,11 @@
-/* index.jsx */
+/* PersonalPage/index.jsx */
 
 import { useTranslation } from 'react-i18next'
-import Introduction from './sections/Introduction'
-import Footer from '../../components/Footer'
-import MainSection from '../../components/MainSection'
-import PageTitle from '../../components/PageTitle'
-import SEO from '../../components/SEO'
+import Introduction from './Introduction'
+import Footer from '../../layout/Footer'
+import MainSection from '../../layout/Section/MainSection'
+import Meta from '../../components/Meta'
+import PageTitle from '../../components/Text/PageTitle'
 import { personalPageData } from '../../constants/projects'
 
 function PersonalPage() {
@@ -16,7 +16,7 @@ function PersonalPage() {
 
   return (
     <>
-      <SEO
+      <Meta
         description="Want to know all the cool features that my personal page has? So check this in-depth showcase!"
         title={t('meta.title.personalPage')}
         url="https://dalvanc.com/personal-page"
@@ -26,7 +26,7 @@ function PersonalPage() {
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>
-      <Footer />
+      <Footer t={t} />
     </>
   )
 }
