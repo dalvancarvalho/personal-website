@@ -109,6 +109,7 @@ const projects = [
   },
 ]
 
+// Data used inside each project's page
 const brGeoData = projects[0]
 const personalPageData = projects[1]
 const splitItData = projects[2]

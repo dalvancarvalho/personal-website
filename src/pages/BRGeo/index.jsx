@@ -1,11 +1,11 @@
 /* index.jsx */
 
 import { useTranslation } from 'react-i18next'
-import Introduction from './sections/Introduction'
-import Footer from '../../components/Footer'
-import MainSection from '../../components/MainSection'
-import PageTitle from '../../components/PageTitle'
-import SEO from '../../components/SEO'
+import Introduction from './Introduction'
+import Footer from '../../layout/Footer'
+import MainSection from '../../layout/Section/MainSection'
+import Meta from '../../components/Meta'
+import PageTitle from '../../components/Text/PageTitle'
 import { brGeoData } from '../../constants/projects'
 
 function BRGeo() {
@@ -16,7 +16,7 @@ function BRGeo() {
 
   return (
     <>
-      <SEO
+      <Meta
         description="BR Geo displays information from several geographic and social topics through charts and interactive maps!"
         title={t('meta.title.brGeo')}
         url="https://dalvanc.com/br-geo"
@@ -26,7 +26,7 @@ function BRGeo() {
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>
-      <Footer />
+      <Footer t={t} />
     </>
   )
 }

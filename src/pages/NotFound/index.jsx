@@ -1,14 +1,14 @@
-/* index.jsx */
+/* NotFound/index.jsx */
 
 import { faArrowLeft, faMapSigns } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet-async'
 import { Link as RouterLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import Container from '../../components/Container'
-import CTAButton from '../../components/CTAButton'
-import MainSection from '../../components/MainSection'
-import Paragraph from '../../components/Paragraph'
+import Container from '../../layout/Container'
+import MainSection from '../../layout/Section/MainSection'
+import CallToAction from '../../components/Button/CallToAction'
+import Paragraph from '../../components/Text/Paragraph'
 
 function NotFound() {
   // Not found
@@ -36,14 +36,14 @@ function NotFound() {
             {t('pages.notFound.paragraph')}
           </Paragraph>
           <RouterLink className="mt-4 md:mt-5 2xl:mt-6 group" tabIndex="-1" to="/">
-            <CTAButton textSize="text-sm md:text-base 2xl:text-lg">
+            <CallToAction textSize="text-sm md:text-base 2xl:text-lg">
               <FontAwesomeIcon
                 className="group-hover:-translate-x-1 group-focus-visible:-translate-x-1
                 transition-transform"
                 icon={faArrowLeft}
               />
               {t('pages.notFound.button')}
-            </CTAButton>
+            </CallToAction>
           </RouterLink>
         </Container>
         <span
