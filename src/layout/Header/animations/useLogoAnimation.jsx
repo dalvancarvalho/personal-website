@@ -13,12 +13,12 @@ function useLogoAnimation() {
   const { language } = useLanguage()
   const { pathname } = useLocation()
   const isFirstRender = useIsFirstRender()
-  const [logoText, setLogoText] = useState(
-    language.value === 'ptBR' ? ptBR[pathname] : enUS[pathname]
-  )
   const cursorRef = useRef(null)
   const textRef = useRef(null)
   const tl = useRef(null)
+  const [logoText, setLogoText] = useState(
+    language.value === 'ptBR' ? ptBR[pathname] : enUS[pathname]
+  )
 
   useEffect(() => {
     // Sets a new logo text when the language or pathname are changed

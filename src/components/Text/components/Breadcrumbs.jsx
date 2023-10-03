@@ -4,7 +4,10 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
-function Breadcrumbs({ t }) {
+function Breadcrumbs(props) {
+  // Navigation component
+
+  const { subject, t } = props
   const navigate = useNavigate()
 
   return (
@@ -25,9 +28,7 @@ function Breadcrumbs({ t }) {
         color-transition"
         icon={faChevronRight}
       />
-      <p className="text-slate-800 dark:text-gray-200 color-transition">
-        {t('title.breadcrumbs.featured')}
-      </p>
+      <p className="text-slate-800 dark:text-gray-200 color-transition">{subject}</p>
     </div>
   )
 }

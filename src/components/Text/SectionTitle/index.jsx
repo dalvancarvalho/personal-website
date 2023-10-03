@@ -2,14 +2,15 @@
 
 import useSectionTitleAnimation from '../animations/useSectionTitleAnimation'
 
-function SectionTitle({
-  animation = true,
-  children,
-  watermark = undefined,
-  watermarkColor = 'text-slate-150 dark:text-dark-2',
-}) {
+function SectionTitle(props) {
   // Displays the title of the section (H2)
 
+  const {
+    animation = true,
+    children,
+    watermark = undefined,
+    watermarkColor = 'text-slate-150 dark:text-dark-2',
+  } = props
   const { headingRef, watermarkRef } = useSectionTitleAnimation(animation, watermark)
 
   return (

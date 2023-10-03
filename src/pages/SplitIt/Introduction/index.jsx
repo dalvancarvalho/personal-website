@@ -7,17 +7,19 @@ import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
 import snippetModel from '../../../constants/snippets'
 
-function Introduction({ t }) {
+function Introduction(props) {
   // In progress...
+
+  const { t } = props
 
   return (
     <Section id="intro">
       <Container className="h-full px-6 sm:px-8 xl:px-40">
-        <SectionTitle noAnimation watermark={t('pages.splitIt.intro.watermark')}>
+        <SectionTitle watermark={t('pages.splitIt.intro.watermark')}>
           {t('pages.splitIt.intro.heading')}
         </SectionTitle>
         <Paragraph>{t('misc.comingSoon')}</Paragraph>
-        <CodeSnippet snippet={snippetModel} />
+        <CodeSnippet {...snippetModel} />
       </Container>
     </Section>
   )

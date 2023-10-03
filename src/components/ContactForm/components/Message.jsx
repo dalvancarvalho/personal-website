@@ -2,9 +2,10 @@
 
 import { Trans } from 'react-i18next'
 
-function Message({ message: { active, status } }) {
+function Message(props) {
   // Feedback message displayed when user clicks the 'submit' button
 
+  const { active, status } = props
   let textColor
 
   switch (status) {

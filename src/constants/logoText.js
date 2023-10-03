@@ -4,16 +4,16 @@ const ptBR = {
   ['/']: 'dalvan c',
   ['/br-geo']: 'br geo',
   ['/personal-page']: 'página pessoal',
+  ['/resume']: 'currículo',
   ['/split-it']: 'split it!',
-  ['/coming-soon']: 'em breve',
 }
 
 const enUS = {
   ['/']: 'dalvan c',
   ['/br-geo']: 'br geo',
   ['/personal-page']: 'personal page',
+  ['/resume']: 'resume',
   ['/split-it']: 'split it!',
-  ['/coming-soon']: 'coming soon',
 }
 
 export { ptBR, enUS }

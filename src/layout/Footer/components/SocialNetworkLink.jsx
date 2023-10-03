@@ -2,8 +2,10 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function SocialNetworkLink({ color, icon, name, url }) {
+function SocialNetworkLink(props) {
   // Link to a social network
+
+  const { color, icon, name, url } = props
 
   return (
     <a

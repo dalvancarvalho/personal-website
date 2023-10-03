@@ -4,11 +4,13 @@ import { faArrowUp, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Paragraph from '../../../../components/Text/Paragraph'
 
-function MailTo({ t }) {
+function MailTo(props) {
   // E-mail link
 
+  const { t } = props
+
   return (
-    <Paragraph className="flex items-center" textWeight="font-bold">
+    <Paragraph className="flex items-center" fontWeight="font-bold">
       <FontAwesomeIcon
         className="2xl:mr-2 text-slate-800 dark:text-gray-200 color-transition"
         icon={faEnvelope}

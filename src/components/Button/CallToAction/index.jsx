@@ -1,16 +1,18 @@
 /* CallToAction/index.jsx */
 
-function CallToAction({
-  children,
-  className = '', // any other class needed goes here
-  color = 'bg-accent hover:bg-blue-500 dark:hover:bg-orange-400 focus-visible:bg-blue-500 focus-visible:dark:bg-orange-400 active:bg-blue-700 active:dark:bg-orange-600',
-  onClick,
-  tabIndex = '0',
-  textColor = 'text-white dark:text-black',
-  textSize = 'text-sm 2xl:text-base',
-  type = 'button',
-}) {
+function CallToAction(props) {
   // Call to Action button
+
+  const {
+    children,
+    className = '', // any other class needed goes here
+    color = 'bg-accent hover:bg-blue-500 dark:hover:bg-orange-400 focus-visible:bg-blue-500 focus-visible:dark:bg-orange-400 active:bg-blue-700 active:dark:bg-orange-600',
+    onClick,
+    tabIndex = '0',
+    textColor = 'text-white dark:text-black',
+    textSize = 'text-sm 2xl:text-base',
+    type = 'button',
+  } = props
 
   return (
     <button

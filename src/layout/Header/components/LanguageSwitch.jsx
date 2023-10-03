@@ -5,9 +5,10 @@ import useLanguage from '../../../context/LanguageContext'
 import Button from '../../../components/Button'
 import Tooltip from '../../../components/Tooltip'
 
-function LanguageSwitch({ t }) {
+function LanguageSwitch(props) {
   // Switches the display language between Brazilian Portuguese and English
 
+  const { t } = props
   const { language, changeLanguage, SHORTCUT_KEY } = useLanguage()
 
   return (

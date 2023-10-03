@@ -26,13 +26,13 @@ function useStackAnimation(targetRef) {
     })
 
     function revealStack() {
-      stackAnimation.play()
       bgAnimation.play()
+      stackAnimation.play()
     }
 
     function hideStack() {
-      stackAnimation.reverse()
       bgAnimation.reverse()
+      stackAnimation.reverse()
     }
 
     targetRef.current.addEventListener('mouseenter', revealStack)
@@ -42,6 +42,8 @@ function useStackAnimation(targetRef) {
     return () => {
       targetRef.current.removeEventListener('mouseenter', revealStack)
       targetRef.current.removeEventListener('mouseleave', hideStack)
+      bgAnimation.revert()
+      stackAnimation.revert()
     }
   }, [])
 

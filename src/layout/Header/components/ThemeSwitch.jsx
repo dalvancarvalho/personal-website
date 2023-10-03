@@ -6,9 +6,10 @@ import useTheme from '../../../context/ThemeContext'
 import Button from '../../../components/Button'
 import Tooltip from '../../../components/Tooltip'
 
-function ThemeSwitch({ t }) {
+function ThemeSwitch(props) {
   // Switches the theme between light and dark
 
+  const { t } = props
   const { theme, changeTheme, SHORTCUT_KEY } = useTheme()
 
   return (

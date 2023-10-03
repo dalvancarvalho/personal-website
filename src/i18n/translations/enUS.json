@@ -5,6 +5,7 @@
         "home": "Dalvan Carvalho · Front-End Developer",
         "brGeo": "BR Geo — Dalvan Carvalho · Front-End Developer",
         "personalPage": "Personal page — Dalvan Carvalho · Front-End Developer",
+        "resume": "Resume — Dalvan Carvalho · Front-End Developer",
         "splitIt": "Split it! — Dalvan Carvalho · Front-End Developer",
         "notFound": "404: Page not found"
       }
@@ -31,6 +32,10 @@
           "home": "Home",
           "intro": "Intro",
           "details": "Details"
+        },
+        "/resume": {
+          "home": "Home",
+          "download": "Download"
         },
         "/split-it": {
           "home": "Home",
@@ -61,10 +66,12 @@
     "title": {
       "breadcrumbs": {
         "home": "Home",
+        "about": "About",
         "featured": "Featured project"
       },
+      "demo": "Live demo",
       "github": "GitHub repository",
-      "demo": "Live demo"
+      "linkedin": "LinkedIn profile"
     },
 
     "pages": {
@@ -90,7 +97,7 @@
           "meAltText": "Picture of Dalvan Carvalho",
           "hoverTextTitle": "yep, it's a Super Mario reference 🍄",
           "stackAltText": "Image composed by logos from technologies Dalvan works with",
-          "button": "See resume"
+          "button": "Access resume"
         },
         "projects": {
           "heading": "Handcrafted work",
@@ -161,6 +168,16 @@
         "details": {
           "heading": "Details",
           "watermark": "Details"
+        }
+      },
+      "resume": {
+        "name": "Resume",
+        "download": {
+          "heading": "some name here",
+          "watermark": "Download",
+          "paragraph": "paragraph in english",
+          "portuguese": "Resume - Portuguese (Brazil)",
+          "english": "Resume - English"
         }
       },
       "splitIt": {

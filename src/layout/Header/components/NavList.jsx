@@ -5,17 +5,18 @@ import NavLink from './NavLink'
 import MenuList from './MenuList'
 import navLinks from '../../../constants/navLinks'
 
-function NavList({ t }) {
+function NavList(props) {
   // List of navigation links (inside menu)
 
+  const { t } = props
   const { pathname } = useLocation()
 
   return (
     <nav aria-label={t('header.nav.ariaLabel')} className="w-5/6" role="navigation">
       <MenuList title={t('header.nav.heading')}>
         {navLinks[pathname] &&
-          navLinks[pathname].map(({ icon, name }) => (
-            <NavLink icon={icon} key={name} to={name}>
+          navLinks[pathname].map(({ name, ...props }) => (
+            <NavLink key={name} to={name} {...props}>
               {t(`header.nav.${pathname}.${name}`)}
             </NavLink>
           ))}

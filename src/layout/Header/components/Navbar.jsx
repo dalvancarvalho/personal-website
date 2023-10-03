@@ -4,9 +4,10 @@ import { useLocation } from 'react-router-dom'
 import NavLink from './NavLink'
 import navLinks from '../../../constants/navLinks'
 
-function Navbar({ t }) {
+function Navbar(props) {
   // List of navigation links displayed in the header
 
+  const { t } = props
   const { pathname } = useLocation()
 
   return (

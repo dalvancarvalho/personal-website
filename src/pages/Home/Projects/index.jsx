@@ -11,11 +11,12 @@ import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
 import projects from '../../../constants/projects'
 
-function Projects({ screenProps, t }) {
+function Projects(props) {
   // Projects section
 
-  useProjectsAnimation()
+  const { screenProps, t } = props
   const { screenSize } = screenProps
+  useProjectsAnimation()
 
   return (
     <Section

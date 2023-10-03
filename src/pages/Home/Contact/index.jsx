@@ -16,12 +16,13 @@ import SectionTitle from '../../../components/Text/SectionTitle'
 import Confetti from './components/Confetti'
 import MailTo from './components/MailTo'
 
-function Contact({ screenProps, t }) {
+function Contact(props) {
   // Contact section
 
-  const textRef = useContactAnimation()
-  const { confetti } = useConfetti()
+  const { screenProps, t } = props
   const { screenSize } = screenProps
+  const { confetti } = useConfetti()
+  const textRef = useContactAnimation()
 
   return (
     <Section className="relative" id="contact">
@@ -51,7 +52,7 @@ function Contact({ screenProps, t }) {
             </div>
             <div className="contact-item flex flex-col gap-2">
               <MailTo t={t} />
-              <Paragraph className="flex items-center gap-2" textWeight="font-bold">
+              <Paragraph className="flex items-center gap-2" fontWeight="font-bold">
                 <FontAwesomeIcon
                   className="ml-0.5 mr-[3px] 2xl:ml-[3px] 2xl:mr-2.5 text-slate-800
                   dark:text-gray-200 color-transition"

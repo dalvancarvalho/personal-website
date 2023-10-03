@@ -2,12 +2,14 @@
 
 import KeyTag from './components/KeyTag'
 
-function Tooltip({
-  children,
-  position = 'right-0 translate-y-4 2xl:translate-y-6',
-  shortcutKey,
-}) {
+function Tooltip(props) {
   // Displays a tooltip when the element is hovered or focused
+
+  const {
+    children,
+    position = 'right-0 translate-y-4 2xl:translate-y-6',
+    shortcutKey,
+  } = props
 
   return (
     <p

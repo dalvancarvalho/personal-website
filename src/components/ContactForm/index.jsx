@@ -10,10 +10,11 @@ import Input from './components/Input'
 import Message from './components/Message'
 import TextArea from './components/TextArea'
 
-function ContactForm({ t }) {
+function ContactForm(props) {
   // Contact form
 
-  const { handleSubmit, inputs, isSubmitting, message, setInputs } = useContactForm()
+  const { t } = props
+  const { handleSubmit, isSubmitting, message, ...inputs } = useContactForm()
   const formRef = useContactFormAnimation()
 
   return (
@@ -31,23 +32,20 @@ function ContactForm({ t }) {
       </h3>
       <Input
         inputName="name"
-        inputs={inputs}
         label={t('pages.home.contact.label.name')}
-        setInputs={setInputs}
         type="text"
+        {...inputs}
       />
       <Input
         inputName="email"
-        inputs={inputs}
         label={t('pages.home.contact.label.email')}
-        setInputs={setInputs}
         type="email"
+        {...inputs}
       />
       <TextArea
         inputName="message"
-        inputs={inputs}
         label={t('pages.home.contact.label.message')}
-        setInputs={setInputs}
+        {...inputs}
       />
       <CallToAction
         className={`${
@@ -75,7 +73,7 @@ function ContactForm({ t }) {
           </>
         )}
       </CallToAction>
-      <Message message={message} />
+      <Message {...message} />
     </form>
   )
 }

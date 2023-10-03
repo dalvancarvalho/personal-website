@@ -3,7 +3,9 @@
 import { Suspense } from 'react'
 import Loading from '../../pages/Loading'
 
-function Fallback({ page }) {
+function Fallback(props) {
+  const { page } = props
+
   return <Suspense fallback={<Loading />}>{page}</Suspense>
 }
 

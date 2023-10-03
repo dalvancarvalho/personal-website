@@ -22,7 +22,14 @@ function SplitIt() {
         url="https://dalvanc.com/split-it"
       />
       <MainSection className="h-full flex flex-col items-center">
-        <PageTitle demoUrl={demoUrl} githubUrl={githubUrl} id="home" name={name} t={t} />
+        <PageTitle
+          demoUrl={demoUrl}
+          githubUrl={githubUrl}
+          id="home"
+          name={name}
+          subject={t('title.breadcrumbs.featured')}
+          t={t}
+        />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>

@@ -1,6 +1,7 @@
 /* navLinks.js */
 
 import {
+  faDownload,
   faHouse,
   faInfoCircle,
   faListUl,
@@ -56,6 +57,16 @@ const navLinks = {
     {
       icon: faListUl,
       name: 'details',
+    },
+  ],
+  ['/resume']: [
+    {
+      icon: faHouse,
+      name: 'home',
+    },
+    {
+      icon: faDownload,
+      name: 'download',
     },
   ],
   ['/split-it']: [

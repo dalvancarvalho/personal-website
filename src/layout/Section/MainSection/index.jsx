@@ -2,9 +2,10 @@
 
 import useMainSectionAnimation from '../animations/useMainSectionAnimation'
 
-function MainSection({ children, className }) {
+function MainSection(props) {
   // Section with fade-in animation
 
+  const { children, className } = props
   const mainSectionRef = useMainSectionAnimation()
 
   return (

@@ -18,7 +18,7 @@ function useContactAnimation() {
           {
             opacity: 1,
             x: 0,
-            duration: 1,
+            duration: 1.25,
             ease: 'power3.out',
             scrollTrigger: {
               trigger: item,

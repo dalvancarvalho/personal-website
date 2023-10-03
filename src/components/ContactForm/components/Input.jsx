@@ -2,9 +2,10 @@
 
 import useInputStyling from '../hooks/useInputStyling'
 
-function Input({ inputName, inputs, label, setInputs, type }) {
+function Input(props) {
   // Input field
 
+  const { inputName, inputs, label, setInputs, type } = props
   const { checkField, containerRef, inputRef } = useInputStyling(inputName, inputs)
 
   return (

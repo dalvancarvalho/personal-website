@@ -4,9 +4,10 @@ import useFooterAnimation from './animations/useFooterAnimation'
 import Link from './components/Link'
 import SocialNetworkList from './components/SocialNetworkList'
 
-function Footer({ t }) {
+function Footer(props) {
   // Page footer
 
+  const { t } = props
   const footerRef = useFooterAnimation()
   const year = new Date().getFullYear()
 

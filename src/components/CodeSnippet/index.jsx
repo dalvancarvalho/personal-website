@@ -8,9 +8,10 @@ import useScreenProps from '../../hooks/useScreenProps'
 import Button from '../Button'
 import Tooltip from '../Tooltip'
 
-function CodeSnippet({ snippet: { codeString, extension, language, title } }) {
+function CodeSnippet(props) {
   // Syntax highlighted code snippet box for example purposes
 
+  const { codeString, extension, language, title } = props
   const { screenSize } = useScreenProps()
   const { copyToClipboard, isCopied } = useCodeSnippet(codeString)
 

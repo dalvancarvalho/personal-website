@@ -1,16 +1,18 @@
 /* MenuList.jsx */
 
-function MenuList({ children, title }) {
+function MenuList(props) {
   // Unordered list with title
+
+  const { children, title } = props
 
   return (
     <>
-      <h4
+      <p
         className="pl-6 sm:pl-5 py-4 font-bold text-2xl text-slate-800
         dark:text-gray-200 color-transition"
       >
         {title}
-      </h4>
+      </p>
       <ul className="flex flex-col items-start text-xl" role="listbox">
         {children}
       </ul>

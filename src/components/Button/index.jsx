@@ -1,14 +1,16 @@
 /* Button/index.jsx */
 
-function Button({
-  ariaLabel,
-  children,
-  className = '', // any other class needed goes here
-  onClick,
-  textColor = 'text-slate-500 dark:text-gray-400',
-  type = 'button',
-}) {
+function Button(props) {
   // Regular button
+
+  const {
+    ariaLabel,
+    children,
+    className = '', // any other class needed goes here
+    onClick,
+    textColor = 'text-slate-500 dark:text-gray-400',
+    type = 'button',
+  } = props
 
   return (
     <button

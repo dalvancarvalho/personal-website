@@ -9,14 +9,15 @@ import useStackAnimation from '../animations/useStackAnimation'
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
 
-function MobileCard({ index, project, t }) {
+function MobileCard(props) {
   // Displays a project and its main features in a card tailored for small screens
 
-  const isEven = index % 2 === 0 ? true : false
+  const { index, project, t } = props
   const { altText, description, isFinished, name, routeName, stack, thumbnail } = project
+  const isEven = index % 2 === 0 ? true : false
+  const [showImage, setShowImage] = useState(false)
   const cardRef = useCardMobileAnimation(isEven)
   const stackRef = useStackAnimation(cardRef)
-  const [showImage, setShowImage] = useState(false)
   const buttonRef = useRef(null)
   const navigate = useNavigate()
 

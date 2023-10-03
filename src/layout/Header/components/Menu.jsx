@@ -10,9 +10,10 @@ import LanguageList from './LanguageList'
 import NavList from './NavList'
 import ThemeList from './ThemeList'
 
-function Menu({ pathname, t, y }) {
+function Menu(props) {
   // Menu displayed on small screens
 
+  const { pathname, t, y } = props
   const { isMenuOpen, setMenuState, buttonRef, menuRef } = useMenu()
   useMenuAnimation(buttonRef, isMenuOpen, menuRef)
 

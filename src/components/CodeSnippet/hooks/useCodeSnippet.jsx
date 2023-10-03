@@ -4,8 +4,6 @@ import { useEffect, useState } from 'react'
 import Prism from 'prismjs'
 
 function useCodeSnippet(codeString) {
-  // Syntax highlighted code snippet box for example purposes
-
   const [isCopied, setIsCopied] = useState(false)
 
   useEffect(() => {

@@ -2,9 +2,10 @@
 
 import useInputStyling from '../hooks/useInputStyling'
 
-function TextArea({ inputName, inputs, label, setInputs }) {
+function TextArea(props) {
   // Text area field
 
+  const { inputName, inputs, label, setInputs } = props
   const { checkField, containerRef, inputRef } = useInputStyling(inputName, inputs)
 
   return (

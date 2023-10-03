@@ -1,14 +1,16 @@
 /* SecondaryButton/index.jsx */
 
-function SecondaryButton({
-  children,
-  className = '', // any other class needed goes here
-  onClick,
-  tabIndex = '0',
-  textSize = 'text-sm 2xl:text-base',
-  type = 'button',
-}) {
+function SecondaryButton(props) {
   // Secondary button
+
+  const {
+    children,
+    className = '', // any other class needed goes here
+    onClick,
+    tabIndex = '0',
+    textSize = 'text-sm 2xl:text-base',
+    type = 'button',
+  } = props
 
   return (
     <button

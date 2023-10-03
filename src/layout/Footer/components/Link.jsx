@@ -1,7 +1,9 @@
 /* Link.jsx */
 
-function Link({ href, linkText, text }) {
+function Link(props) {
   // External access link
+
+  const { href, linkText, text } = props
 
   return (
     <span>

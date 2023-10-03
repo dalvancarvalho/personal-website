@@ -6,9 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link as ScrollLink } from 'react-scroll'
 import useMenu from '../../../context/MenuContext'
 
-function NavLink({ children, icon, to }) {
+function NavLink(props) {
   // Link to access a respective section of the page
 
+  const { children, icon, to } = props
   const { setMenuState } = useMenu()
   const linkRef = useRef()
   const isActive = linkRef.current?.state.active

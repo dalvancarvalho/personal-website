@@ -1,12 +1,12 @@
 /* Highlight/index.jsx */
 
-function Highlight({ children }) {
-  // Highligths the wrapped word or sentence
+function Highlight(props) {
+  // Highlights the wrapped word or sentence
   // (Used in combination with the 'Trans' component from i18next)
 
   return (
     <span className="font-bold text-slate-800 dark:text-gray-200 color-transition">
-      {children}
+      {props.children}
     </span>
   )
 }

@@ -1,4 +1,4 @@
-/* index.jsx */
+/* BRGeo/index.jsx */
 
 import { useTranslation } from 'react-i18next'
 import Introduction from './Introduction'
@@ -22,7 +22,14 @@ function BRGeo() {
         url="https://dalvanc.com/br-geo"
       />
       <MainSection className="h-full flex flex-col items-center">
-        <PageTitle demoUrl={demoUrl} githubUrl={githubUrl} id="home" name={name} t={t} />
+        <PageTitle
+          demoUrl={demoUrl}
+          githubUrl={githubUrl}
+          id="home"
+          name={name}
+          subject={t('title.breadcrumbs.featured')}
+          t={t}
+        />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>

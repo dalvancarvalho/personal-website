@@ -4,9 +4,11 @@ import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import CallToAction from '../CallToAction'
 
-function SkipToContent({ t }) {
+function SkipToContent(props) {
   // Jumps directly to the content of the page when triggered,
   // skipping the items of the navbar and theme/language switches
+
+  const { t } = props
 
   return (
     <a

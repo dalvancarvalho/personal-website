@@ -5,6 +5,7 @@
         "home": "Dalvan Carvalho · Desenvolvedor Front-End",
         "brGeo": "BR Geo — Dalvan Carvalho · Desenvolvedor Front-End",
         "personalPage": "Página pessoal — Dalvan Carvalho · Desenvolvedor Front-End",
+        "resume": "Currículo — Dalvan Carvalho · Desenvolvedor Front-End",
         "splitIt": "Split it! — Dalvan Carvalho · Desenvolvedor Front-End",
         "notFound": "404: Página não encontrada"
       }
@@ -31,6 +32,10 @@
           "home": "Início",
           "intro": "Intro",
           "details": "Detalhes"
+        },
+        "/resume": {
+          "home": "Início",
+          "download": "Download"
         },
         "/split-it": {
           "home": "Início",
@@ -61,10 +66,12 @@
     "title": {
       "breadcrumbs": {
         "home": "Início",
+        "about": "Sobre",
         "featured": "Projeto em destaque"
       },
+      "demo": "Demonstração",
       "github": "Repositório do GitHub",
-      "demo": "Demonstração"
+      "linkedin": "Perfil do LinkedIn"
     },
 
     "pages": {
@@ -90,7 +97,7 @@
           "meAltText": "Foto de Dalvan Carvalho",
           "hoverTextTitle": "sim, é uma referência à Super Mario 🍄",
           "stackAltText": "Imagem composta por logotipos das tecnologias que Dalvan trabalha",
-          "button": "Ver currículo"
+          "button": "Acessar currículo"
         },
         "projects": {
           "heading": "Trabalho feito à mão",
@@ -161,6 +168,16 @@
         "details": {
           "heading": "Detalhes",
           "watermark": "Detalhes"
+        }
+      },
+      "resume": {
+        "name": "Currículo",
+        "download": {
+          "heading": "some name here",
+          "watermark": "Download",
+          "paragraph": "paragrafo em portugues",
+          "portuguese": "Currículo - Português",
+          "english": "Currículo - Inglês"
         }
       },
       "splitIt": {

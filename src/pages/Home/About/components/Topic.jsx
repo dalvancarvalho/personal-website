@@ -4,7 +4,9 @@ import { Trans } from 'react-i18next'
 import Highlight from '../../../../components/Text/Highlight'
 import Paragraph from '../../../../components/Text/Paragraph'
 
-function Topic({ heading, text }) {
+function Topic(props) {
+  const { heading, text } = props
+
   return (
     <div className="about-paragraph">
       <h3

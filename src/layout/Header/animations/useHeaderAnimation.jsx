@@ -1,24 +1,28 @@
 /* useHeaderAnimation.jsx */
 
-import { useLayoutEffect } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useHeaderAnimation() {
+function useHeaderAnimation(pathname) {
   // Header animation
+
+  const headerRef = useRef(null)
 
   useLayoutEffect(() => {
     gsap.fromTo(
-      '.header-elements',
+      headerRef.current,
       { opacity: 0, pointerEvents: 'none' },
       {
         opacity: 1,
         pointerEvents: 'all',
         duration: 0.75,
-        delay: 3,
+        delay: pathname === '/' ? 3 : 0,
         ease: 'power3.in',
       }
     )
   }, [])
+
+  return headerRef
 }
 
 export default useHeaderAnimation

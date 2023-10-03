@@ -7,11 +7,12 @@ import useStackAnimation from '../animations/useStackAnimation'
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
 
-function DesktopCard({ index, project, t }) {
+function DesktopCard(props) {
   // Displays a project and its main features in a modern looking card
 
-  const isEven = index % 2 === 0 ? true : false
+  const { index, project, t } = props
   const { altText, description, isFinished, name, routeName, stack, thumbnail } = project
+  const isEven = index % 2 === 0 ? true : false
   const { imageRef, textRef } = useCardAnimation(isEven)
   const stackRef = useStackAnimation(imageRef)
   const navigate = useNavigate()

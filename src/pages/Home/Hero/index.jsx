@@ -13,9 +13,10 @@ import Paragraph from '../../../components/Text/Paragraph'
 import bgDark from '../../../assets/svg/bg-dark.svg'
 import bgLight from '../../../assets/svg/bg-light.svg'
 
-function Hero({ t }) {
+function Hero(props) {
   // Hero section
 
+  const { t } = props
   useHeroAnimation()
 
   return (

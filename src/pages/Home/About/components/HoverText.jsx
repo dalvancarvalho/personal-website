@@ -2,7 +2,9 @@
 
 import Arrow from './Arrow'
 
-function HoverText({ t }) {
+function HoverText(props) {
+  const { t } = props
+
   return (
     <div
       className="absolute z-20 top-1/4 right-[42%] md:right-[45%] flex flex-col

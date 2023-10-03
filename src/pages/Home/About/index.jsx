@@ -1,9 +1,9 @@
 /* About/index.jsx */
 
-import { faArrowUp, faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Trans } from 'react-i18next'
-import useLanguage from '../../../context/LanguageContext'
+import { useNavigate } from 'react-router-dom'
 import useAboutAnimation from './animations/useAboutAnimation'
 import Container from '../../../layout/Container'
 import Divider from '../../../layout/Divider'
@@ -23,11 +23,12 @@ import stackLight from '../../../assets/svg/stack-light.svg'
 import meBw from '../../../assets/webp/me-bw-bg.webp'
 import meColor from '../../../assets/webp/me-color-bg.webp'
 
-function About({ t }) {
+function About(props) {
   // About section
 
-  const { language } = useLanguage()
+  const { t } = props
   const { stackRef, topicsRef } = useAboutAnimation()
+  const navigate = useNavigate()
 
   return (
     <Section id="about">
@@ -82,7 +83,7 @@ function About({ t }) {
         <Divider />
         <Grid>
           <div
-            className="z-10 col-start-1 col-end-8 row-span-full flex flex-col gap-4 
+            className="z-10 col-start-1 col-end-8 row-span-full flex flex-col gap-4
             2xl:gap-6 group"
             ref={stackRef}
           >
@@ -120,24 +121,12 @@ function About({ t }) {
                 pages.home.about.paragraphIV
               </Trans>
             </Paragraph>
-            <a
-              className="max-w-max"
-              href={language.value === 'ptBR' ? '/resume-pt-br.pdf' : 'resume-en-us.pdf'}
-              rel="noopener noreferrer"
-              tabIndex="-1"
-              target="_blank"
+            <CallToAction
+              className="max-w-max group/button"
+              onClick={() => navigate('resume')}
             >
-              <CallToAction className="group/button">
-                {t('pages.home.about.button')}
-                <FontAwesomeIcon
-                  className="rotate-45 transition-transform duration-150
-                  group-hover/button:translate-x-1 group-hover/button:-translate-y-1
-                  group-focus-visible/button:translate-x-1
-                  group-focus-visible/button:-translate-y-1"
-                  icon={faArrowUp}
-                />
-              </CallToAction>
-            </a>
+              {t('pages.home.about.button')}
+            </CallToAction>
           </div>
           <div
             className="about-stack relative w-full h-full col-start-5 col-end-13
