@@ -173,9 +173,9 @@
       "resume": {
         "name": "Currículo",
         "download": {
-          "heading": "some name here",
+          "heading": "Informações profissionais",
           "watermark": "Download",
-          "paragraph": "paragrafo em portugues",
+          "paragraph": "Você pode facilmente acessar ou baixar minhas informações profissionais clicando nos cartões abaixo. O currículo contém detalhes sobre minha formação, habilidades e experiência, e está disponível em português e inglês. <highlight>Sinta-se à vontade para explorar e baixar as informações que você precisa para saber mais sobre minhas qualificações.</highlight>",
           "portuguese": "Currículo - Português",
           "english": "Currículo - Inglês"
         }

@@ -13,8 +13,8 @@ import Meta from '../../components/Meta'
 function Home() {
   // Home page
 
-  const screenProps = useScreenProps()
   const { t } = useTranslation()
+  const screenProps = useScreenProps()
 
   return (
     <>

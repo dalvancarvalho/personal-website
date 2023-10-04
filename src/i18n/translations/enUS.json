@@ -173,9 +173,9 @@
       "resume": {
         "name": "Resume",
         "download": {
-          "heading": "some name here",
+          "heading": "Professional information",
           "watermark": "Download",
-          "paragraph": "paragraph in english",
+          "paragraph": "You can easily access or download my professional information by clicking on the cards below. The resume contains details about my background, skills, and experience and is available in both Brazilian Portuguese and English. <highlight>Feel free to explore and download the information you need to learn more about my qualifications.</highlight>",
           "portuguese": "Resume - Portuguese (Brazil)",
           "english": "Resume - English"
         }
