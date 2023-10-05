@@ -1,9 +1,10 @@
 /* Hero/index.jsx */
 
 import { Link as ScrollLink } from 'react-scroll'
-import { Parallax } from 'react-scroll-parallax'
 import { Trans } from 'react-i18next'
+import useHeroParallax from './hooks/useHeroParallax'
 import useHeroAnimation from './animations/useHeroAnimation'
+import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
 import CallToAction from '../../../components/Button/CallToAction'
 import SecondaryButton from '../../../components/Button/SecondaryButton'
@@ -17,21 +18,16 @@ function Hero(props) {
   // Hero section
 
   const { t } = props
-  useHeroAnimation()
+  const { bgRef, textRef } = useHeroParallax()
+  useHeroAnimation(bgRef, textRef)
 
   return (
     <Section className="relative isolate h-screen overflow-hidden" id="home">
-      <Parallax
-        className="h-full container px-6 m-auto grid place-content-center"
-        opacity={[1, -0.5]}
-        shouldAlwaysCompleteAnimation
-      >
-        <Parallax
+      <Container className="h-full px-6 grid place-content-center">
+        <div
           className="w-full sm:max-w-lg md:max-w-xl 2xl:max-w-2xl m-auto flex flex-col
           items-start"
-          opacity={[1, 0]}
-          scale={[1, 0.8]}
-          shouldAlwaysCompleteAnimation
+          ref={textRef}
         >
           <h1 className="hero-content title-font text-5xl md:text-7xl 2xl:text-8xl">
             <Trans
@@ -80,21 +76,16 @@ function Hero(props) {
               </SecondaryButton>
             </ScrollLink>
           </div>
-        </Parallax>
-      </Parallax>
-      <Parallax
-        className="hero-bg absolute bottom-0 -z-10 h-full w-full"
-        opacity={[1, -0.5]}
-        shouldAlwaysCompleteAnimation
-        translateY={[0, 70]}
-      >
+        </div>
+      </Container>
+      <div className="hero-bg absolute bottom-0 -z-10 h-full w-full" ref={bgRef}>
         <DynamicImage
           alt={t('pages.home.hero.bgAltText')}
           className="absolute bottom-0 h-[90%] w-full object-cover"
           darkVersion={bgDark}
           lightVersion={bgLight}
         />
-      </Parallax>
+      </div>
     </Section>
   )
 }

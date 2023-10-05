@@ -1,7 +1,7 @@
 /* DesktopCard/index.jsx */
 
-import { Parallax } from 'react-scroll-parallax'
 import { useNavigate } from 'react-router-dom'
+import useCardParallax from '../hooks/useCardParallax'
 import useDesktopAnimation from '../animations/useDesktopAnimation'
 import useStackAnimation from '../animations/useStackAnimation'
 import CallToAction from '../../Button/CallToAction'
@@ -13,9 +13,10 @@ function DesktopCard(props) {
   const { index, project, t } = props
   const { altText, description, isFinished, name, routeName, stack, thumbnail } = project
   const isEven = index % 2 === 0 ? true : false
+  const navigate = useNavigate()
+  const parallaxRef = useCardParallax()
   const refs = useDesktopAnimation(isEven)
   const stackRef = useStackAnimation(refs.image)
-  const navigate = useNavigate()
 
   return (
     <div className="isolate max-w-md md:max-w-max grid md:grid-cols-12 gap-4">
@@ -25,14 +26,13 @@ function DesktopCard(props) {
             ? 'col-start-5 lg:col-start-6 col-end-13'
             : 'col-start-1 col-end-9 lg:col-end-8'
         }
-        relative row-span-full m-auto -z-10 w-full h-full  rounded-[0.5em]
-        shadow-md overflow-hidden group`}
+        relative row-span-full m-auto -z-10 w-full h-full  rounded-[0.5em] shadow-md
+        overflow-hidden group`}
         ref={refs.image}
       >
         <img
           alt={t(altText)}
-          className="h-full group-hover:scale-110 group-hover:blur-[2px]
-          duration-500"
+          className="h-full group-hover:scale-110 group-hover:blur-[2px] duration-500"
           src={thumbnail}
         />
         <div
@@ -65,22 +65,22 @@ function DesktopCard(props) {
         }`}
         ref={refs.text}
       >
-        <Parallax
-          className={`${isEven ? 'items-start' : 'items-end'}
-          flex flex-col gap-4 2xl:gap-6`}
-          speed={15}
+        <div
+          className={`${isEven ? 'items-start' : 'items-end'} flex flex-col gap-4
+          2xl:gap-6`}
+          ref={parallaxRef}
         >
           {!isFinished && (
             <span
-              className="text-base 2xl:text-lg font-bold leading-[0]
-              2xl:leading-[0] font-mark-pro tracking-tight uppercase"
+              className="text-base 2xl:text-lg font-bold leading-[0] 2xl:leading-[0]
+              font-mark-pro tracking-tight uppercase"
             >
               {t('pages.home.projects.inProgress')}
             </span>
           )}
           <h3
-            className="title-font text-[2.25rem] 2xl:text-[2.75rem]
-            leading-9 dark:drop-shadow-md"
+            className="title-font text-[2.25rem] 2xl:text-[2.75rem] leading-9
+            dark:drop-shadow-md"
           >
             {t(name)}
           </h3>
@@ -95,7 +95,7 @@ function DesktopCard(props) {
           <CallToAction className="shadow-xl" onClick={() => navigate(routeName)}>
             {t('pages.home.projects.primaryButton')}
           </CallToAction>
-        </Parallax>
+        </div>
       </div>
     </div>
   )

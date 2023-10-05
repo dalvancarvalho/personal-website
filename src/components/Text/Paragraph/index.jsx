@@ -15,7 +15,7 @@ const Paragraph = forwardRef(function Paragraph(props, ref) {
 
   return (
     <p
-      className={`${className} ${textSize} ${textColor} ${fontWeight} color-transition`}
+      className={`${className} ${fontWeight} ${textColor} ${textSize} color-transition`}
       ref={ref}
     >
       {children}

@@ -1,9 +1,9 @@
-/* useHeroAnimation.jsx */
+/* useHeroAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useHeroAnimation() {
+function useHeroAnimation(bgRef, textRef) {
   // Hero section animation
 
   const tl = useRef(null)
@@ -13,7 +13,7 @@ function useHeroAnimation() {
       tl.current = gsap
         .timeline()
         .fromTo(
-          '.hero-bg',
+          bgRef.current,
           { opacity: 0, scale: 1.4, visibility: 'hidden' },
           {
             opacity: 1,
@@ -25,7 +25,7 @@ function useHeroAnimation() {
           }
         )
         .fromTo(
-          '.hero-content',
+          textRef.current.children,
           { opacity: 0, scale: 1.2, y: 32 },
           {
             opacity: 1,
