@@ -1,4 +1,4 @@
-/* useDocCoordinates.jsx */
+/* useDocCoordinates.js */
 
 import { useEffect, useState } from 'react'
 

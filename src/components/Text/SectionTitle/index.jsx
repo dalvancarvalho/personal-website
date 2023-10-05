@@ -11,7 +11,7 @@ function SectionTitle(props) {
     watermark = undefined,
     watermarkColor = 'text-slate-150 dark:text-dark-2',
   } = props
-  const { headingRef, watermarkRef } = useSectionTitleAnimation(animation, watermark)
+  const refs = useSectionTitleAnimation(animation, watermark)
 
   return (
     <div
@@ -19,14 +19,14 @@ function SectionTitle(props) {
       justify-start md:justify-center title-font text-3xl md:text-[2.5rem]
       2xl:text-[2.75rem]"
     >
-      <h2 ref={headingRef}>{children}</h2>
+      <h2 ref={refs.heading}>{children}</h2>
       {watermark && (
         <span
           className={`hidden -z-10 absolute translate-x-[0.125em] md:block
           lg:translate-x-[0.2em] text-[2.5em] uppercase ${watermarkColor}
           tracking-[0.25em] lg:tracking-[0.4em] select-none color-transition
           whitespace-nowrap`}
-          ref={watermarkRef}
+          ref={refs.watermark}
         >
           {watermark}
         </span>

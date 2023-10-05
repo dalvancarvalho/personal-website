@@ -1,13 +1,13 @@
-/* useSectionTitleAnimation.jsx */
+/* useSectionTitleAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useSectionTitleAnimation(animation, watermark) {
+function useSectionTitleAnimation(animation, watermarkText) {
   // Heading animation
 
-  const headingRef = useRef(null)
-  const watermarkRef = useRef(null)
+  const heading = useRef(null)
+  const watermark = useRef(null)
 
   useLayoutEffect(() => {
     // (the elements are targeted through 'refs' in order to trigger the
@@ -16,7 +16,7 @@ function useSectionTitleAnimation(animation, watermark) {
     if (!animation) return
 
     gsap.fromTo(
-      headingRef.current,
+      heading.current,
       { opacity: 0, scale: 1.2 },
       {
         opacity: 1,
@@ -24,15 +24,15 @@ function useSectionTitleAnimation(animation, watermark) {
         duration: 0.5,
         ease: 'power3.in',
         scrollTrigger: {
-          trigger: headingRef.current,
+          trigger: heading.current,
           start: 'bottom bottom',
         },
       }
     )
 
-    watermark &&
+    watermarkText &&
       gsap.fromTo(
-        watermarkRef.current,
+        watermark.current,
         { opacity: 0, scale: 0.8 },
         {
           opacity: 1,
@@ -41,14 +41,14 @@ function useSectionTitleAnimation(animation, watermark) {
           delay: 0.55,
           ease: 'power3.out',
           scrollTrigger: {
-            trigger: headingRef.current,
+            trigger: heading.current,
             start: 'bottom bottom',
           },
         }
       )
   }, [])
 
-  return { headingRef, watermarkRef }
+  return { heading, watermark }
 }
 
 export default useSectionTitleAnimation

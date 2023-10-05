@@ -1,4 +1,4 @@
-/* StackAnimation.jsx */
+/* useStackAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'

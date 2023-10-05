@@ -1,14 +1,16 @@
-/* useProjectsAnimation.jsx */
+/* useProjectsAnimation.js */
 
-import { useLayoutEffect } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
 function useProjectsAnimation() {
   // Projects section animation
 
+  const paragraphRef = useRef(null)
+
   useLayoutEffect(() => {
     gsap.fromTo(
-      '.projects-paragraph',
+      paragraphRef.current,
       { opacity: 0, x: 32 },
       {
         opacity: 1,
@@ -16,12 +18,14 @@ function useProjectsAnimation() {
         duration: 1.25,
         ease: 'power3.out',
         scrollTrigger: {
-          trigger: '.projects-paragraph',
+          trigger: paragraphRef.current,
           start: 'bottom bottom',
         },
       }
     )
   }, [])
+
+  return paragraphRef
 }
 
 export default useProjectsAnimation

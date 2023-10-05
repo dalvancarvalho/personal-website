@@ -3,7 +3,7 @@
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import useContactForm from './hooks/useContactForm'
-import useContactFormAnimation from './animations/useContactFormAnimation'
+import useFormAnimation from './animations/useFormAnimation'
 import CallToAction from '../Button/CallToAction'
 import Spinner from '../Button/Spinner'
 import Input from './components/Input'
@@ -15,7 +15,7 @@ function ContactForm(props) {
 
   const { t } = props
   const { handleSubmit, isSubmitting, message, ...inputs } = useContactForm()
-  const formRef = useContactFormAnimation()
+  const formRef = useFormAnimation()
 
   return (
     <form

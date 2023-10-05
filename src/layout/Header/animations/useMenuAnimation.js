@@ -1,4 +1,4 @@
-/* useMenuAnimation.jsx */
+/* useMenuAnimation.js */
 
 import { useLayoutEffect } from 'react'
 import { gsap } from 'gsap'

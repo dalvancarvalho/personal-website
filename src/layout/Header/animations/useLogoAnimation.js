@@ -1,4 +1,4 @@
-/* useLogoAnimation.jsx */
+/* useLogoAnimation.js */
 
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
@@ -13,8 +13,8 @@ function useLogoAnimation() {
   const { language } = useLanguage()
   const { pathname } = useLocation()
   const isFirstRender = useIsFirstRender()
-  const cursorRef = useRef(null)
-  const textRef = useRef(null)
+  const cursor = useRef(null)
+  const text = useRef(null)
   const tl = useRef(null)
   const [logoText, setLogoText] = useState(
     language.value === 'ptBR' ? ptBR[pathname] : enUS[pathname]
@@ -33,18 +33,14 @@ function useLogoAnimation() {
     const ctx = gsap.context(() => {
       tl.current = gsap
         .timeline()
-        .to(cursorRef.current, {
+        .to(cursor.current, {
           duration: 0.5,
           opacity: 1,
           delay: 0.5,
           repeat: 6,
           ease: 'power3.inOut',
         })
-        .to(
-          textRef.current,
-          { text: { value: logoText, speed: 1 }, ease: 'none' },
-          '-=2.25'
-        )
+        .to(text.current, { text: { value: logoText, speed: 1 }, ease: 'none' }, '-=2.25')
     })
 
     // Animation cleanup
@@ -59,13 +55,13 @@ function useLogoAnimation() {
     const ctx = gsap.context(() => {
       tl.current = gsap
         .timeline()
-        .to(textRef.current, { text: { value: '', speed: 2 }, ease: 'none' })
-        .to(textRef.current, {
+        .to(text.current, { text: { value: '', speed: 2 }, ease: 'none' })
+        .to(text.current, {
           text: { value: logoText, speed: 1 },
           ease: 'none',
         })
         .fromTo(
-          cursorRef.current,
+          cursor.current,
           { opacity: 0 },
           {
             opacity: 1,
@@ -81,7 +77,7 @@ function useLogoAnimation() {
     return () => ctx.kill()
   }, [logoText])
 
-  return { cursorRef, textRef }
+  return { cursor, text }
 }
 
 export default useLogoAnimation

@@ -1,4 +1,4 @@
-/* useDividerAnimation.jsx */
+/* useDividerAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'

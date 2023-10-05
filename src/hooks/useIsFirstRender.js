@@ -1,4 +1,4 @@
-/* useIsMount.jsx */
+/* useIsMount.js */
 
 import { useEffect, useRef } from 'react'
 

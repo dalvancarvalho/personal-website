@@ -1,4 +1,4 @@
-/* useScreenProps.jsx */
+/* useScreenProps.js */
 
 import { useEffect, useState } from 'react'
 

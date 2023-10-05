@@ -1,4 +1,4 @@
-/* useFooterAnimation.jsx */
+/* useFooterAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'

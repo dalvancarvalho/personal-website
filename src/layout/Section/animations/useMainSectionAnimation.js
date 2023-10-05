@@ -1,4 +1,4 @@
-/* useMainSectionAnimation.jsx */
+/* useMainSectionAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'

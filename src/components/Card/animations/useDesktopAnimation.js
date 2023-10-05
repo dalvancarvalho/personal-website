@@ -1,20 +1,20 @@
-/* useCardAnimation.jsx */
+/* useDesktopAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useCardAnimation(isEven) {
+function useDesktopAnimation(isEven) {
   // Desktop card animation
 
-  const imageRef = useRef(null)
-  const textRef = useRef(null)
+  const image = useRef(null)
+  const text = useRef(null)
 
   useLayoutEffect(() => {
     // (the elements are targeted through 'refs' in order to trigger the
     // animations individually when more than one card is rendered)
 
     gsap.fromTo(
-      textRef.current,
+      text.current,
       { x: isEven ? -48 : 48, opacity: 0 },
       {
         x: 0,
@@ -22,14 +22,14 @@ function useCardAnimation(isEven) {
         duration: 1,
         ease: 'power3.inOut',
         scrollTrigger: {
-          trigger: imageRef.current,
+          trigger: image.current,
           start: 'bottom bottom',
         },
       }
     )
 
     gsap.fromTo(
-      imageRef.current,
+      image.current,
       { x: isEven ? 48 : -48, opacity: 0 },
       {
         x: 0,
@@ -37,14 +37,14 @@ function useCardAnimation(isEven) {
         duration: 1,
         ease: 'power3.inOut',
         scrollTrigger: {
-          trigger: imageRef.current,
+          trigger: image.current,
           start: 'bottom bottom',
         },
       }
     )
   }, [])
 
-  return { imageRef, textRef }
+  return { image, text }
 }
 
-export default useCardAnimation
+export default useDesktopAnimation

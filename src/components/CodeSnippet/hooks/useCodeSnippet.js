@@ -1,4 +1,4 @@
-/* useCodeSnippet.jsx */
+/* useCodeSnippet.js */
 
 import { useEffect, useState } from 'react'
 import Prism from 'prismjs'

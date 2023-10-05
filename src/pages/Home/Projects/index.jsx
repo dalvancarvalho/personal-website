@@ -16,7 +16,7 @@ function Projects(props) {
 
   const { screenProps, t } = props
   const { screenSize } = screenProps
-  useProjectsAnimation()
+  const paragraphRef = useProjectsAnimation()
 
   return (
     <Section
@@ -35,7 +35,7 @@ function Projects(props) {
         >
           {t('pages.home.projects.heading')}
         </SectionTitle>
-        <Paragraph className="projects-paragraph mb-16 2xl:mb-20 lg:mx-12 2xl:mx-20">
+        <Paragraph className="mb-16 2xl:mb-20 lg:mx-12 2xl:mx-20" ref={paragraphRef}>
           <Trans components={{ highlight: <Highlight /> }}>
             pages.home.projects.paragraph
           </Trans>

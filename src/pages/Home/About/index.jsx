@@ -27,7 +27,7 @@ function About(props) {
   // About section
 
   const { t } = props
-  const { stackRef, topicsRef } = useAboutAnimation()
+  const refs = useAboutAnimation()
   const navigate = useNavigate()
 
   return (
@@ -41,9 +41,10 @@ function About(props) {
         </SectionTitle>
         <Grid>
           <div
-            className="about-selfie relative mt-4 lg:mt-0 mb-6 md:mb-10 lg:mb-0
-            col-start-1 col-end-6 w-72 md:w-96 lg:w-full h-96 md:h-[32rem] lg:h-full
-            flex rounded-xl overflow-hidden drop-shadow-lg group"
+            className="relative mt-4 lg:mt-0 mb-6 md:mb-10 lg:mb-0 col-start-1
+            col-end-6 w-72 md:w-96 lg:w-full h-96 md:h-[32rem] lg:h-full flex
+            rounded-xl overflow-hidden drop-shadow-lg group"
+            ref={refs.selfie}
           >
             <HoverText t={t} />
             <img
@@ -63,9 +64,9 @@ function About(props) {
           <div
             className="relative isolate col-start-6 col-end-13 flex flex-col gap-6
             2xl:gap-8"
-            ref={topicsRef}
+            ref={refs.topics}
           >
-            <QuotationMark />
+            <QuotationMark ref={refs.quotation} />
             <Topic
               heading={t('pages.home.about.subHeadingI')}
               text="pages.home.about.paragraphI"
@@ -85,7 +86,7 @@ function About(props) {
           <div
             className="z-10 col-start-1 col-end-8 row-span-full flex flex-col gap-4
             2xl:gap-6 group"
-            ref={stackRef}
+            ref={refs.stack}
           >
             <h3
               className="md:text-lg 2xl:text-xl font-bold text-slate-800
@@ -129,9 +130,10 @@ function About(props) {
             </CallToAction>
           </div>
           <div
-            className="about-stack relative w-full h-full col-start-5 col-end-13
-            row-span-full hidden lg:flex flex-col items-start self-center
-            justify-self-center gap-4 2xl:gap-6 select-none"
+            className="relative w-full h-full col-start-5 col-end-13 row-span-full
+            hidden lg:flex flex-col items-start self-center justify-self-center gap-4
+            2xl:gap-6 select-none"
+            ref={refs.image}
           >
             <DynamicImage
               alt={t('pages.home.about.stackAltText')}

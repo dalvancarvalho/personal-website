@@ -1,4 +1,4 @@
-/* useKeyPress.jsx */
+/* useKeyPress.js */
 
 import { useCallback, useEffect } from 'react'
 

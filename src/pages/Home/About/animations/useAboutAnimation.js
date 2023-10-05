@@ -1,4 +1,4 @@
-/* useAboutAnimation.jsx */
+/* useAboutAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
@@ -8,8 +8,11 @@ function useAboutAnimation() {
   // About section animation
 
   const { screenSize } = useScreenProps()
-  const stackRef = useRef(null)
-  const topicsRef = useRef(null)
+  const image = useRef(null)
+  const quotation = useRef(null)
+  const selfie = useRef(null)
+  const stack = useRef(null)
+  const topics = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context((self) => {
@@ -31,10 +34,10 @@ function useAboutAnimation() {
           }
         )
       })
-    }, topicsRef)
+    }, topics)
 
     gsap.fromTo(
-      stackRef.current.children,
+      stack.current.children,
       { opacity: 0, x: 32 },
       {
         opacity: 1,
@@ -43,28 +46,28 @@ function useAboutAnimation() {
         stagger: 0.125,
         ease: 'power3.out',
         scrollTrigger: {
-          trigger: stackRef.current,
+          trigger: stack.current,
           start: 'bottom bottom',
         },
       }
     )
 
     gsap.fromTo(
-      '.about-selfie',
+      selfie.current,
       { opacity: 0 },
       {
         opacity: 1,
         duration: 1,
         ease: 'power3.in',
         scrollTrigger: {
-          trigger: screenSize.md ? topicsRef.current : '.about-selfie',
+          trigger: screenSize.md ? topics.current : selfie.current,
           start: 'top 65%',
         },
       }
     )
 
     gsap.fromTo(
-      '.about-quotation',
+      quotation.current,
       { opacity: 0, x: 32 },
       {
         opacity: 1,
@@ -72,14 +75,14 @@ function useAboutAnimation() {
         duration: 1.25,
         ease: 'power3.out',
         scrollTrigger: {
-          trigger: topicsRef.current,
+          trigger: topics.current,
           start: 'top 65%',
         },
       }
     )
 
     gsap.fromTo(
-      '.about-stack',
+      image.current,
       { opacity: 0, x: -32 },
       {
         opacity: 1,
@@ -87,7 +90,7 @@ function useAboutAnimation() {
         duration: 1.5,
         ease: 'power3.out',
         scrollTrigger: {
-          trigger: '.about-stack',
+          trigger: image.current,
           start: 'bottom bottom',
         },
       }
@@ -97,7 +100,7 @@ function useAboutAnimation() {
     return () => ctx.revert()
   }, [])
 
-  return { stackRef, topicsRef }
+  return { image, quotation, selfie, stack, topics }
 }
 
 export default useAboutAnimation

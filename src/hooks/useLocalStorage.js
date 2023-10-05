@@ -1,4 +1,4 @@
-/* useLocalStorage.jsx */
+/* useLocalStorage.js */
 
 import { useEffect, useState } from 'react'
 

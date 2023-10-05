@@ -8,8 +8,8 @@ function Logo(props) {
   // Animated logo that changes its text based on the current language and pathname
 
   const { y } = props
-  const { cursorRef, textRef } = useLogoAnimation()
   const { isMenuOpen } = useMenu()
+  const refs = useLogoAnimation()
   const navigate = useNavigate()
 
   return (
@@ -24,9 +24,9 @@ function Logo(props) {
         className="text-accent group-hover:text-blue-500 group-hover:dark:text-orange-400
         group-focus-visible:text-blue-500 group-focus-visible:dark:text-orange-400 
         color-transition"
-        ref={textRef}
+        ref={refs.text}
       ></span>
-      <span className="font-urbanist opacity-0" ref={cursorRef}>
+      <span className="font-urbanist opacity-0" ref={refs.cursor}>
         _
       </span>
     </p>

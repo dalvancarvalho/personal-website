@@ -1,6 +1,8 @@
 /* Paragraph/index.jsx */
 
-function Paragraph(props) {
+import { forwardRef } from 'react'
+
+const Paragraph = forwardRef(function Paragraph(props, ref) {
   // Regular paragraph
 
   const {
@@ -12,10 +14,13 @@ function Paragraph(props) {
   } = props
 
   return (
-    <p className={`${className} ${textSize} ${textColor} ${fontWeight} color-transition`}>
+    <p
+      className={`${className} ${textSize} ${textColor} ${fontWeight} color-transition`}
+      ref={ref}
+    >
       {children}
     </p>
   )
-}
+})
 
 export default Paragraph

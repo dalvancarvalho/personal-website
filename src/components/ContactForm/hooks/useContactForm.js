@@ -1,4 +1,4 @@
-/* useContactForm.jsx */
+/* useContactForm.js */
 
 import { useEffect, useState } from 'react'
 import emailjs from '@emailjs/browser'

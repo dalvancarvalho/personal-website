@@ -1,9 +1,9 @@
-/* useContactFormAnimation.jsx */
+/* useFormAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useContactFormAnimation() {
+function useFormAnimation() {
   // Contact form animation
 
   const formRef = useRef(null)
@@ -35,4 +35,4 @@ function useContactFormAnimation() {
   return formRef
 }
 
-export default useContactFormAnimation
+export default useFormAnimation

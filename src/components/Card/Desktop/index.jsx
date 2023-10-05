@@ -2,7 +2,7 @@
 
 import { Parallax } from 'react-scroll-parallax'
 import { useNavigate } from 'react-router-dom'
-import useCardAnimation from '../animations/useCardAnimation'
+import useDesktopAnimation from '../animations/useDesktopAnimation'
 import useStackAnimation from '../animations/useStackAnimation'
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
@@ -13,8 +13,8 @@ function DesktopCard(props) {
   const { index, project, t } = props
   const { altText, description, isFinished, name, routeName, stack, thumbnail } = project
   const isEven = index % 2 === 0 ? true : false
-  const { imageRef, textRef } = useCardAnimation(isEven)
-  const stackRef = useStackAnimation(imageRef)
+  const refs = useDesktopAnimation(isEven)
+  const stackRef = useStackAnimation(refs.image)
   const navigate = useNavigate()
 
   return (
@@ -27,7 +27,7 @@ function DesktopCard(props) {
         }
         relative row-span-full m-auto -z-10 w-full h-full  rounded-[0.5em]
         shadow-md overflow-hidden group`}
-        ref={imageRef}
+        ref={refs.image}
       >
         <img
           alt={t(altText)}
@@ -63,7 +63,7 @@ function DesktopCard(props) {
             ? 'col-start-1 col-end-8 lg:col-end-7'
             : 'col-start-6 lg:col-start-7 col-end-13'
         }`}
-        ref={textRef}
+        ref={refs.text}
       >
         <Parallax
           className={`${isEven ? 'items-start' : 'items-end'}
