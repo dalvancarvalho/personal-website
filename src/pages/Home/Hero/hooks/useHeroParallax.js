@@ -12,8 +12,8 @@ function useHeroParallax() {
   })
 
   const { ref: textRef } = useParallax({
-    opacity: [1, -0.5],
-    scale: [1, 0.8],
+    opacity: [1, -0.25],
+    scale: [1, 0.75],
     shouldAlwaysCompleteAnimation: true,
   })
 

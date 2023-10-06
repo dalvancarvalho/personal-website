@@ -2,7 +2,6 @@
 
 import { useTranslation } from 'react-i18next'
 import Introduction from './Introduction'
-import Footer from '../../layout/Footer'
 import MainSection from '../../layout/Section/MainSection'
 import Meta from '../../components/Meta'
 import PageTitle from '../../components/Text/PageTitle'
@@ -33,7 +32,6 @@ function BRGeo() {
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>
-      <Footer t={t} />
     </>
   )
 }

@@ -22,7 +22,7 @@ function Hero(props) {
   useHeroAnimation(bgRef, textRef)
 
   return (
-    <Section className="relative isolate h-screen overflow-hidden" id="home">
+    <Section className="relative isolate h-[100dvh] overflow-hidden" id="home">
       <Container className="h-full px-6 grid place-content-center">
         <div
           className="w-full sm:max-w-lg md:max-w-xl 2xl:max-w-2xl m-auto flex flex-col

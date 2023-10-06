@@ -11,7 +11,7 @@ import CallToAction from '../../components/Button/CallToAction'
 import Paragraph from '../../components/Text/Paragraph'
 
 function NotFound() {
-  // Not found
+  // 404 page
 
   const { t } = useTranslation()
 
@@ -20,7 +20,7 @@ function NotFound() {
       <Helmet>
         <title>{t('meta.title.notFound')}</title>
       </Helmet>
-      <MainSection className="relative isolate h-screen grid place-items-center">
+      <MainSection className="relative isolate h-[100dvh] grid place-items-center">
         <Container
           className="relative h-full px-6 md:px-12 2xl:px-32 flex flex-col items-center
           justify-center"

@@ -1,7 +1,6 @@
 /* Resume/index.jsx */
 
 import { useTranslation } from 'react-i18next'
-import Footer from '../../layout/Footer'
 import MainSection from '../../layout/Section/MainSection'
 import Meta from '../../components/Meta'
 import PageTitle from '../../components/Text/PageTitle'
@@ -29,7 +28,6 @@ function Resume() {
         />
         <Download t={t} />
       </MainSection>
-      <Footer t={t} />
     </>
   )
 }

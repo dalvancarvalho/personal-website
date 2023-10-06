@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dalvanc.com/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-10-06</lastmod>
   </url>
   <url>
     <loc>https://dalvanc.com/br-geo</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-10-06</lastmod>
   </url>
   <url>
     <loc>https://dalvanc.com/personal-page</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-10-06</lastmod>
   </url>
   <url>
-    <loc>https://dalvanc.com/split-it</loc>
-    <lastmod>2023-09-18</lastmod>
-  </url>
-  <url>
-    <loc>https://dalvanc.com/resume-pt-br.pdf</loc>
-    <lastmod>2023-09-18</lastmod>
+    <loc>https://dalvanc.com/resume</loc>
+    <lastmod>2023-10-06</lastmod>
   </url>
   <url>
     <loc>https://dalvanc.com/resume-en-us.pdf</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://dalvanc.com/resume-pt-br.pdf</loc>
+    <lastmod>2023-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://dalvanc.com/split-it</loc>
+    <lastmod>2023-10-06</lastmod>
   </url>
 </urlset>

@@ -8,6 +8,7 @@ import { TextPlugin } from 'gsap/TextPlugin'
 import useTheme from './context/ThemeContext'
 import Routes from './routes'
 import Loading from './pages/Loading'
+import Footer from './layout/Footer'
 import Header from './layout/Header'
 import Main from './layout/Main'
 
@@ -32,6 +33,7 @@ function App() {
         <Main>
           <Routes />
         </Main>
+        <Footer />
       </Suspense>
     </>
   )
