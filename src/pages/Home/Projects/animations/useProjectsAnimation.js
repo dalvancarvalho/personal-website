@@ -6,26 +6,32 @@ import { gsap } from 'gsap'
 function useProjectsAnimation() {
   // Projects section animation
 
-  const paragraphRef = useRef(null)
+  const paragraph = useRef(null)
+  const scope = useRef(null)
 
   useLayoutEffect(() => {
-    gsap.fromTo(
-      paragraphRef.current,
-      { opacity: 0, x: 32 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1.25,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: paragraphRef.current,
-          start: 'bottom bottom',
-        },
-      }
-    )
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        paragraph.current,
+        { opacity: 0, x: 32 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1.25,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: paragraph.current,
+            start: 'bottom bottom',
+          },
+        }
+      )
+    }, scope)
+
+    // Context cleanup
+    return () => ctx.revert()
   }, [])
 
-  return paragraphRef
+  return { scope, paragraph }
 }
 
 export default useProjectsAnimation

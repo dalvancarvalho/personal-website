@@ -18,6 +18,7 @@ function Logo(props) {
       ${y === 0 || isMenuOpen ? 'text-2xl 2xl:text-3xl' : 'text-xl 2xl:text-2xl'}
       cursor-pointer group`}
       onClick={() => navigate('/')}
+      ref={refs.scope}
       tabIndex="0"
     >
       <span

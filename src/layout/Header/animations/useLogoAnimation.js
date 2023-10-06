@@ -14,6 +14,7 @@ function useLogoAnimation() {
   const { pathname } = useLocation()
   const isFirstRender = useIsFirstRender()
   const cursor = useRef(null)
+  const scope = useRef(null)
   const text = useRef(null)
   const tl = useRef(null)
   const [logoText, setLogoText] = useState(
@@ -41,9 +42,9 @@ function useLogoAnimation() {
           ease: 'power3.inOut',
         })
         .to(text.current, { text: { value: logoText, speed: 1 }, ease: 'none' }, '-=2.25')
-    })
+    }, scope)
 
-    // Animation cleanup
+    // Context cleanup
     return () => ctx.kill()
   }, [])
 
@@ -71,13 +72,13 @@ function useLogoAnimation() {
           },
           '-=1'
         )
-    })
+    }, scope)
 
-    // Animation cleanup
+    // Context cleanup
     return () => ctx.kill()
   }, [logoText])
 
-  return { cursor, text }
+  return { cursor, scope, text }
 }
 
 export default useLogoAnimation

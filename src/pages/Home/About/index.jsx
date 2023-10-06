@@ -27,18 +27,19 @@ function About(props) {
   // About section
 
   const { t } = props
-  const refs = useAboutAnimation()
   const navigate = useNavigate()
+  const refs = useAboutAnimation()
 
   return (
-    <Section id="about">
+    <Section id="about" ref={refs.scope}>
       <Container
         className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col justify-center
         items-center"
       >
-        <SectionTitle watermark={t('pages.home.about.watermark')}>
-          {t('pages.home.about.heading')}
-        </SectionTitle>
+        <SectionTitle
+          title={t('pages.home.about.heading')}
+          watermark={t('pages.home.about.watermark')}
+        />
         <Grid>
           <div
             className="relative mt-4 lg:mt-0 mb-6 md:mb-10 lg:mb-0 col-start-1

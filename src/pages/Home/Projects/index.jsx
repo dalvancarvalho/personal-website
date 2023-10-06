@@ -16,7 +16,7 @@ function Projects(props) {
 
   const { screenProps, t } = props
   const { screenSize } = screenProps
-  const paragraphRef = useProjectsAnimation()
+  const refs = useProjectsAnimation()
 
   return (
     <Section
@@ -24,18 +24,18 @@ function Projects(props) {
       after:-skew-y-[4deg] md:after:-skew-y-2 after:bg-slate-150 after:dark:bg-dark-2
       overflow-x-clip after:transition-colors after:duration-300"
       id="projects"
+      ref={refs.scope}
     >
       <Container
         className="px-6 md:px-8 xl:px-40 2xl:px-44 flex flex-col justify-center
         items-center"
       >
         <SectionTitle
+          title={t('pages.home.projects.heading')}
           watermark={t('pages.home.projects.watermark')}
           watermarkColor="text-slate-250 dark:text-dark-4"
-        >
-          {t('pages.home.projects.heading')}
-        </SectionTitle>
-        <Paragraph className="mb-16 2xl:mb-20 lg:mx-12 2xl:mx-20" ref={paragraphRef}>
+        />
+        <Paragraph className="mb-16 2xl:mb-20 lg:mx-12 2xl:mx-20" ref={refs.paragraph}>
           <Trans components={{ highlight: <Highlight /> }}>
             pages.home.projects.paragraph
           </Trans>

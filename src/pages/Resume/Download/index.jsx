@@ -17,9 +17,10 @@ function Download(props) {
   return (
     <Section id="download">
       <Container className="h-full px-6 sm:px-8 xl:px-40">
-        <SectionTitle watermark={t('pages.resume.download.watermark')}>
-          {t('pages.resume.download.heading')}
-        </SectionTitle>
+        <SectionTitle
+          title={t('pages.resume.download.heading')}
+          watermark={t('pages.resume.download.watermark')}
+        />
         <Paragraph className="mb-16 2xl:mb-20">
           <Trans components={{ highlight: <Highlight /> }}>
             pages.resume.download.paragraph

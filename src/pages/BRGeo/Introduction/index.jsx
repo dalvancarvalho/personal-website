@@ -15,9 +15,10 @@ function Introduction(props) {
   return (
     <Section id="intro">
       <Container className="h-full px-6 sm:px-8 xl:px-40">
-        <SectionTitle watermark={t('pages.brGeo.intro.watermark')}>
-          {t('pages.brGeo.intro.heading')}
-        </SectionTitle>
+        <SectionTitle
+          title={t('pages.brGeo.intro.heading')}
+          watermark={t('pages.brGeo.intro.watermark')}
+        />
         <Paragraph>{t('misc.comingSoon')}</Paragraph>
         <CodeSnippet {...snippetModel} />
       </Container>

@@ -1,6 +1,6 @@
 /* useMenuAnimation.js */
 
-import { useLayoutEffect } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import useIsFirstRender from '../../../hooks/useIsFirstRender'
 
@@ -8,36 +8,44 @@ function useMenuAnimation(buttonRef, isMenuOpen, menuRef) {
   // Menu animation
 
   const isFirstRender = useIsFirstRender()
+  const scopeRef = useRef(null)
 
   useLayoutEffect(() => {
     const switchAnimation = gsap.to(buttonRef.current, {
+      // Button animation
       y: '100%',
       duration: 0.5,
       ease: 'expo.inOut',
       paused: true,
     })
 
-    if (isMenuOpen) {
-      gsap.to(menuRef.current.children, {
-        x: 0,
-        duration: 0.8,
-        stagger: 0.08,
-        ease: 'expo.out',
-      })
-      switchAnimation.play()
-    } else {
-      gsap.to(menuRef.current.children, {
-        x: '-100%',
-        duration: 0.5,
-        stagger: 0.05,
-        ease: 'expo.out',
-      })
-      if (isFirstRender) return
-      switchAnimation.reverse(0)
-    }
+    const ctx = gsap.context(() => {
+      if (isMenuOpen) {
+        // Menu animation
+        gsap.to(menuRef.current.children, {
+          x: 0,
+          duration: 0.8,
+          stagger: 0.08,
+          ease: 'expo.out',
+        })
+        switchAnimation.play()
+      } else {
+        gsap.to(menuRef.current.children, {
+          x: '-100%',
+          duration: 0.5,
+          stagger: 0.05,
+          ease: 'expo.out',
+        })
+        if (isFirstRender) return
+        switchAnimation.reverse(0)
+      }
+    }, scopeRef)
 
-    return () => switchAnimation.revert(0)
+    // Cleanup
+    return () => switchAnimation.revert()
   }, [isMenuOpen])
+
+  return scopeRef
 }
 
 export default useMenuAnimation

@@ -19,7 +19,10 @@ function DesktopCard(props) {
   const stackRef = useStackAnimation(refs.image)
 
   return (
-    <div className="isolate max-w-md md:max-w-max grid md:grid-cols-12 gap-4">
+    <div
+      className="isolate max-w-md md:max-w-max grid md:grid-cols-12 gap-4"
+      ref={refs.scope}
+    >
       <div
         className={`${
           isEven

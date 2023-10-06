@@ -7,6 +7,7 @@ function useHeroAnimation(bgRef, textRef) {
   // Hero section animation
 
   const tl = useRef(null)
+  const scopeRef = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -37,11 +38,13 @@ function useHeroAnimation(bgRef, textRef) {
           },
           '-=0.7'
         )
-    })
+    }, scopeRef)
 
     // Context cleanup
     return () => ctx.revert()
   }, [])
+
+  return scopeRef
 }
 
 export default useHeroAnimation

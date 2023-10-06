@@ -7,44 +7,47 @@ function useDesktopAnimation(isEven) {
   // Desktop card animation
 
   const image = useRef(null)
+  const scope = useRef(null)
   const text = useRef(null)
 
   useLayoutEffect(() => {
-    // (the elements are targeted through 'refs' in order to trigger the
-    // animations individually when more than one card is rendered)
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        text.current,
+        { x: isEven ? -48 : 48, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          ease: 'power3.inOut',
+          scrollTrigger: {
+            trigger: image.current,
+            start: 'bottom bottom',
+          },
+        }
+      )
 
-    gsap.fromTo(
-      text.current,
-      { x: isEven ? -48 : 48, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        ease: 'power3.inOut',
-        scrollTrigger: {
-          trigger: image.current,
-          start: 'bottom bottom',
-        },
-      }
-    )
+      gsap.fromTo(
+        image.current,
+        { x: isEven ? 48 : -48, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          ease: 'power3.inOut',
+          scrollTrigger: {
+            trigger: image.current,
+            start: 'bottom bottom',
+          },
+        }
+      )
+    }, scope)
 
-    gsap.fromTo(
-      image.current,
-      { x: isEven ? 48 : -48, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        ease: 'power3.inOut',
-        scrollTrigger: {
-          trigger: image.current,
-          start: 'bottom bottom',
-        },
-      }
-    )
+    // Context cleanup
+    return () => ctx.revert()
   }, [])
 
-  return { image, text }
+  return { image, scope, text }
 }
 
 export default useDesktopAnimation

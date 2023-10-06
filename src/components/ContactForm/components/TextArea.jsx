@@ -9,7 +9,7 @@ function TextArea(props) {
   const { checkField, containerRef, inputRef } = useInputStyling(inputName, inputs)
 
   return (
-    <div className="form-element form-field" ref={containerRef}>
+    <div className="form-field" ref={containerRef}>
       <label
         className={`${
           inputs[inputName].length === 0

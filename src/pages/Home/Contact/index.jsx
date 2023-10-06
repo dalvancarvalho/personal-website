@@ -22,35 +22,33 @@ function Contact(props) {
   const { screenProps, t } = props
   const { screenSize } = screenProps
   const { confetti } = useConfetti()
-  const textRef = useContactAnimation()
+  const refs = useContactAnimation()
 
   return (
-    <Section className="relative" id="contact">
+    <Section className="relative" id="contact" ref={refs.scope}>
       <Container
         className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col
         justify-center items-center"
       >
-        <SectionTitle watermark={t('pages.home.contact.watermark')}>
-          {t('pages.home.contact.heading')}
-        </SectionTitle>
+        <SectionTitle
+          title={t('pages.home.contact.heading')}
+          watermark={t('pages.home.contact.watermark')}
+        />
         <Grid>
-          <div
-            className="h-full col-start-1 col-end-8 flex flex-col justify-between gap-8"
-            ref={textRef}
-          >
-            <div className="flex flex-col gap-4">
-              <Paragraph className="contact-item">
+          <div className="h-full col-start-1 col-end-8 flex flex-col justify-between gap-8">
+            <div className="flex flex-col gap-4 2xl:gap-6">
+              <Paragraph className="contact-paragraph">
                 <Trans components={{ highlight: <Highlight /> }}>
                   pages.home.contact.paragraphI
                 </Trans>
               </Paragraph>
-              <Paragraph className="contact-item">
+              <Paragraph className="contact-paragraph">
                 <Trans components={{ highlight: <Highlight /> }}>
                   pages.home.contact.paragraphII
                 </Trans>
               </Paragraph>
             </div>
-            <div className="contact-item flex flex-col gap-2">
+            <div className="contact-paragraph flex flex-col gap-2">
               <MailTo t={t} />
               <Paragraph className="flex items-center gap-2" fontWeight="font-bold">
                 <FontAwesomeIcon
@@ -63,7 +61,9 @@ function Contact(props) {
             </div>
           </div>
           {!screenSize.lg && <Divider />}
-          <ContactForm t={t} />
+          <div className="col-start-8 col-end-13 w-full">
+            <ContactForm ref={refs.form} t={t} />
+          </div>
         </Grid>
       </Container>
       {confetti && <Confetti />}

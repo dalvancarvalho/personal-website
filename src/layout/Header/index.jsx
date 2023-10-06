@@ -22,7 +22,7 @@ function Header() {
   const { screenSize } = useScreenProps()
   const { y } = useDocCoordinates()
   const { t } = useTranslation()
-  const headerRef = useHeaderAnimation(pathname)
+  const refs = useHeaderAnimation(pathname)
 
   return (
     <header
@@ -33,6 +33,7 @@ function Header() {
       }
       fixed top-0 z-50 w-full 2xl:text-lg bg-opacity-[85%] dark:bg-opacity-[85%]
       border-b transition-[height,background,border] duration-300`}
+      ref={refs.scope}
     >
       <SkipToContent t={t} />
       <Container
@@ -40,7 +41,7 @@ function Header() {
         px-6 md:px-8 h-full flex items-center`}
       >
         {pathname !== '/404' && <Logo y={y} />}
-        <div ref={headerRef}>
+        <div ref={refs.nav}>
           {screenSize.md ? (
             // 💻 on medium/large screens, renders the items directly in the header
             <div className="flex items-center gap-6 2xl:gap-8">

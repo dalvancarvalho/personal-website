@@ -1,32 +1,30 @@
 /* ContactForm/index.jsx */
 
+import { forwardRef } from 'react'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import useContactForm from './hooks/useContactForm'
-import useFormAnimation from './animations/useFormAnimation'
 import CallToAction from '../Button/CallToAction'
 import Spinner from '../Button/Spinner'
 import Input from './components/Input'
 import Message from './components/Message'
 import TextArea from './components/TextArea'
 
-function ContactForm(props) {
+const ContactForm = forwardRef(function ContactForm(props, ref) {
   // Contact form
 
   const { t } = props
   const { handleSubmit, isSubmitting, message, ...inputs } = useContactForm()
-  const formRef = useFormAnimation()
 
   return (
     <form
-      className="relative col-start-8 col-end-13 w-full m-auto max-w-md flex flex-col
-      items-center gap-6"
+      className="relative m-auto max-w-md flex flex-col items-center gap-6"
       onSubmit={handleSubmit}
-      ref={formRef}
+      ref={ref}
     >
       <h3
-        className="form-element contact-item w-full text-base md:text-lg 2xl:text-xl
-        text-slate-800 dark:text-gray-200 font-bold color-transition"
+        className="w-full text-base md:text-lg 2xl:text-xl text-slate-800
+        dark:text-gray-200 font-bold color-transition"
       >
         {t('pages.home.contact.formTitle')}
       </h3>
@@ -48,11 +46,11 @@ function ContactForm(props) {
         {...inputs}
       />
       <CallToAction
-        className={`${
+        className={`w-full ${
           isSubmitting
             ? '!bg-gray-400 !dark:bg-gray-500 !text-white pointer-events-none'
             : null
-        } form-element w-full`}
+        }`}
         type="submit"
       >
         {isSubmitting ? (
@@ -76,6 +74,6 @@ function ContactForm(props) {
       <Message {...message} />
     </form>
   )
-}
+})
 
 export default ContactForm

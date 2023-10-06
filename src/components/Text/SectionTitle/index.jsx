@@ -7,7 +7,7 @@ function SectionTitle(props) {
 
   const {
     animation = true,
-    children,
+    title,
     watermark = undefined,
     watermarkColor = 'text-slate-150 dark:text-dark-2',
   } = props
@@ -18,8 +18,9 @@ function SectionTitle(props) {
       className="relative isolate mb-10 md:mb-24 2xl:mb-28 w-full flex
       justify-start md:justify-center title-font text-3xl md:text-[2.5rem]
       2xl:text-[2.75rem]"
+      ref={refs.scope}
     >
-      <h2 ref={refs.heading}>{children}</h2>
+      <h2 ref={refs.heading}>{title}</h2>
       {watermark && (
         <span
           className={`hidden -z-10 absolute translate-x-[0.125em] md:block

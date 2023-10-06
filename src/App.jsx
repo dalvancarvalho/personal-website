@@ -3,6 +3,7 @@
 import { Suspense } from 'react'
 import { gsap } from 'gsap'
 import { Helmet } from 'react-helmet-async'
+import { useLocation } from 'react-router-dom'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { TextPlugin } from 'gsap/TextPlugin'
 import useTheme from './context/ThemeContext'
@@ -21,6 +22,7 @@ function App() {
 
   const DARK = '#1a1a1a' // dark gray
   const LIGHT = '#f8fafc' // light slate
+  const { pathname } = useLocation()
   const { theme } = useTheme()
 
   return (
@@ -33,7 +35,7 @@ function App() {
         <Main>
           <Routes />
         </Main>
-        <Footer />
+        {pathname !== '/404' && <Footer />}
       </Suspense>
     </>
   )

@@ -6,23 +6,29 @@ import { gsap } from 'gsap'
 function useHeaderAnimation(pathname) {
   // Header animation
 
-  const headerRef = useRef(null)
+  const nav = useRef(null)
+  const scope = useRef(null)
 
   useLayoutEffect(() => {
-    gsap.fromTo(
-      headerRef.current,
-      { opacity: 0, pointerEvents: 'none' },
-      {
-        opacity: 1,
-        pointerEvents: 'all',
-        duration: 0.75,
-        delay: pathname === '/' ? 3 : 0,
-        ease: 'power3.in',
-      }
-    )
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        nav.current,
+        { opacity: 0, pointerEvents: 'none' },
+        {
+          opacity: 1,
+          pointerEvents: 'all',
+          duration: 0.75,
+          delay: pathname === '/' ? 3 : 0,
+          ease: 'power3.in',
+        }
+      )
+    }, scope)
+
+    // Context cleanup
+    return () => ctx.revert()
   }, [])
 
-  return headerRef
+  return { nav, scope }
 }
 
 export default useHeaderAnimation

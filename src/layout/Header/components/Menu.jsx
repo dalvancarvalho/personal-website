@@ -15,10 +15,10 @@ function Menu(props) {
 
   const { pathname, t, y } = props
   const { isMenuOpen, setMenuState, buttonRef, menuRef } = useMenu()
-  useMenuAnimation(buttonRef, isMenuOpen, menuRef)
+  const scopeRef = useMenuAnimation(buttonRef, isMenuOpen, menuRef)
 
   return (
-    <div className="grid place-content-center">
+    <div className="grid place-content-center" ref={scopeRef}>
       <Button
         className={`${y === 0 || isMenuOpen ? 'scale-[1.4]' : null}
         !transition duration-300`}
