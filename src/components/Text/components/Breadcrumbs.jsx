@@ -24,7 +24,7 @@ function Breadcrumbs(props) {
         {t('title.breadcrumbs.home')}
       </button>
       <FontAwesomeIcon
-        className="mx-3 text-slate-500 dark:text-gray-400 text-[0.6rem] md:text-xs
+        className="mx-4 text-slate-500 dark:text-gray-400 text-[0.6rem] md:text-xs
         color-transition"
         icon={faChevronRight}
       />

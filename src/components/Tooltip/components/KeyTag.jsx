@@ -5,8 +5,8 @@ function KeyTag(props) {
 
   return (
     <kbd
-      className="px-[0.5em] py-[0.25em] rounded-[0.25em] bg-slate-150 dark:bg-dark-6
-      font-urbanist transition-[background-color] duration-300"
+      className="px-[0.5em] py-[0.25em] rounded-[0.25em] bg-slate-150
+      dark:bg-dark-6 font-urbanist transition-[background-color] duration-300"
     >
       {props.children}
     </kbd>

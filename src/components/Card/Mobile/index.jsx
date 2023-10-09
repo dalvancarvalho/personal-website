@@ -5,9 +5,9 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 import useMobileAnimation from '../animations/useMobileAnimation'
-import useStackAnimation from '../animations/useStackAnimation'
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
+import Tech from '../components/Tech'
 
 function MobileCard(props) {
   // Displays a project and its main features in a card tailored for small screens
@@ -15,9 +15,8 @@ function MobileCard(props) {
   const { index, project, t } = props
   const { altText, description, isFinished, name, routeName, stack, thumbnail } = project
   const isEven = index % 2 === 0 ? true : false
+  const refs = useMobileAnimation(isEven)
   const [showImage, setShowImage] = useState(false)
-  const cardRef = useMobileAnimation(isEven)
-  const stackRef = useStackAnimation(cardRef)
   const buttonRef = useRef(null)
   const navigate = useNavigate()
 
@@ -26,7 +25,7 @@ function MobileCard(props) {
       className={`isolate max-w-md grid items-center ease-in-out
       ${showImage ? (isEven ? '-translate-x-[80%]' : 'translate-x-[80%]') : null}
       transition-transform duration-500`}
-      ref={cardRef}
+      ref={refs.card}
     >
       <div
         className={`${isEven ? 'translate-x-[80%]' : '-translate-x-[80%]'} relative
@@ -34,27 +33,16 @@ function MobileCard(props) {
         group`}
       >
         <img alt={t(altText)} className="aspect-video" src={thumbnail} />
-        <div
+        <ul
           className={`absolute inset-0 h-full w-full px-4 opacity-0 from-[#000000a5]
           ${isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'}
           to-transparent flex flex-col justify-center gap-1`}
-          ref={stackRef}
+          ref={refs.stack}
         >
-          {stack.map(({ tech, url }) => (
-            <a
-              className={`${isEven ? 'translate-x-[200%]' : '-translate-x-[200%]'}
-              text-slate-50 text-sm font-semibold hover:underline underline-offset-2
-              decoration-2`}
-              href={url}
-              key={tech}
-              rel="noopener noreferrer"
-              tabIndex="-1"
-              target="_blank"
-            >
-              {tech}
-            </a>
+          {stack.map((props) => (
+            <Tech isEven={isEven} key={props.name} textSize="text-sm" {...props} />
           ))}
-        </div>
+        </ul>
       </div>
       <div
         className={`${isEven ? null : 'flex-row-reverse'} m-auto col-span-full

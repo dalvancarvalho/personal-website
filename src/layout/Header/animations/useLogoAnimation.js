@@ -1,33 +1,20 @@
 /* useLogoAnimation.js */
 
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { useLocation } from 'react-router-dom'
-import useLanguage from '../../../context/LanguageContext'
 import useIsFirstRender from '../../../hooks/useIsFirstRender'
-import { enUS, ptBR } from '../../../constants/logoText'
+import useLogoText from '../hooks/useLogoText'
 
 function useLogoAnimation() {
-  // Updates the logo based on the current pathname and language
+  // Animates the logo text
 
-  const { language } = useLanguage()
-  const { pathname } = useLocation()
   const isFirstRender = useIsFirstRender()
+  const logoText = useLogoText()
   const cursor = useRef(null)
   const scope = useRef(null)
   const text = useRef(null)
   const tl = useRef(null)
-  const [logoText, setLogoText] = useState(
-    language.value === 'ptBR' ? ptBR[pathname] : enUS[pathname]
-  )
 
-  useEffect(() => {
-    // Sets a new logo text when the language or pathname are changed
-
-    language.value === 'ptBR' ? setLogoText(ptBR[pathname]) : setLogoText(enUS[pathname])
-  }, [language, pathname])
-
-  // Animations
   useLayoutEffect(() => {
     // Shows the logo text after the component is mounted (initial animation)
 
@@ -49,7 +36,7 @@ function useLogoAnimation() {
   }, [])
 
   useLayoutEffect(() => {
-    // Erases the current text and writes a new one based on the new pathname and language
+    // Erases the current text and writes a new one whenever the 'logoText' value changes
 
     if (isFirstRender) return
 

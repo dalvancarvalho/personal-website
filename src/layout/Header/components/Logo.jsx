@@ -22,9 +22,8 @@ function Logo(props) {
       tabIndex="0"
     >
       <span
-        className="text-accent group-hover:text-blue-500 group-hover:dark:text-orange-400
-        group-focus-visible:text-blue-500 group-focus-visible:dark:text-orange-400 
-        color-transition"
+        className="text-accent group-focus-visible:text-blue-500 logo-hover
+        group-focus-visible:dark:text-orange-400 color-transition"
         ref={refs.text}
       ></span>
       <span className="font-urbanist opacity-0" ref={refs.cursor}>

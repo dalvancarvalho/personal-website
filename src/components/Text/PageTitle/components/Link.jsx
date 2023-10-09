@@ -20,9 +20,8 @@ function Link(props) {
         icon={icon}
       />
       <a
-        className="peer ml-2 mr-3 flex items-center gap-2 text-slate-600
-        dark:text-gray-400 hover:text-slate-800 hover:dark:text-gray-200
-        focus-visible:text-slate-800 focus-visible:dark:text-gray-200
+        className="peer ml-2 mr-3 flex items-center gap-2 text-slate-600 link-hover
+        dark:text-gray-400 focus-visible:text-slate-800 focus-visible:dark:text-gray-200
         color-transition"
         href={href}
         rel="noopener noreferrer"
@@ -30,7 +29,12 @@ function Link(props) {
       >
         {text}
       </a>
-      <FontAwesomeIcon className="external-access-arrow" icon={faArrowUp} />
+      <FontAwesomeIcon
+        className="text-slate-600 dark:text-gray-400 peer-focus-visible:text-slate-800
+        dark:peer-focus-visible:text-gray-200 peer-focus-visible:translate-x-1
+        peer-focus-visible:-translate-y-1 rotate-45 transition-all arrow-hover"
+        icon={faArrowUp}
+      />
     </Paragraph>
   )
 }

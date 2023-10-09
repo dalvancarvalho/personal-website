@@ -6,12 +6,16 @@ import { gsap } from 'gsap'
 function useMobileAnimation(isEven) {
   // Mobile card animation
 
-  const cardRef = useRef(null)
+  const card = useRef(null)
+  const stack = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
+      // Scoped tween (removed when the component unmounts)
+
+      //Initial animation
       gsap.fromTo(
-        cardRef.current,
+        card.current,
         {
           opacity: 0,
           translate: isEven ? '15%' : '-15%',
@@ -22,18 +26,54 @@ function useMobileAnimation(isEven) {
           duration: 1,
           ease: 'power3.inOut',
           scrollTrigger: {
-            trigger: cardRef.current,
+            trigger: card.current,
             start: '75% bottom',
           },
         }
       )
-    }, cardRef)
+    }, card)
 
-    // Context cleanup
-    return () => ctx.revert()
+    // Stack-reveal animation (on element's hover)
+    const bgAnimation = gsap.to(stack.current, {
+      opacity: 1,
+      duration: 0.8,
+      ease: 'power3.inOut',
+      paused: true,
+    })
+
+    const stackAnimation = gsap.to(stack.current.children, {
+      x: 0,
+      pointerEvents: 'all',
+      duration: 0.4,
+      stagger: 0.05,
+      ease: 'power3.inOut',
+      paused: true,
+    })
+
+    function revealStack() {
+      bgAnimation.play()
+      stackAnimation.play()
+    }
+
+    function hideStack() {
+      bgAnimation.reverse()
+      stackAnimation.reverse()
+    }
+
+    card.current.addEventListener('mouseenter', revealStack)
+    card.current.addEventListener('mouseleave', hideStack)
+
+    // Context/event listeners cleanup
+    return () => {
+      ctx.revert()
+      bgAnimation.revert()
+      stackAnimation.revert()
+      card.current.removeEventListener('mouseenter', revealStack)
+      card.current.removeEventListener('mouseleave', hideStack)
+    }
   }, [])
 
-  return cardRef
+  return { card, stack }
 }
 
 export default useMobileAnimation

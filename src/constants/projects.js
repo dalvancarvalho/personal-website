@@ -17,23 +17,23 @@ const projects = [
     routeName: 'br-geo',
     stack: [
       {
-        tech: 'HTML',
+        name: 'HTML',
         url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
       },
       {
-        tech: 'Sass',
+        name: 'Sass',
         url: 'https://sass-lang.com/',
       },
       {
-        tech: 'JavaScript',
+        name: 'JavaScript',
         url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
       },
       {
-        tech: 'IBGE API',
+        name: 'IBGE API',
         url: 'https://servicodados.ibge.gov.br/api/docs',
       },
       {
-        tech: 'Chart.js',
+        name: 'Chart.js',
         url: 'https://www.chartjs.org/',
       },
     ],
@@ -49,31 +49,31 @@ const projects = [
     routeName: 'personal-page',
     stack: [
       {
-        tech: 'Vite',
+        name: 'Vite',
         url: 'https://vitejs.dev/',
       },
       {
-        tech: 'Tailwind CSS',
+        name: 'Tailwind CSS',
         url: 'https://tailwindcss.com/',
       },
       {
-        tech: 'React',
+        name: 'React',
         url: 'https://react.dev/',
       },
       {
-        tech: 'React Router',
+        name: 'React Router',
         url: 'https://reactrouter.com/en/main',
       },
       {
-        tech: 'i18next',
+        name: 'i18next',
         url: 'https://react.i18next.com/',
       },
       {
-        tech: 'EmailJS',
+        name: 'EmailJS',
         url: 'https://www.emailjs.com/',
       },
       {
-        tech: 'GSAP',
+        name: 'GSAP',
         url: 'https://greensock.com/gsap/',
       },
     ],
@@ -89,19 +89,19 @@ const projects = [
     routeName: 'split-it',
     stack: [
       {
-        tech: 'Next.js',
+        name: 'Next.js',
         url: 'https://nextjs.org/',
       },
       {
-        tech: 'Tailwind CSS',
+        name: 'Tailwind CSS',
         url: 'https://tailwindcss.com/',
       },
       {
-        tech: 'TypeScript',
+        name: 'TypeScript',
         url: 'https://www.typescriptlang.org/',
       },
       {
-        tech: 'Framer Motion',
+        name: 'Framer Motion',
         url: 'https://www.framer.com/motion/',
       },
     ],

@@ -27,6 +27,7 @@ function Input(props) {
         dark:outline-none text-base md:text-lg 2xl:text-xl pt-[0.5em] pb-[0.25em] block
         bg-transparent invalid:text-rose-600 dark:invalid:text-rose-400
         transition-[border-color] px-[0.5em] duration-300"
+        autoComplete="true"
         id={inputName}
         onBlur={checkField}
         onChange={() => setInputs({ ...inputs, [inputName]: inputRef.current.value })}

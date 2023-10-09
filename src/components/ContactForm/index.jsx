@@ -63,9 +63,8 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
           <>
             {t('pages.home.contact.button.default')}
             <FontAwesomeIcon
-              className="group-hover:translate-x-1 group-hover:-translate-y-1
-              transition-transform group-focus-visible:translate-x-1
-              group-focus-visible:-translate-y-1"
+              className="form-button-hover group-focus-visible:translate-x-1
+              group-focus-visible:-translate-y-1 transition-transform"
               icon={faPaperPlane}
             />
           </>

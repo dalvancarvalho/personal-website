@@ -3,9 +3,9 @@
 import { useNavigate } from 'react-router-dom'
 import useCardParallax from '../hooks/useCardParallax'
 import useDesktopAnimation from '../animations/useDesktopAnimation'
-import useStackAnimation from '../animations/useStackAnimation'
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
+import Tech from '../components/Tech'
 
 function DesktopCard(props) {
   // Displays a project and its main features in a modern looking card
@@ -16,7 +16,6 @@ function DesktopCard(props) {
   const navigate = useNavigate()
   const parallaxRef = useCardParallax()
   const refs = useDesktopAnimation(isEven)
-  const stackRef = useStackAnimation(refs.image)
 
   return (
     <div
@@ -38,27 +37,16 @@ function DesktopCard(props) {
           className="h-full group-hover:scale-110 group-hover:blur-[2px] duration-500"
           src={thumbnail}
         />
-        <div
+        <ul
           className={`absolute inset-0 h-full w-full px-4 opacity-0 from-[#000000a5]
           ${isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'}
           to-transparent flex flex-col justify-center gap-2`}
-          ref={stackRef}
+          ref={refs.stack}
         >
-          {stack.map(({ tech, url }) => (
-            <a
-              className={`${isEven ? 'translate-x-[200%]' : '-translate-x-[200%]'}
-              text-slate-50 font-semibold hover:underline underline-offset-2
-              decoration-2`}
-              href={url}
-              key={tech}
-              rel="noopener noreferrer"
-              tabIndex="-1"
-              target="_blank"
-            >
-              {tech}
-            </a>
+          {stack.map((props) => (
+            <Tech isEven={isEven} key={props.name} {...props} />
           ))}
-        </div>
+        </ul>
       </div>
       <div
         className={`m-auto row-span-full flex ${

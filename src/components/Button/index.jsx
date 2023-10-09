@@ -15,9 +15,8 @@ function Button(props) {
   return (
     <button
       aria-label={ariaLabel ?? 'button'}
-      className={`${textColor} ${className} hover:text-slate-900 hover:dark:text-gray-200
-      focus-visible:text-slate-900 focus-visible:dark:text-gray-200 cursor-pointer
-      color-transition group`}
+      className={`${textColor} ${className} button-hover focus-visible:text-slate-900
+      focus-visible:dark:text-gray-200 cursor-pointer color-transition group`}
       onClick={onClick}
       type={type}
     >

@@ -6,7 +6,6 @@ function CallToAction(props) {
   const {
     children,
     className = '', // any other class needed goes here
-    color = 'bg-accent hover:bg-blue-500 dark:hover:bg-orange-400 focus-visible:bg-blue-500 focus-visible:dark:bg-orange-400 active:bg-blue-700 active:dark:bg-orange-600',
     onClick,
     tabIndex = '0',
     textColor = 'text-white dark:text-black',
@@ -17,9 +16,9 @@ function CallToAction(props) {
   return (
     <button
       className={`${className} relative px-[1.5em] py-[0.75em] rounded-[0.5em]
-      ${color} flex items-center justify-center gap-[0.5em] font-semibold
-      ${textSize} ${textColor} tracking-wider whitespace-nowrap shadow-md
-      color-transition group`}
+      flex items-center justify-center gap-[0.5em] bg-accent  focus-visible:bg-blue-500
+      focus-visible:dark:bg-orange-400 font-semibold ${textSize} ${textColor} group
+      call-to-action-hover tracking-wider whitespace-nowrap shadow-md color-transition`}
       onClick={onClick}
       tabIndex={tabIndex}
       type={type}

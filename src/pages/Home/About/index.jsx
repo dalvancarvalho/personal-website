@@ -1,7 +1,5 @@
 /* About/index.jsx */
 
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Trans } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import useAboutAnimation from './animations/useAboutAnimation'
@@ -9,14 +7,15 @@ import Container from '../../../layout/Container'
 import Divider from '../../../layout/Divider'
 import Grid from '../../../layout/Grid'
 import Section from '../../../layout/Section'
-import HoverText from './components/HoverText'
-import QuotationMark from './components/QuotationMark'
-import Topic from './components/Topic'
 import CallToAction from '../../../components/Button/CallToAction'
 import DynamicImage from '../../../components/DynamicImage'
 import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
+import HoverText from './components/HoverText'
+import QuotationMark from './components/QuotationMark'
+import Tech from './components/Tech'
+import Topic from './components/Topic'
 import technologies from '../../../constants/technologies'
 import stackDark from '../../../assets/svg/stack-dark.svg'
 import stackLight from '../../../assets/svg/stack-light.svg'
@@ -96,26 +95,8 @@ function About(props) {
               {t('pages.home.about.subHeadingIV')}
             </h3>
             <ul className="w-11/12 md:w-7/12 lg:w-4/5 grid grid-cols-2 gap-y-3 md:gap-y-2">
-              {technologies.map(({ name, url }) => (
-                <li
-                  className="max-w-max text-sm md:text-base 2xl:text-lg font-bold
-                  text-slate-800 dark:text-gray-200 color-transition"
-                  key={name}
-                >
-                  <a
-                    className="flex items-center gap-2 hover:translate-x-1
-                    focus-visible:translate-x-1 transition-transform duration-150"
-                    href={url}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon
-                      className="text-sm 2xl:text-base text-accent color-transition"
-                      icon={faCaretRight}
-                    />
-                    {name}
-                  </a>
-                </li>
+              {technologies.map((props) => (
+                <Tech key={props.name} {...props} />
               ))}
             </ul>
             <Paragraph className="my-2">

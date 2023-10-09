@@ -18,7 +18,7 @@ function AppRoutes() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Fallback page={<Home />} />} />
       <Route path="/404" element={<Fallback page={<NotFound />} />} />
       <Route path="/br-geo" element={<Fallback page={<BRGeo />} />} />
       <Route path="/personal-page" element={<Fallback page={<PersonalPage />} />} />

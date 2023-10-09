@@ -20,7 +20,7 @@ function useHeroAnimation(bgRef, textRef) {
             opacity: 1,
             scale: 1,
             visibility: 'visible',
-            delay: 2.25,
+            delay: 1.75,
             duration: 1,
             ease: 'circ.out',
           }
