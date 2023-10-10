@@ -28,7 +28,7 @@ function Breadcrumbs(props) {
         color-transition"
         icon={faChevronRight}
       />
-      <p className="text-slate-800 dark:text-gray-200 color-transition">{subject}</p>
+      <p className="text-slate-800 dark:text-gray-200 color-transition">{t(subject)}</p>
     </div>
   )
 }

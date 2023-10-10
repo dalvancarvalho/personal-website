@@ -1,6 +1,6 @@
 /* SectionTitle/index.jsx */
 
-import useSectionTitleAnimation from '../animations/useSectionTitleAnimation'
+import useSectionTitleAnimation from './animations/useSectionTitleAnimation'
 
 function SectionTitle(props) {
   // Displays the title of the section (H2)
