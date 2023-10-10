@@ -37,6 +37,10 @@
     @apply group-hover:text-blue-500 group-hover:dark:text-orange-400;
   }
 
+  .not-found-button-hover {
+    @apply group-hover:-translate-x-1;
+  }
+
   .resume-hover {
     @apply hover:bg-slate-200 hover:dark:bg-dark-6;
   }
@@ -97,6 +101,10 @@
 
   .logo-hover {
     @apply text-accent;
+  }
+
+  .not-found-button-hover {
+    @apply translate-x-0;
   }
 
   .resume-hover {

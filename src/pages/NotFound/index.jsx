@@ -38,7 +38,7 @@ function NotFound() {
           <RouterLink className="mt-4 md:mt-5 2xl:mt-6 group" tabIndex="-1" to="/">
             <CallToAction textSize="text-sm md:text-base 2xl:text-lg">
               <FontAwesomeIcon
-                className="group-hover:-translate-x-1 group-focus-visible:-translate-x-1
+                className="not-found-button-hover group-focus-visible:-translate-x-1
                 transition-transform"
                 icon={faArrowLeft}
               />
