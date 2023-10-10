@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet-async'
 import { Link as RouterLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import useScreenProps from '../../hooks/useScreenProps'
 import Container from '../../layout/Container'
 import MainSection from '../../layout/Section/MainSection'
 import CallToAction from '../../components/Button/CallToAction'
@@ -14,6 +15,7 @@ function NotFound() {
   // 404 page
 
   const { t } = useTranslation()
+  const { isPortraitMode } = useScreenProps()
 
   return (
     <>
@@ -47,9 +49,10 @@ function NotFound() {
           </RouterLink>
         </Container>
         <span
-          className="absolute -z-10 text-slate-150 dark:text-dark-2 font-extrabold
-          text-[25rem] md:text-[30rem] lg:text-[40rem] xl:text-[45rem] 2xl:text-[55rem]
-          rotate-90 md:rotate-0 select-none pointer-events-none color-transition"
+          className={`${isPortraitMode ? 'rotate-90' : 'rotate-0'}
+          absolute -z-10 text-slate-150 dark:text-dark-2 font-extrabold text-[25rem]
+          md:text-[30rem] lg:text-[40rem] xl:text-[45rem] 2xl:text-[55rem] select-none
+          pointer-events-none color-transition`}
         >
           404
         </span>
