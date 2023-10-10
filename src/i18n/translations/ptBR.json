@@ -65,13 +65,13 @@
 
     "title": {
       "breadcrumbs": {
-        "home": "Início",
+        "home": "Página inicial",
         "about": "Sobre",
         "featured": "Projeto em destaque"
       },
       "demo": "Demonstração",
       "github": "Repositório do GitHub",
-      "linkedin": "Perfil do LinkedIn"
+      "linkedIn": "Perfil do LinkedIn"
     },
 
     "pages": {

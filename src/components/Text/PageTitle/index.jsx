@@ -32,7 +32,7 @@ function PageTitle(props) {
         </div>
         <div className="mt-10 md:mt-0 md:mb-1 flex flex-col gap-2 font-semibold">
           {linkedInUrl && (
-            <Link icon={faLinkedin} href={linkedInUrl} text={t('title.linkedin')} />
+            <Link icon={faLinkedin} href={linkedInUrl} text={t('title.linkedIn')} />
           )}
           {githubUrl && (
             <Link icon={faGithub} href={githubUrl} text={t('title.github')} />
