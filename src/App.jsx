@@ -11,7 +11,8 @@ import Footer from './layout/Footer'
 import Header from './layout/Header'
 import Main from './layout/Main'
 
-gsap.registerPlugin(ScrollTrigger, TextPlugin) // GSAP plugins
+// GSAP plugins
+if (typeof window !== 'undefined') gsap.registerPlugin(ScrollTrigger, TextPlugin)
 
 function App() {
   // Main application
