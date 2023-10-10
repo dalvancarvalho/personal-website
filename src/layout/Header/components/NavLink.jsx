@@ -11,7 +11,7 @@ function NavLink(props) {
 
   const { children, icon, to } = props
   const { setMenuState } = useMenu()
-  const linkRef = useRef()
+  const linkRef = useRef(null)
   const isActive = linkRef.current?.state.active
 
   return (

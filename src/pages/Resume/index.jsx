@@ -1,6 +1,7 @@
 /* Resume/index.jsx */
 
 import { useTranslation } from 'react-i18next'
+import useScrollSpy from '../../hooks/useScrollSpy'
 import MainSection from '../../layout/Section/MainSection'
 import Meta from '../../components/Meta'
 import PageTitle from '../../components/Text/PageTitle'
@@ -10,6 +11,7 @@ function Resume() {
   // Resume page
 
   const { t } = useTranslation()
+  useScrollSpy()
 
   return (
     <>

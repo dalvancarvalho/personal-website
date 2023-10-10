@@ -2,6 +2,7 @@
 
 import { useTranslation } from 'react-i18next'
 import useScreenProps from '../../hooks/useScreenProps'
+import useScrollSpy from '../../hooks/useScrollSpy'
 import About from './About'
 import Contact from './Contact'
 import Hero from './Hero'
@@ -14,6 +15,7 @@ function Home() {
 
   const { t } = useTranslation()
   const screenProps = useScreenProps()
+  useScrollSpy()
 
   return (
     <>
