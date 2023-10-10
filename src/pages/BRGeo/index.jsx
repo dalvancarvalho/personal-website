@@ -10,7 +10,6 @@ import { brGeoData } from '../../constants/projects'
 function BRGeo() {
   // BR Geo
 
-  const { demoUrl, githubUrl, name } = brGeoData
   const { t } = useTranslation()
 
   return (
@@ -21,14 +20,7 @@ function BRGeo() {
         url="https://dalvanc.com/br-geo"
       />
       <MainSection className="h-full flex flex-col items-center">
-        <PageTitle
-          demoUrl={demoUrl}
-          githubUrl={githubUrl}
-          id="home"
-          name={name}
-          subject={t('title.breadcrumbs.featured')}
-          t={t}
-        />
+        <PageTitle id="home" t={t} {...brGeoData} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>

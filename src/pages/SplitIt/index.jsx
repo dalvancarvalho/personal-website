@@ -10,7 +10,6 @@ import { splitItData } from '../../constants/projects'
 function SplitIt() {
   // Split it!
 
-  const { demoUrl, githubUrl, name } = splitItData
   const { t } = useTranslation()
 
   return (
@@ -21,14 +20,7 @@ function SplitIt() {
         url="https://dalvanc.com/split-it"
       />
       <MainSection className="h-full flex flex-col items-center">
-        <PageTitle
-          demoUrl={demoUrl}
-          githubUrl={githubUrl}
-          id="home"
-          name={name}
-          subject={t('title.breadcrumbs.featured')}
-          t={t}
-        />
+        <PageTitle id="home" t={t} {...splitItData} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>

@@ -5,14 +5,11 @@ import Container from '../../../layout/Container'
 import Breadcrumbs from './components/Breadcrumbs'
 import Link from './components/Link'
 import LiveDemo from './components/LiveDemo'
-import { useEffect } from 'react'
 
 function PageTitle(props) {
   // Displays the title of the page (H1) along with some useful links and breadcrumbs
 
   const { demoUrl, githubUrl, id, linkedInUrl, name, subject, t } = props
-
-  useEffect(() => console.log(props), [])
 
   return (
     <div
@@ -25,7 +22,7 @@ function PageTitle(props) {
         md:items-end md:justify-between"
       >
         <div>
-          <Breadcrumbs subject={subject} t={t} />
+          <Breadcrumbs subject={t(subject)} t={t} />
           <h1
             className="mt-4 text-[2.5rem] leading-10 md:text-5xl title-font
             text-slate-800 dark:text-gray-200 color-transition"

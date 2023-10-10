@@ -10,7 +10,6 @@ import { personalPageData } from '../../constants/projects'
 function PersonalPage() {
   // Personal page
 
-  const { demoUrl, githubUrl, name } = personalPageData
   const { t } = useTranslation()
 
   return (
@@ -21,14 +20,7 @@ function PersonalPage() {
         url="https://dalvanc.com/personal-page"
       />
       <MainSection className="h-full flex flex-col items-center">
-        <PageTitle
-          demoUrl={demoUrl}
-          githubUrl={githubUrl}
-          id="home"
-          name={name}
-          subject={t('title.breadcrumbs.featured')}
-          t={t}
-        />
+        <PageTitle id="home" t={t} {...personalPageData} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>
