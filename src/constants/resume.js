@@ -1,8 +1,8 @@
 /* resume.js */
 
 import cv from '../assets/cv.png' // vai mudar pra 2 arquivos webp
-import resumePt from '../assets/pdf/resume-pt.pdf'
-import resumeEn from '../assets/pdf/resume-en.pdf'
+import resumePt from '../assets/pdf/curriculo.pdf'
+import resumeEn from '../assets/pdf/resume.pdf'
 
 const resume = [
   // List of resume versions (Brazilian portuguese and English)
@@ -11,7 +11,7 @@ const resume = [
     altText: 'imagem do currículo de Dalvan Carvalho',
     file: resumePt,
     fileName: 'Currículo - Dalvan Carvalho',
-    href: '/resume-pt.pdf',
+    href: '/curriculo.pdf',
     thumbnail: cv,
     title: 'pages.resume.download.portuguese',
   },
@@ -19,7 +19,7 @@ const resume = [
     altText: `image of Dalvan Carvalho's resume`,
     file: resumeEn,
     fileName: 'Resume - Dalvan Carvalho',
-    href: '/resume-en.pdf',
+    href: '/resume.pdf',
     thumbnail: cv,
     title: 'pages.resume.download.english',
   },
