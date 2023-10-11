@@ -2,10 +2,12 @@
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
+import useScreenProps from '../../../../hooks/useScreenProps'
 
 function useContactAnimation() {
   // Contact section animation
 
+  const { isPortraitMode } = useScreenProps()
   const form = useRef(null)
   const scope = useRef(null)
 
@@ -32,16 +34,17 @@ function useContactAnimation() {
 
       gsap.fromTo(
         form.current.children,
-        { opacity: 0, x: 32 },
+        { opacity: 0, y: -64 },
         {
           opacity: 1,
-          x: 0,
+          y: 0,
+          delay: isPortraitMode ? 0.5 : 0,
           duration: 1.25,
-          ease: 'power3.out',
-          stagger: 0.15,
+          ease: 'elastic.out(1.2, 0.5)',
+          stagger: -0.1,
           scrollTrigger: {
             trigger: form.current,
-            start: 'center bottom',
+            start: 'bottom bottom',
           },
         }
       )
