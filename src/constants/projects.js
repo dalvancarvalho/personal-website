@@ -37,7 +37,7 @@ const projects = [
         url: 'https://www.chartjs.org/',
       },
     ],
-    subject: 'title.breadcrumbs.featured',
+    subject: 'title.breadcrumbs.projects',
     thumbnail: brGeoImg,
   },
   {
@@ -78,7 +78,7 @@ const projects = [
         url: 'https://greensock.com/gsap/',
       },
     ],
-    subject: 'title.breadcrumbs.featured',
+    subject: 'title.breadcrumbs.projects',
     thumbnail: personalPageImg,
   },
   {
@@ -107,7 +107,7 @@ const projects = [
         url: 'https://www.framer.com/motion/',
       },
     ],
-    subject: 'title.breadcrumbs.featured',
+    subject: 'title.breadcrumbs.projects',
     thumbnail: splitItImg,
   },
 ]
