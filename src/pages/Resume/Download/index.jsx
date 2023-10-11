@@ -7,7 +7,7 @@ import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
 import resumeList from '../../../constants/resume'
-import Resume from '../components/Resume'
+import ResumeCard from '../components/ResumeCard'
 
 function Download(props) {
   // Download section
@@ -28,7 +28,7 @@ function Download(props) {
         </Paragraph>
         <div className="flex flex-wrap items-center justify-center gap-12 2xl:gap-16">
           {resumeList.map(({ title, ...props }) => (
-            <Resume key={title} title={t(title)} {...props} />
+            <ResumeCard key={title} title={t(title)} {...props} />
           ))}
         </div>
       </Container>

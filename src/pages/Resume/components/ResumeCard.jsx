@@ -1,11 +1,11 @@
-/* Resume.jsx */
+/* ResumeCard.jsx */
 
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import CallToAction from '../../../components/Button/CallToAction'
 import Paragraph from '../../../components/Text/Paragraph'
 
-function Resume(props) {
+function ResumeCard(props) {
   // Downloadable resume
 
   const { altText, file, fileName, href, thumbnail, title } = props
@@ -50,4 +50,4 @@ function Resume(props) {
   )
 }
 
-export default Resume
+export default ResumeCard
