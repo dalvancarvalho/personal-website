@@ -17,7 +17,7 @@ function useHeaderAnimation(pathname) {
         {
           opacity: 1,
           pointerEvents: 'all',
-          duration: 0.75,
+          duration: pathname === '/' ? 0.75 : 1.6,
           delay: pathname === '/' ? 3 : 0,
           ease: 'power3.in',
         }
