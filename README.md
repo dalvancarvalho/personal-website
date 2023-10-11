@@ -4,7 +4,7 @@
 ![license type](https://img.shields.io/badge/license-MIT-blue)
 ![languages supported](https://img.shields.io/badge/supported_languages-2-yellow)
 
-Welcome to the repository of my personal page, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The page is available in **Brazilian Portuguese** and **English (US)**.
+Welcome to the repository of my personal page, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The page is available in **Brazilian Portuguese** and **English**.
 
 <br>
 
@@ -99,7 +99,7 @@ In the table below, all the resources used by the page are listed:
 
 1. After clone this repository, navigate to its folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)).
 
-2. Install Yarn (in case you haven't already installed it on your system):
+2. Install Yarn, if you haven't already on your system (optional):
 
    > 💡 **Yarn** is an alternative to the **Node Package Manager (NPM)**
 
@@ -111,6 +111,12 @@ In the table below, all the resources used by the page are listed:
 
    ```
    yarn
+   ```
+
+   _or if you prefer NPM:_
+
+   ```
+   npm install
    ```
 
 4. Run the development server:
@@ -157,7 +163,7 @@ In the table below, all the resources used by the page are listed:
 
 ### Icons
 
-All icons used are from [Font Awesome](https://fontawesome.com/).
+All the icons displayed on the page are from [Font Awesome](https://fontawesome.com/).
 
 ## License
 

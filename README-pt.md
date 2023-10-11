@@ -4,7 +4,7 @@
 ![tipo da licença](https://img.shields.io/badge/licença-MIT-blue)
 ![idiomas suportados](https://img.shields.io/badge/idiomas_suportados-2-yellow)
 
-Bem-vindo ao repositório da minha página pessoal, construída com [Vite](https://vitejs.dev/) e [React](https://react.dev/), e implementada com [Vercel](https://vercel.com/)! A página está disponível em **Português (Brasil)** e **Inglês (Estados Unidos)**.
+Bem-vindo ao repositório da minha página pessoal, construída com [Vite](https://vitejs.dev/) e [React](https://react.dev/), e implementada com [Vercel](https://vercel.com/)! A página está disponível em **português** e **inglês**.
 
 <br>
 
@@ -72,18 +72,18 @@ A página conta com uma versão clara e uma escura. Você pode pré-visualizar a
 
 Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
-| Recurso                                                                       | Utilização                                             |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------ |
-| [EmailJS](https://www.emailjs.com/)                                           | Envio de e-mails, diretamente do formulário de contato |
-| [Font Awesome](https://fontawesome.com/)                                      | Ícones e logomarcas                                    |
-| [GSAP](https://greensock.com/gsap/)                                           | Animações ao longo da página                           |
-| [i18next](https://react.i18next.com/)                                         | Internacionalização da página                          |
-| [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                  |
-| [React Confetti](https://www.npmjs.com/package/react-confetti)                | Animação de confetes após o envio do formulário        |
-| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Manipulação de metadados                               |
-| [React Router](https://reactrouter.com/en/main/)                              | Gerenciamento de rotas                                 |
-| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Animação de rolagem vertical                           |
-| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Efeito paralaxe na seção principal e projetos          |
+| Recurso                                                                       | Utilização                                                |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------- |
+| [EmailJS](https://www.emailjs.com/)                                           | Envio de e-mails, diretamente do formulário de contato    |
+| [Font Awesome](https://fontawesome.com/)                                      | Ícones e logomarcas                                       |
+| [GSAP](https://greensock.com/gsap/)                                           | Animações ao longo da página                              |
+| [i18next](https://react.i18next.com/)                                         | Internacionalização da página                             |
+| [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                     |
+| [React Confetti](https://www.npmjs.com/package/react-confetti)                | Animação de confetes após o envio do formulário           |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Manipulação de metadados                                  |
+| [React Router](https://reactrouter.com/en/main/)                              | Gerenciamento de rotas                                    |
+| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Animação de rolagem vertical                              |
+| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Efeito paralaxe na seção principal e nos cards de projeto |
 
 [Vite](https://vitejs.dev/), [React](https://react.dev/) e [Tailwind CSS](https://tailwindcss.com/) também foram utilizados durante o desenvolvimento.
 
@@ -93,9 +93,9 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 >
 > [**Baixe o Node.js**](https://nodejs.org/pt-br/download) - _Escolha a versão **LTS** se você não tem certeza ou nunca instalou o **Node.js** antes_ <br> [**Baixe o Git**](https://git-scm.com/downloads)
 
-1. Após de clonar este repositório, navegue até sua pasta e abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
+1. Após clonar este repositório, navegue até sua pasta e abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
 
-2. Instale o Yarn (caso você ainda não tenha instalado no seu sistema):
+2. Instale o Yarn, caso ainda não tenha instalado no seu sistema (opcional):
 
    > 💡 **Yarn** é uma alternativa ao **Node Package Manager (NPM)**
 
@@ -107,6 +107,12 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
    ```
    yarn
+   ```
+
+   _ou se você preferir NPM:_
+
+   ```
+   npm install
    ```
 
 4. Execute o servidor de desenvolvimento:
@@ -153,11 +159,11 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
 ### Ícones
 
-Todos os ícones utilizados são do [Font Awesome](https://fontawesome.com/).
+Todos os ícones exibidos na página são do [Font Awesome](https://fontawesome.com/).
 
 ## Licença
 
-Este projeto está licenciado sob a **licença MIT**. Você pode ler os termos completos da licença clicando no link abaixo:
+Este projeto está licenciado sob a **licença MIT**. Você pode ler a licença completa clicando no link abaixo:
 
 **[📄 Licença MIT - Dalvan Carvalho](./LICENSE)**
 
