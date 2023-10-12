@@ -22,7 +22,7 @@ function PageTitle(props) {
         md:items-end md:justify-between"
       >
         <div>
-          <Breadcrumbs subject={t(subject)} t={t} />
+          <Breadcrumbs subject={t(subject)} />
           <h1
             className="mt-4 text-[2.5rem] leading-10 md:text-5xl title-font
             text-slate-800 dark:text-gray-200 color-transition"

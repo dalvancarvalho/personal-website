@@ -1,13 +1,13 @@
 /* Breadcrumbs.jsx */
 
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faHouse } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
 function Breadcrumbs(props) {
   // Navigation component
 
-  const { subject, t } = props
+  const { subject } = props
   const navigate = useNavigate()
 
   return (
@@ -16,12 +16,11 @@ function Breadcrumbs(props) {
       md:text-lg tracking-tighter"
     >
       <button
-        className="text-slate-500 dark:text-gray-400 hover:text-slate-900
-        dark:hover:text-gray-200 focus-visible:text-slate-900
-        dark:focus-visible:text-gray-200 tracking-tighter color-transition"
+        className="text-slate-500 dark:text-gray-400 focus-visible:text-slate-900
+        dark:focus-visible:text-gray-200 button-hover color-transition"
         onClick={() => navigate('/')}
       >
-        {t('title.breadcrumbs.home')}
+        <FontAwesomeIcon icon={faHouse} />
       </button>
       <FontAwesomeIcon
         className="mx-4 text-slate-500 dark:text-gray-400 text-[0.6rem] md:text-xs
