@@ -159,7 +159,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
 ### Ícones
 
-Todos os ícones exibidos na página são do [Font Awesome](https://fontawesome.com/).
+Todos os ícones exibidos na página são de [Font Awesome](https://fontawesome.com/).
 
 ## Licença
 
