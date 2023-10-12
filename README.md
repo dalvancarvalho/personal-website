@@ -112,7 +112,6 @@ In the table below, all the resources used by the page are listed:
    ```
    yarn
    ```
-
    _or if you prefer NPM:_
 
    ```
