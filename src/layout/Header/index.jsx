@@ -43,7 +43,7 @@ function Header() {
             // 💻 on medium/large screens, renders the items directly in the header
             <div className="flex items-center gap-6 2xl:gap-8">
               <Navbar t={t} />
-              {pathname !== '/404' && <Divider />}
+              {pathname !== '/404' && <Divider pathname={pathname} y={y} />}
               <LanguageSwitch t={t} />
               <ThemeSwitch t={t} />
             </div>
