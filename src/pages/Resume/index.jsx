@@ -16,7 +16,7 @@ function Resume() {
   return (
     <>
       <Meta
-        description="..."
+        description="Download my resume for updated information on my professional qualifications!"
         title={t('meta.title.resume')}
         url="https://dalvanc.com/resume"
       />
