@@ -71,7 +71,7 @@ function DesktopCard(props) {
           )}
           <h3
             className="title-font text-[2.25rem] 2xl:text-[2.75rem] leading-9
-            dark:drop-shadow-md"
+            drop-shadow-md"
           >
             {t(name)}
           </h3>
