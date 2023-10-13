@@ -29,7 +29,6 @@ function NavLink(props) {
         href={to} // SEO purposes
         onClick={() => setMenuState(false)}
         ref={linkRef}
-        smooth={true}
         spy={true}
         tabIndex="-1"
         to={to}
