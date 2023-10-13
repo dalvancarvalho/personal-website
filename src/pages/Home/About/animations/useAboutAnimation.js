@@ -60,7 +60,7 @@ function useAboutAnimation() {
           duration: 1,
           ease: 'power3.in',
           scrollTrigger: {
-            trigger: screenSize.md ? topics.current : selfie.current,
+            trigger: screenSize.lg ? topics.current : selfie.current,
             start: 'top 65%',
           },
         }
@@ -99,7 +99,7 @@ function useAboutAnimation() {
 
     // Context cleanup
     return () => ctx.revert()
-  }, [])
+  }, [screenSize.lg])
 
   return { image, quotation, scope, selfie, stack, topics }
 }
