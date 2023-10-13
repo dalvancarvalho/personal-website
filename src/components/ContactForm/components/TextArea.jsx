@@ -24,8 +24,9 @@ function TextArea(props) {
       </label>
       <textarea
         className="w-full h-40 border-b-2 border-slate-300 dark:border-dark-4
-        outline-none dark:outline-none text-base md:text-lg 2xl:text-xl pt-[0.25em] pb-[0.5em]
-        block bg-transparent resize-none transition-[border-color] duration-300 px-[0.5em]"
+        outline-none dark:outline-none text-base md:text-lg 2xl:text-xl pt-[0.25em]
+        pb-[0.5em] block bg-transparent resize-none transition-[border-color] px-[0.5em]
+        duration-300"
         id={inputName}
         onBlur={checkField}
         onChange={() => setInputs({ ...inputs, [inputName]: inputRef.current.value })}
