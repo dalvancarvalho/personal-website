@@ -20,7 +20,11 @@ function NavLink(props) {
       hover:md:text-slate-900 hover:md:dark:text-gray-200 whitespace-nowrap
       focus-visible:md:text-slate-900 focus-visible:md:dark:text-gray-200"
       tabIndex="0"
-      onKeyDown={(event) => (event.code === 'Enter' ? (location.href = '/#' + to) : null)}
+      onKeyDown={(event) => {
+        if (event.code !== 'Enter') return
+        location.href = '/#' + to
+        setMenuState(false)
+      }}
     >
       <ScrollLink
         activeClass="font-bold text-slate-800 dark:text-gray-200"
