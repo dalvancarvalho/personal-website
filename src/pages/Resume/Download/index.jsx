@@ -18,6 +18,7 @@ function Download(props) {
     <Section id="download">
       <Container className="h-full px-6 sm:px-8 xl:px-40">
         <SectionTitle
+          animation={false}
           title={t('pages.resume.download.heading')}
           watermark={t('pages.resume.download.watermark')}
         />

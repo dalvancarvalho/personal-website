@@ -16,6 +16,7 @@ function Introduction(props) {
     <Section id="intro">
       <Container className="h-full px-6 sm:px-8 xl:px-40">
         <SectionTitle
+          animation={false}
           title={t('pages.splitIt.intro.heading')}
           watermark={t('pages.splitIt.intro.watermark')}
         />
