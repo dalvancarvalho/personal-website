@@ -57,24 +57,12 @@ function Hero(props) {
             </Trans>
           </Paragraph>
           <div className="hero-content mt-4 md:mt-5 2xl:mt-6 flex gap-8 2xl:gap-10">
-            <ScrollLink
-              href="contact"
-              smooth={true}
-              spy={true}
-              tabIndex="-1"
-              to="contact"
-            >
+            <ScrollLink href="contact" spy={true} tabIndex="-1" to="contact">
               <CallToAction textSize="text-sm md:text-base 2xl:text-lg">
                 {t('pages.home.hero.primaryButton')}
               </CallToAction>
             </ScrollLink>
-            <ScrollLink
-              href="projects"
-              smooth={true}
-              spy={true}
-              tabIndex="-1"
-              to="projects"
-            >
+            <ScrollLink href="projects" spy={true} tabIndex="-1" to="projects">
               <SecondaryButton textSize="text-sm md:text-base 2xl:text-lg">
                 {t('pages.home.hero.secondaryButton')}
               </SecondaryButton>
