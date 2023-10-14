@@ -2,7 +2,7 @@
 
 import { faArrowUp, faCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Paragraph from '../../Paragraph'
+import Paragraph from '../../../components/Text/Paragraph'
 
 function LiveDemo(props) {
   // Live demo external link
