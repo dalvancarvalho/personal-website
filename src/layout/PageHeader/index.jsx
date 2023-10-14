@@ -1,12 +1,12 @@
-/* PageTitle/index.jsx */
+/* PageHeader/index.jsx */
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import Container from '../../../layout/Container'
+import Container from '../Container'
 import Breadcrumbs from './components/Breadcrumbs'
 import Link from './components/Link'
 import LiveDemo from './components/LiveDemo'
 
-function PageTitle(props) {
+function PageHeader(props) {
   // Displays the title of the page (H1) along with some useful links and breadcrumbs
 
   const { demoUrl, githubUrl, id, linkedInUrl, name, subject, t } = props
@@ -44,4 +44,4 @@ function PageTitle(props) {
   )
 }
 
-export default PageTitle
+export default PageHeader

@@ -3,9 +3,9 @@
 import { useTranslation } from 'react-i18next'
 import useScrollSpy from '../../hooks/useScrollSpy'
 import Introduction from './Introduction'
+import PageHeader from '../../layout/PageHeader'
 import MainSection from '../../layout/Section/MainSection'
 import Meta from '../../components/Meta'
-import PageTitle from '../../components/Text/PageTitle'
 import { splitItData } from '../../constants/projects'
 
 function SplitIt() {
@@ -22,7 +22,7 @@ function SplitIt() {
         url="https://dalvanc.com/split-it"
       />
       <MainSection className="h-full flex flex-col items-center">
-        <PageTitle id="home" t={t} {...splitItData} />
+        <PageHeader id="home" t={t} {...splitItData} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>
