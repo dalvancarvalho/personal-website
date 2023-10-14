@@ -7,12 +7,17 @@ import useScreenProps from '../hooks/useScreenProps'
 const MenuContext = createContext()
 
 function MenuProvider({ children }) {
+  const documentElement = document.documentElement
   const { screenSize } = useScreenProps()
   const [isMenuOpen, setMenuState] = useState(false)
   const buttonRef = useRef(null)
   const menuRef = useRef(null)
 
   useEffect(() => {
+    isMenuOpen
+      ? documentElement.classList.add('disable-scrolling')
+      : documentElement.classList.remove('disable-scrolling')
+
     document.addEventListener('mousedown', checkOutsideClick)
     document.addEventListener('touchstart', checkOutsideClick)
     document.addEventListener('keydown', checkEscapeKey)

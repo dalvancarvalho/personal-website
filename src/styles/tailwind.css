@@ -23,6 +23,10 @@
     @apply transition-colors duration-300;
   }
 
+  .disable-scrolling {
+    @apply h-[100dvh] overflow-y-hidden;
+  }
+
   .debug {
     @apply outline-dashed outline-1 outline-red-500; /* Debug ruleset */
   }

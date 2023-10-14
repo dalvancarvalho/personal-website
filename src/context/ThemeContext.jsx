@@ -16,8 +16,17 @@ function ThemeProvider({ children }) {
 
   useEffect(() => {
     // Changes the theme of the page
+    // Note: The tokens are modified through the add/remove methods rather than being
+    // simply overridden, to prevent conflicts in case the 'disable-scrolling' token
+    // is present in the DOMTokenList.
 
-    documentElement.classList.value = theme
+    if (theme === 'light') {
+      documentElement.classList.remove('light')
+      documentElement.classList.add('dark')
+    } else {
+      documentElement.classList.remove('dark')
+      documentElement.classList.add('light')
+    }
   }, [theme])
 
   function changeTheme() {
