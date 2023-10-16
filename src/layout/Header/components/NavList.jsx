@@ -1,6 +1,5 @@
 /* NavList.jsx */
 
-import { useLocation } from 'react-router-dom'
 import NavLink from './NavLink'
 import MenuList from './MenuList'
 import navLinks from '../../../constants/navLinks'
@@ -8,8 +7,7 @@ import navLinks from '../../../constants/navLinks'
 function NavList(props) {
   // List of navigation links (inside menu)
 
-  const { t } = props
-  const { pathname } = useLocation()
+  const { pathname, t } = props
 
   return (
     <nav aria-label={t('header.nav.ariaLabel')} className="w-5/6" role="navigation">

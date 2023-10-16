@@ -1,21 +1,19 @@
 /* Navbar.jsx */
 
-import { useLocation } from 'react-router-dom'
 import NavLink from './NavLink'
 import navLinks from '../../../constants/navLinks'
 
 function Navbar(props) {
   // List of navigation links displayed in the header
 
-  const { t } = props
-  const { pathname } = useLocation()
+  const { pathname, t } = props
 
   return (
     <nav aria-label={t('header.nav.ariaLabel')} role="navigation">
       <ul className="flex items-center gap-6 2xl:gap-8">
         {navLinks[pathname] &&
           navLinks[pathname].map(({ name }) => (
-            <NavLink key={name} to={name}>
+            <NavLink key={name} pathname={pathname} to={name}>
               {t(`header.nav.${pathname}.${name}`)}
             </NavLink>
           ))}

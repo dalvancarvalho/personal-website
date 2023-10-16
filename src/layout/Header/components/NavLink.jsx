@@ -9,7 +9,7 @@ import useMenu from '../../../context/MenuContext'
 function NavLink(props) {
   // Link to access a respective section of the page
 
-  const { children, icon, to } = props
+  const { children, icon, pathname, to } = props
   const { setMenuState } = useMenu()
   const linkRef = useRef(null)
   const isActive = linkRef.current?.state.active
@@ -22,7 +22,7 @@ function NavLink(props) {
       tabIndex="0"
       onKeyDown={(event) => {
         if (event.code !== 'Enter') return
-        location.href = '/#' + to
+        location.href = pathname + '#' + to
         setMenuState(false)
       }}
     >

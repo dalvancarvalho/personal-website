@@ -46,7 +46,7 @@ function Menu(props) {
             tracking-tight"
             ref={menuRef}
           >
-            {pathname !== '/404' && <NavList t={t} />}
+            {pathname !== '/404' && <NavList pathname={pathname} t={t} />}
             <LanguageList t={t} />
             <ThemeList t={t} />
           </div>
