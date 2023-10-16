@@ -18,6 +18,10 @@ function Logo(props) {
       ${y === 0 || isMenuOpen ? 'text-2xl 2xl:text-3xl' : 'text-xl 2xl:text-2xl'}
       cursor-pointer group`}
       onClick={() => navigate('/')}
+      onKeyDown={(event) => {
+        if (event.code !== 'Enter') return
+        navigate('/')
+      }}
       ref={refs.scope}
       tabIndex="0"
     >
