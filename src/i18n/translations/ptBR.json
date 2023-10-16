@@ -49,17 +49,17 @@
         }
       },
       "language": {
-        "ariaLabel": "Change language to English - EN-US",
+        "ariaLabel": "Toggle display language to English (US)",
         "heading": "Idioma",
-        "hover": "Change display language <br /> to English (US)"
+        "hover": "Toggle display language <br /> to English (US)"
       },
       "theme": {
-        "ariaLabel": "Mudar tema",
+        "ariaLabel": "Alternar tema",
         "heading": "Tema",
         "dark": "Escuro",
         "light": "Claro",
-        "hoverDark": "Mudar para tema claro",
-        "hoverLight": "Mudar para tema escuro"
+        "hoverDark": "Alternar para tema claro",
+        "hoverLight": "Alternar para tema escuro"
       }
     },
 
