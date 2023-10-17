@@ -9,7 +9,7 @@
   }
 
   .border-hover {
-    @apply group-hover:border-slate-350 group-hover:dark:border-dark-6;
+    @apply group-hover:border-slate-350 group-hover:dark:border-dark-1;
   }
 
   .button-hover {
@@ -50,7 +50,7 @@
   }
 
   .resume-hover {
-    @apply hover:bg-slate-200 hover:dark:bg-dark-6;
+    @apply hover:bg-slate-200 hover:dark:bg-dark-1;
   }
 
   .resume-button-hover {
@@ -84,7 +84,7 @@
   }
 
   .border-hover {
-    @apply border-slate-300 dark:border-dark-4;
+    @apply border-slate-300 dark:border-dark-3;
   }
 
   .button-hover {
@@ -124,7 +124,7 @@
   }
 
   .resume-hover {
-    @apply bg-slate-100 dark:bg-dark-3;
+    @apply bg-slate-100 dark:bg-dark-4;
   }
 
   .resume-button-hover {

@@ -23,7 +23,7 @@ function TextArea(props) {
         {label}
       </label>
       <textarea
-        className="w-full h-40 border-b-2 border-slate-300 dark:border-dark-4
+        className="w-full h-40 border-b-2 border-slate-300 dark:border-dark-3
         outline-none dark:outline-none text-base md:text-lg 2xl:text-xl pt-[0.25em]
         pb-[0.5em] block bg-transparent resize-none transition-[border-color] px-[0.5em]
         duration-300 border-hover"

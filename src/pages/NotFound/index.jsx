@@ -50,7 +50,7 @@ function NotFound() {
         </Container>
         <span
           className={`${isPortraitMode ? 'rotate-90' : 'rotate-0'}
-          absolute -z-10 text-slate-150 dark:text-dark-2 font-extrabold text-[25rem]
+          absolute -z-10 text-slate-150 dark:text-dark-5 font-extrabold text-[25rem]
           md:text-[30rem] lg:text-[40rem] xl:text-[45rem] 2xl:text-[55rem] select-none
           pointer-events-none color-transition`}
         >

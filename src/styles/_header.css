@@ -1,8 +1,8 @@
 /* _header.css */
 
 .header-collapsed {
-  @apply h-12 2xl:h-16 bg-slate-50 dark:bg-dark-1 backdrop-blur-[8px]
-  border-b-slate-200 dark:border-b-dark-5;
+  @apply h-12 2xl:h-16 bg-slate-50 dark:bg-dark-6 backdrop-blur-[8px]
+  border-b-slate-200 dark:border-b-dark-2;
 }
 
 .header-full {

@@ -61,8 +61,8 @@ function MobileCard(props) {
             {t(name)}
           </h3>
           <Paragraph
-            className="p-4 rounded-[0.5em] border border-t-white dark:border-t-dark-6
-            border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-5
+            className="p-4 rounded-[0.5em] border border-t-white dark:border-t-dark-1
+            border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2
             bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] shadow-xl"
             textSize="text-sm"
           >
@@ -73,8 +73,8 @@ function MobileCard(props) {
           </CallToAction>
         </div>
         <FontAwesomeIcon
-          className={`px-2 py-2 text-xl text-dark-5 dark:text-slate-50 bg-slate-50
-          dark:bg-dark-5 drop-shadow-md cursor-pointer transition duration-300
+          className={`px-2 py-2 text-xl text-dark-2 dark:text-slate-50 bg-slate-50
+          dark:bg-dark-2 drop-shadow-md cursor-pointer transition duration-300
           rounded-lg bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px]
           ${showImage ? (isEven ? 'rotate-180' : '-rotate-180') : null}`}
           icon={isEven ? faChevronLeft : faChevronRight}

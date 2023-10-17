@@ -13,7 +13,7 @@ function PageHeader(props) {
 
   return (
     <div
-      className="w-full pt-32 md:pt-44 pb-4 md:pb-10 bg-slate-150 dark:bg-dark-2
+      className="w-full pt-32 md:pt-44 pb-4 md:pb-10 bg-slate-150 dark:bg-dark-5
       color-transition"
       id={id}
     >

@@ -14,11 +14,11 @@
 }
 
 *::-webkit-scrollbar-track {
-  @apply bg-slate-50 dark:bg-dark-1;
+  @apply bg-slate-50 dark:bg-dark-6;
 }
 
 *::-webkit-scrollbar-thumb {
-  @apply border-solid border-2 border-slate-50 dark:border-dark-1
+  @apply border-solid border-2 border-slate-50 dark:border-dark-6
   bg-[#6c6c6c80] dark:bg-[#61606080] rounded-full;
 }
 

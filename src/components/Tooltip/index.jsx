@@ -15,8 +15,8 @@ function Tooltip(props) {
     <p
       className={`${position} absolute invisible px-[0.75em] py-[0.25em] z-50 
       group-focus-visible:visible group-focus-visible:opacity-100 border border-t-white
-      dark:border-t-dark-6 rounded-[0.5em] shadow-md opacity-0 border-b-transparent
-      border-x-transparent bg-slate-50 dark:bg-dark-5 text-slate-500 dark:text-gray-300
+      dark:border-t-dark-1 rounded-[0.5em] shadow-md opacity-0 border-b-transparent
+      border-x-transparent bg-slate-50 dark:bg-dark-2 text-slate-500 dark:text-gray-300
       font-normal tracking-normal whitespace-nowrap text-base 2xl:text-lg select-none
       duration-300 pointer-events-none tooltip-hover`}
     >

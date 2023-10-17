@@ -13,7 +13,7 @@ function ResumeCard(props) {
   return (
     <div
       className="relative max-w-max pt-4 pb-6 px-6 sm:pt-6 sm:pb-10 sm:px-10 rounded-xl
-      bg-slate-100 dark:bg-dark-3 flex flex-col items-center shadow-md color-transition
+      bg-slate-100 dark:bg-dark-4 flex flex-col items-center shadow-md color-transition
       group resume-hover"
     >
       <a

@@ -18,7 +18,7 @@ function CodeSnippet(props) {
   return (
     <div
       className="relative m-auto my-12 w-full md:w-5/6 xl:w-9/12 bg-slate-150
-      dark:bg-dark-4 rounded-lg shadow-md transition-[background-color]
+      dark:bg-dark-3 rounded-lg shadow-md transition-[background-color]
       overflow-hidden duration-300"
     >
       <div className="mx-5 h-10 2xl:h-12 flex justify-between items-center font-semibold">
@@ -59,7 +59,7 @@ function CodeSnippet(props) {
         {extension.toUpperCase()}
       </p>
       <pre
-        className="p-5 bg-white dark:bg-dark-6 text-xs md:text-sm 2xl:text-base
+        className="p-5 bg-white dark:bg-dark-1 text-xs md:text-sm 2xl:text-base
         transition-[background-color] duration-300"
         tabIndex="-1"
       >

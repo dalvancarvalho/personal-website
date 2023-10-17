@@ -21,7 +21,7 @@ function Projects(props) {
   return (
     <Section
       className="relative isolate z-10 after:absolute after:inset-0 after:-z-10
-      after:-skew-y-[4deg] md:after:-skew-y-2 after:bg-slate-150 after:dark:bg-dark-2
+      after:-skew-y-[4deg] md:after:-skew-y-2 after:bg-slate-150 after:dark:bg-dark-5
       overflow-x-clip after:transition-colors after:duration-300"
       id="projects"
       ref={refs.scope}
@@ -33,7 +33,7 @@ function Projects(props) {
         <SectionTitle
           title={t('pages.home.projects.heading')}
           watermark={t('pages.home.projects.watermark')}
-          watermarkColor="text-slate-250 dark:text-dark-4"
+          watermarkColor="text-slate-250 dark:text-dark-3"
         />
         <Paragraph className="mb-16 2xl:mb-20 lg:mx-12 2xl:mx-20" ref={refs.paragraph}>
           <Trans components={{ highlight: <Highlight /> }}>

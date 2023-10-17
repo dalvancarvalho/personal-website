@@ -23,7 +23,7 @@ function Input(props) {
         {label}
       </label>
       <input
-        className="w-full border-b-2 border-slate-300 dark:border-dark-4 outline-none
+        className="w-full border-b-2 border-slate-300 dark:border-dark-3 outline-none
         dark:outline-none text-base md:text-lg 2xl:text-xl pt-[0.5em] pb-[0.25em] block
         bg-transparent invalid:text-rose-600 dark:invalid:text-rose-400
         transition-[border-color] px-[0.5em] duration-300 border-hover"

@@ -10,8 +10,8 @@ function Divider(props) {
       className={`h-[2em] w-px color-transition
       ${
         pathname !== '/' && y === 0
-          ? 'bg-slate-300 dark:bg-dark-6'
-          : 'bg-slate-200 dark:bg-dark-5'
+          ? 'bg-slate-300 dark:bg-dark-1'
+          : 'bg-slate-200 dark:bg-dark-2'
       }`}
     />
   )
