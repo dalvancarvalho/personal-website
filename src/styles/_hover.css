@@ -8,6 +8,10 @@
     peer-hover:-translate-y-1;
   }
 
+  .border-hover {
+    @apply group-hover:border-slate-350 group-hover:dark:border-dark-6;
+  }
+
   .button-hover {
     @apply hover:text-slate-900 hover:dark:text-gray-200;
   }
@@ -27,6 +31,10 @@
 
   .form-button-hover {
     @apply group-hover:translate-x-1 group-hover:-translate-y-1;
+  }
+
+  .label-hover {
+    @apply group-hover:text-slate-800 group-hover:dark:text-gray-200;
   }
 
   .link-hover {
@@ -75,6 +83,10 @@
     @apply translate-x-0 translate-y-0;
   }
 
+  .border-hover {
+    @apply border-slate-300 dark:border-dark-4;
+  }
+
   .button-hover {
     @apply text-slate-500 dark:text-gray-400;
   }
@@ -93,6 +105,10 @@
 
   .form-button-hover {
     @apply translate-x-0 translate-y-0;
+  }
+
+  .label-hover {
+    @apply text-slate-500 dark:text-gray-400;
   }
 
   .link-hover {

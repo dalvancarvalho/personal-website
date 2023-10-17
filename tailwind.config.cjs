@@ -16,6 +16,7 @@ module.exports = {
         slate: {
           150: '#eaeff4',
           250: '#dbe3ec',
+          350: '#b0bccd',
         },
       },
       fontFamily: {
