@@ -23,7 +23,7 @@ function Breadcrumbs(props) {
         <FontAwesomeIcon icon={faHouse} />
       </button>
       <FontAwesomeIcon
-        className="mx-4 text-slate-500 dark:text-gray-400 text-[0.6rem] md:text-xs
+        className="mx-5 text-slate-500 dark:text-gray-400 text-[0.6rem] md:text-xs
         color-transition"
         icon={faChevronRight}
       />
