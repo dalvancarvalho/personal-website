@@ -18,7 +18,7 @@ function PageHeader(props) {
       id={id}
     >
       <Container
-        className="px-6 sm:px-8 xl:px-40 flex flex-col md:flex-row justify-end
+        className="px-6 sm:px-8 xl:px-40 2xl:px-64 flex flex-col md:flex-row justify-end
         md:items-end md:justify-between"
       >
         <div>
