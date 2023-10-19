@@ -78,7 +78,7 @@ function DesktopCard(props) {
           <Paragraph
             className="p-[1em] rounded-[0.5em] border border-t-white dark:border-t-dark-1
             border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2
-            bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] shadow-xl"
+            shadow-xl"
             textSize="text-base 2xl:text-lg"
           >
             {t(description)}
