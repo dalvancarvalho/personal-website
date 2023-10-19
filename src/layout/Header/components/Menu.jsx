@@ -18,7 +18,7 @@ function Menu(props) {
   const scopeRef = useMenuAnimation(buttonRef, isMenuOpen, menuRef)
 
   return (
-    <div className="grid place-content-center" ref={scopeRef}>
+    <div ref={scopeRef}>
       <Button
         className={`${y === 0 || isMenuOpen ? 'scale-[1.4]' : null}
         !transition duration-300`}
@@ -36,13 +36,13 @@ function Menu(props) {
         </div>
       </Button>
       <div
-        className={`${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
-        absolute inset-0 -z-10 h-screen w-screen bg-white dark:bg-black bg-opacity-[85%]
+        className={`${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'} -z-10
+        absolute inset-0 h-[100dvh] w-[100dvw] bg-white dark:bg-black bg-opacity-[85%]
         dark:bg-opacity-[85%] backdrop-blur-[8px] transition-all duration-300`}
       >
         <Container className="h-full">
           <div
-            className="mt-4 w-4/6 h-full flex flex-col justify-center gap-3 font-mark-pro
+            className="pt-4 w-4/6 h-full flex flex-col justify-center gap-3 font-mark-pro
             tracking-tight"
             ref={menuRef}
           >
