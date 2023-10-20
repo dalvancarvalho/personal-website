@@ -10,12 +10,11 @@ function Tech(props) {
 
   return (
     <li
-      className="max-w-max text-sm md:text-base 2xl:text-lg font-bold
-      text-slate-800 dark:text-gray-200 color-transition"
+      className="max-w-max text-sm md:text-base 2xl:text-lg font-bold text-slate-800
+      dark:text-gray-200 color-transition"
     >
       <a
-        className="flex items-center gap-2 focus-visible:translate-x-1
-        transition-transform duration-150 tech-hover"
+        className="flex items-center gap-2 transition-transform duration-150 tech-hover"
         href={url}
         rel="noopener noreferrer"
         target="_blank"
