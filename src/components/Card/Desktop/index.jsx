@@ -1,5 +1,7 @@
 /* DesktopCard/index.jsx */
 
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 import useCardParallax from '../hooks/useCardParallax'
 import useDesktopAnimation from '../animations/useDesktopAnimation'
@@ -28,7 +30,7 @@ function DesktopCard(props) {
             ? 'col-start-5 lg:col-start-6 col-end-13'
             : 'col-start-1 col-end-9 lg:col-end-8'
         }
-        relative row-span-full m-auto -z-10 w-full h-full  rounded-[0.5em] shadow-md
+        relative row-span-full m-auto -z-10 w-full h-full rounded-[0.5em] shadow-md
         overflow-hidden group`}
         ref={refs.image}
       >
@@ -78,13 +80,18 @@ function DesktopCard(props) {
           <Paragraph
             className="p-[1em] rounded-[0.5em] border border-t-white dark:border-t-dark-1
             border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2
-            shadow-xl"
+            bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] shadow-xl"
             textSize="text-base 2xl:text-lg"
           >
             {t(description)}
           </Paragraph>
           <CallToAction className="shadow-xl" onClick={() => navigate(routeName)}>
             {t('pages.home.projects.primaryButton')}
+            <FontAwesomeIcon
+              className="absolute opacity-0 group-focus-visible/button:translate-x-2
+              group-focus-visible/button:opacity-100 fa-arrow-right-hover"
+              icon={faArrowRight}
+            />
           </CallToAction>
         </div>
       </div>

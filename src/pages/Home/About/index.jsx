@@ -1,5 +1,7 @@
 /* About/index.jsx */
 
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Trans } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import useAboutAnimation from './animations/useAboutAnimation'
@@ -85,7 +87,7 @@ function About(props) {
         <Grid>
           <div
             className="z-10 col-start-1 col-end-8 row-span-full flex flex-col gap-4
-            2xl:gap-6 group"
+            2xl:gap-6 items-start group"
             ref={refs.stack}
           >
             <h3
@@ -104,11 +106,13 @@ function About(props) {
                 pages.home.about.paragraphIV
               </Trans>
             </Paragraph>
-            <CallToAction
-              className="max-w-max group/button"
-              onClick={() => navigate('resume')}
-            >
+            <CallToAction onClick={() => navigate('resume')}>
               {t('pages.home.about.button')}
+              <FontAwesomeIcon
+                className="absolute opacity-0 group-focus-visible/button:translate-x-2
+                group-focus-visible/button:opacity-100 fa-arrow-right-hover"
+                icon={faArrowRight}
+              />
             </CallToAction>
           </div>
           <div

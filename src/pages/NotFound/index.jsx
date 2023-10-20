@@ -40,8 +40,8 @@ function NotFound() {
           <RouterLink className="mt-4 md:mt-5 2xl:mt-6 group" tabIndex="-1" to="/">
             <CallToAction textSize="text-sm md:text-base 2xl:text-lg">
               <FontAwesomeIcon
-                className="not-found-button-hover group-focus-visible:-translate-x-1
-                transition-transform"
+                className="absolute opacity-0 group-focus-visible/button:-translate-x-2
+                group-focus-visible/button:opacity-100 fa-arrow-left-hover"
                 icon={faArrowLeft}
               />
               {t('pages.notFound.button')}
