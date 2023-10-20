@@ -56,7 +56,7 @@ function Hero(props) {
               pages.home.hero.paragraph
             </Trans>
           </Paragraph>
-          <div className="hero-content mt-4 md:mt-5 2xl:mt-6 flex gap-8 2xl:gap-10">
+          <div className="hero-content mt-4 md:mt-5 2xl:mt-6 flex gap-10 2xl:gap-12">
             <ScrollLink href="contact" spy={true} tabIndex="-1" to="contact">
               <CallToAction textSize="text-sm md:text-base 2xl:text-lg">
                 {t('pages.home.hero.primaryButton')}
