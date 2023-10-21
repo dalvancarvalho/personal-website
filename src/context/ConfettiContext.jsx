@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState } from 'react'
 
-// Context for the confetti animation on form submission
+// Context for the confetti animation
 const ConfettiContext = createContext()
 
 function ConfettiProvider({ children }) {
@@ -16,8 +16,6 @@ function ConfettiProvider({ children }) {
 }
 
 function useConfetti() {
-  // Sets the theme of the page
-
   return useContext(ConfettiContext)
 }
 

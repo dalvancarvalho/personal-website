@@ -1,18 +1,18 @@
 /* Confetti.jsx */
 
-import { useState } from 'react'
+import { useEffect } from 'react'
 import ReactConfetti from 'react-confetti'
 import useConfetti from '../../../../context/ConfettiContext'
 import useScreenProps from '../../../../hooks/useScreenProps'
 
 function Confetti() {
-  // Confetti animation after form submission
+  // Container that wraps the confetti animation
 
   const { setConfetti } = useConfetti()
   const { isPortraitMode, screenDimensions, screenSize } = useScreenProps()
 
   // prettier-ignore
-  useState(() => {
+  useEffect(() => {
     const timer = setTimeout(() => {
       setConfetti(false)
     }, isPortraitMode ? 20000 : 10000) // the animation takes longer to complete on mobile devices
