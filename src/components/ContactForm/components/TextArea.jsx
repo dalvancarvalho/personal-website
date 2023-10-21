@@ -17,7 +17,7 @@ function TextArea(props) {
             : '-translate-y-[155%] scale-[0.85]'
         }
         absolute top-[10%] left-0 text-base md:text-lg 2xl:text-xl text-slate-500
-        dark:text-gray-400 font-medium origin-left duration-300 label-hover`}
+        dark:text-gray-400 font-medium origin-left ease-out duration-300 label-hover`}
         htmlFor={inputName}
       >
         {label}

@@ -5,7 +5,7 @@
 
   .arrow-hover {
     @apply peer-hover:translate-x-1 peer-hover:text-slate-800 dark:peer-hover:text-gray-200
-    peer-hover:-translate-y-1;
+    peer-hover:-translate-y-1 ease-out;
   }
 
   .border-hover {
@@ -26,19 +26,14 @@
   }
 
   .fa-arrow-left-hover {
-    @apply left-6 2xl:left-7 group-hover/button:-translate-x-2
+    @apply left-6 2xl:left-7 group-hover/button:-translate-x-2 ease-out
     group-hover/button:opacity-100 transition-[transform,opacity] delay-75;
   }
 
-  .fa-arrow-right-hover {
-    @apply right-6 2xl:right-7 group-hover/button:translate-x-2
+  .fa-arrow-right-hover,
+  .fa-envelope-hover {
+    @apply right-6 2xl:right-7 group-hover/button:translate-x-2 ease-out
     group-hover/button:opacity-100 transition-[transform,opacity] delay-75;
-  }
-
-  .fa-paper-plane-hover {
-    @apply top-[40%] right-6 group-hover/button:opacity-100 delay-75
-    group-hover/button:translate-x-1 group-hover/button:-translate-y-1
-    transition-[transform,opacity];
   }
 
   .footer-link-hover {
@@ -76,7 +71,7 @@
   }
 
   .tech-hover {
-    @apply hover:translate-x-1;
+    @apply hover:translate-x-1 ease-out;
   }
 
   .tooltip-hover {
@@ -109,7 +104,7 @@
 
   .fa-arrow-left-hover,
   .fa-arrow-right-hover,
-  .fa-paper-plane-hover {
+  .fa-envelope-hover {
     @apply right-0 opacity-0;
   }
 

@@ -22,7 +22,7 @@ function ThemeSwitch(props) {
         <div
           className={`${theme === 'light' ? 'translate-y-1/2' : '-translate-y-1/2'}
           w-6 h-6 flex flex-col justify-center gap-2 2xl:gap-1.5 transition-transform
-          duration-300`}
+          ease-out duration-300`}
         >
           <FontAwesomeIcon className="-rotate-[23deg]" icon={faMoon} />
           <FontAwesomeIcon className="-rotate-[23deg]" icon={faSun} />

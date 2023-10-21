@@ -20,8 +20,8 @@ function LanguageSwitch(props) {
       <div className="overflow-hidden">
         <p
           className={`${language.id === 'PT' ? 'translate-y-1/2' : '-translate-y-1/2'}
-          w-6 h-6 flex flex-col justify-center 2xl:-space-y-1 transition-transform
-          duration-300 text-center`}
+          w-6 h-6 flex flex-col justify-center 2xl:-space-y-1 text-center ease-out
+          transition-transform duration-300`}
         >
           <span>EN</span>
           <span>PT</span>
