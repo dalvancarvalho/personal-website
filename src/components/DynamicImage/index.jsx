@@ -2,6 +2,7 @@
 
 function DynamicImage(props) {
   // Smoothly switches two images between their light and dark versions
+  // when the theme is toggled
 
   const { alt, className, darkVersion, lazy, lightVersion } = props
 
