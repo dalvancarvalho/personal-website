@@ -13,7 +13,7 @@ function MenuList(props) {
       >
         {title}
       </p>
-      <ul className="flex flex-col items-start text-xl" role="listbox">
+      <ul className="relative flex flex-col items-start text-xl" role="listbox">
         {children}
       </ul>
     </>

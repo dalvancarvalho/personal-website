@@ -22,7 +22,7 @@ function ThemeList(props) {
                 ? 'font-bold text-slate-800 dark:text-gray-200'
                 : 'font-medium text-slate-500 dark:text-gray-400'
             }
-            py-2 w-full cursor-pointer color-transition`}
+            py-1.5 w-full cursor-pointer color-transition`}
             key={themeName}
             onClick={() => setTheme(themeName)}
             onKeyDown={(event) => (event.code === 'Enter' ? setTheme(themeName) : null)}
@@ -30,22 +30,19 @@ function ThemeList(props) {
             tabIndex="0"
           >
             <div className="flex items-center">
-              {themeName === theme && (
-                <FontAwesomeIcon
-                  className="ml-6 sm:ml-5 mr-[22px] sm:mr-[26px] text-accent
-                  color-transition"
-                  icon={faCaretRight}
-                />
-              )}
               <FontAwesomeIcon
-                className={`${themeName !== theme ? 'ml-14' : null} mr-4 w-6
-                -rotate-[23deg]`}
+                className="ml-14 mr-4 w-6 -rotate-[23deg]"
                 icon={themeName === 'light' ? faSun : faMoon}
               />
-              <span>{t(`header.theme.${themeName}`)}</span>
+              <span className="pt-1">{t(`header.theme.${themeName}`)}</span>
             </div>
           </li>
         ))}
+        <FontAwesomeIcon
+          className={`${theme === 'light' ? 'top-3' : 'top-14'} absolute left-6
+          text-accent transition-all duration-300 ease-out`}
+          icon={faCaretRight}
+        />
       </MenuList>
     </div>
   )

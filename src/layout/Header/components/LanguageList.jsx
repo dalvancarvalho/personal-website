@@ -22,7 +22,7 @@ function LanguageList(props) {
                 ? 'font-bold text-slate-800 dark:text-gray-200'
                 : 'font-medium text-slate-500 dark:text-gray-400'
             }
-            py-2 w-full cursor-pointer color-transition`}
+            py-1.5 w-full cursor-pointer color-transition`}
             key={lang.id}
             onClick={() => setLanguage(lang)}
             onKeyDown={(event) => (event.code === 'Enter' ? setLanguage(lang) : null)}
@@ -30,23 +30,18 @@ function LanguageList(props) {
             tabIndex="0"
           >
             <div className="flex items-center">
-              {lang.id === language.id && (
-                <FontAwesomeIcon
-                  className="ml-6 sm:ml-5 mr-[22px] sm:mr-[26px] text-accent
-                  color-transition"
-                  icon={faCaretRight}
-                />
-              )}
-              <span
-                className={`${lang.id !== language.id ? 'ml-14' : null} mr-4 w-6
-                font-black text-base text-center`}
-              >
+              <span className="ml-14 mr-4 w-6 pt-0.5 font-black text-base text-center">
                 {lang.id}
               </span>
-              <span>{lang.name}</span>
+              <span className="pt-0.5">{lang.name}</span>
             </div>
           </li>
         ))}
+        <FontAwesomeIcon
+          className={`${language.id === 'EN' ? 'top-[10px]' : 'top-[52px]'} absolute
+          left-6 text-accent transition-all duration-300 ease-out`}
+          icon={faCaretRight}
+        />
       </MenuList>
     </div>
   )

@@ -18,10 +18,10 @@ function Menu(props) {
   const scopeRef = useMenuAnimation(buttonRef, isMenuOpen, menuRef)
 
   return (
-    <div ref={scopeRef}>
+    <div className="grid place-items-center" ref={scopeRef}>
       <Button
         className={`${y === 0 || isMenuOpen ? 'scale-[1.4]' : null}
-        !transition duration-300`}
+        !transition !duration-300`}
         onClick={() => setMenuState((current) => !current)}
       >
         <div className="overflow-hidden">
