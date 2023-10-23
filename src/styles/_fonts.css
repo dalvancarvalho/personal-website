@@ -1,13 +1,13 @@
 /* _fonts.css */
 
 /* Fira Code */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+@import '@fontsource-variable/fira-code';
 
 /* Rock Salt */
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import '@fontsource/rock-salt';
 
 /* Urbanist */
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap');
+@import '@fontsource-variable/urbanist';
 
 /* Mark Pro */
 @font-face {

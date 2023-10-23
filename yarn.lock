@@ -372,6 +372,21 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.49.0.tgz#86f79756004a97fa4df866835093f1df3d03c333"
   integrity sha512-1S8uAY/MTJqVx0SC4epBq+N2yhuwtNwLbJYNZyhL2pO1ZVKn5HFXav5T41Ryzy9K9V7ZId2JB2oy/W4aCd9/2w==
 
+"@fontsource-variable/fira-code@^5.0.15":
+  version "5.0.15"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/fira-code/-/fira-code-5.0.15.tgz#d3bd56e31e6986975f54d4b1917964413f6624d5"
+  integrity sha512-tp56A54PjfH1RBJQ3Jdqh5cvrEHd4n302z3v6sGAnTKW9+oQgU0dK4WAMIXgDhFY35BrhpoIElowfkAT7NYJfA==
+
+"@fontsource-variable/urbanist@^5.0.18":
+  version "5.0.18"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/urbanist/-/urbanist-5.0.18.tgz#855319e6eea8eeb6540fc530255cbf9a46e3ee4d"
+  integrity sha512-muPvXSrd15CK7C4eRbeFVYrCNyIq2vRp31/S7LJAfRsGN1KMmNJeBngqF8sKRkXQmg4adWLlRgQYH/rlOuv0wA==
+
+"@fontsource/rock-salt@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/rock-salt/-/rock-salt-5.0.17.tgz#1268eb98f08901ef14389f348fa04ad069cfa18d"
+  integrity sha512-EJNqXMAQ0E5ref7Z8jLJ9FE7yO3zgeHKCL6CqnuStnLVqhszJdV/PQhdfuVllBf5iLXPmMxQQBZga2IVQKkDew==
+
 "@fortawesome/fontawesome-common-types@6.4.2":
   version "6.4.2"
   resolved "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.4.2.tgz"

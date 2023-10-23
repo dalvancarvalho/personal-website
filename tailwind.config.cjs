@@ -20,10 +20,10 @@ module.exports = {
         },
       },
       fontFamily: {
-        'fira-code': ['Fira Code', 'monospace'],
+        'fira-code': ['Fira Code Variable', 'monospace'],
         'mark-pro': ['Mark Pro', 'sans-serif'],
         'rock-salt': ['Rock Salt', 'cursive'],
-        urbanist: ['Urbanist', 'sans-serif'],
+        urbanist: ['Urbanist Variable', 'sans-serif'],
       },
     },
   },
