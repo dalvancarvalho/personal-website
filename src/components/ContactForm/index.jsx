@@ -1,7 +1,7 @@
 /* ContactForm/index.jsx */
 
 import { forwardRef } from 'react'
-import { faChevronRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import useContactForm from './hooks/useContactForm'
 import CallToAction from '../Button/CallToAction'
@@ -63,12 +63,12 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
           <>
             {t('pages.home.contact.button.default')}
             <div
-              className="absolute flex items-center gap-2 opacity-0
+              className="absolute flex items-center gap-1 opacity-0
               group-focus-visible/button:opacity-100 fa-envelope-hover
               group-focus-visible/button:translate-x-2"
             >
               <FontAwesomeIcon icon={faEnvelope} />
-              <FontAwesomeIcon className="text-xs" icon={faChevronRight} />
+              <FontAwesomeIcon className="text-[0.6rem]" icon={faArrowRight} />
             </div>
           </>
         )}
