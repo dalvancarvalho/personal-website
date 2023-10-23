@@ -14,13 +14,14 @@ function Tech(props) {
       dark:text-gray-200 color-transition"
     >
       <a
-        className="flex items-center gap-2 transition-transform duration-150 tech-hover"
+        className="flex items-center gap-2 group/link"
         href={url}
         rel="noopener noreferrer"
         target="_blank"
       >
         <FontAwesomeIcon
-          className="text-sm 2xl:text-base text-accent color-transition"
+          className="text-sm 2xl:text-base text-accent transition-all duration-150
+          tech-hover"
           icon={faCaretRight}
         />
         {name}

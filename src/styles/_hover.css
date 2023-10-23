@@ -71,7 +71,7 @@
   }
 
   .tech-hover {
-    @apply hover:translate-x-1 ease-out;
+    @apply group-hover/link:translate-x-1 ease-out;
   }
 
   .tooltip-hover {
