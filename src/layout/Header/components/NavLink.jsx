@@ -9,7 +9,7 @@ import useMenu from '../../../context/MenuContext'
 function NavLink(props) {
   // Link to access a respective section of the page
 
-  const { children, icon, pathname, to } = props
+  const { children, icon, to } = props
   const { setMenuState } = useMenu()
   const linkRef = useRef(null)
   const isActive = linkRef.current?.state.active
@@ -19,12 +19,7 @@ function NavLink(props) {
       className="w-full md:text-base text-slate-500 dark:text-gray-400
       hover:md:text-slate-900 hover:md:dark:text-gray-200 whitespace-nowrap
       focus-visible:md:text-slate-900 focus-visible:md:dark:text-gray-200"
-      tabIndex="0"
-      onKeyDown={(event) => {
-        if (event.code !== 'Enter') return
-        location.href = pathname + '#' + to
-        setMenuState(false)
-      }}
+      tabIndex="-1"
     >
       <ScrollLink
         activeClass="!font-bold text-slate-800 dark:text-gray-200"
@@ -32,9 +27,13 @@ function NavLink(props) {
         md:py-0 md:font-bold md:uppercase 2xl:text-lg color-transition"
         href={to} // SEO purposes
         onClick={() => setMenuState(false)}
+        onKeyDown={(event) => {
+          if (event.code !== 'Enter') return
+          location.href = '#' + to
+          setMenuState(false)
+        }}
         ref={linkRef}
         spy={true}
-        tabIndex="-1"
         to={to}
       >
         {isActive && (

@@ -13,7 +13,7 @@ function Navbar(props) {
       <ul className="flex items-center gap-6 2xl:gap-8">
         {navLinks[pathname] &&
           navLinks[pathname].map(({ name }) => (
-            <NavLink key={name} pathname={pathname} to={name}>
+            <NavLink key={name} to={name}>
               {t(`header.nav.${pathname}.${name}`)}
             </NavLink>
           ))}
