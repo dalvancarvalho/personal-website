@@ -50,7 +50,7 @@ function NavLink(props) {
             icon={icon}
           />
         )}
-        <span className="pt-1">{children}</span>
+        <span className="pt-1 md:pt-0">{children}</span>
       </ScrollLink>
     </li>
   )
