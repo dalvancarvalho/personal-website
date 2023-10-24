@@ -80,6 +80,7 @@ In the table below, all the resources used by the page are listed:
 | ----------------------------------------------------------------------------- | ----------------------------------------------------- |
 | [EmailJS](https://www.emailjs.com/)                                           | E-mail sending, directly from the contact form        |
 | [Font Awesome](https://fontawesome.com/)                                      | Icons and brand logos                                 |
+| [Fontsource](https://fontsource.org/)                                         | Local hosting of Google fonts                         |
 | [GSAP](https://greensock.com/gsap/)                                           | Animations across the page                            |
 | [i18next](https://react.i18next.com/)                                         | Internationalization feature                          |
 | [Prism](https://prismjs.com/)                                                 | Syntax highlighting for code snippets                 |
@@ -97,7 +98,7 @@ In the table below, all the resources used by the page are listed:
 >
 > [**Download Node.js**](https://nodejs.org/en/download) - _Go for the **LTS** version if you are not sure or never installed **Node.js** before_ <br> [**Download Git**](https://git-scm.com/downloads)
 
-1. After clone this repository, navigate to its folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)).
+1. After cloning this repository, navigate to its folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)).
 
 2. Install Yarn, if you haven't already on your system (optional):
 
@@ -112,6 +113,7 @@ In the table below, all the resources used by the page are listed:
    ```
    yarn
    ```
+
    _or if you prefer NPM:_
 
    ```

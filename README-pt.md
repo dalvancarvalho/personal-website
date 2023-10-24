@@ -76,6 +76,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 | ----------------------------------------------------------------------------- | --------------------------------------------------------- |
 | [EmailJS](https://www.emailjs.com/)                                           | Envio de e-mails, diretamente do formulário de contato    |
 | [Font Awesome](https://fontawesome.com/)                                      | Ícones e logomarcas                                       |
+| [Fontsource](https://fontsource.org/)                                         | Hospedagem local de fontes do Google                      |
 | [GSAP](https://greensock.com/gsap/)                                           | Animações ao longo da página                              |
 | [i18next](https://react.i18next.com/)                                         | Internacionalização da página                             |
 | [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                     |
