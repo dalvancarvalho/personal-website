@@ -149,14 +149,14 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
 
 ### Cores
 
-| Papel                     | Nome no Tailwind |                         Código hexadecimal                         |
-| ------------------------- | :--------------: | :----------------------------------------------------------------: |
-| Principal                 |     blue-600     | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
-| Principal (versão escura) |    orange-500    | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
-| Fundo                     |  _custom color_  | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
-| Fundo (versão escura)     |  _custom color_  | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
-| Texto                     |    slate-600     | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
-| Texto (versão escura)     |     gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
+| Papel                     |  Nome no Tailwind   |                         Código hexadecimal                         |
+| ------------------------- | :-----------------: | :----------------------------------------------------------------: |
+| Principal                 |      blue-600       | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
+| Principal (versão escura) |     orange-500      | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
+| Fundo                     | _cor personalizada_ | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
+| Fundo (versão escura)     | _cor personalizada_ | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
+| Texto                     |      slate-600      | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
+| Texto (versão escura)     |      gray-400       | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
 
 ### Ícones
 
