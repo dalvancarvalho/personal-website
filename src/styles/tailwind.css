@@ -19,6 +19,10 @@
     @apply bg-blue-600 dark:bg-orange-500;
   }
 
+  .bg-color {
+    @apply bg-slate-50 dark:bg-dark-6;
+  }
+
   .color-transition {
     @apply transition-colors duration-300;
   }
@@ -33,6 +37,10 @@
 
   .text-accent {
     @apply text-blue-600 dark:text-orange-500;
+  }
+
+  .text-color {
+    @apply text-slate-800 dark:text-gray-200;
   }
 
   .title-font {
