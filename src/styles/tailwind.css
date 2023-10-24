@@ -6,7 +6,7 @@
 @import './_form-field';
 @import './_global';
 @import './_header';
-@import './_hover';
+@import './_primary-input';
 
 /* Tailwind CSS directives */
 @tailwind base;

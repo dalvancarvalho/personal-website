@@ -1,7 +1,8 @@
-/* _hover.css */
+/* _primary-input.css */
 
 @media (hover: hover) {
-  /* Devices that can hover */
+  /* Devices with primary input mechanisms that support hovering over elements,
+  such as desktop computers, laptops, and smartphones with a stylus */
 
   .arrow-hover {
     @apply peer-hover:translate-x-1 peer-hover:text-slate-800 dark:peer-hover:text-gray-200
@@ -38,6 +39,10 @@
 
   .footer-link-hover {
     @apply hover:text-slate-900 hover:dark:text-gray-200;
+  }
+
+  .hero-buttons-gap {
+    @apply gap-10 2xl:gap-12;
   }
 
   .label-hover {
@@ -80,7 +85,8 @@
 }
 
 @media (hover: none) {
-  /* Devices that can't hover */
+  /* Devices with primary input mechanisms that can't hover or don't
+  allow for convenient hovering, such as most cellphones and tablets */
 
   .arrow-hover {
     @apply translate-x-0 translate-y-0;
@@ -110,6 +116,10 @@
 
   .footer-link-hover {
     @apply text-slate-600 dark:text-gray-400;
+  }
+
+  .hero-buttons-gap {
+    @apply gap-8 2xl:gap-10;
   }
 
   .label-hover {
