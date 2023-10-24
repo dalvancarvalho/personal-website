@@ -36,7 +36,7 @@ function DesktopCard(props) {
       >
         <img
           alt={t(altText)}
-          className="h-full group-hover:scale-110 group-hover:blur-[2px] duration-500"
+          className="h-full group-hover:scale-105 group-hover:blur-[2px] duration-500"
           src={thumbnail}
         />
         <ul
