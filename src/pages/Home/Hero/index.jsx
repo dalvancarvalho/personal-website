@@ -33,7 +33,7 @@ function Hero(props) {
           items-start"
           ref={textRef}
         >
-          <h1 className="hero-content title-font text-5xl md:text-7xl 2xl:text-8xl">
+          <h1 className="title-font text-5xl md:text-7xl 2xl:text-8xl">
             <Trans
               components={{
                 small: (
@@ -48,15 +48,12 @@ function Hero(props) {
               pages.home.hero.heading
             </Trans>
           </h1>
-          <Paragraph
-            className="hero-content my-5 2xl:my-6 text-base md:text-xl 2xl:text-2xl
-            2xl:leading-9"
-          >
+          <Paragraph className="my-5 2xl:my-6 text-base md:text-xl 2xl:text-2xl 2xl:leading-9">
             <Trans components={{ highlight: <Highlight /> }}>
               pages.home.hero.paragraph
             </Trans>
           </Paragraph>
-          <div className="hero-content mt-4 md:mt-5 2xl:mt-6 flex gap-10 2xl:gap-12">
+          <div className="mt-4 md:mt-5 2xl:mt-6 flex hero-buttons-gap">
             <ScrollLink href="contact" spy={true} tabIndex="-1" to="contact">
               <CallToAction textSize="text-sm md:text-base 2xl:text-lg">
                 {t('pages.home.hero.primaryButton')}
@@ -70,7 +67,7 @@ function Hero(props) {
           </div>
         </div>
       </Container>
-      <div className="hero-bg absolute bottom-0 -z-10 h-full w-full" ref={bgRef}>
+      <div className="absolute bottom-0 -z-10 h-full w-full" ref={bgRef}>
         <DynamicImage
           alt={t('pages.home.hero.bgAltText')}
           className="absolute bottom-0 h-[90%] w-full object-cover"
