@@ -2,7 +2,7 @@
   "name": "personal-page",
   "description": "Dalvan Carvalho's personal page",
   "version": "1.0.0",
-  "author": "Dalvan Carvalho",
+  "author": "Dalvan Carvalho <contact@dalvanc.com>",
   "homepage": "https://dalvanc.com",
   "repository": {
     "type": "git",
