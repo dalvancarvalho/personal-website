@@ -5,6 +5,7 @@ import {
   faLastfm,
   faLinkedin,
   faSpotify,
+  faXTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
 const socialNetworks = [
@@ -23,6 +24,12 @@ const socialNetworks = [
     url: 'https://www.linkedin.com/',
   },
   {
+    color: 'hover:text-[#0f1419] focus-visible:text-[#0f1419]',
+    icon: faXTwitter,
+    name: 'Twitter',
+    url: 'https://twitter.com/theRealZackyV',
+  },
+  {
     color: 'hover:text-[#d0232b] focus-visible:text-[#d0232b]',
     icon: faLastfm,
     name: 'Last.fm',
@@ -32,7 +39,7 @@ const socialNetworks = [
     color: 'hover:text-[#25d865] focus-visible:text-[#25d865]',
     icon: faSpotify,
     name: 'Spotify',
-    url: 'https://open.spotify.com/user/dalvancarvalho?si=b877da829ced4f20',
+    url: 'https://open.spotify.com/user/dalvancarvalho',
   },
 ]
 
