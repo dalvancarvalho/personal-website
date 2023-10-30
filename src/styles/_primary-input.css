@@ -57,6 +57,10 @@
     @apply group-hover:text-blue-500 group-hover:dark:text-orange-400;
   }
 
+  .nav-link-hover {
+    @apply hover:md:text-slate-900 hover:md:dark:text-gray-200;
+  }
+
   .resume-hover {
     @apply hover:bg-slate-200 hover:dark:bg-dark-1;
   }
@@ -132,6 +136,10 @@
 
   .logo-hover {
     @apply text-accent;
+  }
+
+  .nav-link-hover {
+    @apply text-slate-500 dark:text-gray-400;
   }
 
   .resume-hover {

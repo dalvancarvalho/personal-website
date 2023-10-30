@@ -16,10 +16,15 @@ function NavLink(props) {
 
   return (
     <li
-      className="w-full md:text-base text-slate-500 dark:text-gray-400
-      hover:md:text-slate-900 hover:md:dark:text-gray-200 whitespace-nowrap
-      focus-visible:md:text-slate-900 focus-visible:md:dark:text-gray-200"
-      tabIndex="-1"
+      className="w-full md:text-base text-slate-500 dark:text-gray-400 nav-link-hover
+      focus-visible:md:text-slate-900 focus-visible:dark:md:dark:text-gray-200
+      whitespace-nowrap"
+      tabIndex="0"
+      onKeyDown={(event) => {
+        if (event.code !== 'Enter') return
+        location.href = '#' + to
+        setMenuState(false)
+      }}
     >
       <ScrollLink
         activeClass="!font-bold text-slate-800 dark:text-gray-200"
@@ -27,13 +32,9 @@ function NavLink(props) {
         md:py-0 md:font-bold md:uppercase 2xl:text-lg color-transition"
         href={to} // SEO purposes
         onClick={() => setMenuState(false)}
-        onKeyDown={(event) => {
-          if (event.code !== 'Enter') return
-          location.href = '#' + to
-          setMenuState(false)
-        }}
         ref={linkRef}
         spy={true}
+        tabIndex="-1"
         to={to}
       >
         {isActive && (
