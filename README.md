@@ -1,10 +1,10 @@
-# Dalvan Carvalho's personal page
+# Dalvan Carvalho's personal website
 
 ![vercel deployment status](https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page)
 ![license type](https://img.shields.io/badge/license-MIT-blue)
 ![languages supported](https://img.shields.io/badge/supported_languages-2-yellow)
 
-Welcome to the repository of my personal page, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The page is available in **Brazilian Portuguese** and **English**.
+Welcome to the repository of my personal website, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The page is available in **Brazilian Portuguese** and **English**.
 
 <br>
 
@@ -42,15 +42,15 @@ Welcome to the repository of my personal page, built with [Vite](https://vitejs.
 
 - You are free to fork this repository if you wish, but please don't forget to give me proper credit if you plan to use it for purposes other than studying. If possible, link it back to this URL: [https://dalvanc.com/](https://dalvanc.com/).
 
-- The page is continually evolving, so stay tuned for future updates!
+- The website is continually evolving, so stay tuned for future updates!
 
 ## About
 
-This project was created to serve as my personal page/portfolio and document my journey in the world of Front-End development. It was my first time using **React**, providing a great opportunity to learn about the advantages it offers over vanilla JavaScript. All resources used in its development are listed in the [Resources](#resources) section.
+This project was created to serve as my personal website/portfolio and document my journey in the world of Front-End development. It was my first time using **React**, providing a great opportunity to learn about the advantages it offers over vanilla JavaScript. All resources used in its development are listed in the [Resources](#resources) section.
 
 ## Appearance
 
-The page counts with a light and a dark version. You can preview both in the gifs below:
+The website counts with a light and a dark version. You can preview both in the gifs below:
 
 ### Desktop
 
@@ -74,15 +74,15 @@ The page counts with a light and a dark version. You can preview both in the gif
 
 ## Resources
 
-In the table below, all the resources used by the page are listed:
+In the table below, all the resources used by the website are listed:
 
 | Resource                                                                      | Usage                                                 |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------- |
 | [EmailJS](https://www.emailjs.com/)                                           | E-mail sending, directly from the contact form        |
 | [Font Awesome](https://fontawesome.com/)                                      | Icons and brand logos                                 |
 | [Fontsource](https://fontsource.org/)                                         | Local hosting of Google fonts                         |
-| [GSAP](https://greensock.com/gsap/)                                           | Animations across the page                            |
-| [i18next](https://react.i18next.com/)                                         | Internationalization feature                          |
+| [GSAP](https://greensock.com/gsap/)                                           | Animations across the website                         |
+| [i18next](https://react.i18next.com/)                                         | Internationalization                                  |
 | [Prism](https://prismjs.com/)                                                 | Syntax highlighting for code snippets                 |
 | [React Confetti](https://www.npmjs.com/package/react-confetti)                | Confetti animation on form submission                 |
 | [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Metadata manipulation                                 |

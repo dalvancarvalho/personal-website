@@ -1,10 +1,10 @@
-# Página pessoal de Dalvan Carvalho
+# Website pessoal de Dalvan Carvalho
 
 ![status do deploy na vercel](https://vercelbadge.vercel.app/api/dalvancarvalho/personal-page)
 ![tipo da licença](https://img.shields.io/badge/licença-MIT-blue)
 ![idiomas suportados](https://img.shields.io/badge/idiomas_suportados-2-yellow)
 
-Bem-vindo ao repositório da minha página pessoal, construída com [Vite](https://vitejs.dev/) e [React](https://react.dev/), e implementada com [Vercel](https://vercel.com/)! A página está disponível em **português** e **inglês**.
+Bem-vindo ao repositório do meu website pessoal, construída com [Vite](https://vitejs.dev/) e [React](https://react.dev/), e implementada com [Vercel](https://vercel.com/)! A página está disponível em **português** e **inglês**.
 
 <br>
 
@@ -38,15 +38,15 @@ Bem-vindo ao repositório da minha página pessoal, construída com [Vite](https
 
 - Você é livre para dar _fork_ neste repositório se desejar, mas por favor não esqueça de me dar os devidos créditos se o seu plano for usá-lo para outra finalidade que não seja estudo. Se possível, crie um link apontando para esta URL: [https://dalvanc.com/](https://dalvanc.com/).
 
-- A página está em constante evolução, então fique ligado para atualizações futuras!
+- O website está em constante evolução, então fique ligado para atualizações futuras!
 
 ## Sobre
 
-Este projeto foi criado para servir como minha página pessoal/portfólio e documentar minha jornada no mundo do desenvolvimento Front-End. Foi a minha primeira vez utilizando **React**, proporcionando uma ótima oportunidade para aprender sobre as vantagens que ele oferece frente ao JavaScript tradicional. Todos os recursos utilizados em seu desenvolvimento estão listados na seção [Recursos](#recursos).
+Este projeto foi criado para servir como meu website pessoal/portfólio e documentar minha jornada no mundo do desenvolvimento Front-End. Foi a minha primeira vez utilizando **React**, proporcionando uma ótima oportunidade para aprender sobre as vantagens que ele oferece frente ao JavaScript tradicional. Todos os recursos utilizados em seu desenvolvimento estão listados na seção [Recursos](#recursos).
 
 ## Aparência
 
-A página conta com uma versão clara e uma escura. Você pode pré-visualizar ambas nos gifs abaixo:
+O website conta com uma versão clara e uma escura. Você pode pré-visualizar ambas nos gifs abaixo:
 
 ### Desktop
 
@@ -70,15 +70,15 @@ A página conta com uma versão clara e uma escura. Você pode pré-visualizar a
 
 ## Recursos
 
-Na tabela abaixo, encontram-se todos os recursos utilizados pela página:
+Na tabela abaixo, encontram-se todos os recursos utilizados pelo website:
 
 | Recurso                                                                       | Utilização                                                |
 | ----------------------------------------------------------------------------- | --------------------------------------------------------- |
 | [EmailJS](https://www.emailjs.com/)                                           | Envio de e-mails, diretamente do formulário de contato    |
 | [Font Awesome](https://fontawesome.com/)                                      | Ícones e logomarcas                                       |
 | [Fontsource](https://fontsource.org/)                                         | Hospedagem local de fontes do Google                      |
-| [GSAP](https://greensock.com/gsap/)                                           | Animações ao longo da página                              |
-| [i18next](https://react.i18next.com/)                                         | Internacionalização da página                             |
+| [GSAP](https://greensock.com/gsap/)                                           | Animações ao longo do website                             |
+| [i18next](https://react.i18next.com/)                                         | Internacionalização                                       |
 | [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                     |
 | [React Confetti](https://www.npmjs.com/package/react-confetti)                | Animação de confetes após o envio do formulário           |
 | [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Manipulação de metadados                                  |
