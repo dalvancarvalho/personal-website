@@ -52,7 +52,7 @@ const brGeo = {
   },
 }
 
-const personalPage = {
+const personalWebsite = {
   snippetOne: {
     title: '',
     extension: '',
@@ -88,4 +88,4 @@ const splitIt = {
   },
 }
 
-export { snippetModel as default, brGeo, personalPage, splitIt }
+export { snippetModel as default, brGeo, personalWebsite, splitIt }

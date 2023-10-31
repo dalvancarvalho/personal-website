@@ -4,7 +4,7 @@
       "title": {
         "home": "Dalvan Carvalho · Front-End Developer",
         "brGeo": "BR Geo — Dalvan Carvalho · Front-End Developer",
-        "personalPage": "Personal page — Dalvan Carvalho · Front-End Developer",
+        "personalWebsite": "Personal website — Dalvan Carvalho · Front-End Developer",
         "resume": "Resume — Dalvan Carvalho · Front-End Developer",
         "splitIt": "Split it! — Dalvan Carvalho · Front-End Developer",
         "notFound": "404: Page not found"
@@ -15,7 +15,7 @@
       "logo": {
         "about": "about",
         "projects": "projects",
-        "personalPage": "personal page",
+        "personalWebsite": "personal website",
         "notFound": "page not found"
       },
       "skip": "Skip to content",
@@ -42,7 +42,7 @@
           "intro": "Intro",
           "details": "Details"
         },
-        "/personal-page": {
+        "/personal-website": {
           "home": "Home",
           "intro": "Intro",
           "details": "Details"
@@ -110,10 +110,10 @@
             "name": "BR Geo",
             "description": "View information from several geographic and social topics through charts and interactive maps. With the powerful IBGE API, get updated data at county, state, and country levels!"
           },
-          "personalPage": {
-            "altText": "Home screen from Dalvan Carvalho's personal page",
-            "name": "Personal page",
-            "description": "That's right! This personal page deserves a place on the list for including several interesting features used in its development, such as libraries for routing, internationalization, e-mail sending, and animations."
+          "personalWebsite": {
+            "altText": "Home screen from Dalvan Carvalho's personal website",
+            "name": "Personal website",
+            "description": "That's right! This website deserves a place on the list for including several interesting features used in its development, such as libraries for routing, internationalization, e-mail sending, and animations."
           },
           "splitIt": {
             "altText": "Several expenses spreadsheets placed side by side and slightly rotated",
@@ -126,7 +126,7 @@
         "contact": {
           "heading": "Let's talk!",
           "watermark": "Contact",
-          "paragraphI": "<highlight>I'm very glad that you've taken the time to check out my personal page!</highlight> I hope you enjoyed browsing through my works and learning a bit more about what I do.",
+          "paragraphI": "<highlight>I'm very glad that you've taken the time to check out my personal website!</highlight> I hope you enjoyed browsing through my works and learning a bit more about what I do.",
           "paragraphII": "Currently, <highlight>I am available to join a creative team of designers and developers</highlight>. If you think we can work together, please send a message to the e-mail below or through the form in this section, and I promise to get back to you as soon as possible!",
           "email": "contact@dalvanc.com",
           "subject": "Message from dalvanc.com!",
@@ -162,7 +162,7 @@
           "watermark": "Details"
         }
       },
-      "personalPage": {
+      "personalWebsite": {
         "intro": {
           "heading": "A brief introduction",
           "watermark": "Intro"

@@ -3,7 +3,7 @@
 const ptBR = {
   ['/']: 'dalvan c',
   ['/br-geo']: 'br geo',
-  ['/personal-page']: 'página pessoal',
+  ['/personal-website']: 'website pessoal',
   ['/resume']: 'currículo',
   ['/split-it']: 'split it!',
 }
@@ -11,7 +11,7 @@ const ptBR = {
 const enUS = {
   ['/']: 'dalvan c',
   ['/br-geo']: 'br geo',
-  ['/personal-page']: 'personal page',
+  ['/personal-website']: 'personal website',
   ['/resume']: 'resume',
   ['/split-it']: 'split it!',
 }

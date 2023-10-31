@@ -1,4 +1,4 @@
-/* PersonalPage/index.jsx */
+/* PersonalWebsite/index.jsx */
 
 import { useTranslation } from 'react-i18next'
 import useScrollSpy from '../../hooks/useScrollSpy'
@@ -6,10 +6,10 @@ import Introduction from './Introduction'
 import PageHeader from '../../layout/PageHeader'
 import MainSection from '../../layout/Section/MainSection'
 import Meta from '../../components/Meta'
-import { personalPageData } from '../../constants/projects'
+import { personalWebsiteData } from '../../constants/projects'
 
-function PersonalPage() {
-  // Personal page
+function PersonalWebsite() {
+  // Personal website
 
   const { t } = useTranslation()
   useScrollSpy()
@@ -17,12 +17,12 @@ function PersonalPage() {
   return (
     <>
       <Meta
-        description="Want to know all the cool features that my personal page has? So check this in-depth showcase!"
-        title={t('meta.title.personalPage')}
-        url="https://dalvanc.com/personal-page"
+        description="Want to know all the cool features that my personal website has? So check this in-depth showcase!"
+        title={t('meta.title.personalWebsite')}
+        url="https://dalvanc.com/personal-website"
       />
       <MainSection className="h-full flex flex-col items-center">
-        <PageHeader id="home" t={t} {...personalPageData} />
+        <PageHeader id="home" t={t} {...personalWebsiteData} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>
@@ -30,4 +30,4 @@ function PersonalPage() {
   )
 }
 
-export default PersonalPage
+export default PersonalWebsite

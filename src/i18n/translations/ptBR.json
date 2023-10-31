@@ -4,7 +4,7 @@
       "title": {
         "home": "Dalvan Carvalho · Desenvolvedor Front-End",
         "brGeo": "BR Geo — Dalvan Carvalho · Desenvolvedor Front-End",
-        "personalPage": "Página pessoal — Dalvan Carvalho · Desenvolvedor Front-End",
+        "personalWebsite": "Website pessoal — Dalvan Carvalho · Desenvolvedor Front-End",
         "resume": "Currículo — Dalvan Carvalho · Desenvolvedor Front-End",
         "splitIt": "Split it! — Dalvan Carvalho · Desenvolvedor Front-End",
         "notFound": "404: Página não encontrada"
@@ -15,7 +15,7 @@
       "logo": {
         "about": "sobre",
         "projects": "projetos",
-        "personalPage": "página pessoal",
+        "personalWebsite": "website pessoal",
         "notFound": "página não encontrada"
       },
       "skip": "Pular para conteúdo",
@@ -42,7 +42,7 @@
           "intro": "Intro",
           "details": "Detalhes"
         },
-        "/personal-page": {
+        "/personal-website": {
           "home": "Início",
           "intro": "Intro",
           "details": "Detalhes"
@@ -110,10 +110,10 @@
             "name": "BR Geo",
             "description": "Visualize informações acerca de diversos temas geográficos e sociais através de gráficos e mapas interativos. Com a poderosa API do IBGE, obtenha dados atualizados a nível municipal, estadual e federal!"
           },
-          "personalPage": {
-            "altText": "Tela inicial da página pessoal de Dalvan Carvalho",
-            "name": "Página pessoal",
-            "description": "Isso mesmo! Esta página pessoal merece lugar na lista por incluir diversas funcionalidades interessantes utilizadas em seu desenvolvimento, como bibliotecas para gerenciamento de rotas, internacionalização, envio de e-mails e animações."
+          "personalWebsite": {
+            "altText": "Tela inicial do website pessoal de Dalvan Carvalho",
+            "name": "Website pessoal",
+            "description": "Isso mesmo! Este website merece lugar na lista por incluir diversas funcionalidades interessantes utilizadas em seu desenvolvimento, como bibliotecas para gerenciamento de rotas, internacionalização, envio de e-mails e animações."
           },
           "splitIt": {
             "altText": "Diversas planilhas de gastos dispostas lado a lado e levemente rotacionadas",
@@ -126,7 +126,7 @@
         "contact": {
           "heading": "Vamos conversar!",
           "watermark": "Contato",
-          "paragraphI": "<highlight>Fico muito contente que você tenha dedicado um tempo para conferir minha página pessoal!</highlight> Espero que tenha gostado de navegar pelos meus trabalhos e de saber um pouco mais sobre o que eu faço.",
+          "paragraphI": "<highlight>Fico muito contente que você tenha dedicado um tempo para conferir meu website pessoal!</highlight> Espero que tenha gostado de navegar pelos meus trabalhos e de saber um pouco mais sobre o que eu faço.",
           "paragraphII": "No momento, <highlight>estou disponível para me unir a um time criativo de designers e desenvolvedores</highlight>. Se você acha que podemos trabalhar juntos, envie uma mensagem para o e-mail abaixo ou através do formulário nesta seção que prometo retornar o mais breve possível!",
           "email": "contato@dalvanc.com",
           "subject": "Mensagem de dalvanc.com!",
@@ -162,7 +162,7 @@
           "watermark": "Detalhes"
         }
       },
-      "personalPage": {
+      "personalWebsite": {
         "intro": {
           "heading": "Uma breve introdução",
           "watermark": "Intro"

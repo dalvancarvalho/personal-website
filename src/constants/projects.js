@@ -1,7 +1,7 @@
 /* projects.js */
 
 import brGeoImg from '../assets/webp/br-geo.webp'
-import personalPageImg from '../assets/webp/personal-page.webp'
+import personalWebsiteImg from '../assets/webp/personal-website.webp'
 import splitItImg from '../assets/webp/split-it.webp'
 
 const projects = [
@@ -41,13 +41,13 @@ const projects = [
     thumbnail: brGeoImg,
   },
   {
-    altText: 'pages.home.projects.personalPage.altText',
+    altText: 'pages.home.projects.personalWebsite.altText',
     demoUrl: null,
-    description: 'pages.home.projects.personalPage.description',
-    githubUrl: 'https://github.com/dalvancarvalho/personal-page',
+    description: 'pages.home.projects.personalWebsite.description',
+    githubUrl: 'https://github.com/dalvancarvalho/personal-website',
     isFinished: true,
-    name: 'pages.home.projects.personalPage.name',
-    routeName: 'personal-page',
+    name: 'pages.home.projects.personalWebsite.name',
+    routeName: 'personal-website',
     stack: [
       {
         name: 'Vite',
@@ -79,7 +79,7 @@ const projects = [
       },
     ],
     subject: 'pageHeader.breadcrumbs.projects',
-    thumbnail: personalPageImg,
+    thumbnail: personalWebsiteImg,
   },
   {
     altText: 'pages.home.projects.splitIt.altText',
@@ -114,7 +114,7 @@ const projects = [
 
 // Data used inside each project's page
 const brGeoData = projects[0]
-const personalPageData = projects[1]
+const personalWebsiteData = projects[1]
 const splitItData = projects[2]
 
-export { projects as default, brGeoData, personalPageData, splitItData }
+export { projects as default, brGeoData, personalWebsiteData, splitItData }

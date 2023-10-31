@@ -8,7 +8,7 @@ import Fallback from './components/Fallback'
 const BRGeo = lazy(() => import('../pages/BRGeo'))
 const Home = lazy(() => import('../pages/Home'))
 const NotFound = lazy(() => import('../pages/NotFound'))
-const PersonalPage = lazy(() => import('../pages/PersonalPage'))
+const PersonalWebsite = lazy(() => import('../pages/PersonalWebsite'))
 const Resume = lazy(() => import('../pages/Resume'))
 const SplitIt = lazy(() => import('../pages/SplitIt'))
 
@@ -21,7 +21,7 @@ function AppRoutes() {
       <Route path="/" element={<Fallback page={<Home />} />} />
       <Route path="/404" element={<Fallback page={<NotFound />} />} />
       <Route path="/br-geo" element={<Fallback page={<BRGeo />} />} />
-      <Route path="/personal-page" element={<Fallback page={<PersonalPage />} />} />
+      <Route path="/personal-website" element={<Fallback page={<PersonalWebsite />} />} />
       <Route path="/resume" element={<Fallback page={<Resume />} />} />
       <Route path="/split-it" element={<Fallback page={<SplitIt />} />} />
       <Route path="*" element={<Navigate to="/404" />} />

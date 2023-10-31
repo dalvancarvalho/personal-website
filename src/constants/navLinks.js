@@ -45,7 +45,7 @@ const navLinks = {
       name: 'details',
     },
   ],
-  ['/personal-page']: [
+  ['/personal-website']: [
     {
       icon: faHouse,
       name: 'home',

@@ -17,8 +17,8 @@ function Introduction(props) {
       <Container className="h-full px-6 sm:px-8 xl:px-40 2xl:px-64">
         <SectionTitle
           animation={false}
-          title={t('pages.personalPage.intro.heading')}
-          watermark={t('pages.personalPage.intro.watermark')}
+          title={t('pages.personalWebsite.intro.heading')}
+          watermark={t('pages.personalWebsite.intro.watermark')}
         />
         <Paragraph>{t('misc.comingSoon')}</Paragraph>
         <CodeSnippet {...snippetModel} />
