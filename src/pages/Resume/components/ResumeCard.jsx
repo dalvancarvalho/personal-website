@@ -8,7 +8,7 @@ import Paragraph from '../../../components/Text/Paragraph'
 function ResumeCard(props) {
   // Downloadable resume
 
-  const { altText, file, fileName, href, thumbnail, title } = props
+  const { altText, file, fileName, href, thumbnail, t, title } = props
 
   return (
     <div
@@ -17,6 +17,7 @@ function ResumeCard(props) {
       group resume-hover"
     >
       <a
+        aria-label={t('pages.resume.download.ariaLabel')}
         className="absolute inset-0 z-10 w-full h-full rounded-xl"
         href={href}
         rel="noopener noreferrer"
@@ -25,7 +26,7 @@ function ResumeCard(props) {
       ></a>
       <div className="my-3 md:my-4 2xl:my-5 flex items-center gap-3 md:gap-4">
         <Paragraph fontWeight="font-bold" textColor="text-slate-800 dark:text-gray-200">
-          {title}
+          {t(title)}
         </Paragraph>
         <span
           className="px-[0.7em] py-[0.35em] text-[0.65rem] md:text-xs font-semibold

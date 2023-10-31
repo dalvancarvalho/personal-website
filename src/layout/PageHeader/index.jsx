@@ -22,7 +22,7 @@ function PageHeader(props) {
         md:items-end md:justify-between"
       >
         <div>
-          <Breadcrumbs subject={t(subject)} />
+          <Breadcrumbs subject={t(subject)} t={t} />
           <h1
             className="mt-4 text-[2.5rem] leading-10 md:text-5xl title-font
             text-slate-800 dark:text-gray-200 color-transition"
@@ -32,12 +32,12 @@ function PageHeader(props) {
         </div>
         <div className="mt-10 md:mt-0 md:mb-1 flex flex-col gap-2 font-semibold">
           {linkedInUrl && (
-            <Link icon={faLinkedin} href={linkedInUrl} text={t('title.linkedIn')} />
+            <Link icon={faLinkedin} href={linkedInUrl} text={t('pageHeader.linkedIn')} />
           )}
           {githubUrl && (
-            <Link icon={faGithub} href={githubUrl} text={t('title.github')} />
+            <Link icon={faGithub} href={githubUrl} text={t('pageHeader.github')} />
           )}
-          {demoUrl && <LiveDemo href={demoUrl} text={t('title.demo')} />}
+          {demoUrl && <LiveDemo href={demoUrl} text={t('pageHeader.demo')} />}
         </div>
       </Container>
     </div>

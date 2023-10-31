@@ -63,8 +63,11 @@
       }
     },
 
-    "title": {
+    "pageHeader": {
       "breadcrumbs": {
+        "home": {
+          "ariaLabel": "Home page"
+        },
         "about": "About",
         "projects": "Projects"
       },
@@ -172,6 +175,7 @@
       "resume": {
         "name": "Resume",
         "download": {
+          "ariaLabel": "Access resume",
           "heading": "Professional information",
           "watermark": "Download",
           "paragraph": "You can easily access or download my professional information by clicking on the cards below. The resume contains details about my background, skills, and experience and is available in both Brazilian Portuguese and English. <highlight>Feel free to explore and download the information you need to learn more about my qualifications.</highlight>",

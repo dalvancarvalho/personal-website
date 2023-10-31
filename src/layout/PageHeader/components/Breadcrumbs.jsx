@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 function Breadcrumbs(props) {
   // Navigation component
 
-  const { subject } = props
+  const { subject, t } = props
   const navigate = useNavigate()
 
   return (
@@ -16,6 +16,7 @@ function Breadcrumbs(props) {
       md:text-lg tracking-tighter"
     >
       <button
+        aria-label={t('pageHeader.breadcrumbs.home.ariaLabel')}
         className="text-slate-500 dark:text-gray-400 focus-visible:text-slate-900
         dark:focus-visible:text-gray-200 button-hover color-transition"
         onClick={() => navigate('/')}

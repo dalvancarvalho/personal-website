@@ -28,8 +28,8 @@ function Download(props) {
           </Trans>
         </Paragraph>
         <div className="flex flex-wrap items-center justify-center gap-12 2xl:gap-16">
-          {resumeList.map(({ title, ...props }) => (
-            <ResumeCard key={title} title={t(title)} {...props} />
+          {resumeList.map((props) => (
+            <ResumeCard key={props.title} t={t} {...props} />
           ))}
         </div>
       </Container>

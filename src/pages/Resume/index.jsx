@@ -25,7 +25,7 @@ function Resume() {
           id="home"
           linkedInUrl="https://google.com.br/"
           name={t('pages.resume.name')}
-          subject={t('title.breadcrumbs.about')}
+          subject={t('pageHeader.breadcrumbs.about')}
           t={t}
         />
         <Download t={t} />
