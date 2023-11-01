@@ -34,9 +34,9 @@ function MobileCard(props) {
       >
         <img alt={t(altText)} className="aspect-video" src={thumbnail} />
         <ul
-          className={`absolute inset-0 h-full w-full px-4 opacity-0 from-[#000000a5]
+          className={`absolute inset-0 h-full w-full px-4 opacity-0 from-[#000000bf]
           ${isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'}
-          to-transparent flex flex-col justify-center gap-1`}
+          to-transparent flex flex-col justify-center gap-0.5`}
           ref={refs.stack}
         >
           {stack.map((props) => (
