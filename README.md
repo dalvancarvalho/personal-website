@@ -4,7 +4,7 @@
 ![license type](https://img.shields.io/badge/license-MIT-blue)
 ![languages supported](https://img.shields.io/badge/supported_languages-2-yellow)
 
-Welcome to the repository of my personal website, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The page is available in **Brazilian Portuguese** and **English**.
+Welcome to the repository of my personal website, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The website is available in **Brazilian Portuguese** and **English**.
 
 <br>
 
@@ -46,7 +46,7 @@ Welcome to the repository of my personal website, built with [Vite](https://vite
 
 ## About
 
-This project was created to serve as my personal website/portfolio and document my journey in the world of Front-End development. It was my first time using **React**, providing a great opportunity to learn about the advantages it offers over vanilla JavaScript. All resources used in its development are listed in the [Resources](#resources) section.
+This project was created to serve as my personal website/portfolio and document my journey in the world of front-end development. It was my first time using **React**, providing a great opportunity to learn about the advantages it offers over vanilla JavaScript. All resources used in its development are listed in the [Resources](#resources) section.
 
 ## Appearance
 
@@ -74,7 +74,7 @@ The website counts with a light and a dark version. You can preview both in the 
 
 ## Resources
 
-In the table below, all the resources used by the website are listed:
+In the table below, all the resources used are listed:
 
 | Resource                                                                      | Usage                                                 |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -98,7 +98,7 @@ In the table below, all the resources used by the website are listed:
 >
 > [**Download Node.js**](https://nodejs.org/en/download) - _Go for the **LTS** version if you are not sure or never installed **Node.js** before_ <br> [**Download Git**](https://git-scm.com/downloads)
 
-1. After cloning this repository, navigate to its folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)).
+1. Go to the project's folder and open the terminal. To make things easier, you can also open the terminal directly from your code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/)).
 
 2. Install Yarn, if you haven't already on your system (optional):
 

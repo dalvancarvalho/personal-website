@@ -4,7 +4,7 @@
 ![tipo da licença](https://img.shields.io/badge/licença-MIT-blue)
 ![idiomas suportados](https://img.shields.io/badge/idiomas_suportados-2-yellow)
 
-Bem-vindo ao repositório do meu website pessoal, construída com [Vite](https://vitejs.dev/) e [React](https://react.dev/), e implementada com [Vercel](https://vercel.com/)! A página está disponível em **português** e **inglês**.
+Bem-vindo ao repositório do meu website pessoal, construído com [Vite](https://vitejs.dev/) e [React](https://react.dev/), e implementado com [Vercel](https://vercel.com/)! O website está disponível em **português** e **inglês**.
 
 <br>
 
@@ -42,7 +42,7 @@ Bem-vindo ao repositório do meu website pessoal, construída com [Vite](https:/
 
 ## Sobre
 
-Este projeto foi criado para servir como meu website pessoal/portfólio e documentar minha jornada no mundo do desenvolvimento Front-End. Foi a minha primeira vez utilizando **React**, proporcionando uma ótima oportunidade para aprender sobre as vantagens que ele oferece frente ao JavaScript tradicional. Todos os recursos utilizados em seu desenvolvimento estão listados na seção [Recursos](#recursos).
+Este projeto foi criado para servir como meu website pessoal/portfólio e documentar minha jornada no mundo do desenvolvimento front-end. Foi a minha primeira vez utilizando **React**, proporcionando uma ótima oportunidade para aprender sobre as vantagens que ele oferece frente ao JavaScript tradicional. Todos os recursos utilizados em seu desenvolvimento estão listados na seção [Recursos](#recursos).
 
 ## Aparência
 
@@ -70,7 +70,7 @@ O website conta com uma versão clara e uma escura. Você pode pré-visualizar a
 
 ## Recursos
 
-Na tabela abaixo, encontram-se todos os recursos utilizados pelo website:
+Na tabela abaixo, encontram-se listados todos os recursos utilizados:
 
 | Recurso                                                                       | Utilização                                                |
 | ----------------------------------------------------------------------------- | --------------------------------------------------------- |
@@ -94,7 +94,7 @@ Na tabela abaixo, encontram-se todos os recursos utilizados pelo website:
 >
 > [**Baixe o Node.js**](https://nodejs.org/pt-br/download) - _Escolha a versão **LTS** se você não tem certeza ou nunca instalou o **Node.js** antes_ <br> [**Baixe o Git**](https://git-scm.com/downloads)
 
-1. Após clonar este repositório, navegue até sua pasta e abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
+1. Navegue até a pasta do projeto abra o terminal. Para facilitar as coisas, você também pode abrir o terminal diretamente do seu editor de código (recomendo o [Visual Studio Code](https://code.visualstudio.com/)).
 
 2. Instale o Yarn, caso ainda não tenha instalado no seu sistema (opcional):
 
