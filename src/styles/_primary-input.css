@@ -65,12 +65,6 @@
     @apply hover:bg-slate-200 hover:dark:bg-dark-1;
   }
 
-  .resume-button-hover {
-    @apply group-hover:opacity-100 group-focus-visible:opacity-100 group-hover:translate-y-0
-    group-focus-visible:translate-y-0 focus-visible:opacity-100 focus-visible:translate-y-0
-    opacity-0 !transition-[opacity,transform,background] !duration-300;
-  }
-
   .secondary-button-hover {
     @apply hover:text-blue-500 hover:dark:text-orange-400 hover:underline;
   }
@@ -144,10 +138,6 @@
 
   .resume-hover {
     @apply bg-slate-100 dark:bg-dark-4;
-  }
-
-  .resume-button-hover {
-    @apply opacity-100 !translate-y-0;
   }
 
   .secondary-button-hover {
