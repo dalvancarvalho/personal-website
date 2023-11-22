@@ -6,11 +6,8 @@
 
 Bem-vindo ao repositório do meu website pessoal, construído com [Vite](https://vitejs.dev/) e [React](https://react.dev/), e implementado com [Vercel](https://vercel.com/)! O website está disponível em **português** e **inglês** e você pode acessá-lo clicando no link abaixo:
 
-<<<<<<< HEAD
 🌎 [**dalvanc.com**](https://dalvanc.com/)
 
-=======
->>>>>>> 91d9affd9b86dfe47cb9c2dd588d2c7805f0261c
 <br />
 
 <div align="center">
@@ -22,13 +19,6 @@ Bem-vindo ao repositório do meu website pessoal, construído com [Vite](https:/
 </div>
 
 <br />
-<<<<<<< HEAD
-=======
-
-Você pode acessar o website clicando [aqui](https://dalvanc.com/).
-
-<br />
->>>>>>> 91d9affd9b86dfe47cb9c2dd588d2c7805f0261c
 
 ## Índice
 
