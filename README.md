@@ -6,7 +6,7 @@
 
 Welcome to the repository of my personal website, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The website is available in **Brazilian Portuguese** and **English**.
 
-<br>
+<br />
 
 <div align="center">
   <img
@@ -16,7 +16,11 @@ Welcome to the repository of my personal website, built with [Vite](https://vite
   />
 </div>
 
-<br>
+<br />
+
+You can access the website by clicking [here](https://dalvanc.com/).
+
+<br />
 
 ## Table of contents
 

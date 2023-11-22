@@ -6,7 +6,7 @@
 
 Bem-vindo ao repositório do meu website pessoal, construído com [Vite](https://vitejs.dev/) e [React](https://react.dev/), e implementado com [Vercel](https://vercel.com/)! O website está disponível em **português** e **inglês**.
 
-<br>
+<br />
 
 <div align="center">
   <img
@@ -16,7 +16,11 @@ Bem-vindo ao repositório do meu website pessoal, construído com [Vite](https:/
   />
 </div>
 
-<br>
+<br />
+
+Você pode acessar o website clicando [aqui](https://dalvanc.com/).
+
+<br />
 
 ## Índice
 
