@@ -4,7 +4,9 @@
 ![license type](https://img.shields.io/badge/license-MIT-blue)
 ![languages supported](https://img.shields.io/badge/supported_languages-2-yellow)
 
-Welcome to the repository of my personal website, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The website is available in **Brazilian Portuguese** and **English**.
+Welcome to the repository of my personal website, built with [Vite](https://vitejs.dev/) and [React](https://react.dev/), and deployed with [Vercel](https://vercel.com/)! The website is available in **Brazilian Portuguese** and **English**, and you can access it by clicking on the link below:
+
+🌎 [**dalvanc.com**](https://dalvanc.com/)
 
 <br />
 
@@ -15,10 +17,6 @@ Welcome to the repository of my personal website, built with [Vite](https://vite
     alt="banner"
   />
 </div>
-
-<br />
-
-You can access the website by clicking [here](https://dalvanc.com/).
 
 <br />
 
