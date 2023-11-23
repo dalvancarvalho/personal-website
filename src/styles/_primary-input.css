@@ -26,6 +26,10 @@
     @apply hover:underline underline-offset-2 decoration-2;
   }
 
+  .contact-link-hover {
+    @apply hover:text-slate-800 hover:dark:text-gray-200;
+  }
+
   .fa-arrow-left-hover {
     @apply left-6 2xl:left-7 group-hover/button:-translate-x-2 ease-out
     group-hover/button:opacity-100 transition-[transform,opacity] delay-75;
@@ -124,6 +128,7 @@
     @apply text-slate-500 dark:text-gray-400;
   }
 
+  .contact-link-hover,
   .link-hover {
     @apply text-slate-600 dark:text-gray-400;
   }

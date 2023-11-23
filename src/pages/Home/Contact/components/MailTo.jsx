@@ -16,7 +16,7 @@ function MailTo(props) {
         icon={faEnvelope}
       />
       <a
-        className="peer ml-2 mr-3 flex items-center gap-2 text-slate-600 link-hover
+        className="peer ml-2 mr-3 flex items-center gap-2 text-slate-600 contact-link-hover
         dark:text-gray-400 focus-visible:text-slate-800 focus-visible:dark:text-gray-200
         color-transition"
         href={`mailto:${t('pages.home.contact.email')}?subject=${t(
