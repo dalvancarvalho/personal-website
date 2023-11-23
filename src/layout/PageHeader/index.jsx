@@ -9,7 +9,7 @@ import LiveDemo from './components/LiveDemo'
 function PageHeader(props) {
   // Displays the title of the page (H1) along with some useful links and breadcrumbs
 
-  const { demoUrl, githubUrl, id, linkedInUrl, name, subject, t } = props
+  const { demoUrl, githubUrl, githubRepoUrl, id, linkedInUrl, name, subject, t } = props
 
   return (
     <div
@@ -35,7 +35,14 @@ function PageHeader(props) {
             <Link icon={faLinkedin} href={linkedInUrl} text={t('pageHeader.linkedIn')} />
           )}
           {githubUrl && (
-            <Link icon={faGithub} href={githubUrl} text={t('pageHeader.github')} />
+            <Link icon={faGithub} href={githubUrl} text={t('pageHeader.githubProfile')} />
+          )}
+          {githubRepoUrl && (
+            <Link
+              icon={faGithub}
+              href={githubRepoUrl}
+              text={t('pageHeader.githubRepo')}
+            />
           )}
           {demoUrl && <LiveDemo href={demoUrl} text={t('pageHeader.demo')} />}
         </div>

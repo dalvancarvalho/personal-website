@@ -23,7 +23,8 @@ function Resume() {
       <MainSection className="h-full flex flex-col items-center">
         <PageHeader
           id="home"
-          linkedInUrl="https://google.com.br/"
+          githubUrl="https://github.com/dalvancarvalho/"
+          linkedInUrl="https://www.linkedin.com/in/dalvancarvalho/"
           name={t('pages.resume.name')}
           subject={t('pageHeader.breadcrumbs.about')}
           t={t}

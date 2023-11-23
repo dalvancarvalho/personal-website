@@ -2,7 +2,6 @@
 
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Paragraph from '../../../components/Text/Paragraph'
 
 function Link(props) {
   // External access link with arrow
@@ -10,32 +9,21 @@ function Link(props) {
   const { icon, href, text } = props
 
   return (
-    <Paragraph
-      className="flex items-center"
-      textSize="text-base"
-      fontWeight="font-semibold"
+    <a
+      className="max-w-max px-4 py-2 flex items-center gap-3 bg-slate-250 dark:bg-dark-2
+      text-slate-600 dark:text-gray-400 focus-visible:text-slate-800
+      focus-visible:dark:text-gray-200 rounded-full link-hover color-transition"
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
     >
       <FontAwesomeIcon
-        className="text-[1.5rem] text-slate-800 dark:text-gray-200 color-transition"
+        className="w-6 text-[1.5rem] text-slate-800 dark:text-gray-200 color-transition"
         icon={icon}
       />
-      <a
-        className="peer ml-2 mr-3 flex items-center gap-2 text-slate-600 link-hover
-        dark:text-gray-400 focus-visible:text-slate-800 focus-visible:dark:text-gray-200
-        color-transition"
-        href={href}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        {text}
-      </a>
-      <FontAwesomeIcon
-        className="text-slate-600 dark:text-gray-400 peer-focus-visible:text-slate-800
-        dark:peer-focus-visible:text-gray-200 peer-focus-visible:translate-x-1
-        peer-focus-visible:-translate-y-1 rotate-45 transition-all arrow-hover"
-        icon={faArrowUp}
-      />
-    </Paragraph>
+      {text}
+      <FontAwesomeIcon className="rotate-45" icon={faArrowUp} />
+    </a>
   )
 }
 

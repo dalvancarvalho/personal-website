@@ -50,7 +50,7 @@
   }
 
   .link-hover {
-    @apply hover:text-slate-800 hover:dark:text-gray-200;
+    @apply hover:bg-slate-300 hover:dark:bg-dark-1 hover:text-slate-800 hover:dark:text-gray-200;
   }
 
   .logo-hover {
