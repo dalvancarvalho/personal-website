@@ -72,7 +72,8 @@
         "projects": "Projects"
       },
       "demo": "Live demo",
-      "github": "GitHub repository",
+      "githubProfile": "GitHub profile",
+      "githubRepo": "GitHub repository",
       "linkedIn": "LinkedIn profile"
     },
 

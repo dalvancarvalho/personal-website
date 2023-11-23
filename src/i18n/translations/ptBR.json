@@ -72,7 +72,8 @@
         "projects": "Projetos"
       },
       "demo": "Demonstração",
-      "github": "Repositório do GitHub",
+      "githubProfile": "Perfil no GitHub",
+      "githubRepo": "Repositório do GitHub",
       "linkedIn": "Perfil no LinkedIn"
     },
 
