@@ -21,7 +21,7 @@ const socialNetworks = [
     color: 'hover:text-[#0a66c2] focus-visible:text-[#0a66c2]',
     icon: faLinkedin,
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/',
+    url: 'https://www.linkedin.com/in/dalvancarvalho',
   },
   {
     color: 'hover:text-[#0f1419] focus-visible:text-[#0f1419]',
