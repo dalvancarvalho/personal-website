@@ -21,8 +21,8 @@ const projects = [
         url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
       },
       {
-        name: 'Sass',
-        url: 'https://sass-lang.com/',
+        name: 'CSS',
+        url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
       },
       {
         name: 'JavaScript',
@@ -54,12 +54,12 @@ const projects = [
         url: 'https://vitejs.dev/',
       },
       {
-        name: 'Tailwind CSS',
-        url: 'https://tailwindcss.com/',
-      },
-      {
         name: 'React',
         url: 'https://react.dev/',
+      },
+      {
+        name: 'Tailwind CSS',
+        url: 'https://tailwindcss.com/',
       },
       {
         name: 'React Router',
@@ -95,12 +95,12 @@ const projects = [
         url: 'https://nextjs.org/',
       },
       {
-        name: 'Tailwind CSS',
-        url: 'https://tailwindcss.com/',
-      },
-      {
         name: 'TypeScript',
         url: 'https://www.typescriptlang.org/',
+      },
+      {
+        name: 'Tailwind CSS',
+        url: 'https://tailwindcss.com/',
       },
       {
         name: 'Framer Motion',
