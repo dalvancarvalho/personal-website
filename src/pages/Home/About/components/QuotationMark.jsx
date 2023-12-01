@@ -7,8 +7,8 @@ const QuotationMark = forwardRef(function QuotationMark(props, ref) {
 
   return (
     <svg
-      className="about-quotation absolute -top-4 -left-6 -z-50 h-28 md:h-32
-        2xl:h-36 fill-slate-150 dark:fill-dark-4 color-transition"
+      className="absolute -top-4 -left-6 -z-50 h-28 md:h-32 2xl:h-36 fill-slate-150
+      dark:fill-dark-4 color-transition"
       preserveAspectRatio="none"
       ref={ref}
       viewBox="0 0 26 21"
