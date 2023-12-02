@@ -2,6 +2,7 @@
 
 import { useTranslation } from 'react-i18next'
 import useScrollSpy from '../../hooks/useScrollSpy'
+import Footer from '../../layout/Footer'
 import PageHeader from '../../layout/PageHeader'
 import MainSection from '../../layout/Section/MainSection'
 import Meta from '../../components/Meta'
@@ -31,6 +32,7 @@ function Resume() {
         />
         <Download t={t} />
       </MainSection>
+      <Footer />
     </>
   )
 }

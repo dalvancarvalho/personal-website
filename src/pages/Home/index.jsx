@@ -7,6 +7,7 @@ import About from './About'
 import Contact from './Contact'
 import Hero from './Hero'
 import Projects from './Projects'
+import Footer from '../../layout/Footer'
 import MainSection from '../../layout/Section/MainSection'
 import Meta from '../../components/Meta'
 
@@ -30,6 +31,7 @@ function Home() {
         <Projects screenProps={screenProps} t={t} />
         <Contact screenProps={screenProps} t={t} />
       </MainSection>
+      <Footer />
     </>
   )
 }
