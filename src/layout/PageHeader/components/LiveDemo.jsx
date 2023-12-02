@@ -2,7 +2,6 @@
 
 import { faArrowUp, faCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Paragraph from '../../../components/Text/Paragraph'
 
 function LiveDemo(props) {
   // Live demo external link
@@ -10,10 +9,13 @@ function LiveDemo(props) {
   const { href, text } = props
 
   return (
-    <Paragraph
-      className="max-w-max flex items-center"
-      textSize="text-base"
-      fontWeight="font-semibold"
+    <a
+      className="max-w-max px-4 py-2 flex items-center gap-3 bg-slate-250 dark:bg-dark-2
+      text-slate-600 dark:text-gray-400 focus-visible:text-slate-800
+      focus-visible:dark:text-gray-200 rounded-full link-hover color-transition"
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
     >
       <span className="relative w-6 h-6">
         <FontAwesomeIcon
@@ -26,18 +28,9 @@ function LiveDemo(props) {
           icon={faCircle}
         />
       </span>
-      <a
-        className="peer ml-2 mr-3 flex items-center gap-2 text-slate-600
-        dark:text-gray-400 hover:text-slate-800 hover:dark:text-gray-200
-        focus-visible:text-slate-800 focus-visible:dark:text-gray-200 color-transition"
-        href={href}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        {text}
-      </a>
-      <FontAwesomeIcon className="external-access-arrow" icon={faArrowUp} />
-    </Paragraph>
+      {text}
+      <FontAwesomeIcon className="rotate-45" icon={faArrowUp} />
+    </a>
   )
 }
 
