@@ -74,7 +74,7 @@ function useContactForm() {
       } else {
         // ✔️ Displays a success message
         setMessage({ active: true, status: 'success' })
-        // 🎊 Confetti! (because why not?)
+        // 🎊 Confetti! (because, why not?)
         setConfetti(true)
         // Resets all the inputs
         setInputs({ name: '', email: '', message: '' })
