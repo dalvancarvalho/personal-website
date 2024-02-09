@@ -9,6 +9,10 @@
   @apply text-white dark:text-black bg-blue-500 dark:bg-orange-400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *::-webkit-scrollbar {
   @apply w-3 h-3;
 }
@@ -24,9 +28,4 @@
 
 *::-webkit-scrollbar-thumb:hover {
   @apply bg-[#2564ebb3] dark:bg-[#f974169f];
-}
-
-html {
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
 }
