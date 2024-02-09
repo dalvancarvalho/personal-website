@@ -174,4 +174,4 @@ This project is licensed under the **MIT license**. You can read the full licens
 
 **[📄 MIT License - Dalvan Carvalho](./LICENSE)**
 
-&copy; 2023 **Dalvan Carvalho**
+&copy; 2024 **Dalvan Carvalho**

@@ -170,4 +170,4 @@ Este projeto está licenciado sob a **licença MIT**. Você pode ler a licença 
 
 **[📄 Licença MIT - Dalvan Carvalho](./LICENSE)**
 
-&copy; 2023 **Dalvan Carvalho**
+&copy; 2024 **Dalvan Carvalho**
