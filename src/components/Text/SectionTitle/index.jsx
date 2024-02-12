@@ -15,18 +15,13 @@ function SectionTitle(props) {
 
   return (
     <div
-      className="relative isolate mb-10 md:mb-24 2xl:mb-28 w-full flex
-      justify-start md:justify-center title-font text-3xl md:text-[2.5rem]
-      2xl:text-[2.75rem]"
+      className="relative isolate mb-10 md:mb-24 2xl:mb-28 w-full flex justify-start md:justify-center title-font text-3xl md:text-[2.5rem] 2xl:text-[2.75rem]"
       ref={refs.scope}
     >
       <h2 ref={refs.heading}>{title}</h2>
       {watermark && (
         <span
-          className={`hidden -z-10 absolute translate-x-[0.125em] md:block
-          lg:translate-x-[0.2em] text-[2.5em] uppercase ${watermarkColor}
-          tracking-[0.25em] lg:tracking-[0.4em] select-none color-transition
-          whitespace-nowrap`}
+          className={`${watermarkColor} hidden -z-10 absolute translate-x-[0.125em] md:block lg:translate-x-[0.2em] text-[2.5em] uppercase tracking-[0.25em] lg:tracking-[0.4em] select-none color-transition whitespace-nowrap`}
           ref={refs.watermark}
         >
           {watermark}

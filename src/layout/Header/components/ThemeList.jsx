@@ -17,12 +17,11 @@ function ThemeList(props) {
       <MenuList title={t('header.theme.heading')}>
         {themes.map((themeName) => (
           <li
-            className={`${
+            className={`py-1.5 w-full cursor-pointer color-transition ${
               themeName === theme
                 ? 'font-bold text-slate-800 dark:text-gray-200'
                 : 'font-medium text-slate-500 dark:text-gray-400'
-            }
-            py-1.5 w-full cursor-pointer color-transition`}
+            }`}
             key={themeName}
             onClick={() => setTheme(themeName)}
             onKeyDown={(event) => (event.code === 'Enter' ? setTheme(themeName) : null)}
@@ -39,8 +38,9 @@ function ThemeList(props) {
           </li>
         ))}
         <FontAwesomeIcon
-          className={`${theme === 'light' ? 'top-3' : 'top-14'} absolute left-6
-          text-accent transition-all duration-300 ease-out`}
+          className={`absolute left-6 text-accent transition-all duration-300 ease-out ${
+            theme === 'light' ? 'top-3' : 'top-14'
+          }`}
           icon={faCaretRight}
         />
       </MenuList>

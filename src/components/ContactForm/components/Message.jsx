@@ -31,9 +31,9 @@ function Message(props) {
 
   return (
     <p
-      className={`absolute 2xl:text-lg font-semibold text-center
-      transition-[opacity,visibility] duration-300 ease-in-out ${textColor}
-      ${active ? 'opacity-1 visible' : 'opacity-0 invisible'}
+      className={`${textColor} absolute 2xl:text-lg font-semibold text-center transition-[opacity,visibility] duration-300 ease-in-out ${
+        active ? 'opacity-1 visible' : 'opacity-0 invisible'
+      }
       ${
         status === 'error' || status === 'short' // messages with line break
           ? '-bottom-[4.5rem] 2xl:-bottom-20'

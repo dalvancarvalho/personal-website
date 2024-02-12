@@ -5,8 +5,7 @@ function Arrow() {
 
   return (
     <svg
-      className="w-10 md:w-12 -rotate-12 group-hover:rotate-[20deg] origin-bottom-right
-      fill-dark-3 opacity-0 group-hover:opacity-100 duration-150"
+      className="w-10 md:w-12 -rotate-12 group-hover:rotate-[20deg] origin-bottom-right fill-dark-3 opacity-0 group-hover:opacity-100 duration-150"
       preserveAspectRatio="none"
       viewBox="0 0 327 361"
       xmlns="http://www.w3.org/2000/svg"

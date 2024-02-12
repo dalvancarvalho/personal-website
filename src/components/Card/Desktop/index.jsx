@@ -25,13 +25,11 @@ function DesktopCard(props) {
       ref={refs.scope}
     >
       <div
-        className={`${
+        className={`relative row-span-full m-auto -z-10 w-full h-full rounded-[0.5em] shadow-md overflow-hidden group ${
           isEven
             ? 'col-start-5 lg:col-start-6 col-end-13'
             : 'col-start-1 col-end-9 lg:col-end-8'
-        }
-        relative row-span-full m-auto -z-10 w-full h-full rounded-[0.5em] shadow-md
-        overflow-hidden group`}
+        }`}
         ref={refs.image}
       >
         <img
@@ -40,9 +38,9 @@ function DesktopCard(props) {
           src={thumbnail}
         />
         <ul
-          className={`absolute inset-0 h-full w-full px-4 opacity-0 from-[#000000a5]
-          ${isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'}
-          to-transparent flex flex-col justify-center gap-2`}
+          className={`absolute inset-0 h-full w-full px-4 opacity-0 from-[#000000a5] to-transparent flex flex-col justify-center gap-2 ${
+            isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'
+          }`}
           ref={refs.stack}
         >
           {stack.map((props) => (
@@ -59,28 +57,21 @@ function DesktopCard(props) {
         ref={refs.text}
       >
         <div
-          className={`${isEven ? 'items-start' : 'items-end'} flex flex-col gap-4
-          2xl:gap-6`}
+          className={`flex flex-col gap-4 2xl:gap-6 ${
+            isEven ? 'items-start' : 'items-end'
+          }`}
           ref={parallaxRef}
         >
           {!isFinished && (
-            <span
-              className="text-base 2xl:text-lg font-bold leading-[0] 2xl:leading-[0]
-              font-mark-pro tracking-tight uppercase"
-            >
+            <span className="text-base 2xl:text-lg font-bold leading-[0] 2xl:leading-[0] font-mark-pro tracking-tight uppercase">
               {t('pages.home.projects.inProgress')}
             </span>
           )}
-          <h3
-            className="title-font text-[2.25rem] 2xl:text-[2.75rem] leading-9
-            drop-shadow-md"
-          >
+          <h3 className="title-font text-[2.25rem] 2xl:text-[2.75rem] leading-9 drop-shadow-md">
             {t(name)}
           </h3>
           <Paragraph
-            className="p-[1em] rounded-[0.5em] border border-t-white dark:border-t-dark-1
-            border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2
-            bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] shadow-xl"
+            className="p-[1em] rounded-[0.5em] border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2 bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] shadow-xl"
             textSize="text-base 2xl:text-lg"
           >
             {t(description)}
@@ -88,8 +79,7 @@ function DesktopCard(props) {
           <CallToAction className="shadow-xl" onClick={() => navigate(routeName)}>
             {t('pages.home.projects.primaryButton')}
             <FontAwesomeIcon
-              className="absolute opacity-0 group-focus-visible/button:translate-x-2
-              group-focus-visible/button:opacity-100 fa-arrow-right-hover"
+              className="absolute opacity-0 group-focus-visible/button:translate-x-2 group-focus-visible/button:opacity-100 fa-arrow-right-hover"
               icon={faArrowRight}
             />
           </CallToAction>

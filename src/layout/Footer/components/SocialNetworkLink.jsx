@@ -9,8 +9,7 @@ function SocialNetworkLink(props) {
 
   return (
     <a
-      className={`flex text-slate-600 dark:text-gray-400 ${color}
-      focus-visible:dark:text-gray-200 color-transition social-network-hover`}
+      className={`${color} flex text-slate-600 dark:text-gray-400 focus-visible:dark:text-gray-200 color-transition social-network-hover`}
       href={url}
       rel="noopener noreferrer"
       target="_blank"

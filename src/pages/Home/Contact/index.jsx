@@ -26,10 +26,7 @@ function Contact(props) {
 
   return (
     <Section className="relative" id="contact" ref={refs.scope}>
-      <Container
-        className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col
-        justify-center items-center"
-      >
+      <Container className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col justify-center items-center">
         <SectionTitle
           title={t('pages.home.contact.heading')}
           watermark={t('pages.home.contact.watermark')}
@@ -52,8 +49,7 @@ function Contact(props) {
               <MailTo t={t} />
               <Paragraph className="flex items-center gap-2" fontWeight="font-bold">
                 <FontAwesomeIcon
-                  className="ml-0.5 mr-[3px] 2xl:ml-[3px] 2xl:mr-2.5 text-slate-800
-                  dark:text-gray-200 color-transition"
+                  className="ml-0.5 mr-[3px] 2xl:ml-[3px] 2xl:mr-2.5 text-slate-800 dark:text-gray-200 color-transition"
                   icon={faLocationDot}
                 />
                 {t('pages.home.contact.location')}

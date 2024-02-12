@@ -16,9 +16,7 @@ function MailTo(props) {
         icon={faEnvelope}
       />
       <a
-        className="peer ml-2 mr-3 flex items-center gap-2 text-slate-600 contact-link-hover
-        dark:text-gray-400 focus-visible:text-slate-800 focus-visible:dark:text-gray-200
-        color-transition"
+        className="peer ml-2 mr-3 flex items-center gap-2 text-slate-600 contact-link-hover dark:text-gray-400 focus-visible:text-slate-800 focus-visible:dark:text-gray-200 color-transition"
         href={`mailto:${t('pages.home.contact.email')}?subject=${t(
           'pages.home.contact.subject'
         )}`}
@@ -26,9 +24,7 @@ function MailTo(props) {
         {t('pages.home.contact.email')}
       </a>
       <FontAwesomeIcon
-        className="text-slate-600 dark:text-gray-400 peer-focus-visible:text-slate-800
-        dark:peer-focus-visible:text-gray-200 peer-focus-visible:translate-x-1
-        peer-focus-visible:-translate-y-1 rotate-45 transition-all arrow-hover"
+        className="text-slate-600 dark:text-gray-400 peer-focus-visible:text-slate-800 dark:peer-focus-visible:text-gray-200 peer-focus-visible:translate-x-1 peer-focus-visible:-translate-y-1 rotate-45 transition-all arrow-hover"
         icon={faArrowUp}
       />
     </Paragraph>

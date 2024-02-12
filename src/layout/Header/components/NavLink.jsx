@@ -16,9 +16,7 @@ function NavLink(props) {
 
   return (
     <li
-      className="w-full md:text-base text-slate-500 dark:text-gray-400 nav-link-hover
-      focus-visible:md:text-slate-900 focus-visible:dark:md:dark:text-gray-200
-      whitespace-nowrap"
+      className="w-full md:text-base text-slate-500 dark:text-gray-400 nav-link-hover focus-visible:md:text-slate-900 focus-visible:dark:md:dark:text-gray-200 whitespace-nowrap"
       tabIndex="0"
       onKeyDown={(event) => {
         if (event.code !== 'Enter') return
@@ -28,8 +26,7 @@ function NavLink(props) {
     >
       <ScrollLink
         activeClass="!font-bold text-slate-800 dark:text-gray-200"
-        className="py-1.5 flex items-center font-medium cursor-pointer md:ml-0
-        md:py-0 md:font-bold md:uppercase 2xl:text-lg color-transition"
+        className="py-1.5 flex items-center font-medium cursor-pointer md:ml-0 md:py-0 md:font-bold md:uppercase 2xl:text-lg color-transition"
         href={to} // SEO purposes
         onClick={() => setMenuState(false)}
         ref={linkRef}
@@ -39,8 +36,7 @@ function NavLink(props) {
       >
         {isActive && (
           <FontAwesomeIcon
-            className="md:hidden ml-6 sm:ml-5 mr-[22px] sm:mr-[26px] text-accent
-            color-transition"
+            className="md:hidden ml-6 sm:ml-5 mr-[22px] sm:mr-[26px] text-accent color-transition"
             icon={faCaretRight}
           />
         )}

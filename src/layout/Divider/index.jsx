@@ -9,8 +9,7 @@ function Divider() {
 
   return (
     <svg
-      className="my-20 lg:my-36 m-auto h-4 lg:h-6 grid place-items-center
-      fill-slate-250 dark:fill-dark-2 color-transition"
+      className="my-20 lg:my-36 m-auto h-4 lg:h-6 grid place-items-center fill-slate-250 dark:fill-dark-2 color-transition"
       preserveAspectRatio="none"
       ref={dividerRef}
       viewBox="0 0 132 15"

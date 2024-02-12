@@ -17,12 +17,11 @@ function LanguageList(props) {
       <MenuList title={t('header.language.heading')}>
         {languages.map((lang) => (
           <li
-            className={`${
+            className={`py-1.5 w-full cursor-pointer color-transition ${
               lang.id === language.id
                 ? 'font-bold text-slate-800 dark:text-gray-200'
                 : 'font-medium text-slate-500 dark:text-gray-400'
-            }
-            py-1.5 w-full cursor-pointer color-transition`}
+            }`}
             key={lang.id}
             onClick={() => setLanguage(lang)}
             onKeyDown={(event) => (event.code === 'Enter' ? setLanguage(lang) : null)}
@@ -38,8 +37,9 @@ function LanguageList(props) {
           </li>
         ))}
         <FontAwesomeIcon
-          className={`${language.id === 'EN' ? 'top-[10px]' : 'top-[52px]'} absolute
-          left-6 text-accent transition-all duration-300 ease-out`}
+          className={`absolute left-6 text-accent transition-all duration-300 ease-out ${
+            language.id === 'EN' ? 'top-[10px]' : 'top-[52px]'
+          }`}
           icon={faCaretRight}
         />
       </MenuList>

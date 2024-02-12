@@ -29,18 +29,14 @@ function Hero(props) {
     >
       <Container className="h-full px-6 grid place-content-center">
         <div
-          className="w-full sm:max-w-lg md:max-w-xl 2xl:max-w-2xl m-auto flex flex-col
-          items-start"
+          className="w-full sm:max-w-lg md:max-w-xl 2xl:max-w-2xl m-auto flex flex-col items-start"
           ref={textRef}
         >
           <h1 className="title-font text-5xl md:text-7xl 2xl:text-8xl">
             <Trans
               components={{
                 small: (
-                  <span
-                    className="block mb-3 md:mb-4 2xl:mb-5 font-medium text-lg
-                    md:text-2xl 2xl:text-3xl tracking-tighter"
-                  />
+                  <span className="block mb-3 md:mb-4 2xl:mb-5 font-medium text-lg md:text-2xl 2xl:text-3xl tracking-tighter" />
                 ),
                 thin: <span className="font-normal" />,
               }}

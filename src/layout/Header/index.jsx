@@ -27,15 +27,16 @@ function Header() {
 
   return (
     <header
-      className={`${y === 0 || isMenuOpen ? 'header-full' : 'header-collapsed'}
-      fixed top-0 z-50 w-full 2xl:text-lg bg-opacity-[85%] dark:bg-opacity-[85%]
-      border-b transition-[height,background,border] duration-300`}
+      className={`fixed top-0 z-50 w-full 2xl:text-lg bg-opacity-[85%] dark:bg-opacity-[85%] border-b transition-[height,background,border] duration-300 ${
+        y === 0 || isMenuOpen ? 'header-full' : 'header-collapsed'
+      }`}
       ref={refs.scope}
     >
       <SkipToContent t={t} />
       <Container
-        className={`${pathname !== '/404' ? 'justify-between' : 'justify-end'}
-        px-6 md:px-8 h-full flex items-center`}
+        className={`px-6 md:px-8 h-full flex items-center ${
+          pathname !== '/404' ? 'justify-between' : 'justify-end'
+        }`}
       >
         {pathname !== '/404' && <Logo y={y} />}
         <div ref={refs.nav}>

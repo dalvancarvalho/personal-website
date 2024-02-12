@@ -22,10 +22,7 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
       onSubmit={handleSubmit}
       ref={ref}
     >
-      <h3
-        className="w-full text-base md:text-lg 2xl:text-xl text-slate-800
-        dark:text-gray-200 font-bold color-transition"
-      >
+      <h3 className="w-full text-base md:text-lg 2xl:text-xl text-slate-800 dark:text-gray-200 font-bold color-transition">
         {t('pages.home.contact.formTitle')}
       </h3>
       <Input
@@ -62,11 +59,7 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
         ) : (
           <>
             {t('pages.home.contact.button.default')}
-            <div
-              className="absolute flex items-center gap-1 opacity-0
-              group-focus-visible/button:opacity-100 fa-envelope-hover
-              group-focus-visible/button:translate-x-2"
-            >
+            <div className="absolute flex items-center gap-1 opacity-0 group-focus-visible/button:opacity-100 fa-envelope-hover group-focus-visible/button:translate-x-2">
               <FontAwesomeIcon icon={faEnvelope} />
               <FontAwesomeIcon className="text-[0.6rem]" icon={faArrowRight} />
             </div>

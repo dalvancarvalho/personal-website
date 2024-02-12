@@ -9,8 +9,7 @@ function Link(props) {
     <span>
       {text}
       <a
-        className="text-slate-600 dark:text-gray-400 focus-visible:text-slate-900
-        focus-visible:dark:text-gray-200 font-bold color-transition footer-link-hover"
+        className="text-slate-600 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 font-bold color-transition footer-link-hover"
         href={href}
         rel="noopener noreferrer"
         target="_blank"
