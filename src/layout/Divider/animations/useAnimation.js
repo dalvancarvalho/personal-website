@@ -1,37 +1,36 @@
-/* useProjectsAnimation.js */
+/* useAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useProjectsAnimation() {
-  // Projects section animation
+function useAnimation() {
+  // Divider animation
 
-  const paragraph = useRef(null)
-  const scope = useRef(null)
+  const dividerRef = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        paragraph.current,
-        { opacity: 0, x: 32 },
+        dividerRef.current,
+        { opacity: 0 },
         {
           opacity: 1,
-          x: 0,
+          delay: 0.5,
           duration: 1.25,
           ease: 'power3.out',
           scrollTrigger: {
-            trigger: paragraph.current,
+            trigger: dividerRef.current,
             start: 'bottom bottom',
           },
         }
       )
-    }, scope)
+    }, dividerRef)
 
     // Context cleanup
     return () => ctx.revert()
   }, [])
 
-  return { scope, paragraph }
+  return dividerRef
 }
 
-export default useProjectsAnimation
+export default useAnimation

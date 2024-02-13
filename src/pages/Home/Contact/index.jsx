@@ -4,7 +4,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Trans } from 'react-i18next'
 import useConfetti from '../../../context/ConfettiContext'
-import useContactAnimation from './animations/useContactAnimation'
+import useAnimation from './animations/useAnimation'
 import Container from '../../../layout/Container'
 import Divider from '../../../layout/Divider'
 import Grid from '../../../layout/Grid'
@@ -22,7 +22,7 @@ function Contact(props) {
   const { screenProps, t } = props
   const { screenSize } = screenProps
   const { confetti } = useConfetti()
-  const refs = useContactAnimation()
+  const refs = useAnimation()
 
   return (
     <Section className="relative" id="contact" ref={refs.scope}>

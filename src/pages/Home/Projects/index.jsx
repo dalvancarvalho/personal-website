@@ -1,7 +1,7 @@
 /* Projects/index.jsx */
 
 import { Trans } from 'react-i18next'
-import useProjectsAnimation from './animations/useProjectsAnimation'
+import useAnimation from './animations/useAnimation'
 import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
 import DesktopCard from '../../../components/Card/Desktop'
@@ -16,7 +16,7 @@ function Projects(props) {
 
   const { screenProps, t } = props
   const { screenSize } = screenProps
-  const refs = useProjectsAnimation()
+  const refs = useAnimation()
 
   return (
     <Section

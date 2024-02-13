@@ -1,6 +1,6 @@
 /* SectionTitle/index.jsx */
 
-import useSectionTitleAnimation from './animations/useSectionTitleAnimation'
+import useAnimation from './animations/useAnimation'
 
 function SectionTitle(props) {
   // Displays the title of the section (H2)
@@ -11,7 +11,7 @@ function SectionTitle(props) {
     watermark = undefined,
     watermarkColor = 'text-slate-150 dark:text-dark-5',
   } = props
-  const refs = useSectionTitleAnimation(animation, watermark)
+  const refs = useAnimation(animation, watermark)
 
   return (
     <div

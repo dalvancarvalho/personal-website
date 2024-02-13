@@ -1,9 +1,9 @@
-/* useMainSectionAnimation.js */
+/* useAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useMainSectionAnimation() {
+function useAnimation() {
   // Fade-in animation
 
   const mainSectionRef = useRef(null)
@@ -24,4 +24,4 @@ function useMainSectionAnimation() {
   return mainSectionRef
 }
 
-export default useMainSectionAnimation
+export default useAnimation

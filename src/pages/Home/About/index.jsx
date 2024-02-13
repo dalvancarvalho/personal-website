@@ -4,7 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Trans } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import useAboutAnimation from './animations/useAboutAnimation'
+import useAnimation from './animations/useAnimation'
 import Container from '../../../layout/Container'
 import Divider from '../../../layout/Divider'
 import Grid from '../../../layout/Grid'
@@ -29,7 +29,7 @@ function About(props) {
 
   const { t } = props
   const navigate = useNavigate()
-  const refs = useAboutAnimation()
+  const refs = useAnimation()
 
   return (
     <Section id="about" ref={refs.scope}>

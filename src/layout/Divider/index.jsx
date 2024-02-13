@@ -1,11 +1,11 @@
 /* Divider/index.jsx */
 
-import useDividerAnimation from './animations/useDividerAnimation'
+import useAnimation from './animations/useAnimation'
 
 function Divider() {
   // SVG horizontal divider
 
-  const dividerRef = useDividerAnimation()
+  const dividerRef = useAnimation()
 
   return (
     <svg

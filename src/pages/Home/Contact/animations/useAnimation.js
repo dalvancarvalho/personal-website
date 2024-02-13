@@ -1,10 +1,10 @@
-/* useContactAnimation.js */
+/* useAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-function useContactAnimation() {
+function useAnimation() {
   // Contact section animation
 
   const { screenSize } = useScreenProps()
@@ -57,4 +57,4 @@ function useContactAnimation() {
   return { form, scope }
 }
 
-export default useContactAnimation
+export default useAnimation

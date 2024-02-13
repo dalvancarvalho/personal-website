@@ -3,7 +3,7 @@
 import { Link as ScrollLink } from 'react-scroll'
 import { Trans } from 'react-i18next'
 import useHeroParallax from './hooks/useHeroParallax'
-import useHeroAnimation from './animations/useHeroAnimation'
+import useAnimation from './animations/useAnimation'
 import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
 import CallToAction from '../../../components/Button/CallToAction'
@@ -19,7 +19,7 @@ function Hero(props) {
 
   const { t } = props
   const { bgRef, textRef } = useHeroParallax()
-  const scopeRef = useHeroAnimation(bgRef, textRef)
+  const scopeRef = useAnimation(bgRef, textRef)
 
   return (
     <Section

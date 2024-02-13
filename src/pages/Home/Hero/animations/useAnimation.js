@@ -1,9 +1,9 @@
-/* useHeroAnimation.js */
+/* useAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useHeroAnimation(bg, text) {
+function useAnimation(bg, text) {
   // Hero section animation
 
   const tl = useRef(null)
@@ -47,4 +47,4 @@ function useHeroAnimation(bg, text) {
   return scopeRef
 }
 
-export default useHeroAnimation
+export default useAnimation

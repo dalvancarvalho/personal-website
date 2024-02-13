@@ -1,36 +1,37 @@
-/* useDividerAnimation.js */
+/* useAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useDividerAnimation() {
-  // Divider animation
+function useAnimation() {
+  // Projects section animation
 
-  const dividerRef = useRef(null)
+  const paragraph = useRef(null)
+  const scope = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        dividerRef.current,
-        { opacity: 0 },
+        paragraph.current,
+        { opacity: 0, x: 32 },
         {
           opacity: 1,
-          delay: 0.5,
+          x: 0,
           duration: 1.25,
           ease: 'power3.out',
           scrollTrigger: {
-            trigger: dividerRef.current,
+            trigger: paragraph.current,
             start: 'bottom bottom',
           },
         }
       )
-    }, dividerRef)
+    }, scope)
 
     // Context cleanup
     return () => ctx.revert()
   }, [])
 
-  return dividerRef
+  return { scope, paragraph }
 }
 
-export default useDividerAnimation
+export default useAnimation

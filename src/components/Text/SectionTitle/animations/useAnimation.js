@@ -1,9 +1,9 @@
-/* useSectionTitleAnimation.js */
+/* useAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useSectionTitleAnimation(animation, watermarkText) {
+function useAnimation(animation, watermarkText) {
   // Heading animation
 
   const heading = useRef(null)
@@ -54,4 +54,4 @@ function useSectionTitleAnimation(animation, watermarkText) {
   return { heading, scope, watermark }
 }
 
-export default useSectionTitleAnimation
+export default useAnimation
