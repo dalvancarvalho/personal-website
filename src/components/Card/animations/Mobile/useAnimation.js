@@ -1,51 +1,37 @@
-/* useDesktopAnimation.js */
+/* useAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useDesktopAnimation(isEven) {
-  // Desktop card animation
+function useAnimation(isEven) {
+  // Mobile card animation
 
-  const image = useRef(null)
-  const scope = useRef(null)
+  const card = useRef(null)
   const stack = useRef(null)
-  const text = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Scoped tweens (removed when the component unmounts)
+      // Scoped tween (removed when the component unmounts)
 
       //Initial animation
       gsap.fromTo(
-        text.current,
-        { x: isEven ? -48 : 48, opacity: 0 },
+        card.current,
         {
-          x: 0,
+          opacity: 0,
+          translate: isEven ? '15%' : '-15%',
+        },
+        {
           opacity: 1,
+          translate: '0%',
           duration: 1,
           ease: 'power3.inOut',
           scrollTrigger: {
-            trigger: image.current,
-            start: 'bottom bottom',
+            trigger: card.current,
+            start: '75% bottom',
           },
         }
       )
-
-      gsap.fromTo(
-        image.current,
-        { x: isEven ? 48 : -48, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: 1,
-          ease: 'power3.inOut',
-          scrollTrigger: {
-            trigger: image.current,
-            start: 'bottom bottom',
-          },
-        }
-      )
-    }, scope)
+    }, card)
 
     // Stack-reveal animation (on element's hover)
     const bgAnimation = gsap.to(stack.current, {
@@ -74,20 +60,20 @@ function useDesktopAnimation(isEven) {
       stackAnimation.reverse()
     }
 
-    image.current.addEventListener('mouseenter', revealStack)
-    image.current.addEventListener('mouseleave', hideStack)
+    card.current.addEventListener('mouseenter', revealStack)
+    card.current.addEventListener('mouseleave', hideStack)
 
     // Context/event listeners cleanup
     return () => {
       ctx.revert()
       bgAnimation.revert()
       stackAnimation.revert()
-      image.current.removeEventListener('mouseenter', revealStack)
-      image.current.removeEventListener('mouseleave', hideStack)
+      card.current.removeEventListener('mouseenter', revealStack)
+      card.current.removeEventListener('mouseleave', hideStack)
     }
   }, [])
 
-  return { image, scope, stack, text }
+  return { card, stack }
 }
 
-export default useDesktopAnimation
+export default useAnimation

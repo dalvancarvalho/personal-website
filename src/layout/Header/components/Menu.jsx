@@ -3,7 +3,7 @@
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import useMenu from '../../../context/MenuContext'
-import useMenuAnimation from '../animations/useMenuAnimation'
+import useAnimation from '../animations/Menu/useAnimation'
 import Container from '../../Container'
 import Button from '../../../components/Button'
 import LanguageList from './LanguageList'
@@ -15,7 +15,7 @@ function Menu(props) {
 
   const { pathname, t, y } = props
   const { isMenuOpen, setMenuState, buttonRef, menuRef } = useMenu()
-  const scopeRef = useMenuAnimation(buttonRef, isMenuOpen, menuRef)
+  const scopeRef = useAnimation(buttonRef, isMenuOpen, menuRef)
 
   return (
     <div className="grid place-items-center" ref={scopeRef}>

@@ -1,4 +1,4 @@
-/* useCardParallax.js */
+/* useParallax.js */
 
 import { useParallax } from 'react-scroll-parallax'
 

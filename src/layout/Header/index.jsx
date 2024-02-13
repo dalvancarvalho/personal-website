@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 import useMenu from '../../context/MenuContext'
 import useDocCoordinates from '../../hooks/useDocCoordinates'
 import useScreenProps from '../../hooks/useScreenProps'
-import useHeaderAnimation from './animations/useHeaderAnimation'
+import useAnimation from './animations/Header/useAnimation'
 import Container from '../Container'
 import SkipToContent from '../../components/Button/SkipToContent'
 import LanguageSwitch from './components/LanguageSwitch'
@@ -23,7 +23,7 @@ function Header() {
   const { screenSize } = useScreenProps()
   const { y } = useDocCoordinates()
   const { t } = useTranslation()
-  const refs = useHeaderAnimation(pathname)
+  const refs = useAnimation(pathname)
 
   return (
     <header

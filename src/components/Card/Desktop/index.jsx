@@ -3,8 +3,8 @@
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
-import useCardParallax from '../hooks/useCardParallax'
-import useDesktopAnimation from '../animations/useDesktopAnimation'
+import useParallax from '../hooks/useParallax'
+import useAnimation from '../animations/Desktop/useAnimation'
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
 import Tech from '../components/Tech'
@@ -16,8 +16,8 @@ function DesktopCard(props) {
   const { altText, description, isFinished, name, routeName, stack, thumbnail } = project
   const isEven = index % 2 === 0 ? true : false
   const navigate = useNavigate()
-  const parallaxRef = useCardParallax()
-  const refs = useDesktopAnimation(isEven)
+  const parallaxRef = useParallax()
+  const refs = useAnimation(isEven)
 
   return (
     <div

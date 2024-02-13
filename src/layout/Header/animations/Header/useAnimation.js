@@ -1,9 +1,9 @@
-/* useHeaderAnimation.js */
+/* useAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useHeaderAnimation(pathname) {
+function useAnimation(pathname) {
   // Header animation
 
   const nav = useRef(null)
@@ -31,4 +31,4 @@ function useHeaderAnimation(pathname) {
   return { nav, scope }
 }
 
-export default useHeaderAnimation
+export default useAnimation

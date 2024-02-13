@@ -1,10 +1,10 @@
-/* useMenuAnimation.js */
+/* useAnimation.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import useIsFirstRender from '../../../hooks/useIsFirstRender'
+import useIsFirstRender from '../../../../hooks/useIsFirstRender'
 
-function useMenuAnimation(buttonRef, isMenuOpen, menuRef) {
+function useAnimation(buttonRef, isMenuOpen, menuRef) {
   // Menu animation
 
   const isFirstRender = useIsFirstRender()
@@ -19,7 +19,7 @@ function useMenuAnimation(buttonRef, isMenuOpen, menuRef) {
       paused: true,
     })
 
-    const ctx = gsap.context(() => {
+    gsap.context(() => {
       if (isMenuOpen) {
         // Menu animation
         gsap.to(menuRef.current.children, {
@@ -48,4 +48,4 @@ function useMenuAnimation(buttonRef, isMenuOpen, menuRef) {
   return scopeRef
 }
 
-export default useMenuAnimation
+export default useAnimation

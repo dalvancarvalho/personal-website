@@ -2,14 +2,14 @@
 
 import { useNavigate } from 'react-router-dom'
 import useMenu from '../../../context/MenuContext'
-import useLogoAnimation from '../animations/useLogoAnimation'
+import useAnimation from '../animations/Logo/useAnimation'
 
 function Logo(props) {
   // Animated logo that changes its text based on the current language and pathname
 
   const { y } = props
   const { isMenuOpen } = useMenu()
-  const refs = useLogoAnimation()
+  const refs = useAnimation()
   const navigate = useNavigate()
 
   function goHome(event) {

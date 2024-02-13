@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
-import useMobileAnimation from '../animations/useMobileAnimation'
+import useAnimation from '../animations/Mobile/useAnimation'
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
 import Tech from '../components/Tech'
@@ -15,7 +15,7 @@ function MobileCard(props) {
   const { index, project, t } = props
   const { altText, description, isFinished, name, routeName, stack, thumbnail } = project
   const isEven = index % 2 === 0 ? true : false
-  const refs = useMobileAnimation(isEven)
+  const refs = useAnimation(isEven)
   const [showImage, setShowImage] = useState(false)
   const buttonRef = useRef(null)
   const navigate = useNavigate()
