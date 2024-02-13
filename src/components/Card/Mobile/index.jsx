@@ -4,7 +4,9 @@ import { useRef, useState } from 'react'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
+
 import useAnimation from '../animations/Mobile/useAnimation'
+
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
 import Tech from '../components/Tech'

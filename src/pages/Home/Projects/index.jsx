@@ -1,7 +1,9 @@
 /* Projects/index.jsx */
 
 import { Trans } from 'react-i18next'
+
 import useAnimation from './animations/useAnimation'
+
 import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
 import DesktopCard from '../../../components/Card/Desktop'
@@ -9,6 +11,7 @@ import MobileCard from '../../../components/Card/Mobile'
 import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
+
 import projects from '../../../constants/projects'
 
 function Projects(props) {

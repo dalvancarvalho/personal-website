@@ -1,7 +1,9 @@
 /* LanguageSwitch.jsx */
 
 import { Trans } from 'react-i18next'
+
 import useLanguage from '../../../context/LanguageContext'
+
 import Button from '../../../components/Button'
 import Tooltip from '../../../components/Tooltip'
 

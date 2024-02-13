@@ -2,10 +2,12 @@
 
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+
 import useMenu from '../../context/MenuContext'
 import useDocCoordinates from '../../hooks/useDocCoordinates'
 import useScreenProps from '../../hooks/useScreenProps'
 import useAnimation from './animations/Header/useAnimation'
+
 import Container from '../Container'
 import SkipToContent from '../../components/Button/SkipToContent'
 import LanguageSwitch from './components/LanguageSwitch'

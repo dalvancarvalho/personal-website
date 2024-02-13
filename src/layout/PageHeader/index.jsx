@@ -1,6 +1,7 @@
 /* PageHeader/index.jsx */
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 import Container from '../Container'
 import Breadcrumbs from './components/Breadcrumbs'
 import Link from './components/Link'

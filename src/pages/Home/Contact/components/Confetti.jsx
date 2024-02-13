@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import ReactConfetti from 'react-confetti'
+
 import useConfetti from '../../../../context/ConfettiContext'
 import useScreenProps from '../../../../hooks/useScreenProps'
 

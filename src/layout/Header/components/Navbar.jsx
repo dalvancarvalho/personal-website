@@ -1,6 +1,7 @@
 /* Navbar.jsx */
 
 import NavLink from './NavLink'
+
 import navLinks from '../../../constants/navLinks'
 
 function Navbar(props) {

@@ -1,6 +1,7 @@
 /* MenuContext.jsx */
 
 import { createContext, useContext, useEffect, useRef, useState } from 'react'
+
 import useScreenProps from '../hooks/useScreenProps'
 
 // Context for accessing the menu status

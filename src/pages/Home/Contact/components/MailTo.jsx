@@ -2,6 +2,7 @@
 
 import { faArrowUp, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import Paragraph from '../../../../components/Text/Paragraph'
 
 function MailTo(props) {

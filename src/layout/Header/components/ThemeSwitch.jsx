@@ -2,7 +2,9 @@
 
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import useTheme from '../../../context/ThemeContext'
+
 import Button from '../../../components/Button'
 import Tooltip from '../../../components/Tooltip'
 

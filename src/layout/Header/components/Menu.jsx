@@ -2,8 +2,10 @@
 
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import useMenu from '../../../context/MenuContext'
 import useAnimation from '../animations/Menu/useAnimation'
+
 import Container from '../../Container'
 import Button from '../../../components/Button'
 import LanguageList from './LanguageList'

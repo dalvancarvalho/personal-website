@@ -2,8 +2,10 @@
 
 import { Link as ScrollLink } from 'react-scroll'
 import { Trans } from 'react-i18next'
+
 import useParallax from './hooks/useParallax'
 import useAnimation from './animations/useAnimation'
+
 import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
 import CallToAction from '../../../components/Button/CallToAction'
@@ -11,6 +13,7 @@ import SecondaryButton from '../../../components/Button/SecondaryButton'
 import DynamicImage from '../../../components/DynamicImage'
 import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
+
 import bgDark from '../../../assets/svg/bg-dark.svg'
 import bgLight from '../../../assets/svg/bg-light.svg'
 

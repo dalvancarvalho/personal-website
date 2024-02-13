@@ -1,13 +1,15 @@
 /* Download/index.jsx */
 
 import { Trans } from 'react-i18next'
+
 import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
 import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
-import resumeList from '../../../constants/resume'
 import ResumeCard from '../components/ResumeCard'
+
+import resumeList from '../../../constants/resume'
 
 function Download(props) {
   // Download section

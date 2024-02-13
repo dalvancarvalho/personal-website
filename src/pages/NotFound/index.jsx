@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet-async'
 import { Link as RouterLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+
 import useScreenProps from '../../hooks/useScreenProps'
+
 import Container from '../../layout/Container'
 import MainSection from '../../layout/Section/MainSection'
 import CallToAction from '../../components/Button/CallToAction'

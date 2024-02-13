@@ -1,6 +1,7 @@
 /* Logo.jsx */
 
 import { useNavigate } from 'react-router-dom'
+
 import useMenu from '../../../context/MenuContext'
 import useAnimation from '../animations/Logo/useAnimation'
 

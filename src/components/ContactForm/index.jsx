@@ -3,7 +3,9 @@
 import { forwardRef } from 'react'
 import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import useContactForm from './hooks/useContactForm'
+
 import CallToAction from '../Button/CallToAction'
 import Spinner from '../Button/Spinner'
 import Input from './components/Input'

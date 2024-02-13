@@ -2,6 +2,7 @@
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
+
 import useIsFirstRender from '../../../../hooks/useIsFirstRender'
 
 function useAnimation(buttonRef, isMenuOpen, menuRef) {

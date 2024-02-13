@@ -1,6 +1,7 @@
 /* Topic.jsx */
 
 import { Trans } from 'react-i18next'
+
 import Highlight from '../../../../components/Text/Highlight'
 import Paragraph from '../../../../components/Text/Paragraph'
 

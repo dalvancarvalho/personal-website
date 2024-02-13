@@ -1,8 +1,10 @@
 /* ThemeContext.jsx */
 
 import { createContext, useContext, useEffect } from 'react'
+
 import useKeyPress from '../hooks/useKeyPress'
 import useLocalStorage from '../hooks/useLocalStorage'
+
 import { light, dark } from '../constants/themes'
 
 // Context for the theme functionality

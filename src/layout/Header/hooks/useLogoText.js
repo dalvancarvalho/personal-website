@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+
 import useLanguage from '../../../context/LanguageContext'
+
 import { enUS, ptBR } from '../../../constants/logoText'
 
 function useLogoText() {

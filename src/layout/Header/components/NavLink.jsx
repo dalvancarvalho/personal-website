@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link as ScrollLink } from 'react-scroll'
+
 import useMenu from '../../../context/MenuContext'
 
 function NavLink(props) {

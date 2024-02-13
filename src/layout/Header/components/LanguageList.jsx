@@ -2,8 +2,11 @@
 
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import useLanguage from '../../../context/LanguageContext'
+
 import MenuList from './MenuList'
+
 import languages from '../../../constants/languages'
 
 function LanguageList(props) {

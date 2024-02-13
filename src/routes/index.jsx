@@ -2,6 +2,7 @@
 
 import { lazy } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+
 import Fallback from './components/Fallback'
 
 // Dynamic imports

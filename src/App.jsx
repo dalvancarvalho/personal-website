@@ -4,7 +4,9 @@ import { gsap } from 'gsap'
 import { Helmet } from 'react-helmet-async'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { TextPlugin } from 'gsap/TextPlugin'
+
 import useTheme from './context/ThemeContext'
+
 import Routes from './routes'
 import Header from './layout/Header'
 import Main from './layout/Main'

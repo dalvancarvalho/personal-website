@@ -5,13 +5,16 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { ParallaxProvider } from 'react-scroll-parallax'
+
 import { ConfettiProvider } from './context/ConfettiContext'
 import { LanguageProvider } from './context/LanguageContext'
 import { MenuProvider } from './context/MenuContext'
 import { ThemeProvider } from './context/ThemeContext'
-import App from './App'
+
 import './i18n'
 import './styles/tailwind.css'
+
+import App from './App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 

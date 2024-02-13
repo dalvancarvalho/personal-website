@@ -4,7 +4,9 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Trans } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
+
 import useAnimation from './animations/useAnimation'
+
 import Container from '../../../layout/Container'
 import Divider from '../../../layout/Divider'
 import Grid from '../../../layout/Grid'
@@ -18,7 +20,9 @@ import HoverText from './components/HoverText'
 import QuotationMark from './components/QuotationMark'
 import Tech from './components/Tech'
 import Topic from './components/Topic'
+
 import technologies from '../../../constants/technologies'
+
 import stackDark from '../../../assets/svg/stack-dark.svg'
 import stackLight from '../../../assets/svg/stack-light.svg'
 import meBw from '../../../assets/webp/me-bw-bg.webp'

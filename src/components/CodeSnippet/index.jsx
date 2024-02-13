@@ -3,8 +3,10 @@
 import { faCheck, faCopy, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Trans } from 'react-i18next'
+
 import useCodeSnippet from './hooks/useCodeSnippet'
 import useScreenProps from '../../hooks/useScreenProps'
+
 import Button from '../Button'
 import Tooltip from '../Tooltip'
 

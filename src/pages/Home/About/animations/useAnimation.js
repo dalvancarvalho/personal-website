@@ -2,6 +2,7 @@
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
+
 import useScreenProps from '../../../../hooks/useScreenProps'
 
 function useAnimation() {

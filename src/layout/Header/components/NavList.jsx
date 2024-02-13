@@ -2,6 +2,7 @@
 
 import NavLink from './NavLink'
 import MenuList from './MenuList'
+
 import navLinks from '../../../constants/navLinks'
 
 function NavList(props) {

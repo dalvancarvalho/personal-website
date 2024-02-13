@@ -2,8 +2,10 @@
 
 import { createContext, useContext, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+
 import useKeyPress from '../hooks/useKeyPress'
 import useLocalStorage from '../hooks/useLocalStorage'
+
 import { enUS, ptBR } from '../constants/languages'
 
 // Context for the internationalization functionality

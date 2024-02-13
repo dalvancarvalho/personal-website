@@ -2,8 +2,11 @@
 
 import { faMoon, faSun, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import useTheme from '../../../context/ThemeContext'
+
 import MenuList from './MenuList'
+
 import themes from '../../../constants/themes'
 
 function ThemeList(props) {

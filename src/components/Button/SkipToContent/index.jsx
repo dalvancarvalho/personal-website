@@ -2,6 +2,7 @@
 
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import CallToAction from '../CallToAction'
 
 function SkipToContent(props) {

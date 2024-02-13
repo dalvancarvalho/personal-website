@@ -1,6 +1,7 @@
 /* Fallback.jsx */
 
 import { Suspense } from 'react'
+
 import Loading from '../../pages/Loading'
 
 function Fallback(props) {
