@@ -13,7 +13,7 @@ function SkipToContent(props) {
 
   return (
     <a
-      className="absolute h-4/5 -top-0.5 left-2 -translate-y-full z-50 outline-none dark:outline-none focus-visible:top-1/2 focus-visible:-translate-y-1/2 focus-visible:pointer-events-auto duration-300 group"
+      className="absolute h-4/5 -top-0.5 left-2 -translate-y-full z-50 ring-none focus-visible:top-1/2 focus-visible:-translate-y-1/2 focus-visible:pointer-events-auto duration-300 group"
       href="#content"
     >
       <CallToAction

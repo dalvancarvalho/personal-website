@@ -14,7 +14,7 @@ function SecondaryButton(props) {
 
   return (
     <button
-      className={`${className} ${textSize} relative py-[0.75em] rounded-[0.5em] flex gap-2 items-center justify-center text-accent font-semibold decoration-2 focus-visible:underline outline-none dark:outline-none tracking-wider whitespace-nowrap color-transition group secondary-button-hover`}
+      className={`${className} ${textSize} relative ring-none py-[0.75em] rounded-[0.5em] flex gap-2 items-center justify-center text-accent font-semibold decoration-2 focus-visible:underline tracking-wider whitespace-nowrap color-transition group secondary-button-hover`}
       onClick={onClick}
       tabIndex={tabIndex}
       type={type}
