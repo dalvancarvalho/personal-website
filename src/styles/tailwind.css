@@ -35,6 +35,10 @@
     @apply outline-dashed outline-1 outline-red-500; /* Debug ruleset */
   }
 
+  .ring-none {
+    @apply ring-0 ring-offset-0 outline-none dark:outline-none;
+  }
+
   .text-accent {
     @apply text-blue-600 dark:text-orange-500;
   }
