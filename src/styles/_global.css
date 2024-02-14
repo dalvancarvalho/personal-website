@@ -1,16 +1,11 @@
 /* _global.css */
 
 *:focus-visible {
-  @apply outline outline-[3px] outline-offset-[3px] outline-blue-600
-  dark:outline-orange-500 rounded-[0.1em];
+  @apply outline-none dark:outline-none ring-2 2xl:ring-[3px] ring-blue-600 dark:ring-orange-500 ring-offset-[3px] ring-offset-slate-50 dark:ring-offset-dark-6 !transition-all !duration-75;
 }
 
 *::selection {
   @apply text-white dark:text-black bg-blue-500 dark:bg-orange-400;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
@@ -22,10 +17,13 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  @apply border-solid border-2 border-slate-50 dark:border-dark-6
-  bg-[#6c6c6c80] dark:bg-[#61606080] rounded-full;
+  @apply border-solid border-2 border-slate-50 dark:border-dark-6 bg-[#6c6c6c80] dark:bg-[#61606080] rounded-full;
 }
 
 *::-webkit-scrollbar-thumb:hover {
   @apply bg-[#2564ebb3] dark:bg-[#f974169f];
+}
+
+html {
+  scroll-behavior: smooth;
 }
