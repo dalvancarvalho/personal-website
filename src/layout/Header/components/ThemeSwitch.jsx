@@ -26,8 +26,8 @@ function ThemeSwitch(props) {
             theme === 'light' ? 'translate-y-1/2' : '-translate-y-1/2'
           }`}
         >
-          <FontAwesomeIcon className="-rotate-[23deg]" icon={faMoon} />
           <FontAwesomeIcon className="-rotate-[23deg]" icon={faSun} />
+          <FontAwesomeIcon className="-rotate-[23deg]" icon={faMoon} />
         </div>
       </div>
       <Tooltip shortcutKey={SHORTCUT_KEY}>

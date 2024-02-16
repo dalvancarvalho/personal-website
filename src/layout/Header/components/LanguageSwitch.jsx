@@ -25,8 +25,8 @@ function LanguageSwitch(props) {
             language.id === 'PT' ? 'translate-y-1/2' : '-translate-y-1/2'
           }`}
         >
-          <span>En</span>
           <span>Pt</span>
+          <span>En</span>
         </p>
       </div>
       <Tooltip shortcutKey={SHORTCUT_KEY}>
