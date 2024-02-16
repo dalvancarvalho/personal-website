@@ -26,8 +26,8 @@ function NavLink(props) {
       }}
     >
       <ScrollLink
-        activeClass="!font-bold text-slate-800 dark:text-gray-200"
-        className="py-1.5 flex items-center font-medium cursor-pointer md:ml-0 md:py-0 md:font-bold md:uppercase 2xl:text-lg color-transition"
+        activeClass="!font-semibold text-slate-800 dark:text-gray-200"
+        className="py-1.5 flex items-center font-medium cursor-pointer md:ml-0 md:py-0 md:font-semibold md:text-lg 2xl:text-xl color-transition"
         href={to} // SEO purposes
         onClick={() => setMenuState(false)}
         ref={linkRef}
