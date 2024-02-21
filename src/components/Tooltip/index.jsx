@@ -13,13 +13,13 @@ function Tooltip(props) {
 
   return (
     <p
-      className={`${position} absolute invisible px-[0.75em] py-[0.25em] z-50 group-focus-visible:visible group-focus-visible:opacity-100 border border-t-white dark:border-t-dark-1 rounded-[0.5em] shadow-md opacity-0 border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2 text-slate-500 dark:text-gray-300 font-normal tracking-normal whitespace-nowrap text-base 2xl:text-lg select-none duration-300 pointer-events-none tooltip-hover`}
+      className={`${position} absolute invisible group-focus-visible:visible opacity-0 group-focus-visible:opacity-100 z-50 border border-slate-150 dark:border-dark-1 rounded-lg shadow-md px-3 py-1.5 bg-white dark:bg-dark-2 text-slate-600 dark:text-gray-300 font-normal text-sm whitespace-nowrap select-none pointer-events-none duration-300 tooltip-hover`}
     >
       {children}
       {shortcutKey && (
         <>
           <br />
-          <span className="inline-block mt-2 mb-1 text-xs 2xl:text-sm font-medium tracking-wider">
+          <span className="inline-block mt-2 mb-1 text-xs font-medium tracking-wider">
             <KeyTag>Ctrl</KeyTag> + <KeyTag>{shortcutKey.toUpperCase()}</KeyTag>
           </span>
         </>
