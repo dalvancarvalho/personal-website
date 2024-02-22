@@ -30,20 +30,17 @@ function CodeSnippet(props) {
               <FontAwesomeIcon icon={faCheck} />
             </p>
           ) : (
-            <Button
-              className="relative flex items-center text-lg 2xl:text-xl"
-              onClick={copyToClipboard}
-            >
+            <Button className="relative" onClick={copyToClipboard}>
               <FontAwesomeIcon icon={faCopy} />
-              <Tooltip position="top-0 right-0 translate-y-10 2xl:translate-y-12">
+              <Tooltip position="left">
                 <Trans>misc.codeSnippet.copyTooltip</Trans>
               </Tooltip>
             </Button>
           )}
           {!screenSize.md && (
-            <Button className="relative flex items-center text-lg 2xl:text-xl">
+            <Button className="relative">
               <FontAwesomeIcon icon={faInfoCircle} />
-              <Tooltip position="top-0 right-0 translate-y-10 2xl:translate-y-12">
+              <Tooltip position="left">
                 <Trans>misc.codeSnippet.infoTooltip</Trans>
               </Tooltip>
             </Button>
