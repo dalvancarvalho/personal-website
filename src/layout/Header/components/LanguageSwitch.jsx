@@ -16,19 +16,20 @@ function LanguageSwitch(props) {
   return (
     <Button
       ariaLabel={t('header.language.ariaLabel')}
-      className="relative w-6 font-semibold text-lg"
+      className="relative"
       onClick={changeLanguage}
     >
       <div className="overflow-hidden">
-        <p
-          className={`w-6 h-7 2xl:h-6 flex flex-col justify-center 2xl:-space-y-1 ease-out transition-transform duration-300 ${
+        <div
+          className={`w-6 h-7 flex flex-col justify-center transition-transform ease-out duration-300 ${
             language.id === 'PT' ? 'translate-y-1/2' : '-translate-y-1/2'
           }`}
         >
-          <span>Pt</span>
-          <span>En</span>
-        </p>
+          <span className="font-semibold text-lg">Pt</span>
+          <span className="font-semibold text-lg">En</span>
+        </div>
       </div>
+      <p className="sr-only">{t('header.language.ariaLabel')}</p>
       <Tooltip shortcutKey={SHORTCUT_KEY}>
         <Trans>header.language.hover</Trans>
       </Tooltip>
