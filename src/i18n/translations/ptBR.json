@@ -49,7 +49,7 @@
         }
       },
       "language": {
-        "ariaLabel": "Toggle display language to English (US)",
+        "ariaLabel": "Toggle display language",
         "heading": "Idioma",
         "hover": "Toggle display language <br /> to English (US)"
       },
@@ -132,21 +132,35 @@
           "email": "contato@dalvanc.com",
           "subject": "Mensagem de dalvanc.com!",
           "location": "RS, Brasil",
-          "formTitle": "Deixe sua mensagem:",
-          "label": {
-            "name": "Nome",
-            "email": "E-mail",
-            "message": "Mensagem"
-          },
-          "button": {
-            "default": "Enviar",
-            "submitting": "Enviando..."
-          },
-          "message": {
-            "error": "Houve um problema no envio de sua mensagem. <br>Tente novamente mais tarde.",
-            "incomplete": "Preencha todos os campos do formulário!",
-            "short": "A mensagem deve ter pelo menos <br>50 caracteres!",
-            "success": "Mensagem enviada com sucesso!"
+          "form": {
+            "title": "Deixe sua mensagem:",
+            "label": {
+              "name": "Nome",
+              "email": "E-mail",
+              "message": "Mensagem"
+            },
+            "button": {
+              "default": "Enviar",
+              "submitting": "Enviando..."
+            },
+            "toast": {
+              "error": {
+                "heading": "Houve um problema",
+                "description": "Tente novamente mais tarde"
+              },
+              "incomplete": {
+                "heading": "Formulário incompleto",
+                "description": "Preencha todos os campos antes de enviar"
+              },
+              "short": {
+                "heading": "Mensagem muito curta",
+                "description": "Sua mensagem deve ter pelo menos 50 caracteres"
+              },
+              "success": {
+                "heading": "Mensagem enviada com sucesso",
+                "description": "Confira a sua caixa de entrada"
+              }
+            }
           },
           "nav": {
             "ariaLabel": "Redes sociais"

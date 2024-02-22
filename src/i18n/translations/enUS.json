@@ -49,7 +49,7 @@
         }
       },
       "language": {
-        "ariaLabel": "Alternar idioma de exibição para Português (Brasil)",
+        "ariaLabel": "Alternar idioma de exibição",
         "heading": "Language",
         "hover": "Alternar idioma de exibição <br /> para Português (Brasil)"
       },
@@ -132,21 +132,35 @@
           "email": "contact@dalvanc.com",
           "subject": "Message from dalvanc.com!",
           "location": "RS, Brazil",
-          "formTitle": "Leave your message:",
-          "label": {
-            "name": "Name",
-            "email": "E-mail",
-            "message": "Message"
-          },
-          "button": {
-            "default": "Submit",
-            "submitting": "Submitting..."
-          },
-          "message": {
-            "error": "There was a problem sending your message. <br>Try again later.",
-            "incomplete": "Fill out all the fields of the form!",
-            "short": "The message should have at least <br>50 characters!",
-            "success": "Message sent successfully!"
+          "form": {
+            "title": "Leave your message:",
+            "label": {
+              "name": "Name",
+              "email": "E-mail",
+              "message": "Message"
+            },
+            "button": {
+              "default": "Submit",
+              "submitting": "Submitting..."
+            },
+            "toast": {
+              "error": {
+                "heading": "There was a problem",
+                "description": "Please try again later"
+              },
+              "incomplete": {
+                "heading": "Incomplete form",
+                "description": "Fill in all fields before submitting"
+              },
+              "short": {
+                "heading": "Message too short",
+                "description": "Your message must have at least 50 characters"
+              },
+              "success": {
+                "heading": "Message sent successfully",
+                "description": "Please check your inbox"
+              }
+            }
           },
           "nav": {
             "ariaLabel": "Social networks"
