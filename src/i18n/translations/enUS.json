@@ -144,6 +144,7 @@
               "submitting": "Submitting..."
             },
             "toast": {
+              "closeButton": "Close",
               "error": {
                 "heading": "There was a problem",
                 "description": "Please try again later"
