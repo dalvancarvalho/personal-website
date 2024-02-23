@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ['./index.html', './src/**/*.{jsx,js}'],
   darkMode: 'class', // Enables manual dark mode customization
@@ -25,6 +27,10 @@ module.exports = {
         'rock-salt': ['Rock Salt', 'cursive'],
         urbanist: ['Urbanist Variable', 'sans-serif'],
       },
+    },
+    screens: {
+      xs: '600px',
+      ...defaultTheme.screens,
     },
   },
   plugins: [],
