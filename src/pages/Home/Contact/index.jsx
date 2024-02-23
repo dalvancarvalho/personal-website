@@ -2,6 +2,7 @@
 
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Toaster } from 'sonner'
 import { Trans } from 'react-i18next'
 
 import useConfetti from '../../../context/ConfettiContext'
@@ -27,45 +28,48 @@ function Contact(props) {
   const refs = useAnimation()
 
   return (
-    <Section className="relative" id="contact" ref={refs.scope}>
-      <Container className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col justify-center items-center">
-        <SectionTitle
-          title={t('pages.home.contact.heading')}
-          watermark={t('pages.home.contact.watermark')}
-        />
-        <Grid>
-          <div className="h-full col-start-1 col-end-8 flex flex-col justify-between gap-8">
-            <div className="flex flex-col gap-4 2xl:gap-6">
-              <Paragraph className="contact-paragraph">
-                <Trans components={{ highlight: <Highlight /> }}>
-                  pages.home.contact.paragraphI
-                </Trans>
-              </Paragraph>
-              <Paragraph className="contact-paragraph">
-                <Trans components={{ highlight: <Highlight /> }}>
-                  pages.home.contact.paragraphII
-                </Trans>
-              </Paragraph>
+    <>
+      <Section className="relative" id="contact" ref={refs.scope}>
+        <Container className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col justify-center items-center">
+          <SectionTitle
+            title={t('pages.home.contact.heading')}
+            watermark={t('pages.home.contact.watermark')}
+          />
+          <Grid>
+            <div className="h-full col-start-1 col-end-8 flex flex-col justify-between gap-8">
+              <div className="flex flex-col gap-4 2xl:gap-6">
+                <Paragraph className="contact-paragraph">
+                  <Trans components={{ highlight: <Highlight /> }}>
+                    pages.home.contact.paragraphI
+                  </Trans>
+                </Paragraph>
+                <Paragraph className="contact-paragraph">
+                  <Trans components={{ highlight: <Highlight /> }}>
+                    pages.home.contact.paragraphII
+                  </Trans>
+                </Paragraph>
+              </div>
+              <div className="contact-paragraph flex flex-col gap-2">
+                <MailTo t={t} />
+                <Paragraph className="flex items-center gap-2" fontWeight="font-bold">
+                  <FontAwesomeIcon
+                    className="ml-0.5 mr-[3px] 2xl:ml-[3px] 2xl:mr-2.5 text-slate-800 dark:text-gray-200 color-transition"
+                    icon={faLocationDot}
+                  />
+                  {t('pages.home.contact.location')}
+                </Paragraph>
+              </div>
             </div>
-            <div className="contact-paragraph flex flex-col gap-2">
-              <MailTo t={t} />
-              <Paragraph className="flex items-center gap-2" fontWeight="font-bold">
-                <FontAwesomeIcon
-                  className="ml-0.5 mr-[3px] 2xl:ml-[3px] 2xl:mr-2.5 text-slate-800 dark:text-gray-200 color-transition"
-                  icon={faLocationDot}
-                />
-                {t('pages.home.contact.location')}
-              </Paragraph>
+            {!screenSize.lg && <Divider />}
+            <div className="col-start-8 col-end-13 w-full">
+              <ContactForm ref={refs.form} t={t} />
             </div>
-          </div>
-          {!screenSize.lg && <Divider />}
-          <div className="col-start-8 col-end-13 w-full">
-            <ContactForm ref={refs.form} t={t} />
-          </div>
-        </Grid>
-      </Container>
-      {confetti && <Confetti />}
-    </Section>
+          </Grid>
+        </Container>
+        {confetti && <Confetti />}
+      </Section>
+      <Toaster />
+    </>
   )
 }
 
