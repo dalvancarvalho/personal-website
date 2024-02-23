@@ -9,14 +9,13 @@ import useContactForm from './hooks/useContactForm'
 import CallToAction from '../Button/CallToAction'
 import Spinner from '../Button/Spinner'
 import Input from './components/Input'
-import Message from './components/Message'
 import TextArea from './components/TextArea'
 
 const ContactForm = forwardRef(function ContactForm(props, ref) {
   // Contact form
 
   const { t } = props
-  const { handleSubmit, isSubmitting, message, ...inputs } = useContactForm()
+  const { handleSubmit, isSubmitting, ...inputs } = useContactForm()
 
   return (
     <form
@@ -25,23 +24,23 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
       ref={ref}
     >
       <h3 className="w-full text-base md:text-lg 2xl:text-xl text-slate-800 dark:text-gray-200 font-bold color-transition">
-        {t('pages.home.contact.formTitle')}
+        {t('pages.home.contact.form.title')}
       </h3>
       <Input
         inputName="name"
-        label={t('pages.home.contact.label.name')}
+        label={t('pages.home.contact.form.label.name')}
         type="text"
         {...inputs}
       />
       <Input
         inputName="email"
-        label={t('pages.home.contact.label.email')}
+        label={t('pages.home.contact.form.label.email')}
         type="email"
         {...inputs}
       />
       <TextArea
         inputName="message"
-        label={t('pages.home.contact.label.message')}
+        label={t('pages.home.contact.form.label.message')}
         {...inputs}
       />
       <CallToAction
@@ -55,12 +54,12 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
         {isSubmitting ? (
           // Shows a loading spinner if the message is being submitted
           <>
-            {t('pages.home.contact.button.submitting')}
+            {t('pages.home.contact.form.button.submitting')}
             <Spinner />
           </>
         ) : (
           <>
-            {t('pages.home.contact.button.default')}
+            {t('pages.home.contact.form.button.default')}
             <div className="absolute flex items-center gap-1 opacity-0 group-focus-visible/button:opacity-100 fa-envelope-hover group-focus-visible/button:translate-x-2">
               <FontAwesomeIcon icon={faEnvelope} />
               <FontAwesomeIcon className="text-[0.6rem]" icon={faArrowRight} />
@@ -68,7 +67,6 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
           </>
         )}
       </CallToAction>
-      <Message {...message} />
     </form>
   )
 })
