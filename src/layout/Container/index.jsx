@@ -5,7 +5,7 @@ function Container(props) {
 
   const { children, className } = props
 
-  return <div className={`container m-auto ${className}`}>{children}</div>
+  return <div className={`container ${className}`}>{children}</div>
 }
 
 export default Container
