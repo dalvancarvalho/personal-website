@@ -36,6 +36,9 @@ module.exports = {
         'rock-salt': ['Rock Salt', 'cursive'],
         urbanist: ['Urbanist Variable', 'sans-serif'],
       },
+      transitionTimingFunction: {
+        'elastic-out': 'cubic-bezier(0.5, 1.8, 0.3, 0.8)',
+      },
     },
     screens: {
       xs: '600px',

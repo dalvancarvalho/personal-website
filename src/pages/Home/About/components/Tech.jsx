@@ -17,7 +17,7 @@ function Tech(props) {
         target="_blank"
       >
         <FontAwesomeIcon
-          className="text-sm 2xl:text-base text-accent transition-all duration-150 tech-hover"
+          className="mr-1.5 text-sm 2xl:text-base text-accent transition-all ease-elastic-out duration-300 tech-hover"
           icon={faCaretRight}
         />
         {name}
