@@ -5,6 +5,15 @@ module.exports = {
   darkMode: 'class', // Enables manual dark mode customization
   mode: 'jit', // Enables 'Just-in-Time' feature to set custom CSS properties
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1.5rem',
+        md: '2rem',
+        xl: '6rem',
+        '2xl': '10rem',
+      },
+    },
     extend: {
       colors: {
         dark: {
