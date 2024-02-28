@@ -69,7 +69,7 @@ function DesktopCard(props) {
               {t('pages.home.projects.inProgress')}
             </span>
           )}
-          <h3 className="title-font text-[2.25rem] 2xl:text-[2.75rem] leading-9 drop-shadow-md">
+          <h3 className="title-font text-[2.25rem] 2xl:text-[2.75rem] leading-9">
             {t(name)}
           </h3>
           <Paragraph

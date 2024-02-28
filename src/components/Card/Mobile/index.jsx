@@ -57,9 +57,7 @@ function MobileCard(props) {
               {t('pages.home.projects.inProgress')}
             </span>
           )}
-          <h3 className="title-font text-[1.7rem] leading-6 dark:drop-shadow-md">
-            {t(name)}
-          </h3>
+          <h3 className="title-font text-[1.7rem] leading-6">{t(name)}</h3>
           <Paragraph
             className="p-4 rounded-[0.5em] border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2 bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] shadow-xl"
             textSize="text-sm"
