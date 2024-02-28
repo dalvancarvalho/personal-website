@@ -12,6 +12,7 @@ import Container from '../../../layout/Container'
 import Divider from '../../../layout/Divider'
 import Grid from '../../../layout/Grid'
 import Section from '../../../layout/Section'
+
 import ContactForm from '../../../components/ContactForm'
 import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
@@ -29,8 +30,8 @@ function Contact(props) {
 
   return (
     <>
-      <Section className="relative" id="contact" ref={refs.scope}>
-        <Container className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col justify-center items-center">
+      <Section id="contact" ref={refs.scope}>
+        <Container className="flex flex-col justify-center items-center">
           <SectionTitle
             title={t('pages.home.contact.heading')}
             watermark={t('pages.home.contact.watermark')}

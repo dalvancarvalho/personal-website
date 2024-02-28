@@ -6,8 +6,8 @@ import { Trans } from 'react-i18next'
 import useParallax from './hooks/useParallax'
 import useAnimation from './animations/useAnimation'
 
-import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
+
 import CallToAction from '../../../components/Button/CallToAction'
 import SecondaryButton from '../../../components/Button/SecondaryButton'
 import DynamicImage from '../../../components/DynamicImage'
@@ -25,14 +25,10 @@ function Hero(props) {
   const scopeRef = useAnimation(bgRef, textRef)
 
   return (
-    <Section
-      className="relative isolate h-[100dvh] overflow-hidden"
-      id="home"
-      ref={scopeRef}
-    >
-      <Container className="h-full px-6 grid place-content-center">
+    <Section className="relative isolate h-dvh overflow-hidden" id="home" ref={scopeRef}>
+      <div className="px-6 h-full grid place-content-center">
         <div
-          className="w-full sm:max-w-lg md:max-w-xl 2xl:max-w-2xl m-auto flex flex-col items-start"
+          className="m-auto w-full sm:max-w-lg md:max-w-xl 2xl:max-w-2xl flex flex-col items-start"
           ref={textRef}
         >
           <h1 className="title-font text-5xl md:text-7xl 2xl:text-8xl">
@@ -65,7 +61,7 @@ function Hero(props) {
             </ScrollLink>
           </div>
         </div>
-      </Container>
+      </div>
       <div className="absolute bottom-0 -z-10 h-full w-full" ref={bgRef}>
         <DynamicImage
           alt={t('pages.home.hero.bgAltText')}

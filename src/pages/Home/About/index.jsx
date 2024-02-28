@@ -11,6 +11,7 @@ import Container from '../../../layout/Container'
 import Divider from '../../../layout/Divider'
 import Grid from '../../../layout/Grid'
 import Section from '../../../layout/Section'
+
 import CallToAction from '../../../components/Button/CallToAction'
 import DynamicImage from '../../../components/DynamicImage'
 import Highlight from '../../../components/Text/Highlight'
@@ -37,7 +38,7 @@ function About(props) {
 
   return (
     <Section id="about" ref={refs.scope}>
-      <Container className="px-6 md:px-8 xl:px-24 2xl:px-40 flex flex-col justify-center items-center">
+      <Container className="flex flex-col justify-center items-center">
         <SectionTitle
           title={t('pages.home.about.heading')}
           watermark={t('pages.home.about.watermark')}

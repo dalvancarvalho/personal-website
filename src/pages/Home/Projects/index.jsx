@@ -6,6 +6,7 @@ import useAnimation from './animations/useAnimation'
 
 import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
+
 import DesktopCard from '../../../components/Card/Desktop'
 import MobileCard from '../../../components/Card/Mobile'
 import Highlight from '../../../components/Text/Highlight'
@@ -27,7 +28,7 @@ function Projects(props) {
       id="projects"
       ref={refs.scope}
     >
-      <Container className="px-6 md:px-8 xl:px-40 2xl:px-44 flex flex-col justify-center items-center">
+      <Container className="xl:px-40 2xl:px-44 flex flex-col justify-center items-center">
         <SectionTitle
           title={t('pages.home.projects.heading')}
           watermark={t('pages.home.projects.watermark')}

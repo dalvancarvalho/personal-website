@@ -3,6 +3,7 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import Container from '../Container'
+
 import Breadcrumbs from './components/Breadcrumbs'
 import Link from './components/Link'
 import LiveDemo from './components/LiveDemo'
@@ -17,7 +18,7 @@ function PageHeader(props) {
       className="w-full pt-32 md:pt-44 pb-4 md:pb-10 bg-slate-150 dark:bg-dark-5 color-transition"
       id={id}
     >
-      <Container className="px-6 sm:px-8 xl:px-40 2xl:px-64 flex flex-col md:flex-row justify-end md:items-end md:justify-between">
+      <Container className="xl:px-40 2xl:px-64 flex flex-col md:flex-row justify-end md:items-end md:justify-between">
         <div>
           <Breadcrumbs subject={t(subject)} t={t} />
           <h1 className="mt-4 text-[2.5rem] leading-10 md:text-5xl title-font text-slate-800 dark:text-gray-200 color-transition">
