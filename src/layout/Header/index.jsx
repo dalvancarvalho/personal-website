@@ -9,6 +9,7 @@ import useScreenProps from '../../hooks/useScreenProps'
 import useAnimation from './animations/Header/useAnimation'
 
 import Container from '../Container'
+
 import SkipToContent from '../../components/Button/SkipToContent'
 import LanguageSwitch from './components/LanguageSwitch'
 import Divider from './components/Divider'
@@ -36,7 +37,7 @@ function Header() {
     >
       <SkipToContent t={t} />
       <Container
-        className={`px-6 md:px-8 h-full flex items-center ${
+        className={`h-full flex items-center ${
           pathname !== '/404' ? 'justify-between' : 'justify-end'
         }`}
       >

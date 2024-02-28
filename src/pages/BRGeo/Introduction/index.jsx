@@ -2,9 +2,11 @@
 
 import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
+
 import CodeSnippet from '../../../components/CodeSnippet'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
+
 import snippetModel from '../../../constants/snippets'
 
 function Introduction(props) {

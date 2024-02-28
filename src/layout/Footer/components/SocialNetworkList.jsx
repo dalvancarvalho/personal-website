@@ -1,6 +1,7 @@
 /* SocialNetworkList */
 
 import SocialNetworkLink from './SocialNetworkLink'
+
 import socialNetworks from '../../../constants/socialNetworks'
 
 function SocialNetworkList(props) {

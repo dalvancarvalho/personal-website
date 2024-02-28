@@ -4,6 +4,7 @@ import { Trans } from 'react-i18next'
 
 import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
+
 import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
