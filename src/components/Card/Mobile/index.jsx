@@ -36,7 +36,7 @@ function MobileCard(props) {
       >
         <img alt={t(altText)} className="aspect-video" src={thumbnail} />
         <ul
-          className={`absolute inset-0 h-full w-full px-4 opacity-0 from-[#000000bf] to-transparent flex flex-col justify-center gap-0.5 ${
+          className={`absolute inset-0 size-full px-4 opacity-0 from-[#000000bf] flex flex-col justify-center gap-0.5 ${
             isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'
           }`}
           ref={refs.stack}
@@ -69,7 +69,7 @@ function MobileCard(props) {
           </CallToAction>
         </div>
         <FontAwesomeIcon
-          className={`px-2 py-2 text-xl text-dark-2 dark:text-slate-50 bg-slate-50 dark:bg-dark-2 drop-shadow-md cursor-pointer transition duration-300 rounded-lg bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] ${
+          className={`p-2 text-xl text-dark-2 dark:text-slate-50 bg-slate-50 dark:bg-dark-2 drop-shadow-md cursor-pointer transition duration-300 rounded-lg bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] ${
             showImage ? (isEven ? 'rotate-180' : '-rotate-180') : null
           }`}
           icon={isEven ? faChevronLeft : faChevronRight}

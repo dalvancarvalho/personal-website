@@ -62,7 +62,7 @@ function Hero(props) {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 -z-10 h-full w-full" ref={bgRef}>
+      <div className="absolute bottom-0 -z-10 size-full" ref={bgRef}>
         <DynamicImage
           alt={t('pages.home.hero.bgAltText')}
           className="absolute bottom-0 h-[90%] w-full object-cover"

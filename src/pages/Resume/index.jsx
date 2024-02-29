@@ -4,12 +4,13 @@ import { useTranslation } from 'react-i18next'
 
 import useScrollSpy from '../../hooks/useScrollSpy'
 
+import Download from './Download'
+
 import Footer from '../../layout/Footer'
 import PageHeader from '../../layout/PageHeader'
 import MainSection from '../../layout/Section/MainSection'
 
 import Meta from '../../components/Meta'
-import Download from './Download'
 
 function Resume() {
   // Resume page
@@ -24,7 +25,7 @@ function Resume() {
         title={t('meta.title.resume')}
         url="https://dalvanc.com/resume"
       />
-      <MainSection className="min-h-[100dvh] flex flex-col items-center">
+      <MainSection className="min-h-dvh flex flex-col items-center">
         <PageHeader
           id="home"
           githubUrl="https://github.com/dalvancarvalho/"

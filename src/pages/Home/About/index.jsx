@@ -51,13 +51,13 @@ function About(props) {
             <HoverText t={t} />
             <img
               alt={t('pages.home.about.meAltText')}
-              className="absolute w-full h-full object-cover"
+              className="absolute size-full object-cover"
               loading="lazy"
               src={meColor}
             />
             <img
               alt={t('pages.home.about.meAltText')}
-              className="absolute w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-150"
+              className="absolute size-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-150"
               loading="lazy"
               src={meBw}
             />
@@ -109,12 +109,12 @@ function About(props) {
             </CallToAction>
           </div>
           <div
-            className="relative w-full h-full col-start-5 col-end-13 row-span-full hidden lg:flex flex-col items-start self-center justify-self-center gap-4 2xl:gap-6 select-none"
+            className="relative size-full col-start-5 col-end-13 row-span-full hidden lg:flex flex-col items-start self-center justify-self-center gap-4 2xl:gap-6 select-none"
             ref={refs.image}
           >
             <DynamicImage
               alt={t('pages.home.about.stackAltText')}
-              className="absolute w-full h-full"
+              className="absolute size-full"
               darkVersion={stackDark}
               lazy
               lightVersion={stackLight}

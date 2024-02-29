@@ -9,7 +9,7 @@
 }
 
 *::-webkit-scrollbar {
-  @apply w-3 h-3;
+  @apply size-3;
 }
 
 *::-webkit-scrollbar-track {

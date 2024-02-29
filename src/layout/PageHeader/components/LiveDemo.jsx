@@ -15,7 +15,7 @@ function LiveDemo(props) {
       rel="noopener noreferrer"
       target="_blank"
     >
-      <span className="relative w-6 h-6">
+      <span className="relative size-6">
         <FontAwesomeIcon
           className="absolute top-[25%] left-[25%] text-xs text-green-500 animate-ping"
           icon={faCircle}

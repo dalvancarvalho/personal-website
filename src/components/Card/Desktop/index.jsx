@@ -23,7 +23,7 @@ function DesktopCard(props) {
 
   return (
     <div
-      className="isolate max-w-md md:max-w-max grid md:grid-cols-12 gap-4"
+      className="isolate max-w-md md:max-w-max grid grid-cols-12 gap-4"
       ref={refs.scope}
     >
       <div
@@ -40,7 +40,7 @@ function DesktopCard(props) {
           src={thumbnail}
         />
         <ul
-          className={`absolute inset-0 h-full w-full px-4 opacity-0 from-[#000000a5] to-transparent flex flex-col justify-center gap-2 ${
+          className={`absolute inset-0 size-full px-4 opacity-0 from-[#000000a5] flex flex-col justify-center gap-2 ${
             isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'
           }`}
           ref={refs.stack}

@@ -25,7 +25,7 @@ function NotFound() {
       <Helmet>
         <title>{t('meta.title.notFound')}</title>
       </Helmet>
-      <MainSection className="relative isolate h-[100dvh] grid place-items-center">
+      <MainSection className="relative isolate h-dvh grid place-items-center">
         <Container className="relative h-full px-6 md:px-12 2xl:px-32 flex flex-col items-center justify-center">
           <h1 className="title-font text-5xl md:text-7xl 2xl:text-8xl">
             {t('pages.notFound.heading')} &nbsp;

@@ -30,20 +30,20 @@ function Menu(props) {
       >
         <div className="overflow-hidden">
           <div
-            className="w-6 h-6 flex flex-col items-center gap-px justify-center text-slate-900 dark:text-gray-200 -translate-y-1/2"
+            className="size-6 flex flex-col items-center gap-px justify-center text-slate-900 dark:text-gray-200 -translate-y-1/2"
             ref={buttonRef}
           >
-            <FontAwesomeIcon className="w-full h-full" icon={faXmark} />
+            <FontAwesomeIcon className="size-full" icon={faXmark} />
             <FontAwesomeIcon className="w-10/12 h-full" icon={faBars} />
           </div>
         </div>
       </Button>
       <div
-        className={`-z-10 absolute inset-0 h-[100dvh] w-[100dvw] bg-white dark:bg-black bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] transition-all duration-300 ${
+        className={`-z-10 absolute inset-0 h-dvh w-dvw bg-white dark:bg-black bg-opacity-[85%] dark:bg-opacity-[85%] backdrop-blur-[8px] transition-all duration-300 ${
           isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
-        <Container className="h-full">
+        <Container className="p-0 h-full">
           <div
             className="pt-4 w-4/6 h-full flex flex-col justify-center gap-3 font-mark-pro tracking-tight"
             ref={menuRef}

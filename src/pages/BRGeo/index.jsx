@@ -27,7 +27,7 @@ function BRGeo() {
         title={t('meta.title.brGeo')}
         url="https://dalvanc.com/br-geo"
       />
-      <MainSection className="min-h-[100dvh] flex flex-col items-center">
+      <MainSection className="min-h-dvh flex flex-col items-center">
         <PageHeader id="home" t={t} {...brGeoData} />
         <Introduction t={t} />
         {/* Details... */}

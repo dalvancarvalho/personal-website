@@ -29,7 +29,7 @@ function Home() {
         title={t('meta.title.home')}
         url="https://dalvanc.com/"
       />
-      <MainSection className="min-h-[100dvh] w-full overflow-hidden md:overflow-visible">
+      <MainSection className="min-h-dvh w-full overflow-hidden md:overflow-visible">
         <Hero t={t} />
         <About t={t} />
         <Projects screenProps={screenProps} t={t} />

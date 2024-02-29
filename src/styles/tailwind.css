@@ -28,7 +28,7 @@
   }
 
   .disable-scrolling {
-    @apply h-[100dvh] overflow-y-hidden;
+    @apply h-dvh overflow-y-hidden;
   }
 
   .debug {
