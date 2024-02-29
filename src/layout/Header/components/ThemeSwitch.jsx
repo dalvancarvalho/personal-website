@@ -22,7 +22,7 @@ function ThemeSwitch(props) {
     >
       <div className="overflow-hidden">
         <div
-          className={`w-6 h-7 flex flex-col justify-center gap-3 transition-transform ease-out duration-300 ${
+          className={`w-6 h-7 flex flex-col justify-center gap-3 transition-transform ease-elastic-out duration-500 ${
             theme === 'light' ? 'translate-y-1/2' : '-translate-y-1/2'
           }`}
         >

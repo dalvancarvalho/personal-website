@@ -21,7 +21,7 @@ function LanguageSwitch(props) {
     >
       <div className="overflow-hidden">
         <div
-          className={`w-6 h-7 flex flex-col justify-center transition-transform ease-out duration-300 ${
+          className={`w-6 h-7 flex flex-col justify-center transition-transform ease-elastic-out duration-500 ${
             language.id === 'PT' ? 'translate-y-1/2' : '-translate-y-1/2'
           }`}
         >
