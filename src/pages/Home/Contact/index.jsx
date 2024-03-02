@@ -30,7 +30,7 @@ function Contact(props) {
 
   return (
     <>
-      <Section id="contact" ref={refs.scope}>
+      <Section className="relative" id="contact" ref={refs.scope}>
         <Container className="flex flex-col justify-center items-center">
           <SectionTitle
             title={t('pages.home.contact.heading')}
@@ -69,7 +69,7 @@ function Contact(props) {
         </Container>
         {confetti && <Confetti />}
       </Section>
-      <Toaster />
+      <Toaster position="bottom-center" />
     </>
   )
 }
