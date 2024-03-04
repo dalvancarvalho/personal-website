@@ -1,15 +1,18 @@
 /* App.jsx */
 
+import { Analytics } from '@vercel/analytics/react'
 import { gsap } from 'gsap'
 import { Helmet } from 'react-helmet-async'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { TextPlugin } from 'gsap/TextPlugin'
 
 import useTheme from './context/ThemeContext'
 
-import Routes from './routes'
 import Header from './layout/Header'
 import Main from './layout/Main'
+
+import Routes from './routes'
 
 // GSAP plugins
 if (typeof window !== 'undefined') gsap.registerPlugin(ScrollTrigger, TextPlugin)
@@ -30,6 +33,8 @@ function App() {
       <Main>
         <Routes />
       </Main>
+      <Analytics />
+      <SpeedInsights />
     </>
   )
 }
