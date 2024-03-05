@@ -24,7 +24,7 @@ function Tooltip(props) {
 
     // When the 'position' prop is not passed
     default:
-      tooltipPosition = 'right-0 translate-x-0 2xl:right-1/2 2xl:translate-x-1/2'
+      tooltipPosition = 'right-0 translate-x-0 xl:right-1/2 xl:translate-x-1/2'
   }
 
   return (
