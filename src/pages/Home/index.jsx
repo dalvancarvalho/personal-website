@@ -25,7 +25,7 @@ function Home() {
   return (
     <>
       <Meta
-        description="Dalvan Carvalho is a Front-End Developer who channels his creativity to transform the web into an enjoyable place for everyone."
+        description="Dalvan Carvalho is a front-end developer who channels his creativity to transform the web into an enjoyable place for everyone."
         title={t('meta.title.home')}
         url="https://dalvanc.com/"
       />
