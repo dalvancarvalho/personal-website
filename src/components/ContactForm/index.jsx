@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import useContactForm from './hooks/useContactForm'
 
 import CallToAction from '../Button/CallToAction'
-import Spinner from '../Button/Spinner'
+import Spinner from '../Button/Utils/Spinner'
 import Input from './components/Input'
 import TextArea from './components/TextArea'
 

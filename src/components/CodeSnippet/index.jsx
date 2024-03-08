@@ -7,8 +7,7 @@ import { Trans } from 'react-i18next'
 import useCodeSnippet from './hooks/useCodeSnippet'
 import useScreenProps from '../../hooks/useScreenProps'
 
-import Button from '../Button'
-import Tooltip from '../Tooltip'
+import Button from '../Button/Standard'
 
 function CodeSnippet(props) {
   // Syntax highlighted code snippet box for example purposes
@@ -30,19 +29,20 @@ function CodeSnippet(props) {
               <FontAwesomeIcon icon={faCheck} />
             </p>
           ) : (
-            <Button className="relative" onClick={copyToClipboard}>
+            <Button
+              callback={copyToClipboard}
+              tooltipContent={<Trans>misc.codeSnippet.copyTooltip</Trans>}
+              tooltipPosition="left"
+            >
               <FontAwesomeIcon icon={faCopy} />
-              <Tooltip position="left">
-                <Trans>misc.codeSnippet.copyTooltip</Trans>
-              </Tooltip>
             </Button>
           )}
           {!screenSize.md && (
-            <Button className="relative">
+            <Button
+              tooltipContent={<Trans>misc.codeSnippet.infoTooltip</Trans>}
+              tooltipPosition="left"
+            >
               <FontAwesomeIcon icon={faInfoCircle} />
-              <Tooltip position="left">
-                <Trans>misc.codeSnippet.infoTooltip</Trans>
-              </Tooltip>
             </Button>
           )}
         </div>

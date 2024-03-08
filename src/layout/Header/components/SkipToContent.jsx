@@ -1,9 +1,9 @@
-/* SkipToContent/index.jsx */
+/* SkipToContent.jsx */
 
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import CallToAction from '../CallToAction'
+import CallToAction from '../../../components/Button/CallToAction'
 
 function SkipToContent(props) {
   // Jumps directly to the content of the page when triggered,

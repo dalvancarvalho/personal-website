@@ -10,12 +10,12 @@ import useAnimation from './animations/Header/useAnimation'
 
 import Container from '../Container'
 
-import SkipToContent from '../../components/Button/SkipToContent'
 import LanguageSwitch from './components/LanguageSwitch'
 import Divider from './components/Divider'
 import Logo from './components/Logo'
 import Menu from './components/Menu'
 import Navbar from './components/Navbar'
+import SkipToContent from './components/SkipToContent'
 import ThemeSwitch from './components/ThemeSwitch'
 
 function Header() {

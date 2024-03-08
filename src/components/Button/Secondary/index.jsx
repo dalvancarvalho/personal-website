@@ -1,4 +1,4 @@
-/* SecondaryButton/index.jsx */
+/* Secondary/index.jsx */
 
 function SecondaryButton(props) {
   // Secondary button
