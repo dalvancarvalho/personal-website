@@ -56,8 +56,7 @@ function MenuProvider({ children }) {
 }
 
 function useMenu() {
-  // Toggles the state of a menu when a click happens
-  // outside of its bounds or the 'Escape' key is pressed
+  // Handles the logic of the main menu
 
   return useContext(MenuContext)
 }
