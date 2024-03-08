@@ -4,8 +4,7 @@ import { Trans } from 'react-i18next'
 
 import useLanguage from '../../../context/LanguageContext'
 
-import Button from '../../../components/Button'
-import Tooltip from '../../../components/Tooltip'
+import Button from '../../../components/Button/Standard'
 
 function LanguageSwitch(props) {
   // Switches the display language between Brazilian Portuguese and English
@@ -16,8 +15,9 @@ function LanguageSwitch(props) {
   return (
     <Button
       ariaLabel={t('header.language.ariaLabel')}
-      className="relative"
-      onClick={changeLanguage}
+      callback={changeLanguage}
+      shortcutKey={SHORTCUT_KEY}
+      tooltipContent={<Trans>header.language.hover</Trans>}
     >
       <div className="overflow-hidden">
         <div
@@ -30,9 +30,6 @@ function LanguageSwitch(props) {
         </div>
       </div>
       <p className="sr-only">{t('header.language.ariaLabel')}</p>
-      <Tooltip shortcutKey={SHORTCUT_KEY}>
-        <Trans>header.language.hover</Trans>
-      </Tooltip>
     </Button>
   )
 }

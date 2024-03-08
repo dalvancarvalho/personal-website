@@ -80,10 +80,6 @@
   .tech-hover {
     @apply group-hover/link:translate-x-1 ease-out;
   }
-
-  .tooltip-hover {
-    @apply group-hover:visible group-hover:opacity-100;
-  }
 }
 
 @media (hover: none) {
@@ -159,9 +155,5 @@
 
   .tech-hover {
     @apply translate-x-0;
-  }
-
-  .tooltip-hover {
-    @apply invisible;
   }
 }

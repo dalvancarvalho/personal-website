@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import useTheme from '../../../context/ThemeContext'
 
-import Button from '../../../components/Button'
-import Tooltip from '../../../components/Tooltip'
+import Button from '../../../components/Button/Standard'
 
 function ThemeSwitch(props) {
   // Switches the theme between light and dark
@@ -17,8 +16,11 @@ function ThemeSwitch(props) {
   return (
     <Button
       ariaLabel={t('header.theme.ariaLabel')}
-      className="relative"
-      onClick={changeTheme}
+      callback={changeTheme}
+      shortcutKey={SHORTCUT_KEY}
+      tooltipContent={
+        theme === 'light' ? t('header.theme.hoverLight') : t('header.theme.hoverDark')
+      }
     >
       <div className="overflow-hidden">
         <div
@@ -31,9 +33,6 @@ function ThemeSwitch(props) {
         </div>
       </div>
       <p className="sr-only">{t('header.theme.ariaLabel')}</p>
-      <Tooltip shortcutKey={SHORTCUT_KEY}>
-        {theme === 'light' ? t('header.theme.hoverLight') : t('header.theme.hoverDark')}
-      </Tooltip>
     </Button>
   )
 }

@@ -8,7 +8,7 @@ import useAnimation from '../animations/Menu/useAnimation'
 
 import Container from '../../Container'
 
-import Button from '../../../components/Button'
+import Button from '../../../components/Button/Standard'
 import LanguageList from './LanguageList'
 import NavList from './NavList'
 import ThemeList from './ThemeList'
@@ -23,10 +23,10 @@ function Menu(props) {
   return (
     <div className="grid place-items-center" ref={scopeRef}>
       <Button
+        callback={() => setMenuState((current) => !current)}
         className={`!transition !duration-300 ${
           y === 0 || isMenuOpen ? 'scale-[1.4]' : null
         }`}
-        onClick={() => setMenuState((current) => !current)}
       >
         <div className="overflow-hidden">
           <div
