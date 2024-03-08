@@ -1,17 +1,17 @@
-/* MobileCard/index.jsx */
+/* SmallCard/index.jsx */
 
 import { useRef, useState } from 'react'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
-import useAnimation from '../animations/Mobile/useAnimation'
+import useAnimation from '../animations/Small/useAnimation'
 
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
 import Tech from '../components/Tech'
 
-function MobileCard(props) {
+function SmallCard(props) {
   // Displays a project and its main features in a card tailored for small screens
 
   const { index, project, t } = props
@@ -81,4 +81,4 @@ function MobileCard(props) {
   )
 }
 
-export default MobileCard
+export default SmallCard

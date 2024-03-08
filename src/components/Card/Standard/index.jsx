@@ -1,17 +1,17 @@
-/* DesktopCard/index.jsx */
+/* StandardCard/index.jsx */
 
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
 import useParallax from '../hooks/useParallax'
-import useAnimation from '../animations/Desktop/useAnimation'
+import useAnimation from '../animations/Standard/useAnimation'
 
 import CallToAction from '../../Button/CallToAction'
 import Paragraph from '../../Text/Paragraph'
 import Tech from '../components/Tech'
 
-function DesktopCard(props) {
+function Card(props) {
   // Displays a project and its main features in a modern looking card
 
   const { index, project, t } = props
@@ -91,4 +91,4 @@ function DesktopCard(props) {
   )
 }
 
-export default DesktopCard
+export default Card

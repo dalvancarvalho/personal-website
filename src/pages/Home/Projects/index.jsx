@@ -7,8 +7,8 @@ import useAnimation from './animations/useAnimation'
 import Container from '../../../layout/Container'
 import Section from '../../../layout/Section'
 
-import DesktopCard from '../../../components/Card/Desktop'
-import MobileCard from '../../../components/Card/Mobile'
+import Card from '../../../components/Card/Standard'
+import SmallCard from '../../../components/Card/Small'
 import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
@@ -42,9 +42,9 @@ function Projects(props) {
         <div className="lg:mx-12 2xl:mx-20 flex flex-col items-center gap-20 md:gap-24 2xl:gap-32">
           {projects.map((project, index) =>
             screenSize.md ? (
-              <DesktopCard index={index} key={project.name} project={project} t={t} />
+              <Card index={index} key={project.name} project={project} t={t} />
             ) : (
-              <MobileCard index={index} key={project.name} project={project} t={t} />
+              <SmallCard index={index} key={project.name} project={project} t={t} />
             )
           )}
         </div>
