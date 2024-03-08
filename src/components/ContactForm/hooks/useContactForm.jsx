@@ -8,7 +8,7 @@ import useConfetti from '../../../context/ConfettiContext'
 
 import Toast from '../components/Toast'
 
-const MIN_LENGTH = 50
+const MIN_MESSAGE_LENGTH = 50
 
 function useContactForm() {
   // Handles the functionality of the contact form
@@ -29,7 +29,7 @@ function useContactForm() {
     const inputFields = Object.values(inputs)
     const message = inputFields[2]
     const isFormComplete = inputFields.every((input) => input !== '')
-    const isMessageShort = message.length < MIN_LENGTH
+    const isMessageShort = message.length < MIN_MESSAGE_LENGTH
 
     if (isFormComplete && !isMessageShort) {
       sendEmail()
