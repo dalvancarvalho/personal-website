@@ -9,7 +9,7 @@ import useAnimation from './animations/useAnimation'
 import Section from '../../../layout/Section'
 
 import CallToAction from '../../../components/Button/CallToAction'
-import SecondaryButton from '../../../components/Button/SecondaryButton'
+import SecondaryButton from '../../../components/Button/Secondary'
 import DynamicImage from '../../../components/DynamicImage'
 import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
