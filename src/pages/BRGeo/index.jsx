@@ -12,7 +12,7 @@ import MainSection from '../../layout/Section/MainSection'
 
 import Meta from '../../components/Meta'
 
-import { brGeoData } from '../../constants/projects'
+import { brGeo } from '../../constants/projects'
 
 function BRGeo() {
   // BR Geo
@@ -28,7 +28,7 @@ function BRGeo() {
         url="https://dalvanc.com/br-geo"
       />
       <MainSection className="min-h-dvh flex flex-col items-center">
-        <PageHeader id="home" t={t} {...brGeoData} />
+        <PageHeader id="home" t={t} {...brGeo} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>

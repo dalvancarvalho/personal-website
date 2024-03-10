@@ -12,7 +12,7 @@ import MainSection from '../../layout/Section/MainSection'
 
 import Meta from '../../components/Meta'
 
-import { personalWebsiteData } from '../../constants/projects'
+import { personalWebsite } from '../../constants/projects'
 
 function PersonalWebsite() {
   // Personal website
@@ -28,7 +28,7 @@ function PersonalWebsite() {
         url="https://dalvanc.com/personal-website"
       />
       <MainSection className="min-h-dvh flex flex-col items-center">
-        <PageHeader id="home" t={t} {...personalWebsiteData} />
+        <PageHeader id="home" t={t} {...personalWebsite} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>

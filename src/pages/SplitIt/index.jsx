@@ -12,7 +12,7 @@ import MainSection from '../../layout/Section/MainSection'
 
 import Meta from '../../components/Meta'
 
-import { splitItData } from '../../constants/projects'
+import { splitIt } from '../../constants/projects'
 
 function SplitIt() {
   // Split it!
@@ -28,7 +28,7 @@ function SplitIt() {
         url="https://dalvanc.com/split-it"
       />
       <MainSection className="min-h-dvh flex flex-col items-center">
-        <PageHeader id="home" t={t} {...splitItData} />
+        <PageHeader id="home" t={t} {...splitIt} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>
