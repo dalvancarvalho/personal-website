@@ -23,8 +23,7 @@ import MailTo from './components/MailTo'
 function Contact(props) {
   // Contact section
 
-  const { screenProps, t } = props
-  const { screenSize } = screenProps
+  const { screenSize, t } = props
   const { confetti } = useConfetti()
   const refs = useAnimation()
 

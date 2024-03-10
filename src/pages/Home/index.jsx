@@ -32,8 +32,8 @@ function Home() {
       <MainSection className="min-h-dvh w-full overflow-hidden md:overflow-visible">
         <Hero t={t} />
         <About t={t} />
-        <Projects screenProps={screenProps} t={t} />
-        <Contact screenProps={screenProps} t={t} />
+        <Projects {...screenProps} t={t} />
+        <Contact {...screenProps} t={t} />
       </MainSection>
       <Footer />
     </>

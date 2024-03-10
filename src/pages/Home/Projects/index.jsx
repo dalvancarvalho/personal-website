@@ -18,8 +18,7 @@ import projects from '../../../constants/projects'
 function Projects(props) {
   // Projects section
 
-  const { screenProps, t } = props
-  const { screenSize } = screenProps
+  const { screenSize, t } = props
   const refs = useAnimation()
 
   return (
