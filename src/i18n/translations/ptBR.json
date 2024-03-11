@@ -49,9 +49,9 @@
         }
       },
       "language": {
-        "ariaLabel": "Toggle display language",
+        "ariaLabel": "Alternar idioma de exibição",
         "heading": "Idioma",
-        "hover": "Toggle display language <br /> to English (US)"
+        "hover": "Alternar idioma de exibição"
       },
       "theme": {
         "ariaLabel": "Alternar tema",
