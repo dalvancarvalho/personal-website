@@ -74,19 +74,20 @@ O website conta com uma versão clara e uma escura. Você pode pré-visualizar a
 
 Na tabela abaixo, encontram-se listados todos os recursos utilizados:
 
-| Recurso                                                                       | Utilização                                                |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------- |
-| [EmailJS](https://www.emailjs.com/)                                           | Envio de e-mails, diretamente do formulário de contato    |
-| [Font Awesome](https://fontawesome.com/)                                      | Ícones e logomarcas                                       |
-| [Fontsource](https://fontsource.org/)                                         | Hospedagem local de fontes do Google                      |
-| [GSAP](https://greensock.com/gsap/)                                           | Animações ao longo do website                             |
-| [i18next](https://react.i18next.com/)                                         | Internacionalização                                       |
-| [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                     |
-| [React Confetti](https://www.npmjs.com/package/react-confetti)                | Animação de confetes após o envio do formulário           |
-| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Manipulação de metadados                                  |
-| [React Router](https://reactrouter.com/en/main/)                              | Gerenciamento de rotas                                    |
-| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Animação de rolagem vertical                              |
-| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Efeito paralaxe na seção principal e nos cards de projeto |
+| Recurso                                                                       | Utilização                                                          |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [EmailJS](https://www.emailjs.com/)                                           | Envio de e-mails, diretamente do formulário de contato              |
+| [Font Awesome](https://fontawesome.com/)                                      | Ícones e logomarcas                                                 |
+| [Fontsource](https://fontsource.org/)                                         | Hospedagem local de fontes do Google                                |
+| [GSAP](https://greensock.com/gsap/)                                           | Animações ao longo do website                                       |
+| [i18next](https://react.i18next.com/)                                         | Internacionalização                                                 |
+| [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                               |
+| [React Confetti](https://www.npmjs.com/package/react-confetti)                | Animação de confetes após o envio do formulário                     |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Manipulação de metadados                                            |
+| [React Router](https://reactrouter.com/en/main/)                              | Gerenciamento de rotas                                              |
+| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Animação de rolagem vertical                                        |
+| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Efeito paralaxe na seção principal e nos cards de projeto           |
+| [Sonner](https://sonner.emilkowal.ski/)                                       | Componente "toast" para exibição de avisos do formulário de contato |
 
 [Vite](https://vitejs.dev/), [React](https://react.dev/) e [Tailwind CSS](https://tailwindcss.com/) também foram utilizados durante o desenvolvimento.
 
@@ -151,7 +152,7 @@ Na tabela abaixo, encontram-se listados todos os recursos utilizados:
 
 ### Cores
 
-| Papel                     |  Nome no Tailwind   |                         Código hexadecimal                         |
+| Papel                     | Classe do Tailwind  |                         Código hexadecimal                         |
 | ------------------------- | :-----------------: | :----------------------------------------------------------------: |
 | Principal                 |      blue-600       | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
 | Principal (versão escura) |     orange-500      | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
