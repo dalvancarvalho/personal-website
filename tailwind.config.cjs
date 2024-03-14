@@ -15,6 +15,10 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+      },
       colors: {
         dark: {
           1: '#323232',
@@ -35,6 +39,16 @@ module.exports = {
         'mark-pro': ['Mark Pro', 'sans-serif'],
         'rock-salt': ['Rock Salt', 'cursive'],
         urbanist: ['Urbanist Variable', 'sans-serif'],
+      },
+      keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
       },
       transitionTimingFunction: {
         'elastic-out': 'cubic-bezier(0.5, 1.8, 0.3, 0.8)',
