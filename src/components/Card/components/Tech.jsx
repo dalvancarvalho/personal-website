@@ -3,7 +3,7 @@
 function Tech(props) {
   // Link to the tech's page
 
-  const { isEven, name, textSize = 'text-base 2xl:text-lg', url } = props
+  const { isEven, tech, textSize = 'text-base 2xl:text-lg', url } = props
 
   return (
     <li className={isEven ? 'translate-x-[200%]' : '-translate-x-[200%]'}>
@@ -14,7 +14,7 @@ function Tech(props) {
         tabIndex="-1"
         target="_blank"
       >
-        {name}
+        {tech}
       </a>
     </li>
   )
