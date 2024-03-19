@@ -14,9 +14,7 @@ import Header from './layout/Header'
 import Main from './layout/Main'
 
 import Routes from './routes'
-
-// GSAP plugins
-if (typeof window !== 'undefined') gsap.registerPlugin(ScrollTrigger, TextPlugin)
+import { useEffect } from 'react'
 
 function App() {
   // Main application
@@ -25,6 +23,12 @@ function App() {
   const LIGHT = '#f8fafc' // light slate
   const { theme } = useTheme()
   useConsoleMessage()
+
+  useEffect(() => {
+    // GSAP plugins
+
+    if (typeof window !== 'undefined') gsap.registerPlugin(ScrollTrigger, TextPlugin)
+  }, [])
 
   return (
     <>
