@@ -1,20 +1,20 @@
-/* SocialNetworkList */
+/* SocialNetworksList */
 
 import SocialNetworkLink from './SocialNetworkLink'
 
 import socialNetworks from '../../../constants/socialNetworks'
 
-function SocialNetworkList(props) {
+function SocialNetworksList(props) {
   // List of social network links
 
   const { t } = props
 
   return (
     <nav aria-label={t('contact.nav.ariaLabel')}>
-      <ul className="pt-0.5 pb-1 flex gap-x-6">
-        {socialNetworks.map(({ name, ...props }) => (
-          <li key={name}>
-            <SocialNetworkLink name={name} {...props} />
+      <ul className="flex gap-x-6">
+        {socialNetworks.map((props) => (
+          <li key={props.name}>
+            <SocialNetworkLink {...props} />
           </li>
         ))}
       </ul>
@@ -22,4 +22,4 @@ function SocialNetworkList(props) {
   )
 }
 
-export default SocialNetworkList
+export default SocialNetworksList
