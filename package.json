@@ -19,6 +19,7 @@
     "@emailjs/browser": "^3.10.0",
     "@fontsource-variable/fira-code": "^5.0.15",
     "@fontsource-variable/urbanist": "^5.0.18",
+    "@fontsource/jetbrains-mono": "^5.0.19",
     "@fontsource/rock-salt": "^5.0.17",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",

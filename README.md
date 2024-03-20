@@ -147,12 +147,12 @@ In the table below, all the resources used are listed:
 
 ### Fonts
 
-| Text element |                       Font family                        |    Type    |
-| ------------ | :------------------------------------------------------: | :--------: |
-| Title        |         [Mark Pro](https://8font.com/mark-pro/)          | sans-serif |
-| Paragraph    |  [Urbanist](https://fonts.google.com/specimen/Urbanist)  | sans-serif |
-| Code snippet | [Fira Code](https://fonts.google.com/specimen/Fira+Code) | monospace  |
-| Special      | [Rock Salt](https://fonts.google.com/specimen/Rock+Salt) |  cursive   |
+| Text element |                            Font family                             |    Type    |
+| ------------ | :----------------------------------------------------------------: | :--------: |
+| Title        |              [Mark Pro](https://8font.com/mark-pro/)               | sans-serif |
+| Paragraph    |       [Urbanist](https://fonts.google.com/specimen/Urbanist)       | sans-serif |
+| Code snippet | [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) | monospace  |
+| Special      |      [Rock Salt](https://fonts.google.com/specimen/Rock+Salt)      |  cursive   |
 
 ### Colors
 

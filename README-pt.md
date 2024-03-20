@@ -143,12 +143,12 @@ Na tabela abaixo, encontram-se listados todos os recursos utilizados:
 
 ### Fontes
 
-| Elemento de texto |                     Família da fonte                     |     Tipo     |
-| ----------------- | :------------------------------------------------------: | :----------: |
-| Título            |         [Mark Pro](https://8font.com/mark-pro/)          |  sans-serif  |
-| Parágrafo         |  [Urbanist](https://fonts.google.com/specimen/Urbanist)  |  sans-serif  |
-| Bloco de código   | [Fira Code](https://fonts.google.com/specimen/Fira+Code) | monoespaçada |
-| Especial          | [Rock Salt](https://fonts.google.com/specimen/Rock+Salt) |   cursiva    |
+| Elemento de texto |                          Família da fonte                          |     Tipo     |
+| ----------------- | :----------------------------------------------------------------: | :----------: |
+| Título            |              [Mark Pro](https://8font.com/mark-pro/)               |  sans-serif  |
+| Parágrafo         |       [Urbanist](https://fonts.google.com/specimen/Urbanist)       |  sans-serif  |
+| Bloco de código   | [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) | monoespaçada |
+| Especial          |      [Rock Salt](https://fonts.google.com/specimen/Rock+Salt)      |   cursiva    |
 
 ### Cores
 

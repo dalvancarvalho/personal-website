@@ -35,7 +35,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        'fira-code': ['Fira Code Variable', 'monospace'],
+        'jetbrains-mono': ['JetBrains Mono Variable', 'monospace'],
         'mark-pro': ['Mark Pro', 'sans-serif'],
         'rock-salt': ['Rock Salt', 'cursive'],
         urbanist: ['Urbanist Variable', 'sans-serif'],

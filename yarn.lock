@@ -389,6 +389,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource-variable/urbanist/-/urbanist-5.0.18.tgz#855319e6eea8eeb6540fc530255cbf9a46e3ee4d"
   integrity sha512-muPvXSrd15CK7C4eRbeFVYrCNyIq2vRp31/S7LJAfRsGN1KMmNJeBngqF8sKRkXQmg4adWLlRgQYH/rlOuv0wA==
 
+"@fontsource/jetbrains-mono@^5.0.19":
+  version "5.0.19"
+  resolved "https://registry.yarnpkg.com/@fontsource/jetbrains-mono/-/jetbrains-mono-5.0.19.tgz#780266f252016e7c16a1c3c5566de573f4b3ad07"
+  integrity sha512-SdwUuvdfuAvGWRRc4LOFRSmDrpkE+vFUpCtOIOUl1PpXdLfeU//93BZiGf7j/oFGSZJbHAurfux2uLT38/NIjw==
+
 "@fontsource/rock-salt@^5.0.17":
   version "5.0.17"
   resolved "https://registry.yarnpkg.com/@fontsource/rock-salt/-/rock-salt-5.0.17.tgz#1268eb98f08901ef14389f348fa04ad069cfa18d"
