@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
-    "@fontsource-variable/fira-code": "^5.0.15",
     "@fontsource-variable/urbanist": "^5.0.18",
     "@fontsource/jetbrains-mono": "^5.0.19",
     "@fontsource/rock-salt": "^5.0.17",
@@ -28,7 +27,7 @@
     "@radix-ui/react-accordion": "^1.1.2",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "gsap": "^3.11.4",
+    "gsap": "^3.12.5",
     "i18next": "^23.5.1",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
