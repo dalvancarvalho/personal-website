@@ -12,12 +12,13 @@ function useAnimate() {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         scope.current,
-        { opacity: 0 },
+        { opacity: 0, scale: 0.5 },
         {
           opacity: 1,
+          scale: 1,
           delay: 0.5,
           duration: 1.25,
-          ease: 'power3.out',
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: scope.current,
             start: 'bottom bottom',
