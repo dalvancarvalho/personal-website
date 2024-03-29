@@ -1,16 +1,13 @@
 /* Download/index.jsx */
 
-import { Trans } from 'react-i18next'
-
 import Container from '../../../layout/Container'
-import Section from '../../../layout/Section'
+import Section from '../../../layout/Section/Regular'
 
-import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
 import ResumeCard from '../components/ResumeCard'
 
-import resumeList from '../../../constants/resume'
+import resumeList from '../constants/resume'
 
 function Download(props) {
   // Download section
@@ -25,11 +22,10 @@ function Download(props) {
           title={t('pages.resume.download.heading')}
           watermark={t('pages.resume.download.watermark')}
         />
-        <Paragraph className="mb-16 2xl:mb-20">
-          <Trans components={{ highlight: <Highlight /> }}>
-            pages.resume.download.paragraph
-          </Trans>
-        </Paragraph>
+        <Paragraph
+          className="mb-16 2xl:mb-20"
+          i18nKey="pages.resume.download.paragraph"
+        />
         <div className="flex flex-wrap items-center justify-center gap-12 2xl:gap-16">
           {resumeList.map((props) => (
             <ResumeCard key={props.title} t={t} {...props} />

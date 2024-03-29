@@ -9,9 +9,9 @@ import { useTranslation } from 'react-i18next'
 import useScreenProps from '../../hooks/useScreenProps'
 
 import Container from '../../layout/Container'
-import MainSection from '../../layout/Section/MainSection'
+import MainSection from '../../layout/Section/Main'
 
-import CallToAction from '../../components/Button/CallToAction'
+import Button from '../../components/Button'
 import Paragraph from '../../components/Text/Paragraph'
 
 function NotFound() {
@@ -31,17 +31,19 @@ function NotFound() {
             {t('pages.notFound.heading')} &nbsp;
             <FontAwesomeIcon icon={faMapSigns} />
           </h1>
-          <Paragraph className="my-5 2xl:my-6 text-base md:text-xl 2xl:text-2xl 2xl:leading-9 max-w-2xl 2xl:max-w-3xl text-center">
-            {t('pages.notFound.paragraph')}
-          </Paragraph>
+          <Paragraph
+            className="my-5 2xl:my-6 max-w-2xl 2xl:max-w-3xl text-center"
+            i18nKey="pages.notFound.paragraph"
+            variant="lg"
+          />
           <RouterLink className="mt-4 md:mt-5 2xl:mt-6 group" tabIndex="-1" to="/">
-            <CallToAction textSize="text-sm md:text-base 2xl:text-lg">
+            <Button variant="primary-lg">
               <FontAwesomeIcon
                 className="absolute opacity-0 group-focus-visible/button:-translate-x-2 group-focus-visible/button:opacity-100 fa-arrow-left-hover"
                 icon={faArrowLeft}
               />
               {t('pages.notFound.button')}
-            </CallToAction>
+            </Button>
           </RouterLink>
         </Container>
         <span

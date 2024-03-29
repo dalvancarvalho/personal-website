@@ -2,19 +2,16 @@
 
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Trans } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 
-import useAnimation from './animations/useAnimation'
+import useAnimate from './animations/useAnimate'
 
 import Container from '../../../layout/Container'
 import Divider from '../../../layout/Divider'
 import Grid from '../../../layout/Grid'
-import Section from '../../../layout/Section'
+import Section from '../../../layout/Section/Regular'
 
-import CallToAction from '../../../components/Button/CallToAction'
-import DynamicImage from '../../../components/DynamicImage'
-import Highlight from '../../../components/Text/Highlight'
+import Button from '../../../components/Button'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
 import HoverText from './components/HoverText'
@@ -22,10 +19,9 @@ import QuotationMark from './components/QuotationMark'
 import Tech from './components/Tech'
 import Topic from './components/Topic'
 
-import technologies from '../../../constants/technologies'
+import technologies from './constants/technologies'
 
-import stackDark from '../../../assets/svg/stack-dark.svg'
-import stackLight from '../../../assets/svg/stack-light.svg'
+import stack from '../../../assets/svg/stack.svg'
 import meBw from '../../../assets/webp/me-bw-bg.webp'
 import meColor from '../../../assets/webp/me-color-bg.webp'
 
@@ -33,20 +29,21 @@ function About(props) {
   // About section
 
   const { t } = props
+
   const navigate = useNavigate()
-  const refs = useAnimation()
+  const animation = useAnimate()
 
   return (
-    <Section id="about" ref={refs.scope}>
+    <Section id="about" ref={animation.scope}>
       <Container className="flex flex-col justify-center items-center">
         <SectionTitle
           title={t('pages.home.about.heading')}
           watermark={t('pages.home.about.watermark')}
         />
-        <Grid>
+        <Grid className="gap-12 2xl:gap-14">
           <div
             className="relative mt-4 lg:mt-0 mb-6 md:mb-10 lg:mb-0 col-start-1 col-end-6 w-72 md:w-96 lg:w-full h-96 md:h-[32rem] lg:h-full flex rounded-xl overflow-hidden drop-shadow-lg group"
-            ref={refs.selfie}
+            ref={animation.selfie}
           >
             <HoverText t={t} />
             <img
@@ -64,9 +61,9 @@ function About(props) {
           </div>
           <div
             className="relative isolate col-start-6 col-end-13 flex flex-col gap-6 2xl:gap-8"
-            ref={refs.topics}
+            ref={animation.topics}
           >
-            <QuotationMark ref={refs.quotation} />
+            <QuotationMark ref={animation.quotation} />
             <Topic
               heading={t('pages.home.about.subHeadingI')}
               text="pages.home.about.paragraphI"
@@ -85,7 +82,7 @@ function About(props) {
         <Grid>
           <div
             className="z-10 col-start-1 col-end-8 row-span-full flex flex-col gap-4 2xl:gap-6 items-start group"
-            ref={refs.stack}
+            ref={animation.stack}
           >
             <h3 className="md:text-lg 2xl:text-xl font-bold text-slate-800 dark:text-gray-200 color-transition">
               {t('pages.home.about.subHeadingIV')}
@@ -95,29 +92,24 @@ function About(props) {
                 <Tech key={props.name} {...props} />
               ))}
             </ul>
-            <Paragraph className="my-2">
-              <Trans components={{ highlight: <Highlight /> }}>
-                pages.home.about.paragraphIV
-              </Trans>
-            </Paragraph>
-            <CallToAction onClick={() => navigate('resume')}>
+            <Paragraph className="my-2" i18nKey="pages.home.about.paragraphIV" />
+            <Button variant="primary" callback={() => navigate('resume')}>
               {t('pages.home.about.button')}
               <FontAwesomeIcon
                 className="absolute opacity-0 group-focus-visible/button:translate-x-2 group-focus-visible/button:opacity-100 fa-arrow-right-hover"
                 icon={faArrowRight}
               />
-            </CallToAction>
+            </Button>
           </div>
           <div
-            className="relative size-full col-start-5 col-end-13 row-span-full hidden lg:flex flex-col items-start self-center justify-self-center gap-4 2xl:gap-6 select-none"
-            ref={refs.image}
+            className="size-full col-start-5 col-end-13 row-span-full hidden lg:block"
+            ref={animation.image}
           >
-            <DynamicImage
+            <img
               alt={t('pages.home.about.stackAltText')}
-              className="absolute size-full"
-              darkVersion={stackDark}
-              lazy
-              lightVersion={stackLight}
+              className="size-full opacity-100 dark:opacity-10 transition-opacity duration-300 select-none"
+              loading="lazy"
+              src={stack}
             />
           </div>
         </Grid>

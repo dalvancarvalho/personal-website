@@ -1,17 +1,17 @@
 /* Divider/index.jsx */
 
-import useAnimation from './animations/useAnimation'
+import useAnimate from './animations/useAnimate'
 
 function Divider() {
   // SVG horizontal divider
 
-  const dividerRef = useAnimation()
+  const animation = useAnimate()
 
   return (
     <svg
-      className="my-20 lg:my-36 m-auto h-4 lg:h-6 grid place-items-center fill-slate-250 dark:fill-dark-2 color-transition"
+      className="my-20 lg:my-36 m-auto h-4 lg:h-6 grid place-items-center fill-slate-300 dark:fill-dark-1 color-transition"
       preserveAspectRatio="none"
-      ref={dividerRef}
+      ref={animation.scope}
       viewBox="0 0 132 15"
       xmlns="http://www.w3.org/2000/svg"
     >

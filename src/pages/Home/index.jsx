@@ -5,13 +5,13 @@ import { useTranslation } from 'react-i18next'
 import useScreenProps from '../../hooks/useScreenProps'
 import useScrollSpy from '../../hooks/useScrollSpy'
 
+import Footer from '../../layout/Footer'
+import MainSection from '../../layout/Section/Main'
+
 import About from './About'
 import Contact from './Contact'
 import Hero from './Hero'
 import Projects from './Projects'
-
-import Footer from '../../layout/Footer'
-import MainSection from '../../layout/Section/MainSection'
 
 import Meta from '../../components/Meta'
 

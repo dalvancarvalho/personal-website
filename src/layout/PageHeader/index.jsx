@@ -1,45 +1,46 @@
 /* PageHeader/index.jsx */
 
+import { lazy } from 'react'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import Container from '../Container'
 
 import Breadcrumbs from './components/Breadcrumbs'
-import Link from './components/Link'
-import LiveDemo from './components/LiveDemo'
+
+// Dynamic imports
+const Link = lazy(() => import('./components/Link'))
+const LiveDemo = lazy(() => import('./components/LiveDemo'))
 
 function PageHeader(props) {
-  // Displays the title of the page (H1) along with some useful links and breadcrumbs
+  // Displays the title of the page (H1) along with some useful links
 
-  const { demoUrl, githubUrl, githubRepoUrl, id, linkedInUrl, name, subject, t } = props
+  const { github, linkedIn, links, title, section, t } = props
 
   return (
     <div
       className="w-full pt-32 md:pt-44 pb-4 md:pb-10 bg-slate-150 dark:bg-dark-5 color-transition"
-      id={id}
+      id="home"
     >
       <Container className="xl:px-40 2xl:px-64 flex flex-col md:flex-row justify-end md:items-end md:justify-between">
         <div>
-          <Breadcrumbs subject={t(subject)} t={t} />
+          <Breadcrumbs section={section} t={t} />
           <h1 className="mt-4 text-[2.5rem] leading-10 md:text-5xl title-font text-slate-800 dark:text-gray-200 color-transition">
-            {t(name)}
+            {t(title)}
           </h1>
         </div>
+
+        {/* Links for socials, demos and repos (if any) are rendered here */}
         <div className="mt-10 md:mt-0 md:mb-1 flex flex-col gap-2 font-semibold">
-          {linkedInUrl && (
-            <Link icon={faLinkedin} href={linkedInUrl} text={t('pageHeader.linkedIn')} />
+          {linkedIn && (
+            <Link icon={faLinkedin} href={linkedIn} label={t('pageHeader.linkedIn')} />
           )}
-          {githubUrl && (
-            <Link icon={faGithub} href={githubUrl} text={t('pageHeader.githubProfile')} />
+          {github && (
+            <Link icon={faGithub} href={github} label={t('pageHeader.github')} />
           )}
-          {githubRepoUrl && (
-            <Link
-              icon={faGithub}
-              href={githubRepoUrl}
-              text={t('pageHeader.githubRepo')}
-            />
+          {links?.repo && (
+            <Link icon={faGithub} href={links.repo} label={t('pageHeader.repo')} />
           )}
-          {demoUrl && <LiveDemo href={demoUrl} text={t('pageHeader.demo')} />}
+          {links?.demo && <LiveDemo href={links.demo} label={t('pageHeader.demo')} />}
         </div>
       </Container>
     </div>

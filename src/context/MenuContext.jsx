@@ -11,8 +11,8 @@ function MenuProvider({ children }) {
   const documentElement = document.documentElement
   const { screenSize } = useScreenProps()
   const [isMenuOpen, setMenuState] = useState(false)
-  const buttonRef = useRef(null)
-  const menuRef = useRef(null)
+  const button = useRef(null)
+  const menu = useRef(null)
 
   useEffect(() => {
     isMenuOpen
@@ -38,8 +38,8 @@ function MenuProvider({ children }) {
   function checkOutsideClick(event) {
     if (
       isMenuOpen &&
-      !menuRef.current.contains(event.target) &&
-      !buttonRef.current.contains(event.target)
+      !menu.current.contains(event.target) &&
+      !button.current.contains(event.target)
     )
       setMenuState(false)
   }
@@ -49,7 +49,7 @@ function MenuProvider({ children }) {
   }
 
   return (
-    <MenuContext.Provider value={{ isMenuOpen, setMenuState, buttonRef, menuRef }}>
+    <MenuContext.Provider value={{ isMenuOpen, setMenuState, button, menu }}>
       {children}
     </MenuContext.Provider>
   )

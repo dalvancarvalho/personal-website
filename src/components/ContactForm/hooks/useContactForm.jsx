@@ -8,10 +8,10 @@ import useConfetti from '../../../context/ConfettiContext'
 
 import Toast from '../components/Toast'
 
-const MIN_MESSAGE_LENGTH = 50
-
 function useContactForm() {
   // Handles the functionality of the contact form
+
+  const MIN_MESSAGE_LENGTH = 50
 
   const [inputs, setInputs] = useState({
     name: '',

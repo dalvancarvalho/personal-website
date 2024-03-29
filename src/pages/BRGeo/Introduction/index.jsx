@@ -1,7 +1,7 @@
 /* Introduction/index.jsx */
 
 import Container from '../../../layout/Container'
-import Section from '../../../layout/Section'
+import Section from '../../../layout/Section/Regular'
 
 import CodeSnippet from '../../../components/CodeSnippet'
 import Paragraph from '../../../components/Text/Paragraph'
@@ -23,7 +23,7 @@ function Introduction(props) {
           watermark={t('pages.brGeo.intro.watermark')}
         />
         <Paragraph>{t('misc.comingSoon')}</Paragraph>
-        <CodeSnippet {...snippetModel} />
+        <CodeSnippet t={t} {...snippetModel} />
       </Container>
     </Section>
   )

@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next'
 
 import useScrollSpy from '../../hooks/useScrollSpy'
 
-import Introduction from './Introduction'
-
 import Footer from '../../layout/Footer'
 import PageHeader from '../../layout/PageHeader'
-import MainSection from '../../layout/Section/MainSection'
+import MainSection from '../../layout/Section/Main'
+
+import Introduction from './Introduction'
 
 import Meta from '../../components/Meta'
 
@@ -28,7 +28,7 @@ function BRGeo() {
         url="https://dalvanc.com/br-geo"
       />
       <MainSection className="min-h-dvh flex flex-col items-center">
-        <PageHeader id="home" t={t} {...brGeo} />
+        <PageHeader section="pageHeader.breadcrumbs.projects" t={t} {...brGeo} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>

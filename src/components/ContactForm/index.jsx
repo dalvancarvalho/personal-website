@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import useContactForm from './hooks/useContactForm'
 
-import CallToAction from '../Button/CallToAction'
-import Spinner from '../Button/Utils/Spinner'
+import Button from '../Button'
+import Spinner from '../Button/components/Spinner'
 import Input from './components/Input'
 import TextArea from './components/TextArea'
 
@@ -15,6 +15,7 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
   // Contact form
 
   const { t } = props
+
   const { handleSubmit, isSubmitting, ...inputs } = useContactForm()
 
   return (
@@ -43,13 +44,10 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
         label={t('pages.home.contact.form.label.message')}
         {...inputs}
       />
-      <CallToAction
-        className={`w-full ${
-          isSubmitting
-            ? '!bg-gray-400 !dark:bg-gray-500 !text-white pointer-events-none'
-            : null
-        }`}
+      <Button
         type="submit"
+        tabIndex={isSubmitting ? '-1' : '0'}
+        variant={isSubmitting ? 'submitting-w-full' : 'primary-w-full'}
       >
         {isSubmitting ? (
           // Shows a loading spinner if the message is being submitted
@@ -66,7 +64,7 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
             </div>
           </>
         )}
-      </CallToAction>
+      </Button>
     </form>
   )
 })

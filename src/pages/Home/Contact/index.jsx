@@ -1,31 +1,33 @@
 /* Contact/index.jsx */
 
+import { lazy } from 'react'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Toaster } from 'sonner'
-import { Trans } from 'react-i18next'
 
 import useConfetti from '../../../context/ConfettiContext'
-import useAnimation from './animations/useAnimation'
+import useAnimate from './animations/useAnimate'
 
 import Container from '../../../layout/Container'
 import Divider from '../../../layout/Divider'
 import Grid from '../../../layout/Grid'
-import Section from '../../../layout/Section'
+import Section from '../../../layout/Section/Regular'
 
 import ContactForm from '../../../components/ContactForm'
-import Highlight from '../../../components/Text/Highlight'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
-import Confetti from './components/Confetti'
 import MailTo from './components/MailTo'
+
+// Dynamic imports
+const Confetti = lazy(() => import('./components/Confetti'))
 
 function Contact(props) {
   // Contact section
 
   const { screenSize, t } = props
+
   const { confetti } = useConfetti()
-  const refs = useAnimation()
+  const refs = useAnimate()
 
   return (
     <>
@@ -35,29 +37,27 @@ function Contact(props) {
             title={t('pages.home.contact.heading')}
             watermark={t('pages.home.contact.watermark')}
           />
-          <Grid>
+          <Grid className="gap-x-12 2xl:gap-x-14">
             <div className="h-full col-start-1 col-end-8 flex flex-col justify-between gap-8">
               <div className="flex flex-col gap-4 2xl:gap-6">
-                <Paragraph className="contact-paragraph">
-                  <Trans components={{ highlight: <Highlight /> }}>
-                    pages.home.contact.paragraphI
-                  </Trans>
-                </Paragraph>
-                <Paragraph className="contact-paragraph">
-                  <Trans components={{ highlight: <Highlight /> }}>
-                    pages.home.contact.paragraphII
-                  </Trans>
-                </Paragraph>
+                <Paragraph
+                  className="contact-paragraph"
+                  i18nKey="pages.home.contact.paragraphI"
+                />
+                <Paragraph
+                  className="contact-paragraph"
+                  i18nKey="pages.home.contact.paragraphII"
+                />
               </div>
               <div className="contact-paragraph flex flex-col gap-2">
                 <MailTo t={t} />
-                <Paragraph className="flex items-center gap-2" fontWeight="font-bold">
+                <div className="max-w-max flex items-center gap-2 2xl:gap-3">
                   <FontAwesomeIcon
-                    className="ml-0.5 mr-[3px] 2xl:ml-[3px] 2xl:mr-2.5 text-slate-800 dark:text-gray-200 color-transition"
+                    className="w-[18px] text-lg text-slate-800 dark:text-gray-200 color-transition"
                     icon={faLocationDot}
                   />
-                  {t('pages.home.contact.location')}
-                </Paragraph>
+                  <Paragraph i18nKey="pages.home.contact.location" variant="base-bold" />
+                </div>
               </div>
             </div>
             {!screenSize.lg && <Divider />}

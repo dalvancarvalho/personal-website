@@ -4,11 +4,12 @@ import { useTranslation } from 'react-i18next'
 
 import useScrollSpy from '../../hooks/useScrollSpy'
 
-import Download from './Download'
-
 import Footer from '../../layout/Footer'
 import PageHeader from '../../layout/PageHeader'
-import MainSection from '../../layout/Section/MainSection'
+import MainSection from '../../layout/Section/Main'
+
+import Download from './Download'
+// import NewSection from './NewSection'
 
 import Meta from '../../components/Meta'
 
@@ -27,13 +28,13 @@ function Resume() {
       />
       <MainSection className="min-h-dvh flex flex-col items-center">
         <PageHeader
-          id="home"
-          githubUrl="https://github.com/dalvancarvalho/"
-          linkedInUrl="https://www.linkedin.com/in/dalvancarvalho/"
-          name={t('pages.resume.name')}
-          subject={t('pageHeader.breadcrumbs.about')}
+          github="https://github.com/dalvancarvalho/"
+          linkedIn="https://www.linkedin.com/in/dalvancarvalho/"
+          section="pageHeader.breadcrumbs.about"
+          title="pages.resume.title"
           t={t}
         />
+        {/* <NewSection t={t} /> */}
         <Download t={t} />
       </MainSection>
       <Footer />
