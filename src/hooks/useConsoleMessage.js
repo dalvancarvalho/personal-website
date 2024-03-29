@@ -5,16 +5,17 @@ import { useEffect } from 'react'
 function useConsoleMessage() {
   // Welcome message displayed inside dev tools
 
-  useEffect(
-    () =>
-      console.log(
-        '%cdalvan c_',
-        'color:#2563eb; font-weight: bold; font-family: sans-serif; font-size: 16px',
-        '\n',
-        '\nHello fellow dev, welcome to my personal website! \nFeel free to check its GitHub repository: https://github.com/dalvancarvalho/personal-website'
-      ),
-    []
-  )
+  const string =
+    '%cHello fellow dev, welcome to my personal website! \nFeel free to check its repository at: https://github.com/dalvancarvalho/personal-website'
+
+  const style = [
+    'color: #5a82db',
+    'font-weight: bold',
+    'font-family: monospace',
+    'font-size: 12px',
+  ].join('; ')
+
+  useEffect(() => console.log(string, style), [])
 }
 
 export default useConsoleMessage
