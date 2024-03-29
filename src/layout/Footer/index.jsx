@@ -28,7 +28,7 @@ function Footer() {
       </div>
       <SocialNetworksList ref={animation.socials} t={t} />
       <Paragraph ref={animation.bottom} variant="fixed-base-normal">
-        &copy; {year} <span className="font-mono">·</span> <b>dalvanc</b>.com
+        &copy; {year} <b>dalvanc</b>.com
       </Paragraph>
     </footer>
   )
