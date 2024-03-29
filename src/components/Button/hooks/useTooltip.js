@@ -5,26 +5,30 @@ import { useRef } from 'react'
 function useTooltip(tooltipContent) {
   // Handles the tooltip display logic
 
-  const tooltipRef = useRef(null)
+  const ref = useRef(null)
   let timeout
 
-  function hideTooltip() {
+  function hide() {
+    // Hides the tooltip
+
     if (!tooltipContent) return
 
     clearTimeout(timeout)
 
-    tooltipRef.current.classList.remove('tooltip-active')
+    ref.current.classList.remove('tooltip-active')
   }
 
-  function showTooltip() {
+  function show() {
+    // Shows the tooltip
+
     if (!tooltipContent) return
 
     if (timeout) clearTimeout(timeout)
 
-    timeout = setTimeout(() => tooltipRef.current.classList.add('tooltip-active'), 750)
+    timeout = setTimeout(() => ref.current.classList.add('tooltip-active'), 750)
   }
 
-  return { hideTooltip, showTooltip, tooltipRef }
+  return { hide, show, ref }
 }
 
 export default useTooltip

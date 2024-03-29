@@ -1,53 +1,57 @@
 /* Button/index.jsx */
 
-import useTooltip from './Utils/Tooltip/hooks/useTooltip'
+import { forwardRef } from 'react'
 
-import Tooltip from './Utils/Tooltip'
+import useTooltip from './hooks/useTooltip'
 
-import buttonVariants from './constants/variants'
+import Tooltip from './components/Tooltip'
 
-function Button(props) {
-  // ...
+import buttonVariants from './constants/buttonVariants'
+
+const Button = forwardRef(function Button(props, ref) {
+  // Button with primary, secondary, and unstyled variants
 
   const {
-    ariaLabel,
+    ariaLabel = 'button',
     callback,
     children,
+    className = '', // any other class needed goes here
     shortcutKey = null,
     tabIndex = '0',
-    textColor = '',
-    textSize = '',
     tooltipContent = null,
     tooltipPosition = null,
     type = 'button',
-    variant,
+    variant = 'unstyled', // defaults to 'unstyled' variant if this prop is not passed
   } = props
 
-  const { style } = buttonVariants[variant]
+  const style = buttonVariants[variant]
 
-  const { hideTooltip, showTooltip, tooltipRef } = useTooltip(tooltipContent)
+  const tooltip = useTooltip(tooltipContent)
 
   function handleClick() {
+    if (!callback) return
+
     callback()
-    hideTooltip()
+    tooltip.hide()
   }
 
   return (
     <button
-      aria-label={ariaLabel ?? 'button'}
-      className={`${style} ${textColor} ${textSize}`}
+      aria-label={ariaLabel}
+      className={`${style} ${className}`}
       onClick={handleClick}
-      onMouseEnter={showTooltip}
-      onMouseLeave={hideTooltip}
-      onFocus={showTooltip}
-      onBlur={hideTooltip}
+      onMouseEnter={tooltip.show}
+      onMouseLeave={tooltip.hide}
+      onFocus={tooltip.show}
+      onBlur={tooltip.hide}
+      ref={ref}
       tabIndex={tabIndex}
       type={type}
     >
       {children}
       {tooltipContent && (
         <Tooltip
-          ref={tooltipRef}
+          ref={tooltip.ref}
           shortcutKey={shortcutKey}
           tooltipPosition={tooltipPosition}
         >
@@ -56,6 +60,6 @@ function Button(props) {
       )}
     </button>
   )
-}
+})
 
 export default Button
