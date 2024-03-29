@@ -1,17 +1,17 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimation() {
+function useAnimate() {
   // Divider animation
 
-  const dividerRef = useRef(null)
+  const scope = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        dividerRef.current,
+        scope.current,
         { opacity: 0 },
         {
           opacity: 1,
@@ -19,18 +19,18 @@ function useAnimation() {
           duration: 1.25,
           ease: 'power3.out',
           scrollTrigger: {
-            trigger: dividerRef.current,
+            trigger: scope.current,
             start: 'bottom bottom',
           },
         }
       )
-    }, dividerRef)
+    }, scope)
 
     // Context cleanup
     return () => ctx.revert()
   }, [])
 
-  return dividerRef
+  return { scope }
 }
 
-export default useAnimation
+export default useAnimate

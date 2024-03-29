@@ -5,12 +5,12 @@ import { useParallax } from 'react-scroll-parallax'
 function useCardParallax() {
   // Parallax effect on card element
 
-  const { ref: parallaxRef } = useParallax({
+  const { ref: card } = useParallax({
     shouldAlwaysCompleteAnimation: true,
     speed: 15,
   })
 
-  return parallaxRef
+  return { card }
 }
 
 export default useCardParallax

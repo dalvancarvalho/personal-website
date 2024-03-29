@@ -1,13 +1,13 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimation(isEven) {
+function useAnimate(isEven) {
   // Desktop card animation
 
-  const image = useRef(null)
   const scope = useRef(null)
+  const image = useRef(null)
   const stack = useRef(null)
   const text = useRef(null)
 
@@ -90,4 +90,4 @@ function useAnimation(isEven) {
   return { image, scope, stack, text }
 }
 
-export default useAnimation
+export default useAnimate

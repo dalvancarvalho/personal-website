@@ -1,13 +1,13 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimation() {
+function useAnimate() {
   // Projects section animation
 
-  const paragraph = useRef(null)
   const scope = useRef(null)
+  const paragraph = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -34,4 +34,4 @@ function useAnimation() {
   return { scope, paragraph }
 }
 
-export default useAnimation
+export default useAnimate

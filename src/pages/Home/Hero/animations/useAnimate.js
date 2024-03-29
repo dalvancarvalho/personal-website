@@ -1,13 +1,15 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimation(bg, text) {
+function useAnimate(refs) {
   // Hero section animation
 
+  const { bg, text } = refs
+
   const tl = useRef(null)
-  const scopeRef = useRef(null)
+  const scope = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -38,13 +40,13 @@ function useAnimation(bg, text) {
           },
           '-=0.7'
         )
-    }, scopeRef)
+    }, scope)
 
     // Context cleanup
     return () => ctx.revert()
   }, [])
 
-  return scopeRef
+  return { scope }
 }
 
-export default useAnimation
+export default useAnimate

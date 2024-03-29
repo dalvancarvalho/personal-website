@@ -1,27 +1,27 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimation() {
-  // Fade-in animation
+function useAnimate() {
+  // Fade-in animation on main section
 
-  const mainSectionRef = useRef(null)
+  const scope = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        mainSectionRef.current,
+        scope.current,
         { opacity: 0 },
         { opacity: 1, duration: 1.2, ease: 'power3.in' }
       )
-    }, mainSectionRef)
+    }, scope)
 
     // Context cleanup
     return () => ctx.revert()
   }, [])
 
-  return mainSectionRef
+  return { scope }
 }
 
-export default useAnimation
+export default useAnimate

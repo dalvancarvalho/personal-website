@@ -1,13 +1,13 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimation(animation, watermarkText) {
+function useAnimate(animation, watermarkText) {
   // Heading animation
 
-  const heading = useRef(null)
   const scope = useRef(null)
+  const heading = useRef(null)
   const watermark = useRef(null)
 
   useLayoutEffect(() => {
@@ -54,4 +54,4 @@ function useAnimation(animation, watermarkText) {
   return { heading, scope, watermark }
 }
 
-export default useAnimation
+export default useAnimate

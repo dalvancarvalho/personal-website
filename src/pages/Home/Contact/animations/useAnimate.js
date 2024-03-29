@@ -1,16 +1,16 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-function useAnimation() {
+function useAnimate() {
   // Contact section animation
 
   const { screenSize } = useScreenProps()
-  const form = useRef(null)
   const scope = useRef(null)
+  const form = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context((self) => {
@@ -58,4 +58,4 @@ function useAnimation() {
   return { form, scope }
 }
 
-export default useAnimation
+export default useAnimate

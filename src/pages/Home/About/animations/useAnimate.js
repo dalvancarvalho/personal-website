@@ -1,17 +1,17 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-function useAnimation() {
+function useAnimate() {
   // About section animation
 
   const { screenSize } = useScreenProps()
+  const scope = useRef(null)
   const image = useRef(null)
   const quotation = useRef(null)
-  const scope = useRef(null)
   const selfie = useRef(null)
   const stack = useRef(null)
   const topics = useRef(null)
@@ -105,4 +105,4 @@ function useAnimation() {
   return { image, quotation, scope, selfie, stack, topics }
 }
 
-export default useAnimation
+export default useAnimate

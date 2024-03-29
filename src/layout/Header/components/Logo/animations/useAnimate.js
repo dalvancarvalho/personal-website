@@ -1,20 +1,20 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-import useIsFirstRender from '../../../../hooks/useIsFirstRender'
-import useLogoText from '../../hooks/useLogoText'
+import useIsFirstRender from '../../../../../hooks/useIsFirstRender'
+import useLogoText from '../hooks/useLogoText'
 
-function useAnimation() {
-  // Animates the logo text
+function useAnimate() {
+  // Logo text animation
 
   const isFirstRender = useIsFirstRender()
   const logoText = useLogoText()
-  const cursor = useRef(null)
-  const scope = useRef(null)
-  const text = useRef(null)
   const tl = useRef(null)
+  const scope = useRef(null)
+  const cursor = useRef(null)
+  const text = useRef(null)
 
   useLayoutEffect(() => {
     // Shows the logo text after the component is mounted (initial animation)
@@ -69,4 +69,4 @@ function useAnimation() {
   return { cursor, scope, text }
 }
 
-export default useAnimation
+export default useAnimate

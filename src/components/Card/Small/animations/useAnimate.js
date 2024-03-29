@@ -1,9 +1,9 @@
-/* useAnimation.js */
+/* useAnimate.js */
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimation(isEven) {
+function useAnimate(isEven) {
   // Mobile card animation
 
   const card = useRef(null)
@@ -76,4 +76,4 @@ function useAnimation(isEven) {
   return { card, stack }
 }
 
-export default useAnimation
+export default useAnimate
