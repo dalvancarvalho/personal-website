@@ -72,8 +72,8 @@
         "projects": "Projetos"
       },
       "demo": "Demonstração",
-      "githubProfile": "Perfil no GitHub",
-      "githubRepo": "Repositório do GitHub",
+      "repo": "Repositório do GitHub",
+      "github": "Perfil no GitHub",
       "linkedIn": "Perfil no LinkedIn"
     },
 
@@ -108,17 +108,17 @@
           "paragraph": "Após algum tempo aprendendo os fundamentos do desenvolvimento front-end e me aventurando em tutoriais de criação de players de música, rastreadores da ISS e três ou quatro tipos diferentes de to-do lists, listo abaixo alguns projetos autorais que <highlight>realmente me fizeram aprender JavaScript</highlight> e explorar o seu potencial na criação de aplicações web.",
           "brGeo": {
             "altText": "Tela do BR Geo, exibindo um painel com o mapa do Rio de Janeiro e estatísticas populacionais em um gráfico ao lado",
-            "name": "BR Geo",
+            "title": "BR Geo",
             "description": "Visualize informações acerca de diversos temas geográficos e sociais através de gráficos e mapas interativos. Com a poderosa API do IBGE, obtenha dados atualizados a nível municipal, estadual e federal!"
           },
           "personalWebsite": {
             "altText": "Tela inicial do website pessoal de Dalvan Carvalho",
-            "name": "Website pessoal",
+            "title": "Website pessoal",
             "description": "Isso mesmo! Este website merece lugar na lista por incluir diversas funcionalidades interessantes utilizadas em seu desenvolvimento, como bibliotecas para gerenciamento de rotas, internacionalização, envio de e-mails e animações."
           },
           "splitIt": {
             "altText": "Diversas planilhas de gastos dispostas lado a lado e levemente rotacionadas",
-            "name": "Split it!",
+            "title": "Split it!",
             "description": "Baseado em uma planilha para controle de despesas de uma viagem entre amigos, Split it! permite realizar a divisão justa dos valores para todos os integrantes do grupo de maneira simples e intuitiva!"
           },
           "primaryButton": "Ver detalhes",
@@ -189,7 +189,7 @@
         }
       },
       "resume": {
-        "name": "Currículo",
+        "title": "Currículo",
         "download": {
           "ariaLabel": "Acessar currículo",
           "heading": "Informações profissionais",
@@ -226,8 +226,10 @@
       "codeSnippet": {
         "title": "Exemplo de snippet",
         "copied": "Copiado!",
-        "copyTooltip": "Copiar para Área <br /> de Transferência",
-        "infoTooltip": "Para uma melhor leitura do código,<br />rotacione seu dispositivo para o<br />modo paisagem"
+        "button": {
+          "ariaLabel": "Copiar para área de transferência",
+          "tooltip": "Copiar para área <br /> de transferência"
+        }
       }
     }
   }
