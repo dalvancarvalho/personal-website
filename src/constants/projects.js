@@ -1,114 +1,122 @@
 /* projects.js */
 
-import brGeoImg from '../assets/webp/br-geo.webp'
-import personalWebsiteImg from '../assets/webp/personal-website.webp'
-import splitItImg from '../assets/webp/split-it.webp'
+import brGeoThumb from '../assets/webp/br-geo.webp'
+import personalWebsiteThumb from '../assets/webp/personal-website.webp'
+import splitItThumb from '../assets/webp/split-it.webp'
 
+// List of attributes of each project displayed in the 'Projects' section
 const projects = [
-  // List of attributes of each project displayed in the 'Projects' section
-
   {
-    altText: 'pages.home.projects.brGeo.altText',
-    demoUrl: null,
+    title: 'pages.home.projects.brGeo.title',
     description: 'pages.home.projects.brGeo.description',
-    githubRepoUrl: null,
+    route: 'br-geo',
     isFinished: true,
-    name: 'pages.home.projects.brGeo.name',
-    routeName: 'br-geo',
+    links: {
+      demo: null,
+      repo: null,
+    },
+    thumbnail: {
+      src: brGeoThumb,
+      altText: 'pages.home.projects.brGeo.altText',
+    },
     stack: [
       {
-        name: 'HTML',
+        tech: 'HTML',
         url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
       },
       {
-        name: 'CSS',
+        tech: 'CSS',
         url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
       },
       {
-        name: 'JavaScript',
+        tech: 'JavaScript',
         url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
       },
       {
-        name: 'IBGE API',
+        tech: 'IBGE API',
         url: 'https://servicodados.ibge.gov.br/api/docs',
       },
       {
-        name: 'Chart.js',
+        tech: 'Chart.js',
         url: 'https://www.chartjs.org/',
       },
     ],
-    subject: 'pageHeader.breadcrumbs.projects',
-    thumbnail: brGeoImg,
   },
   {
-    altText: 'pages.home.projects.personalWebsite.altText',
-    demoUrl: null,
+    title: 'pages.home.projects.personalWebsite.title',
     description: 'pages.home.projects.personalWebsite.description',
-    githubRepoUrl: 'https://github.com/dalvancarvalho/personal-website',
+    route: 'personal-website',
     isFinished: true,
-    name: 'pages.home.projects.personalWebsite.name',
-    routeName: 'personal-website',
+    links: {
+      demo: null,
+      repo: 'https://github.com/dalvancarvalho/personal-website',
+    },
+    thumbnail: {
+      src: personalWebsiteThumb,
+      altText: 'pages.home.projects.personalWebsite.altText',
+    },
     stack: [
       {
-        name: 'Vite',
+        tech: 'Vite',
         url: 'https://vitejs.dev/',
       },
       {
-        name: 'React',
+        tech: 'React',
         url: 'https://react.dev/',
       },
       {
-        name: 'Tailwind CSS',
+        tech: 'Tailwind CSS',
         url: 'https://tailwindcss.com/',
       },
       {
-        name: 'React Router',
+        tech: 'React Router',
         url: 'https://reactrouter.com/en/main',
       },
       {
-        name: 'i18next',
+        tech: 'i18next',
         url: 'https://react.i18next.com/',
       },
       {
-        name: 'EmailJS',
+        tech: 'EmailJS',
         url: 'https://www.emailjs.com/',
       },
       {
-        name: 'GSAP',
+        tech: 'GSAP',
         url: 'https://greensock.com/gsap/',
       },
     ],
-    subject: 'pageHeader.breadcrumbs.projects',
-    thumbnail: personalWebsiteImg,
   },
   {
-    altText: 'pages.home.projects.splitIt.altText',
-    demoUrl: null,
+    title: 'pages.home.projects.splitIt.title',
     description: 'pages.home.projects.splitIt.description',
-    githubRepoUrl: null,
+    route: 'split-it',
     isFinished: false,
-    name: 'pages.home.projects.splitIt.name',
-    routeName: 'split-it',
+    links: {
+      demo: null,
+      repo: null,
+    },
+    thumbnail: {
+      src: splitItThumb,
+      altText: 'pages.home.projects.splitIt.altText',
+    },
     stack: [
       {
-        name: 'Next.js',
+        tech: 'Next.js',
         url: 'https://nextjs.org/',
       },
       {
-        name: 'TypeScript',
+        tech: 'TypeScript',
         url: 'https://www.typescriptlang.org/',
       },
       {
-        name: 'Tailwind CSS',
+        tech: 'Tailwind CSS',
         url: 'https://tailwindcss.com/',
       },
       {
-        name: 'Framer Motion',
+        tech: 'Framer Motion',
         url: 'https://www.framer.com/motion/',
       },
     ],
-    subject: 'pageHeader.breadcrumbs.projects',
-    thumbnail: splitItImg,
   },
 ]
 
