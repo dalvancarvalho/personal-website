@@ -1,5 +1,6 @@
 /* App.jsx */
 
+import { useEffect } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import { gsap } from 'gsap'
 import { Helmet } from 'react-helmet-async'
@@ -14,13 +15,13 @@ import Header from './layout/Header'
 import Main from './layout/Main'
 
 import Routes from './routes'
-import { useEffect } from 'react'
 
 function App() {
   // Main application
 
   const DARK = '#1a1a1a' // dark gray
   const LIGHT = '#f8fafc' // light slate
+  
   const { theme } = useTheme()
   useConsoleMessage()
 
