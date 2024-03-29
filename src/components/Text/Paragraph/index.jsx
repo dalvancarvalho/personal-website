@@ -2,23 +2,26 @@
 
 import { forwardRef } from 'react'
 
+import Translation from '../Translation'
+
+import paragraphVariants from './constants/paragraphVariants'
+
 const Paragraph = forwardRef(function Paragraph(props, ref) {
-  // Regular paragraph
+  // Paragraph with a set of 'variable' and 'fixed' text size variants
 
   const {
     children,
     className = '', // any other class needed goes here
-    fontWeight = 'font-medium',
-    textColor = 'text-slate-600 dark:text-gray-400',
-    textSize = 'text-base md:text-lg 2xl:text-xl 2xl:leading-[1.85rem]',
+    i18nKey,
+    variant = 'base', // defaults to 'base' variant if this prop is not passed
   } = props
 
+  const style = paragraphVariants[variant]
+
   return (
-    <p
-      className={`${className} ${fontWeight} ${textColor} ${textSize} color-transition`}
-      ref={ref}
-    >
+    <p className={`${style} ${className}`} ref={ref}>
       {children}
+      {i18nKey && <Translation>{i18nKey}</Translation>}
     </p>
   )
 })
