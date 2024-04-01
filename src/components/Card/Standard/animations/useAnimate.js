@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimate(isEven) {
+function useAnimate() {
   // Desktop card animation
 
   const scope = useRef(null)
@@ -18,14 +18,14 @@ function useAnimate(isEven) {
       //Initial animation
       gsap.fromTo(
         text.current,
-        { x: isEven ? -48 : 48, opacity: 0 },
+        { opacity: 0, scale: 1.15 },
         {
-          x: 0,
           opacity: 1,
-          duration: 1,
-          ease: 'power3.inOut',
+          scale: 1,
+          duration: 1.2,
+          ease: 'power4.out',
           scrollTrigger: {
-            trigger: image.current,
+            trigger: scope.current,
             start: 'bottom bottom',
           },
         }
@@ -33,14 +33,14 @@ function useAnimate(isEven) {
 
       gsap.fromTo(
         image.current,
-        { x: isEven ? 48 : -48, opacity: 0 },
+        { opacity: 0, scale: 0.85 },
         {
-          x: 0,
           opacity: 1,
-          duration: 1,
-          ease: 'power3.inOut',
+          scale: 1,
+          duration: 1.2,
+          ease: 'power4.out',
           scrollTrigger: {
-            trigger: image.current,
+            trigger: scope.current,
             start: 'bottom bottom',
           },
         }

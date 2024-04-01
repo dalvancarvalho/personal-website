@@ -1,6 +1,7 @@
 /* Translation/index.jsx */
 
 import { Trans } from 'react-i18next'
+
 import transComponents from './constants/transComponents'
 
 function Translation(props) {

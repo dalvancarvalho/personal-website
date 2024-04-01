@@ -18,7 +18,7 @@ function useAnimate() {
           opacity: 1,
           x: 0,
           duration: 1.25,
-          ease: 'power3.out',
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: paragraph.current,
             start: 'bottom bottom',

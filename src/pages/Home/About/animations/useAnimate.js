@@ -28,7 +28,7 @@ function useAnimate() {
             opacity: 1,
             x: 0,
             duration: 1.25,
-            ease: 'power3.out',
+            ease: 'power4.out',
             scrollTrigger: {
               trigger: paragraph,
               start: 'bottom bottom',
@@ -45,7 +45,7 @@ function useAnimate() {
           x: 0,
           duration: 1.25,
           stagger: 0.125,
-          ease: 'power3.out',
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: stack.current,
             start: 'bottom bottom',
@@ -55,11 +55,12 @@ function useAnimate() {
 
       gsap.fromTo(
         selfie.current,
-        { opacity: 0 },
+        { opacity: 0, scale: 0.85 },
         {
           opacity: 1,
-          duration: 1,
-          ease: 'power3.in',
+          scale: 1,
+          duration: 1.25,
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: screenSize.lg ? topics.current : selfie.current,
             start: 'top 65%',
@@ -74,7 +75,7 @@ function useAnimate() {
           opacity: 1,
           x: 0,
           duration: 1.25,
-          ease: 'power3.out',
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: topics.current,
             start: 'top 65%',
@@ -89,7 +90,7 @@ function useAnimate() {
           opacity: 1,
           x: 0,
           duration: 1.5,
-          ease: 'power3.out',
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: image.current,
             start: 'bottom bottom',

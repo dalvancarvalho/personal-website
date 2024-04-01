@@ -24,7 +24,7 @@ function useAnimate(isEven) {
           opacity: 1,
           translate: '0%',
           duration: 1,
-          ease: 'power3.inOut',
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: card.current,
             start: '75% bottom',
@@ -37,7 +37,7 @@ function useAnimate(isEven) {
     const bgAnimation = gsap.to(stack.current, {
       opacity: 1,
       duration: 0.8,
-      ease: 'power3.inOut',
+      ease: 'power4.out',
       paused: true,
     })
 
@@ -46,7 +46,7 @@ function useAnimate(isEven) {
       pointerEvents: 'all',
       duration: 0.4,
       stagger: 0.05,
-      ease: 'power3.inOut',
+      ease: 'power4.out',
       paused: true,
     })
 

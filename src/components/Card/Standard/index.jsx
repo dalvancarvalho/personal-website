@@ -20,7 +20,7 @@ function Card(props) {
 
   const navigate = useNavigate()
   const parallax = useParallax()
-  const animation = useAnimate(isEven)
+  const animation = useAnimate()
 
   return (
     <div

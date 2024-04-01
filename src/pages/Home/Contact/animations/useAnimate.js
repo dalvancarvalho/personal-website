@@ -23,9 +23,9 @@ function useAnimate() {
           {
             opacity: 1,
             x: 0,
-            delay: 0.25,
+            // delay: 0.25,
             duration: 1.25,
-            ease: 'power3.out',
+            ease: 'power4.out',
             scrollTrigger: {
               trigger: item,
               start: 'bottom bottom',
@@ -35,14 +35,15 @@ function useAnimate() {
       })
 
       gsap.fromTo(
-        form.current,
-        { opacity: 0, scale: 0.9 },
+        form.current.children,
+        { opacity: 0, y: 32 },
         {
           opacity: 1,
-          scale: 1,
-          delay: 0.25,
+          y: 0,
+          // delay: 0.25,
+          stagger: 0.125,
           duration: 1.25,
-          ease: 'power3.out',
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: form.current,
             start: 'bottom bottom',
