@@ -3,7 +3,7 @@
 function useLinkAttributes(hrefProp) {
   // Returns the proper link based in the route that the footer is rendered
 
-  const HOME_PAGE = 'http://dalvanc.com/'
+  const HOME_PAGE = 'https://dalvanc.com/'
   const currentUrl = window.location.href
   const isHomePage = currentUrl === HOME_PAGE ? true : false
   const isLocalLink = hrefProp.includes('#') ? true : false
