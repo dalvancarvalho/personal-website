@@ -15,7 +15,7 @@ const SplitIt = lazy(() => import('../pages/SplitIt'))
 
 function AppRoutes() {
   // Manages the page rendered to each specified route
-  // Note: If a new route is added, update the file 'constants/logoText.js'
+  // Note: If a new route is added, update the file 'logoText.js'
 
   return (
     <Routes>
