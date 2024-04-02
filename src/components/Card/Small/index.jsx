@@ -31,11 +31,11 @@ function SmallCard(props) {
       ref={animation.card}
     >
       <div
-        className={`relative col-span-full row-span-full -z-10 rounded-[0.5em] shadow-md overflow-hidden group ${
+        className={`relative col-span-full row-span-full -z-10 aspect-video rounded-lg shadow-md overflow-hidden group ${
           isEven ? 'translate-x-[80%]' : '-translate-x-[80%]'
         }`}
       >
-        <img alt={t(thumbnail.altText)} className="aspect-video" src={thumbnail.src} />
+        <img alt={t(thumbnail.altText)} className="" src={thumbnail.src} />
         <ul
           className={`absolute inset-0 size-full px-4 opacity-0 from-black/75 flex flex-col justify-center gap-0.5 ${
             isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'
@@ -60,7 +60,7 @@ function SmallCard(props) {
           )}
           <h3 className="title-font text-[1.7rem] leading-6">{t(title)}</h3>
           <Paragraph
-            className="p-4 rounded-[0.5em] border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2 bg-opacity-85 dark:bg-opacity-85 backdrop-blur-[8px] shadow-xl"
+            className="p-4 rounded-lg border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2 backdrop-blur-[8px] shadow-xl"
             i18nKey={description}
             variant="fixed-sm"
           />

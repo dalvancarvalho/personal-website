@@ -28,7 +28,7 @@ function Card(props) {
       ref={animation.scope}
     >
       <div
-        className={`relative row-span-full m-auto -z-10 w-full h-full rounded-[0.5em] shadow-md overflow-hidden group ${
+        className={`relative row-span-full m-auto -z-10 aspect-video rounded-[0.5em] shadow-md overflow-hidden group ${
           isEven
             ? 'col-start-5 lg:col-start-6 col-end-13'
             : 'col-start-1 col-end-9 lg:col-end-8'
@@ -37,7 +37,7 @@ function Card(props) {
       >
         <img
           alt={t(thumbnail.altText)}
-          className="h-full group-hover:scale-105 group-hover:blur-[2px] duration-500"
+          className="size-full group-hover:scale-105 group-hover:blur-[2px] duration-500"
           src={thumbnail.src}
         />
         <ul
@@ -74,7 +74,7 @@ function Card(props) {
             {t(title)}
           </h3>
           <Paragraph
-            className="p-[1em] rounded-[0.5em] border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2 bg-opacity-85 dark:bg-opacity-85 backdrop-blur-[8px] shadow-xl"
+            className="p-[1em] rounded-[0.5em] border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent bg-slate-50 dark:bg-dark-2 backdrop-blur-[8px] shadow-xl"
             i18nKey={description}
             variant="sm"
           />
