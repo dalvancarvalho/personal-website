@@ -2,11 +2,9 @@
 
 import { forwardRef } from 'react'
 
-import useTooltip from './hooks/useTooltip'
+import useButton from './hooks/useButton'
 
 import Tooltip from './components/Tooltip'
-
-import buttonVariants from './constants/buttonVariants'
 
 const Button = forwardRef(function Button(props, ref) {
   // Button with primary, secondary, and unstyled variants
@@ -24,16 +22,7 @@ const Button = forwardRef(function Button(props, ref) {
     variant = 'unstyled', // defaults to 'unstyled' variant if this prop is not passed
   } = props
 
-  const style = buttonVariants[variant]
-
-  const tooltip = useTooltip(tooltipContent)
-
-  function handleClick() {
-    if (!callback) return
-
-    callback()
-    tooltip.hide()
-  }
+  const { style, handleClick, ...tooltip } = useButton(variant, callback, tooltipContent)
 
   return (
     <button

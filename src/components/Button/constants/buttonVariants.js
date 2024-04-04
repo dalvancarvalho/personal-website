@@ -6,7 +6,7 @@ const primitives = {
   primary: `${BASE_STYLE} px-[1.5em] bg-accent focus-visible:bg-blue-500 focus-visible:dark:bg-orange-400 text-white dark:text-black 2xl:text-base shadow-md primary-button-hover`,
   secondary: `${BASE_STYLE} ring-none text-accent 2xl:text-base decoration-2 focus-visible:underline secondary-button-hover`,
   submitting: `${BASE_STYLE} px-[1.5em] bg-gray-400 dark:bg-gray-500 text-white 2xl:text-base shadow-md pointer-events-none`,
-  unstyled: `relative text-slate-500 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 cursor-pointer color-transition unstyled-button-hover group`,
+  unstyled: `relative text-slate-500 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 cursor-pointer color-transition unstyled-button-hover group/button`,
 }
 
 const modifiers = {
