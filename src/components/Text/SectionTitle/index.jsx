@@ -8,7 +8,7 @@ function SectionTitle(props) {
   const {
     animation = true,
     title,
-    watermark = undefined,
+    watermark = null,
     watermarkColor = 'text-slate-150 dark:text-dark-5',
   } = props
 
