@@ -16,7 +16,11 @@ function SkipToContent(props) {
       className="absolute h-4/5 -top-0.5 left-2 -translate-y-full z-50 ring-none focus-visible:top-1/2 focus-visible:-translate-y-1/2 focus-visible:pointer-events-auto duration-300 group"
       href="#content"
     >
-      <Button className="shadow-none" tabIndex="-1" variant="primary-h-full">
+      <Button
+        className="shadow-none pointer-events-none"
+        tabIndex="-1"
+        variant="primary-h-full"
+      >
         {t('header.skip')}
         <FontAwesomeIcon icon={faAnglesDown} />
       </Button>
