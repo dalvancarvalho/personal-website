@@ -13,8 +13,8 @@ import SectionTitle from '../../../components/Text/SectionTitle'
 import projects from '../../../constants/projects'
 
 // Dynamic import
-const Card = lazy(() => import('../../../components/Card/Standard'))
-const SmallCard = lazy(() => import('../../../components/Card/Small'))
+const Card = lazy(() => import('./components/Card/Standard'))
+const SmallCard = lazy(() => import('./components/Card/Small'))
 
 function Projects(props) {
   // Projects section
