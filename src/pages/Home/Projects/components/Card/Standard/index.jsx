@@ -7,8 +7,8 @@ import { useNavigate } from 'react-router-dom'
 import useParallax from './hooks/useParallax'
 import useAnimate from './animations/useAnimate'
 
-import Button from '../../Button'
-import Paragraph from '../../Text/Paragraph'
+import Button from '../../../../../../components/Button'
+import Paragraph from '../../../../../../components/Text/Paragraph'
 import Tech from '../components/Tech'
 
 function Card(props) {
@@ -28,7 +28,7 @@ function Card(props) {
       ref={animation.scope}
     >
       <div
-        className={`relative row-span-full m-auto -z-10 aspect-video rounded-[0.5em] shadow-md overflow-hidden group ${
+        className={`relative row-span-full m-auto -z-10 aspect-video rounded-[0.5em] shadow-md overflow-hidden bac group ${
           isEven
             ? 'col-start-5 lg:col-start-6 col-end-13'
             : 'col-start-1 col-end-9 lg:col-end-8'
@@ -37,7 +37,7 @@ function Card(props) {
       >
         <img
           alt={t(thumbnail.altText)}
-          className="size-full group-hover:scale-105 group-hover:blur-[2px] duration-500"
+          className="size-full group-hover:blur-[2px] duration-500"
           src={thumbnail.src}
         />
         <ul

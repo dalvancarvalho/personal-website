@@ -7,8 +7,8 @@ import { useNavigate } from 'react-router-dom'
 
 import useAnimate from './animations/useAnimate'
 
-import Button from '../../Button'
-import Paragraph from '../../Text/Paragraph'
+import Button from '../../../../../../components/Button'
+import Paragraph from '../../../../../../components/Text/Paragraph'
 import Tech from '../components/Tech'
 
 function SmallCard(props) {
