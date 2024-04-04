@@ -228,7 +228,7 @@
         "copied": "Copiado!",
         "button": {
           "ariaLabel": "Copiar para área de transferência",
-          "tooltip": "Copiar para área <br /> de transferência"
+          "paragraph": "Copiar"
         }
       }
     }
