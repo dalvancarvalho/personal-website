@@ -87,7 +87,7 @@ In the table below, all the resources used are listed:
 | [i18next](https://react.i18next.com/)                                         | Internationalization                                   |
 | [Prism](https://prismjs.com/)                                                 | Syntax highlighting for code snippets                  |
 | [React Confetti](https://www.npmjs.com/package/react-confetti)                | Confetti animation on form submission                  |
-| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Metadata manipulation                                  |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Metadata management                                    |
 | [React Router](https://reactrouter.com/en/main/)                              | Routing management                                     |
 | [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Vertical scrolling animation                           |
 | [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Parallax effect on the hero section and project cards  |

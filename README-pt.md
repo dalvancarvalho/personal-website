@@ -83,7 +83,7 @@ Na tabela abaixo, encontram-se listados todos os recursos utilizados:
 | [i18next](https://react.i18next.com/)                                         | Internacionalização                                                 |
 | [Prism](https://prismjs.com/)                                                 | Realce de sintaxe em blocos de código                               |
 | [React Confetti](https://www.npmjs.com/package/react-confetti)                | Animação de confetes após o envio do formulário                     |
-| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Manipulação de metadados                                            |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Gerenciamento de metadados                                          |
 | [React Router](https://reactrouter.com/en/main/)                              | Gerenciamento de rotas                                              |
 | [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Animação de rolagem vertical                                        |
 | [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Efeito paralaxe na seção principal e nos cards de projeto           |
