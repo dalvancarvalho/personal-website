@@ -36,9 +36,9 @@ function CodeSnippet(props) {
             className="flex items-center gap-2"
           >
             <Paragraph
-              className="group-focus-visible/button:text-slate-800 group-focus-visible/button:dark:text-gray-200 code-snippet-button-hover"
-              variant="sm-semibold"
+              className="!text-slate-500 dark:!text-gray-400 group-focus-visible/button:!text-slate-800 group-focus-visible/button:dark:!text-gray-200 code-snippet-button-hover"
               i18nKey="misc.codeSnippet.button.paragraph"
+              variant="sm-semibold"
             />
             <FontAwesomeIcon className="2xl:text-lg" icon={faClone} />
             <p className="sr-only">{t('misc.codeSnippet.button.ariaLabel')}</p>
