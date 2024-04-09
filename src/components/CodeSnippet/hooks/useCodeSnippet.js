@@ -16,12 +16,8 @@ function useCodeSnippet(codeString) {
     // Copies the snippet to the clipboard
 
     navigator.clipboard.writeText(codeString)
-
     setIsCopied(true)
-
-    setTimeout(() => {
-      setIsCopied(false)
-    }, 3000)
+    setTimeout(() => setIsCopied(false), 3000)
   }
 
   return { copyToClipboard, isCopied }
