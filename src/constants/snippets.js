@@ -4,32 +4,37 @@
 const snippetModel = {
   // Snippet model that should be followed for all new snippets added to this file
 
-  title: 'misc.codeSnippet.title',  // [string] should be a key to a i18next translation file
-  extension: 'jsx',                 // [string] displayed inside the code snippet box
-  language: 'js',                   // [string] allowed languages: css, html, js
-  codeString:                       // [string] shouldn't contain any spaces at the beggining
-  `/* ScrollToTop.jsx */
+  title: 'misc.codeSnippet.title', // [string] should be a key to a i18next translation file
+  extension: 'js',                 // [string] displayed inside the code snippet box
+  language: 'js',                  // [string] allowed languages: css, html, js
+  codeString:                      // [string] shouldn't contain any spaces at the beginning
+  `/* useCodeSnippet.js */
 
-import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import Prism from 'prismjs'
 
-function ScrollToTop({ children }) {
-  // Scrolls the window to its initial coordinates whenever the pathname is changed
-
-  const { pathname } = useLocation()
+function useCodeSnippet(codeString) {
+  
+  const [isCopied, setIsCopied] = useState(false)
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'instant',
-    })
-  }, [pathname])
+    // Calls the Prism.js highlight functionality
 
-  return <>{children}</>
+    if (typeof window !== 'undefined') Prism.highlightAll()
+  }, [])
+
+  function copyToClipboard() {
+    // Copies the snippet to the clipboard
+
+    navigator.clipboard.writeText(codeString)
+    setIsCopied(true)
+    setTimeout(() => setIsCopied(false), 3000)
+  }
+
+  return { copyToClipboard, isCopied }
 }
 
-export default ScrollToTop
+export default useCodeSnippet
 `,
 }
 
