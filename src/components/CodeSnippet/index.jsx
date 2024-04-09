@@ -24,7 +24,7 @@ function CodeSnippet(props) {
           variant="small-semibold"
         />
         <div
-          className={`h-full flex flex-col justify-center items-end gap-4 transition-transform ease-elastic-out duration-500 ${
+          className={`h-full flex flex-col justify-center items-end gap-5 md:gap-4 transition-transform ease-elastic-out duration-500 ${
             isCopied
               ? '-translate-y-1/2 [&>*:first-child]:opacity-30'
               : 'translate-y-1/2 [&>*:last-child]:opacity-30'
