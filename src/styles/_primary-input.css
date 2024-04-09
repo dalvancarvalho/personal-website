@@ -29,12 +29,12 @@
   }
 
   .fa-arrow-left-hover {
-    @apply left-6 2xl:left-7 group-hover/button:-translate-x-2 group-hover/button:opacity-100 transition-[transform,opacity] ease-elastic-out duration-300 delay-75;
+    @apply left-6 group-hover/button:-translate-x-2 group-hover/button:opacity-100 transition-[transform,opacity] ease-elastic-out duration-300 delay-75;
   }
 
   .fa-arrow-right-hover,
   .fa-envelope-hover {
-    @apply right-6 2xl:right-7 group-hover/button:translate-x-2 group-hover/button:opacity-100 transition-[transform,opacity] ease-elastic-out duration-300 delay-75;
+    @apply right-6 group-hover/button:translate-x-2 group-hover/button:opacity-100 transition-[transform,opacity] ease-elastic-out duration-300 delay-75;
   }
 
   .footer-link-hover {

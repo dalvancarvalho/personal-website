@@ -1,9 +1,0 @@
-/* _header.css */
-
-.header-collapsed {
-  @apply h-12 2xl:h-16 bg-slate-50 dark:bg-dark-6 backdrop-blur-[8px] border-b-slate-200 dark:border-b-dark-2;
-}
-
-.header-full {
-  @apply h-20 md:h-24 2xl:h-28 bg-transparent border-b-transparent;
-}

@@ -31,7 +31,7 @@ const Tooltip = forwardRef(function Tooltip(props, ref) {
 
   return (
     <p
-      className={`${position} absolute translate-y-4 2xl:translate-y-6 invisible opacity-0 z-50 border border-slate-150 dark:border-dark-1 rounded-lg shadow-md px-2 py-1 bg-white dark:bg-dark-2 text-slate-600 dark:text-gray-300 font-normal text-sm 2xl:text-base whitespace-nowrap select-none pointer-events-none`}
+      className={`${position} absolute translate-y-4 invisible opacity-0 z-50 border border-slate-150 dark:border-dark-1 rounded-lg shadow-md px-2 py-1 bg-white dark:bg-dark-2 text-slate-600 dark:text-gray-300 font-normal text-sm whitespace-nowrap select-none pointer-events-none`}
       ref={ref}
     >
       {children}

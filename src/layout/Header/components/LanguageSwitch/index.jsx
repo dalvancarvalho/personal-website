@@ -25,8 +25,8 @@ function LanguageSwitch(props) {
             : '-translate-y-1/2 [&>*:first-child]:opacity-0'
         }`}
       >
-        <span className="font-semibold text-lg 2xl:text-xl transition-opacity">Pt</span>
-        <span className="font-semibold text-lg 2xl:text-xl transition-opacity">En</span>
+        <span className="font-semibold text-lg transition-opacity">Pt</span>
+        <span className="font-semibold text-lg transition-opacity">En</span>
       </div>
       <p className="sr-only">{t('header.language.ariaLabel')}</p>
     </Button>

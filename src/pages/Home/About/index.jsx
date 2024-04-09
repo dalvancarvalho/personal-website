@@ -40,7 +40,7 @@ function About(props) {
           title={t('pages.home.about.heading')}
           watermark={t('pages.home.about.watermark')}
         />
-        <Grid className="gap-12 2xl:gap-14">
+        <Grid className="gap-12">
           <div
             className="relative mt-4 lg:mt-0 mb-6 md:mb-10 lg:mb-0 col-start-1 col-end-6 w-72 md:w-96 lg:w-full h-96 md:h-[32rem] lg:h-full flex rounded-xl overflow-hidden drop-shadow-lg group"
             ref={animation.selfie}
@@ -60,7 +60,7 @@ function About(props) {
             />
           </div>
           <div
-            className="relative isolate col-start-6 col-end-13 flex flex-col gap-6 2xl:gap-8"
+            className="relative isolate col-start-6 col-end-13 flex flex-col gap-6"
             ref={animation.topics}
           >
             <QuotationMark ref={animation.quotation} />
@@ -81,10 +81,10 @@ function About(props) {
         <Divider />
         <Grid>
           <div
-            className="z-10 col-start-1 col-end-8 row-span-full flex flex-col gap-4 2xl:gap-6 items-start group"
+            className="z-10 col-start-1 col-end-8 row-span-full flex flex-col gap-4 items-start group"
             ref={animation.stack}
           >
-            <h3 className="md:text-lg 2xl:text-xl font-bold text-slate-800 dark:text-gray-200 color-transition">
+            <h3 className="md:text-lg font-bold text-slate-800 dark:text-gray-200 color-transition">
               {t('pages.home.about.subHeadingIV')}
             </h3>
             <ul className="w-11/12 md:w-7/12 lg:w-4/5 grid grid-cols-2 gap-y-3 md:gap-y-2">

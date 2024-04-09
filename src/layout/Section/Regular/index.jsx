@@ -8,7 +8,7 @@ const Section = forwardRef(function Section(props, ref) {
   const { children, className = '', id } = props
 
   return (
-    <section className={`${className} py-[4.5rem] md:py-32 2xl:py-40`} id={id} ref={ref}>
+    <section className={`py-[4.5rem] md:py-32 ${className}`} id={id} ref={ref}>
       {children}
     </section>
   )

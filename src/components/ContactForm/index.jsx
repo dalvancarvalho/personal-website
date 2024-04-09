@@ -24,7 +24,7 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
       onSubmit={handleSubmit}
       ref={ref}
     >
-      <h3 className="w-full text-base md:text-lg 2xl:text-xl text-slate-800 dark:text-gray-200 font-bold color-transition">
+      <h3 className="w-full text-base md:text-lg text-slate-800 dark:text-gray-200 font-bold color-transition">
         {t('pages.home.contact.form.title')}
       </h3>
       <Input

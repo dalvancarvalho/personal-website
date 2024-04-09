@@ -25,7 +25,7 @@ function Hero(props) {
 
   return (
     <Section
-      className="relative isolate h-dvh overflow-hidden"
+      className="relative isolate h-dvh min-h-[600px] overflow-hidden"
       id="home"
       ref={animation.scope}
     >
@@ -37,7 +37,7 @@ function Hero(props) {
           <h1 className="title-font text-5xl md:text-7xl 2xl:text-8xl">
             <Translation>pages.home.hero.heading</Translation>
           </h1>
-          <Paragraph i18nKey="pages.home.hero.paragraph" variant="lg" />
+          <Paragraph i18nKey="pages.home.hero.paragraph" variant="large-extended" />
           <div className="mt-4 md:mt-5 2xl:mt-6 flex hero-buttons-gap">
             <ScrollLink href="contact" spy={true} tabIndex="-1" to="contact">
               <Button variant="primary-lg">{t('pages.home.hero.primaryButton')}</Button>

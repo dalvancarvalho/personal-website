@@ -29,19 +29,19 @@ function Projects(props) {
       id="projects"
       ref={animation.scope}
     >
-      <Container className="xl:px-40 2xl:px-44 flex flex-col justify-center items-center">
+      <Container className="variable-padding flex flex-col justify-center items-center">
         <SectionTitle
           title={t('pages.home.projects.heading')}
           watermark={t('pages.home.projects.watermark')}
           watermarkColor="text-slate-250 dark:text-dark-3"
         />
         <Paragraph
-          className="mb-16 2xl:mb-20 lg:mx-12 2xl:mx-20"
+          className="mb-16"
           i18nKey="pages.home.projects.paragraph"
           ref={animation.paragraph}
         />
 
-        <div className="lg:mx-12 2xl:mx-20 flex flex-col items-center gap-20 md:gap-24 2xl:gap-32">
+        <div className="flex flex-col items-center gap-20 md:gap-24">
           {projects.map((project, index) =>
             screenSize.md ? (
               <Card index={index} key={project.title} t={t} {...project} />

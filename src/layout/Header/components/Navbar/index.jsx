@@ -11,7 +11,7 @@ function Navbar(props) {
 
   return (
     <nav aria-label={t('header.nav.ariaLabel')} role="navigation">
-      <ul className="flex items-center gap-6 2xl:gap-8">
+      <ul className="flex items-center gap-6">
         {navLinks[pathname] &&
           navLinks[pathname].map(({ name }) => (
             <NavLink key={name} to={name}>

@@ -11,7 +11,7 @@ function MailTo(props) {
   const { t } = props
 
   return (
-    <div className="max-w-max flex items-center gap-2 2xl:gap-3">
+    <div className="max-w-max flex items-center gap-2">
       <FontAwesomeIcon
         className="text-lg text-slate-800 dark:text-gray-200 color-transition"
         icon={faEnvelope}
@@ -22,10 +22,10 @@ function MailTo(props) {
           'pages.home.contact.subject'
         )}`}
       >
-        <Paragraph i18nKey="pages.home.contact.email" variant="base-bold" />
+        <Paragraph i18nKey="pages.home.contact.email" variant="medium-bold" />
       </a>
       <FontAwesomeIcon
-        className="ml-1 2xl:ml-1.5 text-lg 2xl:text-xl text-slate-600 dark:text-gray-400 peer-focus-visible:text-slate-800 dark:peer-focus-visible:text-gray-200 peer-focus-visible:translate-x-1 peer-focus-visible:-translate-y-1 rotate-45 transition-all arrow-hover"
+        className="ml-1 text-lg text-slate-600 dark:text-gray-400 peer-focus-visible:text-slate-800 dark:peer-focus-visible:text-gray-200 peer-focus-visible:translate-x-1 peer-focus-visible:-translate-y-1 rotate-45 transition-all arrow-hover"
         icon={faArrowUp}
       />
     </div>

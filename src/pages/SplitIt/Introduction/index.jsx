@@ -16,7 +16,7 @@ function Introduction(props) {
 
   return (
     <Section id="intro">
-      <Container className="h-full px-6 sm:px-8 xl:px-40 2xl:px-64">
+      <Container className="h-full variable-padding">
         <SectionTitle
           animation={false}
           title={t('pages.splitIt.intro.heading')}

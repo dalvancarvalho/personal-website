@@ -2,15 +2,11 @@
 
 import { useNavigate } from 'react-router-dom'
 
-import useMenu from '../../../../context/MenuContext'
 import useAnimation from './animations/useAnimate'
 
-function Logo(props) {
+function Logo() {
   // Animated logo that changes its text based on the current language and pathname
 
-  const { y } = props
-
-  const { isMenuOpen } = useMenu()
   const animation = useAnimation()
   const navigate = useNavigate()
 
@@ -21,9 +17,7 @@ function Logo(props) {
 
   return (
     <p
-      className={`font-bold font-mark-pro tracking-tight transition-[font] duration-300 cursor-pointer group ${
-        y === 0 || isMenuOpen ? 'text-2xl 2xl:text-3xl' : 'text-xl 2xl:text-2xl'
-      }`}
+      className="text-2xl font-bold font-mark-pro tracking-tight transition-[font] duration-300 cursor-pointer group"
       onClick={() => navigate('/')}
       onKeyDown={(event) => goHome(event)}
       ref={animation.scope}

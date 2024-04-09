@@ -19,7 +19,7 @@ function NavLink(props) {
 
   return (
     <li
-      className="w-full md:text-base text-slate-500 dark:text-gray-400 nav-link-hover focus-visible:md:text-slate-900 focus-visible:dark:md:dark:text-gray-200 whitespace-nowrap"
+      className="w-full md:text-base text-slate-500 dark:text-gray-400 nav-link-hover focus-visible:md:text-slate-900 focus-visible:md:dark:text-gray-200 whitespace-nowrap"
       tabIndex="0"
       onKeyDown={(event) => {
         if (event.code !== 'Enter') return
@@ -29,7 +29,7 @@ function NavLink(props) {
     >
       <ScrollLink
         activeClass="!font-semibold text-slate-800 dark:text-gray-200"
-        className="py-1.5 flex items-center font-medium cursor-pointer md:ml-0 md:py-0 md:font-semibold md:text-lg 2xl:text-xl color-transition"
+        className="py-1.5 flex items-center font-medium cursor-pointer md:ml-0 md:py-0 md:font-semibold md:text-lg color-transition"
         href={to} // SEO purposes
         onClick={() => setMenuState(false)}
         ref={linkRef}

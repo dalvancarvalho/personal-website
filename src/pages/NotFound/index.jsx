@@ -25,7 +25,7 @@ function NotFound() {
       <Helmet>
         <title>{t('meta.title.notFound')}</title>
       </Helmet>
-      <MainSection className="relative isolate h-dvh grid place-items-center">
+      <MainSection className="relative isolate h-dvh min-h-[600px] grid place-items-center">
         <Container className="relative h-full px-6 md:px-12 2xl:px-32 flex flex-col items-center justify-center">
           <h1 className="title-font text-5xl md:text-7xl 2xl:text-8xl">
             {t('pages.notFound.heading')} &nbsp;
@@ -34,7 +34,7 @@ function NotFound() {
           <Paragraph
             className="my-5 2xl:my-6 max-w-2xl 2xl:max-w-3xl text-center"
             i18nKey="pages.notFound.paragraph"
-            variant="lg"
+            variant="large-extended"
           />
           <RouterLink className="mt-4 md:mt-5 2xl:mt-6 group" tabIndex="-1" to="/">
             <Button variant="primary-lg">

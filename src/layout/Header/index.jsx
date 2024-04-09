@@ -32,8 +32,10 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full 2xl:text-lg bg-opacity-85 dark:bg-opacity-85 border-b transition-[height,background,border] duration-300 ${
-        y === 0 || isMenuOpen ? 'header-full' : 'header-collapsed'
+      className={`fixed top-0 z-50 w-full bg-opacity-85 dark:bg-opacity-85 border-b transition-[height,background,border] duration-300 ${
+        y === 0 || isMenuOpen
+          ? 'h-20 md:h-24 bg-transparent border-b-transparent'
+          : 'h-14 bg-slate-50 dark:bg-dark-6 backdrop-blur-[8px] border-b-slate-200 dark:border-b-dark-2'
       }`}
       ref={animation.scope}
     >
@@ -43,11 +45,11 @@ function Header() {
           pathname !== '/404' ? 'justify-between' : 'justify-end'
         }`}
       >
-        {pathname !== '/404' && <Logo y={y} />}
+        {pathname !== '/404' && <Logo />}
         <div ref={animation.nav}>
           {screenSize.md ? (
             // 💻 on medium/large screens, renders the items directly in the header
-            <div className="flex items-center gap-6 2xl:gap-8">
+            <div className="flex items-center gap-6">
               <Navbar pathname={pathname} t={t} />
               {pathname !== '/404' && <Divider pathname={pathname} y={y} />}
               <LanguageSwitch t={t} />

@@ -43,7 +43,7 @@ function SmallCard(props) {
           ref={animation.stack}
         >
           {stack.map((props) => (
-            <Tech isEven={isEven} key={props.tech} textSize="text-sm" {...props} />
+            <Tech isEven={isEven} key={props.tech} {...props} />
           ))}
         </ul>
       </div>

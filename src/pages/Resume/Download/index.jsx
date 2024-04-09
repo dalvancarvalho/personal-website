@@ -16,17 +16,14 @@ function Download(props) {
 
   return (
     <Section id="download">
-      <Container className="h-full px-6 sm:px-8 xl:px-40 2xl:px-64">
+      <Container className="h-full variable-padding">
         <SectionTitle
           animation={false}
           title={t('pages.resume.download.heading')}
           watermark={t('pages.resume.download.watermark')}
         />
-        <Paragraph
-          className="mb-16 2xl:mb-20"
-          i18nKey="pages.resume.download.paragraph"
-        />
-        <div className="flex flex-wrap items-center justify-center gap-12 2xl:gap-16">
+        <Paragraph className="mb-16" i18nKey="pages.resume.download.paragraph" />
+        <div className="flex flex-wrap items-center justify-center gap-12">
           {resumeList.map((props) => (
             <ResumeCard key={props.title} t={t} {...props} />
           ))}

@@ -1,7 +1,7 @@
 /* _global.css */
 
 *:focus-visible {
-  @apply outline-none dark:outline-none ring-2 2xl:ring-[3px] ring-blue-600 dark:ring-orange-500 ring-offset-[3px] ring-offset-slate-50 dark:ring-offset-dark-6 !transition-all !duration-75;
+  @apply outline-none dark:outline-none ring-2 ring-blue-600 dark:ring-orange-500 ring-offset-[3px] ring-offset-slate-50 dark:ring-offset-dark-6 !transition-all !duration-75;
 }
 
 *::selection {
