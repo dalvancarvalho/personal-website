@@ -27,7 +27,7 @@ function SplitIt() {
         title={t('meta.title.splitIt')}
         url="https://dalvanc.com/split-it"
       />
-      <MainSection className="min-h-dvh flex flex-col items-center">
+      <MainSection className="flex flex-col items-center">
         <PageHeader section="pageHeader.breadcrumbs.projects" t={t} {...splitIt} />
         <Introduction t={t} />
         {/* Details... */}

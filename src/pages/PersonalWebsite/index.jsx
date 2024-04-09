@@ -27,7 +27,7 @@ function PersonalWebsite() {
         title={t('meta.title.personalWebsite')}
         url="https://dalvanc.com/personal-website"
       />
-      <MainSection className="min-h-dvh flex flex-col items-center">
+      <MainSection className="flex flex-col items-center">
         <PageHeader
           section="pageHeader.breadcrumbs.projects"
           t={t}

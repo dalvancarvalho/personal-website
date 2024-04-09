@@ -26,7 +26,7 @@ function Resume() {
         title={t('meta.title.resume')}
         url="https://dalvanc.com/resume"
       />
-      <MainSection className="min-h-dvh flex flex-col items-center">
+      <MainSection className="flex flex-col items-center">
         <PageHeader
           github="https://github.com/dalvancarvalho/"
           linkedIn="https://www.linkedin.com/in/dalvancarvalho/"
