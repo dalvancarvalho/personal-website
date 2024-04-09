@@ -26,9 +26,9 @@ function useContactForm() {
 
     event.preventDefault()
 
-    const inputFields = Object.values(inputs)
-    const message = inputFields[2]
-    const isFormComplete = inputFields.every((input) => input !== '')
+    const inputValues = Object.values(inputs)
+    const message = inputValues[2]
+    const isFormComplete = inputValues.every((input) => input !== '')
     const isMessageShort = message.length < MIN_MESSAGE_LENGTH
 
     if (isFormComplete && !isMessageShort) {
@@ -47,15 +47,15 @@ function useContactForm() {
 
     // Environment variables
     const publicKey = import.meta.env.VITE_PUBLIC_KEY
-    const serviceID = import.meta.env.VITE_SERVICE_ID
-    const templateID = import.meta.env.VITE_TEMPLATE_ID
+    const serviceId = import.meta.env.VITE_SERVICE_ID
+    const templateId = import.meta.env.VITE_TEMPLATE_ID
 
     let response
 
     setIsSubmitting(true)
 
     try {
-      response = await emailjs.send(serviceID, templateID, inputs, publicKey)
+      response = await emailjs.send(serviceId, templateId, inputs, publicKey)
     } catch (err) {
       console.error(err)
     } finally {
