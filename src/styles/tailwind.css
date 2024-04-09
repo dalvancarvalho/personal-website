@@ -39,10 +39,6 @@
     @apply outline-dashed outline-1 outline-blue-500; /* Debug ruleset */
   }
 
-  .force-transition {
-    @apply !transition !duration-300;
-  }
-
   .ring-none {
     @apply ring-0 ring-offset-0 outline-none dark:outline-none;
   }

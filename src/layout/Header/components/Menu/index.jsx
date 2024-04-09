@@ -26,7 +26,7 @@ function Menu(props) {
       <Button
         ariaLabel={t('header.nav.ariaLabel')}
         callback={() => setMenuState((current) => !current)}
-        className={`force-transition ${y === 0 || isMenuOpen ? 'scale-[1.4]' : null}`}
+        className={`!transition-all ${y === 0 || isMenuOpen ? 'scale-[1.4]' : null}`}
         ref={refs.button}
       >
         <div className="overflow-hidden">
@@ -35,8 +35,8 @@ function Menu(props) {
               isMenuOpen ? '-translate-y-1/2' : 'translate-y-1/2'
             }`}
           >
-            <FontAwesomeIcon className="size-full" icon={faBars} />
-            <FontAwesomeIcon className="size-full" icon={faXmark} />
+            <FontAwesomeIcon className="size-full color-transition" icon={faBars} />
+            <FontAwesomeIcon className="size-full color-transition" icon={faXmark} />
           </div>
         </div>
       </Button>
@@ -47,7 +47,7 @@ function Menu(props) {
       >
         <Container className="p-0 h-full">
           <div
-            className="pt-4 w-4/6 h-full flex flex-col justify-center gap-3 font-mark-pro tracking-tight"
+            className="pt-4 w-4/6 h-full min-h-[680px] flex flex-col justify-center gap-3 font-mark-pro tracking-tight"
             ref={refs.menu}
           >
             {pathname !== '/404' && <NavList pathname={pathname} t={t} />}
