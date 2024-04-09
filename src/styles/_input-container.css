@@ -1,17 +1,17 @@
-/* _form-field.css */
+/* _input-container.css */
 
-.form-field {
+.input-container {
   @apply relative w-full mt-4;
 }
 
-.form-field::before {
+.input-container::before {
   @apply absolute left-0 bottom-0 m-auto content-[''] h-0.5 w-full block bg-blue-600 dark:bg-orange-500 bg-auto bg-bottom scale-0 origin-center duration-300;
 }
-.form-field:focus-visible::before {
+.input-container:focus-visible::before {
   @apply bg-top scale-100;
 }
 
-.form-field.highlighted::before {
+.input-container.highlighted::before {
   @apply bg-left scale-100;
 }
 
