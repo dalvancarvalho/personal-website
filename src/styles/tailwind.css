@@ -3,9 +3,8 @@
 /* Imports */
 @import './_code-snippet.css';
 @import './_fonts';
-@import './_form-field';
 @import './_global';
-@import './_header';
+@import './_input-container';
 @import './_primary-input';
 @import './_tooltip';
 
@@ -58,5 +57,9 @@
 
   .title-font {
     @apply font-mark-pro font-black tracking-tighter;
+  }
+
+  .variable-padding {
+    @apply lg:px-20 xl:px-52 2xl:px-[338px];
   }
 }
