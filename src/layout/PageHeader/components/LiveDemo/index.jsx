@@ -17,7 +17,7 @@ function LiveDemo(props) {
     >
       <span className="relative size-6">
         <FontAwesomeIcon
-          className="absolute top-[25%] left-[25%] text-xs text-green-500 animate-ping"
+          className="absolute top-1/4 left-1/4 text-xs text-green-500 animate-ping"
           icon={faCircle}
         />
         <FontAwesomeIcon
