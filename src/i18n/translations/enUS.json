@@ -66,7 +66,8 @@
     "pageHeader": {
       "breadcrumbs": {
         "home": {
-          "ariaLabel": "Home page"
+          "ariaLabel": "Back to home page",
+          "tooltip": "Back to home page"
         },
         "about": "About",
         "projects": "Projects"
@@ -89,6 +90,7 @@
         "about": {
           "heading": "But... who am I?",
           "watermark": "About",
+          "polaroid": "spontaneous pic :)",
           "subHeadingI": "Self-taught developer",
           "paragraphI": "I entered the world of front-end development about a year ago after transitioning from the field of <highlight>civil engineering</highlight>, in which I graduated. In the technology field, I found the opportunity to <highlight>reinvent</highlight> myself while continuing to do what I love most: creating things that reflect the standards I always strive to maintain, such as <highlight>attention to detail</highlight>, <highlight>quality</highlight>, and <highlight>organization</highlight>.",
           "subHeadingII": "Passionate about learning",

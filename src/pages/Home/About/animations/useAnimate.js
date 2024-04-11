@@ -10,11 +10,10 @@ function useAnimate() {
 
   const { screenSize } = useScreenProps()
   const scope = useRef(null)
-  const image = useRef(null)
-  const quotation = useRef(null)
-  const selfie = useRef(null)
-  const stack = useRef(null)
   const topics = useRef(null)
+  const quotation = useRef(null)
+  const stack = useRef(null)
+  const stackImage = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context((self) => {
@@ -53,20 +52,21 @@ function useAnimate() {
         }
       )
 
-      gsap.fromTo(
-        selfie.current,
-        { opacity: 0, scale: 0.85 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1.25,
-          ease: 'power4.out',
-          scrollTrigger: {
-            trigger: screenSize.lg ? topics.current : selfie.current,
-            start: 'top 65%',
-          },
-        }
-      )
+      // gsap.fromTo(
+      //   picture.current,
+      //   { opacity: 0, scale: 1.25, x: -64 },
+      //   {
+      //     opacity: 1,
+      //     scale: 1,
+      //     x: 0,
+      //     duration: 0.75,
+      //     ease: 'power4.in',
+      //     scrollTrigger: {
+      //       trigger: screenSize.lg ? topics.current : picture.current,
+      //       start: 'top 65%',
+      //     },
+      //   }
+      // )
 
       gsap.fromTo(
         quotation.current,
@@ -84,7 +84,7 @@ function useAnimate() {
       )
 
       gsap.fromTo(
-        image.current,
+        stackImage.current,
         { opacity: 0, x: -32 },
         {
           opacity: 1,
@@ -92,7 +92,7 @@ function useAnimate() {
           duration: 1.5,
           ease: 'power4.out',
           scrollTrigger: {
-            trigger: image.current,
+            trigger: stackImage.current,
             start: 'bottom bottom',
           },
         }
@@ -103,7 +103,7 @@ function useAnimate() {
     return () => ctx.revert()
   }, [screenSize.lg])
 
-  return { image, quotation, scope, selfie, stack, topics }
+  return { scope, topics, quotation, stack, stackImage }
 }
 
 export default useAnimate

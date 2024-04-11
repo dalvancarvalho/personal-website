@@ -14,7 +14,7 @@ import Section from '../../../layout/Section/Regular'
 import Button from '../../../components/Button'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
-import HoverText from './components/HoverText'
+import PolaroidPic from './components/PolaroidPic'
 import QuotationMark from './components/QuotationMark'
 import Tech from './components/Tech'
 import Topic from './components/Topic'
@@ -22,8 +22,6 @@ import Topic from './components/Topic'
 import technologies from './constants/technologies'
 
 import stack from '../../../assets/svg/stack.svg'
-import meBw from '../../../assets/webp/me-bw-bg.webp'
-import meColor from '../../../assets/webp/me-color-bg.webp'
 
 function About(props) {
   // About section
@@ -41,24 +39,7 @@ function About(props) {
           watermark={t('pages.home.about.watermark')}
         />
         <Grid className="gap-12">
-          <div
-            className="relative mt-4 lg:mt-0 mb-6 md:mb-10 lg:mb-0 col-start-1 col-end-6 w-72 md:w-96 lg:w-full h-96 md:h-[32rem] lg:h-full flex rounded-xl overflow-hidden drop-shadow-lg group"
-            ref={animation.selfie}
-          >
-            <HoverText t={t} />
-            <img
-              alt={t('pages.home.about.meAltText')}
-              className="absolute size-full object-cover"
-              loading="lazy"
-              src={meColor}
-            />
-            <img
-              alt={t('pages.home.about.meAltText')}
-              className="absolute size-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-150"
-              loading="lazy"
-              src={meBw}
-            />
-          </div>
+          <PolaroidPic t={t} />
           <div
             className="relative isolate col-start-6 col-end-13 flex flex-col gap-6"
             ref={animation.topics}
@@ -103,7 +84,7 @@ function About(props) {
           </div>
           <div
             className="size-full col-start-5 col-end-13 row-span-full hidden lg:block"
-            ref={animation.image}
+            ref={animation.stackImage}
           >
             <img
               alt={t('pages.home.about.stackAltText')}

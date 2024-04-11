@@ -66,7 +66,8 @@
     "pageHeader": {
       "breadcrumbs": {
         "home": {
-          "ariaLabel": "Página inicial"
+          "ariaLabel": "Voltar à página inicial",
+          "tooltip": "Voltar à página inicial"
         },
         "about": "Sobre",
         "projects": "Projetos"
@@ -89,6 +90,7 @@
         "about": {
           "heading": "Mas... quem sou eu?",
           "watermark": "Sobre",
+          "polaroid": "foto espontânea :)",
           "subHeadingI": "Desenvolvedor autodidata",
           "paragraphI": "Entrei no mundo do desenvolvimento front-end há cerca de um ano, depois de migrar do campo da <highlight>engenharia civil</highlight>, no qual me formei. No campo da tecnologia, encontrei a oportunidade de me <highlight>reinventar</highlight> enquanto continuo fazendo o que mais amo: criar coisas que reflitam os padrões que sempre busco manter, como <highlight>atenção aos detalhes</highlight>, <highlight>qualidade</highlight> e <highlight>organização</highlight>.",
           "subHeadingII": "Apaixonado por aprender",
