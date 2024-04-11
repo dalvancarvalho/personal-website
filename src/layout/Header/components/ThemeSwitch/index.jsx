@@ -19,7 +19,7 @@ function ThemeSwitch(props) {
       ariaLabel={t('header.theme.ariaLabel')}
       callback={changeTheme}
       shortcutKey={SHORTCUT_KEY}
-      tooltipContent={
+      tooltip={
         theme === 'light' ? t('header.theme.hoverLight') : t('header.theme.hoverDark')
       }
     >

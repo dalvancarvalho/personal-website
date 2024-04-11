@@ -4,7 +4,7 @@ import { useRef } from 'react'
 
 import buttonVariants from '../constants/buttonVariants'
 
-function useButton(variant, callback, tooltipContent) {
+function useButton(variant, callback, tooltip) {
   // Handles the button logic
 
   let timeout
@@ -15,22 +15,19 @@ function useButton(variant, callback, tooltipContent) {
   // Button
   function handleClick() {
     if (!callback) return
-
     callback()
     hide()
   }
 
   // Tooltip
   function hide() {
-    if (!tooltipContent) return
-
+    if (!tooltip) return
     clearTimeout(timeout)
     ref.current.classList.remove('tooltip-active')
   }
 
   function show() {
-    if (!tooltipContent) return
-
+    if (!tooltip) return
     if (timeout) clearTimeout(timeout)
     timeout = setTimeout(() => ref.current.classList.add('tooltip-active'), 750)
   }

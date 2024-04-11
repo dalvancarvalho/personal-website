@@ -16,35 +16,35 @@ const Button = forwardRef(function Button(props, ref) {
     className = '', // any other class needed goes here
     shortcutKey = null,
     tabIndex = '0',
-    tooltipContent = null,
+    tooltip = null,
     tooltipPosition = null,
     type = 'button',
     variant = 'unstyled', // defaults to 'unstyled' variant if this prop is not passed
   } = props
 
-  const { style, handleClick, ...tooltip } = useButton(variant, callback, tooltipContent)
+  const { style, handleClick, ...tooltipProps } = useButton(variant, callback, tooltip)
 
   return (
     <button
       aria-label={ariaLabel}
       className={`${style} ${className}`}
       onClick={handleClick}
-      onMouseEnter={tooltip.show}
-      onMouseLeave={tooltip.hide}
-      onFocus={tooltip.show}
-      onBlur={tooltip.hide}
+      onMouseEnter={tooltipProps.show}
+      onMouseLeave={tooltipProps.hide}
+      onFocus={tooltipProps.show}
+      onBlur={tooltipProps.hide}
       ref={ref}
       tabIndex={tabIndex}
       type={type}
     >
       {children}
-      {tooltipContent && (
+      {tooltip && (
         <Tooltip
-          ref={tooltip.ref}
+          ref={tooltipProps.ref}
           shortcutKey={shortcutKey}
           tooltipPosition={tooltipPosition}
         >
-          {tooltipContent}
+          {tooltip}
         </Tooltip>
       )}
     </button>

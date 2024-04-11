@@ -16,7 +16,7 @@ function LanguageSwitch(props) {
       ariaLabel={t('header.language.ariaLabel')}
       callback={changeLanguage}
       shortcutKey={SHORTCUT_KEY}
-      tooltipContent={t('header.language.hover')}
+      tooltip={t('header.language.hover')}
     >
       <div
         className={`w-6 h-7 flex flex-col justify-center pointer-events-none transition-transform ease-elastic-out duration-500 ${
