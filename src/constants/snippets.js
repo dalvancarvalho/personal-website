@@ -14,7 +14,7 @@ import { useEffect, useState } from 'react'
 import Prism from 'prismjs'
 
 function useCodeSnippet(codeString) {
-  
+
   const [isCopied, setIsCopied] = useState(false)
 
   useEffect(() => {
