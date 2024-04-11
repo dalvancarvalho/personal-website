@@ -2,12 +2,12 @@
 
 import { useNavigate } from 'react-router-dom'
 
-import useAnimation from './animations/useAnimate'
+import useAnimate from './animations/useAnimate'
 
 function Logo() {
   // Animated logo that changes its text based on the current language and pathname
 
-  const animation = useAnimation()
+  const animation = useAnimate()
   const navigate = useNavigate()
 
   function goHome(event) {
