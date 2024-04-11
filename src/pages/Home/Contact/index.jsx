@@ -24,11 +24,11 @@ function Contact(props) {
   const { screenSize, t } = props
 
   const { confetti } = useConfetti()
-  const refs = useAnimate()
+  const animation = useAnimate()
 
   return (
     <>
-      <Section className="relative" id="contact" ref={refs.scope}>
+      <Section className="relative" id="contact" ref={animation.scope}>
         <Container className="flex flex-col justify-center items-center">
           <SectionTitle
             title={t('pages.home.contact.heading')}
@@ -62,7 +62,7 @@ function Contact(props) {
             </div>
             {!screenSize.lg && <Divider />}
             <div className="col-start-8 col-end-13 w-full">
-              <ContactForm ref={refs.form} t={t} />
+              <ContactForm t={t} />
             </div>
           </Grid>
         </Container>

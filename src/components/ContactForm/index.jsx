@@ -1,28 +1,29 @@
 /* ContactForm/index.jsx */
 
-import { forwardRef } from 'react'
 import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import useContactForm from './hooks/useContactForm'
+import useAnimate from './animations/useAnimate'
 
 import Button from '../Button'
 import Spinner from '../Button/components/Spinner'
 import Input from './components/Input'
 import TextArea from './components/TextArea'
 
-const ContactForm = forwardRef(function ContactForm(props, ref) {
+function ContactForm(props) {
   // Contact form
 
   const { t } = props
 
   const { handleSubmit, isSubmitting, ...inputs } = useContactForm()
+  const animation = useAnimate()
 
   return (
     <form
       className="relative m-auto max-w-md flex flex-col items-center gap-6"
       onSubmit={handleSubmit}
-      ref={ref}
+      ref={animation.scope}
     >
       <h3 className="w-full text-base md:text-lg text-slate-800 dark:text-gray-200 font-bold color-transition">
         {t('pages.home.contact.form.title')}
@@ -67,6 +68,6 @@ const ContactForm = forwardRef(function ContactForm(props, ref) {
       </Button>
     </form>
   )
-})
+}
 
 export default ContactForm

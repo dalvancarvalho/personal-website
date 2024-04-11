@@ -10,7 +10,6 @@ function useAnimate() {
 
   const { screenSize } = useScreenProps()
   const scope = useRef(null)
-  const form = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context((self) => {
@@ -23,7 +22,6 @@ function useAnimate() {
           {
             opacity: 1,
             x: 0,
-            // delay: 0.25,
             duration: 1.25,
             ease: 'power4.out',
             scrollTrigger: {
@@ -33,30 +31,13 @@ function useAnimate() {
           }
         )
       })
-
-      gsap.fromTo(
-        form.current.children,
-        { opacity: 0, y: 32 },
-        {
-          opacity: 1,
-          y: 0,
-          // delay: 0.25,
-          stagger: 0.125,
-          duration: 1.25,
-          ease: 'power4.out',
-          scrollTrigger: {
-            trigger: form.current,
-            start: 'bottom bottom',
-          },
-        }
-      )
     }, scope)
 
     // Context cleanup
     return () => ctx.revert()
   }, [screenSize.lg])
 
-  return { form, scope }
+  return { scope }
 }
 
 export default useAnimate
