@@ -36,11 +36,10 @@ function useAnimate() {
             ease: 'power4.in',
           }
         )
-        .to(
-          text.current,
-          { text: { value: t('pages.home.about.polaroid'), speed: 1.5 }, ease: 'none' },
-          '+=0.5'
-        )
+        .to(text.current, {
+          text: { value: t('pages.home.about.polaroid'), speed: 1.5 },
+          ease: 'none',
+        })
     }, scope)
 
     // Context cleanup
