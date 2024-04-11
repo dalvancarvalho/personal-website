@@ -42,7 +42,7 @@ function LanguageList(props) {
         ))}
         <FontAwesomeIcon
           className={`absolute left-6 text-accent transition-all duration-300 ease-out ${
-            language.id === 'EN' ? 'top-3' : 'top-14'
+            language.id === 'PT' ? 'top-3' : 'top-14'
           }`}
           icon={faCaretRight}
         />
