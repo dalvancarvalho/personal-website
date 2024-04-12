@@ -22,7 +22,7 @@ function SectionTitle(props) {
       <h2 ref={animationRefs.heading}>{title}</h2>
       {watermark && (
         <span
-          className={`${watermarkColor} hidden -z-10 absolute translate-x-[0.125em] md:block text-[2.5em] uppercase tracking-[0.25em] lg:tracking-[0.4em] select-none color-transition whitespace-nowrap`}
+          className={`${watermarkColor} absolute -z-10 translate-x-[0.8rem] hidden md:block text-[6.25rem] uppercase tracking-[1.6rem] select-none color-transition whitespace-nowrap`}
           ref={animationRefs.watermark}
         >
           {watermark}
