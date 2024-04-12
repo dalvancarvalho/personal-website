@@ -10,7 +10,7 @@ function ResumeCard(props) {
   return (
     <a
       aria-label={t('pages.resume.download.ariaLabel')}
-      className="max-w-max pb-5 px-5 md:pb-6 md:px-6 rounded-xl bg-slate-100 dark:bg-dark-4 flex flex-col items-center shadow-md focus-visible:bg-slate-200 focus-visible:dark:bg-dark-1 color-transition resume-hover"
+      className="max-w-max pb-5 px-5 md:pb-6 md:px-6 rounded-xl bg-slate-100 dark:bg-dark-4 flex flex-col items-center shadow-md color-transition resume-hover"
       href={href}
       rel="noopener noreferrer"
       tabIndex="0"
