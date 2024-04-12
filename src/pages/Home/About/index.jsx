@@ -74,7 +74,7 @@ function About(props) {
               ))}
             </ul>
             <Paragraph className="my-2" i18nKey="pages.home.about.paragraphIV" />
-            <Button variant="primary" callback={() => navigate('resume')}>
+            <Button callback={() => navigate('resume')} variant="primary">
               {t('pages.home.about.button')}
               <FontAwesomeIcon
                 className="absolute opacity-0 group-focus-visible/button:translate-x-2 group-focus-visible/button:opacity-100 fa-arrow-right-hover"
