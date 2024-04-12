@@ -22,10 +22,16 @@ function PolaroidPic(props) {
       ref={animation.scope}
     >
       {/* Skewed shadow */}
-      <div className="absolute top-4 md:top-7 lg:top-9 xl:top-7 right-4 md:right-7 size-[95%] md:size-[94%] -skew-y-6 -skew-x-3 blur-[3px] bg-slate-500/15 dark:bg-transparent color-transition"></div>
+      <div
+        className="absolute top-4 md:top-7 lg:top-9 xl:top-7 right-4 md:right-7 size-[95%] md:size-[94%] -skew-y-6 -skew-x-3 blur-[3px] bg-slate-500/15 dark:bg-transparent color-transition"
+        ref={animation.shadow}
+      ></div>
 
       {/* Polaroid */}
-      <div className="absolute inset-0 z-10 size-full px-4 pt-4 pb-16 md:px-5 md:pt-5 md:pb-20 bg-white dark:bg-gray-100 color-transition">
+      <div
+        className="absolute inset-0 z-10 size-full px-4 pt-4 pb-16 md:px-5 md:pt-5 md:pb-20 bg-gradient-to-tr from-white from-60% to-slate-150 color-transition"
+        ref={animation.picture}
+      >
         <div className="relative size-full">
           {/* Sticky tapes */}
           <img
@@ -57,7 +63,9 @@ function PolaroidPic(props) {
           <p
             className="absolute -bottom-10 md:-bottom-[52px] left-0 -rotate-0 font-rock-salt text-sm md:text-base text-slate-800 select-none"
             ref={animation.text}
-          ></p>
+          >
+            {t('pages.home.about.polaroid')}
+          </p>
           <HoverText t={t} />
         </div>
       </div>

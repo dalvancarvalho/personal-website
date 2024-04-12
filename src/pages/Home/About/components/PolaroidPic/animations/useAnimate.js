@@ -2,51 +2,54 @@
 
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { useTranslation } from 'react-i18next'
 
-import useLanguage from '../../../../../../context/LanguageContext'
 import useScreenProps from '../../../../../../hooks/useScreenProps'
 
 function useAnimate() {
   // Polaroid picture animation
 
-  const { t } = useTranslation()
   const { screenSize } = useScreenProps()
-  const language = useLanguage()
-  const tl = useRef(null)
   const scope = useRef(null)
-  const text = useRef(null)
+  const picture = useRef(null)
+  const shadow = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      tl.current = gsap
-        .timeline({
+      gsap.fromTo(
+        picture.current,
+        { opacity: 0, scale: 1.25 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.75,
+          ease: 'power4.in',
           scrollTrigger: {
-            trigger: scope.current,
+            trigger: picture.current,
             start: 'top 65%',
           },
-        })
-        .fromTo(
-          scope.current,
-          { opacity: 0, scale: 1.25 },
-          {
-            opacity: 1,
-            scale: 1,
-            duration: 0.75,
-            ease: 'power4.in',
-          }
-        )
-        .to(text.current, {
-          text: { value: t('pages.home.about.polaroid'), speed: 1.5 },
-          ease: 'none',
-        })
+        }
+      )
+
+      gsap.fromTo(
+        shadow.current,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 0.75,
+          ease: 'power4.in',
+          scrollTrigger: {
+            trigger: picture.current,
+            start: 'top 65%',
+          },
+        }
+      )
     }, scope)
 
     // Context cleanup
     return () => ctx.revert()
-  }, [language, screenSize.lg])
+  }, [screenSize.lg])
 
-  return { scope, text }
+  return { scope, picture, shadow }
 }
 
 export default useAnimate
