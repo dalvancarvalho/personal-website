@@ -1,7 +1,5 @@
 /* Contact/index.jsx */
 
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Toaster } from 'sonner'
 
 import useConfetti from '../../../context/ConfettiContext'
@@ -13,10 +11,12 @@ import Grid from '../../../layout/Grid'
 import Section from '../../../layout/Section/Regular'
 
 import Confetti from './components/Confetti'
+import ContactInfo from './components/ContactInfo'
 import ContactForm from '../../../components/ContactForm'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
-import MailTo from './components/MailTo'
+
+import contacts from './constants/contacts'
 
 function Contact(props) {
   // Contact section
@@ -35,7 +35,7 @@ function Contact(props) {
             watermark={t('pages.home.contact.watermark')}
           />
           <Grid className="gap-x-12">
-            <div className="h-full col-start-1 col-end-8 flex flex-col justify-between gap-8">
+            <div className="h-full col-start-1 col-end-8 flex flex-col justify-between gap-y-12">
               <div className="flex flex-col gap-4">
                 <Paragraph
                   className="contact-paragraph"
@@ -46,18 +46,10 @@ function Contact(props) {
                   i18nKey="pages.home.contact.paragraphII"
                 />
               </div>
-              <div className="contact-paragraph flex flex-col gap-2">
-                <MailTo t={t} />
-                <div className="max-w-max flex items-center gap-2">
-                  <FontAwesomeIcon
-                    className="w-[18px] text-lg text-slate-800 dark:text-gray-200 color-transition"
-                    icon={faLocationDot}
-                  />
-                  <Paragraph
-                    i18nKey="pages.home.contact.location"
-                    variant="medium-bold"
-                  />
-                </div>
+              <div className="w-max flex flex-col gap-2.5 contact-paragraph">
+                {contacts.map((contact) => (
+                  <ContactInfo key={contact.text} t={t} {...contact} />
+                ))}
               </div>
             </div>
             {!screenSize.lg && <Divider />}

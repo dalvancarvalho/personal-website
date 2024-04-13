@@ -130,10 +130,18 @@
           "heading": "Vamos conversar!",
           "watermark": "Contato",
           "paragraphI": "<highlight>Fico muito contente que você tenha dedicado um tempo para conferir meu website pessoal!</highlight> Espero que tenha gostado de navegar pelos meus trabalhos e de saber um pouco mais sobre o que eu faço.",
-          "paragraphII": "No momento, <highlight>estou disponível para me unir a um time criativo de designers e desenvolvedores</highlight>. Se você acha que podemos trabalhar juntos, envie uma mensagem para o e-mail abaixo ou através do formulário nesta seção que prometo retornar o mais breve possível!",
-          "email": "contato@dalvanc.com",
-          "subject": "Mensagem de dalvanc.com!",
-          "location": "RS, Brasil",
+          "paragraphII": "No momento, <highlight>estou disponível para me unir a um time criativo de designers e desenvolvedores</highlight>. Se você acha que podemos trabalhar juntos, envie uma mensagem para um dos contatos abaixo ou através do formulário nesta seção que prometo retornar o mais breve possível!",
+          "email": {
+            "text": "contato@dalvanc.com",
+            "href": "mailto:contato@dalvanc.com?subject=Mensagem de dalvanc.com!"
+          },
+          "phone": {
+            "text": "92 98551-8435",
+            "href": "https://api.whatsapp.com/send?phone=92985518435&text=Olá Dalvan! Encontrei seu website e gostaria de entrar em contato 😃"
+          },
+          "location": {
+            "text": "RS, Brasil"
+          },
           "form": {
             "title": "Deixe sua mensagem:",
             "label": {
