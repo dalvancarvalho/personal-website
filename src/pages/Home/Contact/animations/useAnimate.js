@@ -10,6 +10,7 @@ function useAnimate() {
 
   const { screenSize } = useScreenProps()
   const scope = useRef(null)
+  const contacts = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context((self) => {
@@ -31,13 +32,29 @@ function useAnimate() {
           }
         )
       })
+
+      gsap.fromTo(
+        contacts.current.children,
+        { opacity: 0, y: 32 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.25,
+          stagger: 0.125,
+          ease: 'power4.out',
+          scrollTrigger: {
+            trigger: contacts.current,
+            start: 'bottom bottom',
+          },
+        }
+      )
     }, scope)
 
     // Context cleanup
     return () => ctx.revert()
   }, [screenSize.lg])
 
-  return { scope }
+  return { scope, contacts }
 }
 
 export default useAnimate

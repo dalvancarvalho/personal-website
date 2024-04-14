@@ -46,7 +46,7 @@ function Contact(props) {
                   i18nKey="pages.home.contact.paragraphII"
                 />
               </div>
-              <div className="w-max flex flex-col gap-2.5 contact-paragraph">
+              <div className="w-max flex flex-col gap-2.5" ref={animation.contacts}>
                 {contacts.map((contact) => (
                   <ContactInfo key={contact.text} t={t} {...contact} />
                 ))}
