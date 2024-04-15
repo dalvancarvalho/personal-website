@@ -5,6 +5,8 @@ import { useTranslation } from 'react-i18next'
 import useScreenProps from '../../hooks/useScreenProps'
 import useScrollSpy from '../../hooks/useScrollSpy'
 
+import Meta from '../../components/Meta'
+
 import Footer from '../../layout/Footer'
 import MainSection from '../../layout/Section/Main'
 
@@ -12,8 +14,6 @@ import About from './About'
 import Contact from './Contact'
 import Hero from './Hero'
 import Projects from './Projects'
-
-import Meta from '../../components/Meta'
 
 function Home() {
   // Home page
@@ -25,11 +25,11 @@ function Home() {
   return (
     <>
       <Meta
-        description="Dalvan Carvalho is a front-end developer who channels his creativity to transform the web into an enjoyable place for everyone."
         title={t('meta.title.home')}
+        description="Dalvan Carvalho is a front-end developer who channels his creativity to transform the web into an enjoyable place for everyone."
         url="https://dalvanc.com/"
       />
-      <MainSection className="min-h-dvh w-full overflow-hidden md:overflow-visible">
+      <MainSection>
         <Hero t={t} />
         <About t={t} />
         <Projects {...screenProps} t={t} />
