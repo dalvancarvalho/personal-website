@@ -3,10 +3,13 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
+import useScreenProps from '../../../hooks/useScreenProps'
+
 function useAnimate() {
   // Divider animation
 
   const scope = useRef(null)
+  const { screenSize } = useScreenProps()
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -29,7 +32,7 @@ function useAnimate() {
 
     // Context cleanup
     return () => ctx.revert()
-  }, [])
+  }, [screenSize.lg])
 
   return { scope }
 }

@@ -3,11 +3,14 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
+import useScreenProps from '../../../../hooks/useScreenProps'
+
 function useAnimate() {
   // Projects section animation
 
   const scope = useRef(null)
   const paragraph = useRef(null)
+  const { screenSize } = useScreenProps()
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -29,7 +32,7 @@ function useAnimate() {
 
     // Context cleanup
     return () => ctx.revert()
-  }, [])
+  }, [screenSize.md])
 
   return { scope, paragraph }
 }

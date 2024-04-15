@@ -3,12 +3,15 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
+import useScreenProps from '../../../../hooks/useScreenProps'
+
 function useAnimate(animation, watermarkText) {
   // Heading animation
 
   const scope = useRef(null)
   const heading = useRef(null)
   const watermark = useRef(null)
+  const { screenSize } = useScreenProps()
 
   useLayoutEffect(() => {
     if (!animation) return
@@ -49,7 +52,7 @@ function useAnimate(animation, watermarkText) {
 
     // Context cleanup
     return () => ctx.revert()
-  }, [])
+  }, [screenSize.md])
 
   return { heading, scope, watermark }
 }
