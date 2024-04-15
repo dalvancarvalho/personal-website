@@ -1,7 +1,7 @@
 /* Small/index.jsx */
 
 import { useRef, useState } from 'react'
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
@@ -35,7 +35,7 @@ function SmallCard(props) {
           isEven ? 'translate-x-[80%]' : '-translate-x-[80%]'
         }`}
       >
-        <img alt={t(thumbnail.altText)} className="" src={thumbnail.src} />
+        <img alt={t(thumbnail.altText)} src={thumbnail.src} />
         <ul
           className={`absolute inset-0 size-full px-4 opacity-0 from-black/75 flex flex-col justify-center gap-0.5 ${
             isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'
@@ -43,7 +43,7 @@ function SmallCard(props) {
           ref={animation.stack}
         >
           {stack.map((props) => (
-            <Tech isEven={isEven} key={props.tech} {...props} />
+            <Tech key={props.tech} isEven={isEven} {...props} />
           ))}
         </ul>
       </div>
@@ -66,20 +66,31 @@ function SmallCard(props) {
           />
           <Button
             className="shadow-xl"
-            variant="primary"
             callback={() => navigate(route)}
+            variant="primary"
           >
             {t('pages.home.projects.primaryButton')}
           </Button>
         </div>
-        <FontAwesomeIcon
-          className={`p-2 text-xl text-dark-2 dark:text-slate-50 bg-slate-50 dark:bg-dark-2 drop-shadow-md cursor-pointer transition duration-300 rounded-lg bg-opacity-85 dark:bg-opacity-85 backdrop-blur-[8px] ${
-            showImage ? (isEven ? 'rotate-180' : '-rotate-180') : null
-          }`}
-          icon={isEven ? faChevronLeft : faChevronRight}
-          onClick={() => setShowImage((current) => !current)}
+        <Button
+          className="px-2 py-1 rounded-lg text-xl !text-slate-800 dark:!text-gray-200 bg-slate-50 dark:bg-dark-2 shadow-md color-transition"
+          callback={() => setShowImage((current) => !current)}
           ref={buttonRef}
-        />
+        >
+          <FontAwesomeIcon
+            // prettier-ignore
+            className={`transition-transform duration-500 delay-300 ease-in-out ${
+              isEven
+                ? showImage
+                  ? 'rotate-0'
+                  : 'rotate-180'
+                : showImage
+                  ? 'rotate-180'
+                  : 'rotate-0'
+            }`}
+            icon={faChevronRight}
+          />
+        </Button>
       </div>
     </div>
   )
