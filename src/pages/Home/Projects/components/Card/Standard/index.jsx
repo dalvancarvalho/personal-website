@@ -47,7 +47,7 @@ function Card(props) {
           ref={animation.stack}
         >
           {stack.map((props) => (
-            <Tech isEven={isEven} key={props.tech} {...props} />
+            <Tech key={props.tech} isEven={isEven} {...props} />
           ))}
         </ul>
       </div>

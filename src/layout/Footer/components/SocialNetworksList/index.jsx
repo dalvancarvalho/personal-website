@@ -7,7 +7,7 @@ import SocialNetworkLink from '../SocialNetworkLink'
 import socialNetworks from '../../constants/socialNetworks'
 
 const SocialNetworksList = forwardRef(function SocialNetworksList(props, ref) {
-  // List of social networks links
+  // List of social network links
 
   const { t } = props
 

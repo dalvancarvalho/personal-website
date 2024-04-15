@@ -11,12 +11,12 @@ function NavList(props) {
   const { pathname, t } = props
 
   return (
-    <nav aria-label={t('header.nav.ariaLabel')} className="w-5/6" role="navigation">
+    <nav aria-label={t('header.nav.ariaLabel')} className="w-5/6">
       <MenuList title={t('header.nav.heading')}>
         {navLinks[pathname] &&
-          navLinks[pathname].map(({ name, ...props }) => (
-            <NavLink key={name} to={name} {...props}>
-              {t(`header.nav.${pathname}.${name}`)}
+          navLinks[pathname].map((props) => (
+            <NavLink key={props.name} to={props.name} {...props}>
+              {t(`header.nav.${pathname}.${props.name}`)}
             </NavLink>
           ))}
       </MenuList>

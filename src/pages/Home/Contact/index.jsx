@@ -47,8 +47,8 @@ function Contact(props) {
                 />
               </div>
               <div className="w-max flex flex-col gap-2.5" ref={animation.contacts}>
-                {contacts.map((contact) => (
-                  <ContactInfo key={contact.text} t={t} {...contact} />
+                {contacts.map((props) => (
+                  <ContactInfo key={props.text} t={t} {...props} />
                 ))}
               </div>
             </div>

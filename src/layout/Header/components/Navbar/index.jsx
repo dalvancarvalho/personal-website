@@ -10,12 +10,12 @@ function Navbar(props) {
   const { pathname, t } = props
 
   return (
-    <nav aria-label={t('header.nav.ariaLabel')} role="navigation">
+    <nav aria-label={t('header.nav.ariaLabel')}>
       <ul className="flex items-center gap-6">
         {navLinks[pathname] &&
-          navLinks[pathname].map(({ name }) => (
-            <NavLink key={name} to={name}>
-              {t(`header.nav.${pathname}.${name}`)}
+          navLinks[pathname].map((props) => (
+            <NavLink key={props.name} to={props.name}>
+              {t(`header.nav.${pathname}.${props.name}`)}
             </NavLink>
           ))}
       </ul>

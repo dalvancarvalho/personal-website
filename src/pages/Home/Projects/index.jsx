@@ -42,11 +42,11 @@ function Projects(props) {
         />
 
         <div className="flex flex-col items-center gap-20 md:gap-24">
-          {projects.map((project, index) =>
+          {projects.map((props, index) =>
             screenSize.md ? (
-              <Card index={index} key={project.title} t={t} {...project} />
+              <Card key={props.title} index={index} t={t} {...props} />
             ) : (
-              <SmallCard index={index} key={project.title} t={t} {...project} />
+              <SmallCard key={props.title} index={index} t={t} {...props} />
             )
           )}
         </div>
