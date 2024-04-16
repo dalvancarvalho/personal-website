@@ -1,19 +1,24 @@
 /* CodeSnippet/index.jsx */
 
+import { useEffect } from 'react'
 import { faCheck, faClone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Prism from 'prismjs'
 
-import useCodeSnippet from './hooks/useCodeSnippet'
+import useCopyToClipboard from '../../hooks/useCopyToClipboard'
 
 import Button from '../Button'
 import Paragraph from '../Text/Paragraph'
 
 function CodeSnippet(props) {
-  // Syntax highlighted code snippet for example purposes
+  // Syntax highlighted code snippet
 
   const { codeString, extension, language, title, t } = props
 
-  const { copyToClipboard, isCopied } = useCodeSnippet(codeString)
+  const { copyToClipboard, isCopied } = useCopyToClipboard(codeString)
+
+  // Calls the highlight functionality when the component mounts
+  useEffect(() => Prism.highlightAll(), [])
 
   return (
     <div className="relative m-auto mt-12 md:mt-16 w-full md:w-5/6 bg-slate-150 dark:bg-dark-3 rounded-md shadow-md overflow-hidden transition-[background-color] duration-300 ">
