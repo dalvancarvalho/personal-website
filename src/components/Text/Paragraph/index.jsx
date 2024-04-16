@@ -1,6 +1,6 @@
 /* Paragraph/index.jsx */
 
-import { forwardRef } from 'react'
+import { forwardRef, useEffect, useState } from 'react'
 
 import Translation from '../Translation'
 
@@ -16,12 +16,13 @@ const Paragraph = forwardRef(function Paragraph(props, ref) {
     variant = 'medium', // defaults to 'medium' variant if this prop is not passed
   } = props
 
-  const style = paragraphVariants[variant]
+  const [style, setStyle] = useState('')
+
+  useEffect(() => setStyle(paragraphVariants[variant]), [])
 
   return (
     <p className={`${style} ${className}`} ref={ref}>
-      {children}
-      {i18nKey && <Translation>{i18nKey}</Translation>}
+      {i18nKey ? <Translation>{i18nKey}</Translation> : children}
     </p>
   )
 })
