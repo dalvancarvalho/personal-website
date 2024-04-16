@@ -7,7 +7,6 @@ import buttonVariants from '../constants/buttonVariants'
 function useButton(variant, callback) {
   // Handles the button and tooltip logic
 
-  let timeout
   const [style, setStyle] = useState('')
   const [isTooltipActive, setTooltipActive] = useState(false)
   const tooltipRef = useRef(null)
@@ -15,6 +14,8 @@ function useButton(variant, callback) {
   useEffect(() => setStyle(buttonVariants[variant]), [])
 
   useEffect(() => {
+    let timeout
+
     if (!isTooltipActive) {
       clearTimeout(timeout)
       tooltipRef.current?.classList.remove('tooltip-active')
