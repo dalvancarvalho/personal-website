@@ -7,7 +7,6 @@ import useScrollSpy from '../../hooks/useScrollSpy'
 
 import Meta from '../../components/Meta'
 
-import Footer from '../../layout/Footer'
 import MainSection from '../../layout/Section/Main'
 
 import About from './About'
@@ -35,7 +34,6 @@ function Home() {
         <Projects {...screenProps} t={t} />
         <Contact {...screenProps} t={t} />
       </MainSection>
-      <Footer />
     </>
   )
 }

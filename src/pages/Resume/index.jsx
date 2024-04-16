@@ -6,7 +6,6 @@ import useScrollSpy from '../../hooks/useScrollSpy'
 
 import Meta from '../../components/Meta'
 
-import Footer from '../../layout/Footer'
 import PageHeader from '../../layout/PageHeader'
 import MainSection from '../../layout/Section/Main'
 
@@ -37,7 +36,6 @@ function Resume() {
         {/* <NewSection t={t} /> */}
         <Download t={t} />
       </MainSection>
-      <Footer />
     </>
   )
 }
