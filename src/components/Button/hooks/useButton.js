@@ -1,38 +1,39 @@
 /* useButton.js */
 
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import buttonVariants from '../constants/buttonVariants'
 
-function useButton(variant, callback, tooltip) {
-  // Handles the button logic
+function useButton(variant, callback) {
+  // Handles the button and tooltip logic
 
   let timeout
-  const style = buttonVariants[variant]
+  const [style, setStyle] = useState('')
+  const [isTooltipActive, setTooltipActive] = useState(false)
+  const tooltipRef = useRef(null)
 
-  const ref = useRef(null)
+  useEffect(() => setStyle(buttonVariants[variant]), [])
 
-  // Button
+  useEffect(() => {
+    if (!isTooltipActive) {
+      clearTimeout(timeout)
+      tooltipRef.current?.classList.remove('tooltip-active')
+      return
+    }
+
+    timeout = setTimeout(() => tooltipRef.current?.classList.add('tooltip-active'), 750)
+
+    // Timeout cleanup
+    return () => clearTimeout(timeout)
+  }, [isTooltipActive])
+
   function handleClick() {
     if (!callback) return
     callback()
-    hide()
+    setTooltipActive(false)
   }
 
-  // Tooltip
-  function hide() {
-    if (!tooltip) return
-    clearTimeout(timeout)
-    ref.current.classList.remove('tooltip-active')
-  }
-
-  function show() {
-    if (!tooltip) return
-    if (timeout) clearTimeout(timeout)
-    timeout = setTimeout(() => ref.current.classList.add('tooltip-active'), 750)
-  }
-
-  return { style, handleClick, hide, show, ref }
+  return { style, handleClick, setTooltipActive, tooltipRef }
 }
 
 export default useButton
