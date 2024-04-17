@@ -5,7 +5,7 @@
 }
 
 *::selection {
-  @apply text-white dark:text-black bg-blue-500 dark:bg-orange-400;
+  @apply text-white dark:text-black bg-violet-500 dark:bg-teal-500;
 }
 
 *::-webkit-scrollbar {
