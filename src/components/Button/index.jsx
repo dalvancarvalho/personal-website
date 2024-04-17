@@ -43,7 +43,7 @@ const Button = forwardRef(function Button(props, ref) {
         <Tooltip
           ref={tooltipRef}
           shortcutKey={shortcutKey}
-          tooltipPosition={tooltipPosition}
+          position={tooltipPosition}
         >
           {tooltip}
         </Tooltip>

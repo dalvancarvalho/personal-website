@@ -1,37 +1,23 @@
 /* Tooltip/index.jsx */
 
-import { forwardRef } from 'react'
+import { forwardRef, useEffect, useState } from 'react'
 
 import KeyTag from './components/KeyTag'
+
+import tooltipVariants from './constants/tooltipVariants'
 
 const Tooltip = forwardRef(function Tooltip(props, ref) {
   // Displays a tooltip below the element when it is hovered or focused
 
-  const { children, shortcutKey, tooltipPosition } = props
+  const { children, shortcutKey, position } = props
 
-  let position
+  const [toolTipPosition, setTooltipPosition] = useState('')
 
-  switch (tooltipPosition) {
-    case 'center':
-      position = 'right-1/2 translate-x-1/2'
-      break
-
-    case 'left':
-      position = 'right-0'
-      break
-
-    case 'right':
-      position = 'left-0'
-      break
-
-    // When the 'position' prop is not passed
-    default:
-      position = 'right-0 translate-x-0 xl:right-1/2 xl:translate-x-1/2'
-  }
+  useEffect(() => setTooltipPosition(tooltipVariants[position]), [])
 
   return (
     <p
-      className={`${position} absolute translate-y-4 invisible opacity-0 z-50 border border-slate-150 dark:border-dark-1 rounded-lg shadow-md px-2 py-1 bg-white dark:bg-dark-2 text-slate-600 dark:text-gray-300 font-urbanist font-normal text-sm whitespace-nowrap select-none pointer-events-none`}
+      className={`${toolTipPosition} absolute translate-y-4 invisible opacity-0 z-50 border border-slate-150 dark:border-dark-1 rounded-lg shadow-md px-2 py-1 bg-white dark:bg-dark-2 text-slate-600 dark:text-gray-300 font-urbanist font-normal text-sm whitespace-nowrap select-none pointer-events-none`}
       ref={ref}
     >
       {children}

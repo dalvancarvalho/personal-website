@@ -22,6 +22,7 @@ function ThemeSwitch(props) {
       tooltip={
         theme === 'light' ? t('header.theme.hoverLight') : t('header.theme.hoverDark')
       }
+      tooltipPosition="left-center"
     >
       <div
         className={`w-6 h-7 flex flex-col justify-center gap-3 pointer-events-none transition-transform ease-elastic-out duration-500 ${

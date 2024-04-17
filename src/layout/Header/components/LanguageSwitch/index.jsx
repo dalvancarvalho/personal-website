@@ -17,6 +17,7 @@ function LanguageSwitch(props) {
       callback={changeLanguage}
       shortcutKey={SHORTCUT_KEY}
       tooltip={t('header.language.hover')}
+      tooltipPosition="left-center"
     >
       <div
         className={`w-6 h-7 flex flex-col justify-center pointer-events-none transition-transform ease-elastic-out duration-500 ${
