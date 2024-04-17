@@ -4,10 +4,10 @@ import useAnimate from './animations/useAnimate'
 
 import HoverText from '../HoverText'
 
-import tape from '../../../../../assets/png/tape_1.png'
-import tape2 from '../../../../../assets/png/tape_2.png'
-import meBw from '../../../../../assets/webp/me-bw.webp'
 import meColor from '../../../../../assets/webp/me-color.webp'
+import meBw from '../../../../../assets/webp/me-bw.webp'
+import tape from '../../../../../assets/webp/tape_1.webp'
+import tape2 from '../../../../../assets/webp/tape_2.webp'
 
 function PolaroidPic(props) {
   // Polaroid picture with text
