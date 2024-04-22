@@ -52,22 +52,6 @@ function useAnimate() {
         }
       )
 
-      // gsap.fromTo(
-      //   picture.current,
-      //   { opacity: 0, scale: 1.25, x: -64 },
-      //   {
-      //     opacity: 1,
-      //     scale: 1,
-      //     x: 0,
-      //     duration: 0.75,
-      //     ease: 'power4.in',
-      //     scrollTrigger: {
-      //       trigger: screenSize.lg ? topics.current : picture.current,
-      //       start: 'top 65%',
-      //     },
-      //   }
-      // )
-
       gsap.fromTo(
         quotation.current,
         { opacity: 0, x: 32 },
