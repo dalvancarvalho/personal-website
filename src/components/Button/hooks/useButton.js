@@ -11,7 +11,7 @@ function useButton(variant, callback) {
   const [isTooltipActive, setTooltipActive] = useState(false)
   const tooltipRef = useRef(null)
 
-  useEffect(() => setStyle(buttonVariants[variant]), [])
+  useEffect(() => setStyle(buttonVariants[variant]), [variant])
 
   useEffect(() => {
     let timeout
@@ -22,7 +22,7 @@ function useButton(variant, callback) {
       return
     }
 
-    timeout = setTimeout(() => tooltipRef.current?.classList.add('tooltip-active'), 750)
+    timeout = setTimeout(() => tooltipRef.current?.classList.add('tooltip-active'), 500)
 
     // Timeout cleanup
     return () => clearTimeout(timeout)

@@ -19,8 +19,9 @@ function Breadcrumbs(props) {
       <Button
         ariaLabel={t('pageHeader.breadcrumbs.home.ariaLabel')}
         callback={() => navigate('/')}
+        className="w-6"
         tooltip={t('pageHeader.breadcrumbs.home.tooltip')}
-        tooltipPosition="right-center"
+        tooltipPosition="top-auto-r"
       >
         <FontAwesomeIcon icon={faHouse} />
         <p className="sr-only">{t('pageHeader.breadcrumbs.home.ariaLabel')}</p>
