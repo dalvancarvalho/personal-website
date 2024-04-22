@@ -5,7 +5,7 @@
 }
 
 *::selection {
-  @apply text-white dark:text-black bg-violet-500 dark:bg-teal-500;
+  @apply text-black bg-teal-400;
 }
 
 *::-webkit-scrollbar {
@@ -17,11 +17,11 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  @apply border-solid border-2 border-slate-50 dark:border-dark-6 bg-[#6c6c6c80] dark:bg-[#61606080] rounded-full;
+  @apply border-solid border-2 border-slate-50 dark:border-dark-6 bg-neutral-400 dark:bg-neutral-700 rounded-full;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  @apply bg-[#2564ebb3] dark:bg-[#f974169f];
+  @apply bg-blue-500/70 dark:bg-orange-500/60;
 }
 
 html {
