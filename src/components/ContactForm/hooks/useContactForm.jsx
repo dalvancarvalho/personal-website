@@ -6,7 +6,7 @@ import { toast } from 'sonner'
 
 import useConfetti from '../../../context/ConfettiContext'
 
-import Toast from '../components/Toast'
+import Toast from '../../Toast'
 
 function useContactForm() {
   // Handles the functionality of the contact form
@@ -35,10 +35,10 @@ function useContactForm() {
       sendEmail()
     } else if (isFormComplete && isMessageShort) {
       // ⚠️ Displays a warning message: the 'Message' field must have at least 50 characters
-      toast.custom((id) => <Toast id={id} variant="warning-short-message" />)
+      toast.custom((id) => <Toast id={id} variant="cf-short" />)
     } else {
       // ⚠️ Displays a warning message: all the fields should be filled
-      toast.custom((id) => <Toast id={id} variant="warning-incomplete-fields" />)
+      toast.custom((id) => <Toast id={id} variant="cf-incomplete" />)
     }
   }
 
@@ -61,10 +61,10 @@ function useContactForm() {
     } finally {
       if (!response || response.status !== 200) {
         // ❌ Displays an error message
-        toast.custom((id) => <Toast id={id} variant="error" />)
+        toast.custom((id) => <Toast id={id} variant="cf-error" />)
       } else {
         // ✔️ Displays a success message
-        toast.custom((id) => <Toast id={id} variant="success" />)
+        toast.custom((id) => <Toast id={id} variant="cf-success" />)
         // 🎊 Confetti! (because, why not?)
         setConfetti(true)
         // Resets all the inputs

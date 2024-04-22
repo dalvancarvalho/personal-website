@@ -152,25 +152,6 @@
             "button": {
               "default": "Enviar",
               "submitting": "Enviando..."
-            },
-            "toast": {
-              "closeButton": "Fechar",
-              "error": {
-                "heading": "Houve um problema",
-                "description": "Tente novamente mais tarde"
-              },
-              "incomplete": {
-                "heading": "Formulário incompleto",
-                "description": "Preencha todos os campos antes de enviar"
-              },
-              "short": {
-                "heading": "Mensagem muito curta",
-                "description": "Sua mensagem deve ter pelo menos 50 caracteres"
-              },
-              "success": {
-                "heading": "Mensagem enviada com sucesso",
-                "description": "Confira a sua caixa de entrada"
-              }
             }
           },
           "nav": {
@@ -229,6 +210,28 @@
     "footer": {
       "deploy": "Implementado com ",
       "developer": "Desenvolvido por "
+    },
+
+    "toast": {
+      "close": "Fechar",
+      "contactForm": {
+        "error": {
+          "heading": "Houve um problema",
+          "description": "Tente novamente mais tarde"
+        },
+        "incomplete": {
+          "heading": "Formulário incompleto",
+          "description": "Preencha todos os campos antes de enviar"
+        },
+        "short": {
+          "heading": "Mensagem muito curta",
+          "description": "Sua mensagem deve ter pelo menos 50 caracteres"
+        },
+        "success": {
+          "heading": "Mensagem enviada com sucesso",
+          "description": "Confira a sua caixa de entrada"
+        }
+      }
     },
 
     "misc": {

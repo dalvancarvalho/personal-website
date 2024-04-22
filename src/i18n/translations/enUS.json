@@ -152,25 +152,6 @@
             "button": {
               "default": "Submit",
               "submitting": "Submitting..."
-            },
-            "toast": {
-              "closeButton": "Close",
-              "error": {
-                "heading": "There was a problem",
-                "description": "Please try again later"
-              },
-              "incomplete": {
-                "heading": "Incomplete form",
-                "description": "Fill in all fields before submitting"
-              },
-              "short": {
-                "heading": "Message too short",
-                "description": "Your message must have at least 50 characters"
-              },
-              "success": {
-                "heading": "Message sent successfully",
-                "description": "Please check your inbox"
-              }
             }
           },
           "nav": {
@@ -229,6 +210,28 @@
     "footer": {
       "deploy": "Deployed with ",
       "developer": "Designed and built by "
+    },
+
+    "toast": {
+      "close": "Close",
+      "contactForm": {
+        "error": {
+          "heading": "There was a problem",
+          "description": "Please try again later"
+        },
+        "incomplete": {
+          "heading": "Incomplete form",
+          "description": "Fill in all fields before submitting"
+        },
+        "short": {
+          "heading": "Message too short",
+          "description": "Your message must have at least 50 characters"
+        },
+        "success": {
+          "heading": "Message sent successfully",
+          "description": "Please check your inbox"
+        }
+      }
     },
 
     "misc": {
