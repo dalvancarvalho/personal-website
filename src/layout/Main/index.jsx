@@ -7,7 +7,7 @@ function Main(props) {
 
   useScrollToTop()
 
-  return <main className="main overflow-hidden">{props.children}</main>
+  return <main className="overflow-hidden">{props.children}</main>
 }
 
 export default Main
