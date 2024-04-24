@@ -30,7 +30,7 @@ function PageHeader(props) {
         </div>
 
         {/* Links for socials, demos and repos (if any) are rendered here */}
-        <div className="mt-10 md:mt-0 md:mb-1 flex flex-col gap-2 font-semibold">
+        <div className="mt-10 md:mt-0 flex flex-col gap-2 font-semibold">
           {github && (
             <Link icon={faGithub} href={github} label={t('pageHeader.github')} />
           )}
