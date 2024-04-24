@@ -32,12 +32,12 @@ function NotFound() {
             <FontAwesomeIcon icon={faMapSigns} />
           </h1>
           <Paragraph
-            className="my-5 2xl:my-6 max-w-2xl 2xl:max-w-3xl text-center"
+            className="my-5 2xl:my-6 max-w-2xl 2xl:max-w-3xl text-center text-pretty"
             i18nKey="pages.notFound.paragraph"
-            variant="large-extended"
+            variant="hero"
           />
-          <RouterLink className="mt-4 md:mt-5 2xl:mt-6 group" tabIndex="-1" to="/">
-            <Button variant="primary-lg">
+          <RouterLink className="mt-2 md:mt-5 2xl:mt-6 group" tabIndex="-1" to="/">
+            <Button className="md:text-base 2xl:text-lg" variant="primary">
               <FontAwesomeIcon
                 className="absolute opacity-0 group-focus-visible/button:-translate-x-2 group-focus-visible/button:opacity-100 fa-arrow-left-hover"
                 icon={faArrowLeft}

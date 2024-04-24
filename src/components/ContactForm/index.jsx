@@ -46,9 +46,10 @@ function ContactForm(props) {
         {...inputs}
       />
       <Button
+        className="w-full"
         type="submit"
         tabIndex={isSubmitting ? '-1' : '0'}
-        variant={isSubmitting ? 'submitting-w-full' : 'primary-w-full'}
+        variant={isSubmitting ? 'submitting' : 'primary'}
       >
         {isSubmitting ? (
           // Shows a loading spinner if the message is being submitted

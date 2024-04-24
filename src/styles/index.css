@@ -1,0 +1,127 @@
+/* index.css */
+
+/* Imports */
+@import './partials/_code-snippet.css';
+@import './partials/_fonts';
+@import './partials/_global';
+@import './partials/_primary-input';
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Button */
+  .btn-base {
+    @apply relative py-[0.75em] rounded-[0.5em] flex items-center justify-center text-sm font-semibold tracking-wider whitespace-nowrap color-transition;
+  }
+
+  .btn-primary {
+    @apply px-[1.5em] bg-accent focus-visible:bg-blue-500 focus-visible:dark:bg-orange-400 text-white dark:text-black shadow-md primary-button-hover;
+  }
+
+  .btn-secondary {
+    @apply ring-none text-accent decoration-2 focus-visible:underline secondary-button-hover;
+  }
+
+  .btn-submitting {
+    @apply px-[1.5em] bg-gray-400 dark:bg-gray-500 text-white shadow-md pointer-events-none;
+  }
+
+  .btn-unstyled {
+    @apply relative text-slate-500 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 cursor-pointer color-transition unstyled-button-hover;
+  }
+
+  /* Input container */
+  .input-container {
+    @apply relative w-full mt-4;
+  }
+
+  .input-container::before {
+    @apply absolute left-0 bottom-0 m-auto content-[''] h-0.5 w-full block bg-blue-600 dark:bg-orange-500 bg-auto bg-bottom scale-0 origin-center duration-300;
+  }
+
+  .input-container:focus-visible::before {
+    @apply bg-top scale-100;
+  }
+
+  .input-container.highlighted::before {
+    @apply bg-left scale-100;
+  }
+
+  .highlighted > label {
+    @apply !text-blue-600 dark:!text-orange-500 -translate-y-[155%] scale-[0.85] origin-left;
+  }
+
+  /* Tooltip */
+  .tooltip {
+    @apply absolute invisible opacity-0 z-50 rounded-lg px-2.5 py-1.5 bg-neutral-800 dark:bg-neutral-700 text-white font-urbanist font-normal text-sm whitespace-nowrap select-none pointer-events-none after:absolute after:rotate-45 after:size-2.5 after:bg-neutral-800 after:dark:bg-neutral-700 after:color-transition;
+  }
+
+  .tooltip-active {
+    @apply visible opacity-100 duration-300 !important;
+  }
+
+  .tooltip-pos-top-right {
+    @apply bottom-full -left-3 lg:left-1/2 lg:-translate-x-1/2 -translate-y-6 after:top-full after:left-[18px] after:lg:left-1/2 after:lg:-translate-x-1/2 after:-translate-y-1.5;
+  }
+
+  .tooltip-pos-top-left {
+    @apply bottom-full -right-3 lg:right-1/2 lg:translate-x-1/2 -translate-y-6 after:top-full after:right-[18px] after:lg:left-1/2 after:lg:-translate-x-1/2 after:-translate-y-1.5;
+  }
+
+  .tooltip-pos-bottom-right {
+    @apply top-full -left-3 lg:left-1/2 lg:-translate-x-1/2 translate-y-6 after:bottom-full after:left-6 after:lg:left-1/2 after:-translate-x-1/2 after:translate-y-1.5;
+  }
+
+  .tooltip-pos-bottom-left {
+    @apply top-full -right-3 lg:right-1/2 lg:translate-x-1/2 translate-y-6 after:bottom-full after:right-3.5 after:lg:left-1/2 after:-translate-x-1/2 after:translate-y-1.5;
+  }
+}
+
+@layer utilities {
+  .bg-accent {
+    @apply bg-blue-600 dark:bg-orange-500;
+  }
+
+  .bg-color {
+    @apply bg-slate-50 dark:bg-dark-6;
+  }
+
+  .color-transition {
+    @apply transition-colors duration-300;
+  }
+
+  .disable-scrolling {
+    @apply h-dvh overflow-y-hidden;
+  }
+
+  .debug {
+    @apply outline-dashed outline-1 outline-red-500;
+  }
+
+  .debug-blue {
+    @apply outline-dashed outline-1 outline-blue-500;
+  }
+
+  .ring-none {
+    @apply ring-0 ring-offset-0 outline-none dark:outline-none;
+  }
+
+  .text-accent {
+    @apply text-blue-600 dark:text-orange-500;
+  }
+
+  .text-color {
+    @apply text-slate-800 dark:text-gray-200;
+  }
+
+  .title-font {
+    @apply font-mark-pro font-black tracking-tighter;
+  }
+
+  .variable-padding {
+    @apply lg:px-20 xl:px-52 2xl:px-[338px];
+  }
+}
