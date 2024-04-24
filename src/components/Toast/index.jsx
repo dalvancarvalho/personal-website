@@ -8,13 +8,13 @@ import { useTranslation } from 'react-i18next'
 import toastVariants from './constants/toastVariants'
 
 function Toast(props) {
-  // Displays error, success and warning messages related to the contact form
+  // Displays simple messages in the bottom of the screen
 
   const { id, variant } = props
 
   const { t } = useTranslation()
 
-  const { description, heading, icon } = toastVariants[variant]
+  const { heading, description, icon } = toastVariants[variant]
 
   return (
     <div className="relative xs:w-96 rounded-lg border border-slate-150 dark:border-dark-1 shadow-md p-4 sm:p-3.5 bg-white dark:bg-dark-2 flex items-center gap-2 font-urbanist !transition-[background-color,border] !duration-300">
