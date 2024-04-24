@@ -3,7 +3,7 @@
 function Container(props) {
   // Container with responsive width
 
-  const { children, className } = props
+  const { children, className = '' } = props
 
   return <div className={`container ${className}`}>{children}</div>
 }
