@@ -11,10 +11,10 @@ import { LanguageProvider } from './context/LanguageContext'
 import { MenuProvider } from './context/MenuContext'
 import { ThemeProvider } from './context/ThemeContext'
 
-import './i18n'
-import './styles/tailwind.css'
-
 import App from './App'
+
+import './i18n'
+import './styles/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 

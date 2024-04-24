@@ -1,5 +1,13 @@
 /* _global.css */
 
+html {
+  @apply scroll-smooth;
+}
+
+#root {
+  @apply bg-color text-color font-urbanist antialiased color-transition;
+}
+
 *:focus-visible {
   @apply outline-none dark:outline-none ring-2 ring-blue-600 dark:ring-orange-500 ring-offset-[3px] ring-offset-slate-50 dark:ring-offset-dark-6 !transition-all !duration-75;
 }
@@ -22,8 +30,4 @@
 
 *::-webkit-scrollbar-thumb:hover {
   @apply bg-blue-500/70 dark:bg-orange-500/60;
-}
-
-html {
-  scroll-behavior: smooth;
 }

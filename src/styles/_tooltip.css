@@ -1,5 +1,0 @@
-/* _tooltip.css */
-
-.tooltip-active {
-  @apply !visible !opacity-100 !duration-300;
-}
