@@ -16,7 +16,7 @@
 /* Utility classes */
 @layer utilities {
   .bg-accent {
-    @apply bg-purple-600 dark:bg-orange-500;
+    @apply bg-blue-600 dark:bg-orange-500;
   }
 
   .bg-color {
