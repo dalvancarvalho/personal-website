@@ -7,11 +7,10 @@ import buttonVariants from '../constants/buttonVariants'
 function useButton(variant, callback) {
   // Handles the button and tooltip logic
 
-  const [style, setStyle] = useState('')
+  const style = buttonVariants[variant]
+
   const [isTooltipActive, setTooltipActive] = useState(false)
   const tooltipRef = useRef(null)
-
-  useEffect(() => setStyle(buttonVariants[variant]), [variant])
 
   useEffect(() => {
     let timeout

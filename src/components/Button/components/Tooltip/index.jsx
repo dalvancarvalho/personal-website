@@ -1,19 +1,17 @@
 /* Tooltip/index.jsx */
 
-import { forwardRef, useEffect, useState } from 'react'
+import { forwardRef } from 'react'
 
 import KeyTag from './components/KeyTag'
 
 import tooltipVariants from './constants/tooltipVariants'
 
 const Tooltip = forwardRef(function Tooltip(props, ref) {
-  // Displays a tooltip below the element when it is hovered or focused
+  // Displays a tooltip next to the element when it is hovered or focused
 
   const { children, shortcutKey, position } = props
 
-  const [toolTipPosition, setTooltipPosition] = useState('')
-
-  useEffect(() => setTooltipPosition(tooltipVariants[position]), [])
+  const toolTipPosition = tooltipVariants[position]
 
   return (
     <p
