@@ -5,7 +5,7 @@
 }
 
 *::selection {
-  @apply text-black bg-teal-400;
+  @apply text-black bg-teal-300 dark:bg-teal-400;
 }
 
 *::-webkit-scrollbar {
