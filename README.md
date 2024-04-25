@@ -57,14 +57,22 @@ The website counts with a light and a dark version. You can preview both in the 
 ### Desktop
 
 <div align="center">
-<video src="./src/assets/mp4/desktop.mp4" width="700" autoplay loop></video>
-<div>
+  <img
+    style="width: 700px"
+    src="./src/assets/gif/desktop.gif"
+    alt="desktop view in light/dark version"
+  />
+</div>
 
 ### Mobile
 
 <div align="center">
-  <video src="./src/assets/mp4/mobile.mp4" width="320" autoplay loop></video>
-<div>
+  <img
+    style="width: 300px"
+    src="./src/assets/gif/mobile.gif"
+    alt="mobile view in light/dark version"
+  />
+</div>
 
 ## Resources
 
