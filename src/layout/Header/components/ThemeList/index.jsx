@@ -42,7 +42,7 @@ function ThemeList(props) {
           </li>
         ))}
         <FontAwesomeIcon
-          className={`absolute left-6 text-accent transition-all duration-300 ease-out ${
+          className={`absolute left-6 text-accent transition-all ease-elastic-out duration-300 ${
             theme === 'light' ? 'top-3' : 'top-14'
           }`}
           icon={faCaretRight}
