@@ -107,7 +107,7 @@
         "projects": {
           "heading": "Trabalho feito à mão",
           "watermark": "Projetos",
-          "paragraph": "Após algum tempo aprendendo os fundamentos do desenvolvimento front-end e me aventurando em tutoriais de criação de players de música, rastreadores da ISS e três ou quatro tipos diferentes de to-do lists, listo abaixo alguns projetos autorais que <highlight>realmente me fizeram aprender JavaScript</highlight> e explorar o seu potencial na criação de aplicações web.",
+          "paragraph": "Após algum tempo aprendendo os fundamentos do desenvolvimento front-end e me aventurando em tutoriais de criação de players de música, <iss>rastreadores da ISS</iss> e três ou quatro tipos diferentes de to-do lists, listo abaixo alguns projetos autorais que <highlight>realmente me fizeram aprender JavaScript</highlight> e explorar o seu potencial na criação de aplicações web.",
           "brGeo": {
             "altText": "Tela do BR Geo, exibindo um painel com o mapa do Rio de Janeiro e estatísticas populacionais em um gráfico ao lado",
             "title": "BR Geo",

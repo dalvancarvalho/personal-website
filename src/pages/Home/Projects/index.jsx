@@ -40,7 +40,6 @@ function Projects(props) {
           i18nKey="pages.home.projects.paragraph"
           ref={animation.paragraph}
         />
-
         <div className="flex flex-col items-center gap-20 md:gap-24">
           {projects.map((props, index) =>
             screenSize.md ? (
