@@ -12,12 +12,6 @@
     },
 
     "header": {
-      "logo": {
-        "about": "sobre",
-        "projects": "projetos",
-        "personalWebsite": "website pessoal",
-        "notFound": "página não encontrada"
-      },
       "skip": "Pular para conteúdo",
       "nav": {
         "ariaLabel": "Menu principal",
