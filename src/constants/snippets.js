@@ -1,7 +1,7 @@
 /* snippets.js */
 
 // prettier-ignore
-const snippetModel = {
+const SNIPPET_MODEL = {
   // Snippet model that should be followed for all new snippets added to this file
 
   title: 'misc.codeSnippet.title', // [string] should be a key to a i18next translation file
@@ -39,7 +39,7 @@ export default useCopyToClipboard
 }
 
 // Each page should have its own object containing the snippets used throughout the examples
-const brGeo = {
+const BR_GEO = {
   snippetOne: {
     title: '',
     extension: '',
@@ -57,7 +57,7 @@ const brGeo = {
   },
 }
 
-const personalWebsite = {
+const PERSONAL_WEBSITE = {
   snippetOne: {
     title: '',
     extension: '',
@@ -75,7 +75,7 @@ const personalWebsite = {
   },
 }
 
-const splitIt = {
+const SPLIT_IT = {
   snippetOne: {
     title: '',
     extension: '',
@@ -93,4 +93,4 @@ const splitIt = {
   },
 }
 
-export { snippetModel as default, brGeo, personalWebsite, splitIt }
+export { SNIPPET_MODEL as default, BR_GEO, PERSONAL_WEBSITE, SPLIT_IT }

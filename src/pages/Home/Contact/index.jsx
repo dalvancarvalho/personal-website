@@ -16,7 +16,7 @@ import ContactForm from '../../../components/ContactForm'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
 
-import contacts from './constants/contacts'
+import CONTACTS from './constants/contacts'
 
 function Contact(props) {
   // Contact section
@@ -47,7 +47,7 @@ function Contact(props) {
                 />
               </div>
               <div className="w-max flex flex-col gap-2.5" ref={animation.contacts}>
-                {contacts.map((props) => (
+                {CONTACTS.map((props) => (
                   <ContactInfo key={props.text} t={t} {...props} />
                 ))}
               </div>

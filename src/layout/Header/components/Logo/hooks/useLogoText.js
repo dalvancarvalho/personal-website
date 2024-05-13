@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom'
 
 import useLanguage from '../../../../../context/LanguageContext'
 
-import { enUS, ptBR } from '../constants/logoText'
+import { PT_BR, EN_US } from '../constants/logoText'
 
 function useLogoText() {
   // Updates the logo based on the current pathname and language
@@ -13,13 +13,15 @@ function useLogoText() {
   const { language } = useLanguage()
   const { pathname } = useLocation()
   const [logoText, setLogoText] = useState(
-    language.value === 'ptBR' ? ptBR[pathname] : enUS[pathname]
+    language.value === 'ptBR' ? PT_BR[pathname] : EN_US[pathname]
   )
 
   useEffect(() => {
     // Sets a new logo text when the language or pathname are changed
 
-    language.value === 'ptBR' ? setLogoText(ptBR[pathname]) : setLogoText(enUS[pathname])
+    language.value === 'ptBR'
+      ? setLogoText(PT_BR[pathname])
+      : setLogoText(EN_US[pathname])
   }, [language, pathname])
 
   return logoText

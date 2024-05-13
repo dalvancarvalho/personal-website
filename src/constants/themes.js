@@ -1,7 +1,7 @@
 /* themes.js */
 
-const themes = ['light', 'dark']
-const light = themes[0]
-const dark = themes[1]
+const THEMES = ['light', 'dark']
+const LIGHT = THEMES[0]
+const DARK = THEMES[1]
 
-export { themes as default, light, dark }
+export { THEMES as default, LIGHT, DARK }

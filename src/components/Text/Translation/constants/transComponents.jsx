@@ -1,6 +1,6 @@
 /* transComponents.jsx */
 
-const transComponents = {
+const TRANS_COMPONENTS = {
   // Set of components used throughout the project in combination with the i18next 'Trans' component
 
   /* Utils */
@@ -32,4 +32,4 @@ const transComponents = {
   ),
 }
 
-export default transComponents
+export default TRANS_COMPONENTS

@@ -5,7 +5,7 @@ import personalWebsiteThumb from '../assets/webp/personal-website.webp'
 import splitItThumb from '../assets/webp/split-it.webp'
 
 // List of attributes of each project displayed in the 'Projects' section
-const projects = [
+const PROJECTS = [
   {
     title: 'pages.home.projects.brGeo.title',
     description: 'pages.home.projects.brGeo.description',
@@ -121,8 +121,8 @@ const projects = [
 ]
 
 // Data used inside each project's page
-const brGeo = projects[0]
-const personalWebsite = projects[1]
-const splitIt = projects[2]
+const brGeo = PROJECTS[0]
+const personalWebsite = PROJECTS[1]
+const splitIt = PROJECTS[2]
 
-export { projects as default, brGeo, personalWebsite, splitIt }
+export { PROJECTS as default, brGeo, personalWebsite, splitIt }

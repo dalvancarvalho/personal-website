@@ -3,7 +3,7 @@
 import NavLink from '../NavLink'
 import MenuList from '../MenuList'
 
-import navLinks from '../../constants/navLinks'
+import NAV_LINKS from '../../constants/navLinks'
 
 function NavList(props) {
   // List of navigation links (inside menu)
@@ -13,8 +13,8 @@ function NavList(props) {
   return (
     <nav aria-label={t('header.nav.ariaLabel')} className="w-5/6">
       <MenuList title={t('header.nav.heading')}>
-        {navLinks[pathname] &&
-          navLinks[pathname].map((props) => (
+        {NAV_LINKS[pathname] &&
+          NAV_LINKS[pathname].map((props) => (
             <NavLink key={props.name} to={props.name} {...props}>
               {t(`header.nav.${pathname}.${props.name}`)}
             </NavLink>

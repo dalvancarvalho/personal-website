@@ -7,7 +7,7 @@ import useLanguage from '../../../../context/LanguageContext'
 
 import MenuList from '../MenuList'
 
-import languages from '../../../../constants/languages'
+import LANGUAGES from '../../../../constants/languages'
 
 function LanguageList(props) {
   // List of languages available for use (inside menu)
@@ -19,7 +19,7 @@ function LanguageList(props) {
   return (
     <div className="w-5/6">
       <MenuList title={t('header.language.heading')}>
-        {languages.map((lang) => (
+        {LANGUAGES.map((lang) => (
           <li
             className={`py-1.5 w-full cursor-pointer color-transition ${
               lang.id === language.id

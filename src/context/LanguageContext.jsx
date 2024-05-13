@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import useKeyPress from '../hooks/useKeyPress'
 import useLocalStorage from '../hooks/useLocalStorage'
 
-import { enUS, ptBR } from '../constants/languages'
+import { EN_US, PT_BR } from '../constants/languages'
 
 // Context for the internationalization functionality
 const LanguageContext = createContext()
@@ -14,7 +14,7 @@ const LanguageContext = createContext()
 function LanguageProvider({ children }) {
   const SHORTCUT_KEY = 'l'
   const clientLang = navigator?.languages[0] // Preferred language of the browser
-  const startingLang = clientLang === 'pt-BR' || clientLang === 'pt' ? ptBR : enUS
+  const startingLang = clientLang === 'pt-BR' || clientLang === 'pt' ? PT_BR : EN_US
   const [language, setLanguage] = useLocalStorage('language', startingLang)
   const { i18n } = useTranslation()
   useKeyPress(SHORTCUT_KEY, changeLanguage)
@@ -27,7 +27,7 @@ function LanguageProvider({ children }) {
   }, [language])
 
   function changeLanguage() {
-    setLanguage((currentLang) => (currentLang.id === 'PT' ? enUS : ptBR))
+    setLanguage((currentLang) => (currentLang.id === 'PT' ? EN_US : PT_BR))
   }
 
   return (

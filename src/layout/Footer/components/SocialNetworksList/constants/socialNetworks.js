@@ -8,7 +8,7 @@ import {
   faXTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
-const socialNetworks = [
+const SOCIAL_NETWORKS = [
   // List of social networks displayed in the footer of each page of the application
 
   {
@@ -43,4 +43,4 @@ const socialNetworks = [
   },
 ]
 
-export default socialNetworks
+export default SOCIAL_NETWORKS

@@ -1,6 +1,6 @@
 /* languages.js */
 
-const languages = [
+const LANGUAGES = [
   {
     id: 'PT',
     name: 'Português',
@@ -12,7 +12,7 @@ const languages = [
     value: 'enUS',
   },
 ]
-const ptBR = languages[0]
-const enUS = languages[1]
+const PT_BR = LANGUAGES[0]
+const EN_US = LANGUAGES[1]
 
-export { languages as default, enUS, ptBR }
+export { LANGUAGES as default, PT_BR, EN_US }

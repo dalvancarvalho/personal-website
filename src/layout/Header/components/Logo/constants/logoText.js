@@ -1,6 +1,6 @@
 /* logoText.js */
 
-const ptBR = {
+const PT_BR = {
   '/': 'dalvan c',
   '/br-geo': 'br geo',
   '/personal-website': 'website pessoal',
@@ -8,7 +8,7 @@ const ptBR = {
   '/split-it': 'split it!',
 }
 
-const enUS = {
+const EN_US = {
   '/': 'dalvan c',
   '/br-geo': 'br geo',
   '/personal-website': 'personal website',
@@ -16,4 +16,4 @@ const enUS = {
   '/split-it': 'split it!',
 }
 
-export { ptBR, enUS }
+export { PT_BR, EN_US }

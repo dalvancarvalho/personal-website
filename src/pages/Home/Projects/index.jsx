@@ -10,7 +10,7 @@ import Section from '../../../layout/Section/Regular'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
 
-import projects from '../../../constants/projects'
+import PROJECTS from '../../../constants/projects'
 
 // Dynamic import
 const Card = lazy(() => import('./components/Card/Standard'))
@@ -41,7 +41,7 @@ function Projects(props) {
           ref={animation.paragraph}
         />
         <div className="flex flex-col items-center gap-20 md:gap-24">
-          {projects.map((props, index) =>
+          {PROJECTS.map((props, index) =>
             screenSize.md ? (
               <Card key={props.title} index={index} t={t} {...props} />
             ) : (

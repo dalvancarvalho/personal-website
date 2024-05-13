@@ -1,9 +1,9 @@
-/* resume.js */
+/* resumes.js */
 
 import thumbEn from '../../../assets/webp/resume-en.webp'
 import thumbPt from '../../../assets/webp/resume-pt.webp'
 
-const resume = [
+const RESUMES = [
   // List of resume versions (Brazilian Portuguese and English)
 
   {
@@ -20,4 +20,4 @@ const resume = [
   },
 ]
 
-export default resume
+export default RESUMES

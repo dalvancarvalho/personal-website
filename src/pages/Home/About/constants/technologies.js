@@ -1,6 +1,6 @@
 /* technologies.js */
 
-const technologies = [
+const TECHNOLOGIES = [
   // List of technologies displayed in the 'About' section
 
   {
@@ -29,4 +29,4 @@ const technologies = [
   },
 ]
 
-export default technologies
+export default TECHNOLOGIES

@@ -7,7 +7,7 @@ import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
 import ResumeCard from '../components/ResumeCard'
 
-import resumeList from '../constants/resume'
+import RESUMES from '../constants/resumes'
 
 function Download(props) {
   // Download section
@@ -24,7 +24,7 @@ function Download(props) {
         />
         <Paragraph i18nKey="pages.resume.download.paragraph" />
         <div className="mt-12 md:mt-16 flex flex-wrap items-center justify-center gap-12">
-          {resumeList.map((props) => (
+          {RESUMES.map((props) => (
             <ResumeCard key={props.title} t={t} {...props} />
           ))}
         </div>

@@ -4,7 +4,7 @@ import { forwardRef } from 'react'
 
 import Translation from '../Translation'
 
-import paragraphVariants from './constants/paragraphVariants'
+import PARAGRAPH_VARIANTS from './constants/paragraphVariants'
 
 // prettier-ignore
 const Paragraph = forwardRef(function Paragraph(props, ref) {
@@ -17,7 +17,7 @@ const Paragraph = forwardRef(function Paragraph(props, ref) {
     variant = 'medium', // defaults to 'medium' variant if this prop is not passed
   } = props
 
-  const style = paragraphVariants[variant]
+  const style = PARAGRAPH_VARIANTS[variant]
 
   return (
     <p className={`${style} ${className}`} ref={ref}>

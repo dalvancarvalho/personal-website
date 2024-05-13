@@ -2,12 +2,12 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import buttonVariants from '../constants/buttonVariants'
+import BUTTON_VARIANTS from '../constants/buttonVariants'
 
 function useButton(variant, callback) {
   // Handles the button and tooltip logic
 
-  const style = buttonVariants[variant]
+  const style = BUTTON_VARIANTS[variant]
 
   const [isTooltipActive, setTooltipActive] = useState(false)
   const tooltipRef = useRef(null)

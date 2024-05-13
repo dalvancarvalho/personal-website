@@ -19,7 +19,7 @@ import QuotationMark from './components/QuotationMark'
 import Tech from './components/Tech'
 import Topic from './components/Topic'
 
-import technologies from './constants/technologies'
+import TECHNOLOGIES from './constants/technologies'
 
 import stack from '../../../assets/svg/stack.svg'
 
@@ -69,7 +69,7 @@ function About(props) {
               {t('pages.home.about.subHeadingIV')}
             </h3>
             <ul className="w-11/12 md:w-7/12 lg:w-4/5 grid grid-cols-2 gap-y-3 md:gap-y-2">
-              {technologies.map((props) => (
+              {TECHNOLOGIES.map((props) => (
                 <Tech key={props.name} {...props} />
               ))}
             </ul>

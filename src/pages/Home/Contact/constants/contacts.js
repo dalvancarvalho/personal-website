@@ -2,7 +2,7 @@
 
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 
-const contacts = [
+const CONTACTS = [
   {
     text: 'pages.home.contact.email.text',
     href: 'pages.home.contact.email.href',
@@ -23,4 +23,4 @@ const contacts = [
   },
 ]
 
-export default contacts
+export default CONTACTS
