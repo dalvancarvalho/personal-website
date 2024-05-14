@@ -31,8 +31,8 @@ function Home() {
       <MainSection>
         <Hero t={t} />
         <About t={t} />
-        <Projects {...screenProps} t={t} />
-        <Contact {...screenProps} t={t} />
+        <Projects t={t} {...screenProps} />
+        <Contact t={t} {...screenProps} />
       </MainSection>
     </>
   )
