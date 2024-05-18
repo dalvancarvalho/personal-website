@@ -19,30 +19,32 @@ function LanguageList(props) {
   return (
     <div className="w-5/6">
       <MenuList title={t('header.language.heading')}>
-        {LANGUAGES.map((lang) => (
+        {LANGUAGES.map((languageOption) => (
           <li
             className={`py-1.5 w-full cursor-pointer color-transition ${
-              lang.id === language.id
+              languageOption.value === language.value
                 ? 'font-bold text-slate-800 dark:text-gray-200'
                 : 'font-medium text-slate-500 dark:text-gray-400'
             }`}
-            key={lang.id}
-            onClick={() => setLanguage(lang)}
-            onKeyDown={(event) => (event.code === 'Enter' ? setLanguage(lang) : null)}
+            key={languageOption.value}
+            onClick={() => setLanguage(languageOption)}
+            onKeyDown={(event) =>
+              event.code === 'Enter' ? setLanguage(languageOption) : null
+            }
             role="option"
             tabIndex="0"
           >
             <div className="flex items-center">
               <span className="ml-14 mr-4 w-6 pt-0.5 font-black text-base">
-                {lang.id}
+                {languageOption.id}
               </span>
-              <span className="pt-1">{lang.name}</span>
+              <span className="pt-1">{languageOption.name}</span>
             </div>
           </li>
         ))}
         <FontAwesomeIcon
           className={`absolute left-6 text-accent transition-all ease-elastic-out duration-300 ${
-            language.id === 'PT' ? 'top-3' : 'top-14'
+            language.value === 'ptBr' ? 'top-3' : 'top-14'
           }`}
           icon={faCaretRight}
         />

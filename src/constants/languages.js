@@ -4,15 +4,18 @@ const LANGUAGES = [
   {
     id: 'PT',
     name: 'Português',
-    value: 'ptBR',
+    value: 'ptBr',
   },
   {
     id: 'EN',
     name: 'English',
-    value: 'enUS',
+    value: 'enUs',
   },
 ]
+
 const PT_BR = LANGUAGES[0]
 const EN_US = LANGUAGES[1]
 
-export { LANGUAGES as default, PT_BR, EN_US }
+const SHORTCUT_KEY = 'l' // Used in combination with 'Ctrl' key to toggle the language
+
+export { LANGUAGES as default, PT_BR, EN_US, SHORTCUT_KEY }

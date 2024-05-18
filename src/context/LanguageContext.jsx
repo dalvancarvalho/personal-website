@@ -6,18 +6,18 @@ import { useTranslation } from 'react-i18next'
 import useKeyPress from '../hooks/useKeyPress'
 import useLocalStorage from '../hooks/useLocalStorage'
 
-import { EN_US, PT_BR } from '../constants/languages'
+import { EN_US, PT_BR, SHORTCUT_KEY } from '../constants/languages'
 
 // Context for the internationalization functionality
 const LanguageContext = createContext()
 
 function LanguageProvider({ children }) {
-  const SHORTCUT_KEY = 'l'
-  const clientLang = navigator?.languages[0] // Preferred language of the browser
-  const startingLang = clientLang === 'pt-BR' || clientLang === 'pt' ? PT_BR : EN_US
-  const [language, setLanguage] = useLocalStorage('language', startingLang)
+  const CLIENT_LANG = navigator?.languages[0] // Browser's preferred language
+  const INITIAL_LANG = CLIENT_LANG === 'pt-BR' || CLIENT_LANG === 'pt' ? PT_BR : EN_US
+
+  const [language, setLanguage] = useLocalStorage('language', INITIAL_LANG)
   const { i18n } = useTranslation()
-  useKeyPress(SHORTCUT_KEY, changeLanguage)
+  useKeyPress(SHORTCUT_KEY, switchLanguage)
 
   useEffect(() => {
     // Changes the language of the page and its title
@@ -26,13 +26,13 @@ function LanguageProvider({ children }) {
     i18n.changeLanguage(value)
   }, [language])
 
-  function changeLanguage() {
-    setLanguage((currentLang) => (currentLang.id === 'PT' ? EN_US : PT_BR))
+  function switchLanguage() {
+    setLanguage((currentLang) => (currentLang.value === 'ptBr' ? EN_US : PT_BR))
   }
 
   return (
     <LanguageContext.Provider
-      value={{ language, setLanguage, changeLanguage, SHORTCUT_KEY }}
+      value={{ language, setLanguage, switchLanguage, SHORTCUT_KEY }}
     >
       {children}
     </LanguageContext.Provider>

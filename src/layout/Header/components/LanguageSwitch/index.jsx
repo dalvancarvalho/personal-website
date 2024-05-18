@@ -9,19 +9,19 @@ function LanguageSwitch(props) {
 
   const { t } = props
 
-  const { language, changeLanguage, SHORTCUT_KEY } = useLanguage()
+  const { language, switchLanguage, SHORTCUT_KEY } = useLanguage()
 
   return (
     <Button
       ariaLabel={t('header.language.ariaLabel')}
-      callback={changeLanguage}
+      callback={switchLanguage}
       shortcutKey={SHORTCUT_KEY}
       tooltip={t('header.language.hover')}
       tooltipPosition="bottom-auto-l"
     >
       <div
         className={`w-6 h-7 flex flex-col justify-center pointer-events-none transition-transform ease-elastic-out duration-500 ${
-          language.id === 'PT'
+          language.value === 'ptBr'
             ? 'translate-y-1/2 [&>*:last-child]:opacity-0'
             : '-translate-y-1/2 [&>*:first-child]:opacity-0'
         }`}

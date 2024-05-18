@@ -7,7 +7,7 @@ import useTheme from '../../../../context/ThemeContext'
 
 import MenuList from '../MenuList'
 
-import themes from '../../../../constants/themes'
+import THEMES from '../../../../constants/themes'
 
 function ThemeList(props) {
   // List of themes available for use (inside menu)
@@ -19,25 +19,25 @@ function ThemeList(props) {
   return (
     <div className="w-5/6">
       <MenuList title={t('header.theme.heading')}>
-        {themes.map((themeName) => (
+        {THEMES.map((themeOption) => (
           <li
             className={`py-1.5 w-full cursor-pointer color-transition ${
-              themeName === theme
+              themeOption === theme
                 ? 'font-bold text-slate-800 dark:text-gray-200'
                 : 'font-medium text-slate-500 dark:text-gray-400'
             }`}
-            key={themeName}
-            onClick={() => setTheme(themeName)}
-            onKeyDown={(event) => (event.code === 'Enter' ? setTheme(themeName) : null)}
+            key={themeOption}
+            onClick={() => setTheme(themeOption)}
+            onKeyDown={(event) => (event.code === 'Enter' ? setTheme(themeOption) : null)}
             role="option"
             tabIndex="0"
           >
             <div className="flex items-center">
               <FontAwesomeIcon
                 className="ml-14 mr-4 w-6 -rotate-[23deg]"
-                icon={themeName === 'light' ? faSun : faMoon}
+                icon={themeOption === 'light' ? faSun : faMoon}
               />
-              <span className="pt-1">{t(`header.theme.${themeName}`)}</span>
+              <span className="pt-1">{t(`header.theme.${themeOption}`)}</span>
             </div>
           </li>
         ))}

@@ -12,12 +12,12 @@ function ThemeSwitch(props) {
 
   const { t } = props
 
-  const { theme, changeTheme, SHORTCUT_KEY } = useTheme()
+  const { theme, switchTheme, SHORTCUT_KEY } = useTheme()
 
   return (
     <Button
       ariaLabel={t('header.theme.ariaLabel')}
-      callback={changeTheme}
+      callback={switchTheme}
       shortcutKey={SHORTCUT_KEY}
       tooltip={
         theme === 'light' ? t('header.theme.hoverLight') : t('header.theme.hoverDark')
