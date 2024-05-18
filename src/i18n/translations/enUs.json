@@ -103,7 +103,7 @@
           "watermark": "Projects",
           "paragraph": "After some time learning the fundamentals of front-end development and venturing into tutorials for creating music players, <iss>ISS trackers</iss>, and three or four different types of to-do lists, I list below some personal projects that <highlight>truly made me learn JavaScript</highlight> and explore its potential in building web applications.",
           "brGeo": {
-            "altText": "Screen of BR Geo, displaying a dashboard with a Rio de Janeiro map and populational statistics in a chart on its side",
+            "altText": "Screen of BR Geo, displaying a dashboard with a Rio de Janeiro map and populacional statistics in a chart on its side",
             "title": "BR Geo",
             "description": "View information from several geographic and social topics through charts and interactive maps. With the powerful IBGE API, get updated data at county, state, and country levels!"
           },
