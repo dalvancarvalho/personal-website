@@ -13,13 +13,13 @@ function useLogoText() {
   const { language } = useLanguage()
   const { pathname } = useLocation()
   const [logoText, setLogoText] = useState(
-    language.value === 'ptBR' ? PT_BR[pathname] : EN_US[pathname]
+    language.value === 'ptBr' ? PT_BR[pathname] : EN_US[pathname]
   )
 
   useEffect(() => {
     // Sets a new logo text when the language or pathname are changed
 
-    language.value === 'ptBR'
+    language.value === 'ptBr'
       ? setLogoText(PT_BR[pathname])
       : setLogoText(EN_US[pathname])
   }, [language, pathname])
