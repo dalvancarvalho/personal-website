@@ -3,8 +3,8 @@
 import { initReactI18next } from 'react-i18next'
 import i18n from 'i18next'
 
-import ptBrJson from './translations/ptBr.json'
-import enUsJson from './translations/enUs.json'
+import ptBrJson from './translations/pt.json'
+import enUsJson from './translations/en.json'
 
 i18n.use(initReactI18next).init({
   fallbackLng: 'ptBr',
