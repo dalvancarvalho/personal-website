@@ -15,7 +15,7 @@ function useConsoleMessage() {
     'font-size: 12px',
   ].join('; ')
 
-  useEffect(() => console.log(string, style), [])
+  useEffect(() => console.log(STRING, STYLE), [])
 }
 
 export default useConsoleMessage
