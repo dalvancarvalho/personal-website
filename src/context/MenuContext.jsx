@@ -9,6 +9,7 @@ const MenuContext = createContext()
 
 function MenuProvider({ children }) {
   const documentElement = document.documentElement
+
   const { screenSize } = useScreenProps()
   const [isMenuOpen, setMenuState] = useState(false)
   const button = useRef(null)

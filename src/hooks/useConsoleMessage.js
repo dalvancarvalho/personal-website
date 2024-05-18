@@ -5,10 +5,10 @@ import { useEffect } from 'react'
 function useConsoleMessage() {
   // Welcome message displayed inside dev tools
 
-  const string =
+  const STRING =
     '%cHello fellow dev, welcome to my personal website! \nFeel free to check its repository at: https://github.com/dalvancarvalho/personal-website'
 
-  const style = [
+  const STYLE = [
     'color: #5a82db',
     'font-weight: bold',
     'font-family: monospace',
