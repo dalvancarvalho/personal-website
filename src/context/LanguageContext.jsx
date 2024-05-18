@@ -15,7 +15,7 @@ function LanguageProvider({ children }) {
   const CLIENT_LANG = navigator?.languages[0] // Browser's preferred language
   const INITIAL_LANG = CLIENT_LANG === 'pt-BR' || CLIENT_LANG === 'pt' ? PT_BR : EN_US
 
-  const [language, setLanguage] = useLocalStorage('language', INITIAL_LANG)
+  const [language, setLanguage] = useLocalStorage('preferred-language', INITIAL_LANG)
   const { i18n } = useTranslation()
   useKeyPress(SHORTCUT_KEY, switchLanguage)
 

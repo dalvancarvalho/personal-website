@@ -13,7 +13,7 @@ const ThemeContext = createContext()
 function ThemeProvider({ children }) {
   const documentElement = document.documentElement
 
-  const [theme, setTheme] = useLocalStorage('theme', LIGHT)
+  const [theme, setTheme] = useLocalStorage('preferred-theme', LIGHT)
   useKeyPress(SHORTCUT_KEY, switchTheme)
 
   useEffect(() => {
