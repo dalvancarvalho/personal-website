@@ -16,7 +16,9 @@ function MenuProvider({ children }) {
   const menu = useRef(null)
 
   useEffect(() => {
-    documentElement.classList.toggle('disable-scrolling')
+    isMenuOpen
+      ? documentElement.classList.add('disable-scrolling')
+      : documentElement.classList.remove('disable-scrolling')
 
     document.addEventListener('mousedown', checkOutsideClick)
     document.addEventListener('touchstart', checkOutsideClick)
