@@ -121,8 +121,8 @@ const PROJECTS = [
 ]
 
 // Data used inside each project's page
-const brGeo = PROJECTS[0]
-const personalWebsite = PROJECTS[1]
-const splitIt = PROJECTS[2]
+const BR_GEO = PROJECTS[0]
+const PERSONAL_WEBSITE = PROJECTS[1]
+const SPLIT_IT = PROJECTS[2]
 
-export { PROJECTS as default, brGeo, personalWebsite, splitIt }
+export { PROJECTS as default, BR_GEO, PERSONAL_WEBSITE, SPLIT_IT }
