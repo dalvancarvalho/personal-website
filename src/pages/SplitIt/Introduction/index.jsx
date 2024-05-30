@@ -9,16 +9,15 @@ import SectionTitle from '../../../components/Text/SectionTitle'
 
 import SNIPPET_MODEL from '../../../constants/snippets'
 
-function Introduction(props) {
+const Introduction = ({ t }) => {
   // In progress...
-
-  const { t } = props
 
   return (
     <Section id="intro">
       <Container className="h-full variable-padding">
         <SectionTitle
           animation={false}
+          className="pt-9 md:pt-16"
           title={t('pages.splitIt.intro.heading')}
           watermark={t('pages.splitIt.intro.watermark')}
         />

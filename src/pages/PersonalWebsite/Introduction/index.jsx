@@ -7,23 +7,22 @@ import CodeSnippet from '../../../components/CodeSnippet'
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
 
-import snippetModel from '../../../constants/snippets'
+import SNIPPET_MODEL from '../../../constants/snippets'
 
-function Introduction(props) {
+const Introduction = ({ t }) => {
   // In progress...
-
-  const { t } = props
 
   return (
     <Section id="intro">
       <Container className="h-full variable-padding">
         <SectionTitle
           animation={false}
+          className="pt-9 md:pt-16"
           title={t('pages.personalWebsite.intro.heading')}
           watermark={t('pages.personalWebsite.intro.watermark')}
         />
         <Paragraph>{t('misc.comingSoon')}</Paragraph>
-        <CodeSnippet t={t} {...snippetModel} />
+        <CodeSnippet t={t} {...SNIPPET_MODEL} />
       </Container>
     </Section>
   )

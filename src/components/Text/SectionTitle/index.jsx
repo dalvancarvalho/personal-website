@@ -7,6 +7,7 @@ function SectionTitle(props) {
 
   const {
     animation = true,
+    className = '',
     title,
     watermark = null,
     watermarkColor = 'text-slate-150 dark:text-dark-5',
@@ -16,7 +17,7 @@ function SectionTitle(props) {
 
   return (
     <div
-      className="relative isolate mb-10 md:mb-24 w-full flex justify-start md:justify-center title-font text-3xl md:text-[2.5rem]"
+      className={`${className} relative isolate mb-10 md:mb-24 w-full flex justify-start md:justify-center title-font text-3xl md:text-[2.5rem]`}
       ref={animationRefs.scope}
     >
       <h2 ref={animationRefs.heading}>{title}</h2>

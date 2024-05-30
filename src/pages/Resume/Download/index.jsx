@@ -5,14 +5,12 @@ import Section from '../../../layout/Section/Regular'
 
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionTitle from '../../../components/Text/SectionTitle'
-import ResumeCard from '../components/ResumeCard'
+import ResumeCard from './components/ResumeCard'
 
-import RESUMES from '../constants/resumes'
+import RESUMES from './constants/resumes'
 
-function Download(props) {
+const Download = ({ t }) => {
   // Download section
-
-  const { t } = props
 
   return (
     <Section id="download">

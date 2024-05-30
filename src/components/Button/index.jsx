@@ -7,14 +7,12 @@ import useButton from './hooks/useButton'
 import Tooltip from './components/Tooltip'
 
 // prettier-ignore
-const Button = forwardRef(function Button(props, ref) {
+const Button = forwardRef(function Button({ children, className = '', ...props }, ref) {
   // Button with primary, secondary, and unstyled variants
 
   const {
     ariaLabel = 'button',
     callback,
-    children,
-    className = '',         // any other class needed goes here
     shortcutKey = null,
     tabIndex = '0',
     tooltip = null,
