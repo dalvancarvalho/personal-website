@@ -5,10 +5,8 @@ import MenuList from '../MenuList'
 
 import NAV_LINKS from '../../constants/navLinks'
 
-function NavList(props) {
+function NavList({ pathname, t }) {
   // List of navigation links (inside menu)
-
-  const { pathname, t } = props
 
   return (
     <nav aria-label={t('header.nav.ariaLabel')} className="w-5/6">

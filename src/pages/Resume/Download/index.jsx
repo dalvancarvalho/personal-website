@@ -9,7 +9,7 @@ import ResumeCard from './components/ResumeCard'
 
 import RESUMES from './constants/resumes'
 
-const Download = ({ t }) => {
+function Download({ t }) {
   // Download section
 
   return (

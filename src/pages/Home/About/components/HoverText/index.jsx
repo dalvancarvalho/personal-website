@@ -1,9 +1,7 @@
 /* HoverText/index.jsx */
 
-function HoverText(props) {
+function HoverText({ t }) {
   // Secret text inside 'about' picture
-
-  const { t } = props
 
   return (
     <div className="absolute z-20 top-1/4 right-[42%] md:right-[43%] flex flex-col items-start select-none">

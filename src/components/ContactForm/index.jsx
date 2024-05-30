@@ -11,10 +11,8 @@ import Spinner from '../Button/components/Spinner'
 import Input from './components/Input'
 import TextArea from './components/TextArea'
 
-function ContactForm(props) {
+function ContactForm({ t }) {
   // Contact form
-
-  const { t } = props
 
   const { handleSubmit, isSubmitting, ...inputs } = useContactForm()
   const animation = useAnimate()

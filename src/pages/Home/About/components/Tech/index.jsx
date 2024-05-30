@@ -3,10 +3,8 @@
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Tech(props) {
+function Tech({ name, url }) {
   // Link to the tech's page (with decoration)
-
-  const { name, url } = props
 
   return (
     <li className="max-w-max text-sm md:text-base font-bold text-slate-800 dark:text-gray-200 color-transition">

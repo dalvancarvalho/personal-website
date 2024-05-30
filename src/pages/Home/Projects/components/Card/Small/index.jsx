@@ -11,10 +11,17 @@ import Button from '../../../../../../components/Button'
 import Paragraph from '../../../../../../components/Text/Paragraph'
 import Tech from '../components/Tech'
 
-function SmallCard(props) {
+function SmallCard({
+  description,
+  index,
+  isFinished,
+  route,
+  stack,
+  t,
+  thumbnail,
+  title,
+}) {
   // Displays a project and its main features in a card tailored for small screens
-
-  const { description, index, isFinished, route, stack, t, thumbnail, title } = props
 
   const isEven = index % 2 === 0 ? true : false
 

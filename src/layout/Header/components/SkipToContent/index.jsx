@@ -5,11 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Button from '../../../../components/Button'
 
-function SkipToContent(props) {
+function SkipToContent({ t }) {
   // Jumps directly to the content of the page when triggered,
   // skipping the items of the navbar and theme/language switches
-
-  const { t } = props
 
   return (
     <a

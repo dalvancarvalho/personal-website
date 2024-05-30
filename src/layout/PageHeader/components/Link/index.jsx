@@ -3,10 +3,8 @@
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Link(props) {
+function Link({ icon, href, label }) {
   // External access link used inside the PageHeader component
-
-  const { icon, href, label } = props
 
   return (
     <a

@@ -18,10 +18,8 @@ import SectionTitle from '../../../components/Text/SectionTitle'
 
 import CONTACTS from './constants/contacts'
 
-function Contact(props) {
+function Contact({ screenSize, t }) {
   // Contact section
-
-  const { screenSize, t } = props
 
   const { confetti } = useConfetti()
   const animation = useAnimate()

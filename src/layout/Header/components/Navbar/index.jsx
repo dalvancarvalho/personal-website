@@ -4,10 +4,8 @@ import NavLink from '../NavLink'
 
 import NAV_LINKS from '../../constants/navLinks'
 
-function Navbar(props) {
+function Navbar({ pathname, t }) {
   // List of navigation links displayed in the header
-
-  const { pathname, t } = props
 
   return (
     <nav aria-label={t('header.nav.ariaLabel')}>

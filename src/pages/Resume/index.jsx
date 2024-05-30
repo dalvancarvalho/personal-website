@@ -12,7 +12,7 @@ import MainSection from '../../layout/Section/Main'
 import Download from './Download'
 import Topics from './Topics'
 
-const Resume = () => {
+function Resume() {
   // Resume page
 
   const { t } = useTranslation()

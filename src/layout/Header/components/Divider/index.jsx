@@ -1,9 +1,7 @@
 /* Divider/index.jsx */
 
-function Divider(props) {
+function Divider({ pathname, y }) {
   // Vertical divider
-
-  const { pathname, y } = props
 
   return (
     <span

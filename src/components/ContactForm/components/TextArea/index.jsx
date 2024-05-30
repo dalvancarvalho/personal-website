@@ -2,10 +2,8 @@
 
 import useInputStyle from '../../hooks/useInputStyle'
 
-function TextArea(props) {
+function TextArea({ inputName, inputs, label, setInputs }) {
   // Form input (text area)
-
-  const { inputName, inputs, label, setInputs } = props
 
   const { checkInput, ...refs } = useInputStyle(inputName, inputs)
 

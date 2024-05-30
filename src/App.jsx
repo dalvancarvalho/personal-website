@@ -38,7 +38,7 @@ function App() {
         <meta name="theme-color" content={theme === 'light' ? LIGHT_THEME : DARK_THEME} />
       </Helmet>
 
-      {/* Layout */}
+      {/* Presentation */}
       <Header />
       <Main>
         <Routes />

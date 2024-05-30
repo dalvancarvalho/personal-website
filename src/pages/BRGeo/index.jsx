@@ -11,7 +11,7 @@ import MainSection from '../../layout/Section/Main'
 
 import Introduction from './Introduction'
 
-import { brGeo } from '../../constants/projects'
+import { BR_GEO } from '../../constants/projects'
 
 function BRGeo() {
   // BR Geo
@@ -27,7 +27,7 @@ function BRGeo() {
         url="https://dalvanc.com/br-geo"
       />
       <MainSection>
-        <PageHeader section="pageHeader.breadcrumbs.projects" t={t} {...brGeo} />
+        <PageHeader section="pageHeader.breadcrumbs.projects" t={t} {...BR_GEO} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>

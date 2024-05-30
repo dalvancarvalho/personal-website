@@ -9,10 +9,8 @@ import meBw from '../../../../../assets/webp/me-bw.webp'
 import tape from '../../../../../assets/webp/tape1.webp'
 import tape2 from '../../../../../assets/webp/tape2.webp'
 
-function PolaroidPic(props) {
+function PolaroidPic({ t }) {
   // Polaroid picture with text
-
-  const { t } = props
 
   const animation = useAnimate()
 

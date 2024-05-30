@@ -9,10 +9,8 @@ import MenuList from '../MenuList'
 
 import LANGUAGES from '../../../../constants/languages'
 
-function LanguageList(props) {
+function LanguageList({ t }) {
   // List of languages available for use (inside menu)
-
-  const { t } = props
 
   const { language, setLanguage } = useLanguage()
 

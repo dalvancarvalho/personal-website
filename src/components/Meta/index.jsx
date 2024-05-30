@@ -2,10 +2,8 @@
 
 import { Helmet } from 'react-helmet-async'
 
-function Meta(props) {
+function Meta({ description, title, url }) {
   // Sets Open Graph, social network, and default meta tags for SEO purposes
-
-  const { description, title, url } = props
 
   return (
     <Helmet>

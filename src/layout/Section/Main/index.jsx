@@ -2,10 +2,8 @@
 
 import useAnimate from './animations/useAnimate'
 
-function MainSection(props) {
+function MainSection({ children, className = '' }) {
   // Section with fade-in animation
-
-  const { children, className = '' } = props
 
   const animation = useAnimate()
 

@@ -7,10 +7,8 @@ import { Link as ScrollLink } from 'react-scroll'
 
 import useMenu from '../../../../context/MenuContext'
 
-function NavLink(props) {
+function NavLink({ children, icon, to }) {
   // Link to access a respective section of the page
-
-  const { children, icon, to } = props
 
   const { setMenuState } = useMenu()
   const linkRef = useRef(null)

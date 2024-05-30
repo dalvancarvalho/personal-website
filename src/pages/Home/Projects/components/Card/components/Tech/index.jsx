@@ -1,9 +1,7 @@
 /* Tech/index.jsx */
 
-function Tech(props) {
+function Tech({ isEven, tech, url }) {
   // Link to the tech's page
-
-  const { isEven, tech, url } = props
 
   return (
     <li className={isEven ? 'translate-x-[200%]' : '-translate-x-[200%]'}>

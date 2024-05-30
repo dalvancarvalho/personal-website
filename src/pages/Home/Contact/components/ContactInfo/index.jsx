@@ -5,10 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Paragraph from '../../../../../components/Text/Paragraph'
 
-function ContactInfo(props) {
+function ContactInfo({ icon, href, text, target, t }) {
   // Link to contact information
-
-  const { icon, href, text, target, t } = props
 
   return (
     <div className="w-full flex items-center gap-3">

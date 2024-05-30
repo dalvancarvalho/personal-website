@@ -6,11 +6,11 @@ import Translation from '../Translation'
 
 import PARAGRAPH_VARIANTS from './constants/paragraphVariants'
 
-// prettier-ignore
-const Paragraph = forwardRef(function Paragraph({ children, className = '', ...props }, ref) {
+const Paragraph = forwardRef(function Paragraph(
+  { children, className = '', i18nKey, variant = 'medium' },
+  ref
+) {
   // Paragraph with a set of 'variable' and 'fixed' font-size variants
-
-  const { i18nKey, variant = 'medium' } = props
 
   const style = PARAGRAPH_VARIANTS[variant]
 

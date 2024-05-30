@@ -11,7 +11,7 @@ import {
 } from '../../../../../components/Accordion'
 import Paragraph from '../../../../../components/Text/Paragraph'
 
-const ResumeTopic = ({ icon, index, items, largeCards, topic, t }) => {
+function ResumeTopic({ icon, index, items, largeCards, topic, t }) {
   // Displays all the items related to a topic of the resume
 
   const { theme } = useTheme()

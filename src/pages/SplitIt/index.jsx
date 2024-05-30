@@ -11,7 +11,7 @@ import MainSection from '../../layout/Section/Main'
 
 import Introduction from './Introduction'
 
-import { splitIt } from '../../constants/projects'
+import { SPLIT_IT } from '../../constants/projects'
 
 function SplitIt() {
   // Split it!
@@ -27,7 +27,7 @@ function SplitIt() {
         url="https://dalvanc.com/split-it"
       />
       <MainSection>
-        <PageHeader section="pageHeader.breadcrumbs.projects" t={t} {...splitIt} />
+        <PageHeader section="pageHeader.breadcrumbs.projects" t={t} {...SPLIT_IT} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>

@@ -2,10 +2,8 @@
 
 import Paragraph from '../../../../../components/Text/Paragraph'
 
-function ResumeCard(props) {
+function ResumeCard({ href, thumbnail, t, title }) {
   // Downloadable resume
-
-  const { href, thumbnail, t, title } = props
 
   return (
     <a

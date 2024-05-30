@@ -1,10 +1,8 @@
 /* DynamicBg/index.jsx */
 
-function DynamicBg(props) {
-  // Smoothly switches the background image between its light and
-  // dark versions when the theme is toggled
-
-  const { alt, className, darkVersion, lazy, lightVersion } = props
+function DynamicBg({ alt, className, darkVersion, lazy, lightVersion }) {
+  // Smoothly switches the background image between its
+  // light and dark versions when the theme is toggled
 
   return (
     <>

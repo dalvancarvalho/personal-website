@@ -2,10 +2,8 @@
 
 import useInputStyle from '../../hooks/useInputStyle'
 
-function Input(props) {
+function Input({ inputName, inputs, label, setInputs, type }) {
   // Form input (text or email)
-
-  const { inputName, inputs, label, setInputs, type } = props
 
   const { checkInput, ...refs } = useInputStyle(inputName, inputs)
 

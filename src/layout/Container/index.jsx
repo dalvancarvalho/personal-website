@@ -1,9 +1,7 @@
 /* Container/index.jsx */
 
-function Container(props) {
+function Container({ children, className = '' }) {
   // Container with responsive width
-
-  const { children, className = '' } = props
 
   return <div className={`container ${className}`}>{children}</div>
 }

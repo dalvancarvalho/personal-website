@@ -11,7 +11,7 @@ import MainSection from '../../layout/Section/Main'
 
 import Introduction from './Introduction'
 
-import { personalWebsite } from '../../constants/projects'
+import { PERSONAL_WEBSITE } from '../../constants/projects'
 
 function PersonalWebsite() {
   // Personal website
@@ -30,7 +30,7 @@ function PersonalWebsite() {
         <PageHeader
           section="pageHeader.breadcrumbs.projects"
           t={t}
-          {...personalWebsite}
+          {...PERSONAL_WEBSITE}
         />
         <Introduction t={t} />
         {/* Details... */}

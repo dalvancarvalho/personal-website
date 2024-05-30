@@ -15,10 +15,8 @@ import Translation from '../../../components/Text/Translation'
 import bgDark from '../../../assets/svg/bg-dark.svg'
 import bgLight from '../../../assets/svg/bg-light.svg'
 
-function Hero(props) {
+function Hero({ t }) {
   // Hero section
-
-  const { t } = props
 
   const parallax = useParallax()
   const animation = useAnimate(parallax)

@@ -2,16 +2,14 @@
 
 import useAnimate from './animations/useAnimate'
 
-function SectionTitle(props) {
+function SectionTitle({
+  className = '',
+  animation = true,
+  title,
+  watermark = null,
+  watermarkColor = 'text-slate-150 dark:text-dark-5',
+}) {
   // Displays the title of the section (H2)
-
-  const {
-    animation = true,
-    className = '',
-    title,
-    watermark = null,
-    watermarkColor = 'text-slate-150 dark:text-dark-5',
-  } = props
 
   const animationRefs = useAnimate(animation, watermark)
 

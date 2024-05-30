@@ -7,10 +7,8 @@ import { useNavigate } from 'react-router-dom'
 import Button from '../../../../components/Button'
 import Paragraph from '../../../../components/Text/Paragraph'
 
-function Breadcrumbs(props) {
+function Breadcrumbs({ section, t }) {
   // Navigation component
-
-  const { section, t } = props
 
   const navigate = useNavigate()
 

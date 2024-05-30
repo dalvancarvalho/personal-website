@@ -16,10 +16,8 @@ import PROJECTS from '../../../constants/projects'
 const Card = lazy(() => import('./components/Card/Standard'))
 const SmallCard = lazy(() => import('./components/Card/Small'))
 
-function Projects(props) {
+function Projects({ screenSize, t }) {
   // Projects section
-
-  const { screenSize, t } = props
 
   const animation = useAnimate()
 

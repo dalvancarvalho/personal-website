@@ -7,10 +7,10 @@ import useButton from './hooks/useButton'
 import Tooltip from './components/Tooltip'
 
 // prettier-ignore
-const Button = forwardRef(function Button({ children, className = '', ...props }, ref) {
-  // Button with primary, secondary, and unstyled variants
-
-  const {
+const Button = forwardRef(function Button(
+  {
+    children,
+    className = '',
     ariaLabel = 'button',
     callback,
     shortcutKey = null,
@@ -18,8 +18,11 @@ const Button = forwardRef(function Button({ children, className = '', ...props }
     tooltip = null,
     tooltipPosition = null,
     type = 'button',
-    variant = 'unstyled',   // defaults to 'unstyled' variant if this prop is not passed
-  } = props
+    variant = 'unstyled', // defaults to 'unstyled' variant if this prop is not passed
+  },
+  ref
+) {
+  // Button with primary, secondary, and unstyled variants
 
   const { style, handleClick, setTooltipActive, tooltipRef } = useButton(variant, callback)
 
@@ -38,11 +41,7 @@ const Button = forwardRef(function Button({ children, className = '', ...props }
     >
       {children}
       {tooltip && (
-        <Tooltip
-          ref={tooltipRef}
-          shortcutKey={shortcutKey}
-          position={tooltipPosition}
-        >
+        <Tooltip ref={tooltipRef} shortcutKey={shortcutKey} position={tooltipPosition}>
           {tooltip}
         </Tooltip>
       )}

@@ -2,9 +2,7 @@
 
 import Paragraph from '../../../../../components/Text/Paragraph'
 
-function Topic(props) {
-  const { heading, text } = props
-
+function Topic({ heading, text }) {
   return (
     <div className="about-paragraph">
       <h3 className="mb-1 flex items-center gap-2 md:text-lg font-bold text-slate-800 dark:text-gray-200 color-transition">

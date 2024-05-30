@@ -9,10 +9,8 @@ import MenuList from '../MenuList'
 
 import THEMES from '../../../../constants/themes'
 
-function ThemeList(props) {
+function ThemeList({ t }) {
   // List of themes available for use (inside menu)
-
-  const { t } = props
 
   const { theme, setTheme } = useTheme()
 

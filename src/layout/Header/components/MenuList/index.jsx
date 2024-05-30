@@ -1,9 +1,7 @@
 /* MenuList/index.jsx */
 
-function MenuList(props) {
+function MenuList({ children, title }) {
   // Unordered list with title
-
-  const { children, title } = props
 
   return (
     <>

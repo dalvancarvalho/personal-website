@@ -10,10 +10,8 @@ import useCopyToClipboard from '../../hooks/useCopyToClipboard'
 import Button from '../Button'
 import Paragraph from '../Text/Paragraph'
 
-function CodeSnippet(props) {
+function CodeSnippet({ codeString, extension, language, title, t }) {
   // Syntax highlighted code snippet
-
-  const { codeString, extension, language, title, t } = props
 
   const { copyToClipboard, isCopied } = useCopyToClipboard(codeString)
 

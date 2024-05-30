@@ -13,10 +13,8 @@ import LanguageList from '../LanguageList'
 import NavList from '../NavList'
 import ThemeList from '../ThemeList'
 
-function Menu(props) {
+function Menu({ pathname, t, y }) {
   // Menu displayed on small screens
-
-  const { pathname, t, y } = props
 
   const { isMenuOpen, setMenuState, ...refs } = useMenu()
   const animation = useAnimate(refs.menu, isMenuOpen)

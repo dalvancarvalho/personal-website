@@ -9,7 +9,7 @@ import SectionTitle from '../../../components/Text/SectionTitle'
 
 import SNIPPET_MODEL from '../../../constants/snippets'
 
-const Introduction = ({ t }) => {
+function Introduction({ t }) {
   // In progress...
 
   return (

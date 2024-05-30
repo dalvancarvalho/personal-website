@@ -2,12 +2,12 @@
 
 import useScrollToTop from './hooks/useScrollToTop'
 
-function Main(props) {
+function Main({ children }) {
   // Wraps the pages of the application
 
   useScrollToTop()
 
-  return <main className="overflow-hidden">{props.children}</main>
+  return <main className="overflow-hidden">{children}</main>
 }
 
 export default Main

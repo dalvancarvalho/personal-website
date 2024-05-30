@@ -11,10 +11,8 @@ import Button from '../../../../../../components/Button'
 import Paragraph from '../../../../../../components/Text/Paragraph'
 import Tech from '../components/Tech'
 
-function Card(props) {
+function Card({ description, index, isFinished, route, stack, t, thumbnail, title }) {
   // Displays a project and its main features in a modern looking card
-
-  const { description, index, isFinished, route, stack, t, thumbnail, title } = props
 
   const isEven = index % 2 === 0 ? true : false
 

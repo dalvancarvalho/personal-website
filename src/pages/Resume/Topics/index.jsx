@@ -10,7 +10,7 @@ import ResumeTopic from './components/ResumeTopic'
 
 import RESUME_TOPICS from './constants/resumeTopics'
 
-const Topics = ({ t }) => {
+function Topics({ t }) {
   // Topics section
 
   return (

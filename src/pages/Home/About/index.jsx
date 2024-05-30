@@ -23,10 +23,8 @@ import TECHNOLOGIES from './constants/technologies'
 
 import stack from '../../../assets/svg/stack.svg'
 
-function About(props) {
+function About({ t }) {
   // About section
-
-  const { t } = props
 
   const navigate = useNavigate()
   const animation = useAnimate()

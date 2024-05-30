@@ -4,10 +4,8 @@ import useLanguage from '../../../../context/LanguageContext'
 
 import Button from '../../../../components/Button'
 
-function LanguageSwitch(props) {
+function LanguageSwitch({ t }) {
   // Switches the display language between Brazilian Portuguese and English
-
-  const { t } = props
 
   const { language, switchLanguage, SHORTCUT_KEY } = useLanguage()
 

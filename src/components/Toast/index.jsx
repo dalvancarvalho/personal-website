@@ -7,14 +7,12 @@ import { useTranslation } from 'react-i18next'
 
 import TOAST_VARIANTS from './constants/toastVariants'
 
-function Toast(props) {
+function Toast({ id, variant }) {
   // Displays simple messages in the bottom of the screen
 
-  const { id, variant } = props
+  const { heading, description, icon } = TOAST_VARIANTS[variant]
 
   const { t } = useTranslation()
-
-  const { heading, description, icon } = TOAST_VARIANTS[variant]
 
   return (
     <div className="relative xs:w-96 rounded-lg border border-slate-150 dark:border-dark-1 shadow-md p-4 sm:p-3.5 bg-white dark:bg-dark-2 flex items-center gap-2 font-urbanist !transition-[background-color,border] !duration-300">

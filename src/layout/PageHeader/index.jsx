@@ -11,10 +11,8 @@ import Breadcrumbs from './components/Breadcrumbs'
 const Link = lazy(() => import('./components/Link'))
 const LiveDemo = lazy(() => import('./components/LiveDemo'))
 
-function PageHeader(props) {
+function PageHeader({ github, linkedIn, links, title, section, t }) {
   // Displays the title of the page (H1) along with some useful links
-
-  const { github, linkedIn, links, title, section, t } = props
 
   return (
     <div
