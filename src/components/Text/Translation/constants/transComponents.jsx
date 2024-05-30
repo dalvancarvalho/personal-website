@@ -41,6 +41,25 @@ const TRANS_COMPONENTS = {
     />
   ),
 
+  /* Home page > Contacts section */
+  deploy: (
+    <a
+      className="font-bold text-slate-600 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 color-transition footer-link-hover"
+      href="https://vercel.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    />
+  ),
+
+  developer: (
+    <a
+      className="font-bold text-slate-600 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 color-transition footer-link-hover"
+      href="https://dalvanc.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    />
+  ),
+
   /* Resume page > Topics section */
   contact: (
     // Link to e-mail

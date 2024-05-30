@@ -287,8 +287,8 @@
     },
 
     "footer": {
-      "deploy": "Implementado com ",
-      "developer": "Desenvolvido por "
+      "deploy": "Implementado com <deploy>Vercel</deploy>",
+      "developer": "Desenvolvido por <developer>Dalvan Carvalho</developer>"
     },
 
     "toast": {
