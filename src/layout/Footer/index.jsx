@@ -18,7 +18,7 @@ function Footer() {
   return (
     <footer className="pt-4 pb-8 md:pb-16 text-slate-600 dark:text-gray-400 flex flex-col items-center justify-between gap-6 text-sm color-transition">
       <div className="flex flex-col items-center gap-0.5">
-        <span className="mb-5 text-base">❖</span>
+        <span className="mb-5 text-base select-none">❖</span>
         <Paragraph variant="fixed-sm-normal">
           {t('footer.deploy')}
           <a

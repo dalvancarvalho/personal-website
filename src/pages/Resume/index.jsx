@@ -10,9 +10,9 @@ import PageHeader from '../../layout/PageHeader'
 import MainSection from '../../layout/Section/Main'
 
 import Download from './Download'
-// import NewSection from './NewSection'
+import Topics from './Topics'
 
-function Resume() {
+const Resume = () => {
   // Resume page
 
   const { t } = useTranslation()
@@ -33,7 +33,7 @@ function Resume() {
           title="pages.resume.title"
           t={t}
         />
-        {/* <NewSection t={t} /> */}
+        <Topics t={t} />
         <Download t={t} />
       </MainSection>
     </>

@@ -9,6 +9,16 @@ const TRANS_COMPONENTS = {
     <span className="font-bold text-slate-800 dark:text-gray-200 color-transition" />
   ),
 
+  softHighlight: (
+    // Highlights a word/sentence inside the paragraph (semibold variant)
+    <span className="font-semibold text-slate-800 dark:text-gray-200 color-transition" />
+  ),
+
+  italic: (
+    // Styles a word/sentence in italic
+    <span className="italic" />
+  ),
+
   /* Home page > Hero section */
   small: (
     // Smaller portion of the hero section H1
@@ -28,6 +38,15 @@ const TRANS_COMPONENTS = {
       href="https://iss.dalvanc.com"
       rel="noopener noreferrer"
       target="_blank"
+    />
+  ),
+
+  /* Resume page > Topics section */
+  contact: (
+    // Link to e-mail
+    <a
+      className="font-bold text-slate-800 dark:text-gray-200 color-transition hover:underline underline-offset-2"
+      href="mailto:contato@dalvanc.com?subject=Message from dalvanc.com!"
     />
   ),
 }

@@ -1,14 +1,21 @@
 /* Section/index.jsx */
 
 import { forwardRef } from 'react'
+import { useLocation } from 'react-router-dom'
 
-const Section = forwardRef(function Section(props, ref) {
+const Section = forwardRef(function Section({ children, className = '', id }, ref) {
   // Regular section
 
-  const { children, className = '', id } = props
+  const { pathname } = useLocation()
 
   return (
-    <section className={`py-[4.5rem] md:py-32 ${className}`} id={id} ref={ref}>
+    <section
+      className={`${className} ${
+        pathname === '/' ? 'py-[4.5rem] md:py-32' : 'py-9 md:py-16'
+      }`}
+      id={id}
+      ref={ref}
+    >
       {children}
     </section>
   )

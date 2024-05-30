@@ -29,6 +29,7 @@
         },
         "/resume": {
           "home": "Início",
+          "topics": "Tópicos",
           "download": "Download"
         },
         "/split-it": {
@@ -175,13 +176,94 @@
       },
       "resume": {
         "title": "Currículo",
-        "download": {
-          "ariaLabel": "Acessar currículo",
+        "topics": {
           "heading": "Informações profissionais",
+          "watermark": "Tópicos",
+          "paragraph": "Você pode explorar as categorias abaixo para saber mais sobre minhas habilidades e experiências profissionais. Caso tenha alguma dúvida ou queira conversar, não hesite em <contact>entrar em contato</contact>!",
+          "progLanguages": {
+            "title": "Linguagens de programação"
+          },
+          "libraries": {
+            "title": "Bibliotecas e frameworks"
+          },
+          "tools": {
+            "title": "Ferramentas, plataformas e outros"
+          },
+          "professionalExp": {
+            "title": "Experiência profissional",
+            "companyI": {
+              "heading": "dalvan c_",
+              "subheading": "ago 2022 - presente · SCS, RS",
+              "altText": "Logo do website dalvan c_",
+              "roleI": "Desenvolvedor Front-End",
+              "bulletI": "Administra o <softHighlight>dalvanc.com</softHighlight>, onde compartilha sua trajetória no campo do desenvolvimento front-end, fornecendo detalhes sobre os projetos realizados, incluindo as tecnologias empregadas em cada um deles.",
+              "bulletII": "Desenvolve sites e aplicações responsivas (compatíveis com dispositivos móveis) utilizando frameworks CSS modernos e bibliotecas JavaScript, tais como <softHighlight>Tailwind CSS</softHighlight> e <softHighlight>React</softHighlight>.",
+              "bulletIII": "Mantém-se atualizado com as últimas tendências e tecnologias no desenvolvimento front-end, seguindo boas práticas e priorizando a manutenibilidade e escalabilidade das aplicações."
+            },
+            "companyII": {
+              "heading": "Topocart Engenharia",
+              "subheading": "mai 2017 - ago 2022 · SCS, RS / Manaus, AM",
+              "altText": "Logo da empresa Topocart Engenharia",
+              "roleI": "Coordenador",
+              "roleII": "Analista de Qualidade",
+              "bulletI": "Efetivamente liderou as equipes de escritório em Manaus e Brasília (a segunda, remotamente), para a execução bem-sucedida de tarefas em projetos executados em diferentes localidades do país, contribuindo para a eficiência operacional e alcance dos objetivos.",
+              "bulletII": "Contribuiu para o crescimento e desenvolvimento da equipe de escritório, desde o processo de contratação até o treinamento contínuo e gestão, promovendo um ambiente de trabalho produtivo.",
+              "bulletIII": "Garantiu a estabilidade e eficiência da infraestrutura de informática do escritório de Manaus, liderando a gestão e manutenção de estações de trabalho, servidores e storages em colaboração estreita com a equipe de TI da sede da empresa em Brasília, DF."
+            },
+            "companyIII": {
+              "heading": "IDB Informática",
+              "subheading": "jan 2012 - mai 2017 · SCS, RS",
+              "altText": "Logo da empresa IDB Informática",
+              "roleI": "Técnico em TI",
+              "bulletI": "Liderou o setor de assistência técnica por mais de 5 anos, destacando-se na prestação de suporte técnico remoto e presencial a usuários finais. Além disso, treinou novos técnicos e implementou métodos de detecção e resolução de problemas tanto em nível de software quanto de hardware.",
+              "bulletII": "Atuou <italic>in loco</italic> na manutenção e gestão de infraestrutura de informática e rede de clientes corporativos, otimizando significativamente a resolução de problemas. Garantiu atendimento personalizado, alinhado precisamente às necessidades individuais de cada caso, resultando em uma gestão de infraestrutura mais eficiente e satisfação duradoura do cliente."
+            }
+          },
+          "education": {
+            "title": "Educação",
+            "courseI": {
+              "altText": "Logo do site developed by ed"
+            },
+            "courseII": {
+              "altText": "Logo do site developed by ed"
+            },
+            "courseIII": {
+              "heading": "Desenvolvimento web full stack",
+              "altText": "Logo do site Programador BR"
+            },
+            "courseIV": {
+              "heading": "SQL e banco de dados",
+              "altText": "Logo do site Udemy"
+            },
+            "courseV": {
+              "heading": "Bacharelado em Engenharia Civil",
+              "altText": "Logo da Universidade de Santa Cruz do Sul"
+            }
+          },
+          "languages": {
+            "title": "Idiomas",
+            "languageI": {
+              "heading": "Português",
+              "subheading": "Nativo"
+            },
+            "languageII": {
+              "heading": "Inglês",
+              "subheading": "Proficiência profissional plena"
+            },
+            "languageIII": {
+              "heading": "Espanhol",
+              "subheading": "Intermediário"
+            }
+          }
+        },
+        "download": {
+          "heading": "Pegue seu PDF!",
           "watermark": "Download",
-          "paragraph": "Você pode facilmente acessar e fazer o download de minhas informações profissionais clicando nos cards abaixo. O currículo abrange detalhes sobre minha formação, habilidades e experiência, estando disponível tanto em português quanto em inglês.",
+          "paragraph": "Você pode fazer download de todas as informações listadas acima clicando nos cards abaixo. Elas estão em <highlight>formato PDF</highlight> e disponíveis em <highlight>português e inglês</highlight>.",
           "portuguese": "Currículo - Português",
-          "english": "Currículo - Inglês"
+          "english": "Currículo - Inglês",
+          "ariaLabel": "Acessar currículo",
+          "altText": "Imagem do currículo de Dalvan Carvalho"
         }
       },
       "splitIt": {

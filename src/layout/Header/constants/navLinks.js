@@ -65,6 +65,10 @@ const NAV_LINKS = {
       name: 'home',
     },
     {
+      icon: faListUl,
+      name: 'topics',
+    },
+    {
       icon: faDownload,
       name: 'download',
     },

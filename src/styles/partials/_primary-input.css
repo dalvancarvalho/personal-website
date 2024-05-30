@@ -66,7 +66,7 @@
   }
 
   .resume-hover {
-    @apply hover:bg-slate-200 hover:dark:bg-dark-1;
+    @apply hover:bg-slate-200 hover:dark:bg-dark-1 lg:hover:-translate-y-8;
   }
 
   .secondary-button-hover {

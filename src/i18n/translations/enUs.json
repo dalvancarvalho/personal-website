@@ -29,6 +29,7 @@
         },
         "/resume": {
           "home": "Home",
+          "topics": "Topics",
           "download": "Download"
         },
         "/split-it": {
@@ -175,13 +176,94 @@
       },
       "resume": {
         "title": "Resume",
-        "download": {
-          "ariaLabel": "Access resume",
+        "topics": {
           "heading": "Professional information",
+          "watermark": "Topics",
+          "paragraph": "You can explore the categories below to learn more about my skills and professional experiences. If you have any questions or would like to chat, please don't hesitate to <contact>get in touch</contact>!",
+          "progLanguages": {
+            "title": "Programming languages"
+          },
+          "libraries": {
+            "title": "Libraries and frameworks"
+          },
+          "tools": {
+            "title": "Tools, platforms and others"
+          },
+          "professionalExp": {
+            "title": "Professional experience",
+            "companyI": {
+              "heading": "dalvan c_",
+              "subheading": "aug 2022 - present · SCS, RS",
+              "altText": "dalvan c_ website logo",
+              "roleI": "Front-End Developer",
+              "bulletI": "Manages <softHighlight>dalvanc.com</softHighlight>, sharing his journey in the field of front-end development and providing details about the projects undertaken, including the technologies employed in each.",
+              "bulletII": "Develops responsive websites and applications (compatible with mobile devices) using modern CSS frameworks and JavaScript libraries like <softHighlight>Tailwind CSS</softHighlight> and <softHighlight>React</softHighlight>.",
+              "bulletIII": "Stays updated with the latest trends and technologies in front-end development, following best practices and prioritizing the maintainability and scalability of applications."
+            },
+            "companyII": {
+              "heading": "Topocart Engineering",
+              "subheading": "may 2017 - aug 2022 · SCS, RS / Manaus, AM",
+              "altText": "Topocart Engineering logo",
+              "roleI": "Coordinator",
+              "roleII": "Quality Assurance Analyst",
+              "bulletI": "Effectively led office teams in Manaus and Brasília (the latter remotely) for the successful execution of tasks in projects across different locations in the country, contributing to operational efficiency and goal achievement.",
+              "bulletII": "Contributed to the growth and development of the office team, from the hiring process to continuous training and management, fostering a productive work environment.",
+              "bulletIII": " Ensured stability and efficiency of the IT infrastructure in the Manaus office by leading the management and maintenance of workstations, servers, and storage in close collaboration with the company's IT team at the headquarters in Brasília, DF."
+            },
+            "companyIII": {
+              "heading": "IDB Informática",
+              "subheading": "jan 2012 - may 2017 · SCS, RS",
+              "altText": "IDB Informática logo",
+              "roleI": "IT Technician",
+              "bulletI": "Led the technical support department for over 5 years, excelling in providing remote and on-site technical support to end users. Additionally, trained new technicians and implemented methods for detecting and resolving issues at both software and hardware levels.",
+              "bulletII": "Performed on-site maintenance and management of IT and network infrastructure for corporate clients, significantly optimizing issue resolution. Ensured personalized assistance, precisely aligned with the individual needs of each case, resulting in more efficient infrastructure management and lasting customer satisfaction."
+            }
+          },
+          "education": {
+            "title": "Education",
+            "courseI": {
+              "altText": "developed by ed logo"
+            },
+            "courseII": {
+              "altText": "developed by ed logo"
+            },
+            "courseIII": {
+              "heading": "Full stack web development",
+              "altText": "Programador BR website logo"
+            },
+            "courseIV": {
+              "heading": "SQL and database",
+              "altText": "Udemy website logo"
+            },
+            "courseV": {
+              "heading": "Bachelor's in Civil Engineering",
+              "altText": "UNISC logo"
+            }
+          },
+          "languages": {
+            "title": "Languages",
+            "languageI": {
+              "heading": "Portuguese",
+              "subheading": "Native"
+            },
+            "languageII": {
+              "heading": "English",
+              "subheading": "Full professional proficiency"
+            },
+            "languageIII": {
+              "heading": "Spanish",
+              "subheading": "Intermediate"
+            }
+          }
+        },
+        "download": {
+          "heading": "Get your PDF!",
           "watermark": "Download",
-          "paragraph": "You can easily access and download my professional information by clicking on the cards below. The resume covers details about my education, skills, and experience, and is available in both Brazilian Portuguese and English.",
+          "paragraph": "You can download all the information listed above by clicking on the cards below. They are in <highlight>PDF format</highlight> and available in both <highlight>Portuguese and English</highlight>.",
           "portuguese": "Resume - Portuguese",
-          "english": "Resume - English"
+          "english": "Resume - English",
+          "ariaLabel": "Access resume",
+          "altText": "Image of Dalvan Carvalho's resume"
         }
       },
       "splitIt": {
