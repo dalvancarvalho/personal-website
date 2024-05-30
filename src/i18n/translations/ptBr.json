@@ -191,7 +191,7 @@
           },
           "professionalExp": {
             "title": "Experiência profissional",
-            "companyI": {
+            "companyIII": {
               "heading": "dalvan c_",
               "subheading": "ago 2022 - presente · SCS, RS",
               "altText": "Logo do website dalvan c_",
@@ -210,7 +210,7 @@
               "bulletII": "Contribuiu para o crescimento e desenvolvimento da equipe de escritório, desde o processo de contratação até o treinamento contínuo e gestão, promovendo um ambiente de trabalho produtivo.",
               "bulletIII": "Garantiu a estabilidade e eficiência da infraestrutura de informática do escritório de Manaus, liderando a gestão e manutenção de estações de trabalho, servidores e storages em colaboração estreita com a equipe de TI da sede da empresa em Brasília, DF."
             },
-            "companyIII": {
+            "companyI": {
               "heading": "IDB Informática",
               "subheading": "jan 2012 - mai 2017 · SCS, RS",
               "altText": "Logo da empresa IDB Informática",
@@ -221,21 +221,24 @@
           },
           "education": {
             "title": "Educação",
-            "courseI": {
+            "courseVI": {
               "altText": "Logo do site developed by ed"
             },
-            "courseII": {
+            "courseV": {
               "altText": "Logo do site developed by ed"
             },
-            "courseIII": {
+            "courseIV": {
               "heading": "Desenvolvimento web full stack",
               "altText": "Logo do site Programador BR"
             },
-            "courseIV": {
+            "courseIII": {
+              "altText": "Logo do site developed by ed"
+            },
+            "courseII": {
               "heading": "SQL e banco de dados",
               "altText": "Logo do site Udemy"
             },
-            "courseV": {
+            "courseI": {
               "heading": "Bacharelado em Engenharia Civil",
               "altText": "Logo da Universidade de Santa Cruz do Sul"
             }

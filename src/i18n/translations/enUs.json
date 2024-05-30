@@ -191,7 +191,7 @@
           },
           "professionalExp": {
             "title": "Professional experience",
-            "companyI": {
+            "companyIII": {
               "heading": "dalvan c_",
               "subheading": "aug 2022 - present · SCS, RS",
               "altText": "dalvan c_ website logo",
@@ -210,7 +210,7 @@
               "bulletII": "Contributed to the growth and development of the office team, from the hiring process to continuous training and management, fostering a productive work environment.",
               "bulletIII": " Ensured stability and efficiency of the IT infrastructure in the Manaus office by leading the management and maintenance of workstations, servers, and storage in close collaboration with the company's IT team at the headquarters in Brasília, DF."
             },
-            "companyIII": {
+            "companyI": {
               "heading": "IDB Informática",
               "subheading": "jan 2012 - may 2017 · SCS, RS",
               "altText": "IDB Informática logo",
@@ -221,21 +221,24 @@
           },
           "education": {
             "title": "Education",
-            "courseI": {
+            "courseVI": {
               "altText": "developed by ed logo"
             },
-            "courseII": {
+            "courseV": {
               "altText": "developed by ed logo"
             },
-            "courseIII": {
+            "courseIV": {
               "heading": "Full stack web development",
               "altText": "Programador BR website logo"
             },
-            "courseIV": {
+            "courseIII": {
+              "altText": "developed by ed logo"
+            },
+            "courseII": {
               "heading": "SQL and database",
               "altText": "Udemy website logo"
             },
-            "courseV": {
+            "courseI": {
               "heading": "Bachelor's in Civil Engineering",
               "altText": "UNISC logo"
             }

@@ -30,7 +30,7 @@ import vercel from '../../../../assets/svg/vercel-logo.svg'
 
 import dalvanc from '../../../../assets/svg/dalvanc-logo.svg'
 import dalvancDark from '../../../../assets/svg/dalvanc-dark-logo.svg'
-import idb from '../../../../assets/png/idb-logo.png'
+import idb from '../../../../assets/svg/idb-logo.svg'
 import topocart from '../../../../assets/svg/topocart-logo.svg'
 import topocartDark from '../../../../assets/svg/topocart-dark-logo.svg'
 
@@ -50,6 +50,7 @@ const RESUME_TOPICS = [
   // Resume information categorized by topics
 
   {
+    // Programming languages
     largeCards: false,
     topic: 'pages.resume.topics.progLanguages.title',
     icon: faCode,
@@ -97,6 +98,7 @@ const RESUME_TOPICS = [
     ],
   },
   {
+    // Libraries and frameworks
     largeCards: false,
     topic: 'pages.resume.topics.libraries.title',
     icon: faBook,
@@ -152,6 +154,7 @@ const RESUME_TOPICS = [
     ],
   },
   {
+    // Tools, platforms and others
     largeCards: false,
     topic: 'pages.resume.topics.tools.title',
     icon: faScrewdriverWrench,
@@ -199,24 +202,25 @@ const RESUME_TOPICS = [
     ],
   },
   {
+    // Professional experience
     largeCards: true,
     topic: 'pages.resume.topics.professionalExp.title',
     icon: faUserTie,
     items: [
       {
-        heading: 'pages.resume.topics.professionalExp.companyI.heading',
-        subheading: 'pages.resume.topics.professionalExp.companyI.subheading',
+        heading: 'pages.resume.topics.professionalExp.companyIII.heading',
+        subheading: 'pages.resume.topics.professionalExp.companyIII.subheading',
         url: 'https://dalvanc.com/',
         image: {
           src: dalvanc,
           srcDark: dalvancDark,
-          alt: 'pages.resume.topics.professionalExp.companyI.altText',
+          alt: 'pages.resume.topics.professionalExp.companyIII.altText',
         },
-        roles: ['pages.resume.topics.professionalExp.companyI.roleI'],
+        roles: ['pages.resume.topics.professionalExp.companyIII.roleI'],
         bulletPoints: [
-          'pages.resume.topics.professionalExp.companyI.bulletI',
-          'pages.resume.topics.professionalExp.companyI.bulletII',
-          'pages.resume.topics.professionalExp.companyI.bulletIII',
+          'pages.resume.topics.professionalExp.companyIII.bulletI',
+          'pages.resume.topics.professionalExp.companyIII.bulletII',
+          'pages.resume.topics.professionalExp.companyIII.bulletIII',
         ],
       },
       {
@@ -239,80 +243,92 @@ const RESUME_TOPICS = [
         ],
       },
       {
-        heading: 'pages.resume.topics.professionalExp.companyIII.heading',
-        subheading: 'pages.resume.topics.professionalExp.companyIII.subheading',
+        heading: 'pages.resume.topics.professionalExp.companyI.heading',
+        subheading: 'pages.resume.topics.professionalExp.companyI.subheading',
         url: 'http://idbinfo.com.br/',
         image: {
           src: idb,
           srcDark: idb,
-          alt: 'pages.resume.topics.professionalExp.companyIII.altText',
+          alt: 'pages.resume.topics.professionalExp.companyI.altText',
         },
-        roles: ['pages.resume.topics.professionalExp.companyIII.roleI'],
+        roles: ['pages.resume.topics.professionalExp.companyI.roleI'],
         bulletPoints: [
-          'pages.resume.topics.professionalExp.companyIII.bulletI',
-          'pages.resume.topics.professionalExp.companyIII.bulletII',
+          'pages.resume.topics.professionalExp.companyI.bulletI',
+          'pages.resume.topics.professionalExp.companyI.bulletII',
         ],
       },
     ],
   },
   {
+    // Education
     largeCards: true,
     topic: 'pages.resume.topics.education.title',
     icon: faUserGraduate,
     items: [
       {
-        heading: '"The Creative React Course"',
+        heading: '"The Creative React and Redux Course"',
         subheading: '2023 · developed by ed',
-        url: 'https://developedbyed.com/courses/',
+        url: 'https://developedbyed.com/p/the-creative-react-and-redux-course',
         image: {
           src: devByEd,
           srcDark: devByEdDark,
-          alt: 'pages.resume.topics.education.courseI.altText',
+          alt: 'pages.resume.topics.education.courseVI.altText',
         },
       },
       {
         heading: '"The Creative JavaScript Course"',
         subheading: '2023 · developed by ed',
-        url: 'https://developedbyed.com/courses/',
+        url: 'https://developedbyed.com/p/the-creative-javascript-course',
         image: {
           src: devByEd,
           srcDark: devByEdDark,
-          alt: 'pages.resume.topics.education.courseII.altText',
+          alt: 'pages.resume.topics.education.courseV.altText',
         },
       },
       {
-        heading: 'pages.resume.topics.education.courseIII.heading',
+        heading: 'pages.resume.topics.education.courseIV.heading',
         subheading: '2022 - 2023 · Programador BR',
         url: 'https://programadorbr.com/',
         image: {
           src: progBr,
           srcDark: progBr,
+          alt: 'pages.resume.topics.education.courseIV.altText',
+        },
+      },
+      {
+        heading: '"The Creative HTML5 & CSS3 Course"',
+        subheading: '2022 · developed by ed',
+        url: 'https://developedbyed.com/p/the-creative-html5-css3-course',
+        image: {
+          src: devByEd,
+          srcDark: devByEdDark,
           alt: 'pages.resume.topics.education.courseIII.altText',
         },
       },
       {
-        heading: 'pages.resume.topics.education.courseIV.heading',
+        heading: 'pages.resume.topics.education.courseII.heading',
         subheading: '2019 · Udemy',
         url: 'https://www.udemy.com/',
         image: {
           src: udemy,
           srcDark: udemyDark,
-          alt: 'pages.resume.topics.education.courseIV.altText',
+          alt: 'pages.resume.topics.education.courseII.altText',
         },
       },
       {
-        heading: 'pages.resume.topics.education.courseV.heading',
+        heading: 'pages.resume.topics.education.courseI.heading',
         subheading: '2012 - 2018 · UNISC',
         url: 'https://www.unisc.br/pt/',
         image: {
           src: unisc,
           srcDark: uniscDark,
-          alt: 'pages.resume.topics.education.courseV.altText',
+          alt: 'pages.resume.topics.education.courseI.altText',
         },
       },
     ],
   },
   {
+    // Languages
     largeCards: false,
     topic: 'pages.resume.topics.languages.title',
     icon: faLanguage,
