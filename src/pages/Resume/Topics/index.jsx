@@ -25,7 +25,7 @@ function Topics({ t }) {
         <Paragraph i18nKey="pages.resume.topics.paragraph" />
         <Accordion className="mt-12 md:mt-16" type="multiple">
           {RESUME_TOPICS.map((props, index) => (
-            <ResumeTopic key={props.topic} index={index} t={t} {...props} />
+            <ResumeTopic key={props.id} index={index} t={t} {...props} />
           ))}
         </Accordion>
       </Container>

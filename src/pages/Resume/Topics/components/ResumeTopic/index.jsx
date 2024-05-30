@@ -11,7 +11,7 @@ import {
 } from '../../../../../components/Accordion'
 import Paragraph from '../../../../../components/Text/Paragraph'
 
-function ResumeTopic({ icon, index, items, largeCards, topic, t }) {
+function ResumeTopic({ icon, index, items, largeItems, t, title }) {
   // Displays all the items related to a topic of the resume
 
   const { theme } = useTheme()
@@ -27,13 +27,13 @@ function ResumeTopic({ icon, index, items, largeCards, topic, t }) {
             className="w-6 group-hover:text-accent bg-slate-200 dark:bg-dark-1 text-slate-800 dark:text-gray-200 transition-colors duration-300 p-2 rounded-full"
             icon={icon}
           />
-          {t(topic)}
+          {t(title)}
         </Paragraph>
       </AccordionTrigger>
       <AccordionContent>
-        <ul className={!largeCards ? 'grid grid-cols-2 lg:grid-cols-3 gap-x-2' : null}>
+        <ul className={!largeItems ? 'grid grid-cols-2 lg:grid-cols-3 gap-x-2' : null}>
           {items.map(({ bulletPoints, heading, image, roles, subheading, url }) =>
-            largeCards ? (
+            largeItems ? (
               <li className={bulletPoints ? 'mb-8 last:mb-0' : null} key={heading}>
                 <a
                   className={`relative rounded-md px-5 pr-3.5 py-2 flex items-center bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 color-transition overflow-hidden group ${

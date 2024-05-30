@@ -51,9 +51,10 @@ const RESUME_TOPICS = [
 
   {
     // Programming languages
-    largeCards: false,
-    topic: 'pages.resume.topics.progLanguages.title',
+    title: 'pages.resume.topics.progLanguages.title',
+    largeItems: false,
     icon: faCode,
+    id: crypto.randomUUID(),
     items: [
       {
         heading: 'HTML',
@@ -99,9 +100,10 @@ const RESUME_TOPICS = [
   },
   {
     // Libraries and frameworks
-    largeCards: false,
-    topic: 'pages.resume.topics.libraries.title',
+    title: 'pages.resume.topics.libraries.title',
+    largeItems: false,
     icon: faBook,
+    id: crypto.randomUUID(),
     items: [
       {
         heading: 'React',
@@ -155,9 +157,10 @@ const RESUME_TOPICS = [
   },
   {
     // Tools, platforms and others
-    largeCards: false,
-    topic: 'pages.resume.topics.tools.title',
+    title: 'pages.resume.topics.tools.title',
+    largeItems: false,
     icon: faScrewdriverWrench,
+    id: crypto.randomUUID(),
     items: [
       {
         heading: 'Git',
@@ -203,9 +206,10 @@ const RESUME_TOPICS = [
   },
   {
     // Professional experience
-    largeCards: true,
-    topic: 'pages.resume.topics.professionalExp.title',
+    title: 'pages.resume.topics.professionalExp.title',
+    largeItems: true,
     icon: faUserTie,
+    id: crypto.randomUUID(),
     items: [
       {
         heading: 'pages.resume.topics.professionalExp.companyIII.heading',
@@ -261,9 +265,10 @@ const RESUME_TOPICS = [
   },
   {
     // Education
-    largeCards: true,
-    topic: 'pages.resume.topics.education.title',
+    title: 'pages.resume.topics.education.title',
+    largeItems: true,
     icon: faUserGraduate,
+    id: crypto.randomUUID(),
     items: [
       {
         heading: '"The Creative React and Redux Course"',
@@ -329,9 +334,10 @@ const RESUME_TOPICS = [
   },
   {
     // Languages
-    largeCards: false,
-    topic: 'pages.resume.topics.languages.title',
+    title: 'pages.resume.topics.languages.title',
+    largeItems: false,
     icon: faLanguage,
+    id: crypto.randomUUID(),
     items: [
       {
         heading: 'pages.resume.topics.languages.languageI.heading',
