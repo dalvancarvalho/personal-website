@@ -2,7 +2,7 @@
 
 import useInputStyle from '../../hooks/useInputStyle'
 
-function Input({ inputName, inputs, label, setInputs, type }) {
+export default function Input({ inputName, inputs, label, setInputs, type }) {
   // Form input (text or email)
 
   const { checkInput, ...refs } = useInputStyle(inputName, inputs)
@@ -33,5 +33,3 @@ function Input({ inputName, inputs, label, setInputs, type }) {
     </div>
   )
 }
-
-export default Input
