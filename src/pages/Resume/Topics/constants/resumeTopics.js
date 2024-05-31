@@ -51,12 +51,13 @@ const RESUME_TOPICS = [
 
   {
     // Programming languages
-    title: 'pages.resume.topics.progLanguages.title',
-    largeItems: false,
-    icon: faCode,
     id: crypto.randomUUID(),
+    title: 'pages.resume.topics.progLanguages.title',
+    icon: faCode,
+    largeItems: false,
     items: [
       {
+        id: crypto.randomUUID(),
         heading: 'HTML',
         url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
         image: {
@@ -65,6 +66,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'CSS',
         url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
         image: {
@@ -73,6 +75,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'Sass',
         url: 'https://sass-lang.com/',
         image: {
@@ -81,6 +84,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'JavaScript',
         url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
         image: {
@@ -89,6 +93,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'TypeScript',
         url: 'https://www.typescriptlang.org/',
         image: {
@@ -100,12 +105,13 @@ const RESUME_TOPICS = [
   },
   {
     // Libraries and frameworks
-    title: 'pages.resume.topics.libraries.title',
-    largeItems: false,
-    icon: faBook,
     id: crypto.randomUUID(),
+    title: 'pages.resume.topics.libraries.title',
+    icon: faBook,
+    largeItems: false,
     items: [
       {
+        id: crypto.randomUUID(),
         heading: 'React',
         url: 'https://react.dev/',
         image: {
@@ -114,6 +120,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'Next.js',
         url: 'https://nextjs.org/',
         image: {
@@ -122,6 +129,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'Tailwind CSS',
         url: 'https://tailwindcss.com/',
         image: {
@@ -130,6 +138,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'GSAP',
         url: 'https://greensock.com/gsap/',
         image: {
@@ -138,6 +147,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'Framer Motion',
         url: 'https://www.framer.com/motion/',
         image: {
@@ -146,6 +156,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'Chart.js',
         url: 'https://www.chartjs.org/',
         image: {
@@ -157,12 +168,13 @@ const RESUME_TOPICS = [
   },
   {
     // Tools, platforms and others
-    title: 'pages.resume.topics.tools.title',
-    largeItems: false,
-    icon: faScrewdriverWrench,
     id: crypto.randomUUID(),
+    title: 'pages.resume.topics.tools.title',
+    icon: faScrewdriverWrench,
+    largeItems: false,
     items: [
       {
+        id: crypto.randomUUID(),
         heading: 'Git',
         url: 'https://git-scm.com/',
         image: {
@@ -171,6 +183,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'GitHub',
         url: 'https://github.com/',
         image: {
@@ -179,6 +192,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'PostgreSQL',
         url: 'https://www.postgresql.org/',
         image: {
@@ -187,6 +201,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'Vercel',
         url: 'https://vercel.com/',
         image: {
@@ -195,6 +210,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'Figma',
         url: 'https://www.figma.com/',
         image: {
@@ -206,12 +222,13 @@ const RESUME_TOPICS = [
   },
   {
     // Professional experience
-    title: 'pages.resume.topics.professionalExp.title',
-    largeItems: true,
-    icon: faUserTie,
     id: crypto.randomUUID(),
+    title: 'pages.resume.topics.professionalExp.title',
+    icon: faUserTie,
+    largeItems: true,
     items: [
       {
+        id: crypto.randomUUID(),
         heading: 'pages.resume.topics.professionalExp.companyIII.heading',
         subheading: 'pages.resume.topics.professionalExp.companyIII.subheading',
         url: 'https://dalvanc.com/',
@@ -228,6 +245,7 @@ const RESUME_TOPICS = [
         ],
       },
       {
+        id: crypto.randomUUID(),
         heading: 'pages.resume.topics.professionalExp.companyII.heading',
         subheading: 'pages.resume.topics.professionalExp.companyII.subheading',
         url: 'https://www.topocart.com.br/',
@@ -247,6 +265,7 @@ const RESUME_TOPICS = [
         ],
       },
       {
+        id: crypto.randomUUID(),
         heading: 'pages.resume.topics.professionalExp.companyI.heading',
         subheading: 'pages.resume.topics.professionalExp.companyI.subheading',
         url: 'http://idbinfo.com.br/',
@@ -265,14 +284,15 @@ const RESUME_TOPICS = [
   },
   {
     // Education
-    title: 'pages.resume.topics.education.title',
-    largeItems: true,
-    icon: faUserGraduate,
     id: crypto.randomUUID(),
+    title: 'pages.resume.topics.education.title',
+    icon: faUserGraduate,
+    largeItems: true,
     items: [
       {
-        heading: '"The Creative React and Redux Course"',
-        subheading: '2023 · developed by ed',
+        id: crypto.randomUUID(),
+        heading: '"The Creative React & Redux Course"',
+        subheading: '2023 · developedbyed',
         url: 'https://developedbyed.com/p/the-creative-react-and-redux-course',
         image: {
           src: devByEd,
@@ -281,8 +301,9 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: '"The Creative JavaScript Course"',
-        subheading: '2023 · developed by ed',
+        subheading: '2023 · developedbyed',
         url: 'https://developedbyed.com/p/the-creative-javascript-course',
         image: {
           src: devByEd,
@@ -291,6 +312,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'pages.resume.topics.education.courseIV.heading',
         subheading: '2022 - 2023 · Programador BR',
         url: 'https://programadorbr.com/',
@@ -301,8 +323,9 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: '"The Creative HTML5 & CSS3 Course"',
-        subheading: '2022 · developed by ed',
+        subheading: '2022 · developedbyed',
         url: 'https://developedbyed.com/p/the-creative-html5-css3-course',
         image: {
           src: devByEd,
@@ -311,6 +334,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'pages.resume.topics.education.courseII.heading',
         subheading: '2019 · Udemy',
         url: 'https://www.udemy.com/',
@@ -321,9 +345,10 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'pages.resume.topics.education.courseI.heading',
         subheading: '2012 - 2018 · UNISC',
-        url: 'https://www.unisc.br/pt/',
+        url: 'https://www.unisc.br/pt/cursos/todos-os-cursos/graduacao/bacharelado/engenharia-civil',
         image: {
           src: unisc,
           srcDark: uniscDark,
@@ -334,12 +359,13 @@ const RESUME_TOPICS = [
   },
   {
     // Languages
-    title: 'pages.resume.topics.languages.title',
-    largeItems: false,
-    icon: faLanguage,
     id: crypto.randomUUID(),
+    title: 'pages.resume.topics.languages.title',
+    icon: faLanguage,
+    largeItems: false,
     items: [
       {
+        id: crypto.randomUUID(),
         heading: 'pages.resume.topics.languages.languageI.heading',
         subheading: 'pages.resume.topics.languages.languageI.subheading',
         url: null,
@@ -349,6 +375,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'pages.resume.topics.languages.languageII.heading',
         subheading: 'pages.resume.topics.languages.languageII.subheading',
         url: null,
@@ -358,6 +385,7 @@ const RESUME_TOPICS = [
         },
       },
       {
+        id: crypto.randomUUID(),
         heading: 'pages.resume.topics.languages.languageIII.heading',
         subheading: 'pages.resume.topics.languages.languageIII.subheading',
         url: null,

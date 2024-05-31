@@ -81,6 +81,10 @@
 }
 
 @layer utilities {
+  .border-accent {
+    @apply border-blue-600 dark:border-orange-500;
+  }
+
   .bg-accent {
     @apply bg-blue-600 dark:bg-orange-500;
   }
