@@ -13,10 +13,10 @@ function Footer() {
   const year = new Date().getFullYear()
 
   const { t } = useTranslation()
-  // const animation = useAnimate() | NOTE: for now, the footer animation is disabled
+  // const animation = useAnimate() | NOTE: for now, the footer animation is disabled :(
 
   return (
-    <footer className="pt-4 pb-8 md:pb-16 text-slate-600 dark:text-gray-400 flex flex-col items-center justify-between gap-6 text-sm color-transition">
+    <footer className="pt-4 pb-8 md:pb-16 bg-gradient-to-t from-black/5 flex flex-col items-center justify-between gap-6 text-slate-600 dark:text-gray-400 text-sm color-transition">
       <div className="flex flex-col items-center gap-0.5">
         <span className="mb-5 text-base select-none">❖</span>
         <Paragraph i18nKey="footer.deploy" variant="fixed-sm-normal" />
