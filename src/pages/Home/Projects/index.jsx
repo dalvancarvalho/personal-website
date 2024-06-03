@@ -8,15 +8,13 @@ import Container from '../../../layout/Container'
 import Section from '../../../layout/Section/Regular'
 
 import Paragraph from '../../../components/Text/Paragraph'
-import SectionTitle from '../../../components/Text/SectionTitle'
+import SectionHeading from '../../../components/Text/SectionHeading'
+import Card from './components/Card/Standard'
+import SmallCard from './components/Card/Small'
 
 import PROJECTS from '../../../constants/projects'
 
-// Dynamic import
-const Card = lazy(() => import('./components/Card/Standard'))
-const SmallCard = lazy(() => import('./components/Card/Small'))
-
-function Projects({ screenSize, t }) {
+export default function Projects({ screenSize, t }) {
   // Projects section
 
   const animation = useAnimate()
@@ -28,9 +26,9 @@ function Projects({ screenSize, t }) {
       ref={animation.scope}
     >
       <Container className="variable-padding flex flex-col justify-center items-center">
-        <SectionTitle
-          title={t('pages.home.projects.heading')}
-          watermark={t('pages.home.projects.watermark')}
+        <SectionHeading
+          heading="pages.home.projects.heading"
+          watermark="pages.home.projects.watermark"
           watermarkColor="text-slate-250 dark:text-dark-3"
         />
         <Paragraph
@@ -39,11 +37,11 @@ function Projects({ screenSize, t }) {
           ref={animation.paragraph}
         />
         <div className="flex flex-col items-center gap-20 md:gap-24">
-          {PROJECTS.map((props, index) =>
+          {PROJECTS.map(({ id, ...props }, index) =>
             screenSize.md ? (
-              <Card key={props.title} index={index} t={t} {...props} />
+              <Card key={id} index={index} t={t} {...props} />
             ) : (
-              <SmallCard key={props.title} index={index} t={t} {...props} />
+              <SmallCard key={id} index={index} t={t} {...props} />
             )
           )}
         </div>
@@ -51,5 +49,3 @@ function Projects({ screenSize, t }) {
     </Section>
   )
 }
-
-export default Projects

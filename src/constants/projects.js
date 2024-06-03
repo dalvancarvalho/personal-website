@@ -7,6 +7,7 @@ import splitItThumb from '../assets/webp/split-it.webp'
 // List of attributes of each project displayed in the 'Projects' section
 const PROJECTS = [
   {
+    id: crypto.randomUUID(),
     title: 'pages.home.projects.brGeo.title',
     description: 'pages.home.projects.brGeo.description',
     route: 'br-geo',
@@ -43,6 +44,7 @@ const PROJECTS = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     title: 'pages.home.projects.personalWebsite.title',
     description: 'pages.home.projects.personalWebsite.description',
     route: 'personal-website',
@@ -87,6 +89,7 @@ const PROJECTS = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     title: 'pages.home.projects.splitIt.title',
     description: 'pages.home.projects.splitIt.description',
     route: 'split-it',
@@ -121,8 +124,8 @@ const PROJECTS = [
 ]
 
 // Data used inside each project's page
-const BR_GEO = PROJECTS[0]
-const PERSONAL_WEBSITE = PROJECTS[1]
-const SPLIT_IT = PROJECTS[2]
+export const brGeo = PROJECTS[0]
+export const personalWebsite = PROJECTS[1]
+export const splitIt = PROJECTS[2]
 
-export { PROJECTS as default, BR_GEO, PERSONAL_WEBSITE, SPLIT_IT }
+export default PROJECTS

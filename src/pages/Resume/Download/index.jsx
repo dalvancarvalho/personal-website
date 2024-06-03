@@ -4,31 +4,29 @@ import Container from '../../../layout/Container'
 import Section from '../../../layout/Section/Regular'
 
 import Paragraph from '../../../components/Text/Paragraph'
-import SectionTitle from '../../../components/Text/SectionTitle'
+import SectionHeading from '../../../components/Text/SectionHeading'
 import ResumeCard from './components/ResumeCard'
 
 import RESUMES from './constants/resumes'
 
-function Download({ t }) {
+export default function Download({ t }) {
   // Download section
 
   return (
     <Section id="download">
       <Container className="h-full variable-padding">
-        <SectionTitle
+        <SectionHeading
           animation={false}
-          title={t('pages.resume.download.heading')}
-          watermark={t('pages.resume.download.watermark')}
+          heading="pages.resume.download.heading"
+          watermark="pages.resume.download.watermark"
         />
         <Paragraph i18nKey="pages.resume.download.paragraph" />
         <div className="mt-12 md:mt-16 flex flex-wrap items-center justify-center gap-12">
-          {RESUMES.map((props) => (
-            <ResumeCard key={props.title} t={t} {...props} />
+          {RESUMES.map(({ id, ...props }) => (
+            <ResumeCard key={id} t={t} {...props} />
           ))}
         </div>
       </Container>
     </Section>
   )
 }
-
-export default Download

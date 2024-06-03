@@ -15,76 +15,92 @@ const NAV_LINKS = {
 
   '/': [
     {
-      icon: faHouse,
+      id: crypto.randomUUID(),
       name: 'home',
+      icon: faHouse,
     },
     {
-      icon: faInfoCircle,
+      id: crypto.randomUUID(),
       name: 'about',
+      icon: faInfoCircle,
     },
     {
-      icon: faPenRuler,
+      id: crypto.randomUUID(),
       name: 'projects',
+      icon: faPenRuler,
     },
     {
-      icon: faPaperPlane,
+      id: crypto.randomUUID(),
       name: 'contact',
+      icon: faPaperPlane,
     },
   ],
   '/br-geo': [
     {
-      icon: faHouse,
+      id: crypto.randomUUID(),
       name: 'home',
+      icon: faHouse,
     },
     {
-      icon: faPersonChalkboard,
+      id: crypto.randomUUID(),
       name: 'intro',
+      icon: faPersonChalkboard,
     },
     {
-      icon: faListUl,
+      id: crypto.randomUUID(),
       name: 'details',
+      icon: faListUl,
     },
   ],
   '/personal-website': [
     {
-      icon: faHouse,
+      id: crypto.randomUUID(),
       name: 'home',
+      icon: faHouse,
     },
     {
-      icon: faPersonChalkboard,
+      id: crypto.randomUUID(),
       name: 'intro',
+      icon: faPersonChalkboard,
     },
     {
-      icon: faListUl,
+      id: crypto.randomUUID(),
       name: 'details',
+      icon: faListUl,
     },
   ],
   '/resume': [
     {
-      icon: faHouse,
+      id: crypto.randomUUID(),
       name: 'home',
+      icon: faHouse,
     },
     {
-      icon: faListUl,
+      id: crypto.randomUUID(),
       name: 'topics',
+      icon: faListUl,
     },
     {
-      icon: faDownload,
+      id: crypto.randomUUID(),
       name: 'download',
+      icon: faDownload,
     },
   ],
   '/split-it': [
     {
-      icon: faHouse,
+      id: crypto.randomUUID(),
       name: 'home',
+      icon: faHouse,
     },
     {
-      icon: faPersonChalkboard,
+      id: crypto.randomUUID(),
       name: 'intro',
+      icon: faPersonChalkboard,
     },
     {
-      icon: faListUl,
+      id: crypto.randomUUID(),
       name: 'details',
+      icon: faListUl,
     },
   ],
 }

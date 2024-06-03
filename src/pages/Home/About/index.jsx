@@ -13,17 +13,18 @@ import Section from '../../../layout/Section/Regular'
 
 import Button from '../../../components/Button'
 import Paragraph from '../../../components/Text/Paragraph'
-import SectionTitle from '../../../components/Text/SectionTitle'
+import SectionHeading from '../../../components/Text/SectionHeading'
 import PolaroidPic from './components/PolaroidPic'
 import QuotationMark from './components/QuotationMark'
 import Tech from './components/Tech'
 import Topic from './components/Topic'
 
 import TECHNOLOGIES from './constants/technologies'
+import TOPICS from './constants/topics'
 
 import stack from '../../../assets/svg/stack.svg'
 
-function About({ t }) {
+export default function About({ t }) {
   // About section
 
   const navigate = useNavigate()
@@ -31,10 +32,10 @@ function About({ t }) {
 
   return (
     <Section id="about" ref={animation.scope}>
-      <Container className="flex flex-col justify-center items-center">
-        <SectionTitle
-          title={t('pages.home.about.heading')}
-          watermark={t('pages.home.about.watermark')}
+      <Container>
+        <SectionHeading
+          heading="pages.home.about.heading"
+          watermark="pages.home.about.watermark"
         />
         <Grid className="gap-12">
           <PolaroidPic t={t} />
@@ -43,18 +44,9 @@ function About({ t }) {
             ref={animation.topics}
           >
             <QuotationMark ref={animation.quotation} />
-            <Topic
-              heading={t('pages.home.about.subHeadingI')}
-              text="pages.home.about.paragraphI"
-            />
-            <Topic
-              heading={t('pages.home.about.subHeadingII')}
-              text="pages.home.about.paragraphII"
-            />
-            <Topic
-              heading={t('pages.home.about.subHeadingIII')}
-              text="pages.home.about.paragraphIII"
-            />
+            {TOPICS.map(({ id, ...props }) => (
+              <Topic key={id} t={t} {...props} />
+            ))}
           </div>
         </Grid>
         <Divider />
@@ -67,8 +59,8 @@ function About({ t }) {
               {t('pages.home.about.subHeadingIV')}
             </h3>
             <ul className="w-11/12 md:w-7/12 lg:w-4/5 grid grid-cols-2 gap-y-3 md:gap-y-2">
-              {TECHNOLOGIES.map((props) => (
-                <Tech key={props.name} {...props} />
+              {TECHNOLOGIES.map(({ id, ...props }) => (
+                <Tech key={id} {...props} />
               ))}
             </ul>
             <Paragraph className="my-2" i18nKey="pages.home.about.paragraphIV" />
@@ -96,5 +88,3 @@ function About({ t }) {
     </Section>
   )
 }
-
-export default About

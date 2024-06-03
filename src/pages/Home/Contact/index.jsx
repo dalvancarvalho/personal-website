@@ -10,15 +10,15 @@ import Divider from '../../../layout/Divider'
 import Grid from '../../../layout/Grid'
 import Section from '../../../layout/Section/Regular'
 
-import Confetti from './components/Confetti'
-import ContactInfo from './components/ContactInfo'
 import ContactForm from '../../../components/ContactForm'
 import Paragraph from '../../../components/Text/Paragraph'
-import SectionTitle from '../../../components/Text/SectionTitle'
+import SectionHeading from '../../../components/Text/SectionHeading'
+import Confetti from './components/Confetti'
+import ContactInfo from './components/ContactInfo'
 
 import CONTACTS from './constants/contacts'
 
-function Contact({ screenSize, t }) {
+export default function Contact({ screenSize, t }) {
   // Contact section
 
   const { confetti } = useConfetti()
@@ -28,9 +28,9 @@ function Contact({ screenSize, t }) {
     <>
       <Section className="relative" id="contact" ref={animation.scope}>
         <Container className="flex flex-col justify-center items-center">
-          <SectionTitle
-            title={t('pages.home.contact.heading')}
-            watermark={t('pages.home.contact.watermark')}
+          <SectionHeading
+            heading="pages.home.contact.heading"
+            watermark="pages.home.contact.watermark"
           />
           <Grid className="gap-x-12">
             <div className="h-full col-start-1 col-end-8 flex flex-col justify-between gap-y-12">
@@ -45,14 +45,14 @@ function Contact({ screenSize, t }) {
                 />
               </div>
               <div className="w-max flex flex-col gap-2.5" ref={animation.contacts}>
-                {CONTACTS.map((props) => (
-                  <ContactInfo key={props.text} t={t} {...props} />
+                {CONTACTS.map(({ id, ...props }) => (
+                  <ContactInfo key={id} t={t} {...props} />
                 ))}
               </div>
             </div>
             {!screenSize.lg && <Divider />}
             <div className="col-start-8 col-end-13 w-full">
-              <ContactForm t={t} />
+              <ContactForm />
             </div>
           </Grid>
         </Container>
@@ -62,5 +62,3 @@ function Contact({ screenSize, t }) {
     </>
   )
 }
-
-export default Contact
