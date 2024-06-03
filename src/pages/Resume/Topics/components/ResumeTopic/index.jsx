@@ -85,7 +85,7 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
             ) : (
               <li className="mb-1" key={id}>
                 <a
-                  className="relative isolate min-h-12 h-full rounded-md border-l-[5px] border-accent hover:border-blue-500 hover:dark:border-orange-400 px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
+                  className="relative isolate min-h-12 h-full rounded-md border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
                   href={url}
                   rel="noopener noreferrer"
                   target="_blank"
