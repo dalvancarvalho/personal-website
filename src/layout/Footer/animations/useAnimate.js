@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimate() {
+export default function useAnimate() {
   // Footer animation
 
   const tl = useRef(null)
@@ -53,5 +53,3 @@ function useAnimate() {
 
   return { scope, top, socials, bottom }
 }
-
-export default useAnimate

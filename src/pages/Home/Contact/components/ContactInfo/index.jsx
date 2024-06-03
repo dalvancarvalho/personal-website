@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Paragraph from '../../../../../components/Text/Paragraph'
 
-function ContactInfo({ icon, href, text, target, t }) {
+export default function ContactInfo({ icon, href, text, target, t }) {
   // Link to contact information
 
   return (
@@ -33,5 +33,3 @@ function ContactInfo({ icon, href, text, target, t }) {
     </div>
   )
 }
-
-export default ContactInfo

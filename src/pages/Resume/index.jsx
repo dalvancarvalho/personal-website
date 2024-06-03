@@ -12,7 +12,7 @@ import MainSection from '../../layout/Section/Main'
 import Download from './Download'
 import Topics from './Topics'
 
-function Resume() {
+export default function Resume() {
   // Resume page
 
   const { t } = useTranslation()
@@ -22,7 +22,7 @@ function Resume() {
     <>
       <Meta
         title={t('meta.title.resume')}
-        description="Download my resume for updated information on my professional qualifications!"
+        description="Check my resume for updated information on my professional qualifications!"
         url="https://dalvanc.com/resume"
       />
       <MainSection>
@@ -39,5 +39,3 @@ function Resume() {
     </>
   )
 }
-
-export default Resume

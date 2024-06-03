@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimate(pathname) {
+export default function useAnimate(pathname) {
   // Header animation
 
   const scope = useRef(null)
@@ -30,5 +30,3 @@ function useAnimate(pathname) {
 
   return { nav, scope }
 }
-
-export default useAnimate

@@ -9,7 +9,7 @@ import MenuList from '../MenuList'
 
 import LANGUAGES from '../../../../constants/languages'
 
-function LanguageList({ t }) {
+export default function LanguageList({ t }) {
   // List of languages available for use (inside menu)
 
   const { language, setLanguage } = useLanguage()
@@ -50,5 +50,3 @@ function LanguageList({ t }) {
     </div>
   )
 }
-
-export default LanguageList

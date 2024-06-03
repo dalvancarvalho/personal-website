@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-function useAnimate() {
+export default function useAnimate() {
   // About section animation
 
   const { screenSize } = useScreenProps()
@@ -89,5 +89,3 @@ function useAnimate() {
 
   return { scope, topics, quotation, stack, stackImage }
 }
-
-export default useAnimate

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-function useScreenProps() {
+export default function useScreenProps() {
   // Returns several information about the screen size
 
   const [isPortraitMode, setIsPortraitMode] = useState(undefined)
@@ -51,5 +51,3 @@ function useScreenProps() {
 
   return { isPortraitMode, screenSize, screenDimensions }
 }
-
-export default useScreenProps

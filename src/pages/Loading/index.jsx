@@ -1,6 +1,6 @@
 /* Loading/index.jsx */
 
-function Loading() {
+export default function Loading() {
   // Loading indicator
 
   return (
@@ -9,5 +9,3 @@ function Loading() {
     </div>
   )
 }
-
-export default Loading

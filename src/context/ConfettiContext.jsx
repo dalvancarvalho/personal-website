@@ -5,7 +5,7 @@ import { createContext, useContext, useState } from 'react'
 // Context for the confetti animation
 const ConfettiContext = createContext()
 
-function ConfettiProvider({ children }) {
+export function ConfettiProvider({ children }) {
   const [confetti, setConfetti] = useState(false)
 
   return (
@@ -15,8 +15,6 @@ function ConfettiProvider({ children }) {
   )
 }
 
-function useConfetti() {
+export default function useConfetti() {
   return useContext(ConfettiContext)
 }
-
-export { useConfetti as default, ConfettiProvider }

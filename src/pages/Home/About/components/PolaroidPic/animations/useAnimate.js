@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../../../hooks/useScreenProps'
 
-function useAnimate() {
+export default function useAnimate() {
   // Polaroid picture animation
 
   const { screenSize } = useScreenProps()
@@ -51,5 +51,3 @@ function useAnimate() {
 
   return { scope, picture, shadow }
 }
-
-export default useAnimate

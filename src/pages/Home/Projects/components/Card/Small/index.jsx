@@ -11,7 +11,7 @@ import Button from '../../../../../../components/Button'
 import Paragraph from '../../../../../../components/Text/Paragraph'
 import Tech from '../components/Tech'
 
-function SmallCard({
+export default function SmallCard({
   description,
   index,
   isFinished,
@@ -102,5 +102,3 @@ function SmallCard({
     </div>
   )
 }
-
-export default SmallCard

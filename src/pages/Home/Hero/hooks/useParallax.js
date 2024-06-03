@@ -2,7 +2,7 @@
 
 import { useParallax } from 'react-scroll-parallax'
 
-function useHeroParallax() {
+export default function useHeroParallax() {
   // Hero section parallax effect
 
   const { ref: bg } = useParallax({
@@ -19,5 +19,3 @@ function useHeroParallax() {
 
   return { bg, text }
 }
-
-export default useHeroParallax

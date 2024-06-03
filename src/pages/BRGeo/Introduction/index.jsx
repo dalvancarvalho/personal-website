@@ -5,27 +5,25 @@ import Section from '../../../layout/Section/Regular'
 
 import CodeSnippet from '../../../components/CodeSnippet'
 import Paragraph from '../../../components/Text/Paragraph'
-import SectionTitle from '../../../components/Text/SectionTitle'
+import SectionHeading from '../../../components/Text/SectionHeading'
 
 import SNIPPET_MODEL from '../../../constants/snippets'
 
-function Introduction({ t }) {
+export default function Introduction() {
   // In progress...
 
   return (
     <Section id="intro">
       <Container className="h-full variable-padding">
-        <SectionTitle
+        <SectionHeading
           animation={false}
           className="pt-9 md:pt-16"
-          title={t('pages.brGeo.intro.heading')}
-          watermark={t('pages.brGeo.intro.watermark')}
+          heading="pages.brGeo.intro.heading"
+          watermark="pages.brGeo.intro.watermark"
         />
-        <Paragraph>{t('misc.comingSoon')}</Paragraph>
-        <CodeSnippet t={t} {...SNIPPET_MODEL} />
+        <Paragraph i18nKey="misc.comingSoon" />
+        <CodeSnippet {...SNIPPET_MODEL} />
       </Container>
     </Section>
   )
 }
-
-export default Introduction

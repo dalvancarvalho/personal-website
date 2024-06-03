@@ -1,8 +1,8 @@
-/* useIsMount.js */
+/* useIsFirstRender.js */
 
 import { useEffect, useRef } from 'react'
 
-function useIsFirstRender() {
+export default function useIsFirstRender() {
   // Indicates when a component is in its first render
 
   const isFirstRenderRef = useRef(true)
@@ -13,5 +13,3 @@ function useIsFirstRender() {
 
   return isFirstRenderRef.current
 }
-
-export default useIsFirstRender

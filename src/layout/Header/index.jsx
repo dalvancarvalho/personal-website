@@ -18,9 +18,7 @@ import Navbar from './components/Navbar'
 import SkipToContent from './components/SkipToContent'
 import ThemeSwitch from './components/ThemeSwitch'
 
-// Dynamic imports
-
-function Header() {
+export default function Header() {
   // Page header
 
   const { pathname } = useLocation()
@@ -64,5 +62,3 @@ function Header() {
     </header>
   )
 }
-
-export default Header

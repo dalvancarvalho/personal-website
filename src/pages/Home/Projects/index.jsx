@@ -1,7 +1,5 @@
 /* Projects/index.jsx */
 
-import { lazy } from 'react'
-
 import useAnimate from './animations/useAnimate'
 
 import Container from '../../../layout/Container'
@@ -25,7 +23,7 @@ export default function Projects({ screenSize, t }) {
       id="projects"
       ref={animation.scope}
     >
-      <Container className="variable-padding flex flex-col justify-center items-center">
+      <Container className="variable-padding">
         <SectionHeading
           heading="pages.home.projects.heading"
           watermark="pages.home.projects.watermark"

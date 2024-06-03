@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-function useAnimate() {
+export default function useAnimate() {
   // Contact section animation
 
   const { screenSize } = useScreenProps()
@@ -56,5 +56,3 @@ function useAnimate() {
 
   return { scope, contacts }
 }
-
-export default useAnimate

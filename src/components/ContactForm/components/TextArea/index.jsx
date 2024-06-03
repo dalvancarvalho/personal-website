@@ -2,7 +2,7 @@
 
 import useInputStyle from '../../hooks/useInputStyle'
 
-function TextArea({ inputName, inputs, label, setInputs }) {
+export default function TextArea({ inputName, inputs, label, setInputs }) {
   // Form input (text area)
 
   const { checkInput, ...refs } = useInputStyle(inputName, inputs)
@@ -31,5 +31,3 @@ function TextArea({ inputName, inputs, label, setInputs }) {
     </div>
   )
 }
-
-export default TextArea

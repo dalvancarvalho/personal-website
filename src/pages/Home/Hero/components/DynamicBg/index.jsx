@@ -1,6 +1,6 @@
 /* DynamicBg/index.jsx */
 
-function DynamicBg({ alt, className, darkVersion, lazy, lightVersion }) {
+export default function DynamicBg({ alt, className, darkVersion, lazy, lightVersion }) {
   // Smoothly switches the background image between its
   // light and dark versions when the theme is toggled
 
@@ -21,5 +21,3 @@ function DynamicBg({ alt, className, darkVersion, lazy, lightVersion }) {
     </>
   )
 }
-
-export default DynamicBg

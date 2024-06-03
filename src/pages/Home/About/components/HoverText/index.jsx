@@ -1,6 +1,6 @@
 /* HoverText/index.jsx */
 
-function HoverText({ t }) {
+export default function HoverText({ t }) {
   // Secret text inside 'about' picture
 
   return (
@@ -25,5 +25,3 @@ function HoverText({ t }) {
     </div>
   )
 }
-
-export default HoverText

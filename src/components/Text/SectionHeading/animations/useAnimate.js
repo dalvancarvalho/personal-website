@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-function useAnimate(animation, watermarkText) {
+export default function useAnimate(animation) {
   // Heading animation
 
   const scope = useRef(null)
@@ -32,22 +32,21 @@ function useAnimate(animation, watermarkText) {
         }
       )
 
-      watermarkText &&
-        gsap.fromTo(
-          watermark.current,
-          { opacity: 0, scale: 0.8 },
-          {
-            opacity: 1,
-            scale: 1,
-            duration: 1,
-            delay: 0.55,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: heading.current,
-              start: 'bottom bottom',
-            },
-          }
-        )
+      gsap.fromTo(
+        watermark.current,
+        { opacity: 0, scale: 0.8 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: 0.55,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: heading.current,
+            start: 'bottom bottom',
+          },
+        }
+      )
     }, scope)
 
     // Context cleanup
@@ -56,5 +55,3 @@ function useAnimate(animation, watermarkText) {
 
   return { heading, scope, watermark }
 }
-
-export default useAnimate

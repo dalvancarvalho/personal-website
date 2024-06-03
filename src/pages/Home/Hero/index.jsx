@@ -8,14 +8,14 @@ import useAnimate from './animations/useAnimate'
 import Section from '../../../layout/Section/Regular'
 
 import Button from '../../../components/Button'
-import DynamicBg from './components/DynamicBg'
 import Paragraph from '../../../components/Text/Paragraph'
 import Translation from '../../../components/Text/Translation'
+import DynamicBg from './components/DynamicBg'
 
 import bgDark from '../../../assets/svg/bg-dark.svg'
 import bgLight from '../../../assets/svg/bg-light.svg'
 
-function Hero({ t }) {
+export default function Hero({ t }) {
   // Hero section
 
   const parallax = useParallax()
@@ -61,5 +61,3 @@ function Hero({ t }) {
     </Section>
   )
 }
-
-export default Hero

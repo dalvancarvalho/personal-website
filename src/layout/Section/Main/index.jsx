@@ -2,7 +2,7 @@
 
 import useAnimate from './animations/useAnimate'
 
-function MainSection({ children, className = '' }) {
+export default function MainSection({ children, className = '' }) {
   // Section with fade-in animation
 
   const animation = useAnimate()
@@ -13,5 +13,3 @@ function MainSection({ children, className = '' }) {
     </section>
   )
 }
-
-export default MainSection

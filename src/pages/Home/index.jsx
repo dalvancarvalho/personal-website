@@ -14,7 +14,7 @@ import Contact from './Contact'
 import Hero from './Hero'
 import Projects from './Projects'
 
-function Home() {
+export default function Home() {
   // Home page
 
   const { t } = useTranslation()
@@ -37,5 +37,3 @@ function Home() {
     </>
   )
 }
-
-export default Home

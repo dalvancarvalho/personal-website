@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimate(isEven) {
+export default function useAnimate(isEven) {
   // Mobile card animation
 
   const card = useRef(null)
@@ -75,5 +75,3 @@ function useAnimate(isEven) {
 
   return { card, stack }
 }
-
-export default useAnimate

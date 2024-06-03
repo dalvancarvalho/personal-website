@@ -7,7 +7,7 @@ import useLanguage from '../../../../../context/LanguageContext'
 
 import { PT_BR, EN_US } from '../constants/logoText'
 
-function useLogoText() {
+export default function useLogoText() {
   // Updates the logo based on the current pathname and language
 
   const { language } = useLanguage()
@@ -26,5 +26,3 @@ function useLogoText() {
 
   return logoText
 }
-
-export default useLogoText

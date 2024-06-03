@@ -6,7 +6,7 @@ import { gsap } from 'gsap'
 import useIsFirstRender from '../../../../../hooks/useIsFirstRender'
 import useLogoText from '../hooks/useLogoText'
 
-function useAnimate() {
+export default function useAnimate() {
   // Logo text animation
 
   const isFirstRender = useIsFirstRender()
@@ -68,5 +68,3 @@ function useAnimate() {
 
   return { cursor, scope, text }
 }
-
-export default useAnimate

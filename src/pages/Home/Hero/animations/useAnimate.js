@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimate(refs) {
+export default function useAnimate(refs) {
   // Hero section animation
 
   const { bg, text } = refs
@@ -48,5 +48,3 @@ function useAnimate(refs) {
 
   return { scope }
 }
-
-export default useAnimate

@@ -7,7 +7,7 @@ import { Link as ScrollLink } from 'react-scroll'
 
 import useMenu from '../../../../context/MenuContext'
 
-function NavLink({ children, icon, to }) {
+export default function NavLink({ children, icon, to }) {
   // Link to access a respective section of the page
 
   const { setMenuState } = useMenu()
@@ -15,19 +15,21 @@ function NavLink({ children, icon, to }) {
 
   const isActive = linkRef.current?.state.active
 
+  function keyboardHandler(event) {
+    if (event.code !== 'Enter') return
+    location.href = '#' + to
+    setMenuState(false)
+  }
+
   return (
     <li
-      className="w-full md:text-base text-slate-500 dark:text-gray-400 nav-link-hover focus-visible:md:text-slate-900 focus-visible:md:dark:text-gray-200 whitespace-nowrap"
+      className="w-full md:text-base text-slate-500 dark:text-gray-400 focus-visible:md:text-slate-900 focus-visible:md:dark:text-gray-200 whitespace-nowrap nav-link-hover"
       tabIndex="0"
-      onKeyDown={(event) => {
-        if (event.code !== 'Enter') return
-        location.href = '#' + to
-        setMenuState(false)
-      }}
+      onKeyDown={(event) => keyboardHandler(event)}
     >
       <ScrollLink
         activeClass="!font-semibold text-slate-800 dark:text-gray-200"
-        className="py-1.5 flex items-center font-medium cursor-pointer md:ml-0 md:py-0 md:font-semibold md:text-lg color-transition"
+        className="md:ml-0 py-1.5 md:py-0 flex items-center font-medium md:font-semibold md:text-lg cursor-pointer color-transition"
         href={to} // SEO purposes
         onClick={() => setMenuState(false)}
         ref={linkRef}
@@ -52,5 +54,3 @@ function NavLink({ children, icon, to }) {
     </li>
   )
 }
-
-export default NavLink

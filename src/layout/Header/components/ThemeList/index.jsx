@@ -9,7 +9,7 @@ import MenuList from '../MenuList'
 
 import THEMES from '../../../../constants/themes'
 
-function ThemeList({ t }) {
+export default function ThemeList({ t }) {
   // List of themes available for use (inside menu)
 
   const { theme, setTheme } = useTheme()
@@ -49,5 +49,3 @@ function ThemeList({ t }) {
     </div>
   )
 }
-
-export default ThemeList

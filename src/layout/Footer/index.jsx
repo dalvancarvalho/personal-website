@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import Paragraph from '../../components/Text/Paragraph'
 import SocialNetworksList from './components/SocialNetworksList'
 
-function Footer() {
+export default function Footer() {
   // Page footer
 
   const year = new Date().getFullYear()
@@ -29,5 +29,3 @@ function Footer() {
     </footer>
   )
 }
-
-export default Footer

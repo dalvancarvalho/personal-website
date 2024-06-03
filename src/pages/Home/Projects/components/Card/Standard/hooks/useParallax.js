@@ -2,7 +2,7 @@
 
 import { useParallax } from 'react-scroll-parallax'
 
-function useCardParallax() {
+export default function useCardParallax() {
   // Parallax effect on card element
 
   const { ref: card } = useParallax({
@@ -12,5 +12,3 @@ function useCardParallax() {
 
   return { card }
 }
-
-export default useCardParallax

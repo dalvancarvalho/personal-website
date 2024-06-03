@@ -1,6 +1,6 @@
 /* KeyTag.jsx */
 
-function KeyTag({ children }) {
+export default function KeyTag({ children }) {
   // Indicates a key that is part of a keyboard shortcut
 
   return (
@@ -9,5 +9,3 @@ function KeyTag({ children }) {
     </kbd>
   )
 }
-
-export default KeyTag

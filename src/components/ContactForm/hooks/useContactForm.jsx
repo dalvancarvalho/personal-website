@@ -8,7 +8,7 @@ import useConfetti from '../../../context/ConfettiContext'
 
 import Toast from '../../Toast'
 
-function useContactForm() {
+export default function useContactForm() {
   // Handles the functionality of the contact form
 
   const MIN_MESSAGE_LENGTH = 50
@@ -76,5 +76,3 @@ function useContactForm() {
 
   return { handleSubmit, inputs, isSubmitting, setInputs }
 }
-
-export default useContactForm

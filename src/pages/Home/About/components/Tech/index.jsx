@@ -3,8 +3,8 @@
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Tech({ name, url }) {
-  // Link to the tech's page (with decoration)
+export default function Tech({ name, url }) {
+  // Technology displayed in the 'About' section (with link to its webpage)
 
   return (
     <li className="max-w-max text-sm md:text-base font-bold text-slate-800 dark:text-gray-200 color-transition">
@@ -23,5 +23,3 @@ function Tech({ name, url }) {
     </li>
   )
 }
-
-export default Tech

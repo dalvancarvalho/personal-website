@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-function useAnimate() {
+export default function useAnimate() {
   // Projects section animation
 
   const scope = useRef(null)
@@ -36,5 +36,3 @@ function useAnimate() {
 
   return { scope, paragraph }
 }
-
-export default useAnimate

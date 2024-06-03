@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import Button from '../../../../components/Button'
 import Paragraph from '../../../../components/Text/Paragraph'
 
-function Breadcrumbs({ section, t }) {
+export default function Breadcrumbs({ section, t }) {
   // Navigation component
 
   const navigate = useNavigate()
@@ -32,5 +32,3 @@ function Breadcrumbs({ section, t }) {
     </div>
   )
 }
-
-export default Breadcrumbs

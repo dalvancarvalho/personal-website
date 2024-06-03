@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-function useDocCoordinates() {
+export default function useDocCoordinates() {
   // Returns the coordinates (x and y) of the document element
 
   const documentElement = document.documentElement
@@ -30,5 +30,3 @@ function useDocCoordinates() {
 
   return coordinates
 }
-
-export default useDocCoordinates

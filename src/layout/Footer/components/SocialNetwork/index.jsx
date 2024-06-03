@@ -1,11 +1,9 @@
-/* SocialNetworkLink/index.jsx */
+/* SocialNetwork/index.jsx */
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function SocialNetworkLink(props) {
+export default function SocialNetwork({ hoverColor, icon, name, url }) {
   // Link to a social network
-
-  const { hoverColor, icon, name, url } = props
 
   return (
     <a
@@ -19,5 +17,3 @@ function SocialNetworkLink(props) {
     </a>
   )
 }
-
-export default SocialNetworkLink

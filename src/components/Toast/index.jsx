@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 
 import TOAST_VARIANTS from './constants/toastVariants'
 
-function Toast({ id, variant }) {
+export default function Toast({ id, variant }) {
   // Displays simple messages in the bottom of the screen
 
   const { heading, description, icon } = TOAST_VARIANTS[variant]
@@ -33,5 +33,3 @@ function Toast({ id, variant }) {
     </div>
   )
 }
-
-export default Toast

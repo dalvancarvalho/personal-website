@@ -6,12 +6,10 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Container from '../Container'
 
 import Breadcrumbs from './components/Breadcrumbs'
+import Link from './components/Link'
+import LiveDemo from './components/LiveDemo'
 
-// Dynamic imports
-const Link = lazy(() => import('./components/Link'))
-const LiveDemo = lazy(() => import('./components/LiveDemo'))
-
-function PageHeader({ github, linkedIn, links, title, section, t }) {
+export default function PageHeader({ github, linkedIn, links, title, section, t }) {
   // Displays the title of the page (H1) along with some useful links
 
   return (
@@ -44,5 +42,3 @@ function PageHeader({ github, linkedIn, links, title, section, t }) {
     </div>
   )
 }
-
-export default PageHeader

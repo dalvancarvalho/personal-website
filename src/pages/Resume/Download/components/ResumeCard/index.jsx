@@ -2,7 +2,7 @@
 
 import Paragraph from '../../../../../components/Text/Paragraph'
 
-function ResumeCard({ href, thumbnail, t, title }) {
+export default function ResumeCard({ href, thumbnail, t, title }) {
   // Downloadable resume
 
   return (
@@ -32,5 +32,3 @@ function ResumeCard({ href, thumbnail, t, title }) {
     </a>
   )
 }
-
-export default ResumeCard

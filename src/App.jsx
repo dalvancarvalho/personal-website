@@ -20,7 +20,7 @@ import Main from './layout/Main'
 import Routes from './routes'
 
 // prettier-ignore
-function App() {
+export default function App() {
   // Main component
 
   const DARK_THEME = '#1a1a1a'          // dark gray
@@ -62,5 +62,3 @@ function App() {
     </>
   )
 }
-
-export default App

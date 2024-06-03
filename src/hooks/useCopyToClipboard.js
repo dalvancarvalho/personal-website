@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-function useCopyToClipboard(string) {
+export default function useCopyToClipboard(string) {
   // Copies the passed string to the clipboard
 
   const [isCopied, setIsCopied] = useState(false)
@@ -23,5 +23,3 @@ function useCopyToClipboard(string) {
 
   return { copyToClipboard, isCopied }
 }
-
-export default useCopyToClipboard

@@ -4,10 +4,8 @@ import { Trans } from 'react-i18next'
 
 import TRANS_COMPONENTS from './constants/transComponents'
 
-function Translation({ children }) {
+export default function Translation({ children }) {
   // Internationalization component that renders the text based in the current language
 
   return <Trans components={TRANS_COMPONENTS}>{children}</Trans>
 }
-
-export default Translation

@@ -39,7 +39,7 @@ export default useCopyToClipboard
 }
 
 // Each page should have its own object containing the snippets used throughout the examples
-const BR_GEO = {
+export const brGeo = {
   snippetOne: {
     title: '',
     extension: '',
@@ -57,7 +57,7 @@ const BR_GEO = {
   },
 }
 
-const PERSONAL_WEBSITE = {
+export const personalWebsite = {
   snippetOne: {
     title: '',
     extension: '',
@@ -75,7 +75,7 @@ const PERSONAL_WEBSITE = {
   },
 }
 
-const SPLIT_IT = {
+export const splitIt = {
   snippetOne: {
     title: '',
     extension: '',
@@ -93,4 +93,4 @@ const SPLIT_IT = {
   },
 }
 
-export { SNIPPET_MODEL as default, BR_GEO, PERSONAL_WEBSITE, SPLIT_IT }
+export default SNIPPET_MODEL

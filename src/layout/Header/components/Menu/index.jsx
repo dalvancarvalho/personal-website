@@ -13,7 +13,7 @@ import LanguageList from '../LanguageList'
 import NavList from '../NavList'
 import ThemeList from '../ThemeList'
 
-function Menu({ pathname, t, y }) {
+export default function Menu({ pathname, t, y }) {
   // Menu displayed on small screens
 
   const { isMenuOpen, setMenuState, ...refs } = useMenu()
@@ -57,5 +57,3 @@ function Menu({ pathname, t, y }) {
     </div>
   )
 }
-
-export default Menu

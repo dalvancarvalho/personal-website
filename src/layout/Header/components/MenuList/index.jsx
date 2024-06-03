@@ -1,6 +1,6 @@
 /* MenuList/index.jsx */
 
-function MenuList({ children, title }) {
+export default function MenuList({ children, title }) {
   // Unordered list with title
 
   return (
@@ -14,5 +14,3 @@ function MenuList({ children, title }) {
     </>
   )
 }
-
-export default MenuList

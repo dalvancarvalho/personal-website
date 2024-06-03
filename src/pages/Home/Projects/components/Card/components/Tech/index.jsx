@@ -1,6 +1,6 @@
 /* Tech/index.jsx */
 
-function Tech({ isEven, tech, url }) {
+export default function Tech({ isEven, tech, url }) {
   // Link to the tech's page
 
   return (
@@ -17,5 +17,3 @@ function Tech({ isEven, tech, url }) {
     </li>
   )
 }
-
-export default Tech

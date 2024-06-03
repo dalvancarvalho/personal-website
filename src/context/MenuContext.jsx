@@ -7,7 +7,7 @@ import useScreenProps from '../hooks/useScreenProps'
 // Context for accessing the menu status
 const MenuContext = createContext()
 
-function MenuProvider({ children }) {
+export function MenuProvider({ children }) {
   const documentElement = document.documentElement
 
   const { screenSize } = useScreenProps()
@@ -56,10 +56,8 @@ function MenuProvider({ children }) {
   )
 }
 
-function useMenu() {
+export default function useMenu() {
   // Handles the logic of the main menu
 
   return useContext(MenuContext)
 }
-
-export { useMenu as default, MenuProvider }

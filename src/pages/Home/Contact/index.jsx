@@ -27,7 +27,7 @@ export default function Contact({ screenSize, t }) {
   return (
     <>
       <Section className="relative" id="contact" ref={animation.scope}>
-        <Container className="flex flex-col justify-center items-center">
+        <Container>
           <SectionHeading
             heading="pages.home.contact.heading"
             watermark="pages.home.contact.watermark"

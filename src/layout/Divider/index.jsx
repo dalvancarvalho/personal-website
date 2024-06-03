@@ -2,7 +2,7 @@
 
 import useAnimate from './animations/useAnimate'
 
-function Divider() {
+export default function Divider() {
   // SVG horizontal divider
 
   const animation = useAnimate()
@@ -19,5 +19,3 @@ function Divider() {
     </svg>
   )
 }
-
-export default Divider

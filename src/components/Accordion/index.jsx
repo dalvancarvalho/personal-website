@@ -5,7 +5,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Content, Header, Item, Root, Trigger } from '@radix-ui/react-accordion'
 
-function AccordionItem({ className = '', ...props }) {
+export function AccordionItem({ className = '', ...props }) {
   // Wraps the 'AccordionTrigger' and 'AccordionContent' components
 
   return (
@@ -16,7 +16,7 @@ function AccordionItem({ className = '', ...props }) {
   )
 }
 
-function AccordionTrigger({ children, className = '', ...props }) {
+export function AccordionTrigger({ children, className = '', ...props }) {
   // Toggles the visibility of the 'AccordionContent'
 
   return (
@@ -35,7 +35,7 @@ function AccordionTrigger({ children, className = '', ...props }) {
   )
 }
 
-function AccordionContent({ children, className = '', ...props }) {
+export function AccordionContent({ children, className = '', ...props }) {
   // Displays the content when the 'AccordionTrigger' is opened
 
   return (
@@ -48,4 +48,4 @@ function AccordionContent({ children, className = '', ...props }) {
   )
 }
 
-export { Root as default, AccordionContent, AccordionItem, AccordionTrigger }
+export default Root

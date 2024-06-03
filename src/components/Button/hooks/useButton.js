@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 import BUTTON_VARIANTS from '../constants/buttonVariants'
 
-function useButton(variant, callback) {
+export default function useButton(variant, callback) {
   // Handles the button and tooltip logic
 
   const style = BUTTON_VARIANTS[variant]
@@ -35,5 +35,3 @@ function useButton(variant, callback) {
 
   return { style, handleClick, setTooltipActive, tooltipRef }
 }
-
-export default useButton

@@ -14,7 +14,7 @@ import MainSection from '../../layout/Section/Main'
 import Button from '../../components/Button'
 import Paragraph from '../../components/Text/Paragraph'
 
-function NotFound() {
+export default function NotFound() {
   // 404 page
 
   const { t } = useTranslation()
@@ -57,5 +57,3 @@ function NotFound() {
     </>
   )
 }
-
-export default NotFound

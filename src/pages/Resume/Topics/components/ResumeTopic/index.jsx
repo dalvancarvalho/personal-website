@@ -11,7 +11,7 @@ import {
 } from '../../../../../components/Accordion'
 import Paragraph from '../../../../../components/Text/Paragraph'
 
-function ResumeTopic({ icon, index, items, largeItems, t, title }) {
+export default function ResumeTopic({ icon, index, items, largeItems, t, title }) {
   // Displays all the items related to a topic of the resume
 
   const { theme } = useTheme()
@@ -114,5 +114,3 @@ function ResumeTopic({ icon, index, items, largeItems, t, title }) {
     </AccordionItem>
   )
 }
-
-export default ResumeTopic

@@ -1,6 +1,6 @@
 /* Grid/index.jsx */
 
-function Grid({ children, className = '' }) {
+export default function Grid({ children, className = '' }) {
   // Grid displayed on medium/large screens
 
   return (
@@ -9,5 +9,3 @@ function Grid({ children, className = '' }) {
     </div>
   )
 }
-
-export default Grid

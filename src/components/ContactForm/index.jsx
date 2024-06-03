@@ -12,7 +12,7 @@ import Spinner from '../Button/components/Spinner'
 import Input from './components/Input'
 import TextArea from './components/TextArea'
 
-function ContactForm() {
+export default function ContactForm() {
   // Contact form
 
   const { handleSubmit, isSubmitting, ...inputs } = useContactForm()
@@ -70,5 +70,3 @@ function ContactForm() {
     </form>
   )
 }
-
-export default ContactForm

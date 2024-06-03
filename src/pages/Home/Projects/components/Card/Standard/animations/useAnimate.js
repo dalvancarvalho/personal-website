@@ -3,8 +3,8 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-function useAnimate() {
-  // Desktop card animation
+export default function useAnimate() {
+  // Standard card animation
 
   const scope = useRef(null)
   const image = useRef(null)
@@ -89,5 +89,3 @@ function useAnimate() {
 
   return { image, scope, stack, text }
 }
-
-export default useAnimate

@@ -7,7 +7,7 @@ import useTheme from '../../../../context/ThemeContext'
 
 import Button from '../../../../components/Button'
 
-function ThemeSwitch({ t }) {
+export default function ThemeSwitch({ t }) {
   // Switches the theme between light and dark
 
   const { theme, switchTheme, SHORTCUT_KEY } = useTheme()
@@ -36,5 +36,3 @@ function ThemeSwitch({ t }) {
     </Button>
   )
 }
-
-export default ThemeSwitch

@@ -13,9 +13,9 @@ const LANGUAGES = [
   },
 ]
 
-const PT_BR = LANGUAGES[0]
-const EN_US = LANGUAGES[1]
+export const ptBr = LANGUAGES[0]
+export const enUs = LANGUAGES[1]
 
-const SHORTCUT_KEY = 'l' // Used in combination with 'Ctrl' key to toggle the language
+export const SHORTCUT_KEY = 'l' // Used in combination with 'Ctrl' key to toggle the language
 
-export { LANGUAGES as default, PT_BR, EN_US, SHORTCUT_KEY }
+export default LANGUAGES

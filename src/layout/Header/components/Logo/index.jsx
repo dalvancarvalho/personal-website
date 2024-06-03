@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 import useAnimate from './animations/useAnimate'
 
-function Logo() {
+export default function Logo() {
   // Animated logo that changes its text based on the current language and pathname
 
   const animation = useAnimate()
@@ -33,5 +33,3 @@ function Logo() {
     </p>
   )
 }
-
-export default Logo

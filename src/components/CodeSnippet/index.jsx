@@ -11,7 +11,7 @@ import useCopyToClipboard from '../../hooks/useCopyToClipboard'
 import Button from '../Button'
 import Paragraph from '../Text/Paragraph'
 
-function CodeSnippet({ codeString, extension, language, title }) {
+export default function CodeSnippet({ codeString, extension, language, title }) {
   // Syntax highlighted code snippet
 
   const { copyToClipboard, isCopied } = useCopyToClipboard(codeString)
@@ -70,5 +70,3 @@ function CodeSnippet({ codeString, extension, language, title }) {
     </div>
   )
 }
-
-export default CodeSnippet

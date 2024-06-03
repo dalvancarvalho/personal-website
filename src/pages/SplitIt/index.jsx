@@ -10,10 +10,11 @@ import PageHeader from '../../layout/PageHeader'
 import MainSection from '../../layout/Section/Main'
 
 import Introduction from './Introduction'
+// import Details from './Details'
 
-import { SPLIT_IT } from '../../constants/projects'
+import { splitIt } from '../../constants/projects'
 
-function SplitIt() {
+export default function SplitIt() {
   // Split it!
 
   const { t } = useTranslation()
@@ -27,12 +28,10 @@ function SplitIt() {
         url="https://dalvanc.com/split-it"
       />
       <MainSection>
-        <PageHeader section="pageHeader.breadcrumbs.projects" t={t} {...SPLIT_IT} />
+        <PageHeader section="pageHeader.breadcrumbs.projects" t={t} {...splitIt} />
         <Introduction t={t} />
         {/* Details... */}
       </MainSection>
     </>
   )
 }
-
-export default SplitIt

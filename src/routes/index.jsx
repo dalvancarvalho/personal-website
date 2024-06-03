@@ -14,7 +14,7 @@ const Resume = lazy(() => import('../pages/Resume'))
 const SplitIt = lazy(() => import('../pages/SplitIt'))
 
 // prettier-ignore
-function AppRoutes() {
+export default function AppRoutes() {
   // Manages the page rendered to each specified route
   // Note: If a new route is added, update the file 'logoText.js'
 
@@ -30,5 +30,3 @@ function AppRoutes() {
     </Routes>
   )
 }
-
-export default AppRoutes

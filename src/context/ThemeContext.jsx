@@ -5,15 +5,15 @@ import { createContext, useContext, useEffect } from 'react'
 import useKeyPress from '../hooks/useKeyPress'
 import useLocalStorage from '../hooks/useLocalStorage'
 
-import { LIGHT, DARK, SHORTCUT_KEY } from '../constants/themes'
+import { light, dark, SHORTCUT_KEY } from '../constants/themes'
 
 // Context for the theme functionality
 const ThemeContext = createContext()
 
-function ThemeProvider({ children }) {
+export function ThemeProvider({ children }) {
   const documentElement = document.documentElement
 
-  const [theme, setTheme] = useLocalStorage('preferred-theme', LIGHT)
+  const [theme, setTheme] = useLocalStorage('preferred-theme', light)
   useKeyPress(SHORTCUT_KEY, switchTheme)
 
   useEffect(() => {
@@ -37,7 +37,7 @@ function ThemeProvider({ children }) {
   }, [theme])
 
   function switchTheme() {
-    setTheme((currentTheme) => (currentTheme === LIGHT ? DARK : LIGHT))
+    setTheme((currentTheme) => (currentTheme === light ? dark : light))
   }
 
   return (
@@ -47,10 +47,8 @@ function ThemeProvider({ children }) {
   )
 }
 
-function useTheme() {
+export default function useTheme() {
   // Sets the theme of the page
 
   return useContext(ThemeContext)
 }
-
-export { useTheme as default, ThemeProvider }

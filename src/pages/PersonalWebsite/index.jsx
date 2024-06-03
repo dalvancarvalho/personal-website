@@ -10,10 +10,11 @@ import PageHeader from '../../layout/PageHeader'
 import MainSection from '../../layout/Section/Main'
 
 import Introduction from './Introduction'
+// import Details from './Details'
 
-import { PERSONAL_WEBSITE } from '../../constants/projects'
+import { personalWebsite } from '../../constants/projects'
 
-function PersonalWebsite() {
+export default function PersonalWebsite() {
   // Personal website
 
   const { t } = useTranslation()
@@ -30,7 +31,7 @@ function PersonalWebsite() {
         <PageHeader
           section="pageHeader.breadcrumbs.projects"
           t={t}
-          {...PERSONAL_WEBSITE}
+          {...personalWebsite}
         />
         <Introduction t={t} />
         {/* Details... */}
@@ -38,5 +39,3 @@ function PersonalWebsite() {
     </>
   )
 }
-
-export default PersonalWebsite

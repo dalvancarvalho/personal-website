@@ -6,7 +6,7 @@ import ReactConfetti from 'react-confetti'
 import useConfetti from '../../../../../context/ConfettiContext'
 import useScreenProps from '../../../../../hooks/useScreenProps'
 
-function Confetti() {
+export default function Confetti() {
   // Container that wraps the confetti animation
 
   const { setConfetti } = useConfetti()
@@ -32,5 +32,3 @@ function Confetti() {
     />
   )
 }
-
-export default Confetti

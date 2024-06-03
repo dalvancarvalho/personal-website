@@ -11,7 +11,16 @@ import Button from '../../../../../../components/Button'
 import Paragraph from '../../../../../../components/Text/Paragraph'
 import Tech from '../components/Tech'
 
-function Card({ description, index, isFinished, route, stack, t, thumbnail, title }) {
+export default function Card({
+  description,
+  index,
+  isFinished,
+  route,
+  stack,
+  t,
+  thumbnail,
+  title,
+}) {
   // Displays a project and its main features in a modern looking card
 
   const isEven = index % 2 === 0 ? true : false
@@ -88,5 +97,3 @@ function Card({ description, index, isFinished, route, stack, t, thumbnail, titl
     </div>
   )
 }
-
-export default Card

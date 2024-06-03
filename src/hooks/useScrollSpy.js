@@ -3,10 +3,8 @@
 import { useEffect } from 'react'
 import { scrollSpy } from 'react-scroll'
 
-function useScrollSpy() {
+export default function useScrollSpy() {
   // Updates the scroll spy functionality when the page component is mounted
 
   useEffect(() => scrollSpy.update(), [])
 }
-
-export default useScrollSpy

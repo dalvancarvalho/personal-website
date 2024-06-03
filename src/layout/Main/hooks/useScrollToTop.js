@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-function useScrollToTop() {
+export default function useScrollToTop() {
   // Scrolls the window to its initial coordinates whenever the pathname is changed
 
   const { pathname } = useLocation()
@@ -16,5 +16,3 @@ function useScrollToTop() {
     })
   }, [pathname])
 }
-
-export default useScrollToTop

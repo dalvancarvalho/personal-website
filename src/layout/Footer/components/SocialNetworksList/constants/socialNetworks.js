@@ -42,17 +42,17 @@ const SOCIAL_NETWORKS = [
   },
   {
     id: crypto.randomUUID(),
-    name: 'Spotify',
-    icon: faSpotify,
-    url: 'https://open.spotify.com/user/dalvancarvalho',
-    hoverColor: 'hover:text-[#25d865] focus-visible:text-[#25d865]',
-  },
-  {
-    id: crypto.randomUUID(),
     name: 'Last.fm',
     icon: faLastfm,
     url: 'https://www.last.fm/user/dalvancarvalho',
     hoverColor: 'hover:text-[#d0232b] focus-visible:text-[#d0232b]',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Spotify',
+    icon: faSpotify,
+    url: 'https://open.spotify.com/user/dalvancarvalho',
+    hoverColor: 'hover:text-[#25d865] focus-visible:text-[#25d865]',
   },
 ]
 
