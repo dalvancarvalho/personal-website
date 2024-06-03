@@ -24,19 +24,23 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
           className="flex items-center gap-3 !text-slate-800 dark:!text-gray-200"
         >
           <FontAwesomeIcon
-            className="w-6 group-hover:text-accent bg-slate-200 dark:bg-dark-1 text-slate-800 dark:text-gray-200 transition-colors duration-300 p-2 rounded-full"
+            className="w-6 rounded-full  p-2 group-hover:text-accent bg-slate-200 dark:bg-dark-1 text-slate-800 dark:text-gray-200 transition-colors duration-300"
             icon={icon}
           />
           {t(title)}
         </Paragraph>
       </AccordionTrigger>
       <AccordionContent>
-        <ul className={!largeItems ? 'grid grid-cols-2 lg:grid-cols-3 gap-x-2' : null}>
+        <ul
+          className={`mt-2 ${
+            !largeItems ? 'grid grid-cols-2 lg:grid-cols-3 gap-x-2' : null
+          }`}
+        >
           {items.map(({ bulletPoints, heading, id, image, roles, subheading, url }) =>
             largeItems ? (
               <li className={bulletPoints ? 'mb-8 last:mb-0' : null} key={id}>
                 <a
-                  className={`rounded-md border-l-[5px] border-accent hover:border-blue-500 hover:dark:border-orange-400 px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group ${
+                  className={`rounded-md border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group ${
                     bulletPoints ? 'mb-3.5' : 'mb-1'
                   }`}
                   href={url}

@@ -22,7 +22,7 @@ export function AccordionTrigger({ children, className = '', ...props }) {
   return (
     <Header className="flex group">
       <Trigger
-        className={`${className} flex flex-1 items-center justify-between py-4 [&[data-state=open]>svg]:rotate-180`}
+        className={`${className} p-4 flex flex-1 items-center justify-between hover:bg-slate-100 hover:dark:bg-dark-4 [&[data-state=open]>svg]:rotate-180`}
         {...props}
       >
         {children}
