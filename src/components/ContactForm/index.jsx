@@ -2,6 +2,7 @@
 
 import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from 'react-i18next'
 
 import useContactForm from './hooks/useContactForm'
 import useAnimate from './animations/useAnimate'
@@ -11,10 +12,11 @@ import Spinner from '../Button/components/Spinner'
 import Input from './components/Input'
 import TextArea from './components/TextArea'
 
-function ContactForm({ t }) {
+function ContactForm() {
   // Contact form
 
   const { handleSubmit, isSubmitting, ...inputs } = useContactForm()
+  const { t } = useTranslation()
   const animation = useAnimate()
 
   return (

@@ -4,16 +4,18 @@ import { useEffect } from 'react'
 import { faCheck, faClone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Prism from 'prismjs'
+import { useTranslation } from 'react-i18next'
 
 import useCopyToClipboard from '../../hooks/useCopyToClipboard'
 
 import Button from '../Button'
 import Paragraph from '../Text/Paragraph'
 
-function CodeSnippet({ codeString, extension, language, title, t }) {
+function CodeSnippet({ codeString, extension, language, title }) {
   // Syntax highlighted code snippet
 
   const { copyToClipboard, isCopied } = useCopyToClipboard(codeString)
+  const { t } = useTranslation()
 
   // Calls the highlight functionality when the component mounts
   useEffect(() => Prism.highlightAll(), [])
