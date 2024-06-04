@@ -31,6 +31,7 @@ import vercel from '../../../../assets/svg/logos/vercel.svg'
 import dalvanc from '../../../../assets/svg/logos/dalvanc.svg'
 import dalvancDark from '../../../../assets/svg/logos/dalvanc-dark.svg'
 import idb from '../../../../assets/svg/logos/idb.svg'
+import idb2 from '../../../../assets/svg/logos/idb2.svg'
 import topocart from '../../../../assets/svg/logos/topocart.svg'
 import topocartDark from '../../../../assets/svg/logos/topocart-dark.svg'
 
@@ -276,7 +277,7 @@ const RESUME_TOPICS = [
         subheading: 'pages.resume.topics.professionalExp.companyI.subheading',
         url: 'http://idbinfo.com.br/',
         image: {
-          src: idb,
+          src: idb2,
           srcDark: idb,
           alt: 'pages.resume.topics.professionalExp.companyI.altText',
         },
