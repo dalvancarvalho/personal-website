@@ -29,25 +29,16 @@ import postgreSql from '../../../../assets/svg/logos/postgresql.svg'
 import vercel from '../../../../assets/svg/logos/vercel.svg'
 
 import dalvanc from '../../../../assets/svg/logos/dalvanc.svg'
-import dalvancDark from '../../../../assets/svg/logos/dalvanc-dark.svg'
 import idb from '../../../../assets/svg/logos/idb.svg'
-import idb2 from '../../../../assets/svg/logos/idb2.svg'
 import topocart from '../../../../assets/svg/logos/topocart.svg'
-import topocartDark from '../../../../assets/svg/logos/topocart-dark.svg'
 
 import coursera from '../../../../assets/svg/logos/coursera.svg'
-import courseraDark from '../../../../assets/svg/logos/coursera-dark.svg'
 import devByEd from '../../../../assets/svg/logos/dev-by-ed.svg'
-import devByEdDark from '../../../../assets/svg/logos/dev-by-ed-dark.svg'
 import google from '../../../../assets/svg/logos/google.svg'
-import googleDark from '../../../../assets/svg/logos/google-dark.svg'
 import googleCoursera from '../../../../assets/svg/logos/google-coursera.svg'
 import progBr from '../../../../assets/svg/logos/prog-br.svg'
-import progBrDark from '../../../../assets/svg/logos/prog-br-dark.svg'
 import udemy from '../../../../assets/svg/logos/udemy.svg'
-import udemyDark from '../../../../assets/svg/logos/udemy-dark.svg'
 import unisc from '../../../../assets/svg/logos/unisc.svg'
-import uniscDark from '../../../../assets/svg/logos/unisc-dark.svg'
 
 import en from '../../../../assets/svg/logos/en.svg'
 import es from '../../../../assets/svg/logos/es.svg'
@@ -241,7 +232,6 @@ const RESUME_TOPICS = [
         url: 'https://dalvanc.com/',
         image: {
           src: dalvanc,
-          srcDark: dalvancDark,
           alt: 'pages.resume.topics.professionalExp.companyIII.altText',
         },
         roles: ['pages.resume.topics.professionalExp.companyIII.roleI'],
@@ -258,7 +248,6 @@ const RESUME_TOPICS = [
         url: 'https://www.topocart.com.br/',
         image: {
           src: topocart,
-          srcDark: topocartDark,
           alt: 'pages.resume.topics.professionalExp.companyII.altText',
         },
         roles: [
@@ -277,8 +266,7 @@ const RESUME_TOPICS = [
         subheading: 'pages.resume.topics.professionalExp.companyI.subheading',
         url: 'http://idbinfo.com.br/',
         image: {
-          src: idb2,
-          srcDark: idb,
+          src: idb,
           alt: 'pages.resume.topics.professionalExp.companyI.altText',
         },
         roles: ['pages.resume.topics.professionalExp.companyI.roleI'],
@@ -303,7 +291,6 @@ const RESUME_TOPICS = [
         url: 'https://www.coursera.org/professional-certificates/conception-ux-google',
         image: {
           src: googleCoursera,
-          srcDark: courseraDark,
           alt: 'pages.resume.topics.education.courseVII.altText',
         },
       },
@@ -314,7 +301,6 @@ const RESUME_TOPICS = [
         url: 'https://developedbyed.com/p/the-creative-react-and-redux-course',
         image: {
           src: devByEd,
-          srcDark: devByEdDark,
           alt: 'pages.resume.topics.education.courseVI.altText',
         },
       },
@@ -325,7 +311,6 @@ const RESUME_TOPICS = [
         url: 'https://developedbyed.com/p/the-creative-javascript-course',
         image: {
           src: devByEd,
-          srcDark: devByEdDark,
           alt: 'pages.resume.topics.education.courseV.altText',
         },
       },
@@ -336,7 +321,6 @@ const RESUME_TOPICS = [
         url: 'https://programadorbr.com/',
         image: {
           src: progBr,
-          srcDark: progBrDark,
           alt: 'pages.resume.topics.education.courseIV.altText',
         },
       },
@@ -347,7 +331,6 @@ const RESUME_TOPICS = [
         url: 'https://developedbyed.com/p/the-creative-html5-css3-course',
         image: {
           src: devByEd,
-          srcDark: devByEdDark,
           alt: 'pages.resume.topics.education.courseIII.altText',
         },
       },
@@ -358,7 +341,6 @@ const RESUME_TOPICS = [
         url: 'https://www.udemy.com/',
         image: {
           src: udemy,
-          srcDark: udemyDark,
           alt: 'pages.resume.topics.education.courseII.altText',
         },
       },
@@ -369,7 +351,6 @@ const RESUME_TOPICS = [
         url: 'https://www.unisc.br/pt/cursos/todos-os-cursos/graduacao/bacharelado/engenharia-civil',
         image: {
           src: unisc,
-          srcDark: uniscDark,
           alt: 'pages.resume.topics.education.courseI.altText',
         },
       },
