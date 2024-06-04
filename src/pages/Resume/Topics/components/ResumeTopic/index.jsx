@@ -53,14 +53,15 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                         {t(heading)}
                       </h4>
                       <Paragraph
-                        className="!text-slate-600 dark:!text-gray-400 text-pretty"
+                        className="flex flex-wrap items-center gap-x-2 !text-slate-600 dark:!text-gray-400 text-pretty"
                         i18nKey={subheading}
                         variant="small-semibold"
                       />
                     </div>
                     <img
-                      className="ml-3.5 w-24 max-h-12 h-auto"
-                      src={theme === 'light' ? image?.src : image?.srcDark}
+                      className="ml-3.5 w-24 max-h-11 h-auto dark:brightness-0 dark:invert transition-[filter] duration-300"
+                      // src={theme === 'light' ? image?.src : image?.srcDark}
+                      src={image?.src}
                       alt={t(image?.alt)}
                     />
                   </a>
