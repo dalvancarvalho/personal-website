@@ -24,7 +24,7 @@ export default function Footer() {
       </div>
       <SocialNetworksList t={t} />
       <Paragraph variant="fixed-base-normal">
-        &copy; {year} <b>dalvanc</b>.com
+        &copy; {year} <span className="font-black">·</span> <b>dalvanc</b>.com
       </Paragraph>
     </footer>
   )
