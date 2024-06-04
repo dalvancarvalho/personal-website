@@ -43,6 +43,7 @@ const TRANS_COMPONENTS = {
 
   /* Home page > Contacts section */
   deploy: (
+    // Link to Vercel's website
     <a
       className="font-bold text-slate-600 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 color-transition footer-link-hover"
       href="https://vercel.com"
@@ -52,6 +53,7 @@ const TRANS_COMPONENTS = {
   ),
 
   developer: (
+    // Link to Dalvan Carvalho's website
     <a
       className="font-bold text-slate-600 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 color-transition footer-link-hover"
       href="https://dalvanc.com"
@@ -67,6 +69,11 @@ const TRANS_COMPONENTS = {
       className="font-bold text-slate-800 dark:text-gray-200 color-transition hover:underline underline-offset-2"
       href="mailto:contato@dalvanc.com?subject=Message from dalvanc.com!"
     />
+  ),
+
+  pulse: (
+    // Pulse animation
+    <span className="text-accent animate-pulse" />
   ),
 }
 

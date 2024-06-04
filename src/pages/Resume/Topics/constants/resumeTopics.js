@@ -34,9 +34,14 @@ import idb from '../../../../assets/svg/logos/idb.svg'
 import topocart from '../../../../assets/svg/logos/topocart.svg'
 import topocartDark from '../../../../assets/svg/logos/topocart-dark.svg'
 
+import coursera from '../../../../assets/svg/logos/coursera.svg'
+import courseraDark from '../../../../assets/svg/logos/coursera-dark.svg'
 import devByEd from '../../../../assets/svg/logos/dev-by-ed.svg'
 import devByEdDark from '../../../../assets/svg/logos/dev-by-ed-dark.svg'
+import google from '../../../../assets/svg/logos/google.svg'
+import googleDark from '../../../../assets/svg/logos/google-dark.svg'
 import progBr from '../../../../assets/svg/logos/prog-br.svg'
+import progBrDark from '../../../../assets/svg/logos/prog-br-dark.svg'
 import udemy from '../../../../assets/svg/logos/udemy.svg'
 import udemyDark from '../../../../assets/svg/logos/udemy-dark.svg'
 import unisc from '../../../../assets/svg/logos/unisc.svg'
@@ -291,6 +296,17 @@ const RESUME_TOPICS = [
     items: [
       {
         id: crypto.randomUUID(),
+        heading: 'Google UX Design',
+        subheading: 'pages.resume.topics.education.courseVII.subheading',
+        url: 'https://www.coursera.org/professional-certificates/conception-ux-google',
+        image: {
+          src: coursera,
+          srcDark: courseraDark,
+          alt: 'pages.resume.topics.education.courseVII.altText',
+        },
+      },
+      {
+        id: crypto.randomUUID(),
         heading: '"The Creative React & Redux Course"',
         subheading: '2023 · developedbyed',
         url: 'https://developedbyed.com/p/the-creative-react-and-redux-course',
@@ -318,7 +334,7 @@ const RESUME_TOPICS = [
         url: 'https://programadorbr.com/',
         image: {
           src: progBr,
-          srcDark: progBr,
+          srcDark: progBrDark,
           alt: 'pages.resume.topics.education.courseIV.altText',
         },
       },

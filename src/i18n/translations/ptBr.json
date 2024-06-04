@@ -222,6 +222,10 @@
           },
           "education": {
             "title": "Educação",
+            "courseVII": {
+              "altText": "Logo do site Coursera",
+              "subheading": "2024 · Coursera/Google · <pulse>Em andamento...</pulse>"
+            },
             "courseVI": {
               "altText": "Logo do site developed by ed"
             },
