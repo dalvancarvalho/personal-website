@@ -30,10 +30,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full bg-opacity-85 dark:bg-opacity-85 border-b transition-[height,background,border] duration-300 ${
+      className={`fixed top-0 z-50 w-full border-b bg-opacity-85 dark:bg-opacity-85 transition-[height,background,border] duration-300 ${
         y === 0 || isMenuOpen
-          ? 'h-20 md:h-24 bg-transparent border-b-transparent'
-          : 'h-14 bg-slate-50 dark:bg-dark-6 backdrop-blur-[8px] border-b-slate-200 dark:border-b-dark-2'
+          ? 'h-20 md:h-24 border-b-transparent bg-transparent'
+          : 'h-14 border-b-slate-200 dark:border-b-dark-2 bg-slate-50 dark:bg-dark-6 backdrop-blur-[8px]'
       }`}
       ref={animation.scope}
     >
