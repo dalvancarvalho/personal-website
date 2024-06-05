@@ -58,7 +58,7 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                     />
                   </div>
                   <img
-                    className="ml-3.5 w-24 max-h-11 h-auto dark:brightness-0 dark:invert dark:opacity-60 transition-[filter,opacity] duration-300"
+                    className="ml-3.5 w-24 max-h-11 h-auto dark:brightness-0 dark:invert dark:opacity-60 group-hover:dark:opacity-90 transition-[filter,opacity] duration-300"
                     src={image?.src}
                     alt={t(image?.alt)}
                   />
