@@ -2,8 +2,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import useTheme from '../../../../../context/ThemeContext'
-
 import {
   AccordionContent,
   AccordionItem,
@@ -13,8 +11,6 @@ import Paragraph from '../../../../../components/Text/Paragraph'
 
 export default function ResumeTopic({ icon, index, items, largeItems, t, title }) {
   // Displays all the items related to a topic of the resume
-
-  const { theme } = useTheme()
 
   return (
     <AccordionItem value={`item-${index + 1}`}>
@@ -58,7 +54,7 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                     />
                   </div>
                   <img
-                    className="ml-3.5 w-24 max-h-11 h-auto dark:brightness-0 dark:invert dark:opacity-60 group-hover:dark:opacity-90 transition-[filter,opacity] duration-300"
+                    className="ml-3.5 w-24 max-h-11 h-auto dark:opacity-60 group-hover:dark:opacity-90 dark:brightness-0 dark:invert transition-[filter,opacity] duration-300"
                     src={image?.src}
                     alt={t(image?.alt)}
                   />
@@ -103,11 +99,11 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                     )}
                   </div>
                   <img
-                    className="absolute -z-10 -right-4 md:right-0 h-32 select-none opacity-[3%] brightness-0 dark:invert group-hover:scale-125 rotate-[15deg] transition-[opacity, scale] duration-300"
+                    className="absolute -z-10 -right-4 md:right-0 h-32 select-none opacity-[3%] group-hover:scale-125 brightness-0 dark:invert rotate-[15deg] transition-[opacity, scale] duration-300"
                     src={image?.src}
                   />
                   <img
-                    className="ml-2 w-8 dark:brightness-0 dark:invert dark:opacity-60 group-hover:dark:opacity-90 transition-[filter,opacity] duration-300"
+                    className="ml-2 w-8 opacity-30 dark:opacity-60 group-hover:opacity-100 group-hover:dark:opacity-90 brightness-0 group-hover:brightness-100 group-hover:dark:brightness-0 dark:invert transition-all duration-300"
                     src={image?.src}
                     alt={image?.alt}
                   />
