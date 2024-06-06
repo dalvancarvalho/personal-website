@@ -32,8 +32,8 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
       </AccordionTrigger>
       <AccordionContent>
         <ul
-          className={`mt-2 ${
-            !largeItems ? 'grid grid-cols-2 lg:grid-cols-3 gap-x-2' : null
+          className={`mt-2 grid ${
+            !largeItems ? 'grid-cols-2 lg:grid-cols-3 gap-x-2' : 'grid-cols-1'
           }`}
         >
           {items.map(({ bulletPoints, heading, id, image, roles, subheading, url }) =>
@@ -63,17 +63,17 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                     alt={t(image?.alt)}
                   />
                 </a>
-                {roles?.map((role) => (
+                {roles?.map(({ id, role }) => (
                   <Paragraph
                     className="ml-5 !text-slate-800 dark:!text-gray-200"
                     i18nKey={role}
-                    key={role}
+                    key={id}
                     variant="medium-semibold"
                   />
                 ))}
                 <ul>
-                  {bulletPoints?.map((bulletPoint) => (
-                    <li className="mt-2 ml-5 flex gap-3.5" key={bulletPoint}>
+                  {bulletPoints?.map(({ id, bulletPoint }) => (
+                    <li className="mt-2 ml-5 flex gap-3.5" key={id}>
                       <span className="pt-0.5 text-slate-800 dark:text-gray-200 font-black color-transition select-none">
                         •
                       </span>
@@ -103,12 +103,14 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                     )}
                   </div>
                   <img
-                    className={`absolute -z-10 -right-4 md:right-0 h-32 select-none group-hover:scale-125 rotate-[15deg] transition-[opacity, scale] duration-300 ${
-                      theme === 'light' ? 'opacity-10' : 'opacity-5'
-                    }`}
+                    className="absolute -z-10 -right-4 md:right-0 h-32 select-none opacity-[3%] brightness-0 dark:invert group-hover:scale-125 rotate-[15deg] transition-[opacity, scale] duration-300"
                     src={image?.src}
                   />
-                  <img className="ml-2 w-8" src={image?.src} alt={image?.alt} />
+                  <img
+                    className="ml-2 w-8 dark:brightness-0 dark:invert dark:opacity-60 group-hover:dark:opacity-90 transition-[filter,opacity] duration-300"
+                    src={image?.src}
+                    alt={image?.alt}
+                  />
                 </a>
               </li>
             )
