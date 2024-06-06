@@ -54,7 +54,7 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                     />
                   </div>
                   <img
-                    className="ml-3.5 w-24 max-h-11 h-auto dark:opacity-60 group-hover:dark:opacity-90 dark:brightness-0 dark:invert transition-[filter,opacity] duration-300"
+                    className="ml-3.5 w-24 max-h-11 h-auto select-none dark:opacity-60 group-hover:dark:opacity-90 dark:brightness-0 dark:invert transition-[filter,opacity] duration-300"
                     src={image?.src}
                     alt={t(image?.alt)}
                   />
@@ -103,7 +103,7 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                     src={image?.src}
                   />
                   <img
-                    className="ml-2 w-8 opacity-30 dark:opacity-60 group-hover:opacity-100 group-hover:dark:opacity-90 brightness-0 group-hover:brightness-100 group-hover:dark:brightness-0 dark:invert transition-all duration-300"
+                    className="ml-2 w-8 select-none opacity-30 dark:opacity-60 group-hover:opacity-100 group-hover:dark:opacity-90 brightness-0 group-hover:brightness-100 group-hover:dark:brightness-0 dark:invert transition-all duration-300"
                     src={image?.src}
                     alt={image?.alt}
                   />
