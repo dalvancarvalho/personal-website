@@ -32,10 +32,8 @@ import dalvanc from '../../../../assets/svg/logos/dalvanc.svg'
 import idb from '../../../../assets/svg/logos/idb.svg'
 import topocart from '../../../../assets/svg/logos/topocart.svg'
 
-import coursera from '../../../../assets/svg/logos/coursera.svg'
 import devByEd from '../../../../assets/svg/logos/dev-by-ed.svg'
 import google from '../../../../assets/svg/logos/google.svg'
-import googleCoursera from '../../../../assets/svg/logos/google-coursera.svg'
 import progBr from '../../../../assets/svg/logos/prog-br.svg'
 import udemy from '../../../../assets/svg/logos/udemy.svg'
 import unisc from '../../../../assets/svg/logos/unisc.svg'
@@ -330,7 +328,7 @@ const RESUME_TOPICS = [
         subheading: 'pages.resume.topics.education.courseVII.subheading',
         url: 'https://www.coursera.org/professional-certificates/conception-ux-google',
         image: {
-          src: googleCoursera,
+          src: google,
           alt: 'pages.resume.topics.education.courseVII.altText',
         },
       },
