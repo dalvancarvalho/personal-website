@@ -234,11 +234,25 @@ const RESUME_TOPICS = [
           src: dalvanc,
           alt: 'pages.resume.topics.professionalExp.companyIII.altText',
         },
-        roles: ['pages.resume.topics.professionalExp.companyIII.roleI'],
+        roles: [
+          {
+            id: crypto.randomUUID(),
+            role: 'pages.resume.topics.professionalExp.companyIII.roleI',
+          },
+        ],
         bulletPoints: [
-          'pages.resume.topics.professionalExp.companyIII.bulletI',
-          'pages.resume.topics.professionalExp.companyIII.bulletII',
-          'pages.resume.topics.professionalExp.companyIII.bulletIII',
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyIII.bulletI',
+          },
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyIII.bulletII',
+          },
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyIII.bulletIII',
+          },
         ],
       },
       {
@@ -251,13 +265,28 @@ const RESUME_TOPICS = [
           alt: 'pages.resume.topics.professionalExp.companyII.altText',
         },
         roles: [
-          'pages.resume.topics.professionalExp.companyII.roleI',
-          'pages.resume.topics.professionalExp.companyII.roleII',
+          {
+            id: crypto.randomUUID(),
+            role: 'pages.resume.topics.professionalExp.companyII.roleI',
+          },
+          {
+            id: crypto.randomUUID(),
+            role: 'pages.resume.topics.professionalExp.companyII.roleII',
+          },
         ],
         bulletPoints: [
-          'pages.resume.topics.professionalExp.companyII.bulletI',
-          'pages.resume.topics.professionalExp.companyII.bulletII',
-          'pages.resume.topics.professionalExp.companyII.bulletIII',
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyII.bulletI',
+          },
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyII.bulletII',
+          },
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyII.bulletIII',
+          },
         ],
       },
       {
@@ -269,10 +298,21 @@ const RESUME_TOPICS = [
           src: idb,
           alt: 'pages.resume.topics.professionalExp.companyI.altText',
         },
-        roles: ['pages.resume.topics.professionalExp.companyI.roleI'],
+        roles: [
+          {
+            id: crypto.randomUUID(),
+            role: 'pages.resume.topics.professionalExp.companyI.roleI',
+          },
+        ],
         bulletPoints: [
-          'pages.resume.topics.professionalExp.companyI.bulletI',
-          'pages.resume.topics.professionalExp.companyI.bulletII',
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyI.bulletI',
+          },
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyI.bulletII',
+          },
         ],
       },
     ],
