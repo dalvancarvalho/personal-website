@@ -15,9 +15,10 @@ export default function useAnimate() {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         scope.current,
-        { opacity: 0, scale: 0.5 },
+        { opacity: 0, rotateY: '240deg', scale: 0.5 },
         {
           opacity: 1,
+          rotateY: '360deg',
           scale: 1,
           delay: 0.5,
           duration: 1.25,
