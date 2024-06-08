@@ -22,12 +22,12 @@ export function AccordionTrigger({ children, className = '', ...props }) {
   return (
     <Header className="flex group">
       <Trigger
-        className={`${className} p-4 flex flex-1 items-center justify-between hover:bg-slate-100 hover:dark:bg-dark-4 [&[data-state=open]>svg]:rotate-180`}
+        className={`${className} p-4 flex flex-1 items-center justify-between hover:bg-slate-100 hover:dark:bg-dark-4 text-left [&[data-state=open]>svg]:rotate-180`}
         {...props}
       >
         {children}
         <FontAwesomeIcon
-          className="transition-transform duration-300"
+          className="pl-3 transition-transform duration-300"
           icon={faChevronDown}
         />
       </Trigger>
