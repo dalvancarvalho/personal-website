@@ -28,17 +28,18 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
       </AccordionTrigger>
       <AccordionContent>
         <ul
-          className={`mt-2 grid ${
-            !largeItems ? 'grid-cols-2 lg:grid-cols-3 gap-x-2' : 'grid-cols-1'
-          }`}
+          className="mt-2 md:px-4 grid gap-x-2 data-[large-items=true]:grid-cols-1 data-[large-items=false]:grid-cols-2 data-[large-items=false]:lg:grid-cols-3"
+          data-large-items={largeItems}
         >
           {items.map(({ bulletPoints, heading, id, image, roles, subheading, url }) =>
             largeItems ? (
-              <li className={bulletPoints ? 'mb-8 last:mb-0' : null} key={id}>
+              <li
+                className="data-[bullet-points=true]:mb-8 data-[bullet-points=true]:last:mb-0 group"
+                data-bullet-points={bulletPoints ? true : false}
+                key={id}
+              >
                 <a
-                  className={`rounded-md border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group ${
-                    bulletPoints ? 'mb-3.5' : 'mb-1'
-                  }`}
+                  className="group-data-[bullet-points=true]:mb-3.5 group-data-[bullet-points=false]:mb-1.5 rounded-md border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
                   href={url}
                   rel="noopener noreferrer"
                   target="_blank"
@@ -68,7 +69,7 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                   />
                 ))}
                 <ul>
-                  {bulletPoints?.map(({ id, bulletPoint }) => (
+                  {bulletPoints?.map(({ bulletPoint, id }) => (
                     <li className="mt-2 ml-5 flex gap-3.5" key={id}>
                       <span className="pt-0.5 text-slate-800 dark:text-gray-200 font-black color-transition select-none">
                         •
@@ -79,7 +80,7 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                 </ul>
               </li>
             ) : (
-              <li className="mb-1" key={id}>
+              <li className="mb-1.5" key={id}>
                 <a
                   className="relative isolate min-h-12 h-full rounded-md border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
                   href={url}
