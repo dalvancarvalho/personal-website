@@ -28,7 +28,7 @@ const SOCIAL_NETWORKS = [
   },
   {
     id: crypto.randomUUID(),
-    name: 'Twitter',
+    name: 'X (Twitter)',
     icon: faXTwitter,
     url: 'https://x.com/theRealZackyV',
     hoverColor: 'hover:text-[#0f1419] focus-visible:text-[#0f1419]',
