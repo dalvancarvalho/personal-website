@@ -9,13 +9,13 @@ const RESUMES = [
   {
     id: crypto.randomUUID(),
     title: 'pages.resume.download.portuguese',
-    href: '/resume-pt.pdf',
+    href: '/resume-pt.',
     thumbnail: thumbPt,
   },
   {
     id: crypto.randomUUID(),
     title: 'pages.resume.download.english',
-    href: '/resume-en.pdf',
+    href: '/resume-en.',
     thumbnail: thumbEn,
   },
 ]

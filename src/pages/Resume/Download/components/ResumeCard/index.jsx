@@ -1,34 +1,59 @@
 /* ResumeCard/index.jsx */
 
+import { useState } from 'react'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import useScreenProps from '../../../../../hooks/useScreenProps'
+
+import Button from '../../../../../components/Button'
 import Paragraph from '../../../../../components/Text/Paragraph'
+import FormatSelector from './components/FormatSelector'
 
 export default function ResumeCard({ href, thumbnail, t, title }) {
   // Downloadable resume
 
+  const [format, setFormat] = useState('pdf')
+  const { screenSize } = useScreenProps()
+
   return (
-    <a
-      aria-label={t('pages.resume.download.ariaLabel')}
-      className="max-w-max pb-5 px-5 md:pb-6 md:px-6 rounded-xl bg-slate-100 dark:bg-dark-4 flex flex-col items-center shadow-md transition-all duration-300 resume-hover"
-      href={href}
-      rel="noopener noreferrer"
-      tabIndex="0"
-      target="_blank"
-    >
-      <div className="my-3 md:my-4 flex items-center gap-3 md:gap-4">
+    <div className="flex flex-col items-start group/card">
+      <a
+        className="relative mb-3 md:mb-4 rounded-md border-l-[5px] border-accent color-transition overflow-hidden group/image"
+        href={href + format}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt={t('pages.resume.download.altText')}
+          className="w-72 md:w-80 h-auto select-none"
+          src={thumbnail}
+        />
+        {screenSize.md && (
+          <div className="absolute inset-0 grid backdrop-blur-sm dark:backdrop-brightness-[25%] opacity-0 group-hover/image:opacity-100 group-focus-visible/image:opacity-100 transition-all duration-300">
+            <Paragraph
+              className="place-self-center flex items-center gap-3 !text-black dark:!text-white"
+              variant="fixed-lg-semibold"
+            >
+              {t('pages.resume.download.newTab')}
+              <FontAwesomeIcon className="rotate-45" icon={faArrowUp} size="sm" />
+            </Paragraph>
+          </div>
+        )}
+      </a>
+      <div className="w-full px-2 flex items-center">
         <Paragraph
-          className="!text-slate-800 dark:!text-gray-200"
+          className="flex-1 !text-slate-800 dark:!text-gray-200"
           i18nKey={title}
           variant="medium-bold"
         />
-        <span className="px-[0.7em] py-[0.35em] text-[0.65rem] md:text-xs font-semibold bg-red-600 text-white rounded-sm select-none">
-          PDF
-        </span>
+        <FormatSelector format={format} setFormat={setFormat} />
       </div>
-      <img
-        alt={t('pages.resume.download.altText')}
-        className="w-72 md:w-[19rem] rounded-md"
-        src={thumbnail}
-      />
-    </a>
+      <a className="mt-1 ml-2" download href={href + format} tabIndex="-1">
+        <Button className="p-0 md:text-base tracking-normal" variant="secondary">
+          Download
+        </Button>
+      </a>
+    </div>
   )
 }

@@ -270,6 +270,7 @@
           "paragraph": "Você pode fazer download de todas as informações listadas acima clicando nos cards abaixo. Elas estão em <highlight>formato PDF</highlight> e disponíveis em <highlight>português e inglês</highlight>.",
           "portuguese": "Currículo - Português",
           "english": "Currículo - Inglês",
+          "newTab": "Abrir em uma nova guia",
           "ariaLabel": "Acessar currículo",
           "altText": "Imagem do currículo de Dalvan Carvalho"
         }

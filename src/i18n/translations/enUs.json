@@ -270,6 +270,7 @@
           "paragraph": "You can download all the information listed above by clicking on the cards below. They are in <highlight>PDF format</highlight> and available in both <highlight>Portuguese and English</highlight>.",
           "portuguese": "Resume - Portuguese",
           "english": "Resume - English",
+          "newTab": "Open in a new tab",
           "ariaLabel": "Access resume",
           "altText": "Image of Dalvan Carvalho's resume"
         }
