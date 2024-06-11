@@ -27,7 +27,7 @@ export function AccordionTrigger({ children, className = '', ...props }) {
       >
         {children}
         <FontAwesomeIcon
-          className="pl-3 transition-transform duration-300"
+          className="ml-3 transition-transform duration-300"
           icon={faChevronDown}
         />
       </Trigger>
