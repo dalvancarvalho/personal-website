@@ -12,7 +12,7 @@ export default function FormatSelector({ format, setFormat }) {
         tabIndex="-1"
       >
         <div className="absolute top-0 group-data-[active=true]:right-0 group-data-[active=false]:-right-[128%] size-full rounded bg-red-500 dark:bg-red-600 transition-all ease-out duration-150"></div>
-        <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-data-[active=true]:text-white group-data-[active=false]:text-slate-500 group-data-[active=false]:dark:text-gray-400 color-transition select-none">
+        <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-data-[active=true]:text-white font-semibold group-data-[active=false]:text-slate-500 group-data-[active=false]:dark:text-gray-400 color-transition select-none">
           PDF
         </span>
       </button>
@@ -23,7 +23,7 @@ export default function FormatSelector({ format, setFormat }) {
         tabIndex="-1"
       >
         <div className="absolute top-0 group-data-[active=true]:left-0 group-data-[active=false]:-left-[128%] size-full rounded bg-blue-500 dark:bg-blue-600 transition-all ease-out duration-150"></div>
-        <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-data-[active=true]:text-white group-data-[active=false]:text-slate-500 group-data-[active=false]:dark:text-gray-400 color-transition select-none">
+        <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-data-[active=true]:text-white font-semibold group-data-[active=false]:text-slate-500 group-data-[active=false]:dark:text-gray-400 color-transition select-none">
           PNG
         </span>
       </button>

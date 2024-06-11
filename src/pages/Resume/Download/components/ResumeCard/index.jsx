@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import useTheme from '../../../../../context/ThemeContext'
 import useScreenProps from '../../../../../hooks/useScreenProps'
 
 import Button from '../../../../../components/Button'
@@ -15,6 +16,7 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
 
   const [format, setFormat] = useState('pdf')
   const { screenSize } = useScreenProps()
+  const { theme } = useTheme()
 
   return (
     <div className="max-w-max flex flex-col items-start group/card">
@@ -27,10 +29,10 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
         <img
           alt={t('pages.resume.download.altText')}
           className="w-[295px] md:w-80 h-auto select-none"
-          src={thumbnail}
+          src={theme === 'light' ? thumbnail.light : thumbnail.dark}
         />
         {screenSize.md && (
-          <div className="absolute inset-0 grid backdrop-blur-sm dark:backdrop-brightness-[25%] opacity-0 group-hover/image:opacity-100 group-focus-visible/image:opacity-100 transition-all duration-300">
+          <div className="absolute inset-0 grid backdrop-blur-sm dark:backdrop-brightness-[50%] opacity-0 group-hover/image:opacity-100 group-focus-visible/image:opacity-100 transition-all duration-300">
             <Paragraph
               className="place-self-center flex items-center gap-3 !text-black dark:!text-white"
               variant="fixed-lg-semibold"
