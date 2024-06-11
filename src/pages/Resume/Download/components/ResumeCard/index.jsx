@@ -17,7 +17,7 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
   const { screenSize } = useScreenProps()
 
   return (
-    <div className="flex flex-col items-start group/card">
+    <div className="max-w-max flex flex-col items-start group/card debug">
       <a
         className="relative mb-3 md:mb-4 rounded-md border-l-[5px] border-accent color-transition overflow-hidden group/image"
         href={href + format}
@@ -26,7 +26,7 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
       >
         <img
           alt={t('pages.resume.download.altText')}
-          className="w-72 md:w-80 h-auto select-none"
+          className="w-[295px] md:w-80 h-auto select-none"
           src={thumbnail}
         />
         {screenSize.md && (
@@ -41,9 +41,9 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
           </div>
         )}
       </a>
-      <div className="w-full px-2 flex items-center">
+      <div className="w-full px-2 flex items-center justify-between">
         <Paragraph
-          className="flex-1 !text-slate-800 dark:!text-gray-200"
+          className="!text-slate-800 dark:!text-gray-200"
           i18nKey={title}
           variant="medium-bold"
         />
