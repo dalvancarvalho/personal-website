@@ -28,12 +28,16 @@ export default function Download({ t }) {
         <Paragraph className="mb-12 md:mb-16" i18nKey="pages.resume.download.paragraph" />
         {screenSize.md ? (
           // 💻 on medium/large screens, displays the resumes directly in the page
-          RESUMES.map(({ id, ...props }) => <ResumeCard key={id} t={t} {...props} />)
+          <div className="flex items-center justify-evenly max-lg:gap-12">
+            {RESUMES.map(({ id, ...props }) => (
+              <ResumeCard key={id} t={t} {...props} />
+            ))}
+          </div>
         ) : (
           // 📱 on small screens, displays the resumes inside a carousel
           <Carousel>
             {RESUMES.map(({ id, ...props }) => (
-              <div className="embla__slide" key={id}>
+              <div className="flex-[0_0_100%]" key={id}>
                 <ResumeCard t={t} {...props} />
               </div>
             ))}

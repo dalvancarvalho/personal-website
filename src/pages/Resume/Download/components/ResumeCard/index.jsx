@@ -17,7 +17,7 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
   const { screenSize } = useScreenProps()
 
   return (
-    <div className="max-w-max flex flex-col items-start group/card debug">
+    <div className="max-w-max flex flex-col items-start group/card">
       <a
         className="relative mb-3 md:mb-4 rounded-md border-l-[5px] border-accent color-transition overflow-hidden group/image"
         href={href + format}
