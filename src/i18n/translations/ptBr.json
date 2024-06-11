@@ -267,7 +267,7 @@
         "download": {
           "heading": "Pegue seu PDF!",
           "watermark": "Download",
-          "paragraph": "Você pode baixar todas as informações listadas acima clicando nos cartões abaixo. Elas estão disponíveis em <highlight>português e inglês</highlight>, e você pode escolher entre os formatos <highlight>PDF e PNG</highlight>.",
+          "paragraph": "Você pode baixar todas as informações listadas acima clicando nos cards abaixo. Elas estão disponíveis em <highlight>português e inglês</highlight>, e você pode escolher entre os formatos <highlight>PDF e PNG</highlight>.",
           "portuguese": "Currículo - Português",
           "english": "Currículo - Inglês",
           "newTab": "Abrir em uma nova guia",
