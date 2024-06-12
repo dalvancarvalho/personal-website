@@ -1,6 +1,6 @@
 /* paragraphVariants.js */
 
-const BASE_STYLE = 'text-slate-600 dark:text-gray-400 color-transition'
+const BASE_STYLE = 'text-slate-600 dark:text-gray-400 text-pretty color-transition'
 
 // prettier-ignore
 const PRIMITIVES = {
