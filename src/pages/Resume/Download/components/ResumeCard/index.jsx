@@ -10,6 +10,9 @@ import Button from '../../../../../components/Button'
 import Paragraph from '../../../../../components/Text/Paragraph'
 import FormatSelector from './components/FormatSelector'
 
+import resume from '../../../../../assets/svg/resume.svg'
+import resumeDark from '../../../../../assets/svg/resume-dark.svg'
+
 export default function ResumeCard({ href, thumbnail, t, title }) {
   // Downloadable resume
 
@@ -27,12 +30,12 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
         <img
           alt={t('pages.resume.download.altText')}
           className="w-[295px] md:w-80 h-auto select-none"
-          src={theme === 'light' ? thumbnail.light : thumbnail.dark}
+          src={theme === 'light' ? resume : resumeDark}
         />
 
         {/* Overlay displayed when the card is hovered in medium/large screens */}
         <div className="invisible md:visible">
-          <div className="absolute top-0 left-0 h-full w-1/4 -translate-x-[110%] group-hover/image:translate-x-0 group-focus-visible/image:translate-x-0 flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-500 dark:from-orange-500 dark:to-orange-400 !transition-all !duration-300">
+          <div className="absolute top-0 left-0 h-full w-1/4 -translate-x-[110%] group-hover/image:translate-x-0 group-focus-visible/image:translate-x-0 flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-500 dark:from-orange-500 dark:to-orange-500 !transition-all !duration-300">
             <FontAwesomeIcon
               className="-translate-x-[2px] rotate-[225deg] text-white"
               icon={faArrowDown}

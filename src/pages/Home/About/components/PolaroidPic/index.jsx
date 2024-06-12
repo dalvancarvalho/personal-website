@@ -6,8 +6,8 @@ import HoverText from '../HoverText'
 
 import me from '../../../../../assets/webp/me.webp'
 import meBw from '../../../../../assets/webp/me-bw.webp'
-import tape from '../../../../../assets/webp/tape1.webp'
-import tape2 from '../../../../../assets/webp/tape2.webp'
+import tapeTopLeft from '../../../../../assets/webp/tape-top-left.webp'
+import tapeBottomRight from '../../../../../assets/webp/tape-bottom-right.webp'
 
 export default function PolaroidPic({ t }) {
   // Polaroid picture with handwritten text
@@ -36,13 +36,13 @@ export default function PolaroidPic({ t }) {
             alt={t('pages.home.about.tapeAltText')}
             className="absolute z-20 -rotate-45 -top-12 right-[45%] xl:right-[55%] scale-50 md:scale-[60%] dark:opacity-65 transition-opacity duration-300 select-none"
             loading="lazy"
-            src={tape}
+            src={tapeTopLeft}
           />
           <img
             alt={t('pages.home.about.tapeAltText')}
             className="absolute z-20 -rotate-[30deg] -bottom-12 lg:-bottom-14 left-[35%] scale-[85%] dark:opacity-65 transition-opacity duration-300 select-none"
             loading="lazy"
-            src={tape2}
+            src={tapeBottomRight}
           />
 
           {/* Picture */}
