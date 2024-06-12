@@ -1,11 +1,10 @@
 /* ResumeCard/index.jsx */
 
 import { useState } from 'react'
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import useTheme from '../../../../../context/ThemeContext'
-import useScreenProps from '../../../../../hooks/useScreenProps'
 
 import Button from '../../../../../components/Button'
 import Paragraph from '../../../../../components/Text/Paragraph'
@@ -15,7 +14,6 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
   // Downloadable resume
 
   const [format, setFormat] = useState('pdf')
-  const { screenSize } = useScreenProps()
   const { theme } = useTheme()
 
   return (
@@ -31,18 +29,27 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
           className="w-[295px] md:w-80 h-auto select-none"
           src={theme === 'light' ? thumbnail.light : thumbnail.dark}
         />
-        {screenSize.md && (
-          <div className="absolute inset-0 grid backdrop-blur-sm dark:backdrop-brightness-[50%] opacity-0 group-hover/image:opacity-100 group-focus-visible/image:opacity-100 transition-all duration-300">
-            <Paragraph
-              className="place-self-center flex items-center gap-3 !text-black dark:!text-white"
-              variant="fixed-lg-semibold"
-            >
-              {t('pages.resume.download.newTab')}
-              <FontAwesomeIcon className="rotate-45" icon={faArrowUp} size="sm" />
-            </Paragraph>
+
+        {/* Overlay displayed when the card is hovered in medium/large screens */}
+        <div className="invisible md:visible">
+          <div className="absolute top-0 left-0 h-full w-1/4 -translate-x-[110%] group-hover/image:translate-x-0 group-focus-visible/image:translate-x-0 flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-500 dark:from-orange-500 dark:to-orange-400 !transition-all !duration-300">
+            <FontAwesomeIcon
+              className="-translate-x-[2px] rotate-[225deg] text-white"
+              icon={faArrowDown}
+              size="xl"
+            />
           </div>
-        )}
+          <div className="absolute top-0 right-0 w-3/4 h-full flex items-center justify-center backdrop-blur-sm dark:backdrop-brightness-[50%] opacity-0 group-hover/image:opacity-100 group-focus-visible/image:opacity-100 transition-all duration-300 delay-75">
+            <Paragraph
+              className="!text-black dark:!text-white"
+              i18nKey="pages.resume.download.newTab"
+              variant="fixed-lg-semibold"
+            />
+          </div>
+        </div>
       </a>
+
+      {/* Card footer */}
       <div className="w-full px-2 flex items-center justify-between">
         <Paragraph
           className="!text-slate-800 dark:!text-gray-200"
@@ -52,8 +59,16 @@ export default function ResumeCard({ href, thumbnail, t, title }) {
         <FormatSelector format={format} setFormat={setFormat} />
       </div>
       <a className="mt-1 ml-2" download href={href + format} tabIndex="-1">
-        <Button className="p-0 md:text-base tracking-normal" variant="secondary">
+        <Button
+          className="p-0 flex gap-2 md:text-base tracking-normal group/button"
+          variant="secondary"
+        >
           Download
+          <FontAwesomeIcon
+            className="invisible md:visible -translate-y-2 group-hover/button:translate-y-0 group-focus-visible/button:translate-y-0 opacity-0 group-hover/button:opacity-100 group-focus-visible/button:opacity-100 transition-[transform,opacity] duration-300"
+            icon={faArrowDown}
+            size="sm"
+          />
         </Button>
       </a>
     </div>
