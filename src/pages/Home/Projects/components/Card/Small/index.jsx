@@ -36,7 +36,7 @@ export default function SmallCard({
          data-[parity=odd]:translate-x-[80%]`
       }`}
       data-parity={index % 2 === 0 ? 'even' : 'odd'}
-      ref={animation.card}
+      ref={animation.scope}
     >
       {/* Image */}
       <div
@@ -46,20 +46,25 @@ export default function SmallCard({
       >
         <img
           alt={t(thumbnail.altText)}
-          className="size-full grayscale group-hover/image:grayscale-0 select-none transition-[filter,transform] duration-300
-          group-data-[parity=even]/card:group-hover/image:-translate-x-16
-          group-data-[parity=odd]/card:group-hover/image:translate-x-16"
+          className={`size-full select-none transition-all duration-300  ${
+            showImage &&
+            `group-data-[parity=even]/card:-translate-x-12
+             group-data-[parity=odd]/card:translate-x-12
+             delay-500`
+          }`}
           src={thumbnail.src}
         />
         {/* Hidden tech stack list (appears on card hover) */}
         <ul
-          className="absolute top-0 w-16 h-full grid place-content-center gap-3 bg-accent list-none transition-all duration-300
+          className={`absolute top-0 w-12 h-full grid place-content-center gap-3 bg-accent list-none transition-transform duration-300
           group-data-[parity=even]/card:right-0
           group-data-[parity=odd]/card:left-0
           group-data-[parity=even]/card:translate-x-full
-          group-data-[parity=odd]/card:-translate-x-full
-          group-data-[parity]/card:group-hover/image:translate-x-0"
-          ref={animation.stack}
+          group-data-[parity=odd]/card:-translate-x-full ${
+            showImage &&
+            `group-data-[parity]/card:translate-x-0
+             delay-500`
+          }`}
         >
           {stack.map(({ id, ...props }) => (
             <Tech key={id} {...props} />
@@ -99,7 +104,7 @@ export default function SmallCard({
           ref={buttonRef}
         >
           <FontAwesomeIcon
-            className={`transition-transform duration-500 delay-300 ease-in-out ${
+            className={`transition-transform duration-300 delay-500 ease-in-out ${
               showImage
                 ? `group-data-[parity=even]/card:rotate-0
                    group-data-[parity=odd]/card:rotate-180`

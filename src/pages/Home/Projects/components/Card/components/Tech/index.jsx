@@ -6,8 +6,8 @@ export default function Tech({ image, tech, url }) {
   return (
     <li
       className="mx-auto group/tech
-      group-data-[parity=even]/card:translate-x-[200%]
-      group-data-[parity=odd]/card:-translate-x-[200%]"
+      md:group-data-[parity=even]/card:translate-x-[200%]
+      md:group-data-[parity=odd]/card:-translate-x-[200%]"
     >
       <a href={url} rel="noopener noreferrer" tabIndex="-1" target="_blank" title={tech}>
         <img
