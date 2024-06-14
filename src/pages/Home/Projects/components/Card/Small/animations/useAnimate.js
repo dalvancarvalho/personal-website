@@ -3,13 +3,17 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate(isEven) {
+export default function useAnimate(index, animate = true) {
   // Mobile card animation
+
+  const isEven = index % 2 === 0 ? true : false
 
   const card = useRef(null)
   const stack = useRef(null)
 
   useLayoutEffect(() => {
+    if (!animate) return
+
     const ctx = gsap.context(() => {
       // Scoped tween (removed when the component unmounts)
 
@@ -34,29 +38,20 @@ export default function useAnimate(isEven) {
     }, card)
 
     // Stack-reveal animation (on element's hover)
-    const bgAnimation = gsap.to(stack.current, {
-      opacity: 1,
-      duration: 0.8,
-      ease: 'power4.out',
-      paused: true,
-    })
-
     const stackAnimation = gsap.to(stack.current.children, {
       x: 0,
       pointerEvents: 'all',
       duration: 0.4,
       stagger: 0.05,
-      ease: 'power4.out',
+      ease: 'power3.inOut',
       paused: true,
     })
 
     function revealStack() {
-      bgAnimation.play()
       stackAnimation.play()
     }
 
     function hideStack() {
-      bgAnimation.reverse()
       stackAnimation.reverse()
     }
 
@@ -66,7 +61,6 @@ export default function useAnimate(isEven) {
     // Context/event listeners cleanup
     return () => {
       ctx.revert()
-      bgAnimation.revert()
       stackAnimation.revert()
       card.current.removeEventListener('mouseenter', revealStack)
       card.current.removeEventListener('mouseleave', hideStack)

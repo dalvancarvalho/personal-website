@@ -13,17 +13,15 @@ import Tech from '../components/Tech'
 
 export default function Card({
   description,
+  heading,
   index,
-  isFinished,
+  inProgress,
   route,
   stack,
   t,
   thumbnail,
-  title,
 }) {
   // Displays a project and its main features in a modern looking card
-
-  const isEven = index % 2 === 0 ? true : false
 
   const navigate = useNavigate()
   const parallax = useParallax()
@@ -31,62 +29,79 @@ export default function Card({
 
   return (
     <div
-      className="isolate max-w-md md:max-w-max grid grid-cols-12 gap-4"
+      className="isolate md:max-w-max grid grid-cols-12 gap-4 group/card"
+      data-parity={index % 2 === 0 ? 'even' : 'odd'}
       ref={animation.scope}
     >
+      {/* Image */}
       <div
-        className={`relative row-span-full m-auto -z-10 aspect-video rounded-lg shadow-md overflow-hidden group ${
-          isEven
-            ? 'col-start-5 lg:col-start-6 col-end-13'
-            : 'col-start-1 col-end-9 lg:col-end-8'
-        }`}
+        className="relative row-span-full m-auto aspect-video rounded-lg shadow-md overflow-hidden group/image
+           group-data-[parity=even]/card:col-start-5
+        lg:group-data-[parity=even]/card:col-start-6
+           group-data-[parity=odd]/card:col-start-1
+           group-data-[parity=even]/card:col-end-13
+           group-data-[parity=odd]/card:col-end-9
+        lg:group-data-[parity=odd]/card:col-end-8"
         ref={animation.image}
       >
         <img
           alt={t(thumbnail.altText)}
-          className="size-full group-hover:blur-[2px] duration-500"
+          className="size-full grayscale group-hover/image:grayscale-0 select-none transition-[filter,transform] duration-300
+          group-data-[parity=even]/card:group-hover/image:-translate-x-16
+          group-data-[parity=odd]/card:group-hover/image:translate-x-16"
           src={thumbnail.src}
         />
+        {/* Hidden tech stack list (appears on card hover) */}
         <ul
-          className={`absolute inset-0 size-full px-4 opacity-0 from-black/65 flex flex-col justify-center gap-2 ${
-            isEven ? 'bg-gradient-to-l items-end' : 'bg-gradient-to-r items-start'
-          }`}
+          className="absolute top-0 w-16 h-full grid place-content-center gap-3 bg-accent list-none transition-all duration-300
+          group-data-[parity=even]/card:right-0
+          group-data-[parity=odd]/card:left-0
+          group-data-[parity=even]/card:translate-x-full
+          group-data-[parity=odd]/card:-translate-x-full
+          group-data-[parity]/card:group-hover/image:translate-x-0"
           ref={animation.stack}
         >
-          {stack.map((props) => (
-            <Tech key={props.tech} isEven={isEven} {...props} />
+          {stack.map(({ id, ...props }) => (
+            <Tech key={id} {...props} />
           ))}
         </ul>
       </div>
+
+      {/* Text */}
       <div
-        className={`m-auto row-span-full flex ${
-          isEven
-            ? 'col-start-1 col-end-8 lg:col-end-7'
-            : 'col-start-6 lg:col-start-7 col-end-13'
-        }`}
+        className="m-auto flex row-span-full
+           group-data-[parity=even]/card:col-start-1
+           group-data-[parity=odd]/card:col-start-6
+        lg:group-data-[parity=odd]/card:col-start-7
+           group-data-[parity=even]/card:col-end-8
+        lg:group-data-[parity=even]/card:col-end-7
+           group-data-[parity=odd]/card:col-end-13"
         ref={animation.text}
       >
+        {/* An extra div is needed for the parallax effect to work properly */}
         <div
-          className={`flex flex-col gap-4 ${isEven ? 'items-start' : 'items-end'}`}
+          className="flex flex-col gap-4
+          group-data-[parity=even]/card:items-start
+          group-data-[parity=odd]/card:items-end"
           ref={parallax.card}
         >
-          {!isFinished && (
+          {inProgress && (
             <span className="text-base font-bold leading-[0] font-mark-pro tracking-tight uppercase">
               {t('pages.home.projects.inProgress')}
             </span>
           )}
-          <h3 className="title-font text-[2.25rem] leading-9">{t(title)}</h3>
+          <h3 className="title-font text-[2.25rem] leading-9">{t(heading)}</h3>
           <Paragraph
-            className="rounded-lg border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent p-4 bg-slate-50 dark:bg-dark-2 backdrop-blur-[8px] shadow-xl"
+            className="rounded-lg border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent p-4 bg-slate-50 dark:bg-dark-2 shadow-lg"
             i18nKey={description}
             variant="small"
           />
           <Button
             callback={() => navigate(route)}
-            className="shadow-xl"
+            className="!shadow-lg"
             variant="primary"
           >
-            {t('pages.home.projects.primaryButton')}
+            {t('pages.home.projects.button')}
             <FontAwesomeIcon
               className="absolute opacity-0 group-focus-visible/button:translate-x-2 group-focus-visible/button:opacity-100 fa-arrow-right-hover"
               icon={faArrowRight}
