@@ -9,7 +9,7 @@ import Breadcrumbs from './components/Breadcrumbs'
 import Link from './components/Link'
 import LiveDemo from './components/LiveDemo'
 
-export default function PageHeader({ github, linkedIn, links, title, section, t }) {
+export default function PageHeader({ github, heading, linkedIn, links, section, t }) {
   // Displays the title of the page (H1) along with some useful links
 
   return (
@@ -21,7 +21,7 @@ export default function PageHeader({ github, linkedIn, links, title, section, t 
         <div>
           <Breadcrumbs section={section} t={t} />
           <h1 className="mt-4 text-[2.5rem] leading-10 md:text-5xl title-font text-slate-800 dark:text-gray-200 color-transition">
-            {t(title)}
+            {t(heading)}
           </h1>
         </div>
 

@@ -30,7 +30,7 @@ export default function Resume() {
           github="https://github.com/dalvancarvalho/"
           linkedIn="https://www.linkedin.com/in/dalvancarvalho/"
           section="pageHeader.breadcrumbs.about"
-          title="pages.resume.title"
+          heading="pages.resume.heading"
           t={t}
         />
         <Topics t={t} />
