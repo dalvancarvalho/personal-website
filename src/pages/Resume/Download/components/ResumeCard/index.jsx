@@ -29,7 +29,11 @@ export default function ResumeCard({ href, t, title }) {
       >
         <img
           alt={t('pages.resume.download.altText')}
-          className="w-[295px] md:w-80 h-auto group-hover/link:blur-[2px] group-focus-visible/link:blur-[2px] group-hover/link:dark:brightness-50 group-focus-visible/link:dark:brightness-50 select-none transition-[filter] duration-300"
+          className="w-[295px] md:w-80 h-auto select-none transition-[filter] duration-300
+          md:group-hover/link:blur-[2px]
+          md:group-focus-visible/link:blur-[2px]
+          md:group-hover/link:dark:brightness-50
+          md:group-focus-visible/link:dark:brightness-50"
           src={theme === 'light' ? resume : resumeDark}
         />
 
