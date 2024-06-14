@@ -46,7 +46,7 @@ export default function Header() {
         {pathname !== '/404' && <Logo />}
         <div ref={animation.nav}>
           {screenSize.md ? (
-            // 💻 on medium/large screens, renders the items directly in the header
+            // 💻 on medium/large screens, it displays the items directly on the header
             <div className="flex items-center gap-6">
               <Navbar pathname={pathname} t={t} />
               {pathname !== '/404' && <Divider pathname={pathname} y={y} />}
@@ -54,7 +54,7 @@ export default function Header() {
               <ThemeSwitch t={t} />
             </div>
           ) : (
-            // 📱 on small screens, renders a menu
+            // 📱 on small screens, it displays a menu
             <Menu pathname={pathname} t={t} y={y} />
           )}
         </div>
