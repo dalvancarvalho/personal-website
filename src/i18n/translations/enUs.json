@@ -106,20 +106,20 @@
           "paragraph": "After some time learning the fundamentals of front-end development and venturing into tutorials for creating music players, <iss>ISS trackers</iss>, and three or four different types of to-do lists, I list below some personal projects that <highlight>truly made me learn JavaScript</highlight> and explore its potential in building web applications.",
           "brGeo": {
             "altText": "Screen of BR Geo, displaying a dashboard with a Rio de Janeiro map and populacional statistics in a chart on its side",
-            "title": "BR Geo",
+            "heading": "BR Geo",
             "description": "View information from several geographic and social topics through charts and interactive maps. With the powerful IBGE API, get updated data at county, state, and country levels!"
           },
           "personalWebsite": {
             "altText": "Home screen from Dalvan Carvalho's personal website",
-            "title": "Personal website",
+            "heading": "Personal website",
             "description": "That's right! This website deserves a place on the list for including several interesting features used in its development, such as libraries for routing, internationalization, e-mail sending, and animations."
           },
           "splitIt": {
             "altText": "Several expenses spreadsheets placed side by side and slightly rotated",
-            "title": "Split it!",
+            "heading": "Split it!",
             "description": "Based on a spreadsheet for expenses control during a trip with friends, Split it! allows for a fair division of expenses among all group members in a simple and intuitive way!"
           },
-          "primaryButton": "See details",
+          "button": "See details",
           "inProgress": "In progress"
         },
         "contact": {
@@ -176,7 +176,7 @@
         }
       },
       "resume": {
-        "title": "Resume",
+        "heading": "Resume",
         "topics": {
           "heading": "Professional information",
           "watermark": "Topics",

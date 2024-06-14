@@ -106,20 +106,20 @@
           "paragraph": "Após algum tempo aprendendo os fundamentos do desenvolvimento front-end e me aventurando em tutoriais de criação de players de música, <iss>rastreadores da ISS</iss> e três ou quatro tipos diferentes de to-do lists, listo abaixo alguns projetos autorais que <highlight>realmente me fizeram aprender JavaScript</highlight> e explorar o seu potencial na criação de aplicações web.",
           "brGeo": {
             "altText": "Tela do BR Geo, exibindo um painel com o mapa do Rio de Janeiro e estatísticas populacionais em um gráfico ao lado",
-            "title": "BR Geo",
+            "heading": "BR Geo",
             "description": "Visualize informações acerca de diversos temas geográficos e sociais através de gráficos e mapas interativos. Com a poderosa API do IBGE, obtenha dados atualizados a nível municipal, estadual e federal!"
           },
           "personalWebsite": {
             "altText": "Tela inicial do website pessoal de Dalvan Carvalho",
-            "title": "Website pessoal",
+            "heading": "Website pessoal",
             "description": "Isso mesmo! Este website merece lugar na lista por incluir diversas funcionalidades interessantes utilizadas em seu desenvolvimento, como bibliotecas para gerenciamento de rotas, internacionalização, envio de e-mails e animações."
           },
           "splitIt": {
             "altText": "Diversas planilhas de gastos dispostas lado a lado e levemente rotacionadas",
-            "title": "Split it!",
+            "heading": "Split it!",
             "description": "Baseado em uma planilha para controle de despesas de uma viagem entre amigos, Split it! permite realizar a divisão justa dos valores para todos os integrantes do grupo de maneira simples e intuitiva!"
           },
-          "primaryButton": "Ver detalhes",
+          "button": "Ver detalhes",
           "inProgress": "Em andamento"
         },
         "contact": {
@@ -176,7 +176,7 @@
         }
       },
       "resume": {
-        "title": "Currículo",
+        "heading": "Currículo",
         "topics": {
           "heading": "Informações profissionais",
           "watermark": "Tópicos",
