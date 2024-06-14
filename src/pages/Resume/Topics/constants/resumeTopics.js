@@ -20,13 +20,14 @@ import framerMotion from '../../../../assets/svg/logos/framer-motion.svg'
 import gsap from '../../../../assets/svg/logos/gsap.svg'
 import nextJs from '../../../../assets/svg/logos/nextjs.svg'
 import react from '../../../../assets/svg/logos/react.svg'
-import tailwindCss from '../../../../assets/svg/logos/tailwindcss.svg'
+import tailwindCss from '../../../../assets/svg/logos/tailwind-css.svg'
 
 import figma from '../../../../assets/svg/logos/figma.svg'
 import git from '../../../../assets/svg/logos/git.svg'
 import github from '../../../../assets/svg/logos/github.svg'
 import postgreSql from '../../../../assets/svg/logos/postgresql.svg'
 import vercel from '../../../../assets/svg/logos/vercel.svg'
+import vite from '../../../../assets/svg/logos/vite.svg'
 
 import dalvanc from '../../../../assets/svg/logos/dalvanc.svg'
 import idb from '../../../../assets/svg/logos/idb.svg'
@@ -194,6 +195,15 @@ const RESUME_TOPICS = [
         image: {
           src: postgreSql,
           alt: 'PostgreSQL logo',
+        },
+      },
+      {
+        id: crypto.randomUUID(),
+        heading: 'Vite',
+        url: 'https://vitejs.dev/',
+        image: {
+          src: vite,
+          alt: 'Vite logo',
         },
       },
       {
