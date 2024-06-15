@@ -92,7 +92,7 @@ export default function Card({
           )}
           <h3 className="title-font text-[2.25rem] leading-9">{t(heading)}</h3>
           <Paragraph
-            className="rounded-lg border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent p-4 bg-slate-50 dark:bg-dark-2 shadow-lg
+            className="rounded-lg p-4 bg-slate-50 dark:bg-dark-2 shadow-lg
             group-data-[parity=even]/card:border-l-[5px]
             group-data-[parity=odd]/card:border-r-[5px]
             group-data-[parity=even]/card:border-l-accent
