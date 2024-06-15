@@ -39,7 +39,7 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                 key={id}
               >
                 <a
-                  className="group-data-[bullet-points=true]:mb-3.5 group-data-[bullet-points=false]:mb-1.5 rounded-md border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
+                  className="group-data-[bullet-points=true]:mb-3.5 group-data-[bullet-points=false]:mb-1.5 rounded-lg border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
                   href={url}
                   rel="noopener noreferrer"
                   target="_blank"
@@ -82,7 +82,7 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
             ) : (
               <li className="mb-1.5" key={id}>
                 <a
-                  className="relative isolate min-h-12 h-full rounded-md border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
+                  className="relative isolate min-h-12 h-full rounded-lg border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
                   href={url}
                   rel="noopener noreferrer"
                   target="_blank"

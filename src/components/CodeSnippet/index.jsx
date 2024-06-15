@@ -21,7 +21,7 @@ export default function CodeSnippet({ codeString, extension, language, title }) 
   useEffect(() => Prism.highlightAll(), [])
 
   return (
-    <div className="relative m-auto mt-12 md:mt-16 w-full md:w-5/6 bg-slate-150 dark:bg-dark-5 rounded-md overflow-hidden transition-[background-color] duration-300 ">
+    <div className="relative m-auto mt-12 md:mt-16 w-full md:w-5/6 bg-slate-150 dark:bg-dark-5 rounded-lg overflow-hidden transition-[background-color] duration-300 ">
       <div className="px-5 h-10 flex justify-between items-center font-semibold overflow-hidden">
         <Paragraph
           className="!text-slate-800 dark:!text-gray-200"

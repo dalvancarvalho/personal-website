@@ -22,7 +22,7 @@ export default function ResumeCard({ href, t, title }) {
   return (
     <div className="max-w-max flex flex-col items-start group/card">
       <a
-        className="relative mb-3 md:mb-4 rounded-md border-l-[5px] border-accent color-transition overflow-hidden group/link"
+        className="relative mb-3 md:mb-4 rounded-lg border-l-[5px] border-accent color-transition overflow-hidden group/link"
         href={href + format}
         rel="noopener noreferrer"
         target="_blank"
