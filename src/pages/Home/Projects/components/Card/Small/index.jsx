@@ -43,7 +43,7 @@ export default function SmallCard({
         className="relative row-span-full col-span-full aspect-video rounded-lg shadow-md overflow-hidden group/image
         group-data-[parity=even]/card:translate-x-[80%]
         group-data-[parity=odd]/card:-translate-x-[80%]"
-        onClick={(event) => navigate(event)}
+        onClick={() => navigate(route)}
       >
         <img
           alt={t(thumbnail.altText)}
