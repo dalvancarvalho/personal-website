@@ -56,8 +56,8 @@ export default function Card({
           className="absolute top-0 w-16 h-full grid place-content-center gap-3 bg-accent list-none transition-all duration-300
           group-data-[parity=even]/card:right-0
           group-data-[parity=odd]/card:left-0
-          group-data-[parity=even]/card:translate-x-full
-          group-data-[parity=odd]/card:-translate-x-full
+          group-data-[parity=even]/card:translate-x-[110%]
+          group-data-[parity=odd]/card:-translate-x-[110%]
           group-data-[parity]/card:group-hover/image:translate-x-0"
           ref={animation.stack}
         >

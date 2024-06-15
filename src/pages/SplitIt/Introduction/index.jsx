@@ -17,7 +17,6 @@ export default function Introduction() {
       <Container className="h-full variable-padding">
         <SectionHeading
           animation={false}
-          className="pt-9 md:pt-16"
           heading="pages.splitIt.intro.heading"
           watermark="pages.splitIt.intro.watermark"
         />

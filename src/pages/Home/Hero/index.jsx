@@ -23,7 +23,7 @@ export default function Hero({ t }) {
 
   return (
     <Section
-      className="relative isolate h-dvh min-h-[600px] overflow-hidden"
+      className="relative isolate h-dvh min-h-[600px] max-h-[1440px] overflow-hidden"
       id="home"
       ref={animation.scope}
     >

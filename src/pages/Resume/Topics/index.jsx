@@ -18,7 +18,6 @@ export default function Topics({ t }) {
       <Container className="h-full variable-padding">
         <SectionHeading
           animation={false}
-          className="pt-9 md:pt-16"
           heading="pages.resume.topics.heading"
           watermark="pages.resume.topics.watermark"
         />
