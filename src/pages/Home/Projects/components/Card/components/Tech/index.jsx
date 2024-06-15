@@ -11,7 +11,7 @@ export default function Tech({ image, tech, url }) {
     >
       <a href={url} rel="noopener noreferrer" tabIndex="-1" target="_blank" title={tech}>
         <img
-          className="size-5 md:size-6 brightness-0 invert md:group-hover/tech:scale-110 select-none transition-transform duration-150"
+          className="size-5 md:size-6 brightness-0 invert md:group-hover/tech:scale-[120%] select-none transition-transform duration-300"
           src={image.src}
           alt={image.alt}
         />
