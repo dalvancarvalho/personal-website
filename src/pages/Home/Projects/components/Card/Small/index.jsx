@@ -86,7 +86,11 @@ export default function SmallCard({
           )}
           <h3 className="title-font text-[1.7rem] leading-6">{t(heading)}</h3>
           <Paragraph
-            className="rounded-lg border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent p-4 bg-slate-50 dark:bg-dark-2 shadow-lg"
+            className="rounded-lg border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent p-4 bg-slate-50 dark:bg-dark-2 shadow-lg
+            group-data-[parity=even]/card:border-l-[5px]
+            group-data-[parity=odd]/card:border-r-[5px]
+            group-data-[parity=even]/card:border-l-accent
+            group-data-[parity=odd]/card:border-r-accent"
             i18nKey={description}
             variant="fixed-sm"
           />

@@ -56,8 +56,8 @@ export default function Card({
           className="absolute top-0 w-16 h-full grid place-content-center gap-3 bg-accent list-none transition-all duration-300
           group-data-[parity=even]/card:right-0
           group-data-[parity=odd]/card:left-0
-          group-data-[parity=even]/card:translate-x-[110%]
-          group-data-[parity=odd]/card:-translate-x-[110%]
+          group-data-[parity=even]/card:translate-x-full
+          group-data-[parity=odd]/card:-translate-x-full
           group-data-[parity]/card:group-hover/image:translate-x-0"
           ref={animation.stack}
         >
@@ -92,7 +92,11 @@ export default function Card({
           )}
           <h3 className="title-font text-[2.25rem] leading-9">{t(heading)}</h3>
           <Paragraph
-            className="rounded-lg border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent p-4 bg-slate-50 dark:bg-dark-2 shadow-lg"
+            className="rounded-lg border border-t-white dark:border-t-dark-1 border-b-transparent border-x-transparent p-4 bg-slate-50 dark:bg-dark-2 shadow-lg
+            group-data-[parity=even]/card:border-l-[5px]
+            group-data-[parity=odd]/card:border-r-[5px]
+            group-data-[parity=even]/card:border-l-accent
+            group-data-[parity=odd]/card:border-r-accent"
             i18nKey={description}
             variant="small"
           />
