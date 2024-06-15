@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate() {
+export default function useAnimate(animate = true) {
   // Footer animation
 
   const tl = useRef(null)
@@ -13,6 +13,8 @@ export default function useAnimate() {
   const bottom = useRef(null)
 
   useLayoutEffect(() => {
+    if (!animate) return
+
     const ctx = gsap.context(() => {
       tl.current = gsap
         .timeline({
@@ -24,13 +26,13 @@ export default function useAnimate() {
         })
         .fromTo(
           top.current,
-          { opacity: 0, y: -50 },
-          { opacity: 1, y: 0, duration: 1, ease: 'power4.inOut' }
+          { opacity: 0 },
+          { opacity: 1, duration: 1, ease: 'power4.inOut' }
         )
         .fromTo(
           bottom.current,
-          { opacity: 0, y: 50 },
-          { opacity: 1, y: 0, duration: 1, ease: 'power4.inOut' },
+          { opacity: 0 },
+          { opacity: 1, duration: 1, ease: 'power4.inOut' },
           '-=1'
         )
         .fromTo(
