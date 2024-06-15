@@ -85,6 +85,14 @@
     @apply border-blue-600 dark:border-orange-500;
   }
 
+  .border-l-accent {
+    @apply border-l-blue-600 dark:border-l-orange-500;
+  }
+
+  .border-r-accent {
+    @apply border-r-blue-600 dark:border-r-orange-500;
+  }
+
   .bg-accent {
     @apply bg-blue-600 dark:bg-orange-500;
   }
@@ -111,6 +119,10 @@
 
   .ring-none {
     @apply ring-0 ring-offset-0 outline-none dark:outline-none;
+  }
+
+  .skewed-bg {
+    @apply relative isolate z-10 after:absolute after:inset-0 after:-z-10 after:-skew-y-[4deg] md:after:-skew-y-2 after:bg-slate-150 after:dark:bg-dark-5 overflow-x-clip after:transition-colors after:duration-300;
   }
 
   .text-accent {
