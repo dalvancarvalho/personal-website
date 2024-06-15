@@ -9,7 +9,14 @@ export default function Tech({ image, tech, url }) {
       md:group-data-[parity=even]/card:translate-x-[200%]
       md:group-data-[parity=odd]/card:-translate-x-[200%]"
     >
-      <a href={url} rel="noopener noreferrer" tabIndex="-1" target="_blank" title={tech}>
+      <a
+        href={url}
+        onClick={(event) => event.stopPropagation()} // prevents the 'navigate' method from the parent from being triggered
+        rel="noopener noreferrer"
+        tabIndex="-1"
+        target="_blank"
+        title={tech}
+      >
         <img
           className="size-5 md:size-6 brightness-0 invert md:group-hover/tech:scale-[120%] select-none transition-transform duration-300"
           src={image.src}
