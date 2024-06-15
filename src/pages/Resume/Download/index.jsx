@@ -18,12 +18,15 @@ export default function Download({ t }) {
   const { screenSize } = useScreenProps()
 
   return (
-    <Section id="download">
+    <Section className="skewed-bg" id="download">
+      {/* 🩹 The <div> below fills the gap left by the skewed background above the right portion of the footer */}
+      <div className="absolute bottom-0 right-0 w-full h-14 bg-slate-150 dark:bg-dark-5 color-transition select-none pointer-events-none"></div>
       <Container className="h-full variable-padding">
         <SectionHeading
           animation={false}
           heading="pages.resume.download.heading"
           watermark="pages.resume.download.watermark"
+          watermarkColor="text-slate-250 dark:text-dark-3"
         />
         <Paragraph className="mb-10 md:mb-16" i18nKey="pages.resume.download.paragraph" />
         {screenSize.md ? (
