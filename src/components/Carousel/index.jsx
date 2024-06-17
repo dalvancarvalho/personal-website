@@ -15,7 +15,7 @@ export default function Carousel({ children }) {
     useArrowButtons(emblaApi)
 
   return (
-    <section className="m-auto w-[324px] max-w-max debug">
+    <section className="m-auto w-[324px] max-w-max">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="ml-3 flex gap-6 touch-pan-y touch-pinch-zoom">{children}</div>
       </div>
