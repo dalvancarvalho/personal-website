@@ -1,5 +1,5 @@
 /* Accordion/index.jsx */
-// Base component from Radix
+// Component from Radix (https://www.radix-ui.com/)
 
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
