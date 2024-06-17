@@ -76,22 +76,25 @@ The website counts with a light and a dark version. You can preview both in the 
 
 ## Resources
 
-In the table below, all the resources used are listed:
+The table below lists all the resources used by the website:
+A tabela abaixo lista todos os recursos utilizados pelo website:
 
-| Resource                                                                      | Usage                                                  |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------ |
-| [EmailJS](https://www.emailjs.com/)                                           | E-mail sending, directly from the contact form         |
-| [Font Awesome](https://fontawesome.com/)                                      | Icons and brand logos                                  |
-| [Fontsource](https://fontsource.org/)                                         | Local hosting of Google fonts                          |
-| [GSAP](https://greensock.com/gsap/)                                           | Animations across the website                          |
-| [i18next](https://react.i18next.com/)                                         | Internationalization                                   |
-| [Prism](https://prismjs.com/)                                                 | Syntax highlighting for code snippets                  |
-| [React Confetti](https://www.npmjs.com/package/react-confetti)                | Confetti animation on form submission                  |
-| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Metadata management                                    |
-| [React Router](https://reactrouter.com/en/main/)                              | Routing management                                     |
-| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Vertical scrolling animation                           |
-| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Parallax effect on the hero section and project cards  |
-| [Sonner](https://sonner.emilkowal.ski/)                                       | "Toast" component for displaying contact form messages |
+| Resource                                                                      | Usage                                                 |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [EmailJS](https://www.emailjs.com/)                                           | Send emails directly from the contact form            |
+| [Embla Carousel](https://www.embla-carousel.com/)                             | Display items inside a carousel component             |
+| [Font Awesome](https://fontawesome.com/)                                      | Icons and brand logos                                 |
+| [Fontsource](https://fontsource.org/)                                         | Host Google Fonts locally                             |
+| [GSAP](https://greensock.com/gsap/)                                           | Display several animations across the website         |
+| [i18next](https://react.i18next.com/)                                         | Allow users to switch between Portuguese and English  |
+| [Prism](https://prismjs.com/)                                                 | Syntax highlighter for code snippets                  |
+| [Radix](https://www.radix-ui.com/)                                            | Show/hide sections inside an accordion component      |
+| [React Confetti](https://www.npmjs.com/package/react-confetti)                | Display a confetti animation on form submission       |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Metadata management                                   |
+| [React Router](https://reactrouter.com/en/main/)                              | Routing management                                    |
+| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Vertical scrolling animation                          |
+| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Parallax effect on the hero section and project cards |
+| [Sonner](https://sonner.emilkowal.ski/)                                       | Display short messages inside a toast component       |
 
 [Vite](https://vitejs.dev/), [React](https://react.dev/), and [Tailwind CSS](https://tailwindcss.com/) were also used during the development.
 
@@ -156,14 +159,14 @@ In the table below, all the resources used are listed:
 
 ### Colors
 
-| Role                      | Tailwind's class |                              Hex code                              |
-| ------------------------- | :--------------: | :----------------------------------------------------------------: |
-| Accent                    |     blue-600     | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
-| Accent (dark version)     |    orange-500    | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
-| Background                |  _custom color_  | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
-| Background (dark version) |  _custom color_  | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
-| Text                      |    slate-600     | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
-| Text (dark version)       |     gray-400     | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
+| Role                      | Tailwind's utility class |                              Hex code                              |
+| ------------------------- | :----------------------: | :----------------------------------------------------------------: |
+| Accent                    |         blue-600         | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
+| Accent (dark version)     |        orange-500        | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
+| Background                |      _custom color_      | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
+| Background (dark version) |      _custom color_      | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
+| Text                      |        slate-600         | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
+| Text (dark version)       |         gray-400         | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
 
 ### Icons
 
