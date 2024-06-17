@@ -14,7 +14,6 @@ export default function useAnimate(index, animate = true) {
     if (!animate) return
 
     const ctx = gsap.context(() => {
-      //Initial animation
       gsap.fromTo(
         scope.current,
         {
@@ -34,7 +33,7 @@ export default function useAnimate(index, animate = true) {
       )
     }, scope)
 
-    // Context/event listeners cleanup
+    // Context cleanup
     return () => ctx.revert()
   }, [])
 
