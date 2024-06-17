@@ -18,7 +18,7 @@
   }
 
   .btn-primary {
-    @apply px-[1.5em] bg-accent focus-visible:bg-blue-500 focus-visible:dark:bg-orange-400 text-white dark:text-black shadow-md primary-button-hover;
+    @apply px-[1.5em] bg-accent focus-visible:bg-blue-500 focus-visible:dark:bg-orange-400 text-white dark:text-black shadow-none primary-button-hover;
   }
 
   .btn-secondary {

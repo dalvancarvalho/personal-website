@@ -7,7 +7,7 @@ import Section from '../../../layout/Section/Regular'
 
 import Paragraph from '../../../components/Text/Paragraph'
 import SectionHeading from '../../../components/Text/SectionHeading'
-import Card from './components/Card/Standard'
+import Card from './components/Card/Default'
 import SmallCard from './components/Card/Small'
 
 import PROJECTS from '../../../constants/projects'
