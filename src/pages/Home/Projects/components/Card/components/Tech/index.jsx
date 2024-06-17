@@ -4,14 +4,10 @@ export default function Tech({ image, tech, url }) {
   // Link to the tech's page
 
   return (
-    <li
-      className="mx-auto group/tech
-      md:group-data-[parity=even]/card:translate-x-[200%]
-      md:group-data-[parity=odd]/card:-translate-x-[200%]"
-    >
+    <li className="mx-auto group/tech">
       <a
         href={url}
-        onClick={(event) => event.stopPropagation()} // prevents the 'navigate' method from the parent from being triggered
+        onClick={(event) => event.stopPropagation()} // prevents the 'navigate' function of the parent element from being triggered
         rel="noopener noreferrer"
         tabIndex="-1"
         target="_blank"
