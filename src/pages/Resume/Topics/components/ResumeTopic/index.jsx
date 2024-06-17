@@ -16,11 +16,15 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
     <AccordionItem value={`item-${index + 1}`}>
       <AccordionTrigger>
         <Paragraph
-          variant="medium-bold"
           className="flex items-center gap-3 !text-slate-800 dark:!text-gray-200"
+          variant="medium-bold"
         >
           <FontAwesomeIcon
-            className="w-6 rounded-full p-2 group-hover:text-accent bg-slate-200 dark:bg-dark-1 text-slate-800 dark:text-gray-200 transition-colors duration-300"
+            className="w-6 rounded-full p-2 bg-slate-200 dark:bg-dark-1 text-slate-800 dark:text-gray-200 transition-colors duration-300
+            group-focus-visible:bg-blue-400/25
+                    group-hover:bg-blue-400/25
+            group-focus-visible:dark:bg-orange-500/25
+                    group-hover:dark:bg-orange-500/25"
             icon={icon}
           />
           {t(title)}
@@ -55,9 +59,9 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                     />
                   </div>
                   <img
+                    alt={t(image?.alt)}
                     className="ml-3.5 w-24 max-h-11 h-auto select-none dark:opacity-60 group-hover:dark:opacity-90 dark:brightness-0 dark:invert transition-[filter,opacity] duration-300"
                     src={image?.src}
-                    alt={t(image?.alt)}
                   />
                 </a>
                 {roles?.map(({ id, role }) => (
@@ -104,9 +108,9 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                     src={image?.src}
                   />
                   <img
+                    alt={image?.alt}
                     className="ml-2 w-8 select-none opacity-30 dark:opacity-60 group-hover:opacity-100 group-hover:dark:opacity-90 brightness-0 group-hover:brightness-100 group-hover:dark:brightness-0 dark:invert transition-all duration-300"
                     src={image?.src}
-                    alt={image?.alt}
                   />
                 </a>
               </li>
