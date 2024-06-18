@@ -13,7 +13,7 @@ import Section from '../../../layout/Section/Regular'
 
 import Button from '../../../components/Button'
 import Paragraph from '../../../components/Text/Paragraph'
-import SectionHeading from '../../../components/Text/SectionHeading'
+import Heading from '../../../components/Text/Heading'
 import PolaroidPic from './components/PolaroidPic'
 import QuotationMark from './components/QuotationMark'
 import Tech from './components/Tech'
@@ -33,9 +33,9 @@ export default function About({ t }) {
   return (
     <Section id="about" ref={animation.scope}>
       <Container>
-        <SectionHeading
+        <Heading
           heading="pages.home.about.heading"
-          watermark="pages.home.about.watermark"
+          sectionName="pages.home.about.sectionName"
         />
         <Grid className="gap-12">
           <PolaroidPic t={t} />

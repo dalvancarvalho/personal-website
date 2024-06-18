@@ -6,7 +6,7 @@ import Container from '../../../layout/Container'
 import Section from '../../../layout/Section/Regular'
 
 import Paragraph from '../../../components/Text/Paragraph'
-import SectionHeading from '../../../components/Text/SectionHeading'
+import Heading from '../../../components/Text/Heading'
 import Card from './components/Card/Default'
 import SmallCard from './components/Card/Small'
 
@@ -24,10 +24,10 @@ export default function Projects({ screenSize, t }) {
       ref={animation.scope}
     >
       <Container className="variable-padding">
-        <SectionHeading
+        <Heading
           heading="pages.home.projects.heading"
-          watermark="pages.home.projects.watermark"
-          watermarkColor="text-slate-250 dark:text-dark-3"
+          sectionName="pages.home.projects.sectionName"
+          sectionNameColor="text-slate-250 dark:text-dark-3"
         />
         <Paragraph
           className="mb-16"

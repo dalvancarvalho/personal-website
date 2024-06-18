@@ -84,7 +84,7 @@
         },
         "about": {
           "heading": "But... who am I?",
-          "watermark": "About",
+          "sectionName": "About",
           "polaroid": "spontaneous pic :)",
           "subHeadingI": "Self-taught developer",
           "paragraphI": "I entered the world of front-end development about a year ago after transitioning from the field of <highlight>civil engineering</highlight>, in which I graduated. In the technology field, I found the opportunity to <highlight>reinvent</highlight> myself while continuing to do what I love most: creating things that reflect the standards I always strive to maintain, such as <highlight>attention to detail</highlight>, <highlight>quality</highlight>, and <highlight>organization</highlight>.",
@@ -102,7 +102,7 @@
         },
         "projects": {
           "heading": "Handcrafted work",
-          "watermark": "Projects",
+          "sectionName": "Projects",
           "paragraph": "After some time learning the fundamentals of front-end development and venturing into tutorials for creating music players, <iss>ISS trackers</iss>, and three or four different types of to-do lists, I list below some personal projects that <highlight>truly made me learn JavaScript</highlight> and explore its potential in building web applications.",
           "brGeo": {
             "altText": "Screen of BR Geo, displaying a dashboard with a Rio de Janeiro map and populacional statistics in a chart on its side",
@@ -124,7 +124,7 @@
         },
         "contact": {
           "heading": "Let's talk!",
-          "watermark": "Contact",
+          "sectionName": "Contact",
           "paragraphI": "<highlight>I'm very glad that you've taken the time to check out my personal website!</highlight> I hope you enjoyed browsing through my works and learning a bit more about what I do.",
           "paragraphII": "Currently, <highlight>I am available to join a creative team of designers and developers</highlight>. If you think we can work together, please send a message to one of the contacts below or through the form in this section, and I promise to get back to you as soon as possible!",
           "email": {
@@ -158,28 +158,28 @@
       "brGeo": {
         "intro": {
           "heading": "A brief introduction",
-          "watermark": "Intro"
+          "sectionName": "Intro"
         },
         "details": {
           "heading": "Details",
-          "watermark": "Details"
+          "sectionName": "Details"
         }
       },
       "personalWebsite": {
         "intro": {
           "heading": "A brief introduction",
-          "watermark": "Intro"
+          "sectionName": "Intro"
         },
         "details": {
           "heading": "Details",
-          "watermark": "Details"
+          "sectionName": "Details"
         }
       },
       "resume": {
         "heading": "Resume",
         "topics": {
           "heading": "Professional information",
-          "watermark": "Topics",
+          "sectionName": "Topics",
           "paragraph": "You can explore the categories below to learn more about my skills and professional experiences. If you have any questions or would like to chat, please don't hesitate to <contact>get in touch</contact>!",
           "progLanguages": {
             "title": "Programming languages"
@@ -266,7 +266,7 @@
         },
         "download": {
           "heading": "Get your PDF!",
-          "watermark": "Download",
+          "sectionName": "Download",
           "paragraph": "You can download all the information listed above by clicking on the cards below. They are available in both <highlight>Portuguese and English</highlight>, and you can choose between <highlight>PDF or PNG</highlight> formats.",
           "portuguese": "Resume - Portuguese",
           "english": "Resume - English",
@@ -278,11 +278,11 @@
       "splitIt": {
         "intro": {
           "heading": "A brief introduction",
-          "watermark": "Intro"
+          "sectionName": "Intro"
         },
         "details": {
           "heading": "Details",
-          "watermark": "Details"
+          "sectionName": "Details"
         }
       },
       "notFound": {

@@ -5,7 +5,7 @@ import Section from '../../../layout/Section/Regular'
 
 import Accordion from '../../../components/Accordion'
 import Paragraph from '../../../components/Text/Paragraph'
-import SectionHeading from '../../../components/Text/SectionHeading'
+import Heading from '../../../components/Text/Heading'
 import ResumeTopic from './components/ResumeTopic'
 
 import RESUME_TOPICS from './constants/resumeTopics'
@@ -16,10 +16,10 @@ export default function Topics({ t }) {
   return (
     <Section id="topics">
       <Container className="h-full variable-padding">
-        <SectionHeading
-          animation={false}
+        <Heading
+          animate={false}
           heading="pages.resume.topics.heading"
-          watermark="pages.resume.topics.watermark"
+          sectionName="pages.resume.topics.sectionName"
         />
         <Paragraph i18nKey="pages.resume.topics.paragraph" />
         <Accordion className="mt-12 md:mt-16" type="multiple">

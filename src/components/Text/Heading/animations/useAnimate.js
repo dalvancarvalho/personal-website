@@ -5,16 +5,16 @@ import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-export default function useAnimate(animation) {
+export default function useAnimate(animate = true) {
   // Heading animation
 
   const scope = useRef(null)
   const heading = useRef(null)
-  const watermark = useRef(null)
+  const sectionName = useRef(null)
   const { screenSize } = useScreenProps()
 
   useLayoutEffect(() => {
-    if (!animation) return
+    if (!animate) return
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -33,7 +33,7 @@ export default function useAnimate(animation) {
       )
 
       gsap.fromTo(
-        watermark.current,
+        sectionName.current,
         { opacity: 0, scale: 0.8 },
         {
           opacity: 1,
@@ -53,5 +53,5 @@ export default function useAnimate(animation) {
     return () => ctx.revert()
   }, [screenSize.md])
 
-  return { heading, scope, watermark }
+  return { heading, scope, sectionName }
 }

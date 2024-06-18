@@ -12,7 +12,7 @@ import Section from '../../../layout/Section/Regular'
 
 import ContactForm from '../../../components/ContactForm'
 import Paragraph from '../../../components/Text/Paragraph'
-import SectionHeading from '../../../components/Text/SectionHeading'
+import Heading from '../../../components/Text/Heading'
 import Confetti from './components/Confetti'
 import ContactInfo from './components/ContactInfo'
 
@@ -28,9 +28,9 @@ export default function Contact({ screenSize, t }) {
     <>
       <Section className="relative" id="contact" ref={animation.scope}>
         <Container>
-          <SectionHeading
+          <Heading
             heading="pages.home.contact.heading"
-            watermark="pages.home.contact.watermark"
+            sectionName="pages.home.contact.sectionName"
           />
           <Grid className="gap-x-12">
             <div className="h-full col-start-1 col-end-8 flex flex-col justify-between gap-y-12">

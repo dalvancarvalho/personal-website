@@ -84,7 +84,7 @@
         },
         "about": {
           "heading": "Mas... quem sou eu?",
-          "watermark": "Sobre",
+          "sectionName": "Sobre",
           "polaroid": "foto espontânea :)",
           "subHeadingI": "Desenvolvedor autodidata",
           "paragraphI": "Entrei no mundo do desenvolvimento front-end há cerca de um ano, depois de migrar do campo da <highlight>engenharia civil</highlight>, no qual me formei. No campo da tecnologia, encontrei a oportunidade de me <highlight>reinventar</highlight> enquanto continuo fazendo o que mais amo: criar coisas que reflitam os padrões que sempre busco manter, como <highlight>atenção aos detalhes</highlight>, <highlight>qualidade</highlight> e <highlight>organização</highlight>.",
@@ -102,7 +102,7 @@
         },
         "projects": {
           "heading": "Trabalho feito à mão",
-          "watermark": "Projetos",
+          "sectionName": "Projetos",
           "paragraph": "Após algum tempo aprendendo os fundamentos do desenvolvimento front-end e me aventurando em tutoriais de criação de players de música, <iss>rastreadores da ISS</iss> e três ou quatro tipos diferentes de to-do lists, listo abaixo alguns projetos autorais que <highlight>realmente me fizeram aprender JavaScript</highlight> e explorar o seu potencial na criação de aplicações web.",
           "brGeo": {
             "altText": "Tela do BR Geo, exibindo um painel com o mapa do Rio de Janeiro e estatísticas populacionais em um gráfico ao lado",
@@ -124,7 +124,7 @@
         },
         "contact": {
           "heading": "Vamos conversar!",
-          "watermark": "Contato",
+          "sectionName": "Contato",
           "paragraphI": "<highlight>Fico muito contente que você tenha dedicado um tempo para conferir meu website pessoal!</highlight> Espero que tenha gostado de navegar pelos meus trabalhos e de saber um pouco mais sobre o que eu faço.",
           "paragraphII": "No momento, <highlight>estou disponível para me unir a um time criativo de designers e desenvolvedores</highlight>. Se você acha que podemos trabalhar juntos, envie uma mensagem para um dos contatos abaixo ou através do formulário nesta seção que prometo retornar o mais breve possível!",
           "email": {
@@ -158,28 +158,28 @@
       "brGeo": {
         "intro": {
           "heading": "Uma breve introdução",
-          "watermark": "Intro"
+          "sectionName": "Intro"
         },
         "details": {
           "heading": "Detalhes",
-          "watermark": "Detalhes"
+          "sectionName": "Detalhes"
         }
       },
       "personalWebsite": {
         "intro": {
           "heading": "Uma breve introdução",
-          "watermark": "Intro"
+          "sectionName": "Intro"
         },
         "details": {
           "heading": "Detalhes",
-          "watermark": "Detalhes"
+          "sectionName": "Detalhes"
         }
       },
       "resume": {
         "heading": "Currículo",
         "topics": {
           "heading": "Informações profissionais",
-          "watermark": "Tópicos",
+          "sectionName": "Tópicos",
           "paragraph": "Você pode explorar as categorias abaixo para saber mais sobre minhas habilidades e experiências profissionais. Caso tenha alguma dúvida ou queira conversar, não hesite em <contact>entrar em contato</contact>!",
           "progLanguages": {
             "title": "Linguagens de programação"
@@ -266,7 +266,7 @@
         },
         "download": {
           "heading": "Pegue seu PDF!",
-          "watermark": "Download",
+          "sectionName": "Download",
           "paragraph": "Você pode baixar todas as informações listadas acima clicando nos cards abaixo. Elas estão disponíveis em <highlight>português e inglês</highlight>, e você pode escolher entre os formatos <highlight>PDF ou PNG</highlight>.",
           "portuguese": "Currículo - Português",
           "english": "Currículo - Inglês",
@@ -278,11 +278,11 @@
       "splitIt": {
         "intro": {
           "heading": "Uma breve introdução",
-          "watermark": "Intro"
+          "sectionName": "Intro"
         },
         "details": {
           "heading": "Detalhes",
-          "watermark": "Detalhes"
+          "sectionName": "Detalhes"
         }
       },
       "notFound": {
