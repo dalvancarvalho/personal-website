@@ -54,6 +54,19 @@
     @apply !text-blue-600 dark:!text-orange-500 -translate-y-[155%] scale-[0.85] origin-left;
   }
 
+  /* Table */
+  .th {
+    @apply w-32 border-b border-neutral-500 dark:border-neutral-700 font-medium transition-all duration-300;
+  }
+
+  .th-scope-row {
+    @apply border-b border-r border-b-neutral-500/50 border-neutral-500 dark:border-b-neutral-700/50 dark:border-neutral-700 px-2 text-left font-medium transition-all duration-300;
+  }
+
+  .td {
+    @apply border-b border-b-neutral-500/50 border-neutral-500 dark:border-b-neutral-700/50 dark:border-neutral-700 text-center font-jetbrains-mono transition-all duration-300;
+  }
+
   /* Tooltip */
   .tooltip {
     @apply absolute invisible opacity-0 z-50 rounded-lg px-2.5 py-1.5 bg-neutral-800 dark:bg-neutral-700 text-white font-urbanist font-normal text-sm whitespace-nowrap select-none pointer-events-none after:absolute after:rotate-45 after:size-2.5 after:bg-neutral-800 after:dark:bg-neutral-700 after:color-transition;

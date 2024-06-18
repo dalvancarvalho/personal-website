@@ -13,6 +13,8 @@ import useTheme from './context/ThemeContext'
 
 import useConsoleMessage from './hooks/useConsoleMessage'
 
+import ScreenPanel from './utils/ScreenPanel'
+
 import Footer from './layout/Footer'
 import Header from './layout/Header'
 import Main from './layout/Main'
@@ -38,7 +40,6 @@ export default function App() {
       {/* Metadata */}
       <Helmet>
         {isDevMode && (
-          // Sets the favicon to a dark version that indicates the app is in development mode
           <link
             rel="icon"
             type="image/png"
@@ -59,6 +60,9 @@ export default function App() {
       {/* Vercel tools */}
       <Analytics />
       <SpeedInsights />
+
+      {/* Dev utilities */}
+      {isDevMode && <ScreenPanel />}
     </>
   )
 }
