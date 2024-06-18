@@ -12,12 +12,12 @@ export default function Heading({
 }) {
   // Section heading (H2)
 
-  const animationRefs = useAnimate(animate)
+  const animationRefs = useAnimate(false)
   const { t } = useTranslation()
 
   return (
     <div
-      className="relative isolate mb-8 md:mb-24 w-full grid place-items-start md:place-items-center font-mark-pro font-black tracking-[-0.1em]"
+      className="relative isolate mb-7 md:mb-24 w-full grid place-items-start md:place-items-center font-mark-pro font-black tracking-[-0.1em]"
       ref={animationRefs.scope}
     >
       <span
@@ -27,10 +27,10 @@ export default function Heading({
         {t(sectionName)}
       </span>
       <div ref={animationRefs.heading}>
-        <span className="md:hidden mb-2 font-black text-xs uppercase tracking-widest text-accent color-transition">
+        <span className="block md:hidden ml-px mb-3 font-black text-xs uppercase tracking-widest text-accent color-transition">
           {t(sectionName)}
         </span>
-        <h2 className="z-10 text-3xl md:text-[2.5rem]">{t(heading)}</h2>
+        <h2 className="text-3xl md:text-[2.5rem]">{t(heading)}</h2>
       </div>
     </div>
   )
