@@ -1,6 +1,6 @@
 /* PageHeader/index.jsx */
 
-import { lazy } from 'react'
+import { useRef } from 'react'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import Container from '../Container'
@@ -10,7 +10,11 @@ import Link from './components/Link'
 import LiveDemo from './components/LiveDemo'
 
 export default function PageHeader({ github, heading, linkedIn, links, section, t }) {
-  // Displays the title of the page (H1) along with some useful links
+  // Displays the main heading of the page (H1) along with some useful links
+
+  const linksRef = useRef(null)
+
+  const hasChildNodes = linksRef.current?.hasChildNodes()
 
   return (
     <div
@@ -26,7 +30,11 @@ export default function PageHeader({ github, heading, linkedIn, links, section, 
         </div>
 
         {/* Links for socials, demos and repos (if any) are rendered here */}
-        <div className="mt-10 md:mt-0 flex flex-col gap-2 font-semibold">
+        <div
+          className="mt-10 md:mt-0 data-[child-nodes=false]:mt-0 flex flex-col gap-2 font-semibold"
+          data-child-nodes={hasChildNodes}
+          ref={linksRef}
+        >
           {github && (
             <Link icon={faGithub} href={github} label={t('pageHeader.github')} />
           )}
