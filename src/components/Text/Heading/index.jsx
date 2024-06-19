@@ -12,7 +12,7 @@ export default function Heading({
 }) {
   // Section heading (H2)
 
-  const animationRefs = useAnimate(false)
+  const animationRefs = useAnimate(animate)
   const { t } = useTranslation()
 
   return (

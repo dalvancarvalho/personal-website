@@ -27,7 +27,7 @@ export default function Card({
 
   const navigate = useNavigate()
   const parallax = useParallax()
-  const animation = useAnimate(false)
+  const animation = useAnimate()
 
   return (
     <div
