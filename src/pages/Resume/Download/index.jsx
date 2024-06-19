@@ -20,7 +20,8 @@ export default function Download({ t }) {
   return (
     <Section className="skewed-bg" id="download">
       {/* 🩹 The <div> below fills the gap left by the skewed background above the right portion of the footer */}
-      <div className="absolute bottom-0 right-0 w-full h-14 bg-slate-150 dark:bg-dark-5 color-transition select-none pointer-events-none"></div>
+      <div className="absolute -z-10 bottom-0 right-0 w-full h-52 bg-slate-150 dark:bg-dark-5 color-transition select-none pointer-events-none"></div>
+
       <Container className="h-full variable-padding">
         <Heading
           animate={false}
