@@ -89,7 +89,7 @@ export default function ScreenPanel() {
       <button
         className="absolute top-4 right-4 w-8 h-6 rounded-lg hover:bg-white/25 hover:transition-colors duration-150"
         onClick={(event) => togglePanel(event)}
-        title="Expand panel"
+        title={isPanelExpanded ? 'Collapse panel' : 'Expand panel'}
       >
         <FontAwesomeIcon
           className="group-data-[panel-expanded=false]/panel:rotate-180 transition-rotate duration-150 delay-300"
