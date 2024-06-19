@@ -67,7 +67,7 @@ export default function ScreenPanel() {
 
       {/* Toggle button */}
       <button
-        className="absolute top-4 right-4 w-6 rounded hover:bg-white/25 transition-colors duration-150"
+        className="absolute top-4 right-4 w-6 rounded hover:bg-white/25 hover:transition-colors duration-150"
         onClick={togglePanel}
       >
         <FontAwesomeIcon
