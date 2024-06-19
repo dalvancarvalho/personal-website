@@ -56,15 +56,15 @@
 
   /* Table */
   .th {
-    @apply w-32 border-b border-neutral-500 dark:border-neutral-700 font-medium transition-all duration-300;
+    @apply w-[130px] h-8 border-b border-neutral-500 dark:border-neutral-700 font-medium transition-all duration-300;
   }
 
   .th-scope-row {
-    @apply border-b border-r border-b-neutral-500/50 border-neutral-500 dark:border-b-neutral-700/50 dark:border-neutral-700 px-2 text-left font-medium transition-all duration-300;
+    @apply h-8 border-b border-r border-b-neutral-500/50 border-neutral-500 dark:border-b-neutral-700/50 dark:border-neutral-700 px-2 text-left font-medium transition-all duration-300;
   }
 
   .td {
-    @apply border-b border-b-neutral-500/50 border-neutral-500 dark:border-b-neutral-700/50 dark:border-neutral-700 text-center font-jetbrains-mono transition-all duration-300;
+    @apply h-8 border-b border-b-neutral-500/50 border-neutral-500 dark:border-b-neutral-700/50 dark:border-neutral-700 text-center font-jetbrains-mono transition-all duration-300;
   }
 
   /* Tooltip */

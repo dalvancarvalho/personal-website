@@ -2,7 +2,6 @@
 
 import { createContext, useContext, useEffect, useState } from 'react'
 
-import useKeyPress from '../hooks/useKeyPress'
 import useLocalStorage from '../hooks/useLocalStorage'
 import useScreenProps from '../hooks/useScreenProps'
 
@@ -10,11 +9,11 @@ import useScreenProps from '../hooks/useScreenProps'
 const ScreenPanelContext = createContext()
 
 export function ScreenPanelProvider({ children }) {
-  const SHORTCUT_KEY = 's'
-
-  const [isPanelOpen, setPanelState] = useLocalStorage('open-screen-panel', false)
+  const [isPanelExpanded, setPanelState] = useLocalStorage(
+    '_dev_expanded-screen-panel',
+    false
+  )
   const { isPortraitMode, screenDimensions, screenSize } = useScreenProps()
-  useKeyPress(SHORTCUT_KEY, togglePanel)
 
   const [screen, setScreenSize] = useState(null)
   const { width, height } = screenDimensions
@@ -47,13 +46,14 @@ export function ScreenPanelProvider({ children }) {
     }
   }, [width])
 
-  function togglePanel() {
+  function togglePanel(event) {
+    event.stopPropagation()
     setPanelState((current) => !current)
   }
 
   return (
     <ScreenPanelContext.Provider
-      value={{ isPanelOpen, togglePanel, orientation, viewportSize, screen }}
+      value={{ isPanelExpanded, togglePanel, orientation, viewportSize, screen }}
     >
       {children}
     </ScreenPanelContext.Provider>
