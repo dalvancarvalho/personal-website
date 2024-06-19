@@ -25,9 +25,9 @@ import Routes from './routes'
 export default function App() {
   // Main component
 
-  const DARK_THEME = '#1a1a1a'          // dark gray
-  const LIGHT_THEME = '#f8fafc'         // light slate
-  const isDevMode = import.meta.env.DEV // indicates if the app is in development mode
+  const DARK_THEME = '#1a1a1a'         // dark gray
+  const LIGHT_THEME = '#f8fafc'        // light slate
+  const isDevEnv = import.meta.env.DEV // indicates if the app is in a development environment
 
   const { pathname } = useLocation()
   const { theme } = useTheme()
@@ -39,7 +39,7 @@ export default function App() {
     <>
       {/* Metadata */}
       <Helmet>
-        {isDevMode && (
+        {isDevEnv && (
           <link
             rel="icon"
             type="image/png"
@@ -62,7 +62,7 @@ export default function App() {
       <SpeedInsights />
 
       {/* Dev utilities */}
-      {isDevMode && <ScreenPanel />}
+      {isDevEnv && <ScreenPanel />}
     </>
   )
 }
