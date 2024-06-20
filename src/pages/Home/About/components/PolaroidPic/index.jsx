@@ -34,13 +34,13 @@ export default function PolaroidPic({ t }) {
           {/* Sticky tapes */}
           <img
             alt={t('pages.home.about.tapeAltText')}
-            className="absolute z-20 -rotate-45 -top-12 right-[45%] xl:right-[55%] scale-50 md:scale-[60%] dark:opacity-65 transition-opacity duration-300 select-none"
+            className="absolute z-20 -rotate-[30deg] -top-12 md:-top-[68px] right-[45%] scale-90 dark:opacity-65 transition-opacity duration-300 select-none"
             loading="lazy"
             src={tapeTopLeft}
           />
           <img
             alt={t('pages.home.about.tapeAltText')}
-            className="absolute z-20 -rotate-[30deg] -bottom-12 lg:-bottom-14 left-[35%] scale-[85%] dark:opacity-65 transition-opacity duration-300 select-none"
+            className="absolute z-20 -rotate-[35deg] -bottom-20 md:-bottom-24 left-[35%] scale-90 dark:opacity-65 transition-opacity duration-300 select-none"
             loading="lazy"
             src={tapeBottomRight}
           />
