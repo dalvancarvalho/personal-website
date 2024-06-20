@@ -8,7 +8,7 @@ export default function Link({ icon, href, label }) {
 
   return (
     <a
-      className="max-w-max h-10 rounded-full pl-3 pr-4 flex items-center gap-2 bg-slate-250 dark:bg-dark-2 text-slate-600 dark:text-gray-400 color-transition
+      className="max-w-max h-10 rounded-full pl-3 pr-4 flex items-center gap-2 bg-slate-250 dark:bg-dark-2 text-slate-600 dark:text-gray-400 whitespace-nowrap color-transition
       focus-visible:bg-blue-400/25
               hover:bg-blue-400/25        
       focus-visible:dark:bg-orange-500/25

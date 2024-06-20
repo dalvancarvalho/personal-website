@@ -13,7 +13,7 @@ export default function Breadcrumbs({ section, t }) {
   const navigate = useNavigate()
 
   return (
-    <div className="max-w-max ml-px flex items-center font-medium font-mark-pro text-base md:text-lg tracking-tighter">
+    <div className="mb-4 max-w-max flex items-center font-medium font-mark-pro text-base md:text-lg tracking-tighter">
       <Button
         ariaLabel={t('pageHeader.breadcrumbs.home.ariaLabel')}
         callback={() => navigate('/')}
