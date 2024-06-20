@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-export default function useAnimate() {
+export default function useAnimate(animate = true) {
   // Contact section animation
 
   const { screenSize } = useScreenProps()
@@ -13,6 +13,8 @@ export default function useAnimate() {
   const contacts = useRef(null)
 
   useLayoutEffect(() => {
+    if (!animate) return
+
     const ctx = gsap.context((self) => {
       const items = self.selector('.contact-paragraph')
 

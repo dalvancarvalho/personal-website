@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate(refs) {
+export default function useAnimate(refs, animate = true) {
   // Hero section animation
 
   const { bg, text } = refs
@@ -12,6 +12,7 @@ export default function useAnimate(refs) {
   const scope = useRef(null)
 
   useLayoutEffect(() => {
+    if (!animate) return
     const ctx = gsap.context(() => {
       tl.current = gsap
         .timeline()

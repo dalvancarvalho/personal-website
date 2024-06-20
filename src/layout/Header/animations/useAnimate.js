@@ -3,13 +3,15 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate(pathname) {
+export default function useAnimate(pathname, animate = true) {
   // Header animation
 
   const scope = useRef(null)
   const nav = useRef(null)
 
   useLayoutEffect(() => {
+    if (!animate) return
+
     const ctx = gsap.context(() => {
       gsap.fromTo(
         nav.current,

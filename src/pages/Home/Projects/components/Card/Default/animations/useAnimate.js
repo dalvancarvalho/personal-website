@@ -4,7 +4,7 @@ import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
 export default function useAnimate(animate = true) {
-  // Standard card animation
+  // Card animation
 
   const scope = useRef(null)
   const image = useRef(null)

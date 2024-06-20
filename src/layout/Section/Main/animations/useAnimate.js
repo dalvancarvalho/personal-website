@@ -3,12 +3,14 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate() {
+export default function useAnimate(animate = true) {
   // Fade-in animation on main section
 
   const scope = useRef(null)
 
   useLayoutEffect(() => {
+    if (!animate) return
+
     const ctx = gsap.context(() => {
       gsap.fromTo(
         scope.current,

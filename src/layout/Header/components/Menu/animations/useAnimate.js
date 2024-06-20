@@ -3,12 +3,14 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate(menuRef, isMenuOpen) {
+export default function useAnimate(menuRef, isMenuOpen, animate = true) {
   // Menu animation
 
   const scope = useRef(null)
 
   useLayoutEffect(() => {
+    if (!animate) return
+
     const ctx = gsap.context(() => {
       if (isMenuOpen) {
         gsap.to(menuRef.current.children, {

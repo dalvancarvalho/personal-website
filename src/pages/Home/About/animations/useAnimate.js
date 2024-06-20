@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 
 import useScreenProps from '../../../../hooks/useScreenProps'
 
-export default function useAnimate() {
+export default function useAnimate(animate = true) {
   // About section animation
 
   const { screenSize } = useScreenProps()
@@ -16,6 +16,8 @@ export default function useAnimate() {
   const stackImage = useRef(null)
 
   useLayoutEffect(() => {
+    if (!animate) return
+
     const ctx = gsap.context((self) => {
       const paragraphs = self.selector('.about-paragraph')
 

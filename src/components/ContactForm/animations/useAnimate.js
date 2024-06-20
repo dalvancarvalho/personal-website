@@ -5,13 +5,15 @@ import { gsap } from 'gsap'
 
 import useScreenProps from '../../../hooks/useScreenProps'
 
-export default function useAnimate() {
+export default function useAnimate(animate = true) {
   // Contact form animation
 
   const { screenSize } = useScreenProps()
   const scope = useRef(null)
 
   useLayoutEffect(() => {
+    if (!animate) return
+
     const ctx = gsap.context(() => {
       gsap.fromTo(
         scope.current.children,

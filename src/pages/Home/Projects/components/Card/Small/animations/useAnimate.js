@@ -4,7 +4,7 @@ import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
 export default function useAnimate(index, animate = true) {
-  // Mobile card animation
+  // Small card animation
 
   const isEven = index % 2 === 0 ? true : false
 
