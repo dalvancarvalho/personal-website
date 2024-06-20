@@ -27,10 +27,10 @@ export default function Resume() {
       />
       <MainSection>
         <PageHeader
-          github="https://github.com/dalvancarvalho/"
-          linkedIn="https://www.linkedin.com/in/dalvancarvalho/"
           section="pageHeader.breadcrumbs.about"
           heading="pages.resume.heading"
+          github="https://github.com/dalvancarvalho/"
+          linkedIn="https://www.linkedin.com/in/dalvancarvalho/"
           t={t}
         />
         <Topics t={t} />
