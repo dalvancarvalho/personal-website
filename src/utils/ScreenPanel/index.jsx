@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import useScreenPanel from '../../context/ScreenPanelContext'
+import useScreenPanel from './hooks/useScreenPanel'
 
 import { TableData, TableHeader, TableRow } from './components/TableCells'
 
