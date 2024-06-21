@@ -47,5 +47,5 @@ export default function useScreenProps() {
     })
   }
 
-  return { isPortraitMode, screenSize, screenDimensions }
+  return { isPortraitMode, screenDimensions, screenSize }
 }
