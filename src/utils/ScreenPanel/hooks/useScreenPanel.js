@@ -9,7 +9,7 @@ import useScreenProps from '../../../hooks/useScreenProps'
 export default function useScreenPanel() {
   // Defines the properties displayed in the screen panel
 
-  const [screen, setScreen] = useState('...')
+  const [screen, setScreen] = useState('n/a')
   const [isPanelExpanded, setPanelExpanded] = useLocalStorage('expanded-screen-panel', false)
   const { isPortraitMode, screenDimensions, screenSize } = useScreenProps()
   const { width, height } = screenDimensions
@@ -26,22 +26,22 @@ export default function useScreenPanel() {
         setScreen('mobile')
         break
       case 0:
-        setScreen('sm') // @media (min-width: 640px) {...}
+        setScreen('sm')  // min-width: 640px
         break
       case 1:
-        setScreen('md') // @media (min-width: 768px) {...}
+        setScreen('md')  // min-width: 768px
         break
       case 2:
-        setScreen('lg') // @media (min-width: 1024px) {...}
+        setScreen('lg')  // min-width: 1024px
         break
       case 3:
-        setScreen('xl') // @media (min-width: 1280px) {...}
+        setScreen('xl')  // min-width: 1280px
         break
       case 4:
-        setScreen('2xl') // @media (min-width: 1536px) {...}
+        setScreen('2xl') // min-width: 1536px
         break
       default:
-        setScreen('...')
+        setScreen('n/a')
     }
   }, [screenSize])
 
