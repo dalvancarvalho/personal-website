@@ -21,36 +21,23 @@ const ScreenPanel = forwardRef(function ScreenPanel(
 
   return (
     <div
-      className="fixed z-50 bottom-0 min-w-max max-h-max backdrop-blur flex flex-col text-white shadow-2xl overflow-hidden transition-all ease-out duration-300 group/panel
+      className="fixed z-50 min-w-max max-h-max backdrop-blur flex flex-col text-white shadow-2xl overflow-hidden transition-all ease-out duration-300 group/panel
       data-[transparency=true]:data-[panel-expanded=true]:bg-neutral-800/80
       data-[transparency=true]:data-[panel-expanded=false]:bg-neutral-800/40
       data-[transparency=true]:data-[panel-expanded=false]:hover:bg-neutral-800/80
       data-[transparency=false]:data-[panel-expanded]:bg-neutral-800
       data-[transparency=false]:data-[panel-expanded=false]:hover:bg-neutral-700
-      data-[panel-expanded=false]:translate-y-[74%]
-      data-[position=bottom-center]:right-1/2
-      data-[position=bottom-center]:translate-x-1/2
-      data-[position=bottom-center]:rounded-t-2xl
-      data-[position=bottom-left]:left-4
-      data-[position=bottom-left]:rounded-t-2xl
-      data-[position=bottom-right]:right-4
-      data-[position=bottom-right]:rounded-t-2xl
-      data-[position=top-center]:!top-0
-      data-[position=top-center]:right-1/2
-      data-[position=top-center]:translate-x-1/2
-      data-[position=top-center]:rounded-b-2xl
-      data-[position=top-center]:flex-col-reverse
-      data-[position=top-center]:data-[panel-expanded=false]:!-translate-y-[74%]
-      data-[position=top-left]:!top-0
-      data-[position=top-left]:left-4
-      data-[position=top-left]:rounded-b-2xl
-      data-[position=top-left]:flex-col-reverse
-      data-[position=top-left]:data-[panel-expanded=false]:!-translate-y-[74%]
-      data-[position=top-right]:!top-0
-      data-[position=top-right]:right-4
-      data-[position=top-right]:rounded-b-2xl
-      data-[position=top-right]:flex-col-reverse
-      data-[position=top-right]:data-[panel-expanded=false]:!-translate-y-[74%]"
+      data-[position|=top]:top-0
+      data-[position|=top]:rounded-b-2xl
+      data-[position|=top]:flex-col-reverse
+      data-[position|=top]:data-[panel-expanded=false]:-translate-y-[74%]
+      data-[position|=bottom]:bottom-0
+      data-[position|=bottom]:rounded-t-2xl
+      data-[position|=bottom]:data-[panel-expanded=false]:translate-y-[74%]
+      data-[position$=left]:left-4
+      data-[position$=center]:right-1/2
+      data-[position$=center]:translate-x-1/2
+      data-[position$=right]:right-4"
       data-panel-expanded={isPanelExpanded}
       data-position={position}
       data-transparency={transparency}
@@ -59,12 +46,8 @@ const ScreenPanel = forwardRef(function ScreenPanel(
       {/* Toggle button */}
       <button
         className="absolute right-4 w-8 h-6 rounded-lg hover:transition-colors duration-150
-        group-data-[position=bottom-center]/panel:top-4
-        group-data-[position=bottom-left]/panel:top-4
-        group-data-[position=bottom-right]/panel:top-4
-        group-data-[position=top-center]/panel:bottom-4
-        group-data-[position=top-left]/panel:bottom-4
-        group-data-[position=top-right]/panel:bottom-4
+        group-data-[position|=bottom]/panel:top-4
+        group-data-[position|=top]/panel:bottom-4
         group-data-[transparency=true]/panel:hover:bg-white/25
         group-data-[transparency=false]/panel:hover:bg-white/15"
         onClick={(event) => togglePanel(event)}
@@ -72,12 +55,8 @@ const ScreenPanel = forwardRef(function ScreenPanel(
       >
         <FontAwesomeIcon
           className="transition-rotate duration-150 delay-300
-          group-data-[position=bottom-center]/panel:group-data-[panel-expanded=false]/panel:rotate-180
-          group-data-[position=bottom-left]/panel:group-data-[panel-expanded=false]/panel:rotate-180
-          group-data-[position=bottom-right]/panel:group-data-[panel-expanded=false]/panel:rotate-180
-          group-data-[position=top-center]/panel:group-data-[panel-expanded=true]/panel:rotate-180
-          group-data-[position=top-left]/panel:group-data-[panel-expanded=true]/panel:rotate-180
-          group-data-[position=top-right]/panel:group-data-[panel-expanded=true]/panel:rotate-180"
+          group-data-[position|=bottom]/panel:group-data-[panel-expanded=false]/panel:rotate-180
+          group-data-[position|=top]/panel:group-data-[panel-expanded=true]/panel:rotate-180"
           icon={faChevronDown}
           size="sm"
         />
@@ -101,12 +80,8 @@ const ScreenPanel = forwardRef(function ScreenPanel(
       {/* Screen properties */}
       <table
         className="mx-4
-        group-data-[position=top-center]/panel:mt-4
-        group-data-[position=top-left]/panel:mt-4
-        group-data-[position=top-right]/panel:mt-4
-        group-data-[position=bottom-center]/panel:mb-4
-        group-data-[position=bottom-left]/panel:mb-4
-        group-data-[position=bottom-right]/panel:mb-4"
+        group-data-[position|=top]/panel:mt-4
+        group-data-[position|=bottom]/panel:mb-4"
       >
         <tbody>
           <TableRow>
