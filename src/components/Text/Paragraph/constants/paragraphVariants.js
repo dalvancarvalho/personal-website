@@ -132,7 +132,7 @@ const PARAGRAPH_VARIANTS = {
   'large-black': `${PRIMITIVES.variable.large} ${MODIFIERS.weight.black}`,             // font-size: 18px || (min-width: 768px) 20px; font-weight: 900
 
   // Special combination for the Hero section
-  'hero': `text-base md:text-xl md:leading-[1.85rem] 2xl:text-2xl 2xl:leading-9 text-slate-600 dark:text-gray-400 color-transition ${MODIFIERS.weight.medium}`,
+  'hero': `text-base md:text-xl md:leading-[1.85rem] 2xl:text-[1.35rem] text-slate-600 dark:text-gray-400 color-transition ${MODIFIERS.weight.medium}`,
 }
 
 export default PARAGRAPH_VARIANTS

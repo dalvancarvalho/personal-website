@@ -22,7 +22,7 @@ const TRANS_COMPONENTS = {
   /* Home page > Hero section */
   small: (
     // Smaller portion of the hero section H1
-    <span className="block mb-3 md:mb-4 2xl:mb-5 font-medium text-lg md:text-2xl 2xl:text-3xl tracking-tighter" />
+    <span className="block mb-3 md:mb-4 font-medium text-lg md:text-2xl tracking-tighter" />
   ),
 
   thin: (
@@ -34,7 +34,7 @@ const TRANS_COMPONENTS = {
   iss: (
     // Link to ISS Tracker
     <a
-      className="font-bold text-slate-800 dark:text-gray-200 color-transition hover:underline underline-offset-2"
+      className="font-bold text-slate-800 dark:text-gray-200 color-transition underline hover:decoration-2 underline-offset-2"
       href="https://iss.dalvanc.com"
       rel="noopener noreferrer"
       target="_blank"
@@ -66,7 +66,7 @@ const TRANS_COMPONENTS = {
   contact: (
     // Link to e-mail
     <a
-      className="font-bold text-slate-800 dark:text-gray-200 color-transition hover:underline underline-offset-2"
+      className="font-bold text-slate-800 dark:text-gray-200 color-transition underline hover:decoration-2 underline-offset-2"
       href="mailto:contato@dalvanc.com?subject=Message from dalvanc.com!"
     />
   ),
