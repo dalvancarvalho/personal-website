@@ -30,17 +30,17 @@ export default function PolaroidPic({ t }) {
         className="absolute inset-0 z-10 size-full px-4 pt-4 pb-16 md:px-5 md:pt-5 md:pb-20 bg-gradient-to-tr from-white from-60% to-slate-150 color-transition"
         ref={animation.picture}
       >
-        <div className="relative size-full">
+        <div className="relative size-full select-none">
           {/* Sticky tapes */}
           <img
             alt={t('pages.home.about.tapeAltText')}
-            className="absolute z-20 -rotate-[30deg] -top-12 md:-top-[68px] right-[45%] scale-90 dark:opacity-65 transition-opacity duration-300 select-none"
+            className="absolute z-20 -rotate-[30deg] -top-12 md:-top-[68px] right-[45%] scale-90 dark:opacity-65 transition-opacity duration-300"
             loading="lazy"
             src={tapeTopLeft}
           />
           <img
             alt={t('pages.home.about.tapeAltText')}
-            className="absolute z-20 -rotate-[35deg] -bottom-20 md:-bottom-24 left-[35%] scale-90 dark:opacity-65 transition-opacity duration-300 select-none"
+            className="absolute z-20 -rotate-[35deg] -bottom-20 md:-bottom-24 left-[35%] scale-90 dark:opacity-65 transition-opacity duration-300"
             loading="lazy"
             src={tapeBottomRight}
           />
