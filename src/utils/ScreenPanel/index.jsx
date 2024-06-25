@@ -14,8 +14,7 @@ const ScreenPanel = forwardRef(function ScreenPanel(
   { position = 'bottom-right', transparency = true },
   ref
 ) {
-  const { isPanelExpanded, togglePanel, orientation, displaySize, viewportSize, screen } =
-    useScreenPanel()
+  const { isPanelExpanded, togglePanel, ...screenProps } = useScreenPanel()
 
   return (
     <div
@@ -28,10 +27,10 @@ const ScreenPanel = forwardRef(function ScreenPanel(
       data-[position|=top]:top-0
       data-[position|=top]:rounded-b-2xl
       data-[position|=top]:flex-col-reverse
-      data-[position|=top]:data-[panel-expanded=false]:-translate-y-[77%]
+      data-[position|=top]:data-[panel-expanded=false]:-translate-y-[80%]
       data-[position|=bottom]:bottom-0
       data-[position|=bottom]:rounded-t-2xl
-      data-[position|=bottom]:data-[panel-expanded=false]:translate-y-[77%]
+      data-[position|=bottom]:data-[panel-expanded=false]:translate-y-[80%]
       data-[position$=left]:left-4
       data-[position$=center]:right-1/2
       data-[position$=center]:translate-x-1/2
@@ -78,7 +77,7 @@ const ScreenPanel = forwardRef(function ScreenPanel(
           group-data-[panel-expanded=true]/panel:delay-300"
         >
           <FontAwesomeIcon icon={faDisplay} />
-          {viewportSize} ({screen})
+          {screenProps.viewportSize} ({screenProps.screen})
         </p>
       </div>
 
@@ -100,23 +99,30 @@ const ScreenPanel = forwardRef(function ScreenPanel(
 
           <tr>
             <th className="th-scope-row" scope="row">
+              Zoom level
+            </th>
+            <td className="td">{screenProps.zoomLevel}</td>
+          </tr>
+
+          <tr>
+            <th className="th-scope-row" scope="row">
               Orientation
             </th>
-            <td className="td">{orientation}</td>
+            <td className="td">{screenProps.orientation}</td>
           </tr>
 
           <tr>
             <th className="th-scope-row" scope="row">
               Display size
             </th>
-            <td className="td">{displaySize}</td>
+            <td className="td">{screenProps.displaySize}</td>
           </tr>
 
           <tr>
             <th className="th-scope-row" scope="row">
               Viewport size
             </th>
-            <td className="td">{viewportSize}</td>
+            <td className="td">{screenProps.viewportSize}</td>
           </tr>
 
           <tr>
@@ -136,7 +142,7 @@ const ScreenPanel = forwardRef(function ScreenPanel(
                 />
               </a>
             </th>
-            <td className="td">{screen}</td>
+            <td className="td">{screenProps.screen}</td>
           </tr>
         </tbody>
       </table>

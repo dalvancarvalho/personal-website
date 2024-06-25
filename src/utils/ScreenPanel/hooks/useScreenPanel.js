@@ -15,10 +15,9 @@ export default function useScreenPanel() {
   const { width, height } = screenDimensions
 
   const orientation = isPortraitMode ? 'Portrait' : 'Landscape'
+  const zoomLevel = Math.round(window.devicePixelRatio * 100) + '%'
   const displaySize = window.screen.width + ' x ' + window.screen.height
   const viewportSize = width + ' x ' + height
-
-
 
   useEffect(() => {
     const values = Object.values(screenSize)
@@ -53,5 +52,13 @@ export default function useScreenPanel() {
     setPanelExpanded((current) => !current)
   }
 
-  return { isPanelExpanded, togglePanel, orientation, displaySize, viewportSize, screen }
+  return {
+    isPanelExpanded,
+    togglePanel,
+    orientation,
+    zoomLevel,
+    displaySize,
+    viewportSize,
+    screen,
+  }
 }
