@@ -180,7 +180,7 @@
         "topics": {
           "heading": "Informações profissionais",
           "sectionName": "Tópicos",
-          "paragraph": "Você pode explorar as categorias abaixo para saber mais sobre minhas habilidades e experiências profissionais. Caso tenha alguma dúvida ou queira conversar, não hesite em <contact>entrar em contato</contact>!",
+          "paragraph": "Você pode explorar as categorias abaixo para saber mais sobre minhas habilidades e experiências profissionais. Caso tenha alguma dúvida ou queira conversar, não hesite em <contact>entrar em contato!</contact>",
           "progLanguages": {
             "title": "Linguagens de programação"
           },
