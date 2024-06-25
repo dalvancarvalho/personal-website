@@ -10,13 +10,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import useScreenPanel from './hooks/useScreenPanel'
 
-import { TableData, TableHeader, TableRow } from './components/TableCells'
-
 const ScreenPanel = forwardRef(function ScreenPanel(
   { position = 'bottom-right', transparency = true },
   ref
 ) {
-  const { isPanelExpanded, togglePanel, orientation, viewportSize, screen } =
+  const { isPanelExpanded, togglePanel, orientation, displaySize, viewportSize, screen } =
     useScreenPanel()
 
   return (
@@ -30,10 +28,10 @@ const ScreenPanel = forwardRef(function ScreenPanel(
       data-[position|=top]:top-0
       data-[position|=top]:rounded-b-2xl
       data-[position|=top]:flex-col-reverse
-      data-[position|=top]:data-[panel-expanded=false]:-translate-y-[74%]
+      data-[position|=top]:data-[panel-expanded=false]:-translate-y-[77%]
       data-[position|=bottom]:bottom-0
       data-[position|=bottom]:rounded-t-2xl
-      data-[position|=bottom]:data-[panel-expanded=false]:translate-y-[74%]
+      data-[position|=bottom]:data-[panel-expanded=false]:translate-y-[77%]
       data-[position$=left]:left-4
       data-[position$=center]:right-1/2
       data-[position$=center]:translate-x-1/2
@@ -45,18 +43,18 @@ const ScreenPanel = forwardRef(function ScreenPanel(
     >
       {/* Toggle button */}
       <button
-        className="absolute right-4 w-8 h-6 rounded-lg hover:transition-colors duration-150
-        group-data-[position|=bottom]/panel:top-4
-        group-data-[position|=top]/panel:bottom-4
+        className="absolute z-10 right-4 w-8 h-6 rounded-lg hover:transition-colors duration-150
         group-data-[transparency=true]/panel:hover:bg-white/25
-        group-data-[transparency=false]/panel:hover:bg-white/15"
+        group-data-[transparency=false]/panel:hover:bg-white/15
+        group-data-[position|=top]/panel:bottom-4
+        group-data-[position|=bottom]/panel:top-4"
         onClick={(event) => togglePanel(event)}
         title={isPanelExpanded ? 'Collapse panel' : 'Expand panel'}
       >
         <FontAwesomeIcon
           className="transition-rotate duration-150 delay-300
-          group-data-[position|=bottom]/panel:group-data-[panel-expanded=false]/panel:rotate-180
-          group-data-[position|=top]/panel:group-data-[panel-expanded=true]/panel:rotate-180"
+          group-data-[position|=top]/panel:group-data-[panel-expanded=true]/panel:rotate-180
+          group-data-[position|=bottom]/panel:group-data-[panel-expanded=false]/panel:rotate-180"
           icon={faChevronDown}
           size="sm"
         />
@@ -64,17 +62,24 @@ const ScreenPanel = forwardRef(function ScreenPanel(
 
       {/* Heading */}
       <div
-        className="size-full p-4 flex items-center gap-2 justify-center font-medium cursor-pointer"
+        className="relative size-full h-14 w-full font-medium cursor-pointer"
         onClick={(event) => togglePanel(event)}
       >
-        <FontAwesomeIcon icon={faDisplay} />
-        {isPanelExpanded ? (
-          <p>Screen properties</p>
-        ) : (
-          <p>
-            {viewportSize} ({screen})
-          </p>
-        )}
+        <p
+          className="absolute inset-0 flex items-center justify-center gap-2 transition-opacity duration-500 delay-500
+          group-data-[panel-expanded=false]/panel:opacity-0
+          group-data-[panel-expanded=false]/panel:delay-300"
+        >
+          Screen properties
+        </p>
+        <p
+          className="absolute inset-0 flex items-center justify-center gap-2 transition-opacity duration-500 delay-500
+          group-data-[panel-expanded=true]/panel:opacity-0
+          group-data-[panel-expanded=true]/panel:delay-300"
+        >
+          <FontAwesomeIcon icon={faDisplay} />
+          {viewportSize} ({screen})
+        </p>
       </div>
 
       {/* Screen properties */}
@@ -84,31 +89,38 @@ const ScreenPanel = forwardRef(function ScreenPanel(
         group-data-[position|=bottom]/panel:mb-4"
       >
         <tbody>
-          <TableRow>
-            <TableHeader className="th" scope="col">
+          <tr>
+            <th className="th" scope="col">
               Property
-            </TableHeader>
-            <TableHeader className="th" scope="col">
+            </th>
+            <th className="th" scope="col">
               Value
-            </TableHeader>
-          </TableRow>
+            </th>
+          </tr>
 
-          <TableRow>
-            <TableHeader className="th-scope-row" scope="row">
+          <tr>
+            <th className="th-scope-row" scope="row">
               Orientation
-            </TableHeader>
-            <TableData className="td">{orientation}</TableData>
-          </TableRow>
+            </th>
+            <td className="td">{orientation}</td>
+          </tr>
 
-          <TableRow>
-            <TableHeader className="th-scope-row" scope="row">
+          <tr>
+            <th className="th-scope-row" scope="row">
+              Display size
+            </th>
+            <td className="td">{displaySize}</td>
+          </tr>
+
+          <tr>
+            <th className="th-scope-row" scope="row">
               Viewport size
-            </TableHeader>
-            <TableData className="td">{viewportSize}</TableData>
-          </TableRow>
+            </th>
+            <td className="td">{viewportSize}</td>
+          </tr>
 
-          <TableRow>
-            <TableHeader className="th-scope-row" scope="row">
+          <tr>
+            <th className="th-scope-row" scope="row">
               Screen size
               <a
                 className="ml-2 group/link"
@@ -123,9 +135,9 @@ const ScreenPanel = forwardRef(function ScreenPanel(
                   size="sm"
                 />
               </a>
-            </TableHeader>
-            <TableData className="td">{screen}</TableData>
-          </TableRow>
+            </th>
+            <td className="td">{screen}</td>
+          </tr>
         </tbody>
       </table>
     </div>
