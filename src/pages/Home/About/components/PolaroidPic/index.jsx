@@ -16,7 +16,7 @@ export default function PolaroidPic({ t }) {
 
   return (
     <div
-      className="relative max-h-[550px] mt-4 -rotate-3 lg:mt-0 mb-6 md:mb-10 lg:mb-0 col-start-1 col-end-6 w-72 md:w-96 lg:w-full h-96 md:h-[32rem] lg:h-full group"
+      className="relative mt-4 -rotate-3 lg:mt-0 mb-6 md:mb-10 lg:mb-0 col-start-1 col-end-6 w-72 md:w-96 lg:w-full h-96 md:h-[32rem] lg:h-full max-h-[550px] group"
       ref={animation.scope}
     >
       {/* Skewed shadow */}
