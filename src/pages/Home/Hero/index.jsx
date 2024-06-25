@@ -19,7 +19,7 @@ export default function Hero({ t }) {
   // Hero section
 
   const parallax = useParallax()
-  const animation = useAnimate(parallax, false)
+  const animation = useAnimate(parallax)
 
   return (
     <Section
