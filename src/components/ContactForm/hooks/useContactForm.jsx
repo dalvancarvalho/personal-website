@@ -43,7 +43,7 @@ export default function useContactForm() {
   }
 
   async function sendEmail() {
-    // Sends an e-mail with the submitted data
+    // Sends an email with the submitted data
 
     // Environment variables
     const publicKey = import.meta.env.VITE_PUBLIC_KEY

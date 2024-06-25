@@ -112,7 +112,7 @@
           "personalWebsite": {
             "altText": "Tela inicial do website pessoal de Dalvan Carvalho",
             "heading": "Website pessoal",
-            "description": "Isso mesmo! Este website merece lugar na lista por incluir diversas funcionalidades interessantes utilizadas em seu desenvolvimento, como bibliotecas para gerenciamento de rotas, internacionalização, envio de e-mails e animações."
+            "description": "Isso mesmo! Este website merece lugar na lista por incluir diversas funcionalidades interessantes utilizadas em seu desenvolvimento, como bibliotecas para gerenciamento de rotas, internacionalização, envio de emails e animações."
           },
           "splitIt": {
             "altText": "Diversas planilhas de gastos dispostas lado a lado e levemente rotacionadas",
@@ -142,7 +142,7 @@
             "title": "Deixe sua mensagem:",
             "label": {
               "name": "Nome",
-              "email": "E-mail",
+              "email": "Email",
               "message": "Mensagem"
             },
             "button": {

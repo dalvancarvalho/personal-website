@@ -112,7 +112,7 @@
           "personalWebsite": {
             "altText": "Home screen from Dalvan Carvalho's personal website",
             "heading": "Personal website",
-            "description": "That's right! This website deserves a place on the list for including several interesting features used in its development, such as libraries for routing, internationalization, e-mail sending, and animations."
+            "description": "That's right! This website deserves a place on the list for including several interesting features used in its development, such as libraries for routing, internationalization, email sending, and animations."
           },
           "splitIt": {
             "altText": "Several expenses spreadsheets placed side by side and slightly rotated",
@@ -142,7 +142,7 @@
             "title": "Leave your message:",
             "label": {
               "name": "Name",
-              "email": "E-mail",
+              "email": "Email",
               "message": "Message"
             },
             "button": {

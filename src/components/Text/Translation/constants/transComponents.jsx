@@ -64,7 +64,7 @@ const TRANS_COMPONENTS = {
 
   /* Resume page > Topics section */
   contact: (
-    // Link to e-mail
+    // Link to email
     <a
       className="font-bold text-slate-800 dark:text-gray-200 color-transition underline hover:decoration-2 underline-offset-2"
       href="mailto:contato@dalvanc.com?subject=Message from dalvanc.com!"
