@@ -30,7 +30,7 @@ export default function Hero({ t }) {
       <div className="px-6 h-full grid place-content-center">
         {/* Parallax container */}
         <div
-          className="m-auto w-full sm:max-w-md md:max-w-xl flex flex-col items-start gap-5 2xl:gap-6"
+          className="m-auto w-full sm:max-w-md md:max-w-xl flex flex-col items-start gap-5"
           ref={parallax.text}
         >
           {/* Heading */}
