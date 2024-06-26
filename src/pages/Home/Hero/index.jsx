@@ -19,7 +19,7 @@ export default function Hero({ t }) {
   // Hero section
 
   const parallax = useParallax()
-  const animation = useAnimate(parallax)
+  const animation = useAnimate(parallax, false)
 
   return (
     <Section
@@ -28,28 +28,36 @@ export default function Hero({ t }) {
       ref={animation.scope}
     >
       <div className="px-6 h-full grid place-content-center">
+        {/* Parallax container */}
         <div
-          className="m-auto w-full sm:max-w-md md:max-w-xl 2xl:max-w-2xl 2xl:pr-2 flex flex-col items-start gap-5 2xl:gap-6"
+          className="m-auto w-full sm:max-w-md md:max-w-xl flex flex-col items-start gap-5 2xl:gap-6"
           ref={parallax.text}
         >
+          {/* Heading */}
           <h1 className="title-font text-5xl md:text-7xl">
             <Translation>pages.home.hero.heading</Translation>
           </h1>
-          <Paragraph i18nKey="pages.home.hero.paragraph" variant="hero" />
+
+          {/* Paragraph */}
+          <Paragraph i18nKey="pages.home.hero.paragraph" variant="large" />
+
+          {/* Buttons */}
           <div className="mt-2 md:mt-5 flex hero-buttons-gap">
             <ScrollLink href="contact" spy={true} tabIndex="-1" to="contact">
-              <Button className="md:text-base 2xl:text-[1.1rem]" variant="primary">
+              <Button className="md:text-base md:!px-14 md:!py-4" variant="primary">
                 {t('pages.home.hero.primaryButton')}
               </Button>
             </ScrollLink>
             <ScrollLink href="projects" spy={true} tabIndex="-1" to="projects">
-              <Button className="md:text-base 2xl:text-[1.1rem]" variant="secondary">
+              <Button className="md:text-base md:!py-4" variant="secondary">
                 {t('pages.home.hero.secondaryButton')}
               </Button>
             </ScrollLink>
           </div>
         </div>
       </div>
+
+      {/* Dynamic background */}
       <div className="absolute bottom-0 -z-10 size-full" ref={parallax.bg}>
         <DynamicBg
           alt={t('pages.home.hero.bgAltText')}

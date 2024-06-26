@@ -42,7 +42,7 @@
   }
 
   .hero-buttons-gap {
-    @apply gap-10 2xl:gap-12;
+    @apply gap-10 md:gap-14;
   }
 
   .label-hover {
@@ -126,7 +126,7 @@
   }
 
   .hero-buttons-gap {
-    @apply gap-8 2xl:gap-10;
+    @apply gap-8 md:gap-12;
   }
 
   .label-hover {
