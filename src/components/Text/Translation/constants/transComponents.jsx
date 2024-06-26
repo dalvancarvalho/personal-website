@@ -22,7 +22,7 @@ const TRANS_COMPONENTS = {
   /* Home page > Hero section */
   small: (
     // Smaller portion of the hero section H1
-    <span className="block ml-0.5 mb-2 md:mb-3 font-medium text-lg md:text-2xl tracking-tighter" />
+    <span className="block ml-0.5 mb-3 md:mb-5 font-medium text-base md:text-xl tracking-tighter" />
   ),
 
   thin: (

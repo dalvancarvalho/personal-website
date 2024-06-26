@@ -126,7 +126,7 @@
   }
 
   .hero-buttons-gap {
-    @apply gap-8 md:gap-12;
+    @apply gap-8 md:gap-14;
   }
 
   .label-hover {

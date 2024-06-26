@@ -19,7 +19,7 @@ export default function Hero({ t }) {
   // Hero section
 
   const parallax = useParallax()
-  const animation = useAnimate(parallax, false)
+  const animation = useAnimate(parallax)
 
   return (
     <Section
@@ -39,7 +39,7 @@ export default function Hero({ t }) {
           </h1>
 
           {/* Paragraph */}
-          <Paragraph i18nKey="pages.home.hero.paragraph" variant="large" />
+          <Paragraph i18nKey="pages.home.hero.paragraph" variant="hero" />
 
           {/* Buttons */}
           <div className="mt-2 md:mt-5 flex hero-buttons-gap">
