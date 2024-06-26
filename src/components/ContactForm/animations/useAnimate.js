@@ -17,9 +17,10 @@ export default function useAnimate(animate = true) {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         scope.current.children,
-        { opacity: 0, y: 32 },
+        { opacity: 0, x: screenSize.md ? 0 : 32, y: screenSize.md ? 32 : 0 },
         {
           opacity: 1,
+          x: 0,
           y: 0,
           stagger: 0.125,
           duration: 1.25,
@@ -34,7 +35,7 @@ export default function useAnimate(animate = true) {
 
     // Context cleanup
     return () => ctx.revert()
-  }, [screenSize.lg])
+  }, [screenSize.md])
 
   return { scope }
 }

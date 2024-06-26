@@ -18,13 +18,15 @@ export default function useAnimate(animate = true) {
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        heading.current,
-        { opacity: 0, scale: 1.2 },
+        heading.current.children,
+        { opacity: 0, x: screenSize.md ? 0 : 32, scale: screenSize.md ? 1.2 : 1 },
         {
           opacity: 1,
+          x: 0,
           scale: 1,
-          duration: 0.5,
-          ease: 'power3.in',
+          stagger: 0.125,
+          duration: screenSize.md ? 0.5 : 1.25,
+          ease: screenSize.md ? 'power3.in' : 'power4.out',
           scrollTrigger: {
             trigger: heading.current,
             start: 'bottom bottom',
@@ -32,6 +34,7 @@ export default function useAnimate(animate = true) {
         }
       )
 
+      // 💻 displayed only in medium/large screens
       gsap.fromTo(
         sectionName.current,
         { opacity: 0, scale: 0.8 },

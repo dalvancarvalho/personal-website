@@ -21,10 +21,11 @@ export default function useAnimate(animate = true) {
       items.forEach((item) => {
         gsap.fromTo(
           item,
-          { opacity: 0, x: 32 },
+          { opacity: 0, x: screenSize.md ? 0 : 32, y: screenSize.md ? 32 : 0 },
           {
             opacity: 1,
             x: 0,
+            y: 0,
             duration: 1.25,
             ease: 'power4.out',
             scrollTrigger: {
@@ -37,9 +38,10 @@ export default function useAnimate(animate = true) {
 
       gsap.fromTo(
         contacts.current.children,
-        { opacity: 0, y: 32 },
+        { opacity: 0, x: screenSize.md ? 0 : 32, y: screenSize.md ? 32 : 0 },
         {
           opacity: 1,
+          x: 0,
           y: 0,
           duration: 1.25,
           stagger: 0.125,
@@ -54,7 +56,7 @@ export default function useAnimate(animate = true) {
 
     // Context cleanup
     return () => ctx.revert()
-  }, [screenSize.lg])
+  }, [screenSize.md])
 
   return { scope, contacts }
 }
