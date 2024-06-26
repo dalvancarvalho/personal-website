@@ -35,7 +35,7 @@ export default function useAnimate(animate = true) {
 
     // Context cleanup
     return () => ctx.revert()
-  }, [screenSize.lg])
+  }, [screenSize.md])
 
   return { scope }
 }
