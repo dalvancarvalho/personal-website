@@ -170,7 +170,7 @@ A tabela abaixo lista todos os recursos utilizados pelo website:
 
 ### Icons
 
-All the icons displayed on the page are from [Font Awesome](https://fontawesome.com/).
+All the icons displayed in the page are from [Font Awesome](https://fontawesome.com/).
 
 ## License
 

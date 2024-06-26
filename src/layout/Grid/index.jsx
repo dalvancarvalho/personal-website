@@ -1,7 +1,7 @@
 /* Grid/index.jsx */
 
 export default function Grid({ children, className = '' }) {
-  // Grid displayed on medium/large screens
+  // Grid displayed in medium/large screens
 
   return (
     <div className={`flex flex-col items-center lg:grid grid-cols-12 ${className}`}>

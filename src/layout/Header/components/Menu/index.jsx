@@ -14,7 +14,7 @@ import NavList from '../NavList'
 import ThemeList from '../ThemeList'
 
 export default function Menu({ pathname, t, y }) {
-  // Menu displayed on small screens
+  // Menu displayed in small screens
 
   const { isMenuOpen, setMenuState, ...refs } = useMenu()
   const animation = useAnimate(refs.menu, isMenuOpen)

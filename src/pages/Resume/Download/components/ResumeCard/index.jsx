@@ -37,7 +37,7 @@ export default function ResumeCard({ href, t, title }) {
           src={theme === 'light' ? resume : resumeDark}
         />
 
-        {/* Overlay displayed when the card is hovered on medium/large screens */}
+        {/* Overlay displayed when the card is hovered in medium/large screens */}
         <div className="invisible md:visible">
           <div className="absolute inset-0 h-full w-1/4 -translate-x-full group-hover/link:translate-x-0 group-focus-visible/link:translate-x-0 grid place-items-center bg-accent !transition-all !duration-300">
             <FontAwesomeIcon
