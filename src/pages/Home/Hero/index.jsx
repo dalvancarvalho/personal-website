@@ -19,7 +19,7 @@ export default function Hero({ t }) {
   // Hero section
 
   const parallax = useParallax()
-  const animation = useAnimate(parallax)
+  const animation = useAnimate(parallax, false)
 
   return (
     <Section
@@ -44,12 +44,12 @@ export default function Hero({ t }) {
           {/* Buttons */}
           <div className="mt-2 md:mt-5 flex hero-buttons-gap">
             <ScrollLink href="contact" spy={true} tabIndex="-1" to="contact">
-              <Button className="md:text-base md:!px-14 md:!py-4" variant="primary">
+              <Button className="md:text-base md:!px-12 md:!py-3.5" variant="primary">
                 {t('pages.home.hero.primaryButton')}
               </Button>
             </ScrollLink>
             <ScrollLink href="projects" spy={true} tabIndex="-1" to="projects">
-              <Button className="md:text-base md:!py-4" variant="secondary">
+              <Button className="md:text-base md:!py-3.5" variant="secondary">
                 {t('pages.home.hero.secondaryButton')}
               </Button>
             </ScrollLink>
