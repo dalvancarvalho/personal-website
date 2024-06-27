@@ -45,7 +45,7 @@ const TRANS_COMPONENTS = {
   deploy: (
     // Link to Vercel's website
     <a
-      className="font-bold text-slate-600 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 color-transition footer-link-hover"
+      className="font-bold text-slate-600 dark:text-gray-400 hover:text-slate-900 hover:dark:text-gray-200 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 color-transition"
       href="https://vercel.com"
       target="_blank"
       rel="noopener noreferrer"
@@ -55,7 +55,7 @@ const TRANS_COMPONENTS = {
   developer: (
     // Link to Dalvan Carvalho's website
     <a
-      className="font-bold text-slate-600 dark:text-gray-400 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 color-transition footer-link-hover"
+      className="font-bold text-slate-600 dark:text-gray-400 hover:text-slate-900 hover:dark:text-gray-200 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 color-transition"
       href="https://dalvanc.com"
       target="_blank"
       rel="noopener noreferrer"

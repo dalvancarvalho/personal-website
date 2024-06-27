@@ -24,7 +24,11 @@ export default function Logo() {
       tabIndex="0"
     >
       <span
-        className="text-accent group-focus-visible:text-blue-500 logo-hover group-focus-visible:dark:text-orange-400 color-transition"
+        className="text-accent color-transition
+        group-hover:text-blue-500
+        group-hover:dark:text-orange-400
+        group-focus-visible:text-blue-500
+        group-focus-visible:dark:text-orange-400"
         ref={animation.text}
       ></span>
       <span className="font-urbanist opacity-0" ref={animation.cursor}>

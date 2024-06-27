@@ -67,7 +67,11 @@ export default function About({ t }) {
             <Button callback={() => navigate('resume')} variant="primary">
               {t('pages.home.about.button')}
               <FontAwesomeIcon
-                className="absolute opacity-0 group-focus-visible/button:translate-x-2 group-focus-visible/button:opacity-100 fa-arrow-right-hover"
+                className="absolute right-6 opacity-0 transition-[transform,opacity] ease-elastic-out duration-300 delay-75
+                group-hover/button:translate-x-2
+                group-hover/button:opacity-100
+                group-focus-visible/button:translate-x-2
+                group-focus-visible/button:opacity-100"
                 icon={faArrowRight}
               />
             </Button>

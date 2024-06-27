@@ -24,7 +24,11 @@ export default function Toast({ id, variant }) {
         </p>
       </div>
       <button
-        className="hidden sm:block absolute top-2 right-1 text-slate-400 dark:text-gray-500 focus-visible:text-slate-900 focus-visible:dark:text-gray-200 color-transition close-toast-hover"
+        className="hidden sm:block absolute top-2 right-1 text-slate-400 dark:text-gray-500 color-transition
+        hover:text-slate-900
+        hover:dark:text-gray-200
+        focus-visible:text-slate-900
+        focus-visible:dark:text-gray-200"
         onClick={() => toast.dismiss(id)}
       >
         <FontAwesomeIcon icon={faClose} />

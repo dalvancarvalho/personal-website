@@ -42,7 +42,7 @@ export default function Hero({ t }) {
           <Paragraph i18nKey="pages.home.hero.paragraph" variant="hero" />
 
           {/* Buttons */}
-          <div className="mt-2 md:mt-5 flex hero-buttons-gap">
+          <div className="mt-2 md:mt-5 flex gap-10 md:gap-12">
             <ScrollLink href="contact" spy={true} tabIndex="-1" to="contact">
               <Button className="md:text-base md:!px-12 md:!py-3.5" variant="primary">
                 {t('pages.home.hero.primaryButton')}

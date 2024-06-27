@@ -39,7 +39,11 @@ export default function NotFound() {
           <RouterLink className="mt-2 md:mt-5 2xl:mt-6 group" tabIndex="-1" to="/">
             <Button className="md:text-base 2xl:text-lg" variant="primary">
               <FontAwesomeIcon
-                className="absolute opacity-0 group-focus-visible/button:-translate-x-2 group-focus-visible/button:opacity-100 fa-arrow-left-hover"
+                className="absolute left-6 opacity-0 transition-[transform,opacity] ease-elastic-out duration-300 delay-75
+                group-hover/button:-translate-x-2
+                group-hover/button:opacity-100
+                group-focus-visible/button:-translate-x-2
+                group-focus-visible/button:opacity-100"
                 icon={faArrowLeft}
               />
               {t('pages.notFound.button')}

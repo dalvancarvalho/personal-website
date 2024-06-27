@@ -23,7 +23,11 @@ export default function NavLink({ children, icon, to }) {
 
   return (
     <li
-      className="w-full md:text-base text-slate-500 dark:text-gray-400 focus-visible:md:text-slate-900 focus-visible:md:dark:text-gray-200 whitespace-nowrap nav-link-hover"
+      className="w-full md:text-base text-slate-500 dark:text-gray-400 whitespace-nowrap
+      hover:md:text-slate-900
+      hover:md:dark:text-gray-200
+      focus-visible:md:text-slate-900
+      focus-visible:md:dark:text-gray-200"
       tabIndex="0"
       onKeyDown={(event) => keyboardHandler(event)}
     >

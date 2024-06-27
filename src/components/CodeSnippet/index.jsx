@@ -41,7 +41,11 @@ export default function CodeSnippet({ codeString, extension, language, title }) 
             className="flex items-center gap-2"
           >
             <Paragraph
-              className="!text-slate-500 dark:!text-gray-400 group-focus-visible/button:!text-slate-800 group-focus-visible/button:dark:!text-gray-200 code-snippet-button-hover"
+              className="!text-slate-500 dark:!text-gray-400
+              group-hover/button:!text-slate-800
+              group-hover/button:dark:!text-gray-200
+              group-focus-visible/button:!text-slate-800
+              group-focus-visible/button:dark:!text-gray-200"
               i18nKey="misc.codeSnippet.button.paragraph"
               variant="small-semibold"
             />

@@ -60,7 +60,13 @@ export default function ContactForm() {
         ) : (
           <>
             {t('pages.home.contact.form.button.default')}
-            <div className="absolute flex items-center gap-1 opacity-0 group-focus-visible/button:opacity-100 fa-envelope-hover group-focus-visible/button:translate-x-2">
+            <div
+              className="absolute right-6 flex items-center gap-1 opacity-0 transition-[transform,opacity] ease-elastic-out duration-300 delay-75
+              group-hover/button:translate-x-2
+              group-hover/button:opacity-100
+              group-focus-visible/button:translate-x-2
+              group-focus-visible/button:opacity-100"
+            >
               <FontAwesomeIcon icon={faEnvelope} />
               <FontAwesomeIcon className="text-[0.6rem]" icon={faArrowRight} />
             </div>

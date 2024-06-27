@@ -7,7 +7,7 @@ export default function SocialNetwork({ hoverColor, icon, name, url }) {
 
   return (
     <a
-      className={`${hoverColor} flex text-slate-600 dark:text-gray-400 focus-visible:dark:text-gray-200 color-transition social-network-hover`}
+      className={`flex text-slate-600 dark:text-gray-400 ${hoverColor} hover:dark:text-gray-200 focus-visible:dark:text-gray-200 color-transition`}
       href={url}
       rel="noopener noreferrer"
       target="_blank"
