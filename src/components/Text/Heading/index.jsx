@@ -22,7 +22,7 @@ export default function Heading({
     >
       {/* Section name (💻 displayed in medium/large screens) */}
       <span
-        className={`${sectionNameColor} hidden md:block absolute -z-10 top-1/2 -translate-y-1/2 translate-x-[0.8rem] text-[6.25rem] uppercase tracking-[1.6rem] select-none whitespace-nowrap color-transition`}
+        className={`${sectionNameColor} hidden md:block absolute -z-10 top-[60%] -translate-y-1/2 translate-x-[0.8rem] text-[6.25rem] uppercase tracking-[1.6rem] select-none whitespace-nowrap color-transition`}
         ref={animationRefs.sectionName}
       >
         {t(sectionName)}
