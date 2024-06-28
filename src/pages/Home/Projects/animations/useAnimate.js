@@ -18,7 +18,7 @@ export default function useAnimate(animate = true) {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         paragraph.current,
-        { opacity: 0, scale: screenSize.md ? 1.25 : 1, x: screenSize.md ? 0 : 32 },
+        { opacity: 0, scale: screenSize.md ? 1.15 : 1, x: screenSize.md ? 0 : 32 },
         {
           opacity: 1,
           scale: 1,

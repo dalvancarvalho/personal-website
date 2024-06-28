@@ -56,11 +56,12 @@ export default function useAnimate(animate = true) {
 
       gsap.fromTo(
         quotation.current,
-        { opacity: 0 },
+        { opacity: 0, scale: 0.85 },
         {
           opacity: 1,
+          scale: 1,
           duration: 1.5,
-          ease: 'power4.out',
+          ease: 'power4.inOut',
           scrollTrigger: {
             trigger: topics.current,
             start: 'top 80%',
