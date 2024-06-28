@@ -14,8 +14,8 @@ export default function useScreenPanel() {
   const { isPortraitMode, screenDimensions, screenSize } = useScreenProps()
   const { width, height } = screenDimensions
 
-  const orientation = isPortraitMode ? 'Portrait' : 'Landscape'
   const zoomLevel = Math.round(window.devicePixelRatio * 100) + '%'
+  const orientation = isPortraitMode ? 'Portrait' : 'Landscape'
   const displaySize = window.screen.width + ' x ' + window.screen.height
   const viewportSize = width + ' x ' + height
 
