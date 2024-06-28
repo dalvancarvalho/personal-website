@@ -18,13 +18,13 @@ export default function useAnimate(animate = true) {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         paragraph.current,
-        { opacity: 0, x: screenSize.md ? 0 : 32, y: screenSize.md ? 32 : 0 },
+        { opacity: 0, scale: screenSize.md ? 1.25 : 1, x: screenSize.md ? 0 : 32 },
         {
           opacity: 1,
+          scale: 1,
           x: 0,
-          y: 0,
           duration: 1.25,
-          ease: 'power4.out',
+          ease: screenSize.md ? 'power4.inOut' : 'power4.out',
           scrollTrigger: {
             trigger: paragraph.current,
             start: 'bottom bottom',

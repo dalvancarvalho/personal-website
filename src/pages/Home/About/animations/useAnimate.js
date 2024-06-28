@@ -24,11 +24,10 @@ export default function useAnimate(animate = true) {
       paragraphs.forEach((paragraph) => {
         gsap.fromTo(
           paragraph,
-          { opacity: 0, x: screenSize.md ? 0 : 32, y: screenSize.md ? 32 : 0 },
+          { opacity: 0, x: 32 },
           {
             opacity: 1,
             x: 0,
-            y: 0,
             duration: 1.25,
             ease: 'power4.out',
             scrollTrigger: {
@@ -41,11 +40,10 @@ export default function useAnimate(animate = true) {
 
       gsap.fromTo(
         stack.current.children,
-        { opacity: 0, x: screenSize.md ? 0 : 32, y: screenSize.md ? 32 : 0 },
+        { opacity: 0, x: 32 },
         {
           opacity: 1,
           x: 0,
-          y: 0,
           duration: 1.25,
           stagger: 0.125,
           ease: 'power4.out',
@@ -58,16 +56,14 @@ export default function useAnimate(animate = true) {
 
       gsap.fromTo(
         quotation.current,
-        { opacity: 0, x: screenSize.md ? 0 : 32, y: screenSize.md ? 32 : 0 },
+        { opacity: 0 },
         {
           opacity: 1,
-          x: 0,
-          y: 0,
-          duration: 1.25,
+          duration: 1.5,
           ease: 'power4.out',
           scrollTrigger: {
             trigger: topics.current,
-            start: 'top 65%',
+            start: 'top 80%',
           },
         }
       )
@@ -75,12 +71,11 @@ export default function useAnimate(animate = true) {
       // 💻 displayed only in medium/large screens
       gsap.fromTo(
         stackImage.current,
-        { opacity: 0, scale: 0.85 },
+        { opacity: 0, x: -32 },
         {
           opacity: 1,
-          scale: 1,
+          x: 0,
           duration: 1.5,
-          delay: 0.75,
           ease: 'power4.out',
           scrollTrigger: {
             trigger: stackImage.current,

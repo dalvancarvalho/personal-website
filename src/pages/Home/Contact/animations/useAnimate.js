@@ -16,20 +16,19 @@ export default function useAnimate(animate = true) {
     if (!animate) return
 
     const ctx = gsap.context((self) => {
-      const items = self.selector('.contact-paragraph')
+      const paragraphs = self.selector('.contact-paragraph')
 
-      items.forEach((item) => {
+      paragraphs.forEach((paragraph) => {
         gsap.fromTo(
-          item,
-          { opacity: 0, x: screenSize.md ? 0 : 32, y: screenSize.md ? 32 : 0 },
+          paragraph,
+          { opacity: 0, x: 32 },
           {
             opacity: 1,
             x: 0,
-            y: 0,
             duration: 1.25,
             ease: 'power4.out',
             scrollTrigger: {
-              trigger: item,
+              trigger: paragraph,
               start: 'bottom bottom',
             },
           }
@@ -38,11 +37,10 @@ export default function useAnimate(animate = true) {
 
       gsap.fromTo(
         contacts.current.children,
-        { opacity: 0, x: screenSize.md ? 0 : 32, y: screenSize.md ? 32 : 0 },
+        { opacity: 0, x: 32 },
         {
           opacity: 1,
           x: 0,
-          y: 0,
           duration: 1.25,
           stagger: 0.125,
           ease: 'power4.out',
