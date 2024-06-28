@@ -36,11 +36,11 @@ export default function Projects({ screenSize, t }) {
         />
         <div className="flex flex-col items-center gap-20 md:gap-24">
           {PROJECTS.map(({ id, ...props }, index) =>
-            screenSize.md ? (
-              // 💻 in medium/large screens, it displays a normal card
+            screenSize.sm ? (
+              // 💻 on some small screens and on medium to large screens, it displays a normal card
               <Card key={id} index={index} t={t} {...props} />
             ) : (
-              // 📱 in small screens, it displays a card specially made for mobile devices
+              // 📱 in mobile screens, it displays a card specially designed for mobile devices
               <SmallCard key={id} index={index} t={t} {...props} />
             )
           )}
