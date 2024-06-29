@@ -14,7 +14,7 @@ export default function Tech({ image, tech, url }) {
         title={tech}
       >
         <img
-          className="size-5 md:size-6 brightness-0 invert md:group-hover/tech:scale-[120%] select-none transition-transform duration-300"
+          className="size-5 md:size-6 brightness-0 invert sm:group-hover/tech:scale-[120%] select-none transition-transform duration-300"
           src={image.src}
           alt={image.alt}
         />
