@@ -1,4 +1,4 @@
-/* KeyTag.jsx */
+/* KeyTag/index.jsx */
 
 export default function KeyTag({ children }) {
   // Indicates a key that is part of a keyboard shortcut
