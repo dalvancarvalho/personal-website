@@ -73,7 +73,7 @@ const TRANS_COMPONENTS = {
 
   pulse: (
     // Pulse animation
-    <span className="text-accent animate-pulse color-transition whitespace-nowrap" />
+    <span className="text-sm md:text-base text-accent animate-pulse color-transition whitespace-nowrap" />
   ),
 }
 
