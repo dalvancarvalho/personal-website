@@ -77,11 +77,11 @@ export default function SmallCard({
           group-data-[parity=odd]/card:items-start"
         >
           {inProgress && (
-            <span className="text-xs font-bold leading-[0] font-mark-pro tracking-tight uppercase">
+            <span className="text-xs font-black text-accent leading-[0] font-mark-pro tracking-widest uppercase animate-pulse color-transition">
               {t('pages.home.projects.inProgress')}
             </span>
           )}
-          <h3 className="title-font text-[1.7rem] leading-6">{t(heading)}</h3>
+          <h3 className="title-font text-[1.75rem] leading-6">{t(heading)}</h3>
           <Paragraph
             className="relative rounded-lg py-4 bg-slate-50 dark:bg-dark-2 overflow-hidden shadow-lg
             group-data-[parity=odd]/card:pl-[21px]

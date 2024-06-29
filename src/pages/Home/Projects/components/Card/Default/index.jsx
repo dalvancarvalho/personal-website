@@ -86,7 +86,7 @@ export default function Card({
           ref={parallax.card}
         >
           {inProgress && (
-            <span className="text-sm md:text-base !leading-[0] text-accent font-bold font-mark-pro tracking-tight uppercase animate-pulse color-transition">
+            <span className="text-xs md:text-sm !leading-[0] text-accent font-black font-mark-pro tracking-widest uppercase animate-pulse color-transition">
               {t('pages.home.projects.inProgress')}
             </span>
           )}
