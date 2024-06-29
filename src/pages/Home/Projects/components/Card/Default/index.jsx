@@ -49,13 +49,15 @@ export default function Card({
         <img
           alt={t(thumbnail.altText)}
           className="size-full select-none transition-[filter,transform] ease-out duration-300
-          group-data-[parity=odd]/card:group-hover/image:-translate-x-14
-          group-data-[parity=even]/card:group-hover/image:translate-x-14"
+             group-data-[parity=odd]/card:group-hover/image:-translate-x-12
+          md:group-data-[parity=odd]/card:group-hover/image:-translate-x-14
+             group-data-[parity=even]/card:group-hover/image:translate-x-12
+          md:group-data-[parity=even]/card:group-hover/image:translate-x-14"
           src={thumbnail.src}
         />
         {/* Hidden tech stack list (appears on card hover) */}
         <ul
-          className="absolute -z-10 top-0 w-14 h-full flex flex-col justify-center gap-4 bg-accent list-none transition-all duration-300
+          className="absolute -z-10 top-0 w-12 md:w-14 h-full flex flex-col justify-center gap-3 md:gap-4 bg-accent list-none transition-all duration-300
           group-data-[parity=even]/card:left-0
           group-data-[parity=odd]/card:right-0"
         >
@@ -84,20 +86,26 @@ export default function Card({
           ref={parallax.card}
         >
           {inProgress && (
-            <span className="text-base font-bold leading-[0] font-mark-pro tracking-tight uppercase">
+            <span className="text-sm md:text-base !leading-[0] text-accent font-bold font-mark-pro tracking-tight uppercase animate-pulse color-transition">
               {t('pages.home.projects.inProgress')}
             </span>
           )}
-          <h3 className="title-font text-[2.25rem] leading-9">{t(heading)}</h3>
+          <h3 className="title-font text-3xl md:text-4xl leading-9">{t(heading)}</h3>
           <Paragraph
-            className="rounded-lg p-4 bg-slate-50 dark:bg-dark-2 shadow-lg
-            group-data-[parity=odd]/card:border-l-[5px]
-            group-data-[parity=even]/card:border-r-[5px]
-            group-data-[parity=odd]/card:border-l-accent
-            group-data-[parity=even]/card:border-r-accent"
-            i18nKey={description}
+            className="relative rounded-lg py-4 bg-slate-50 dark:bg-dark-2 overflow-hidden shadow-lg
+            group-data-[parity=odd]/card:pl-[21px]
+            group-data-[parity=odd]/card:pr-4
+            group-data-[parity=even]/card:pl-4
+            group-data-[parity=even]/card:pr-[21px]"
             variant="small"
-          />
+          >
+            {t(description)}
+            <span
+              className="absolute top-0 w-[5px] h-full bg-accent color-transition
+              group-data-[parity=odd]/card:left-0
+              group-data-[parity=even]/card:right-0"
+            ></span>
+          </Paragraph>
           <Button
             callback={() => navigate(route)}
             className="shadow-lg dark:shadow-none"

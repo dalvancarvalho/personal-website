@@ -22,14 +22,14 @@ export default function ResumeCard({ href, t, title }) {
   return (
     <div className="max-w-max flex flex-col items-start group/card">
       <a
-        className="relative mb-3 md:mb-4 rounded-lg border-l-[5px] border-accent color-transition overflow-hidden group/link"
+        className="relative mb-3 md:mb-4 rounded-lg color-transition overflow-hidden group/link"
         href={href + format}
         rel="noopener noreferrer"
         target="_blank"
       >
         <img
           alt={t('pages.resume.download.altText')}
-          className="w-[295px] md:w-80 h-auto select-none transition-[filter] duration-300
+          className="w-[295px] translate-x-0.5 md:w-80 h-auto select-none transition-[filter] duration-300
           md:group-hover/link:blur-[2px]
           md:group-focus-visible/link:blur-[2px]
           md:group-hover/link:dark:brightness-50
@@ -38,15 +38,28 @@ export default function ResumeCard({ href, t, title }) {
         />
 
         {/* Overlay displayed when the card is hovered in medium/large screens */}
-        <div className="invisible md:visible">
-          <div className="absolute inset-0 h-full w-1/4 -translate-x-full group-hover/link:translate-x-0 group-focus-visible/link:translate-x-0 grid place-items-center bg-accent !transition-all !duration-300">
+        <div className="">
+          <div
+            className="absolute inset-0 h-full w-1/4 grid place-items-center bg-accent !transition-all !duration-300
+               -translate-x-[92%]
+            md:-translate-x-[94%]
+            md:group-hover/link:translate-x-0
+            md:group-focus-visible/link:translate-x-0"
+          >
             <FontAwesomeIcon
-              className="-translate-x-[2px] text-white"
+              className="text-white"
               icon={faArrowUpRightFromSquare}
               size="xl"
             />
           </div>
-          <div className="absolute top-0 right-0 translate-x-12 group-hover/link:translate-x-0 group-focus-visible/link:translate-x-0 w-3/4 h-full grid place-items-center opacity-0 group-hover/link:opacity-100 group-focus-visible/link:opacity-100 transition-all duration-300">
+          <div
+            className="absolute top-0 right-0 w-3/4 h-full grid place-items-center opacity-0 transition-all duration-300
+            md:translate-x-12
+            md:group-hover/link:translate-x-0
+            md:group-hover/link:opacity-100
+            md:group-focus-visible/link:translate-x-0 
+            md:group-focus-visible/link:opacity-100"
+          >
             <Paragraph
               className="!text-black dark:!text-white"
               i18nKey="pages.resume.download.newTab"
@@ -72,7 +85,12 @@ export default function ResumeCard({ href, t, title }) {
         >
           Download
           <FontAwesomeIcon
-            className="invisible md:visible -translate-y-2 group-hover/button:translate-y-0 group-focus-visible/button:translate-y-0 opacity-0 group-hover/button:opacity-100 group-focus-visible/button:opacity-100 transition-[transform,opacity] duration-300"
+            className="invisible md:visible opacity-0 transition-[transform,opacity] duration-300
+            -translate-y-2
+            group-hover/button:translate-y-0
+            group-hover/button:opacity-100
+            group-focus-visible/button:translate-y-0 
+            group-focus-visible/button:opacity-100"
             icon={faArrowDown}
             size="sm"
           />

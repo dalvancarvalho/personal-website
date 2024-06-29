@@ -83,14 +83,20 @@ export default function SmallCard({
           )}
           <h3 className="title-font text-[1.7rem] leading-6">{t(heading)}</h3>
           <Paragraph
-            className="rounded-lg p-4 bg-slate-50 dark:bg-dark-2 shadow-lg
-            group-data-[parity=even]/card:border-r-[5px]
-            group-data-[parity=odd]/card:border-l-[5px]
-            group-data-[parity=even]/card:border-r-accent
-            group-data-[parity=odd]/card:border-l-accent"
-            i18nKey={description}
+            className="relative rounded-lg py-4 bg-slate-50 dark:bg-dark-2 overflow-hidden shadow-lg
+            group-data-[parity=odd]/card:pl-[21px]
+            group-data-[parity=odd]/card:pr-4
+            group-data-[parity=even]/card:pl-4
+            group-data-[parity=even]/card:pr-[21px]"
             variant="fixed-sm"
-          />
+          >
+            {t(description)}
+            <span
+              className="absolute top-0 w-[5px] h-full bg-accent color-transition
+              group-data-[parity=odd]/card:left-0
+              group-data-[parity=even]/card:right-0"
+            ></span>
+          </Paragraph>
           <Button
             callback={() => navigate(route)}
             className="shadow-lg"

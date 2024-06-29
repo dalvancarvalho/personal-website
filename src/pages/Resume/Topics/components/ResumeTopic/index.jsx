@@ -12,8 +12,10 @@ import Paragraph from '../../../../../components/Text/Paragraph'
 export default function ResumeTopic({ icon, index, items, largeItems, t, title }) {
   // Displays all the items related to a topic of the resume
 
+  const normalizedIndex = index + 1
+
   return (
-    <AccordionItem value={`item-${index + 1}`}>
+    <AccordionItem value={`item-${normalizedIndex}`}>
       <AccordionTrigger>
         <Paragraph
           className="flex items-center gap-3 !text-slate-800 dark:!text-gray-200"
@@ -43,17 +45,18 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
                 key={id}
               >
                 <a
-                  className="group-data-[bullet-points=true]:mb-3.5 group-data-[bullet-points=false]:mb-1.5 rounded-lg border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
+                  className="relative group-data-[bullet-points=true]:mb-3.5 group-data-[bullet-points=false]:mb-1.5 rounded-lg pl-5 pr-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
                   href={url}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
+                  <div className="absolute left-0 w-[5px] h-full bg-accent color-transition"></div>
                   <div className="flex-1">
                     <h4 className="text-base md:text-lg font-semibold text-slate-800 dark:text-gray-200 color-transition">
                       {t(heading)}
                     </h4>
                     <Paragraph
-                      className="flex flex-wrap items-center gap-x-2 !text-slate-600 dark:!text-gray-400 text-pretty"
+                      className="flex flex-wrap items-center gap-x-1 !text-slate-600 dark:!text-gray-400 text-pretty"
                       i18nKey={subheading}
                       variant="small-semibold"
                     />
@@ -86,11 +89,12 @@ export default function ResumeTopic({ icon, index, items, largeItems, t, title }
             ) : (
               <li className="mb-1.5" key={id}>
                 <a
-                  className="relative isolate min-h-12 h-full rounded-lg border-l-[5px] border-accent px-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
+                  className="relative isolate min-h-12 h-full rounded-md pl-5 pr-[15px] py-2 bg-slate-100 dark:bg-dark-2 hover:bg-slate-150 hover:dark:bg-dark-1 flex items-center overflow-hidden color-transition group"
                   href={url}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
+                  <div className="absolute left-0 w-[5px] h-full bg-accent color-transition"></div>
                   <div className="flex-1">
                     <h4 className="text-base md:text-lg font-semibold text-slate-800 dark:text-gray-200 color-transition">
                       {t(heading)}
