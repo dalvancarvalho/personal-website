@@ -74,22 +74,24 @@ O website conta com uma versão clara e uma escura. Você pode pré-visualizar a
 
 A tabela abaixo lista todos os recursos utilizados pelo website:
 
-| Recurso                                                                       | Utilização                                                        |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [EmailJS](https://www.emailjs.com/)                                           | Envia emails diretamente do formulário de contato                 |
-| [Embla Carousel](https://www.embla-carousel.com/)                             | Exibe items dentro de um componente 'carrossel'                   |
-| [Font Awesome](https://fontawesome.com/)                                      | Ícones e logomarcas                                               |
-| [Fontsource](https://fontsource.org/)                                         | Hospeda fontes do Google localmente                               |
-| [GSAP](https://greensock.com/gsap/)                                           | Exibe diversas animações ao longo do website                      |
+| Recurso                                                                       |                            Utilização                             |
+| ----------------------------------------------------------------------------- | :---------------------------------------------------------------: |
+| [EmailJS](https://www.emailjs.com/)                                           |         Envia emails diretamente do formulário de contato         |
+| [Embla Carousel](https://www.embla-carousel.com/)                             |          Exibe items dentro de um componente 'carrossel'          |
+| [Font Awesome](https://fontawesome.com/)                                      |                        Ícones e logomarcas                        |
+| [Fontsource](https://fontsource.org/)                                         |                Hospeda fontes do Google localmente                |
+| [GSAP](https://greensock.com/gsap/)                                           |           Exibe diversas animações ao longo do website            |
 | [i18next](https://react.i18next.com/)                                         | Permite aos usuários alternar entre os idiomas português e inglês |
-| [Prism](https://prismjs.com/)                                                 | Realce de sintaxe para blocos de código                           |
-| [Radix](https://www.radix-ui.com/)                                            | Exibe/oculta items dentro de um componente 'acordeão'             |
-| [React Confetti](https://www.npmjs.com/package/react-confetti)                | Exibe uma animação de confetes após o envio do formulário         |
-| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Gerenciamento de metadados                                        |
-| [React Router](https://reactrouter.com/en/main/)                              | Gerenciamento de rotas                                            |
-| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Animação de rolagem vertical                                      |
-| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Efeito paralaxe na seção principal e nos cards de projeto         |
-| [Sonner](https://sonner.emilkowal.ski/)                                       | Exibe mensagens curtas dentro de um componente 'toast'            |
+| [Prism](https://prismjs.com/)                                                 |              Realce de sintaxe para blocos de código              |
+| [Radix](https://www.radix-ui.com/)                                            |       Exibe/oculta items dentro de um componente 'acordeão'       |
+| [React Confetti](https://www.npmjs.com/package/react-confetti)                |     Exibe uma animação de confetes após o envio do formulário     |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       |                    Gerenciamento de metadados                     |
+| [React Router](https://reactrouter.com/en/main/)                              |                      Gerenciamento de rotas                       |
+| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   |                   Animação de rolagem vertical                    |
+| [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) |     Efeito paralaxe na seção principal e nos cards de projeto     |
+| [Sonner](https://sonner.emilkowal.ski/)                                       |      Exibe mensagens curtas dentro de um componente 'toast'       |
+
+<br />
 
 [Vite](https://vitejs.dev/), [React](https://react.dev/) e [Tailwind CSS](https://tailwindcss.com/) também foram utilizados durante o desenvolvimento.
 

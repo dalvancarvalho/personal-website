@@ -79,22 +79,24 @@ The website counts with a light and a dark version. You can preview both in the 
 The table below lists all the resources used by the website:
 A tabela abaixo lista todos os recursos utilizados pelo website:
 
-| Resource                                                                      | Usage                                                 |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------- |
-| [EmailJS](https://www.emailjs.com/)                                           | Send emails directly from the contact form            |
-| [Embla Carousel](https://www.embla-carousel.com/)                             | Display items inside a carousel component             |
-| [Font Awesome](https://fontawesome.com/)                                      | Icons and brand logos                                 |
-| [Fontsource](https://fontsource.org/)                                         | Host Google Fonts locally                             |
-| [GSAP](https://greensock.com/gsap/)                                           | Display several animations across the website         |
+| Resource                                                                      |                         Usage                         |
+| ----------------------------------------------------------------------------- | :---------------------------------------------------: |
+| [EmailJS](https://www.emailjs.com/)                                           |      Send emails directly from the contact form       |
+| [Embla Carousel](https://www.embla-carousel.com/)                             |       Display items inside a carousel component       |
+| [Font Awesome](https://fontawesome.com/)                                      |                 Icons and brand logos                 |
+| [Fontsource](https://fontsource.org/)                                         |               Host Google Fonts locally               |
+| [GSAP](https://greensock.com/gsap/)                                           |     Display several animations across the website     |
 | [i18next](https://react.i18next.com/)                                         | Allow users to switch between Portuguese and English  |
-| [Prism](https://prismjs.com/)                                                 | Syntax highlighter for code snippets                  |
-| [Radix](https://www.radix-ui.com/)                                            | Show/hide sections inside an accordion component      |
-| [React Confetti](https://www.npmjs.com/package/react-confetti)                | Display a confetti animation on form submission       |
-| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       | Metadata management                                   |
-| [React Router](https://reactrouter.com/en/main/)                              | Routing management                                    |
-| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   | Vertical scrolling animation                          |
+| [Prism](https://prismjs.com/)                                                 |         Syntax highlighter for code snippets          |
+| [Radix](https://www.radix-ui.com/)                                            |   Show/hide sections inside an accordion component    |
+| [React Confetti](https://www.npmjs.com/package/react-confetti)                |    Display a confetti animation on form submission    |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async/)       |                  Metadata management                  |
+| [React Router](https://reactrouter.com/en/main/)                              |                  Routing management                   |
+| [React Scroll](https://www.npmjs.com/package/react-scroll/)                   |             Vertical scrolling animation              |
 | [React Scroll Parallax](https://www.npmjs.com/package/react-scroll-parallax/) | Parallax effect on the hero section and project cards |
-| [Sonner](https://sonner.emilkowal.ski/)                                       | Display short messages inside a toast component       |
+| [Sonner](https://sonner.emilkowal.ski/)                                       |    Display short messages inside a toast component    |
+
+<br />
 
 [Vite](https://vitejs.dev/), [React](https://react.dev/), and [Tailwind CSS](https://tailwindcss.com/) were also used during the development.
 
