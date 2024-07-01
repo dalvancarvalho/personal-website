@@ -295,6 +295,14 @@ const RESUME_TOPICS = [
             id: crypto.randomUUID(),
             bulletPoint: 'pages.resume.topics.professionalExp.companyII.bulletIII',
           },
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyII.bulletIV',
+          },
+          {
+            id: crypto.randomUUID(),
+            bulletPoint: 'pages.resume.topics.professionalExp.companyII.bulletV',
+          },
         ],
       },
       {
