@@ -71,6 +71,11 @@ const TRANS_COMPONENTS = {
     />
   ),
 
+  period: (
+    // Role's period of activity
+    <span className="text-sm md:text-base text-slate-600 dark:text-gray-400 color-transition" />
+  ),
+
   pulse: (
     // Pulse animation
     <span className="text-sm md:text-base text-accent animate-pulse color-transition whitespace-nowrap" />
