@@ -15,9 +15,9 @@ export function useToast(variant) {
     toast.custom((id) => <Toast id={id} variant={variant} />)
   }
 
-  function deleteToast(id) {
+  function removeToast(id) {
     toast.dismiss(id)
   }
 
-  return { createToast, deleteToast, toastProps }
+  return { createToast, removeToast, toastProps }
 }
