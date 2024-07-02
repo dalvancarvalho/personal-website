@@ -1,6 +1,6 @@
 /* Spinner/index.jsx */
 
-export default function Spinner() {
+export function Spinner() {
   // Loading spinner used in combination with the 'Button' component
 
   return (

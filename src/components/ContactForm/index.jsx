@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
 
 import { useContactForm } from './hooks/useContactForm'
-import useAnimate from './animations/useAnimate'
+import { useAnimate } from './animations/useAnimate'
 
-import Button from '../Button'
-import Spinner from '../Button/components/Spinner'
-import Input from './components/Input'
-import TextArea from './components/TextArea'
+import { Button } from '../Button'
+import { Spinner } from '../Button/components/Spinner'
+import { Input } from './components/Input'
+import { TextArea } from './components/TextArea'
 
-export default function ContactForm() {
+export function ContactForm() {
   // Contact form
 
   const { handleSubmit, isSubmitting, ...inputs } = useContactForm()

@@ -5,13 +5,13 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
-import useAnimate from './animations/useAnimate'
+import { useAnimate } from './animations/useAnimate'
 
-import Button from '../../../../../../components/Button'
-import Paragraph from '../../../../../../components/Text/Paragraph'
-import Tech from '../components/Tech'
+import { Button } from '../../../../../../components/Button'
+import { Paragraph } from '../../../../../../components/Text/Paragraph'
+import { Tech } from '../components/Tech'
 
-export default function SmallCard({
+export function SmallCard({
   description,
   heading,
   index,

@@ -1,6 +1,6 @@
 /* Tech/index.jsx */
 
-export default function Tech({ image, tech, url }) {
+export function Tech({ image, tech, url }) {
   // Link to the tech's page
 
   return (

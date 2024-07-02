@@ -2,11 +2,11 @@
 
 import { forwardRef } from 'react'
 
-import Translation from '../Translation'
+import { Translation } from '../Translation'
 
-import PARAGRAPH_VARIANTS from './constants/paragraphVariants'
+import { PARAGRAPH_VARIANTS } from './constants/paragraphVariants'
 
-const Paragraph = forwardRef(function Paragraph(
+export const Paragraph = forwardRef(function Paragraph(
   { children, className = '', i18nKey, variant = 'medium' },
   ref
 ) {
@@ -20,5 +20,3 @@ const Paragraph = forwardRef(function Paragraph(
     </p>
   )
 })
-
-export default Paragraph

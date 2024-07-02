@@ -1,17 +1,17 @@
 /* useParallax.js */
 
-import { useParallax } from 'react-scroll-parallax'
+import { useParallax as useReactScrollParallax } from 'react-scroll-parallax'
 
-export default function useHeroParallax() {
+export function useParallax() {
   // Hero section parallax effect
 
-  const { ref: bg } = useParallax({
+  const { ref: bg } = useReactScrollParallax({
     opacity: [1, -0.5],
     shouldAlwaysCompleteAnimation: true,
     translateY: [0, 70],
   })
 
-  const { ref: text } = useParallax({
+  const { ref: text } = useReactScrollParallax({
     opacity: [1, -0.25],
     scale: [1, 0.75],
     shouldAlwaysCompleteAnimation: true,

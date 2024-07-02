@@ -3,9 +3,9 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-import useScreenProps from '../../../../hooks/useScreenProps'
+import { useScreenProps } from '../../../../hooks/useScreenProps'
 
-export default function useAnimate(animate = true) {
+export function useAnimate(animate = true) {
   // About section animation
 
   const { screenSize } = useScreenProps()

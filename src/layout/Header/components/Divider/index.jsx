@@ -1,6 +1,6 @@
 /* Divider/index.jsx */
 
-export default function Divider({ pathname, y }) {
+export function Divider({ pathname, y }) {
   // Vertical divider
 
   return (

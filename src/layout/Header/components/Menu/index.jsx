@@ -3,17 +3,17 @@
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import useMenu from '../../../../context/MenuContext'
-import useAnimate from './animations/useAnimate'
+import { useMenu } from '../../../../context/MenuContext'
+import { useAnimate } from './animations/useAnimate'
 
-import Container from '../../../Container'
+import { Container } from '../../../Container'
 
-import Button from '../../../../components/Button'
-import LanguageList from '../LanguageList'
-import NavList from '../NavList'
-import ThemeList from '../ThemeList'
+import { Button } from '../../../../components/Button'
+import { LanguageList } from '../LanguageList'
+import { NavList } from '../NavList'
+import { ThemeList } from '../ThemeList'
 
-export default function Menu({ pathname, t, y }) {
+export function Menu({ pathname, t, y }) {
   // Menu displayed in small screens
 
   const { isMenuOpen, setMenuState, ...refs } = useMenu()

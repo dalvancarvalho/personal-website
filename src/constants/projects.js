@@ -20,7 +20,7 @@ import typeScript from '../assets/svg/logos/typescript.svg'
 import vite from '../assets/svg/logos/vite.svg'
 
 // List of attributes of each project displayed in the 'Projects' section
-const PROJECTS = [
+export const PROJECTS = [
   {
     id: crypto.randomUUID(),
     heading: 'pages.home.projects.brGeo.heading',
@@ -213,5 +213,3 @@ const PROJECTS = [
 export const brGeo = PROJECTS[0]
 export const personalWebsite = PROJECTS[1]
 export const splitIt = PROJECTS[2]
-
-export default PROJECTS

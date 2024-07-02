@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 
-export default function useInputStyle(inputName, inputs) {
+export function useInputStyle(inputName, inputs) {
   // Handles the logic behind the input style
 
   const container = useRef(null)

@@ -2,7 +2,10 @@
 
 import { forwardRef } from 'react'
 
-const Section = forwardRef(function Section({ children, className = '', id }, ref) {
+export const Section = forwardRef(function Section(
+  { children, className = '', id },
+  ref
+) {
   // Regular section
 
   return (
@@ -11,5 +14,3 @@ const Section = forwardRef(function Section({ children, className = '', id }, re
     </section>
   )
 })
-
-export default Section

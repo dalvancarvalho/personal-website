@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 
-export default function useConsoleMessage() {
+export function useConsoleMessage() {
   // Welcome message displayed inside dev tools
 
   const STRING =

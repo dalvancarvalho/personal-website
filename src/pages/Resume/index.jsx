@@ -2,15 +2,15 @@
 
 import { useTranslation } from 'react-i18next'
 
-import useScrollSpy from '../../hooks/useScrollSpy'
+import { useScrollSpy } from '../../hooks/useScrollSpy'
 
-import Meta from '../../components/Meta'
+import { Meta } from '../../components/Meta'
 
-import PageHeader from '../../layout/PageHeader'
-import MainSection from '../../layout/Section/Main'
+import { PageHeader } from '../../layout/PageHeader'
+import { MainSection } from '../../layout/Section/Main'
 
-import Download from './Download'
-import Topics from './Topics'
+import { Download } from './Download'
+import { Topics } from './Topics'
 
 export default function Resume() {
   // Resume page
@@ -33,8 +33,8 @@ export default function Resume() {
           linkedIn="https://www.linkedin.com/in/dalvancarvalho/"
           t={t}
         />
-        <Topics t={t} />
-        <Download t={t} />
+        <Topics />
+        <Download />
       </MainSection>
     </>
   )

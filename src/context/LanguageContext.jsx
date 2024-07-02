@@ -3,8 +3,8 @@
 import { createContext, useContext, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import useKeyPress from '../hooks/useKeyPress'
-import useLocalStorage from '../hooks/useLocalStorage'
+import { useKeyPress } from '../hooks/useKeyPress'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 
 import { enUs, ptBr, SHORTCUT_KEY } from '../constants/languages'
 
@@ -39,7 +39,7 @@ export function LanguageProvider({ children }) {
   )
 }
 
-export default function useLanguage() {
+export function useLanguage() {
   // Sets the language of the page
 
   return useContext(LanguageContext)

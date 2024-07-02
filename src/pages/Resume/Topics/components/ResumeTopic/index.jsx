@@ -1,18 +1,21 @@
 /* ResumeTopic/index.jsx */
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from 'react-i18next'
 
 import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '../../../../../components/Accordion'
-import Paragraph from '../../../../../components/Text/Paragraph'
+import { Paragraph } from '../../../../../components/Text/Paragraph'
 
-export default function ResumeTopic({ icon, index, items, largeItems, t, title }) {
+export function ResumeTopic({ icon, index, items, largeItems, title }) {
   // Displays all the items related to a topic of the resume
 
   const normalizedIndex = index + 1
+
+  const { t } = useTranslation()
 
   return (
     <AccordionItem value={`item-${normalizedIndex}`}>

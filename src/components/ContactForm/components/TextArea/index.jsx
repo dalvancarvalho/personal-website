@@ -1,8 +1,8 @@
 /* TextArea/index.jsx */
 
-import useInputStyle from '../../hooks/useInputStyle'
+import { useInputStyle } from '../../hooks/useInputStyle'
 
-export default function TextArea({ inputName, inputs, label, setInputs }) {
+export function TextArea({ inputName, inputs, label, setInputs }) {
   // Form input (text area)
 
   const { checkInput, ...refs } = useInputStyle(inputName, inputs)

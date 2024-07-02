@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate(menuRef, isMenuOpen, animate = true) {
+export function useAnimate(menuRef, isMenuOpen, animate = true) {
   // Menu animation
 
   const scope = useRef(null)

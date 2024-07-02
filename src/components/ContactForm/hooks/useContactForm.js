@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-import useConfetti from '../../../context/ConfettiContext'
+import { useConfetti } from '../../../context/ConfettiContext'
 import { useToast } from '../../Toast/hooks/useToast'
 
 // prettier-ignore

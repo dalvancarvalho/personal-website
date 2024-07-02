@@ -8,9 +8,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import useScreenPanel from './hooks/useScreenPanel'
+import { useScreenPanel } from './hooks/useScreenPanel'
 
-const ScreenPanel = forwardRef(function ScreenPanel(
+export const ScreenPanel = forwardRef(function ScreenPanel(
   { position = 'bottom-right', transparency = true },
   ref
 ) {
@@ -149,6 +149,3 @@ const ScreenPanel = forwardRef(function ScreenPanel(
     </div>
   )
 })
-ScreenPanel.displayName = 'ScreenPanel'
-
-export default ScreenPanel

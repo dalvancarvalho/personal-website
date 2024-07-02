@@ -3,10 +3,10 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-import useIsFirstRender from '../../../../../hooks/useIsFirstRender'
-import useLogoText from '../hooks/useLogoText'
+import { useIsFirstRender } from '../../../../../hooks/useIsFirstRender'
+import { useLogoText } from '../hooks/useLogoText'
 
-export default function useAnimate() {
+export function useAnimate() {
   // Logo text animation
 
   const isFirstRender = useIsFirstRender()

@@ -1,8 +1,8 @@
 /* MainSection/index.jsx */
 
-import useAnimate from './animations/useAnimate'
+import { useAnimate } from './animations/useAnimate'
 
-export default function MainSection({ children, className = '' }) {
+export function MainSection({ children, className = '' }) {
   // Section with fade-in animation
 
   const animation = useAnimate()

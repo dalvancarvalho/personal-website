@@ -3,22 +3,22 @@
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import useMenu from '../../context/MenuContext'
-import useDocCoordinates from '../../hooks/useDocCoordinates'
-import useScreenProps from '../../hooks/useScreenProps'
-import useAnimate from './animations/useAnimate'
+import { useMenu } from '../../context/MenuContext'
+import { useDocCoordinates } from '../../hooks/useDocCoordinates'
+import { useScreenProps } from '../../hooks/useScreenProps'
+import { useAnimate } from './animations/useAnimate'
 
-import Container from '../Container'
+import { Container } from '../Container'
 
-import Divider from './components/Divider'
-import LanguageSwitch from './components/LanguageSwitch'
-import Logo from './components/Logo'
-import Menu from './components/Menu'
-import Navbar from './components/Navbar'
-import SkipToContent from './components/SkipToContent'
-import ThemeSwitch from './components/ThemeSwitch'
+import { Divider } from './components/Divider'
+import { LanguageSwitch } from './components/LanguageSwitch'
+import { Logo } from './components/Logo'
+import { Menu } from './components/Menu'
+import { Navbar } from './components/Navbar'
+import { SkipToContent } from './components/SkipToContent'
+import { ThemeSwitch } from './components/ThemeSwitch'
 
-export default function Header() {
+export function Header() {
   // Page header
 
   const { pathname } = useLocation()

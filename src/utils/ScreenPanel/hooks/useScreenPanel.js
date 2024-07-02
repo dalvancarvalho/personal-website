@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from 'react'
 
-import useLocalStorage from '../../../hooks/useLocalStorage'
-import useScreenProps from '../../../hooks/useScreenProps'
+import { useLocalStorage } from '../../../hooks/useLocalStorage'
+import { useScreenProps } from '../../../hooks/useScreenProps'
 
 // prettier-ignore
-export default function useScreenPanel() {
+export function useScreenPanel() {
   // Defines the properties displayed in the screen panel
 
   const [screen, setScreen] = useState('n/a')

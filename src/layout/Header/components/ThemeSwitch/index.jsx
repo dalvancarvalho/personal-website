@@ -3,11 +3,11 @@
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import useTheme from '../../../../context/ThemeContext'
+import { useTheme } from '../../../../context/ThemeContext'
 
-import Button from '../../../../components/Button'
+import { Button } from '../../../../components/Button'
 
-export default function ThemeSwitch({ t }) {
+export function ThemeSwitch({ t }) {
   // Switches the theme between light and dark
 
   const { theme, switchTheme, SHORTCUT_KEY } = useTheme()

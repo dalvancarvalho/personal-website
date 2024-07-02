@@ -2,11 +2,14 @@
 
 import { forwardRef } from 'react'
 
-import KeyTag from './components/KeyTag'
+import { KeyTag } from './components/KeyTag'
 
 import TOOLTIP_VARIANTS from './constants/tooltipVariants'
 
-const Tooltip = forwardRef(function Tooltip({ children, shortcutKey, position }, ref) {
+export const Tooltip = forwardRef(function Tooltip(
+  { children, shortcutKey, position },
+  ref
+) {
   // Displays a tooltip next to the element when it is hovered or focused
 
   const toolTipPosition = TOOLTIP_VARIANTS[position]
@@ -25,5 +28,3 @@ const Tooltip = forwardRef(function Tooltip({ children, shortcutKey, position },
     </p>
   )
 })
-
-export default Tooltip

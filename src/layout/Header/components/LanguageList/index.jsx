@@ -3,13 +3,13 @@
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import useLanguage from '../../../../context/LanguageContext'
+import { useLanguage } from '../../../../context/LanguageContext'
 
-import MenuList from '../MenuList'
+import { MenuList } from '../MenuList'
 
-import LANGUAGES from '../../../../constants/languages'
+import { LANGUAGES } from '../../../../constants/languages'
 
-export default function LanguageList({ t }) {
+export function LanguageList({ t }) {
   // List of languages available for use (inside menu)
 
   const { language, setLanguage } = useLanguage()

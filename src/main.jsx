@@ -11,7 +11,7 @@ import { LanguageProvider } from './context/LanguageContext'
 import { MenuProvider } from './context/MenuContext'
 import { ThemeProvider } from './context/ThemeContext'
 
-import App from './App'
+import { App } from './App'
 
 import './i18n'
 import './styles/index.css'

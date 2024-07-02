@@ -3,11 +3,11 @@
 
 import useEmblaCarousel from 'embla-carousel-react'
 
-import useArrowButtons from './hooks/useArrowButtons'
+import { useArrowButtons } from './hooks/useArrowButtons'
 
 import { NextButton, PrevButton } from './components/ArrowButtons'
 
-export default function Carousel({ children }) {
+export function Carousel({ children }) {
   // Carousel with arrow buttons to control
 
   const [emblaRef, emblaApi] = useEmblaCarousel()

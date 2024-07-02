@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 // prettier-ignore
-const TOAST_VARIANTS = {
+export const TOAST_VARIANTS = {
 
   /* Contact form */
   'cf-error': {
@@ -43,5 +43,3 @@ const TOAST_VARIANTS = {
     },
   },
 }
-
-export default TOAST_VARIANTS

@@ -1,6 +1,6 @@
 /* MenuList/index.jsx */
 
-export default function MenuList({ children, title }) {
+export function MenuList({ children, title }) {
   // Unordered list with title
 
   return (

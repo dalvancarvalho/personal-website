@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 
-export default function useKeyPress(key, callback) {
+export function useKeyPress(key, callback) {
   // Calls the given function when a key combination is detected
 
   useEffect(() => {

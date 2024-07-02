@@ -4,27 +4,27 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
-import useAnimate from './animations/useAnimate'
+import { useAnimate } from './animations/useAnimate'
 
-import Container from '../../../layout/Container'
-import Divider from '../../../layout/Divider'
-import Grid from '../../../layout/Grid'
-import Section from '../../../layout/Section/Regular'
+import { Container } from '../../../layout/Container'
+import { Divider } from '../../../layout/Divider'
+import { Grid } from '../../../layout/Grid'
+import { Section } from '../../../layout/Section/Regular'
 
-import Button from '../../../components/Button'
-import Paragraph from '../../../components/Text/Paragraph'
-import Heading from '../../../components/Text/Heading'
-import PolaroidPic from './components/PolaroidPic'
-import QuotationMark from './components/QuotationMark'
-import Tech from './components/Tech'
-import Topic from './components/Topic'
+import { Button } from '../../../components/Button'
+import { Heading } from '../../../components/Text/Heading'
+import { Paragraph } from '../../../components/Text/Paragraph'
+import { PolaroidPic } from './components/PolaroidPic'
+import { QuotationMark } from './components/QuotationMark'
+import { Tech } from './components/Tech'
+import { Topic } from './components/Topic'
 
-import TECHNOLOGIES from './constants/technologies'
-import TOPICS from './constants/topics'
+import { TECHNOLOGIES } from './constants/technologies'
+import { TOPICS } from './constants/topics'
 
 import stack from '../../../assets/svg/stack.svg'
 
-export default function About({ t }) {
+export function About({ t }) {
   // About section
 
   const navigate = useNavigate()

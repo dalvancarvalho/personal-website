@@ -4,10 +4,10 @@ import { faChevronRight, faHouse } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
-import Button from '../../../../components/Button'
-import Paragraph from '../../../../components/Text/Paragraph'
+import { Button } from '../../../../components/Button'
+import { Paragraph } from '../../../../components/Text/Paragraph'
 
-export default function Breadcrumbs({ section, t }) {
+export function Breadcrumbs({ section, t }) {
   // Navigation component
 
   const navigate = useNavigate()

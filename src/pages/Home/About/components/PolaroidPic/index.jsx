@@ -1,15 +1,15 @@
 /* PolaroidPic/index.jsx */
 
-import useAnimate from './animations/useAnimate'
+import { useAnimate } from './animations/useAnimate'
 
-import HoverText from '../HoverText'
+import { HoverText } from '../HoverText'
 
 import me from '../../../../../assets/webp/me.webp'
 import meBw from '../../../../../assets/webp/me-bw.webp'
 import tapeTopLeft from '../../../../../assets/webp/tape-top-left.webp'
 import tapeBottomRight from '../../../../../assets/webp/tape-bottom-right.webp'
 
-export default function PolaroidPic({ t }) {
+export function PolaroidPic({ t }) {
   // Polaroid picture with handwritten text
 
   const animation = useAnimate()

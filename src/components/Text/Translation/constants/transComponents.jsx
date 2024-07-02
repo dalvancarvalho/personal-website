@@ -1,6 +1,6 @@
 /* transComponents.jsx */
 
-const TRANS_COMPONENTS = {
+export const TRANS_COMPONENTS = {
   // Set of components used throughout the project in combination with the i18next 'Trans' component
 
   /* Utils */
@@ -81,5 +81,3 @@ const TRANS_COMPONENTS = {
     <span className="text-sm md:text-base text-accent animate-pulse color-transition whitespace-nowrap" />
   ),
 }
-
-export default TRANS_COMPONENTS

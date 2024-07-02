@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 
 import { Toast } from '..'
 
-import TOAST_VARIANTS from '../constants/toastVariants'
+import { TOAST_VARIANTS } from '../constants/toastVariants'
 
 export function useToast(variant) {
   // Handles the logic of the 'Toast' component

@@ -1,7 +1,7 @@
 /* snippets.js */
 
 // prettier-ignore
-const SNIPPET_MODEL = {
+export const SNIPPET_MODEL = {
   // Snippet model that should be followed for all new snippets added to this file
 
   title: 'misc.codeSnippet.title', // [string] should be a key to a i18next translation file
@@ -92,5 +92,3 @@ export const splitIt = {
     codeString: '',
   },
 }
-
-export default SNIPPET_MODEL

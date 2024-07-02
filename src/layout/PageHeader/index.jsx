@@ -3,14 +3,14 @@
 import { useEffect, useRef, useState } from 'react'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-import Container from '../Container'
+import { Container } from '../Container'
 
-import Breadcrumbs from './components/Breadcrumbs'
-import Link from './components/Link'
-import LiveDemo from './components/LiveDemo'
+import { Breadcrumbs } from './components/Breadcrumbs'
+import { Link } from './components/Link'
+import { LiveDemo } from './components/LiveDemo'
 
 // prettier-ignore
-export default function PageHeader({ github, heading, linkedIn, links, section, t }) {
+export function PageHeader({ github, heading, linkedIn, links, section, t }) {
   // Displays the main heading of the page (H1) along with some useful links
 
   const externalLinksRef = useRef(null)

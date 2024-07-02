@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-export default function useLocalStorage(key, initialValue) {
+export function useLocalStorage(key, initialValue) {
   // Stores a state inside the Local Storage
 
   const [value, setValue] = useState(() => getSavedValue(key, initialValue))

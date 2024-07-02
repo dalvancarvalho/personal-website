@@ -3,13 +3,13 @@
 import { faMoon, faSun, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import useTheme from '../../../../context/ThemeContext'
+import { useTheme } from '../../../../context/ThemeContext'
 
-import MenuList from '../MenuList'
+import { MenuList } from '../MenuList'
 
-import THEMES from '../../../../constants/themes'
+import { THEMES } from '../../../../constants/themes'
 
-export default function ThemeList({ t }) {
+export function ThemeList({ t }) {
   // List of themes available for use (inside menu)
 
   const { theme, setTheme } = useTheme()

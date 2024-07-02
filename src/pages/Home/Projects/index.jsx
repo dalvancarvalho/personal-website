@@ -1,18 +1,18 @@
 /* Projects/index.jsx */
 
-import useAnimate from './animations/useAnimate'
+import { useAnimate } from './animations/useAnimate'
 
-import Container from '../../../layout/Container'
-import Section from '../../../layout/Section/Regular'
+import { Container } from '../../../layout/Container'
+import { Section } from '../../../layout/Section/Regular'
 
-import Paragraph from '../../../components/Text/Paragraph'
-import Heading from '../../../components/Text/Heading'
-import Card from './components/Card/Default'
-import SmallCard from './components/Card/Small'
+import { Heading } from '../../../components/Text/Heading'
+import { Paragraph } from '../../../components/Text/Paragraph'
+import { Card } from './components/Card/Default'
+import { SmallCard } from './components/Card/Small'
 
-import PROJECTS from '../../../constants/projects'
+import { PROJECTS } from '../../../constants/projects'
 
-export default function Projects({ screenSize, t }) {
+export function Projects({ screenSize, t }) {
   // Projects section
 
   const animation = useAnimate()

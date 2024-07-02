@@ -3,9 +3,9 @@
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Button from '../../../../components/Button'
+import { Button } from '../../../../components/Button'
 
-export default function SkipToContent({ t }) {
+export function SkipToContent({ t }) {
   // Jumps directly to the content of the page when triggered,
   // skipping the items of the navbar and theme/language switches
 

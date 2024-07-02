@@ -2,7 +2,7 @@
 
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 
-const CONTACTS = [
+export const CONTACTS = [
   {
     id: crypto.randomUUID(),
     text: 'pages.home.contact.email.text',
@@ -25,5 +25,3 @@ const CONTACTS = [
     icon: faLocationDot,
   },
 ]
-
-export default CONTACTS

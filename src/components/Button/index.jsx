@@ -2,12 +2,12 @@
 
 import { forwardRef } from 'react'
 
-import useButton from './hooks/useButton'
+import { useButton } from './hooks/useButton'
 
-import Tooltip from './components/Tooltip'
+import { Tooltip } from './components/Tooltip'
 
 // prettier-ignore
-const Button = forwardRef(function Button(
+export const Button = forwardRef(function Button(
   {
     children,
     className = '',
@@ -48,5 +48,3 @@ const Button = forwardRef(function Button(
     </button>
   )
 })
-
-export default Button

@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate(index, animate = true) {
+export function useAnimate(index, animate = true) {
   // Small card animation
 
   const isEven = index % 2 === 0 ? true : false

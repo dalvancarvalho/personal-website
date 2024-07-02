@@ -10,7 +10,7 @@ import {
   faPersonChalkboard,
 } from '@fortawesome/free-solid-svg-icons'
 
-const NAV_LINKS = {
+export const NAV_LINKS = {
   // List of navigation links for each page of the application
 
   '/': [
@@ -104,5 +104,3 @@ const NAV_LINKS = {
     },
   ],
 }
-
-export default NAV_LINKS

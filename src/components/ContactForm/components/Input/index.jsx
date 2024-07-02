@@ -1,8 +1,8 @@
 /* Input/index.jsx */
 
-import useInputStyle from '../../hooks/useInputStyle'
+import { useInputStyle } from '../../hooks/useInputStyle'
 
-export default function Input({ inputName, inputs, label, setInputs, type }) {
+export function Input({ inputName, inputs, label, setInputs, type }) {
   // Form input (text or email)
 
   const { checkInput, ...refs } = useInputStyle(inputName, inputs)

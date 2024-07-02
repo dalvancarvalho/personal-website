@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useRef, useState } from 'react'
 
-import useScreenProps from '../hooks/useScreenProps'
+import { useScreenProps } from '../hooks/useScreenProps'
 
 // Context for accessing the menu status
 const MenuContext = createContext()
@@ -56,7 +56,7 @@ export function MenuProvider({ children }) {
   )
 }
 
-export default function useMenu() {
+export function useMenu() {
   // Handles the logic of the main menu
 
   return useContext(MenuContext)

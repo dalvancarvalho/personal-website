@@ -1,6 +1,6 @@
 /* Grid/index.jsx */
 
-export default function Grid({ children, className = '' }) {
+export function Grid({ children, className = '' }) {
   // Grid displayed in medium/large screens
 
   return (

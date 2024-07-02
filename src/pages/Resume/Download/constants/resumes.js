@@ -1,6 +1,6 @@
 /* resumes.js */
 
-const RESUMES = [
+export const RESUMES = [
   // List of resume versions (Brazilian Portuguese and English)
 
   {
@@ -14,5 +14,3 @@ const RESUMES = [
     href: '/resume-en.',
   },
 ]
-
-export default RESUMES

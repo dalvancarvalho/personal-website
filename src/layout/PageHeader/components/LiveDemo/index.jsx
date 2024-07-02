@@ -3,7 +3,7 @@
 import { faArrowUp, faCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function LiveDemo({ href, label }) {
+export function LiveDemo({ href, label }) {
   // Live demo external link used inside the PageHeader component
 
   return (

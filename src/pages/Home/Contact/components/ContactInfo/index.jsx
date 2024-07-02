@@ -3,9 +3,9 @@
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Paragraph from '../../../../../components/Text/Paragraph'
+import { Paragraph } from '../../../../../components/Text/Paragraph'
 
-export default function ContactInfo({ icon, href, text, target, t }) {
+export function ContactInfo({ icon, href, text, target, t }) {
   // Link to contact information
 
   return (

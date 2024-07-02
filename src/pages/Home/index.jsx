@@ -2,17 +2,17 @@
 
 import { useTranslation } from 'react-i18next'
 
-import useScreenProps from '../../hooks/useScreenProps'
-import useScrollSpy from '../../hooks/useScrollSpy'
+import { useScreenProps } from '../../hooks/useScreenProps'
+import { useScrollSpy } from '../../hooks/useScrollSpy'
 
-import Meta from '../../components/Meta'
+import { Meta } from '../../components/Meta'
 
-import MainSection from '../../layout/Section/Main'
+import { MainSection } from '../../layout/Section/Main'
 
-import About from './About'
-import Contact from './Contact'
-import Hero from './Hero'
-import Projects from './Projects'
+import { About } from './About'
+import { Contact } from './Contact'
+import { Hero } from './Hero'
+import { Projects } from './Projects'
 
 export default function Home() {
   // Home page

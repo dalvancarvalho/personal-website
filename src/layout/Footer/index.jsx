@@ -3,12 +3,12 @@
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import useAnimate from './animations/useAnimate'
+import { useAnimate } from './animations/useAnimate'
 
-import Paragraph from '../../components/Text/Paragraph'
-import SocialNetworksList from './components/SocialNetworksList'
+import { Paragraph } from '../../components/Text/Paragraph'
+import { SocialNetworksList } from './components/SocialNetworksList'
 
-export default function Footer() {
+export function Footer() {
   // Page footer
 
   const year = new Date().getFullYear()

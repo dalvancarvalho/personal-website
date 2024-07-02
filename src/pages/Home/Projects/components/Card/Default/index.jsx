@@ -4,14 +4,14 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
-import useParallax from './hooks/useParallax'
-import useAnimate from './animations/useAnimate'
+import { useParallax } from './hooks/useParallax'
+import { useAnimate } from './animations/useAnimate'
 
-import Button from '../../../../../../components/Button'
-import Paragraph from '../../../../../../components/Text/Paragraph'
-import Tech from '../components/Tech'
+import { Button } from '../../../../../../components/Button'
+import { Paragraph } from '../../../../../../components/Text/Paragraph'
+import { Tech } from '../components/Tech'
 
-export default function Card({
+export function Card({
   description,
   heading,
   index,

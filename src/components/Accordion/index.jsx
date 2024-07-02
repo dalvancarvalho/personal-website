@@ -3,7 +3,7 @@
 
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Content, Header, Item, Root, Trigger } from '@radix-ui/react-accordion'
+import { Content, Header, Item, Trigger } from '@radix-ui/react-accordion'
 
 export function AccordionItem({ className = '', ...props }) {
   // Wraps the 'AccordionTrigger' and 'AccordionContent' components
@@ -47,5 +47,3 @@ export function AccordionContent({ children, className = '', ...props }) {
     </Content>
   )
 }
-
-export default Root

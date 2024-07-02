@@ -2,7 +2,7 @@
 
 import { Helmet } from 'react-helmet-async'
 
-export default function Meta({ description, title, url }) {
+export function Meta({ description, title, url }) {
   // Sets Open Graph, social network, and default meta tags for SEO purposes
 
   return (

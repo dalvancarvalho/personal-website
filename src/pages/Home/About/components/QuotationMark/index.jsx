@@ -2,7 +2,7 @@
 
 import { forwardRef } from 'react'
 
-const QuotationMark = forwardRef(function QuotationMark(props, ref) {
+export const QuotationMark = forwardRef(function QuotationMark(props, ref) {
   // SVG quotation mark
 
   return (
@@ -17,5 +17,3 @@ const QuotationMark = forwardRef(function QuotationMark(props, ref) {
     </svg>
   )
 })
-
-export default QuotationMark

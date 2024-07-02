@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-export default function useScreenProps() {
+export function useScreenProps() {
   // Returns screen information
 
   const [isPortraitMode, setIsPortraitMode] = useState(undefined)

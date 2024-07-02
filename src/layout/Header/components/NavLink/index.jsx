@@ -5,9 +5,9 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link as ScrollLink } from 'react-scroll'
 
-import useMenu from '../../../../context/MenuContext'
+import { useMenu } from '../../../../context/MenuContext'
 
-export default function NavLink({ children, icon, to }) {
+export function NavLink({ children, icon, to }) {
   // Link to access a respective section of the page
 
   const { setMenuState } = useMenu()

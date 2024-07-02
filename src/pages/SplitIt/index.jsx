@@ -2,14 +2,14 @@
 
 import { useTranslation } from 'react-i18next'
 
-import useScrollSpy from '../../hooks/useScrollSpy'
+import { useScrollSpy } from '../../hooks/useScrollSpy'
 
-import Meta from '../../components/Meta'
+import { Meta } from '../../components/Meta'
 
-import PageHeader from '../../layout/PageHeader'
-import MainSection from '../../layout/Section/Main'
+import { PageHeader } from '../../layout/PageHeader'
+import { MainSection } from '../../layout/Section/Main'
 
-import Introduction from './Introduction'
+import { Introduction } from './Introduction'
 // import Details from './Details'
 
 import { splitIt } from '../../constants/projects'

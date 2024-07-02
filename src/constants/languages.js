@@ -1,6 +1,6 @@
 /* languages.js */
 
-const LANGUAGES = [
+export const LANGUAGES = [
   {
     id: 'PT',
     name: 'Português',
@@ -17,5 +17,3 @@ export const ptBr = LANGUAGES[0]
 export const enUs = LANGUAGES[1]
 
 export const SHORTCUT_KEY = 'l' // Used in combination with 'Ctrl' key to toggle the language
-
-export default LANGUAGES

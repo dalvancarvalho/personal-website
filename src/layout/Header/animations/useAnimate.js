@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate(pathname, animate = true) {
+export function useAnimate(pathname, animate = true) {
   // Header animation
 
   const scope = useRef(null)

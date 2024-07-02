@@ -3,21 +3,23 @@
 import { useState } from 'react'
 import { faArrowDown, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from 'react-i18next'
 
 import { useTheme } from '../../../../../context/ThemeContext'
 
-import Button from '../../../../../components/Button'
-import Paragraph from '../../../../../components/Text/Paragraph'
-import FormatSelector from './components/FormatSelector'
+import { Button } from '../../../../../components/Button'
+import { Paragraph } from '../../../../../components/Text/Paragraph'
+import { FormatSelector } from './components/FormatSelector'
 
 import resume from '../../../../../assets/svg/resume.svg'
 import resumeDark from '../../../../../assets/svg/resume-dark.svg'
 
-export default function ResumeCard({ href, t, title }) {
+export function ResumeCard({ href, title }) {
   // Downloadable resume
 
   const [format, setFormat] = useState('pdf')
   const { theme } = useTheme()
+  const { t } = useTranslation()
 
   return (
     <div className="max-w-max flex flex-col items-start group/card">

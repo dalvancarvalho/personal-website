@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import BUTTON_VARIANTS from '../constants/buttonVariants'
+import { BUTTON_VARIANTS } from '../constants/buttonVariants'
 
-export default function useButton(variant, callback) {
+export function useButton(variant, callback) {
   // Handles the button and tooltip logic
 
   const style = BUTTON_VARIANTS[variant]

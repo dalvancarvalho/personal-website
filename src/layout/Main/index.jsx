@@ -1,8 +1,8 @@
 /* Main/index.jsx */
 
-import useScrollToTop from './hooks/useScrollToTop'
+import { useScrollToTop } from './hooks/useScrollToTop'
 
-export default function Main({ children }) {
+export function Main({ children }) {
   // Wraps the pages of the application
 
   useScrollToTop()

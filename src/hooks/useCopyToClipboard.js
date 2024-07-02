@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-export default function useCopyToClipboard(string) {
+export function useCopyToClipboard(string) {
   // Copies the passed string to the clipboard
 
   const [isCopied, setIsCopied] = useState(false)

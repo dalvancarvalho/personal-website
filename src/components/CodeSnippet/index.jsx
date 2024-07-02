@@ -6,12 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Prism from 'prismjs'
 import { useTranslation } from 'react-i18next'
 
-import useCopyToClipboard from '../../hooks/useCopyToClipboard'
+import { useCopyToClipboard } from '../../hooks/useCopyToClipboard'
 
-import Button from '../Button'
-import Paragraph from '../Text/Paragraph'
+import { Button } from '../Button'
+import { Paragraph } from '../Text/Paragraph'
 
-export default function CodeSnippet({ codeString, extension, language, title }) {
+export function CodeSnippet({ codeString, extension, language, title }) {
   // Syntax highlighted code snippet
 
   const { copyToClipboard, isCopied } = useCopyToClipboard(codeString)

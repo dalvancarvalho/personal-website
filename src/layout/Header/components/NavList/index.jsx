@@ -1,11 +1,11 @@
 /* NavList/index.jsx */
 
-import NavLink from '../NavLink'
-import MenuList from '../MenuList'
+import { NavLink } from '../NavLink'
+import { MenuList } from '../MenuList'
 
-import NAV_LINKS from '../../constants/navLinks'
+import { NAV_LINKS } from '../../constants/navLinks'
 
-export default function NavList({ pathname, t }) {
+export function NavList({ pathname, t }) {
   // List of navigation links (inside menu)
 
   return (

@@ -3,7 +3,7 @@
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function Tech({ name, url }) {
+export function Tech({ name, url }) {
   // Technology displayed in the 'About' section (with a link to its webpage)
 
   return (

@@ -38,7 +38,7 @@ const MODIFIERS = {
 }
 
 // prettier-ignore
-const PARAGRAPH_VARIANTS = {
+export const PARAGRAPH_VARIANTS = {
   // The font-weight defaults to 500
 
   'fixed-xs': `${PRIMITIVES.fixed.xs} ${MODIFIERS.weight.medium}`,                     // font-size: 12px; font-weight: 500
@@ -134,5 +134,3 @@ const PARAGRAPH_VARIANTS = {
   // Special combination for the Hero section
   'hero': `text-base md:text-xl text-slate-600 dark:text-gray-400 color-transition ${MODIFIERS.weight.medium}`,
 }
-
-export default PARAGRAPH_VARIANTS

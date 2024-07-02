@@ -1,6 +1,6 @@
 /* technologies.js */
 
-const TECHNOLOGIES = [
+export const TECHNOLOGIES = [
   // List of technologies displayed in the 'About' section
 
   {
@@ -34,5 +34,3 @@ const TECHNOLOGIES = [
     url: 'https://www.framer.com/motion/',
   },
 ]
-
-export default TECHNOLOGIES

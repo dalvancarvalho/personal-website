@@ -1,6 +1,6 @@
 /* topics.js */
 
-const TOPICS = [
+export const TOPICS = [
   // List of topics displayed in the 'About' section
 
   {
@@ -19,5 +19,3 @@ const TOPICS = [
     paragraph: 'pages.home.about.paragraphIII',
   },
 ]
-
-export default TOPICS

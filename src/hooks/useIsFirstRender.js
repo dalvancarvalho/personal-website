@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 
-export default function useIsFirstRender() {
+export function useIsFirstRender() {
   // Indicates when a component is in its first render
 
   const isFirstRenderRef = useRef(true)

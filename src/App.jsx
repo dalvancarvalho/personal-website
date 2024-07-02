@@ -10,19 +10,19 @@ import { TextPlugin } from 'gsap/TextPlugin'
 import { Toaster } from 'sonner'
 import { useLocation } from 'react-router-dom'
 
-import useTheme from './context/ThemeContext'
-import useConsoleMessage from './hooks/useConsoleMessage'
+import { useTheme } from './context/ThemeContext'
+import { useConsoleMessage } from './hooks/useConsoleMessage'
 
-import ScreenPanel from './utils/ScreenPanel'
+import { ScreenPanel } from './utils/ScreenPanel'
 
-import Footer from './layout/Footer'
-import Header from './layout/Header'
-import Main from './layout/Main'
+import { Footer } from './layout/Footer'
+import { Header } from './layout/Header'
+import { Main } from './layout/Main'
 
-import Routes from './routes'
+import { AppRoutes } from './routes'
 
 // prettier-ignore
-export default function App() {
+export function App() {
   // Main component
 
   const DARK_THEME = '#1a1a1a'         // dark gray
@@ -53,7 +53,7 @@ export default function App() {
       {/* Presentation */}
       <Header />
       <Main>
-        <Routes />
+        <AppRoutes />
       </Main>
       {pathname !== '/404' && <Footer />}
       <Toaster />

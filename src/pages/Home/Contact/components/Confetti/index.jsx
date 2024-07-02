@@ -3,10 +3,10 @@
 import { useEffect } from 'react'
 import ReactConfetti from 'react-confetti'
 
-import useConfetti from '../../../../../context/ConfettiContext'
-import useScreenProps from '../../../../../hooks/useScreenProps'
+import { useConfetti } from '../../../../../context/ConfettiContext'
+import { useScreenProps } from '../../../../../hooks/useScreenProps'
 
-export default function Confetti() {
+export function Confetti() {
   // Container that wraps the confetti animation
 
   const { setConfetti } = useConfetti()

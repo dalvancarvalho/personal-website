@@ -1,8 +1,8 @@
 /* Topic/index.jsx */
 
-import Paragraph from '../../../../../components/Text/Paragraph'
+import { Paragraph } from '../../../../../components/Text/Paragraph'
 
-export default function Topic({ paragraph, subHeading, t }) {
+export function Topic({ paragraph, subHeading, t }) {
   // Topic displayed in the 'About' section
 
   return (

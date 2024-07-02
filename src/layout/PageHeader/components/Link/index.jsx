@@ -3,7 +3,7 @@
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function Link({ icon, href, label }) {
+export function Link({ icon, href, label }) {
   // External access link used inside the 'PageHeader' component
 
   return (

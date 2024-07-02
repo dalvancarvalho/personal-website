@@ -1,11 +1,11 @@
 /* useParallax.js */
 
-import { useParallax } from 'react-scroll-parallax'
+import { useParallax as useReactScrollParallax } from 'react-scroll-parallax'
 
-export default function useCardParallax() {
+export function useParallax() {
   // Parallax effect on card element
 
-  const { ref: card } = useParallax({
+  const { ref: card } = useReactScrollParallax({
     shouldAlwaysCompleteAnimation: true,
     speed: 15,
   })

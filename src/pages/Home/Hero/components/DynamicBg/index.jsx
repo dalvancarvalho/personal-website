@@ -1,6 +1,6 @@
 /* DynamicBg/index.jsx */
 
-export default function DynamicBg({ className, darkVersion, lightVersion, ...props }) {
+export function DynamicBg({ className, darkVersion, lightVersion, ...props }) {
   // Smoothly switches the background image between its
   // light and dark versions when the theme is toggled
 

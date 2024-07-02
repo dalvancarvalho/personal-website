@@ -1,6 +1,6 @@
 /* FormatSelector/index.jsx */
 
-export default function FormatSelector({ format, setFormat }) {
+export function FormatSelector({ format, setFormat }) {
   // Sets the format in which the resume will be downloaded (.pdf or .png)
 
   return (

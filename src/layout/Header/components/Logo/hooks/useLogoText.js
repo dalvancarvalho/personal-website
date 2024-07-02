@@ -3,11 +3,11 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import useLanguage from '../../../../../context/LanguageContext'
+import { useLanguage } from '../../../../../context/LanguageContext'
 
 import { PT_BR, EN_US } from '../constants/logoText'
 
-export default function useLogoText() {
+export function useLogoText() {
   // Updates the logo based on the current pathname and language
 
   const { language } = useLanguage()

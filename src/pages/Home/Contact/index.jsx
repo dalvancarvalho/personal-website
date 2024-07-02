@@ -1,22 +1,22 @@
 /* Contact/index.jsx */
 
-import useConfetti from '../../../context/ConfettiContext'
-import useAnimate from './animations/useAnimate'
+import { useConfetti } from '../../../context/ConfettiContext'
+import { useAnimate } from './animations/useAnimate'
 
-import Container from '../../../layout/Container'
-import Divider from '../../../layout/Divider'
-import Grid from '../../../layout/Grid'
-import Section from '../../../layout/Section/Regular'
+import { Container } from '../../../layout/Container'
+import { Divider } from '../../../layout/Divider'
+import { Grid } from '../../../layout/Grid'
+import { Section } from '../../../layout/Section/Regular'
 
-import ContactForm from '../../../components/ContactForm'
-import Paragraph from '../../../components/Text/Paragraph'
-import Heading from '../../../components/Text/Heading'
-import Confetti from './components/Confetti'
-import ContactInfo from './components/ContactInfo'
+import { ContactForm } from '../../../components/ContactForm'
+import { Heading } from '../../../components/Text/Heading'
+import { Paragraph } from '../../../components/Text/Paragraph'
+import { Confetti } from './components/Confetti'
+import { ContactInfo } from './components/ContactInfo'
 
-import CONTACTS from './constants/contacts'
+import { CONTACTS } from './constants/contacts'
 
-export default function Contact({ screenSize, t }) {
+export function Contact({ screenSize, t }) {
   // Contact section
 
   const { confetti } = useConfetti()

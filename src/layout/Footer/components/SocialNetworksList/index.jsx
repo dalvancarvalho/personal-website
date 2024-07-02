@@ -2,11 +2,11 @@
 
 import { forwardRef } from 'react'
 
-import SocialNetwork from '../SocialNetwork'
+import { SocialNetwork } from '../SocialNetwork'
 
-import SOCIAL_NETWORKS from './constants/socialNetworks'
+import { SOCIAL_NETWORKS } from './constants/socialNetworks'
 
-const SocialNetworksList = forwardRef(function SocialNetworksList({ t }, ref) {
+export const SocialNetworksList = forwardRef(function SocialNetworksList({ t }, ref) {
   // List of social networks
 
   return (
@@ -21,5 +21,3 @@ const SocialNetworksList = forwardRef(function SocialNetworksList({ t }, ref) {
     </nav>
   )
 })
-
-export default SocialNetworksList

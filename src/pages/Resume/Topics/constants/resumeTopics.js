@@ -43,7 +43,7 @@ import en from '../../../../assets/svg/logos/en.svg'
 import es from '../../../../assets/svg/logos/es.svg'
 import pt from '../../../../assets/svg/logos/pt.svg'
 
-const RESUME_TOPICS = [
+export const RESUME_TOPICS = [
   // Resume information categorized by topics
 
   {
@@ -452,5 +452,3 @@ const RESUME_TOPICS = [
     ],
   },
 ]
-
-export default RESUME_TOPICS

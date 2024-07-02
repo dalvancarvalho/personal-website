@@ -1,8 +1,8 @@
 /* Divider/index.jsx */
 
-import useAnimate from './animations/useAnimate'
+import { useAnimate } from './animations/useAnimate'
 
-export default function Divider() {
+export function Divider() {
   // SVG horizontal divider
 
   const animation = useAnimate()

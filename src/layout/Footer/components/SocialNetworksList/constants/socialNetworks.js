@@ -9,7 +9,7 @@ import {
   faXTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
-const SOCIAL_NETWORKS = [
+export const SOCIAL_NETWORKS = [
   // List of social networks displayed in the footer of each page of the application
 
   {
@@ -55,5 +55,3 @@ const SOCIAL_NETWORKS = [
     hoverColor: 'hover:text-[#25d865] focus-visible:text-[#25d865]',
   },
 ]
-
-export default SOCIAL_NETWORKS

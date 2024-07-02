@@ -1,16 +1,17 @@
 /* Topics/index.jsx */
 
-import Container from '../../../layout/Container'
-import Section from '../../../layout/Section/Regular'
+import { Root as Accordion } from '@radix-ui/react-accordion'
 
-import Accordion from '../../../components/Accordion'
-import Paragraph from '../../../components/Text/Paragraph'
-import Heading from '../../../components/Text/Heading'
-import ResumeTopic from './components/ResumeTopic'
+import { Container } from '../../../layout/Container'
+import { Section } from '../../../layout/Section/Regular'
 
-import RESUME_TOPICS from './constants/resumeTopics'
+import { Paragraph } from '../../../components/Text/Paragraph'
+import { Heading } from '../../../components/Text/Heading'
+import { ResumeTopic } from './components/ResumeTopic'
 
-export default function Topics({ t }) {
+import { RESUME_TOPICS } from './constants/resumeTopics'
+
+export function Topics() {
   // Topics section
 
   return (
@@ -24,7 +25,7 @@ export default function Topics({ t }) {
         <Paragraph i18nKey="pages.resume.topics.paragraph" />
         <Accordion className="mt-12 md:mt-16" type="multiple">
           {RESUME_TOPICS.map(({ id, ...props }, index) => (
-            <ResumeTopic key={id} index={index} t={t} {...props} />
+            <ResumeTopic key={id} index={index} {...props} />
           ))}
         </Accordion>
       </Container>

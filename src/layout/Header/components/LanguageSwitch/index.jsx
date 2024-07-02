@@ -1,10 +1,10 @@
 /* LanguageSwitch/index.jsx */
 
-import useLanguage from '../../../../context/LanguageContext'
+import { useLanguage } from '../../../../context/LanguageContext'
 
-import Button from '../../../../components/Button'
+import { Button } from '../../../../components/Button'
 
-export default function LanguageSwitch({ t }) {
+export function LanguageSwitch({ t }) {
   // Switches the display language between Brazilian Portuguese and English
 
   const { language, switchLanguage, SHORTCUT_KEY } = useLanguage()

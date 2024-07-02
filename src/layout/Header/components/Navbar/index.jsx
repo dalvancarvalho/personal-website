@@ -1,10 +1,10 @@
 /* Navbar/index.jsx */
 
-import NavLink from '../NavLink'
+import { NavLink } from '../NavLink'
 
-import NAV_LINKS from '../../constants/navLinks'
+import { NAV_LINKS } from '../../constants/navLinks'
 
-export default function Navbar({ pathname, t }) {
+export function Navbar({ pathname, t }) {
   // List of navigation links displayed in the header
 
   return (

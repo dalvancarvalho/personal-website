@@ -2,7 +2,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function SocialNetwork({ hoverColor, icon, name, url }) {
+export function SocialNetwork({ hoverColor, icon, name, url }) {
   // Link to a social network
 
   return (

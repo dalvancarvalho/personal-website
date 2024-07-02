@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-export default function useAnimate(refs, animate = true) {
+export function useAnimate(refs, animate = true) {
   // Hero section animation
 
   const { bg, text } = refs

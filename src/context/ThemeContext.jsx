@@ -2,8 +2,8 @@
 
 import { createContext, useContext, useEffect } from 'react'
 
-import useKeyPress from '../hooks/useKeyPress'
-import useLocalStorage from '../hooks/useLocalStorage'
+import { useKeyPress } from '../hooks/useKeyPress'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 
 import { light, dark, SHORTCUT_KEY } from '../constants/themes'
 
@@ -47,7 +47,7 @@ export function ThemeProvider({ children }) {
   )
 }
 
-export default function useTheme() {
+export function useTheme() {
   // Sets the theme of the page
 
   return useContext(ThemeContext)

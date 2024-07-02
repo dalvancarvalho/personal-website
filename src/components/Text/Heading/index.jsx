@@ -2,9 +2,9 @@
 
 import { useTranslation } from 'react-i18next'
 
-import useAnimate from './animations/useAnimate'
+import { useAnimate } from './animations/useAnimate'
 
-export default function Heading({
+export function Heading({
   animate,
   heading,
   sectionName,

@@ -6,13 +6,13 @@ import { Helmet } from 'react-helmet-async'
 import { Link as RouterLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import useScreenProps from '../../hooks/useScreenProps'
+import { useScreenProps } from '../../hooks/useScreenProps'
 
-import Container from '../../layout/Container'
-import MainSection from '../../layout/Section/Main'
+import { Container } from '../../layout/Container'
+import { MainSection } from '../../layout/Section/Main'
 
-import Button from '../../components/Button'
-import Paragraph from '../../components/Text/Paragraph'
+import { Button } from '../../components/Button'
+import { Paragraph } from '../../components/Text/Paragraph'
 
 export default function NotFound() {
   // 404 page

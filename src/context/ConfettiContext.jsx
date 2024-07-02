@@ -15,6 +15,6 @@ export function ConfettiProvider({ children }) {
   )
 }
 
-export default function useConfetti() {
+export function useConfetti() {
   return useContext(ConfettiContext)
 }
