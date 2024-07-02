@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { faArrowDown, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import useTheme from '../../../../../context/ThemeContext'
+import { useTheme } from '../../../../../context/ThemeContext'
 
 import Button from '../../../../../components/Button'
 import Paragraph from '../../../../../components/Text/Paragraph'
@@ -30,8 +30,8 @@ export default function ResumeCard({ href, t, title }) {
         <img
           alt={t('pages.resume.download.altText')}
           className="w-[295px] translate-x-0.5 md:w-80 h-auto select-none transition-[filter] duration-300
-          md:group-hover/link:blur-[2px]
-          md:group-focus-visible/link:blur-[2px]
+          md:group-hover/link:blur-sm
+          md:group-focus-visible/link:blur-sm
           md:group-hover/link:dark:brightness-50
           md:group-focus-visible/link:dark:brightness-50"
           src={theme === 'light' ? resume : resumeDark}
