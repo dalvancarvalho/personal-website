@@ -1,4 +1,4 @@
-/* BrGeo/index.jsx */
+/* BRGeo/index.jsx */
 
 import { useTranslation } from 'react-i18next'
 
@@ -14,7 +14,7 @@ import { Introduction } from './Introduction'
 
 import { brGeo } from '../../constants/projects'
 
-export default function BrGeo() {
+export default function BRGeo() {
   // BR Geo
 
   const { t } = useTranslation()
