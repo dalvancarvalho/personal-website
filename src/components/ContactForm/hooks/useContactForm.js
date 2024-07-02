@@ -1,14 +1,13 @@
-/* useContactForm.jsx */
+/* useContactForm.js */
 
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
-import { toast } from 'sonner'
 
 import useConfetti from '../../../context/ConfettiContext'
+import { useToast } from '../../Toast/hooks/useToast'
 
-import Toast from '../../Toast'
-
-export default function useContactForm() {
+// prettier-ignore
+export function useContactForm() {
   // Handles the functionality of the contact form
 
   const MIN_MESSAGE_LENGTH = 50
@@ -20,6 +19,7 @@ export default function useContactForm() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const { setConfetti } = useConfetti()
+  const { createToast } = useToast()
 
   function handleSubmit(event) {
     // Handles the data of the form when the submit button is pressed
@@ -34,11 +34,9 @@ export default function useContactForm() {
     if (isFormComplete && !isMessageShort) {
       sendEmail()
     } else if (isFormComplete && isMessageShort) {
-      // ⚠️ Displays a warning message: the 'Message' field must have at least 50 characters
-      toast.custom((id) => <Toast id={id} variant="cf-short" />)
+      createToast('cf-short')      // ❕ Displays a warning message: the 'Message' field must have at least 50 characters
     } else {
-      // ⚠️ Displays a warning message: all the fields should be filled
-      toast.custom((id) => <Toast id={id} variant="cf-incomplete" />)
+      createToast('cf-incomplete') // ❕ Displays a warning message: all the fields must be filled
     }
   }
 
@@ -60,14 +58,10 @@ export default function useContactForm() {
       console.error(err)
     } finally {
       if (!response || response.status !== 200) {
-        // ❌ Displays an error message
-        toast.custom((id) => <Toast id={id} variant="cf-error" />)
+        createToast('cf-error')   // ❌ Displays an error message
       } else {
-        // ✔️ Displays a success message
-        toast.custom((id) => <Toast id={id} variant="cf-success" />)
-        // 🎊 Confetti! (because, why not?)
-        setConfetti(true)
-        // Resets all the inputs
+        createToast('cf-success') // ✔️ Displays a success message
+        setConfetti(true)         // 🎊 Confetti! (because, why not?)
         setInputs({ name: '', email: '', message: '' })
       }
       setIsSubmitting(false)

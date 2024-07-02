@@ -4,7 +4,7 @@ import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
 
-import useContactForm from './hooks/useContactForm'
+import { useContactForm } from './hooks/useContactForm'
 import useAnimate from './animations/useAnimate'
 
 import Button from '../Button'
