@@ -7,10 +7,10 @@ import { Helmet } from 'react-helmet-async'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 import { TextPlugin } from 'gsap/TextPlugin'
+import { Toaster } from 'sonner'
 import { useLocation } from 'react-router-dom'
 
 import useTheme from './context/ThemeContext'
-
 import useConsoleMessage from './hooks/useConsoleMessage'
 
 import ScreenPanel from './utils/ScreenPanel'
@@ -56,6 +56,7 @@ export default function App() {
         <Routes />
       </Main>
       {pathname !== '/404' && <Footer />}
+      <Toaster />
 
       {/* Vercel tools */}
       <Analytics />
