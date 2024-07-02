@@ -147,23 +147,23 @@ A tabela abaixo lista todos os recursos utilizados pelo website:
 
 ### Fontes
 
-| Elemento de texto |                          Família da fonte                          |     Tipo     |
-| ----------------- | :----------------------------------------------------------------: | :----------: |
-| Título            |              [Mark Pro](https://8font.com/mark-pro/)               |  sans-serif  |
-| Parágrafo         |       [Urbanist](https://fonts.google.com/specimen/Urbanist)       |  sans-serif  |
-| Bloco de código   | [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) | monoespaçada |
-| Especial          |      [Rock Salt](https://fonts.google.com/specimen/Rock+Salt)      |   cursiva    |
+| Elemento de texto |                          Família da fonte                          |      Tipo      |
+| ----------------- | :----------------------------------------------------------------: | :------------: |
+| Título            |              [Mark Pro](https://8font.com/mark-pro/)               |  `sans-serif`  |
+| Parágrafo         |       [Urbanist](https://fonts.google.com/specimen/Urbanist)       |  `sans-serif`  |
+| Bloco de código   | [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) | `monoespaçada` |
+| Especial          |      [Rock Salt](https://fonts.google.com/specimen/Rock+Salt)      |   `cursiva`    |
 
 ### Cores
 
 | Papel                     | Classe do Tailwind  |                         Código hexadecimal                         |
 | ------------------------- | :-----------------: | :----------------------------------------------------------------: |
-| Principal                 |      blue-600       | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
-| Principal (versão escura) |     orange-500      | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
+| Principal                 |     `blue-600`      | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
+| Principal (versão escura) |    `orange-500`     | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
 | Fundo                     | _cor personalizada_ | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
 | Fundo (versão escura)     | _cor personalizada_ | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
-| Texto                     |      slate-600      | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
-| Texto (versão escura)     |      gray-400       | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
+| Texto                     |     `slate-600`     | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
+| Texto (versão escura)     |     `gray-400`      | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
 
 ### Ícones
 

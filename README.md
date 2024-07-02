@@ -152,23 +152,23 @@ A tabela abaixo lista todos os recursos utilizados pelo website:
 
 ### Fonts
 
-| Text element |                            Font family                             |    Type    |
-| ------------ | :----------------------------------------------------------------: | :--------: |
-| Title        |              [Mark Pro](https://8font.com/mark-pro/)               | sans-serif |
-| Paragraph    |       [Urbanist](https://fonts.google.com/specimen/Urbanist)       | sans-serif |
-| Code snippet | [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) | monospace  |
-| Special      |      [Rock Salt](https://fonts.google.com/specimen/Rock+Salt)      |  cursive   |
+| Text element |                            Font family                             |     Type     |
+| ------------ | :----------------------------------------------------------------: | :----------: |
+| Heading      |              [Mark Pro](https://8font.com/mark-pro/)               | `sans-serif` |
+| Paragraph    |       [Urbanist](https://fonts.google.com/specimen/Urbanist)       | `sans-serif` |
+| Code snippet | [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) | `monospace`  |
+| Special      |      [Rock Salt](https://fonts.google.com/specimen/Rock+Salt)      |  `cursive`   |
 
 ### Colors
 
 | Role                      | Tailwind's utility class |                              Hex code                              |
 | ------------------------- | :----------------------: | :----------------------------------------------------------------: |
-| Accent                    |         blue-600         | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
-| Accent (dark version)     |        orange-500        | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
+| Accent                    |        `blue-600`        | ![#2563eb](https://via.placeholder.com/10/2563eb?text=+) `#2563eb` |
+| Accent (dark version)     |       `orange-500`       | ![#f97316](https://via.placeholder.com/10/f97316?text=+) `#f97316` |
 | Background                |      _custom color_      | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#f8fafc` |
 | Background (dark version) |      _custom color_      | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) `#1a1a1a` |
-| Text                      |        slate-600         | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
-| Text (dark version)       |         gray-400         | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
+| Text                      |       `slate-600`        | ![#475569](https://via.placeholder.com/10/475569?text=+) `#475569` |
+| Text (dark version)       |        `gray-400`        | ![#9ca3af](https://via.placeholder.com/10/9ca3af?text=+) `#9ca3af` |
 
 ### Icons
 
