@@ -56,7 +56,7 @@ export function App() {
         <AppRoutes />
       </Main>
       {pathname !== '/404' && <Footer />}
-      <Toaster />
+      <Toaster className='center-toast' position='bottom-center' offset="32px" />
 
       {/* Vercel tools */}
       <Analytics />

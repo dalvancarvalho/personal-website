@@ -113,6 +113,10 @@
     @apply bg-slate-50 dark:bg-dark-6;
   }
 
+  .center-toast {
+    @apply xs:!-translate-x-[192px];
+  }
+
   .color-transition {
     @apply transition-colors duration-300;
   }
