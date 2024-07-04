@@ -27,7 +27,7 @@ export const TRANS_COMPONENTS = {
 
   thin: (
     // Light-weighted portion of the hero section H1
-    <span className="font-normal" />
+    <span className="font-light leading-[0]" />
   ),
 
   /* Home page > Projects section */
