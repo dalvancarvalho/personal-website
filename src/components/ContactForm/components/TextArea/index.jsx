@@ -18,7 +18,7 @@ export function TextArea({ inputName, inputs, label, setInputs }) {
         {label}
       </label>
       <textarea
-        className="w-full h-40 border-b-2 border-slate-300 dark:border-dark-3 ring-none px-[0.5em] text-base md:text-lg pt-[0.25em] pb-[0.5em] block bg-transparent transition-[border-color] duration-300
+        className="w-full h-40 border-b-2 border-slate-300 dark:border-dark-3 ring-none px-[0.5em] text-base md:text-lg pt-[0.25em] pb-[0.5em] block bg-transparent resize-none md:resize-y transition-[border-color] duration-300
         group-hover/input:border-slate-350
         group-hover/input:dark:border-dark-1"
         id={inputName}
