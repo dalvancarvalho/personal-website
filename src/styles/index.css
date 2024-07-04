@@ -50,7 +50,7 @@
   }
 
   .highlighted > label {
-    @apply !text-blue-600 dark:!text-orange-500 -translate-y-[155%] scale-[0.85] origin-left;
+    @apply !text-blue-600 dark:!text-orange-500 -translate-y-full scale-[0.85] origin-left;
   }
 
   /* Table */
