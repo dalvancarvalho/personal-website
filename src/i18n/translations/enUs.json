@@ -206,19 +206,19 @@
               "subheading": "may 2017 - aug 2022 · SCS, RS / Manaus, AM",
               "altText": "Topocart Engineering logo",
               "roleI": "Coordinator · <period>2019 - 2022</period>",
-              "roleII": "Quality Assurance Analyst · <period>2017 - 2019</period>",
-              "bulletI": "Effectively led office teams in Manaus and Brasília (the latter remotely) for the successful execution of tasks in projects across different locations in the country, contributing to operational efficiency and goal achievement.",
+              "roleII": "Research and Mapping Agent · <period>2017 - 2019</period>",
+              "bulletI": "Led office teams in Manaus and Brasília (the latter remotely) for the successful execution of tasks in projects across different locations in the country, contributing to operational efficiency and goal achievement.",
               "bulletII": "Used <highlight>Jenkins</highlight> to automate repetitive tasks, ensuring that the team always had up-to-date material to perform analyses, improving process efficiency and result accuracy.",
               "bulletIII": "Contributed to the growth and development of the office team, from the hiring process to continuous training and management, fostering a productive work environment.",
               "bulletIV": "Utilized database management systems like <highlight>PostgreSQL</highlight> to handle the data collected throughout the project, creating queries that facilitated analysis and made comparison with the database provided by the client more efficient.",
-              "bulletV": "Ensured stability and efficiency of the IT infrastructure in the Manaus office by <highlight>leading the management and maintenance of workstations, servers, and storage</highlight> in close collaboration with the company's IT team at the headquarters in Brasília, DF."
+              "bulletV": "Ensured stability and efficiency of the IT infrastructure in the Manaus office by <highlight>leading the management and maintenance of workstations, servers, and storage</highlight> in close collaboration with the company's IT team at the headquarters in Brasília."
             },
             "companyI": {
               "heading": "IDB Informática",
               "subheading": "jan 2012 - may 2017 · SCS, RS",
               "altText": "IDB Informática logo",
               "roleI": "IT Technician",
-              "bulletI": "Led the technical support department <highlight>for over 5 years</highlight>, excelling in providing remote and on-site technical support to end users. Additionally, trained new technicians and implemented methods for detecting and resolving issues at both software and hardware levels.",
+              "bulletI": "Led the technical support department <highlight>for over 5 years</highlight>, excelling in providing remote and on-site technical support to end users.  Additionally, trained new technicians and established standards for problem detection and resolution at both software and hardware levels.",
               "bulletII": "Performed on-site maintenance and management of IT and network infrastructure for corporate clients, significantly optimizing issue resolution. Ensured personalized assistance, precisely aligned with the individual needs of each case, resulting in more efficient infrastructure management and lasting customer satisfaction."
             }
           },
