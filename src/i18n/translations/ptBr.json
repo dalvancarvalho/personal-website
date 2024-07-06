@@ -198,27 +198,28 @@
               "altText": "Logo do website dalvan c_",
               "roleI": "Desenvolvedor Front-End",
               "bulletI": "Administra o <softHighlight>dalvanc.com</softHighlight>, onde compartilha sua trajetória no campo do desenvolvimento front-end, fornecendo detalhes sobre os projetos realizados, incluindo as tecnologias empregadas em cada um deles.",
-              "bulletII": "Desenvolve sites e aplicações responsivas (compatíveis com dispositivos móveis) utilizando frameworks CSS modernos e bibliotecas JavaScript, tais como <softHighlight>Tailwind CSS</softHighlight> e <softHighlight>React</softHighlight>.",
-              "bulletIII": "Mantém-se atualizado com as últimas tendências e tecnologias no desenvolvimento front-end, seguindo boas práticas e priorizando a manutenibilidade e escalabilidade das aplicações."
+              "bulletII": "Desenvolve sites e aplicações responsivas (compatíveis com dispositivos móveis) utilizando frameworks CSS modernos e bibliotecas JavaScript, tais como <softHighlight>Tailwind CSS e React</softHighlight>.",
+              "bulletIII": "Mantém-se atualizado com as últimas tendências e tecnologias no desenvolvimento front-end, seguindo boas práticas e priorizando a manutenibilidade e escalabilidade das aplicações.",
+              "bulletIV": "Desenvolve e implementa interfaces com foco em melhorar a <softHighlight>experiência do usuário (UX)</softHighlight> utilizando arquiteturas baseadas em componentes, resultando em uma <softHighlight>solução front-end modular e reutilizável.</softHighlight>"
             },
             "companyII": {
               "heading": "Topocart Engenharia",
-              "subheading": "mai 2017 - ago 2022 · SCS, RS / Manaus, AM",
+              "subheading": "mai 2017 - ago 2021 · SCS, RS / Manaus, AM",
               "altText": "Logo da empresa Topocart Engenharia",
-              "roleI": "Coordenador · <period>2019 - 2022</period>",
+              "roleI": "Coordenador · <period>2019 - 2021</period>",
               "roleII": "Analista de Qualidade · <period>2017 - 2019</period>",
-              "bulletI": "Efetivamente liderou as equipes de escritório em Manaus e Brasília (a segunda, remotamente), para a execução bem-sucedida de tarefas em projetos executados em diferentes localidades do país, contribuindo para a eficiência operacional e alcance dos objetivos.",
-              "bulletII": "Utilizou o <highlight>Jenkins</highlight> para automatizar tarefas repetitivas, garantindo que a equipe sempre contasse com material atualizado para realizar as análises, melhorando a eficiência do processo e a precisão dos resultados.",
+              "bulletI": "Liderou equipes de escritório em Manaus e Brasília (a segunda, remotamente), na execução bem-sucedida de tarefas em projetos executados em diferentes localidades do país, contribuindo para a eficiência operacional e alcance dos objetivos.",
+              "bulletII": "Utilizou o <softHighlight>Jenkins</softHighlight> para automatizar tarefas repetitivas, garantindo que a equipe sempre contasse com material atualizado para realizar as análises, melhorando a eficiência do processo e a precisão dos resultados.",
               "bulletIII": "Contribuiu para o crescimento e desenvolvimento da equipe de escritório, desde o processo de contratação até o treinamento contínuo e gestão, promovendo um ambiente de trabalho produtivo.",
-              "bulletIV": "Fez uso de sistemas de gerenciamento de banco de dados como <highlight>PostgreSQL</highlight> para tratar os dados coletados ao longo do projeto, criando consultas que facilitaram a análise e tornaram mais ágil a comparação com a base de dados fornecida pelo cliente.",
-              "bulletV": "Garantiu a estabilidade e eficiência da infraestrutura de informática do escritório de Manaus, <highlight>liderando a gestão e manutenção de estações de trabalho, servidores e <italic>storages</italic></highlight> em colaboração estreita com a equipe de TI da sede da empresa em Brasília, DF."
+              "bulletIV": "Fez uso de sistemas de gerenciamento de banco de dados como <softHighlight>PostgreSQL</softHighlight> para tratar os dados coletados ao longo do projeto, criando consultas que facilitaram a análise e tornaram mais ágil a comparação com a base de dados fornecida pelo cliente.",
+              "bulletV": "Garantiu a estabilidade e eficiência da infraestrutura de informática do escritório de Manaus, <softHighlight>liderando a gestão e manutenção de estações de trabalho, servidores e <italic>storages</italic></softHighlight> em colaboração estreita com a equipe de TI da sede da empresa em Brasília, DF."
             },
             "companyI": {
               "heading": "IDB Informática",
               "subheading": "jan 2012 - mai 2017 · SCS, RS",
               "altText": "Logo da empresa IDB Informática",
               "roleI": "Técnico em TI",
-              "bulletI": "Liderou o setor de assistência técnica <highlight>por mais de 5 anos</highlight>, destacando-se na prestação de suporte técnico remoto e presencial a usuários finais. Além disso, treinou novos técnicos e implementou métodos de detecção e resolução de problemas tanto em nível de software quanto de hardware.",
+              "bulletI": "Liderou o setor de assistência técnica <softHighlight>por mais de 5 anos</softHighlight>, destacando-se na prestação de suporte técnico remoto e presencial a usuários finais. Além disso, treinou novos técnicos e implementou métodos de detecção e resolução de problemas tanto em nível de software quanto de hardware.",
               "bulletII": "Atuou <italic>in loco</italic> na manutenção e gestão de infraestrutura de informática e rede de clientes corporativos, otimizando significativamente a resolução de problemas. Garantiu atendimento personalizado, alinhado precisamente às necessidades individuais de cada caso, resultando em uma gestão de infraestrutura mais eficiente e satisfação duradoura do cliente."
             }
           },
