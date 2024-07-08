@@ -87,7 +87,7 @@
           "sectionName": "About",
           "polaroid": "spontaneous pic :)",
           "subHeadingI": "Self-taught developer",
-          "paragraphI": "I entered the world of front-end development about a year ago after transitioning from the field of <highlight>civil engineering</highlight>, in which I graduated. In the technology field, I found the opportunity to <highlight>reinvent</highlight> myself while continuing to do what I love most: creating things that reflect the standards I always strive to maintain, such as <highlight>attention to detail</highlight>, <highlight>quality</highlight>, and <highlight>organization</highlight>.",
+          "paragraphI": "I entered the world of front-end development about a year and a half ago after transitioning from the field of <highlight>civil engineering</highlight>, in which I graduated. In the technology field, I found the opportunity to <highlight>reinvent</highlight> myself while continuing to do what I love most: creating things that reflect the standards I always strive to maintain, such as <highlight>attention to detail</highlight>, <highlight>quality</highlight>, and <highlight>organization</highlight>.",
           "subHeadingII": "Passionate about learning",
           "paragraphII": "I love <highlight>researching and understanding how things work</highlight>. The countless possibilities of solving problems or implementing ideas through lines of code make it impossible for a day in front of the computer to go by without learning something new. If this process is accompanied by a good playlist, everything gets even better!",
           "subHeadingIII": "Weekend warrior",
@@ -197,10 +197,10 @@
               "subheading": "aug 2022 - present · SCS, RS",
               "altText": "dalvan c_ website logo",
               "roleI": "Front-End Developer",
-              "bulletI": "Manages <softHighlight>dalvanc.com</softHighlight>, sharing his journey in the field of front-end development and providing details about the projects undertaken, including the technologies employed in each.",
-              "bulletII": "Develops responsive websites and applications (compatible with mobile devices) using modern CSS frameworks and JavaScript libraries like <softHighlight>Tailwind CSS and React</softHighlight>.",
-              "bulletIII": "Stays updated with the latest trends and technologies in front-end development, following best practices and prioritizing the <softHighlight>maintainability and scalability</softHighlight> of applications.",
-              "bulletIV": "Develops and implements interfaces with a focus on enhancing the <softHighlight>user experience (UX)</softHighlight> by utilizing component-based architectures, resulting in a <softHighlight>modular and reusable front-end solution.</softHighlight>"
+              "bulletI": "Develops responsive websites and applications (compatible with mobile devices) using modern CSS frameworks and JavaScript libraries like <softHighlight>Tailwind CSS and React.</softHighlight>",
+              "bulletII": "Stays updated with the latest trends and technologies, following best practices and prioritizing the <softHighlight>maintainability and scalability</softHighlight> of applications.",
+              "bulletIII": "Develops and implements interfaces with a focus on enhancing the <softHighlight>user experience (UX)</softHighlight> by utilizing component-based architectures, <softHighlight>resulting in a modular and reusable front-end solution.</softHighlight>",
+              "bulletIV": "Utilizes <softHighlight>RESTful APIs</softHighlight> to create web applications, ensuring an efficient data retrieval and interaction with back-end services.Utilizes <softHighlight>RESTful APIs</softHighlight> to create web applications, ensuring an efficient data retrieval and interaction with back-end services."
             },
             "companyII": {
               "heading": "Topocart Engineering",
