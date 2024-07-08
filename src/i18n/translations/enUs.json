@@ -200,7 +200,7 @@
               "bulletI": "Develops responsive websites and applications (compatible with mobile devices) using modern CSS frameworks and JavaScript libraries like <softHighlight>Tailwind CSS and React.</softHighlight>",
               "bulletII": "Stays updated with the latest trends and technologies, following best practices and prioritizing the <softHighlight>maintainability and scalability</softHighlight> of applications.",
               "bulletIII": "Develops and implements interfaces with a focus on enhancing the <softHighlight>user experience (UX)</softHighlight> by utilizing component-based architectures, <softHighlight>resulting in a modular and reusable front-end solution.</softHighlight>",
-              "bulletIV": "Utilizes <softHighlight>RESTful APIs</softHighlight> to create web applications, ensuring an efficient data retrieval and interaction with back-end services.Utilizes <softHighlight>RESTful APIs</softHighlight> to create web applications, ensuring an efficient data retrieval and interaction with back-end services."
+              "bulletIV": "Utilizes <softHighlight>RESTful APIs</softHighlight> to create web applications, ensuring an efficient data retrieval and interaction with back-end services.Utilizes <softHighlight>REST APIs</softHighlight> to create web applications, ensuring an efficient data retrieval and interaction with back-end services."
             },
             "companyII": {
               "heading": "Topocart Engineering",
