@@ -15,7 +15,7 @@ export function Footer() {
 
   const { t } = useTranslation()
   const { pathname } = useLocation()
-  const animation = useAnimate()
+  const animation = useAnimate(false) // for now, the footer animation is disabled :(
 
   return (
     <footer
