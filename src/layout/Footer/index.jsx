@@ -19,7 +19,7 @@ export function Footer() {
 
   return (
     <footer
-      className="py-8 color-transition flex flex-col items-center justify-between gap-6 bg-slate-150 dark:bg-dark-5 text-slate-600 dark:text-gray-400 text-sm color-transition
+      className="self-end py-8 color-transition flex flex-col items-center justify-between gap-6 bg-slate-150 dark:bg-dark-5 text-slate-600 dark:text-gray-400 text-sm color-transition
       data-[pathname='/resume']:bg-slate-50
       data-[pathname='/resume']:dark:bg-dark-6"
       data-pathname={pathname}

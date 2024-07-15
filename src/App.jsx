@@ -12,7 +12,6 @@ import { useLocation } from 'react-router-dom'
 
 import { useTheme } from './context/ThemeContext'
 import { useConsoleMessage } from './hooks/useConsoleMessage'
-
 import { ScreenPanel } from './utils/ScreenPanel'
 
 import { Footer } from './layout/Footer'
@@ -25,9 +24,9 @@ import { AppRoutes } from './routes'
 export function App() {
   // Main component
 
-  const DARK_THEME = '#1a1a1a'         // dark gray
-  const LIGHT_THEME = '#f8fafc'        // light slate
-  const isDevEnv = import.meta.env.DEV // indicates if the app is in a development environment
+  const DARK_THEME = '#1a1a1a'  // dark gray
+  const LIGHT_THEME = '#f8fafc' // light slate
+  const isDevEnvironment = import.meta.env.DEV // indicates if the app is in a development environment
 
   const { pathname } = useLocation()
   const { theme } = useTheme()
@@ -36,10 +35,10 @@ export function App() {
   useEffect(() => gsap.registerPlugin(ScrollTrigger, TextPlugin), []) // GSAP plugins
 
   return (
-    <>
+    <div className='min-h-dvh grid grid-rows-[auto_1fr_auto]'>
       {/* Metadata */}
       <Helmet>
-        {isDevEnv && (
+        {isDevEnvironment && (
           <link
             rel="icon"
             type="image/png"
@@ -63,7 +62,7 @@ export function App() {
       <SpeedInsights />
 
       {/* Dev utilities */}
-      {isDevEnv && <ScreenPanel />}
-    </>
+      {isDevEnvironment && <ScreenPanel />}
+    </div>
   )
 }
