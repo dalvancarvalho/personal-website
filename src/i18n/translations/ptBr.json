@@ -197,10 +197,10 @@
               "subheading": "ago 2022 - presente · SCS, RS",
               "altText": "Logo do website dalvan c_",
               "roleI": "Desenvolvedor Front-End",
-              "bulletI": "Desenvolve sites e aplicações responsivas (compatíveis com dispositivos móveis) utilizando frameworks CSS modernos e bibliotecas JavaScript, tais como <softHighlight>Tailwind CSS e React.</softHighlight>",
-              "bulletII": "Mantém-se atualizado com as últimas tendências e tecnologias no desenvolvimento front-end, seguindo boas práticas e priorizando a <softHighlight>manutenibilidade e escalabilidade</softHighlight> das aplicações.",
-              "bulletIII": "Desenvolve e implementa interfaces com foco em melhorar a <softHighlight>experiência do usuário (UX) utilizando arquiteturas baseadas em componentes, <softHighlight>resultando em uma solução front-end modular e reutilizável.</softHighlight>",
-              "bulletIV": "Utiliza <softHighlight>APIs REST</softHighlight> para criar aplicações web, assegurando eficiência na obtenção de dados e interação com os serviços de back-end."
+              "bulletI": "Desenvolvimento de sites e aplicações responsivas (compatíveis com dispositivos móveis) utilizando frameworks CSS modernos e bibliotecas JavaScript, <softHighlight>como Tailwind CSS e React.</softHighlight>",
+              "bulletII": "Em constante atualização acerca das últimas tendências no desenvolvimento front-end, seguindo boas práticas e priorizando a <softHighlight>manutenibilidade e escalabilidade</softHighlight> das aplicações.",
+              "bulletIII": "Projeto e implementação de interfaces com foco em melhorar a <softHighlight>experiência do usuário (UX)</softHighlight> utilizando arquiteturas baseadas em componentes, <softHighlight>resultando em soluções front-end modulares e reutilizáveis.</softHighlight>",
+              "bulletIV": "Uso de REST APIs para criação de aplicações web, assegurando eficiência na obtenção de dados e interação com os serviços de back-end."
             },
             "companyII": {
               "heading": "Topocart Engenharia",
@@ -208,47 +208,50 @@
               "altText": "Logo da empresa Topocart Engenharia",
               "roleI": "Coordenador · <period>2019 - 2021</period>",
               "roleII": "Analista de Qualidade · <period>2017 - 2019</period>",
-              "bulletI": "Liderou equipes de escritório em Manaus e Brasília (a segunda, remotamente), na execução bem-sucedida de tarefas em projetos executados em diferentes localidades do país, contribuindo para a eficiência operacional e alcance dos objetivos.",
-              "bulletII": "Utilizou o <softHighlight>Jenkins</softHighlight> para automatizar tarefas repetitivas, garantindo que a equipe sempre contasse com material atualizado para realizar as análises, melhorando a eficiência do processo e a precisão dos resultados.",
-              "bulletIII": "Contribuiu para o crescimento e desenvolvimento da equipe de escritório, desde o processo de contratação até o treinamento contínuo e gestão, promovendo um ambiente de trabalho produtivo.",
-              "bulletIV": "Fez uso de sistemas de gerenciamento de banco de dados como <softHighlight>PostgreSQL</softHighlight> para tratar os dados coletados ao longo do projeto, criando consultas que facilitaram a análise e tornaram mais ágil a comparação com a base de dados fornecida pelo cliente.",
-              "bulletV": "Garantiu a estabilidade e eficiência da infraestrutura de informática do escritório de Manaus, <softHighlight>liderando a gestão e manutenção de estações de trabalho, servidores e <italic>storages</italic></softHighlight> em colaboração estreita com a equipe de TI da sede da empresa em Brasília, DF."
+              "bulletI": "Coordenei equipes de escritório em Manaus e Brasília (esta última, remotamente) na execução de tarefas em projetos executados em diferentes localidades do país, contribuindo para a eficiência operacional e alcance dos objetivos.",
+              "bulletII": "Utilizei o <softHighlight>Jenkins</softHighlight> para automatizar tarefas repetitivas, garantindo que a equipe sempre contasse com material atualizado para realizar as análises, aumentando a precisão dos resultados.",
+              "bulletIII": "Contribuí para o crescimento e desenvolvimento da equipe de escritório, desde o processo de contratação até o treinamento contínuo e gestão.",
+              "bulletIV": "Fiz uso de sistemas de gerenciamento de banco de dados como <softHighlight>PostgreSQL</softHighlight> para tratar os dados coletados ao longo do projeto, criando consultas que facilitaram a análise e tornaram mais ágil a comparação com a base de dados fornecida pelo cliente.",
+              "bulletV": "Garanti a estabilidade e eficiência da infraestrutura de informática do escritório de Manaus, <softHighlight>liderando a gestão e manutenção de estações de trabalho, servidores e <italic>storages</italic></softHighlight> em colaboração estreita com a equipe de TI da sede da empresa, em Brasília."
             },
             "companyI": {
               "heading": "IDB Informática",
               "subheading": "jan 2012 - mai 2017 · SCS, RS",
               "altText": "Logo da empresa IDB Informática",
               "roleI": "Técnico em TI",
-              "bulletI": "Liderou o setor de assistência técnica <softHighlight>por mais de 5 anos</softHighlight>, destacando-se na prestação de suporte técnico remoto e presencial a usuários finais. Além disso, treinou novos técnicos e implementou métodos de detecção e resolução de problemas tanto em nível de software quanto de hardware.",
-              "bulletII": "Atuou <italic>in loco</italic> na manutenção e gestão de infraestrutura de informática e rede de clientes corporativos, otimizando significativamente a resolução de problemas. Garantiu atendimento personalizado, alinhado precisamente às necessidades individuais de cada caso, resultando em uma gestão de infraestrutura mais eficiente e satisfação duradoura do cliente."
+              "bulletI": "Fui responsável pelo setor de assistência técnica <softHighlight>por mais de 5 anos</softHighlight>, prestando suporte técnico remoto e presencial a usuários finais. Além disso, treinei novos técnicos e estabeleci padrões para detecção e resolução de problemas tanto em nível de software quanto de hardware.",
+              "bulletII": "Atuei in loco na manutenção e gestão de infraestrutura de informática e rede de clientes corporativos, otimizando o tempo gasto na resolução de problemas."
             }
           },
           "education": {
             "title": "Educação",
-            "courseVII": {
+            "institutionI": {
+              "heading": "Bacharelado em Engenharia Civil",
+              "altText": "Logo da Universidade de Santa Cruz do Sul"
+            }
+          },
+          "courses": {
+            "title": "Cursos",
+            "courseVI": {
               "altText": "Logo do site Google",
               "subheading": "2024 · Google/Coursera<pulse>· Em andamento</pulse>"
-            },
-            "courseVI": {
-              "altText": "Logo do site developed by ed"
             },
             "courseV": {
               "altText": "Logo do site developed by ed"
             },
             "courseIV": {
+              "altText": "Logo do site developed by ed"
+            },
+            "courseIII": {
               "heading": "Desenvolvimento web full stack",
               "altText": "Logo do site Programador BR"
             },
-            "courseIII": {
+            "courseII": {
               "altText": "Logo do site developed by ed"
             },
-            "courseII": {
+            "courseI": {
               "heading": "SQL e banco de dados",
               "altText": "Logo do site Udemy"
-            },
-            "courseI": {
-              "heading": "Bacharelado em Engenharia Civil",
-              "altText": "Logo da Universidade de Santa Cruz do Sul"
             }
           },
           "languages": {

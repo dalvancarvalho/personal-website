@@ -2,6 +2,7 @@
 
 import {
   faBook,
+  faBookOpenReader,
   faCode,
   faLanguage,
   faScrewdriverWrench,
@@ -346,12 +347,31 @@ export const RESUME_TOPICS = [
     items: [
       {
         id: crypto.randomUUID(),
+        heading: 'pages.resume.topics.education.institutionI.heading',
+        subheading: '2012 - 2018 · UNISC',
+        url: 'https://www.unisc.br/pt/cursos/todos-os-cursos/graduacao/bacharelado/engenharia-civil',
+        image: {
+          src: unisc,
+          alt: 'pages.resume.topics.education.institutionI.altText',
+        },
+      },
+    ],
+  },
+  {
+    // Courses
+    id: crypto.randomUUID(),
+    title: 'pages.resume.topics.courses.title',
+    icon: faBookOpenReader,
+    largeItems: true,
+    items: [
+      {
+        id: crypto.randomUUID(),
         heading: 'Google UX Design',
-        subheading: 'pages.resume.topics.education.courseVII.subheading',
+        subheading: 'pages.resume.topics.courses.courseVI.subheading',
         url: 'https://www.coursera.org/professional-certificates/conception-ux-google',
         image: {
           src: google,
-          alt: 'pages.resume.topics.education.courseVII.altText',
+          alt: 'pages.resume.topics.courses.courseVI.altText',
         },
       },
       {
@@ -361,7 +381,7 @@ export const RESUME_TOPICS = [
         url: 'https://developedbyed.com/p/the-creative-react-and-redux-course',
         image: {
           src: devByEd,
-          alt: 'pages.resume.topics.education.courseVI.altText',
+          alt: 'pages.resume.topics.courses.courseV.altText',
         },
       },
       {
@@ -371,17 +391,17 @@ export const RESUME_TOPICS = [
         url: 'https://developedbyed.com/p/the-creative-javascript-course',
         image: {
           src: devByEd,
-          alt: 'pages.resume.topics.education.courseV.altText',
+          alt: 'pages.resume.topics.courses.courseIV.altText',
         },
       },
       {
         id: crypto.randomUUID(),
-        heading: 'pages.resume.topics.education.courseIV.heading',
+        heading: 'pages.resume.topics.courses.courseIII.heading',
         subheading: '2022 - 2023 · Programador BR',
         url: 'https://programadorbr.com/',
         image: {
           src: progBr,
-          alt: 'pages.resume.topics.education.courseIV.altText',
+          alt: 'pages.resume.topics.courses.courseIII.altText',
         },
       },
       {
@@ -391,27 +411,17 @@ export const RESUME_TOPICS = [
         url: 'https://developedbyed.com/p/the-creative-html5-css3-course',
         image: {
           src: devByEd,
-          alt: 'pages.resume.topics.education.courseIII.altText',
+          alt: 'pages.resume.topics.courses.courseII.altText',
         },
       },
       {
         id: crypto.randomUUID(),
-        heading: 'pages.resume.topics.education.courseII.heading',
+        heading: 'pages.resume.topics.courses.courseI.heading',
         subheading: '2019 · Udemy',
         url: 'https://www.udemy.com/',
         image: {
           src: udemy,
-          alt: 'pages.resume.topics.education.courseII.altText',
-        },
-      },
-      {
-        id: crypto.randomUUID(),
-        heading: 'pages.resume.topics.education.courseI.heading',
-        subheading: '2012 - 2018 · UNISC',
-        url: 'https://www.unisc.br/pt/cursos/todos-os-cursos/graduacao/bacharelado/engenharia-civil',
-        image: {
-          src: unisc,
-          alt: 'pages.resume.topics.education.courseI.altText',
+          alt: 'pages.resume.topics.courses.courseI.altText',
         },
       },
     ],

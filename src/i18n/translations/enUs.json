@@ -197,10 +197,10 @@
               "subheading": "aug 2022 - present · SCS, RS",
               "altText": "dalvan c_ website logo",
               "roleI": "Front-End Developer",
-              "bulletI": "Develops responsive websites and applications (compatible with mobile devices) using modern CSS frameworks and JavaScript libraries like <softHighlight>Tailwind CSS and React.</softHighlight>",
-              "bulletII": "Stays updated with the latest trends and technologies, following best practices and prioritizing the <softHighlight>maintainability and scalability</softHighlight> of applications.",
-              "bulletIII": "Develops and implements interfaces with a focus on enhancing the <softHighlight>user experience (UX)</softHighlight> by utilizing component-based architectures, <softHighlight>resulting in a modular and reusable front-end solution.</softHighlight>",
-              "bulletIV": "Utilizes <softHighlight>RESTful APIs</softHighlight> to create web applications, ensuring an efficient data retrieval and interaction with back-end services.Utilizes <softHighlight>REST APIs</softHighlight> to create web applications, ensuring an efficient data retrieval and interaction with back-end services."
+              "bulletI": "Development of responsive websites and applications (compatible with mobile devices) using modern CSS frameworks and JavaScript libraries such as <softHighlight>Tailwind CSS and React.</softHighlight>",
+              "bulletII": "Constantly updated on the latest trends in front-end development, following best practices and prioritizing the <softHighlight>maintainability and scalability</softHighlight> of applications.",
+              "bulletIII": "Design and implementation of interfaces focused on improving <softHighlight>user experience (UX)</softHighlight> using component-based architectures, <softHighlight>resulting in modular and reusable front-end solutions.</softHighlight>",
+              "bulletIV": "Use of <softHighlight>REST APIs</softHighlight> for creating web applications, ensuring efficiency in data retrieval and interaction with back-end services."
             },
             "companyII": {
               "heading": "Topocart Engineering",
@@ -208,47 +208,50 @@
               "altText": "Topocart Engineering logo",
               "roleI": "Coordinator · <period>2019 - 2021</period>",
               "roleII": "Research and Mapping Agent · <period>2017 - 2019</period>",
-              "bulletI": "Led office teams in Manaus and Brasília (the latter remotely) for the successful execution of tasks in projects across different locations in the country, contributing to operational efficiency and goal achievement.",
-              "bulletII": "Used <softHighlight>Jenkins</softHighlight> to automate repetitive tasks, ensuring that the team always had up-to-date material to perform analyses, improving process efficiency and result accuracy.",
-              "bulletIII": "Contributed to the growth and development of the office team, from the hiring process to continuous training and management, fostering a productive work environment.",
-              "bulletIV": "Utilized database management systems like <softHighlight>PostgreSQL</softHighlight> to handle the data collected throughout the project, creating queries that facilitated analysis and made comparison with the database provided by the client more efficient.",
-              "bulletV": "Ensured stability and efficiency of the IT infrastructure in the Manaus office by <softHighlight>leading the management and maintenance of workstations, servers, and storage</softHighlight> in close collaboration with the company's IT team at the headquarters in Brasília."
+              "bulletI": "Coordinated office teams in Manaus and Brasília (the latter remotely) in executing tasks for projects across different locations in the country, contributing to operational efficiency and goal achievement.",
+              "bulletII": "Utilized <softHighlight>Jenkins</softHighlight> to automate repetitive tasks, ensuring the team always had updated material for analyses, increasing result accuracy.",
+              "bulletIII": "Contributed to the growth and development of the office team, from the hiring process to continuous training and management.",
+              "bulletIV": "Utilized database management systems such as <softHighlight>PostgreSQL</softHighlight> to process data collected throughout the project, creating queries that facilitated analysis and made comparison with the database provided by the client more efficient.",
+              "bulletV": "Ensured stability and efficiency of the IT infrastructure in the Manaus office, <softHighlight>leading the management and maintenance of workstations, servers, and storage</softHighlight> in close collaboration with the company's IT team at the headquarters in Brasília."
             },
             "companyI": {
               "heading": "IDB Informática",
               "subheading": "jan 2012 - may 2017 · SCS, RS",
               "altText": "IDB Informática logo",
               "roleI": "IT Technician",
-              "bulletI": "Led the technical support department <softHighlight>for over 5 years</softHighlight>, excelling in providing remote and on-site technical support to end users.  Additionally, trained new technicians and established standards for problem detection and resolution at both software and hardware levels.",
-              "bulletII": "Performed on-site maintenance and management of IT and network infrastructure for corporate clients, significantly optimizing issue resolution. Ensured personalized assistance, precisely aligned with the individual needs of each case, resulting in more efficient infrastructure management and lasting customer satisfaction."
+              "bulletI": "Led the technical support department <softHighlight>for over 5 years</softHighlight>, providing remote and on-site technical support to end users. Additionally, trained new technicians and established standards for problem detection and resolution at both software and hardware levels.",
+              "bulletII": "Provided on-site maintenance and management of IT infrastructure and networks for corporate clients, optimizing time spent on problem resolution."
             }
           },
           "education": {
             "title": "Education",
-            "courseVII": {
+            "institutionI": {
+              "heading": "Bachelor's in Civil Engineering",
+              "altText": "UNISC logo"
+            }
+          },
+          "courses": {
+            "title": "Courses",
+            "courseVI": {
               "altText": "Google logo",
               "subheading": "2024 · Google/Coursera<pulse>· In progress</pulse>"
-            },
-            "courseVI": {
-              "altText": "developed by ed logo"
             },
             "courseV": {
               "altText": "developed by ed logo"
             },
             "courseIV": {
+              "altText": "developed by ed logo"
+            },
+            "courseIII": {
               "heading": "Full stack web development",
               "altText": "Programador BR website logo"
             },
-            "courseIII": {
+            "courseII": {
               "altText": "developed by ed logo"
             },
-            "courseII": {
+            "courseI": {
               "heading": "SQL and database",
               "altText": "Udemy website logo"
-            },
-            "courseI": {
-              "heading": "Bachelor's in Civil Engineering",
-              "altText": "UNISC logo"
             }
           },
           "languages": {
