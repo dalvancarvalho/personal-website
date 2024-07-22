@@ -76,7 +76,7 @@
     "pages": {
       "home": {
         "hero": {
-          "heading": "<small>Combining </small>Front-End <br /><thin>and </thin>Creativity",
+          "heading": "<small>Combining </small>Front-End <br /><thin>and </thin><gradient>Creativity</gradient>",
           "paragraph": "Hello! My name is <highlight>Dalvan Carvalho</highlight>, I'm a front-end developer focused on creating unique user experiences.",
           "primaryButton": "Get in touch",
           "secondaryButton": "See projects",

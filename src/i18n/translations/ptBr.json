@@ -76,7 +76,7 @@
     "pages": {
       "home": {
         "hero": {
-          "heading": "<small>Unindo </small>Front-End <br /><thin>e </thin>Criatividade",
+          "heading": "<small>Unindo </small>Front-End <br /><thin>e </thin><gradient>Criatividade</gradient>",
           "paragraph": "Olá! Meu nome é <highlight>Dalvan Carvalho</highlight>, sou um desenvolvedor front-end focado na criação de experiências de usuário únicas.",
           "primaryButton": "Entrar em contato",
           "secondaryButton": "Ver projetos",

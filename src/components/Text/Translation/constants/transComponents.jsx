@@ -30,6 +30,11 @@ export const TRANS_COMPONENTS = {
     <span className="font-light leading-[0]" />
   ),
 
+  gradient: (
+    // Color gradient displayed when the hero text is hovered
+    <span className="pr-1 bg-clip-text bg-gradient-to-t from-blue-600 to-blue-400 dark:from-orange-600 dark:to-orange-400 text-slate-800 dark:text-gray-200 group-hover/hero:text-transparent color-transition" />
+  ),
+
   /* Home page > Projects section */
   iss: (
     // Link to ISS Tracker
