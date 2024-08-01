@@ -12,7 +12,6 @@ import { useLocation } from 'react-router-dom'
 
 import { useTheme } from './context/ThemeContext'
 import { useConsoleMessage } from './hooks/useConsoleMessage'
-import { ScreenPanel } from './utils/ScreenPanel'
 
 import { Footer } from './layout/Footer'
 import { Header } from './layout/Header'

@@ -3,6 +3,7 @@
     "meta": {
       "title": {
         "home": "Dalvan Carvalho · Front-End Developer",
+        "breakpointMonitor": "Breakpoint Monitor — Dalvan Carvalho · Front-End Developer",
         "brGeo": "BR Geo — Dalvan Carvalho · Front-End Developer",
         "personalWebsite": "Personal website — Dalvan Carvalho · Front-End Developer",
         "resume": "Resume — Dalvan Carvalho · Front-End Developer",
@@ -21,6 +22,11 @@
           "about": "About",
           "projects": "Projects",
           "contact": "Contact"
+        },
+        "/breakpoint-monitor": {
+          "home": "Home",
+          "intro": "Intro",
+          "details": "Details"
         },
         "/br-geo": {
           "home": "Home",
@@ -114,6 +120,11 @@
             "heading": "Personal website",
             "description": "That's right! This website deserves a place on the list for including several interesting features used in its development, such as libraries for routing, internationalization, email sending, and animations."
           },
+          "breakpointMonitor": {
+            "altText": "The text 'Tailwind Breakpoint Monitor' is written over a white background",
+            "heading": "Breakpoint Monitor",
+            "description": "A React component that displays the current Tailwind CSS breakpoint in the corner of the screen. Ideal for developers who want to quickly identify the active breakpoint during development."
+          },
           "splitIt": {
             "altText": "Several expenses spreadsheets placed side by side and slightly rotated",
             "heading": "Split it!",
@@ -153,6 +164,16 @@
           "nav": {
             "ariaLabel": "Social networks"
           }
+        }
+      },
+      "breakpointMonitor": {
+        "intro": {
+          "heading": "A brief introduction",
+          "sectionName": "Intro"
+        },
+        "details": {
+          "heading": "Details",
+          "sectionName": "Details"
         }
       },
       "brGeo": {

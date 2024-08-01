@@ -3,6 +3,7 @@
     "meta": {
       "title": {
         "home": "Dalvan Carvalho · Desenvolvedor Front-End",
+        "breakpointMonitor": "Breakpoint Monitor — Dalvan Carvalho · Desenvolvedor Front-End",
         "brGeo": "BR Geo — Dalvan Carvalho · Desenvolvedor Front-End",
         "personalWebsite": "Website pessoal — Dalvan Carvalho · Desenvolvedor Front-End",
         "resume": "Currículo — Dalvan Carvalho · Desenvolvedor Front-End",
@@ -21,6 +22,11 @@
           "about": "Sobre",
           "projects": "Projetos",
           "contact": "Contato"
+        },
+        "/breakpoint-monitor": {
+          "home": "Início",
+          "intro": "Intro",
+          "details": "Detalhes"
         },
         "/br-geo": {
           "home": "Início",
@@ -114,6 +120,11 @@
             "heading": "Website pessoal",
             "description": "Isso mesmo! Este website merece lugar na lista por incluir diversas funcionalidades interessantes utilizadas em seu desenvolvimento, como bibliotecas para gerenciamento de rotas, internacionalização, envio de emails e animações."
           },
+          "breakpointMonitor": {
+            "altText": "O texto 'Tailwind Breakpoint Monitor' está escrito sobre um background branco",
+            "heading": "Breakpoint Monitor",
+            "description": "Um componente React que exibe o breakpoint atual do Tailwind CSS no canto da tela. Ideal para desenvolvedores que desejam identificar rapidamente o breakpoint ativo durante o desenvolvimento."
+          },
           "splitIt": {
             "altText": "Diversas planilhas de gastos dispostas lado a lado e levemente rotacionadas",
             "heading": "Split it!",
@@ -153,6 +164,16 @@
           "nav": {
             "ariaLabel": "Redes sociais"
           }
+        }
+      },
+      "breakpointMonitor": {
+        "intro": {
+          "heading": "Uma breve introdução",
+          "sectionName": "Intro"
+        },
+        "details": {
+          "heading": "Detalhes",
+          "sectionName": "Detalhes"
         }
       },
       "brGeo": {

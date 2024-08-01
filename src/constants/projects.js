@@ -2,6 +2,7 @@
 
 import brGeoThumb from '../assets/webp/br-geo.webp'
 import personalWebsiteThumb from '../assets/webp/personal-website.webp'
+import breakpointMonitorThumb from '../assets/webp/breakpoint-monitor.webp'
 import splitItThumb from '../assets/webp/split-it.webp'
 
 import chartJs from '../assets/svg/logos/chartjs.svg'
@@ -13,8 +14,10 @@ import ibge from '../assets/svg/logos/ibge.svg'
 import i18next from '../assets/svg/logos/i18next.svg'
 import javaScript from '../assets/svg/logos/javascript.svg'
 import nextJs from '../assets/svg/logos/nextjs.svg'
+import npm from '../assets/svg/logos/npm.svg'
 import react from '../assets/svg/logos/react.svg'
 import reactRouter from '../assets/svg/logos/react-router.svg'
+import sass from '../assets/svg/logos/sass.svg'
 import tailwindCss from '../assets/svg/logos/tailwind-css.svg'
 import typeScript from '../assets/svg/logos/typescript.svg'
 import vite from '../assets/svg/logos/vite.svg'
@@ -156,6 +159,68 @@ export const PROJECTS = [
   },
   {
     id: crypto.randomUUID(),
+    heading: 'pages.home.projects.breakpointMonitor.heading',
+    description: 'pages.home.projects.breakpointMonitor.description',
+    route: 'breakpoint-monitor',
+    inProgress: false,
+    links: {
+      demo: null,
+      repo: 'https://github.com/dalvancarvalho/tw-breakpoint-monitor',
+    },
+    thumbnail: {
+      src: breakpointMonitorThumb,
+      altText: 'pages.home.projects.breakpointMonitor.altText',
+    },
+    stack: [
+      {
+        id: crypto.randomUUID(),
+        tech: 'Vite',
+        url: 'https://vitejs.dev/',
+        image: {
+          src: vite,
+          alt: 'Vite logo',
+        },
+      },
+      {
+        id: crypto.randomUUID(),
+        tech: 'React',
+        url: 'https://react.dev/',
+        image: {
+          src: react,
+          alt: 'React logo',
+        },
+      },
+      {
+        id: crypto.randomUUID(),
+        tech: 'TypeScript',
+        url: 'https://www.typescriptlang.org/',
+        image: {
+          src: typeScript,
+          alt: 'TypeScript logo',
+        },
+      },
+      {
+        id: crypto.randomUUID(),
+        tech: 'Sass',
+        url: 'https://sass-lang.com/',
+        image: {
+          src: sass,
+          alt: 'Sass logo',
+        },
+      },
+      {
+        id: crypto.randomUUID(),
+        tech: 'npm',
+        url: 'https://www.npmjs.com/',
+        image: {
+          src: npm,
+          alt: 'npm logo',
+        },
+      },
+    ],
+  },
+  {
+    id: crypto.randomUUID(),
     heading: 'pages.home.projects.splitIt.heading',
     description: 'pages.home.projects.splitIt.description',
     route: 'split-it',
@@ -212,4 +277,5 @@ export const PROJECTS = [
 // Data used inside each project's page
 export const brGeo = PROJECTS[0]
 export const personalWebsite = PROJECTS[1]
-export const splitIt = PROJECTS[2]
+export const breakpointMonitor = PROJECTS[2]
+export const splitIt = PROJECTS[3]

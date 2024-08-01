@@ -35,6 +35,23 @@ export const NAV_LINKS = {
       icon: faPaperPlane,
     },
   ],
+  '/breakpoint-monitor': [
+    {
+      id: crypto.randomUUID(),
+      name: 'home',
+      icon: faHouse,
+    },
+    {
+      id: crypto.randomUUID(),
+      name: 'intro',
+      icon: faPersonChalkboard,
+    },
+    {
+      id: crypto.randomUUID(),
+      name: 'details',
+      icon: faListUl,
+    },
+  ],
   '/br-geo': [
     {
       id: crypto.randomUUID(),
