@@ -60,9 +60,6 @@ export function App() {
       {/* Vercel tools */}
       <Analytics />
       <SpeedInsights />
-
-      {/* Dev utilities */}
-      {isDevEnvironment && <ScreenPanel />}
     </div>
   )
 }
