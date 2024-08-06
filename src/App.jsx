@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 import { TextPlugin } from 'gsap/TextPlugin'
 import { Toaster } from 'sonner'
+import { TwBreakpointMonitor } from 'tw-breakpoint-monitor'
 import { useLocation } from 'react-router-dom'
 
 import { useTheme } from './context/ThemeContext'
@@ -59,6 +60,9 @@ export function App() {
       {/* Vercel tools */}
       <Analytics />
       <SpeedInsights />
+
+      {/* Dev tools */}
+      <TwBreakpointMonitor position='bottom-left' />
     </div>
   )
 }

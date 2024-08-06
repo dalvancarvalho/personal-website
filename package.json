@@ -39,7 +39,8 @@
     "react-router-dom": "^6.4.3",
     "react-scroll": "^1.8.9",
     "react-scroll-parallax": "^3.3.2",
-    "sonner": "^1.4.0"
+    "sonner": "^1.4.0",
+    "tw-breakpoint-monitor": "^1.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
