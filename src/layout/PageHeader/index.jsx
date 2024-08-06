@@ -1,7 +1,7 @@
 /* PageHeader/index.jsx */
 
 import { useEffect, useRef, useState } from 'react'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faNpm } from '@fortawesome/free-brands-svg-icons'
 
 import { Container } from '../Container'
 
@@ -37,14 +37,20 @@ export function PageHeader({ github, heading, linkedIn, links, section, t }) {
           data-has-links={hasLinks}
           ref={externalLinksRef}
         >
+          {/* Socials */}
           {github && (
             <Link icon={faGithub} href={github} label={t('pageHeader.github')} />
           )}
           {linkedIn && (
             <Link icon={faLinkedin} href={linkedIn} label={t('pageHeader.linkedIn')} />
           )}
+
+          {/* Project related links */}
           {links?.demo && (
             <LiveDemo href={links.demo} label={t('pageHeader.demo')} />
+          )}
+          {links?.npm && (
+            <Link icon={faNpm} href={links.npm} label={t('pageHeader.npm')} />
           )}
           {links?.repo && (
             <Link icon={faGithub} href={links.repo} label={t('pageHeader.repo')} />

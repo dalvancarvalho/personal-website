@@ -74,6 +74,7 @@
         "projects": "Projects"
       },
       "demo": "Live demo",
+      "npm": "npm package",
       "repo": "GitHub repository",
       "github": "GitHub profile",
       "linkedIn": "LinkedIn profile"
