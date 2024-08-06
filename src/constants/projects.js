@@ -32,6 +32,7 @@ export const PROJECTS = [
     inProgress: false,
     links: {
       demo: null,
+      npm: null,
       repo: 'https://github.com/dalvancarvalho/br-geo',
     },
     thumbnail: {
@@ -94,6 +95,7 @@ export const PROJECTS = [
     inProgress: false,
     links: {
       demo: null,
+      npm: null,
       repo: 'https://github.com/dalvancarvalho/personal-website',
     },
     thumbnail: {
@@ -165,6 +167,7 @@ export const PROJECTS = [
     inProgress: false,
     links: {
       demo: null,
+      npm: 'https://www.npmjs.com/package/tw-breakpoint-monitor',
       repo: 'https://github.com/dalvancarvalho/tw-breakpoint-monitor',
     },
     thumbnail: {
@@ -227,6 +230,7 @@ export const PROJECTS = [
     inProgress: true,
     links: {
       demo: null,
+      npm: null,
       repo: null,
     },
     thumbnail: {
