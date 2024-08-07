@@ -117,6 +117,10 @@
     @apply xs:!-translate-x-[192px];
   }
 
+  .code-snippet-border {
+    @apply border border-slate-200 dark:border-neutral-800 transition-[border-color,background-color] duration-300;
+  }
+
   .color-transition {
     @apply transition-colors duration-300;
   }

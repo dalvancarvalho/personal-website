@@ -2,6 +2,7 @@
 
 import {
   faDownload,
+  faGear,
   faHouse,
   faInfoCircle,
   faListUl,
@@ -43,13 +44,13 @@ export const NAV_LINKS = {
     },
     {
       id: crypto.randomUUID(),
-      name: 'intro',
-      icon: faPersonChalkboard,
+      name: 'about',
+      icon: faInfoCircle,
     },
     {
       id: crypto.randomUUID(),
-      name: 'details',
-      icon: faListUl,
+      name: 'install',
+      icon: faGear,
     },
   ],
   '/br-geo': [

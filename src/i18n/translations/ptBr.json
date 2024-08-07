@@ -25,8 +25,8 @@
         },
         "/breakpoint-monitor": {
           "home": "Início",
-          "intro": "Intro",
-          "details": "Detalhes"
+          "about": "Sobre",
+          "install": "Instalação"
         },
         "/br-geo": {
           "home": "Início",
@@ -168,13 +168,15 @@
         }
       },
       "breakpointMonitor": {
-        "intro": {
-          "heading": "Uma breve introdução",
-          "sectionName": "Intro"
+        "about": {
+          "heading": "Para que serve?",
+          "sectionName": "Sobre",
+          "paragraph": "<highlight>Tailwind Breakpoint Monitor</highlight> é um componente React que exibe o breakpoint atual do Tailwind CSS no canto da tela. Ele é ideal para desenvolvedores que desejam identificar rapidamente o breakpoint ativo durante o desenvolvimento.",
+          "subHeading": "Demonstração:"
         },
-        "details": {
-          "heading": "Detalhes",
-          "sectionName": "Detalhes"
+        "install": {
+          "heading": "Use em seu projeto!",
+          "sectionName": "Instalação"
         }
       },
       "brGeo": {

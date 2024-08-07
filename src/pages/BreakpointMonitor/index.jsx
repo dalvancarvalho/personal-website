@@ -9,8 +9,8 @@ import { Meta } from '../../components/Meta'
 import { PageHeader } from '../../layout/PageHeader'
 import { MainSection } from '../../layout/Section/Main'
 
-import { Introduction } from './Introduction'
-// import Details from './Details'
+import { About } from './About'
+import { Installation } from './Installation'
 
 import { breakpointMonitor } from '../../constants/projects'
 
@@ -33,8 +33,8 @@ export default function BreakpointMonitor() {
           t={t}
           {...breakpointMonitor}
         />
-        <Introduction t={t} />
-        {/* Details... */}
+        <About t={t} />
+        <Installation />
       </MainSection>
     </>
   )

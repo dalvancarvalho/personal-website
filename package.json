@@ -40,7 +40,8 @@
     "react-scroll": "^1.8.9",
     "react-scroll-parallax": "^3.3.2",
     "sonner": "^1.4.0",
-    "tw-breakpoint-monitor": "^1.0.2"
+    "tw-breakpoint-monitor": "^1.0.2",
+    "tw-merge": "^0.0.1-alpha.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
