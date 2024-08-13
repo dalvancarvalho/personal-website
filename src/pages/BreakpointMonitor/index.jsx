@@ -10,6 +10,7 @@ import { PageHeader } from '../../layout/PageHeader'
 import { MainSection } from '../../layout/Section/Main'
 
 import { About } from './About'
+import { TryIt } from './TryIt'
 import { Installation } from './Installation'
 
 import { breakpointMonitor } from '../../constants/projects'
@@ -34,6 +35,7 @@ export default function BreakpointMonitor() {
           {...breakpointMonitor}
         />
         <About t={t} />
+        <TryIt t={t} />
         <Installation />
       </MainSection>
     </>

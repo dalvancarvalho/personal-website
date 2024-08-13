@@ -9,7 +9,7 @@ import { Heading } from '../../../components/Text/Heading'
 import demo from '../../../assets/webm/tbm-demo.webm'
 import poster from '../../../assets/webp/tbm-poster.webp'
 
-export function About({ t }) {
+export function About({ handlePosition, setTransparency, t }) {
   // In progress...
 
   return (

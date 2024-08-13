@@ -62,7 +62,7 @@ export function App() {
       <SpeedInsights />
 
       {/* Dev tools */}
-      <TwBreakpointMonitor position='bottom-left' />
+      {/* <TwBreakpointMonitor position='bottom-left' /> */}
     </div>
   )
 }
